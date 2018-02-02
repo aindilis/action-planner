@@ -1,0 +1,1 @@
+PARSELY.pInit({"apikey":"upworthy.com","settings":{"debug":false,"widget":false,"tracker":true},"customizations":null,"track_ip_addresses":true,"bundle":"/code/ptrack-v0.6.0-engaged-time.js","track_third_party_cookies":true,"uuid":"67dca442-ea7d-4496-894c-00edb183a232","network_uuid":"86a51acb-b243-4ea0-8a2a-6c8a4d22a928","apikey_uuid":"67dca442-ea7d-4496-894c-00edb183a232"});

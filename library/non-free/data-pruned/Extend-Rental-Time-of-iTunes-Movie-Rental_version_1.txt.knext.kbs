@@ -1,0 +1,104 @@
+;; (MACHINESTIMEOPEN UP ITUNES AND SELECT A MOVIE TO RENT COMMA NOT TO BUY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CLICK RENT COMMA AND LET THE MOVIE UPLOAD INTO YOUR ITUNES LIBRARY)
+
+	;; A MOVIE MAY BE UPLOAD -ED INTO A LIBRARY.
+
+		(and (MOVIE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UPLOAD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (INTO_27 ?x2) (A_27 ?x2) (LIBRARY_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIBRARY_27 ?x1))
+
+	;; A LIBRARY CAN BE ITUNES.
+
+		(and (LIBRARY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ITUNES_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (GO INTO YOUR COMPUTER S TIME SYSTEM AND SET THE TIME FORWARD COMMA INTO THE FUTURE)
+
+	;; A COMPUTER MAY HAVE A TIME SYSTEM.
+
+		(and (COMPUTER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TIME_27 ?x1) (SYSTEM_27 ?x1))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+;; (FOR EXAMPLE - THE DATE IS 2009 COMMA AND YOU SET THE DATE TO 2010)
+
+	;; A DATE CAN BE A NUMBER_OR_PORTION.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+	;; A PERSON MAY SET A DATE TO SOME NUMBER_OR_PORTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SET_27 ?x1) (A_27 ?x1) (DATE_27 ?x1) (to_27 ?x1 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+;; (START THE MOVIE COMMA AND WATCH ALL OF IT COMMA IF YOU WANT COMMA WHICH WILL START THE 24 HOUR COUNTDOWN TO THE RENTAL EXPIRING DATE)
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+	;; SOME_NUMBER_OF HOUR COUNTDOWN CAN BE TO A DATE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (HOUR_27 ?x1) (COUNTDOWN_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (DATE_27 ?x2))
+
+	;; A DATE CAN BE RENTAL.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RENTAL_27 ?x2))
+
+	;; A DATE CAN BE EXPIRING.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPIRING_27 ?x2))
+
+;; (STOP THE MOVIE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (EXIT OUT OF ITUNES BY CLOSING THE WINDOW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SET THE TIME BACK TO THE CORRECT DATE)
+
+	;; A DATE CAN BE CORRECT.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORRECT_27 ?x2))

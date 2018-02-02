@@ -1,0 +1,352 @@
+;; (WORDS -RRB- YOU SHOULD START BY TAKING OFF ANY EXCESS CLOTHES OR BLANKETS)
+
+	;; CLOTHES CAN BE EXCESS.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+;; (THE ENVIRONMENT SHOULD BE COMFORTABLY COOL)
+
+	;; AN ENVIRONMENT CAN BE COOL.
+
+		(and (ENVIRONMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COOL_27 ?x2))
+
+;; (IF YOU FEEL CHILLED DRESS IN COMFY CLOTHES)
+
+	;; CLOTHES CAN BE COMFY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFY_27 ?x2))
+
+;; (NOW IS NO TIME TO BE A FASHION DIVA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DRAG OUT YOUR RATTIEST COMMA MOST COMFORTABLE NIGHTGOWN OR PAJAMAS AND ROBE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT ON SOME SOCKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DRINK PLENTY OF LIQUIDS)
+
+	;; DRINK PLENTY CAN BE CONSTITUTED_OF_OR_FILLED_WITH LIQUIDS.
+
+		(and (DRINK_27 ?x1) (PLENTY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (LIQUIDS_27 ?x2))
+
+;; (FIRST DRINK WATER COMMA AND STICK WITH IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU FEEL GOOD ENOUGH COMMA TRY SOME GINGER ALE)
+
+	;; A PERSON MAY FEEL GOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (GOOD_27 ?x1))
+
+;; (THIS REALLY FEELS COOL AND SOOTHING ON YOUR THROAT)
+
+	;; A THING MAY FEEL COOL.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (COOL_27 ?x1))
+
+	;; COOL CAN BE ON A THROAT.
+
+		(and (COOL_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (THROAT_27 ?x2))
+
+	;; A PERSON MAY HAVE A THROAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THROAT_27 ?x1))
+
+;; (IF YOU RE OVER 21 COMMA ENJOY A HOT TODDY MADE BY ADDING HONEY COMMA LEMON COMMA AND WHISKEY TO HOT WATER)
+
+	;; A TODDY CAN BE HOT.
+
+		(and (TODDY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; HONEY CAN BE TO WATER.
+
+		(and (HONEY_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; WATER CAN BE HOT.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+;; (TAKE MOTRIN -LRB- IBUPROFEN -RRB- OR TYLENOL -LRB- ACETOMINOPHEN -RRB- OR ALLEVE -LRB- NAPROXEN -RRB- OR BIOGESIC -LRB- PARACETAMOL -RRB- FEVER REDUCER)
+
+	;; A |\|TAKE_MOTRIN_(-LRB- -LRB-)_(NP (NNP IBUPROFEN))_(-RRB- -RRB-)_OR_TYLENOL_(-LRB- -LRB-)_(NP (NNP ACETOMINOPHEN))_(-RRB- -RRB-)_OR_ALLEVE_(-LRB- -LRB-)_(NP (NNP NAPROXEN))_(-RRB- -RRB-)_OR_BIOGESIC_(-LRB- -LRB-)_(NP (NNP PARACETAMOL))_(-RRB- -RRB-)_FEVER\||[PERSON??] MAY REDUCER.
+
+		(and (kbs2_kif_quote_7C_5C_7CTAKE_5FMOTRIN_5F_27 ?x1) (kbs2_kif_quote_5F_27 ?x1) (NP_27 ?x2) (NNP_27 ?x3) (IBUPROFEN_27 ?x3) (kbs2_kif_quote_5F_27 ?e1 ?x1 ?x4 ?e2) (kbs2_kif_quote_5FOR_5FTYLENOL_5F_27 ?x4) (kbs2_kif_quote_5F_27 ?x5) (NP_27 ?x6) (NNP_27 ?x7) (ACETOMINOPHEN_27 ?x7) (kbs2_kif_quote_5F_27 ?e2 ?x5 ?x8 ?e3) (kbs2_kif_quote_5FOR_5FALLEVE_5F_27 ?x8) (kbs2_kif_quote_5F_27 ?x9) (NP_27 ?x10) (NNP_27 ?x11) (NAPROXEN_27 ?x11) (kbs2_kif_quote_5F_27 ?e3 ?x9 ?x12 ?e4) (kbs2_kif_quote_5FOR_5FBIOGESIC_5F_27 ?x12) (kbs2_kif_quote_5F_27 ?x13) (NP_27 ?x14) (NNP_27 ?x15) (PARACETAMOL_27 ?x15) (kbs2_kif_quote_5F_27 ?e4 ?x13 ?x16) (kbs2_kif_quote_5FFEVER_5C_7C_7C_27 ?x16) (kbs2_kif_quote_5B_27 ?x16) (PERSON_27 ?x16))
+
+		(and (MAY_27 ?x1) (REDUCER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [15]>
+
+;; (THERE IS A KIND FOR KIDS AND ADULTS)
+
+	;; A KIND CAN BE FOR KIDS.
+
+		(and (KIND_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (KIDS_27 ?x2))
+
+;; (FOLLOW THE DIRECTIONS ON THE PACKAGE ON DOSAGE INFORMATION)
+
+	;; A PACKAGE CAN BE ON DOSAGE INFORMATION.
+
+		(and (package_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (DOSAGE_27 ?x2) (INFORMATION_27 ?x2))
+
+;; (CALL A DOCTOR FOR DOSES ON CHILDREN NOT COVERED ON THE PACKAGE DIRECTIONS)
+
+	;; A DOCTOR CAN BE FOR DOSES.
+
+		(and (DOCTOR_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (dose_27 ?x2))
+
+	;; DOSES CAN BE ON CHILDREN.
+
+		(and (dose_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (CHILDREN_27 ?x2))
+
+	;; CHILDREN MAY BE COVER -ED ON PACKAGE DIRECTIONS.
+
+		(and (CHILDREN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COVER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (PACKAGE_27 ?x2) (DIRECTIONS_27 ?x2))
+
+;; (PUT AN ICE PACK ON YOUR FOREHEAD OR DAMP RAG)
+
+	;; A PERSON MAY HAVE A FOREHEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOREHEAD_27 ?x1))
+
+;; (THIS ALSO COOLS YOU DOWN TEMPORARILY)
+
+	;; A THING MAY COOL A PERSON.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (COOL_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (OR COMMA SOAK A WASHCLOTH IN A BOWL OF COOL WATER)
+
+	;; A WASHCLOTH CAN BE IN A BOWL OF WATER.
+
+		(and (WASHCLOTH_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BOWL_27 ?x2) (of_27 ?x2 ?x3) (WATER_27 ?x3))
+
+	;; A BOWL CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (BOWL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+	;; WATER CAN BE COOL.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COOL_27 ?x2))
+
+;; (THEN BRING IT OUT AND PLACE IT ON YOUR FOREHEAD)
+
+	;; A PERSON MAY HAVE A FOREHEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOREHEAD_27 ?x1))
+
+;; (THIS WILL HELP YOUR BODY TO LOWER IT S TEMPERATURE COMMA THUS REDUCING THE FEVER FASTER)
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A TEMPERATURE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TEMPERATURE_27 ?x1))
+
+;; (JUST RELAX AND STAY COOL BY DRINKING PLENTY OF FLUIDS)
+
+	;; FLUIDS MAY UNDERGO A DRINKING PLENTY.
+
+		(and (FLUIDS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (DRINKING_27 ?x1) (PLENTY_27 ?x1))
+
+;; (GET A BOWL OF ICE CREAM OR A POPSICLE)
+
+	;; A BOWL CAN BE CONSTITUTED_OF_OR_FILLED_WITH ICE CREAM.
+
+		(and (BOWL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ICE_27 ?x2) (CREAM_27 ?x2))
+
+;; (THIS WILL TAKE YOUR TEMPERATURE DOWN)
+
+	;; A THING MAY TAKE_DOWN A TEMPERATURE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (TAKE_5FDOWN_27 ?x1) (A_27 ?x1) (TEMPERATURE_27 ?x1))
+
+	;; A PERSON MAY HAVE A TEMPERATURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TEMPERATURE_27 ?x1))
+
+;; (THIS WILL TAKE YOUR TEMPERATURE DOWN)
+
+	;; A THING MAY TAKE_DOWN A TEMPERATURE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (TAKE_5FDOWN_27 ?x1) (A_27 ?x1) (TEMPERATURE_27 ?x1))
+
+	;; A PERSON MAY HAVE A TEMPERATURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TEMPERATURE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [16]>
+
+;; (PREFERABLY YOU HAVE SOMEONE ELSE AT HOME WHO CAN GET THIS FOR YOU)
+
+	;; A PERSON MAY HAVE SOMEONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOMEONE_27 ?x1))
+
+	;; SOMEONE CAN BE AT_HOME.
+
+		(and (SOMEONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_5FHOME_27 ?x2))
+
+	;; A THING CAN BE FOR A PERSON.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (IF YOU HAVE CHILLS COMMA YOU MAY WANT HOT CHOCOLATE)
+
+	;; A PERSON MAY WANT CHOCOLATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (CHOCOLATE_27 ?x1))
+
+	;; A PERSON MAY CHILL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHILL_27 ?x1))
+
+	;; CHOCOLATE CAN BE HOT.
+
+		(and (CHOCOLATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+;; (GET SOMEONE TO MASSAGE YOUR HEAD COMMA NECK AND BACK)
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+;; (IF YOU CAN GET THEM TO DO YOUR ARMS COMMA LEGS COMMA HANDS AND FINGERS IT WILL FEEL REALLY GOOD COMMA TOO)
+
+	;; A THING-REFERRED-TO MAY FEEL GOOD.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (GOOD_27 ?x1))
+
+	;; A PERSON MAY HAVE ARMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ARMS_27 ?x1))
+
+;; (IF YOU DO N T HAVE SOMEONE TO RUB YOU THEN JUST USE AN ELECTRIC MASSAGER)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A MASSAGER CAN BE ELECTRIC.
+
+		(and (MASSAGER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRIC_27 ?x2))
+
+;; (APPLY A DAMP CLOTH TO LEGS COMMA FEET AND NECK)
+
+	;; A CLOTH CAN BE TO LEGS.
+
+		(and (CLOTH_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (LEGS_27 ?x2))
+
+	;; A CLOTH CAN BE DAMP.
+
+		(and (CLOTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAMP_27 ?x2))
+
+;; (ONLY APPLY UNTIL THE CLOTH IS WARM BECAUSE EXCESS APPLICATION ONLY MAKES THE SITUATION WORSE BY CAUSE SHIVERING WHICH INCREASES CORE BODY TEMPERATURE)
+
+	;; A CLOTH CAN BE WARM.
+
+		(and (CLOTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+	;; APPLICATION MAY MAKE BY CAUSE SHIVERING.
+
+		(and (APPLICATION_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (BY_27 ?x1) (CAUSE_27 ?x1) (SHIVERING_27 ?x1))
+
+	;; AN APPLICATION CAN BE EXCESS.
+
+		(and (APPLICATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A BODY TEMPERATURE CAN BE CORE.
+
+		(and (BODY_27 ?x1) (TEMPERATURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORE_27 ?x2))
+
+;; (DRINK COOL LIQUIDS COMMA AS TOLERATED)
+
+	;; DRINK MAY COOL LIQUIDS.
+
+		(and (DRINK_27 ?x1) (MAY_27 ?x1) (COOL_27 ?x1) (LIQUIDS_27 ?x1))
+
+;; (TAKE A COLD SHOWER)
+
+	;; A SHOWER CAN BE COLD.
+
+		(and (SHOWER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (YOU THINK A HOT SHOWER MAKES YOU FEEL BETTER COMMA BUT IT ACTUALLY MAKES YOUR BODY TEMPERATURE HIGHER)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A SHOWER MAY MAKE.
+
+		(and (SHOWER_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A SHOWER CAN BE HOT.
+
+		(and (SHOWER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; A PERSON MAY FEEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY MAKE A BODY TEMPERATURE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1) (TEMPERATURE_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY TEMPERATURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1) (TEMPERATURE_27 ?x1))

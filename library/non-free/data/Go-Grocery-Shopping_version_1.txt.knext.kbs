@@ -1,0 +1,47 @@
+;; (A GOOD PLACE TO KEEP SUCH A LIST IS ON THE REFRIGERATOR)
+
+	;; A PLACE CAN BE ON A REFRIGERATOR.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (REFRIGERATOR_27 ?x2))
+
+	;; A PLACE CAN BE GOOD.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (MAKE A SHOPPING LIST THAT IS NECESSARY DURING THE WEEK)
+
+	;; A SHOPPING[PERSON??] MAY HAVE A LIST.
+
+		(and (SHOPPING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; (THIS CONSISTS OF THE ITEMS YOU NEED TO REPLENISH COMMA AS WELL AS NEW STUFF YOU WANT TO GET)
+
+	;; A THING MAY CONSIST OF ITEMS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (CONSIST_27 ?x1) (of_27 ?x1 ?x2) (ITEMS_27 ?x2))
+
+;; (CHECK THE SALE PRICES AND COMPARE BETWEEN BRANDS BEFORE BUYING THE PRODUCTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BULK QUANTITIES ARE OFTEN COMMA BUT NOT ALWAYS COMMA CHEAPER)
+
+	;; QUANTITIES CAN BE CHEAPER.
+
+		(and (quantity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAPER_27 ?x2))
+
+	;; QUANTITIES CAN BE BULK.
+
+		(and (quantity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BULK_27 ?x2))

@@ -1,0 +1,92 @@
+;; (DECIDE WHETHER A NORMAL LANDING IS POSSIBLE)
+
+	;; A LANDING CAN BE POSSIBLE.
+
+		(and (landing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+	;; A LANDING CAN BE NORMAL.
+
+		(and (LANDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+;; (IF YES COMMA SET UP FOR A DESCENT AND LAND YOUR AIRPLANE)
+
+	;; A PERSON MAY HAVE AN AIRPLANE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AIRPLANE_27 ?x1))
+
+;; (IF YOU CAN NOT MAKE A NORMAL LANDING COMMA FIND A SAFE SPOT FOR AN EMERGENCY LANDING)
+
+	;; A PERSON MAY MAKE A LANDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (landing_27 ?x1))
+
+	;; A LANDING CAN BE NORMAL.
+
+		(and (LANDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+	;; A SPOT CAN BE FOR AN EMERGENCY LANDING.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (EMERGENCY_27 ?x2) (LANDING_27 ?x2))
+
+	;; A SPOT CAN BE SAFE.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (IF YOU CAN NOT MAKE A NORMAL LANDING COMMA FIND A SAFE SPOT FOR AN EMERGENCY LANDING)
+
+	;; A PERSON MAY MAKE A LANDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (landing_27 ?x1))
+
+	;; A LANDING CAN BE NORMAL.
+
+		(and (LANDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+	;; A SPOT CAN BE FOR AN EMERGENCY LANDING.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (EMERGENCY_27 ?x2) (LANDING_27 ?x2))
+
+	;; A SPOT CAN BE SAFE.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (IF YOU CAN NOT MAKE A NORMAL LANDING COMMA FIND A SAFE SPOT FOR AN EMERGENCY LANDING)
+
+	;; A PERSON MAY MAKE A LANDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (landing_27 ?x1))
+
+	;; A LANDING CAN BE NORMAL.
+
+		(and (LANDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+	;; A SPOT CAN BE FOR AN EMERGENCY LANDING.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (EMERGENCY_27 ?x2) (LANDING_27 ?x2))
+
+	;; A SPOT CAN BE SAFE.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (IF YOU CAN NOT MAKE A NORMAL LANDING COMMA FIND A SAFE SPOT FOR AN EMERGENCY LANDING)
+
+	;; A PERSON MAY MAKE A LANDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (landing_27 ?x1))
+
+	;; A LANDING CAN BE NORMAL.
+
+		(and (LANDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+	;; A SPOT CAN BE FOR AN EMERGENCY LANDING.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (EMERGENCY_27 ?x2) (LANDING_27 ?x2))
+
+	;; A SPOT CAN BE SAFE.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>

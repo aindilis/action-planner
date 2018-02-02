@@ -1,0 +1,569 @@
+;; (PRACTICE -RRB- PAINT YOUR WALLS)
+
+	;; A PERSON MAY HAVE WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+;; (FOR YOUR PARIS-THEMED BEDROOM COMMA THERE ARE FEW OPTIONS WHEN IT COMES TO PAINTING YOUR WALLS)
+
+	;; A PERSON MAY HAVE A BEDROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEDROOM_27 ?x1))
+
+	;; A BEDROOM CAN BE PARIS-THEMED.
+
+		(and (BEDROOM_27 ?x1) (be_27 ?e1 ?x1) (paris-themed_27 ?x1))
+
+	;; A PERSON MAY HAVE WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+;; (YOU COULD EITHER PAINT YOUR WALLS A LIGHT COMMA BABY PINK COMMA OR COMMA FOR A LESS GIRLY LOOK COMMA A SIMPLE CREAM OR BEIGE COLOR)
+
+	;; A PERSON MAY PAINT WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAINT_27 ?x1) (WALLS_27 ?x1))
+
+	;; A PERSON MAY HAVE WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+	;; A CREAM CAN BE SIMPLE.
+
+		(and (CREAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A COLOR CAN BE BEIGE.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEIGE_27 ?x2))
+
+;; (YOU COULD EVEN USE LIGHT ICE BLUES OR TIFFANY BLUES -LRB- TIFFANY & CO. -RRB- PICK WHICH ONE YOU D LIKE THE BEST)
+
+	;; A PERSON MAY USE ICE BLUES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (ICE_27 ?x1) (BLUES_27 ?x1))
+
+	;; ICE BLUES CAN BE LIGHT.
+
+		(and (ICE_27 ?x1) (BLUES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+;; (IF YOU ARE N T ALLOWED TO PAINT YOUR BEDROOM COMMA THAT S OKAY TOO)
+
+	;; A PERSON MAY HAVE A BEDROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEDROOM_27 ?x1))
+
+;; (EITHER WAY COMMA DECORATE YOUR WALLS)
+
+	;; SOME_NUMBER_OF WAY MAY DECORATE WALLS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WAY_27 ?x1) (MAY_27 ?x1) (DECORATE_27 ?x1) (WALLS_27 ?x1))
+
+	;; A PERSON MAY HAVE WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+;; (YOU COULD USE VINYL WALL STICKERS IN DIFFERENT SHAPES SUCH AS THE EIFFEL TOWER AND PUT THEM ON YOUR WALLS COMMA OR HIRE A PROFESSIONAL PAINTER TO PAINT A MURAL ON YOUR WALLS)
+
+	;; A PERSON MAY USE VINYL WALL STICKERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (VINYL_27 ?x1) (WALL_27 ?x1) (STICKERS_27 ?x1))
+
+	;; AN EIFFEL[PERSON??] MAY HAVE A TOWER.
+
+		(and (EIFFEL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOWER_27 ?x1))
+
+	;; A PAINTER CAN BE PROFESSIONAL.
+
+		(and (painter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFESSIONAL_27 ?x2))
+
+	;; A PERSON MAY HAVE WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [10]>
+
+;; (GET THE FURNITURE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE FURNITURE YOU CHOOSE IS VERY IMPORTANT COMMA AS IT REALLY ADDS A PARISIAN FEEL TO YOUR ROOM)
+
+	;; FURNITURE CAN BE IMPORTANT.
+
+		(and (FURNITURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY CHOOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY ADD.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1))
+
+	;; A PARISIAN[PERSON??] MAY FEEL TO A ROOM.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FEEL_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (YOU SHOULD HAVE THE FOLLOWING ITEMS IN YOUR BEDROOM)
+
+	;; A PERSON MAY HAVE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; ITEMS CAN BE IN A BEDROOM.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BEDROOM_27 ?x2))
+
+	;; ITEMS CAN BE FOLLOWING.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (following_27 ?x2))
+
+	;; A PERSON MAY HAVE A BEDROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEDROOM_27 ?x1))
+
+;; (A BED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS BED SHOULD BE A WROUGHT-IRON BED COMMA AS THIS WILL REALLY MAKE IT FEEL LIKE PARIS)
+
+	;; A BED CAN BE A BED.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (bed_27 ?x2))
+
+	;; A BED CAN BE WROUGHT-IRON.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WROUGHT-IRON_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY FEEL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+;; (AS AN ALTERNATE IDEA COMMA YOU COULD ALSO USE A CANOPY BED)
+
+	;; A PERSON MAY USE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; AN IDEA CAN BE ALTERNATE.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTERNATE_27 ?x2))
+
+	;; A BED CAN BE CANOPY.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANOPY_27 ?x2))
+
+;; (AS AN ALTERNATE IDEA COMMA YOU COULD ALSO USE A CANOPY BED)
+
+	;; A PERSON MAY USE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; AN IDEA CAN BE ALTERNATE.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTERNATE_27 ?x2))
+
+	;; A BED CAN BE CANOPY.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANOPY_27 ?x2))
+
+;; (AS AN ALTERNATE IDEA COMMA YOU COULD ALSO USE A CANOPY BED)
+
+	;; A PERSON MAY USE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; AN IDEA CAN BE ALTERNATE.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTERNATE_27 ?x2))
+
+	;; A BED CAN BE CANOPY.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANOPY_27 ?x2))
+
+;; (AS AN ALTERNATE IDEA COMMA YOU COULD ALSO USE A CANOPY BED)
+
+	;; A PERSON MAY USE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; AN IDEA CAN BE ALTERNATE.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTERNATE_27 ?x2))
+
+	;; A BED CAN BE CANOPY.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANOPY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [11]>
+
+;; (LONG COMMA SKINNY COMMA CURVED LEGS ARE A GREAT IDEA)
+
+	;; LEGS CAN BE AN IDEA.
+
+		(and (leg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; LEGS CAN BE CURVED.
+
+		(and (leg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CURVED_27 ?x2))
+
+	;; AN IDEA CAN BE GREAT.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (IF YOU CA N T FIND A METAL BEDSIDE TABLE COMMA WOODEN IS FINE)
+
+	;; A PERSON MAY FIND A METAL BEDSIDE TABLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (METAL_27 ?x1) (BEDSIDE_27 ?x1) (TABLE_27 ?x1))
+
+;; (AFTER ALL COMMA METAL WAS N T ALWAYS USED)
+
+	;; METAL MAY BE USE -ED.
+
+		(and (METAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (DRESSER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SHOULD-2 DET A-4 DOBJ DRESSER-5 DET A-7 PREP_WITH MIRROR-8 PARTMOD ATTACHED-9)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DRESSER-2 AUX SHOULD-3 DET A-5 NSUBJ PARISIAN-6 CCOMP FEEL-7 PREP_TO IT-9)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THINK CHIC COMMA CLEAN COMMA CRISP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (A GLASS TOP -LRB- $ - ISH DOLLARS -RRB- IS ADORABLE AND VERY MATURE)
+
+	;; A GLASS TOP CAN BE ADORABLE.
+
+		(and (GLASS_27 ?x1) (TOP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADORABLE_27 ?x2))
+
+;; (PLUS IT S VERY PRETTY LOOKING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FOR HANDLES COMMA USE CRYSTAL OR GLASS KNOBS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DESK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (A-3 NN PARISIAN-4 NSUBJ FEEL-5 COP IS-6 DEP MUST-8)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PAINT YOUR FURNITURE)
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+;; (IF YOU RE ALLOWED TO COMMA PAINT YOUR FURNITURE THE SAME COLOR SO THAT IT ALL CO-INCIDES)
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY CO-INCIDE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CO-INCIDE_27 ?x1))
+
+;; (PAINT ALL OF YOUR FURNITURE EITHER WHITE/CREAM OR BLACK)
+
+	;; FURNITURE MAY HAVE A THING.
+
+		(and (FURNITURE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+;; (ACCENT YOUR FURNITURE WITH TOUCHES OF GOLD TO MAKE IT LOOK CLASSY)
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+	;; TOUCHES CAN BE CONSTITUTED_OF_OR_FILLED_WITH GOLD.
+
+		(and (touch_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (GOLD_27 ?x2))
+
+;; (FOR THE KNOBS ON THINGS LIKE YOUR DRAWERS COMMA LOOK FOR GLASS KNOBS COMMA AS THESE LOOK CLASSY AS WELL)
+
+	;; KNOBS CAN BE ON THINGS.
+
+		(and (KNOBS_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE DRAWERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DRAWERS_27 ?x1))
+
+	;; A LOOK MAY CLASS.
+
+		(and (LOOK_27 ?x1) (MAY_27 ?x1) (CLASS_27 ?x1))
+
+;; (IF GLASS COSTS TOO MUCH COMMA PLASTIC IS FINE)
+
+	;; PLASTIC CAN BE FINE.
+
+		(and (PLASTIC_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINE_27 ?x2))
+
+	;; GLASS COSTS CAN BE MUCH.
+
+		(and (GLASS_27 ?x1) (cost_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MUCH_27 ?x2))
+
+;; (YOU REALLY HAVE TO LOOK AND FEEL TO BE ABLE TO TELL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [12]>
+
+;; (GET SOME LIGHTING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU HAVE A CEILING LAMP COMMA REPLACE IT WITH A GLASS CHANDELIER)
+
+	;; A PERSON MAY HAVE A CEILING LAMP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CEILING_27 ?x1) (LAMP_27 ?x1))
+
+;; (THIS IS VERY FRENCH AND WILL HELP DRAW YOUR ROOM TOGETHER COMMA ESPECIALLY IF YOU USED GLASS OR PLASTIC DOORKNOBS)
+
+	;; A THING CAN BE FRENCH.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRENCH_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY USE GLASS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (GLASS_27 ?x1))
+
+;; (GET A DESK LAMP TOO COMMA WITH A SIMPLE WHITE/CREAM OR BLACK SHADE)
+
+	;; A WHITE/CREAM CAN BE SIMPLE.
+
+		(and (WHITE_2FCREAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A SHADE CAN BE BLACK.
+
+		(and (SHADE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+;; (DO N T FORGET THE CURTAINS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BUY A WROUGHT-IRON CURTAIN ROD AND SOME WHITE/CREAM OR SHEER BLACK CURTAINS)
+
+	;; A CURTAIN ROD CAN BE WROUGHT-IRON.
+
+		(and (CURTAIN_27 ?x1) (ROD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WROUGHT-IRON_27 ?x2))
+
+	;; CURTAINS CAN BE BLACK.
+
+		(and (curtain_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+;; (THEY KEY HERE IS SIMPLICITY)
+
+	;; INDIVIDUAL -S CAN BE A SIMPLICITY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SIMPLICITY_27 ?x2))
+
+;; (THIS IS JUST A FINISHING TOUCH TO YOUR ROOM)
+
+	;; A THING CAN BE A TOUCH TO A ROOM.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TOUCH_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (ROOM_27 ?x3))
+
+	;; A TOUCH CAN BE TO A ROOM.
+
+		(and (TOUCH_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A TOUCH CAN BE FINISHING.
+
+		(and (TOUCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINISHING_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (THIS IS JUST A FINISHING TOUCH TO YOUR ROOM)
+
+	;; A THING CAN BE A TOUCH TO A ROOM.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TOUCH_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (ROOM_27 ?x3))
+
+	;; A TOUCH CAN BE TO A ROOM.
+
+		(and (TOUCH_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A TOUCH CAN BE FINISHING.
+
+		(and (TOUCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINISHING_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))

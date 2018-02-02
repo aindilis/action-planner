@@ -1,0 +1,186 @@
+;; (DRAIN EXCESS WATER COMMA AND PUT THEM IN A LARGE BOWL)
+
+	;; WATER CAN BE EXCESS.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A BOWL CAN BE LARGE.
+
+		(and (BOWL_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (SEASON THE CHICKEN WINGS WITH DESIRED SEASONINGS)
+
+	;; SEASONINGS CAN BE DESIRED.
+
+		(and (seasoning_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESIRED_27 ?x2))
+
+;; (TAKE THE SEASONED CHICKEN AND PLACE IT IN THE HOT GREASE TO BEGIN THE FRYING)
+
+	;; A CHICKEN CAN BE SEASONED.
+
+		(and (CHICKEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEASONED_27 ?x2))
+
+	;; A GREASE CAN BE HOT.
+
+		(and (GREASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+;; (WHEN THE CHICKEN HAS BECOME GOLDEN BROWN COMMA TAKE IT OUT AND PUT IT ON A NAPKIN TO DRAIN THE GREASE)
+
+	;; A CHICKEN MAY BECOME BROWN.
+
+		(and (CHICKEN_27 ?x1) (MAY_27 ?x1) (BECOME_27 ?x1) (BROWN_27 ?x1))
+
+	;; BROWN CAN BE GOLDEN.
+
+		(and (BROWN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GOLDEN_27 ?x2))
+
+;; (POUR A CUP OF HOT SAUCE AND A HALF STICK OF BUTTER COMMA IN THE MEDIUM SKILLET COMMA UNTIL IT COMES TO A BOIL)
+
+	;; A CUP CAN BE CONSTITUTED_OF_OR_FILLED_WITH SAUCE.
+
+		(and (CUP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SAUCE_27 ?x2))
+
+	;; A SAUCE CAN BE HOT.
+
+		(and (SAUCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; A STICK CAN BE CONSTITUTED_OF_OR_FILLED_WITH BUTTER.
+
+		(and (STICK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BUTTER_27 ?x2))
+
+	;; A STICK CAN BE HALF.
+
+		(and (STICK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HALF_27 ?x2))
+
+	;; A SKILLET CAN BE MEDIUM.
+
+		(and (SKILLET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDIUM_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY COME TO A BOIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BOIL_27 ?x2))
+
+;; (NOTE  YOU MAY INCREASE THE AMOUNT OF HOT SAUCE AND BUTTER DEPENDING ON THE AMOUNT OF CHICKEN YOU ARE PREPARING PLACE THE CHICKEN INTO THE
+ COMBINED MIXTURE AND REDUCE THE HEAT SO THAT THE TEMPERATURE GOES DOWN)
+
+	;; A PERSON MAY INCREASE AN AMOUNT OF SAUCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INCREASE_27 ?x1) (AN_27 ?x1) (AMOUNT_27 ?x1) (of_27 ?x1 ?x2) (SAUCE_27 ?x2))
+
+	;; A SAUCE CAN BE HOT.
+
+		(and (SAUCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; A MIXTURE CAN BE COMBINED.
+
+		(and (MIXTURE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (combine_27 ?e2 ?x1))
+
+	;; THE TEMPERATURE MAY GO_DOWN.
+
+		(and (TEMPERATURE_27 ?x1) (MAY_27 ?x1) (GO_5FDOWN_27 ?x1))
+
+;; (THE WINGS ARE DONE WHEN THEY ARE SAUCED COMPLETELY AND THE SAUCE HAS THICKENED)
+
+	;; WINGS MAY BE DO -ED.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE SAUCE -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAUCE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A SAUCE MAY THICKEN.
+
+		(and (SAUCE_27 ?x1) (MAY_27 ?x1) (THICKEN_27 ?x1))
+
+;; (BUY A BAG OF FROZEN COMMA PRE-CUT WINGS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE TIPS ARE ALREADY GONE)
+
+	;; TIPS MAY BE GO -ED.
+
+		(and (tip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (AFTER THEY ARE THAWED COMMA DRAIN THE WINGS AND SPREAD THEM OUT ON A COOKIE SHEET THAT YOU HAVE SPRAYED WITH PAM)
+
+	;; INDIVIDUAL -S MAY BE THAW -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THAW_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY SPRAY WITH A FEMALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SPRAY_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (FEMALE_27 ?x1))
+
+;; (BAKE THE WINGS AT 350 FOR ABOUT HALF AN HOUR)
+
+	;; 
+
+	;; ((:I (:Q SOME NUMBER-OR-PORTION.N) FOR.P NIL))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (SOME_27 ?x1) (NUMBER-OR-PORTION_2EN_27 ?x1) (FOR_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE THE BAKED WINGS OUTSIDE AND PUT THEM ON A HOT GRILL TO CRISP THEM UP AND GIVE THEM THAT GRILLED TASTE)
+
+	;; WINGS CAN BE BAKED.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAKED_27 ?x2))
+
+	;; A GRILL CAN BE HOT.
+
+		(and (GRILL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; TASTE CAN BE GRILLED.
+
+		(and (TASTE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRILLED_27 ?x2))
+
+;; (THIS METHOD WILL RESULT IN BONELESS CHUNKS -LRB- NOT SO MUCH WINGS -RRB- TAKE A BONELESS CHICKEN BREAST COMMA AND CUT IT INTO SLICES
+ COMMA MAKE THEM FAIRLY THICK)
+
+	;; CHUNKS CAN BE BONELESS.
+
+		(and (chunk_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BONELESS_27 ?x2))
+
+	;; A CHICKEN BREAST CAN BE BONELESS.
+
+		(and (CHICKEN_27 ?x1) (BREAST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BONELESS_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE THICK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THICK_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [16]>
+
+;; (DROP THE CHUNKS INTO A 350 DEGREE DEEP FRYER FOR 4 MINUTES -LRB- OR MORE COMMA DEPENDING ON HOW CRISPY YOU WOULD LIKE THE BREADING TO BE)
+
+	;; CHUNKS MAY FRYER FOR SOME_NUMBER_OF MINUTES.
+
+		(and (CHUNKS_27 ?x1) (MAY_27 ?x1) (FRYER_27 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (MINUTES_27 ?x2))
+
+	;; CHUNKS CAN BE INTO SOME_NUMBER_OF DEGREE.
+
+		(and (chunk_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTO_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (DEGREE_27 ?x2))
+
+	;; A PERSON MAY LIKE A BREADING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (A_27 ?x1) (BREADING_27 ?x1))

@@ -1,0 +1,348 @@
+;; (SHELL OR SHUCK ANY SEAFOOD AND RESERVE IN SEPARATE CONTAINER)
+
+	;; A SEAFOOD CAN BE IN CONTAINER.
+
+		(and (SEAFOOD_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (CONTAINER_27 ?x2))
+
+	;; A CONTAINER CAN BE SEPARATE.
+
+		(and (CONTAINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+;; (STORE RAW AND COOKED SEAFOOD IN SEPARATE CONTAINERS)
+
+	;; A STORE[PERSON??] MAY RA.
+
+		(and (STORE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (RA_27 ?x1))
+
+	;; SEAFOOD CAN BE IN CONTAINERS.
+
+		(and (SEAFOOD_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (container_27 ?x2))
+
+	;; CONTAINERS CAN BE SEPARATE.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+;; (SLICE ANY SAUSAGE COMMA ANDOUILLE OR TASSO AND RESERVE IN SEPARATE CONTAINER)
+
+	;; A SAUSAGE CAN BE IN CONTAINER.
+
+		(and (SAUSAGE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (CONTAINER_27 ?x2))
+
+	;; A CONTAINER CAN BE SEPARATE.
+
+		(and (CONTAINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+;; (DETERMINE COMMA APPROXIMATELY COMMA HOW LARGE YOUR GUMBO WILL BE)
+
+	;; A GUMBO MAY BE.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A GUMBO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GUMBO_27 ?x1))
+
+;; (THERE WILL TYPICALLY BE TWICE AS MUCH VOLUME OF GUMBO AS YOU HAVE VOLUME OF MEAT)
+
+	;; A PERSON MAY HAVE VOLUME OF MEAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (VOLUME_27 ?x1) (of_27 ?x1 ?x2) (MEAT_27 ?x2))
+
+;; (MAKE ABOUT 1/2 CUP OF ROUX FOR EVERY ESTIMATED GALLON OR DESLIME AT LEAST 1 CUP OF OKRA FOR EVERY ESTIMATED GALLON)
+
+	;; SOME_NUMBER_OF CUP CAN BE CONSTITUTED_OF_OR_FILLED_WITH OKRA.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CUP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (OKRA_27 ?x2))
+
+	;; A CUP CAN BE ESTIMATED.
+
+		(and (CUP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESTIMATED_27 ?x2))
+
+	;; OKRA CAN BE FOR SOME_NUMBER_OF GALLON.
+
+		(and (OKRA_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (GALLON_27 ?x2))
+
+	;; A GALLON CAN BE ESTIMATED.
+
+		(and (GALLON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESTIMATED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; (GET OUT A POT LARGE ENOUGH TO HOLD MORE THAN YOUR ESTIMATED QUANTITY OF GUMBO - YOU WILL NEED ROOM TO STIR)
+
+	;; A POT CAN BE LARGE.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY HAVE A QUANTITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (QUANTITY_27 ?x1))
+
+	;; A QUANTITY CAN BE ESTIMATED.
+
+		(and (QUANTITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESTIMATED_27 ?x2))
+
+;; (FILL POT ABOUT 1/3 TO 1/2 OF THE WAY WITH STOCK)
+
+	;; A POT CAN BE FILL.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2))
+
+	;; A WAY CAN BE WITH STOCK.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (stock_27 ?x2))
+
+;; (BROWN THE ROUX SOMEWHERE BETWEEN PEANUT BUTTER TO DARK CHOCOLATE IN COLOR USING A WIRE WHISK)
+
+	;; A BROWN[PERSON??] MAY USE A WIRE WHISK.
+
+		(and (BROWN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (WIRE_27 ?x1) (WHISK_27 ?x1))
+
+	;; A BROWN[PERSON??] CAN BE BETWEEN PEANUT BUTTER.
+
+		(and (BROWN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (BETWEEN_27 ?x1) (PEANUT_27 ?x1) (BUTTER_27 ?x1))
+
+	;; CHOCOLATE CAN BE IN COLOR.
+
+		(and (CHOCOLATE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (COLOR_27 ?x2))
+
+	;; CHOCOLATE CAN BE DARK.
+
+		(and (CHOCOLATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [10]>
+
+;; (IMMEDIATELY ADD HALF OF THE DICED ONION COMMA CELERY COMMA BELL PEPPER MIXTURE TO THE ROUX/STOCK MIXTURE)
+
+	;; AN ONION CAN BE TO A ROUX/STOCK MIXTURE.
+
+		(and (ONION_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (ROUX_2FSTOCK_27 ?x2) (MIXTURE_27 ?x2))
+
+	;; AN ONION CAN BE DICED.
+
+		(and (ONION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DICED_27 ?x2))
+
+;; (BLEND WELL AND THEN ADD TO THE LARGE POT OF STOCK)
+
+	;; A BLEND[PERSON??] MAY ADD TO A POT OF STOCK.
+
+		(and (BLEND_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (ADD_27 ?x1) (to_27 ?x2) (A_27 ?x2) (POT_27 ?x2) (of_27 ?x2 ?x3) (stock_27 ?x3))
+
+	;; A POT CAN BE LARGE.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (ADD ANY MEAT THAT IS ALREADY COOKED TO THE STOCK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLACE THE POT ON A BACK BURNER ON THE STOVE COMMA AND BEGIN HEATING OVER MEDIUM-HIGH HEAT)
+
+	;; A BURNER CAN BE ON A STOVE.
+
+		(and (BURNER_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (STOVE_27 ?x2))
+
+	;; HEAT CAN BE MEDIUM-HIGH.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDIUM-HIGH_27 ?x2))
+
+;; (BROWN ANY UNCOOKED MEATS IN A SKILLET WHILE YOU RE WAITING FOR THE STOCK TO BOIL)
+
+	;; A BROWN[PERSON??] MAY MEAT IN A SKILLET.
+
+		(and (BROWN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (MEAT_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SKILLET_27 ?x2))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))
+
+;; (THIS REMOVES EXCESS FAT AND ENHANCES THE FLAVOR OF THE GUMBO)
+
+	;; A THING MAY REMOVE FAT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (FAT_27 ?x1))
+
+	;; FAT CAN BE EXCESS.
+
+		(and (FAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; A GUMBO MAY HAVE A FLAVOR.
+
+		(and (GUMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLAVOR_27 ?x1))

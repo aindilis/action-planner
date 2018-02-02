@@ -1,0 +1,699 @@
+$VAR1 = [
+          {
+            'ExtractedKnowledge' => [],
+            'Formalism' => '',
+            'Sentence' => '*** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'ATTEND\'',
+                                                                                            \*{'::?x1'}
+                                                                                          ],
+                                                                                          [
+                                                                                            '[\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'PERSON\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        },
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'MAY\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'REHEARSAL\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'AN ATTEND[PERSON??] MAY REHEARSAL.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q DET ATTEND.NAME) REHEARSAL.V))
+
+Break 1',
+            'Sentence' => '(ATTEND REHEARSALS)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'REHERSAL\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'be\'',
+                                                                                            \*{'::?e1'},
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            \*{'::?x2'}
+                                                                                          ],
+                                                                                          [
+                                                                                            'SINGLE\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A REHERSAL CAN BE SINGLE.'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'PERSON\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'MAY\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'HAVE\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'A\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'GROUP\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A PERSON MAY HAVE A GROUP.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q DET REHERSAL.N) SINGLE.A) (:I (:Q THE GROUP.N) (:F GET.V (:P USED.A (:P TO.P (:F KA NIL)))))
+ (:I (:Q DET PERSON*.N) HAVE.V (:Q DET GROUP.N)))
+
+Break 1',
+            'Sentence' => '(GO TO EVERY SINGLE REHERSAL COMMA OR AS MANY AS YOU CAN TO HELP YOUR GROUP GET USED TO PLAYING WITH EACH OTHER)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'WARDROBE\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'be\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][1],
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'READY\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'BEFORE\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'A\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'DAY\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'of\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3],
+                                                                                            \*{'::?x3'}
+                                                                                          ],
+                                                                                          [
+                                                                                            'A\'',
+                                                                                            $VAR1->[3]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][7][2]
+                                                                                          ],
+                                                                                          [
+                                                                                            'CONCERT\'',
+                                                                                            $VAR1->[3]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][7][2]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A WARDROBE CAN BE READY BEFORE A DAY OF A CONCERT.'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'PERSON\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'MAY\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'HAVE\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'A\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'WARDROBE\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A PERSON MAY HAVE A WARDROBE.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q THE WARDROBE.N) READY.A (:P BEFORE.P (:A (:Q THE DAY.N) (:P OF.P (:Q THE CONCERT.N)))))
+ (:I (:Q DET PERSON*.N) HAVE.V (:Q DET WARDROBE.N)) NIL)
+
+Break 1',
+            'Sentence' => '(MAKE SURE YOU HAVE YOUR WARDROBE READY BEFORE THE DAY OF THE CONCERT)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => ''
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          [
+                                                                                            'NIL\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'NIL'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Reasons' => {
+                                                                                         'Number of logic forms is zero' => 1
+                                                                                       },
+                                                                          'Success' => 0
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => '______________________________________________________________________'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'Break\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            '-LCB-\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][1],
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            '-RCB-\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            '>\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'Break 1 [3]>'
+                                      }
+                                    ],
+            'Formalism' => '',
+            'Sentence' => '(WHAT YOU RE WEARING TO PERFORM IS VERY IMPORTANT)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => ''
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          [
+                                                                                            'NIL\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'NIL'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Reasons' => {
+                                                                                         'Number of logic forms is zero' => 1
+                                                                                       },
+                                                                          'Success' => 0
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => '______________________________________________________________________'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'Break\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            '-LCB-\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][1],
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            '-RCB-\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            '>\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'Break 1 [3]>'
+                                      }
+                                    ],
+            'Formalism' => '',
+            'Sentence' => '(YOU MIGHT HAVE TO WEAR SOMETHING SPECIFIC COMMA SUCH AS A TUXEDO)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => ''
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          [
+                                                                                            'NIL\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => '(NIL)'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Reasons' => {
+                                                                                         'Number of logic forms is zero' => 1
+                                                                                       },
+                                                                          'Success' => 0
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => '______________________________________________________________________'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'Break\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            '-LCB-\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][1],
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            '-RCB-\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            '>\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'Break 1 [3]>'
+                                      }
+                                    ],
+            'Formalism' => '',
+            'Sentence' => '(GET ALL THIS STUFF BEFORE THE DAY OF THE CONCERT)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'INSTRUMENT\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'be\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][1],
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'READY\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'AN INSTRUMENT CAN BE READY.'
+                                      },
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'PERSON\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'MAY\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'HAVE\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'AN\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'INSTRUMENT\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A PERSON MAY HAVE AN INSTRUMENT.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q THE INSTRUMENT.N) READY.A) (:I (:Q DET PERSON*.N) HAVE.V (:Q DET INSTRUMENT.N)))
+
+Break 1',
+            'Sentence' => '(HAVE YOUR INSTRUMENT READY THE DAY OF THE CONCERT)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'CONCERT\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'MAY\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'UNDERGO\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'STRINGS\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A CONCERT MAY UNDERGO STRINGS.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q DET CONCERT.N) UNDERGO.V (:Q DET (:F PLUR STRING.N))))
+
+Break 1',
+            'Sentence' => '(TRY NOT TO DO ANYTHING LAST MINUTE COMMA LIKE CHANGING THE STRINGS THE DAY OF THE CONCERT)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'PERSON\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'MAY\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'HAVE\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'INSTRUMENTS\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'A PERSON MAY HAVE INSTRUMENTS.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q DET PERSON*.N) HAVE.V (:Q DET (:F PLUR INSTRUMENT.N))))
+
+Break 1',
+            'Sentence' => '(BE ON TIME TO THE CONCERT SO AS TO TUNE UP YOUR INSTRUMENTS WITH THE GROUP)'
+          },
+          {
+            'ExtractedKnowledge' => [
+                                      {
+                                        'Overwrite' => 0,
+                                        'Formalism' => {
+                                                         'Results' => [
+                                                                        {
+                                                                          'Output' => [
+                                                                                        [
+                                                                                          'and',
+                                                                                          [
+                                                                                            'one\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'be\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][1],
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1]
+                                                                                          ],
+                                                                                          [
+                                                                                            'in\'',
+                                                                                            $VAR1->[1]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][1][1],
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'A\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ],
+                                                                                          [
+                                                                                            'CONCERT\'',
+                                                                                            $VAR1->[2]{'ExtractedKnowledge'}[0]{'Formalism'}{'Results'}[0]{'Output'}[0][2][3]
+                                                                                          ]
+                                                                                        ]
+                                                                                      ],
+                                                                          'Success' => 1
+                                                                        }
+                                                                      ],
+                                                         'Success' => 1
+                                                       },
+                                        'Sentence' => 'ONES CAN BE IN A CONCERT.'
+                                      }
+                                    ],
+            'Formalism' => '((:I (:Q THE (:F PLUR ONE.N)) IN.P (:Q THE CONCERT.N)))
+
+Break 1',
+            'Sentence' => '(REMEMBER YOU ARE THE ONES IN THE CONCERT COMMA AND NOT ATTENDING IT)'
+          }
+        ];

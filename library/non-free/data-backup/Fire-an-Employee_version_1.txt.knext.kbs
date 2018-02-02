@@ -1,0 +1,336 @@
+;; (BE SURE OF YOUR STANDING)
+
+	;; A PERSON MAY HAVE A STANDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (standing_27 ?x1))
+
+;; (UNLESS YOU ARE THE COMPANY OWNER COMMA KNOW YOUR EMPLOYER S RULES ABOUT FIRING SOMEONE COMMA AS THERE MAY BE SPECIFIC STEPS YOU ARE REQUIRED TO TAKE IN ORDER TO ACTUALLY FIRE SOMEONE - EVEN IF THE EMPLOYEE IS
+ NOT DOING THE JOB)
+
+	;; A PERSON CAN BE COMPANY OWNER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPANY_27 ?x2) (OWNER_27 ?x2))
+
+	;; AN EMPLOYER MAY HAVE RULES.
+
+		(and (EMPLOYER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RULES_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EMPLOYER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EMPLOYER_27 ?x1))
+
+	;; AN EMPLOYEE MAY DO A JOB.
+
+		(and (EMPLOYEE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (JOB_27 ?x1))
+
+;; (NEVER UNDERMINE YOUR EMPLOYER BY TAKING ON SUCH DECISIONS WITHOUT AT LEAST CONFERRING WITH HIM FIRST)
+
+	;; A PERSON MAY HAVE AN EMPLOYER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EMPLOYER_27 ?x1))
+
+;; (ACT QUICKLY WHEN PROBLEMS ARE NOTICED)
+
+	;; PROBLEMS MAY BE NOTICE -ED.
+
+		(and (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NOTICE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (BE SURE TO COMMUNICATE PERFORMANCE PROBLEMS AS SOON AS YOU ARE AWARE OF THEM COMMA AND COACH STAFFERS ON HOW TO IMPROVE)
+
+	;; A PERSON CAN BE AWARE OF INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AWARE_27 ?x2) (of_27 ?x2 ?x3) (INDIVIDUAL_27 ?x3) (kbs2_kif_quote_2DS_27 ?x3))
+
+;; (IT S BEST TO COMMUNICATE THIS OVER EMAIL -LRB- ASK THEM ALL WHO RECEIVE IT TO REPLY SO THAT YOU KNOW THEY HAVE RECEIVED AND UNDERSTOOD -RRB- SO THAT THERE IS SOME RECORD OF THIS COMMUNICATION)
+
+	;; A THING CAN BE OVER EMAIL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (EMAIL_27 ?x2))
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; INDIVIDUAL -S MAY RECEIVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (RECEIVE_27 ?x1))
+
+	;; A COMMUNICATION MAY HAVE A RECORD.
+
+		(and (COMMUNICATION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RECORD_27 ?x1))
+
+;; (WHEN YOU COUNSEL AN EMPLOYEE COMMA FOCUS ON BEHAVIOR)
+
+	;; A PERSON MAY COUNSE AN EMPLOYEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COUNSE_27 ?x1) (AN_27 ?x1) (EMPLOYEE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [11]>
+
+;; (RETAIN A RECORD OF THE DISCIPLINARY ACTION)
+
+	;; AN ACTION MAY HAVE A RECORD.
+
+		(and (ACTION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RECORD_27 ?x1))
+
+	;; AN ACTION CAN BE DISCIPLINARY.
+
+		(and (ACTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISCIPLINARY_27 ?x2))
+
+;; (HAVE THE EMPLOYEE SIGN SOME SORT OF DOCUMENT OUTLINING THE CONVERSATION IN ORDER TO COVER YOURSELF)
+
+	;; AN EMPLOYEE MAY SIGN SOME_NUMBER_OF SORT OF DOCUMENT.
+
+		(and (EMPLOYEE_27 ?x1) (MAY_27 ?x1) (SIGN_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (SORT_27 ?x1) (of_27 ?x1 ?x2) (DOCUMENT_27 ?x2))
+
+	;; DOCUMENT MAY OUTLINE A CONVERSATION.
+
+		(and (DOCUMENT_27 ?x1) (MAY_27 ?x1) (OUTLINE_27 ?x1) (A_27 ?x1) (CONVERSATION_27 ?x1))
+
+;; (IT SHOULD SPECIFICALLY STATE THAT THE EMPLOYEE IS NOT ADMITTING FAULT COMMA BUT HAS BEEN TOLD THAT JOB PERFORMANCE IS NOT SATISFACTORY)
+
+	;; A THING-REFERRED-TO MAY STATE A PROPOSITION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (STATE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; AN EMPLOYEE MAY ADMIT FAULT.
+
+		(and (EMPLOYEE_27 ?x1) (MAY_27 ?x1) (ADMIT_27 ?x1) (FAULT_27 ?x1))
+
+	;; JOB PERFORMANCE CAN BE SATISFACTORY.
+
+		(and (JOB_27 ?x1) (PERFORMANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SATISFACTORY_27 ?x2))
+
+;; (OUTLINE SPECIFIC IMPROVEMENTS / CHANGES REQUIRED IN ORDER FOR HIM OR HER TO KEEP THIS JOB COMMA AND GIVE CLEAR DEADLINES AS TO WHEN THESE IMPROVEMENTS / CHANGES MUST BE SEEN)
+
+	;; IMPROVEMENTS MAY /.
+
+		(and (improvement_27 ?x1) (kbs2_kif_quote_2DSLASH-_27 ?e1 ?x1))
+
+	;; IMPROVEMENTS CAN BE OUTLINE.
+
+		(and (improvement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTLINE_27 ?x2))
+
+	;; CHANGES MAY REQUIRE IN ORDER.
+
+		(and (CHANGES_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (in_27 ?x1 ?x2) (ORDER_27 ?x2))
+
+	;; DEADLINES CAN BE CLEAR.
+
+		(and (deadline_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+	;; IMPROVEMENTS MAY /.
+
+		(and (improvement_27 ?x1) (kbs2_kif_quote_2DSLASH-_27 ?e1 ?x1))
+
+	;; CHANGES MAY BE SEE -ED.
+
+		(and (change_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ALSO BE CLEAR THAT THE NEXT STAGE IS TERMINATION)
+
+	;; A STAGE CAN BE A TERMINATION.
+
+		(and (stage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TERMINATION_27 ?x2))
+
+;; (GIVE BENCHMARKS TO MEET)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CA N T EXPECT ALL PROBLEMS TO BE SOLVED IMMEDIATELY COMMA SO GIVING A TIMELINE AND SOME IMPROVEMENTS ATTACHED TO DEADLINES WILL HELP SHOW IMPROVEMENT -LRB- OR NOT -RRB-)
+
+	;; IMPROVEMENTS MAY BE ATTACH -ED TO DEADLINES.
+
+		(and (improvement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTACH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (deadline_27 ?x3))
+
+;; (IF THE EMPLOYEE CONTINUES TO UNDERPERFORM COMMA BE SURE HE OR SHE UNDERSTANDS THAT IMPROVEMENTS MUST MATCH BENCHMARKS OR THE EMPLOYEE WILL FAIL TO MEET EXPECTATIONS AND BE TERMINATED)
+
+	;; A MALE MAY UNDERSTAND A PROPOSITION.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (UNDERSTAND_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; IMPROVEMENTS MAY MATCH.
+
+		(and (improvement_27 ?x1) (MAY_27 ?x1) (MATCH_27 ?x1))
+
+;; (MAKE A PLAN ON HOW YOU WILL PROCEED WITHOUT THIS EMPLOYEE)
+
+	;; A PERSON MAY PROCEED WITHOUT AN EMPLOYEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PROCEED_27 ?x1) (WITHOUT_27 ?x1) (AN_27 ?x1) (EMPLOYEE_27 ?x1))
+
+;; (THINK ABOUT THAT JOB S RESPONSIBILITIES AND BE READY TO ASSIGN THEM TO SOMEONE ELSE)
+
+	;; A JOB MAY HAVE RESPONSIBILITIES.
+
+		(and (JOB_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESPONSIBILITIES_27 ?x1))
+
+;; (PREPARE TO FIRE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHOOSE SOMEWHERE PRIVATE BUT ALWAYS KEEP IN MIND FIRING ONE EMPLOYEE SHOULD NOT HURT INTEREST OF CO-WORKERS WORKING THAT EMPLOYEE)
+
+	;; AN EMPLOYEE MAY HURT INTEREST OF CO-WORKERS.
+
+		(and (EMPLOYEE_27 ?x1) (MAY_27 ?x1) (HURT_27 ?x1) (INTEREST_27 ?x1) (of_27 ?x1 ?x2) (CO-WORKERS_27 ?x2))
+
+	;; CO-WORKERS MAY WORK AN EMPLOYEE.
+
+		(and (CO-WORKERS_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1) (AN_27 ?x1) (EMPLOYEE_27 ?x1))
+
+;; (READY -LRB- YOUR OPENING STATEMENT -RRB-)
+
+	;; A PERSON MAY HAVE A STATEMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STATEMENT_27 ?x1))
+
+	;; A STATEMENT CAN BE OPENING.
+
+		(and (STATEMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPENING_27 ?x2))
+
+;; (TELL THE EMPLOYEE THE PURPOSE OF THE MEETING WITHIN 30 SECONDS OF THEM ENTERING THE ROOM)
+
+	;; A MEETING MAY HAVE A PURPOSE.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURPOSE_27 ?x1))
+
+	;; A MEETING CAN BE WITHIN SOME_NUMBER_OF SECONDS.
+
+		(and (meeting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITHIN_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SECONDS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY ENTER A ROOM.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (BY DRAGGING IT OUT COMMA YOU ARE JUST TORTURING THE EMPLOYEE AND YOURSELF)
+
+	;; A PERSON MAY TORTURE AN EMPLOYEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TORTURE_27 ?x1) (AN_27 ?x1) (EMPLOYEE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [12]>
+
+;; (AIM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (N T-2 NSUBJ IT-4 AUX TO-5 XCOMP GO-6 PRT ON-7)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE EMPLOYEE IS NOW PRETTY LIKELY TO BE AWARE OF YOUR ULTIMATE PURPOSE COMMA SO TAKE AIM EARLY AND TELL HIM OR HER THE TRUTH WITHOUT GOING INTO A LOT OF DETAILS)
+
+	;; AN EMPLOYEE CAN BE LIKELY.
+
+		(and (EMPLOYEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIKELY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PURPOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURPOSE_27 ?x1))
+
+	;; A PURPOSE CAN BE ULTIMATE.
+
+		(and (PURPOSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ULTIMATE_27 ?x2))
+
+;; (YOU DO N T NEED TO DELINEATE ALL OF YOUR REASONS - THOSE CAN BE STATED IN A LETTER IF YOU SO DESIRE COMMA AND FRANKLY COMMA THE LESS YOU SAY COMMA THE BETTER)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; REASONS MAY HAVE A THING.
+
+		(and (reason_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE REASONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (REASONS_27 ?x1))
+
+	;; A THING MAY BE STATE -ED IN A LETTER.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (LETTER_27 ?x3))
+
+	;; A PERSON MAY DESIRE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DESIRE_27 ?x1))
+
+	;; A PERSON MAY SAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; (DESPITE REPEATED WARNINGS AND COUNSELING COMMA YOU REALLY HAVE N T MADE SUFFICIENT IMPROVEMENTS)
+
+	;; A PERSON MAY MAKE IMPROVEMENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (IMPROVEMENTS_27 ?x1))
+
+	;; WARNINGS CAN BE REPEATED.
+
+		(and (warning_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPEATED_27 ?x2))
+
+	;; IMPROVEMENTS CAN BE SUFFICIENT.
+
+		(and (improvement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUFFICIENT_27 ?x2))

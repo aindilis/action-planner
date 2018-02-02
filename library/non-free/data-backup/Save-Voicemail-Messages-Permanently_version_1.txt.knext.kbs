@@ -1,0 +1,323 @@
+;; (SOME PLANS CHARGE A MONTHLY FEE COMMA WHILE OTHERS COMMA LIKE SKYPE COMMA CHARGE BY THE CALL)
+
+	;; SOME_NUMBER_OF PLANS MAY CHARGE A FEE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLANS_27 ?x1) (MAY_27 ?x1) (CHARGE_27 ?x1) (A_27 ?x1) (FEE_27 ?x1))
+
+	;; A FEE CAN BE MONTHLY.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MONTHLY_27 ?x2))
+
+	;; OTHERS MAY CHARGE BY A CALL.
+
+		(and (other_27 ?x1) (MAY_27 ?x1) (CHARGE_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (CALL_27 ?x1))
+
+;; (SUBSCRIBE TO THE SERVICE COMMA THEN FOLLOW THE INSTRUCTIONS TO ACTIVATE AND USE IT)
+
+	;; A SUBSCRIBE[PERSON??] CAN BE TO A SERVICE.
+
+		(and (SUBSCRIBE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (to_27 ?x1) (A_27 ?x1) (SERVICE_27 ?x1))
+
+;; (TURN OFF ALL EXTERNAL MICROPHONES ON YOUR COMPUTER TO AVOID PICKING UP BACKGROUND NOISE)
+
+	;; SOME_NUMBER_OF MICROPHONES CAN BE ON A COMPUTER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MICROPHONES_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (computer_27 ?x2))
+
+	;; MICROPHONES CAN BE EXTERNAL.
+
+		(and (microphone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTERNAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+;; (CALL YOUR ANSWERING MACHINE OR VOICEMAIL BOX FROM THE COMPUTER)
+
+	;; A PERSON MAY HAVE AN ANSWERING MACHINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ANSWERING_27 ?x1) (MACHINE_27 ?x1))
+
+;; (DOWNLOAD RECORDING SOFTWARE LIKE WAVE PAD OR FAST RECORDER)
+
+	;; SOFTWARE CAN BE DOWNLOAD.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOWNLOAD_27 ?x2))
+
+	;; SOFTWARE CAN BE RECORDING.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORDING_27 ?x2))
+
+;; (START THE RECORDING SOFTWARE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FOLLOW THE MANUFACTURER S DIRECTIONS TO CHOOSE THE BEST SETTINGS)
+
+	;; A MANUFACTURER MAY BE DIRECTIONS.
+
+		(and (MANUFACTURER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRECTIONS_27 ?x2))
+
+	;; SETTINGS CAN BE BEST.
+
+		(and (setting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (PLAY THE MESSAGE IN WINDOWS MEDIA PLAYER OR OTHER AUDIO SOFTWARE TO CHECK THE SOUND QUALITY)
+
+	;; A MESSAGE CAN BE IN A WINDOWS_MEDIA_PLAYER[PERSON??].
+
+		(and (MESSAGE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (WINDOWS_5FMEDIA_5FPLAYER_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOFTWARE CAN BE AUDIO.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AUDIO_27 ?x2))
+
+	;; A QUALITY CAN BE SOUND.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+;; (MAKE ADJUSTMENTS TO THE RECORDING SOFTWARE AND RE-RECORD IF NECESSARY)
+
+	;; SOFTWARE CAN BE RECORDING.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORDING_27 ?x2))
+
+;; (SAVE THE RECORDED MESSAGE AS A WAV COMMA MP3 OR OTHER SOUND FILE)
+
+	;; A MESSAGE CAN BE RECORDED.
+
+		(and (MESSAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORDED_27 ?x2))
+
+	;; A FILE CAN BE SOUND.
+
+		(and (FILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+;; (LOOK FOR RECORDING EQUIPMENT THAT CONNECTS TO YOUR COMPUTER AND A TELEPHONE ADAPTER)
+
+	;; EQUIPMENT CAN BE RECORDING.
+
+		(and (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORDING_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+;; (THESE CAN BE FOUND ONLINE OR AT STORES LIKE RADIO SHACK)
+
+	;; A THING MAY BE FIND -ED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (PLUG ONE END INTO THE JACK ON THE PHONE AND ONE INTO THE MIC JACK ON THE COMPUTER)
+
+	;; A JACK CAN BE ON A PHONE.
+
+		(and (JACK_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (PHONE_27 ?x2))
+
+	;; A MIC JACK CAN BE ON A COMPUTER.
+
+		(and (MIC_27 ?x1) (JACK_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (computer_27 ?x2))
+
+;; (START THE RECORDING SOFTWARE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DIAL YOUR VOICEMAIL BOX FROM THE PHONE)
+
+	;; A PERSON MAY HAVE A BOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOX_27 ?x1))
+
+	;; A BOX CAN BE VOICEMAIL.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOICEMAIL_27 ?x2))
+
+;; (BEGIN THE RECORDING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [17]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE THE MIC OR WAVE OUT SETTING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SAVE THE RECORDED MESSAGE AS A SOUND FILE)
+
+	;; A MESSAGE CAN BE AS A FILE.
+
+		(and (MESSAGE_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (A_27 ?x2) (FILE_27 ?x2))
+
+	;; A MESSAGE CAN BE RECORDED.
+
+		(and (MESSAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORDED_27 ?x2))
+
+	;; A FILE CAN BE SOUND.
+
+		(and (FILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+;; (TEST THE MESSAGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [20]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLAY IT BACK WITH AUDIO SOFTWARE TO CHECK THE SOUND QUALITY)
+
+	;; A THING-REFERRED-TO MAY BACK WITH SOFTWARE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (BACK_27 ?x1) (WITH_27 ?x1) (SOFTWARE_27 ?x1))
+
+	;; SOFTWARE CAN BE AUDIO.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AUDIO_27 ?x2))
+
+	;; A QUALITY CAN BE SOUND.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+;; (MAKE ADJUSTMENTS AND RE-RECORD IF NECESSARY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [22]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LOOK INTO SERVICES THAT SPECIALIZE IN RECORDING VOICEMAIL TO AUDIO FILES)
+
+	;; VOICEMAIL CAN BE TO FILES.
+
+		(and (VOICEMAIL_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (file_27 ?x2))
+
+	;; A VOICEMAIL CAN BE RECORDING.
+
+		(and (VOICEMAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORDING_27 ?x2))
+
+	;; FILES CAN BE AUDIO.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AUDIO_27 ?x2))
+
+;; (COMPARE SYSTEMS COMMA PRICES AND FEATURES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THERE ARE VIRTUAL PHONE SYSTEMS AND VOICEMAIL TRANSFER SYSTEMS LIKE GOT VOICE OR DECIPHER VOICEMAIL THAT SAVE MESSAGES TO AUDIO FILES)
+
+	;; PHONE SYSTEMS CAN BE VIRTUAL.
+
+		(and (PHONE_27 ?x1) (SYSTEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VIRTUAL_27 ?x2))
+
+	;; FILES CAN BE AUDIO.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AUDIO_27 ?x2))
+
+;; (OTHERS COMMA LIKE VOICE CLOUD COMMA CONVERT VOICEMAIL TO TEXT AND SEND IT AS AN EMAIL ATTACHMENT)
+
+	;; AN ATTACHMENT CAN BE EMAIL.
+
+		(and (ATTACHMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (LOOK FOR SYSTEMS THAT OFFER A FREE TRIAL PERIOD SO YOU CAN SEE IF YOU LIKE THEM BEFORE MAKING A LONG TERM COMMITMENT)
+
+	;; A TRIAL PERIOD CAN BE FREE.
+
+		(and (trial_27 ?x1) (period_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+	;; A PERSON MAY SEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1))
+
+	;; A PERSON MAY LIKE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; A TERM COMMITMENT CAN BE LONG.
+
+		(and (TERM_27 ?x1) (COMMITMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (SAVE THE VOICEMAIL AUDIO FILES THE COMPANY SENDS YOU TO A SPECIFIC PLACE ON YOUR HARD DRIVE)
+
+	;; AN AUDIO CAN BE VOICEMAIL.
+
+		(and (AUDIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOICEMAIL_27 ?x2))
+
+	;; A COMPANY MAY SEND A PERSON TO A PLACE.
+
+		(and (COMPANY_27 ?x1) (MAY_27 ?x1) (SEND_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PLACE_27 ?x2))
+
+	;; A PLACE CAN BE ON A DRIVE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (DRIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE A DRIVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRIVE_27 ?x1))
+
+	;; A DRIVE CAN BE HARD.
+
+		(and (DRIVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))

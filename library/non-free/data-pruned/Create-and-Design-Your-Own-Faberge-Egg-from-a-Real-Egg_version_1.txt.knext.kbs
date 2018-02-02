@@ -1,0 +1,168 @@
+;; (USETAKE THE EGG AND PLACE THE STRAIGHT PIN ON THE SMALLER SIDE OF THE EGG)
+
+	;; A PIN CAN BE STRAIGHT.
+
+		(and (PIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRAIGHT_27 ?x2))
+
+	;; AN EGG MAY HAVE A SIDE.
+
+		(and (EGG_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+	;; A SIDE CAN BE SMALLER.
+
+		(and (SIDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (TAKE THE HAMMER AND LIGHTLY TAP THE END OF THE PIN UNTIL IS MAKES A SMALL HOLE IN THE END OF THE EGG)
+
+	;; A PIN MAY HAVE AN END.
+
+		(and (PIN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+	;; A HOLE CAN BE SMALL.
+
+		(and (HOLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; AN EGG MAY HAVE AN END.
+
+		(and (EGG_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+;; (TAKE THE PIN AND PUT IT IN THE EGG TO BREAK THE YOLK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS WILL MAKE IT EASIER FOR DRAINING THE EGG)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) EASIER.A (:P FOR.P (:F KA NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (EASIER_2EA_27 ?x2) (P_27 ?x3) (FOR_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TURN THE EGG SO THAT THE PINHOLE END IS ON BOTTOM AND LET THE YOLK DRAIN OUT)
+
+	;; AN END CAN BE ON BOTTOM.
+
+		(and (END_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (BOTTOM_27 ?x2))
+
+	;; AN END CAN BE PINHOLE.
+
+		(and (END_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PINHOLE_27 ?x2))
+
+;; (IT MAY TAKE A WHILE FOR THE EGG TO DRAIN AND YOU MAY HAVE TO HELP IT ALONG BY MOVING THE PIN AROUND THE HOLE SLIGHTLY)
+
+	;; A THING-REFERRED-TO MAY TAKE A WHILE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (WHILE_27 ?x1))
+
+	;; A PIN CAN BE AROUND A HOLE.
+
+		(and (PIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HOLE_27 ?x2))
+
+;; (AFTER THE EGG HAS DRAINED COMMA RINSE THE EGG OUT BY RUNNING WATER INTO THE EXISTING HOLE AND THEN TURN IT BACK OVER TO DRAIN)
+
+	;; AN EGG MAY DRAIN.
+
+		(and (EGG_27 ?x1) (MAY_27 ?x1) (DRAIN_27 ?x1))
+
+	;; A HOLE CAN BE EXISTING.
+
+		(and (HOLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+;; (AFTER IT IS CLEAN COMMA LET IT DRY THOROUGHLY)
+
+	;; A THING-REFERRED-TO CAN BE CLEAN.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (WHEN THE EGG IS DRY YOU CAN DRAW YOUR FAVORITE DESIGN COMMA SOMETHING YOU COLLECT IN SPORTS MEMORABILIA COMMA OR MAYBE YOUR HIGH SCHOOL
+ MASCOT)
+
+	;; AN EGG CAN BE DRY.
+
+		(and (EGG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+	;; A PERSON MAY DRAW A DESIGN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRAW_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESIGN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+	;; A DESIGN CAN BE FAVORITE.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SCHOOL MASCOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1) (MASCOT_27 ?x1))
+
+	;; A SCHOOL MASCOT CAN BE HIGH.
+
+		(and (SCHOOL_27 ?x1) (MASCOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (IT IS BEST TO DRAW ON THE EGG WITH A PENCIL COMMA AND REMEMBER TO DRAW LIGHTLY)
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; AN EGG CAN BE WITH A PENCIL.
+
+		(and (EGG_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PENCIL_27 ?x2))
+
+;; (PAINT THE DESIGN YOU DREW)
+
+	;; A PERSON MAY DRAW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRAW_27 ?x1))
+
+;; (THE TYPE OF PAINT YOU USE IS IMPORTANT BECAUSE YOU WANT SOMETHING THAT WILL LAST AND THAT WILL STICK TO THE EGG)
+
+	;; A TYPE OF PAINT CAN BE IMPORTANT.
+
+		(and (TYPE_27 ?x1) (of_27 ?x1 ?x2) (PAINT_27 ?x2) (be_27 ?e1 ?x1 ?x3) (IMPORTANT_27 ?x3))
+
+	;; A PERSON MAY USE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; A PERSON MAY WANT SOMETHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (SOMETHING_27 ?x1))
+
+;; (SPRAY THE EGG WITH CLEAR ENAMEL SPRAY AND LET DRY THOROUGHLY)
+
+	;; AN EGG MAY SPRA.
+
+		(and (EGG_27 ?x1) (MAY_27 ?x1) (SPRA_27 ?x1))
+
+	;; AN EGG CAN BE WITH ENAMEL.
+
+		(and (EGG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (ENAMEL_27 ?x2))
+
+	;; AN ENAMEL CAN BE CLEAR.
+
+		(and (ENAMEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+;; (THIS WILL MAKE THE EGG SHINE)
+
+	;; A THING MAY MAKE AN EGG SHINE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (AN_27 ?x1) (EGG_27 ?x1) (SHINE_27 ?x1))

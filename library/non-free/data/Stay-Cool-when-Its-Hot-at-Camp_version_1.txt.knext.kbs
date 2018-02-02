@@ -1,0 +1,390 @@
+;; (NOT ONLY WILL YOU BE REFRESHED COMMA ALL OF YOUR FELLOW CAMPERS WILL APPRECIATE THE WATER COMMA ESPECIALLY IF THEY DID N T BRING ANY WATER FOR THEIR OWN)
+
+	;; SOME_NUMBER_OF THING OF CAMPERS MAY APPRECIATE WATER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (CAMPERS_27 ?x2) (MAY_27 ?x2) (APPRECIATE_27 ?x2) (WATER_27 ?x2))
+
+	;; CAMPERS MAY HAVE A THING.
+
+		(and (camper_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE CAMPERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CAMPERS_27 ?x1))
+
+	;; CAMPERS CAN BE FELLOW.
+
+		(and (camper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FELLOW_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (WATER COOLS THE BODY)
+
+	;; A WATER[PERSON??] MAY COOL A BODY.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (COOL_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (THE MORE YOU DRINK COMMA THE MORE YOU CAN SWEAT COMMA MAKING YOU COOLER IN THE LONG RUN)
+
+	;; A PERSON MAY SWEAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SWEAT_27 ?x1))
+
+	;; A PERSON MAY DRINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRINK_27 ?x1))
+
+	;; A RUN CAN BE LONG.
+
+		(and (RUN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (THERE IS A POINT WHERE YOU CAN OVER DO IT COMMA SO BE CAREFUL)
+
+	;; A PERSON MAY DO A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (BANDANNA MADE INTO A COOL TIE BRING SOMETHING TO WIPE YOURSELF OFF AS YOUR HIKE COMMA YOU ARE GOING TO SWEAT A LOT)
+
+	;; A BANDANNA[PERSON??] MAY MAKE INTO A SOMETHING.
+
+		(and (BANDANNA_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAKE_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (something_27 ?x1))
+
+	;; A COOL_TIE_BRING[PERSON??] MAY HAVE A SOMETHING.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (something_27 ?x1))
+
+	;; A PERSON MAY HAVE A HIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HIKE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (BRING 2 OR 3 LARGE BANDANNAS COMMA THE KIND YOU FIND IN DEPARTMENT STORES)
+
+	;; A PERSON MAY FIND IN DEPARTMENT STORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (in_27 ?x1 ?x2) (DEPARTMENT_27 ?x2) (STORES_27 ?x2))
+
+;; (SOAK ONE IN COOL WATER FROM THE SINK COMMA ROLL IT UP COMMA AND TIE IT LIGHTLY AROUND YOUR NECK)
+
+	;; WATER CAN BE COOL.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COOL_27 ?x2))
+
+	;; A PERSON MAY HAVE A NECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+;; (AS THE WATER EVAPORATES IT WILL CARRY OFF HEAT)
+
+	;; A THING-REFERRED-TO MAY CARRY_OFF HEAT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CARRY_5FOFF_27 ?x1) (HEAT_27 ?x1))
+
+;; (TAKE ANOTHER AND WRAP IT AROUND YOUR WATER BOTTLE)
+
+	;; A PERSON MAY HAVE A WATER BOTTLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WATER_27 ?x1) (BOTTLE_27 ?x1))
+
+;; (IT WILL SOAK UP THE CONDENSATION FROM THE BOTTLE)
+
+	;; A THING-REFERRED-TO MAY SOAK_UP A CONDENSATION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SOAK_5FUP_27 ?x1) (A_27 ?x1) (CONDENSATION_27 ?x1))
+
+	;; A CONDENSATION CAN BE FROM A BOTTLE.
+
+		(and (condensation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (BOTTLE_27 ?x2))
+
+;; (WHEN YOU WIPE YOUR BROW YOU WILL ALSO GET A COOL WIPE)
+
+	;; A PERSON MAY GET A WIPE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (WIPE_27 ?x1))
+
+	;; A PERSON MAY WIPE A BROW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WIPE_27 ?x1) (A_27 ?x1) (BROW_27 ?x1))
+
+	;; A PERSON MAY HAVE A BROW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BROW_27 ?x1))
+
+	;; A WIPE CAN BE COOL.
+
+		(and (WIPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COOL_27 ?x2))
+
+;; (BRING A FAN SO YOU CAN COOL YOURSELF)
+
+	;; A PERSON MAY COOL A PERSON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COOL_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (THERE ARE SOME EXCELLENT PORTABLE FANS THAT YOU CAN BUY FROM A LOCAL DRUGSTORE)
+
+	;; FANS CAN BE EXCELLENT.
+
+		(and (fan_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; FANS CAN BE PORTABLE.
+
+		(and (fan_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PORTABLE_27 ?x2))
+
+	;; A PERSON MAY BUY FROM A DRUGSTORE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (DRUGSTORE_27 ?x1))
+
+;; (THEY ARE PORTABLE AND THEY HAVE A LANYARD THAT YOU CAN HANG ON YOUR NECK SO THAT YOU DO N T HAVE TO HOLD ONTO THE FAN THE WHOLE TIME)
+
+	;; INDIVIDUAL -S CAN BE PORTABLE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PORTABLE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A LANYARD.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LANYARD_27 ?x1))
+
+	;; A PERSON MAY HANG ON A NECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HANG_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A PERSON MAY HAVE A NECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THE FANS USUALLY COST FROM ABOUT 1 DOLLAR TO 5 DOLLARS)
+
+	;; 
+
+	;; ((:I (:Q THE (:F PLUR FAN.N)) COST.V (:P FROM.P NIL)))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (FAN_2EN_27 ?x2) (COST_2EV_27 ?x3) (P_27 ?x4) (FROM_2EP_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THEY ARE CHEAP AND CONVENIENT)
+
+	;; INDIVIDUAL -S CAN BE CHEAP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAP_27 ?x2))
+
+;; (IF YOU FORGOT TO GET ONE WHEN YOU WERE PACKING YOUR LUGGAGE COMMA TRY TO FOLD A PAPER FAN)
+
+	;; A PERSON MAY PACK A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+;; (BRING LOOSE CLOTHING LIKE TANK TOPS AND SHORTS)
+
+	;; A CLOTHING CAN BE BRING.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (bring_27 ?x2))
+
+	;; A CLOTHING CAN BE LOOSE.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (BRINGING CLOTHES LIKE THAT WOULD HELP A LOT IF THE WEATHER THERE IS SCORCHING)
+
+	;; CLOTHES MAY HELP A LOT.
+
+		(and (clothe_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (LOT_27 ?x1))
+
+	;; CLOTHES CAN BE BRINGING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (bringing_27 ?x2))
+
+	;; THE WEATHER MAY SCORCH.
+
+		(and (WEATHER_27 ?x1) (MAY_27 ?x1) (SCORCH_27 ?x1))
+
+;; (GENTLY MOISTEN LOOSE CLOTHING)
+
+	;; A CLOTHING CAN BE LOOSE.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (IT WICKS OFF HEAT THE SAME WAY AS THE BANDANNA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE LOOSE CLOTHING SHOULD ALSO BE LIGHT CLOTHING)
+
+	;; A CLOTHING CAN BE A CLOTHING.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (clothing_27 ?x2))
+
+	;; A CLOTHING CAN BE LOOSE.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+	;; A CLOTHING CAN BE LIGHT.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+;; (IT WOULD N T MAKE MUCH SENSE TO WEAR SWEAT PANTS IN THE MIDDLE OF THE DESERT)
+
+	;; A DESERT MAY HAVE A MIDDLE.
+
+		(and (DESERT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIDDLE_27 ?x1))
+
+;; (EVEN IF YOU RE NOT IN THE DESERT COMMA THE CLOTHING TRAPS THE SUN S HEAT COMMA MAKING YOU WARMER)
+
+	;; A CLOTHING MAY TRAPS HEAT.
+
+		(and (CLOTHING_27 ?x1) (MAY_27 ?x1) (TRAPS_27 ?x1) (HEAT_27 ?x1))
+
+	;; THE SUN MAY HAVE HEAT.
+
+		(and (SUN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HEAT_27 ?x1))
+
+	;; A PERSON CAN BE WARMER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARMER_27 ?x2))
+
+;; (IN OTHER WORDS COMMA WEAR APPROPRIATE CLOTHING FOR THE ENVIRONMENT)
+
+	;; A CLOTHING CAN BE APPROPRIATE.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; (BRING THIN BLANKETS COMMA NOT LARGE AND THICK ONES COMMA FOR NIGHTS)
+
+	;; BLANKETS CAN BE BRING.
+
+		(and (blanket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (bring_27 ?x2))
+
+	;; BLANKETS CAN BE THIN.
+
+		(and (blanket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THIN_27 ?x2))
+
+;; (IF IT HAPPENS TO BE COOL AT NIGHT COMMA YOU CAN USE A THIN BLANKET)
+
+	;; A PERSON MAY USE A BLANKET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (BLANKET_27 ?x1))
+
+	;; A BLANKET CAN BE THIN.
+
+		(and (BLANKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THIN_27 ?x2))
+
+;; (YOU DO N T WANT TO BE SWEATING YOUR BLANKET UNTIL IT S SOAKED WHEN THE AIR HEATS UP)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A BLANKET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BLANKET_27 ?x1))
+
+	;; AIR MAY HEAT_UP.
+
+		(and (AIR_27 ?x1) (MAY_27 ?x1) (HEAT_5FUP_27 ?x1))
+
+;; (KEEP YOUR HEAD COVERED/SHADED AS BEST YOU CAN)
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+;; (STRAW HATS OR WET CLOTH HATS ARE GOOD COMMA OR STAY IN THE SHADE)
+
+	;; HATS CAN BE GOOD.
+
+		(and (hat_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; HATS CAN BE STRAW.
+
+		(and (hat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRAW_27 ?x2))
+
+	;; CLOTH HATS CAN BE WET.
+
+		(and (CLOTH_27 ?x1) (HATS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+;; (IF THE SUN IS SHINING ON YOUR HEAD COMMA YOU WILL ONLY FEEL WARMER)
+
+	;; THE SUN MAY SHINE ON A HEAD.
+
+		(and (SUN_27 ?x1) (MAY_27 ?x1) (SHINE_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+;; (DO NOT WEAR FUZZY HATS OR ANY HATS THAT WILL ONLY TRAP HEAT INSIDE THE HAT)
+
+	;; HATS CAN BE FUZZY.
+
+		(and (hat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FUZZY_27 ?x2))
+
+;; (DO N T WEAR A SHIRT IF YOU ARE A BOY COMMA EXCEPT IN THE SUN)
+
+	;; A PERSON CAN BE A BOY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (BOY_27 ?x2))
+
+;; (YOU CA N T AFFORD TO BURN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THAT IS THE BEST WAY TO STAY COOL)
+
+	;; A THING CAN BE A WAY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE BEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (AT NIGHT ALSO DO N T WEAR A SHIRT UNLESS IT GETS COLD AT NIGHT)
+
+	;; A THING-REFERRED-TO MAY GET.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))

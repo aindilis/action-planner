@@ -1,0 +1,108 @@
+;; (WHEN YOU GET OFF THE AIRPLANE/BOAT COMMA NEVER LEAVE YOUR LUGGAGE ALONE)
+
+	;; A PERSON MAY GET_OFF AN AIRPLANE/BOAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_5FOFF_27 ?x1) (AN_27 ?x1) (AIRPLANE_2FBOAT_27 ?x1))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+;; (TRUST PEOPLE ONLY IF YOU KNOW THEY WORK AT THE PLACE)
+
+	;; A TRUST[PERSON??] MAY HAVE PEOPLE.
+
+		(and (TRUST_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (PEOPLE_27 ?x1))
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; INDIVIDUAL -S MAY WORK AT A PLACE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1) (AT_27 ?x1) (A_27 ?x1) (PLACE_27 ?x1))
+
+;; (WHEN PEOPLE SEE A YOUNG ADULT IN A FOREIGN COUNTRY COMMA LOOKING SCARED AND VULNERABLE COMMA THEY RE A PERFECT TARGET)
+
+	;; PEOPLE MAY SEE AN ADULT.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (AN_27 ?x1) (ADULT_27 ?x1))
+
+	;; AN ADULT CAN BE IN A COUNTRY.
+
+		(and (ADULT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (COUNTRY_27 ?x2))
+
+	;; AN ADULT CAN BE YOUNG.
+
+		(and (ADULT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+	;; A COUNTRY CAN BE FOREIGN.
+
+		(and (country_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOREIGN_27 ?x2))
+
+	;; A TARGET CAN BE PERFECT.
+
+		(and (TARGET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERFECT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (STAY FOCUSED ON YOUR STUDIES)
+
+	;; A STAY[PERSON??] MAY FOCUS ON STUDIES.
+
+		(and (STAY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (focu_27 ?x1) (on_27 ?x1 ?x2) (study_27 ?x2))
+
+	;; A PERSON MAY HAVE STUDIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STUDIES_27 ?x1))
+
+;; (YOU RE HERE FOR A REASON  TO STUDY AND LEARN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO N T GET YOURSELF FOCUSED ON SHOPPING AND DINING HERE)
+
+	;; A PERSON MAY BE FOCUS -ED ON SHOPPING.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOCUS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (SHOPPING_27 ?x2))
+
+;; (YOU CAN STILL DO ALL THAT FUN STUFF COMMA BUT SCHOOL COMES FIRST)
+
+	;; A PERSON MAY DO A FUN STUFF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (FUN_27 ?x1) (STUFF_27 ?x1))
+
+	;; SCHOOL MAY COME.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1))
+
+;; (SEE THE SIGHTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

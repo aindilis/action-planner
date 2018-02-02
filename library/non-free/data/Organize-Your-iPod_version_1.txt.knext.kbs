@@ -1,0 +1,109 @@
+;; (IF YOU RE EDITING MULTIPLE SONGS BY THE SAME ARTIST COMMA CLICK THE FIRST SONG COMMA THEN HOLD DOWN CTRL -LRB- OR APPLE -RRB- AND CLICK
+ THE OTHERS BY THAT ARTIST)
+
+	;; SONGS CAN BE MULTIPLE.
+
+		(and (song_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+;; (RIGHT-CLICK ONE OF THEM AND SELECT GET INFO -LRB- OR PRESS APPLE + I -RRB- COMMA JUST AS YOU USUALLY WOULD)
+
+	;; A RIGHT-CLICK[PERSON??] OF INDIVIDUAL -S MAY GET INFO.
+
+		(and (RIGHT-CLICK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (of_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (INFO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (DO NOT SETTLE FOR UNTITLED BATCHES OF TRACKS)
+
+	;; BATCHES CAN BE CONSTITUTED_OF_OR_FILLED_WITH TRACKS.
+
+		(and (batch_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TRACKS_27 ?x2))
+
+	;; BATCHES CAN BE UNTITLED.
+
+		(and (batch_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNTITLED_27 ?x2))
+
+;; (FIND OUT THEIR NAMES)
+
+	;; INDIVIDUAL -S MAY HAVE NAMES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NAMES_27 ?x1))
+
+;; (PUT SONGS PERFORMED BY A MAIN ARTIST AND ASSISTED BY A FEATURED ARTIST UNDER THE MAIN ARTIST ONLY)
+
+	;; AN ARTIST CAN BE FEATURED.
+
+		(and (ARTIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEATURED_27 ?x2))
+
+;; (PUT THE MAIN ARTIST IN THE ARTIST SECTION AND AFTER THE SONG LIST THE SECOND ARTIST S NAME AS A FEATURING CREDIT)
+
+	;; AN ARTIST MAY HAVE A NAME.
+
+		(and (ARTIST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; CREDIT CAN BE FEATURING.
+
+		(and (CREDIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEATURING_27 ?x2))
+
+;; (ORIGINALLY IN ITUNES  NAME  SONG COMMA ARTIST  JOHN DOE & JANE DOE IN THIS WAY  NAME  SONG -LRB- FEAT)
+
+	;; A COMPANY CAN BE IN A WAY.
+
+		(and (company_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (way_27 ?x2))
+
+;; (JANE DOE -RRB- COMMA ARTIST  JOHN DOE MAKE SURE ALBUM TITLES ARE THE SAME AND CORRECTLY-SPELLED THROUGHOUT THE ALBUM)
+
+	;; A MALE MAY MAKE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; ALBUM TITLES CAN BE SURE.
+
+		(and (ALBUM_27 ?x1) (TITLES_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (ADD ALBUM ARTWORK TO THE ALBUM IF YOU WISH)
+
+	;; A PERSON MAY WISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WISH_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [7]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [8]>
+
+;; (GO THROUGH AND FIND DUPLICATE SONGS)
+
+	;; SONGS CAN BE DUPLICATE.
+
+		(and (song_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DUPLICATE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [9]>

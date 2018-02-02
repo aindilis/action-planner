@@ -1,0 +1,79 @@
+;; (SORT THE SOCKS BY COLOR)
+
+	;; SOCKS CAN BE BY COLOR.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BY_27 ?x2) (COLOR_27 ?x2))
+
+;; (FIND PAIRS OF SOCKS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLACE TWO MATCHING SOCKS TOGETHER ON TOP OF EACH OTHER)
+
+	;; SOCKS CAN BE MATCHING.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATCHING_27 ?x2))
+
+;; (WHITE SOCKS CAN USUALLY BE PLACED WITH SIMILAR WHITE ONES COMMA EVEN IF THEY ARE N T EXACT MATCHES)
+
+	;; SOCKS MAY BE PLACE -ED WITH ONES.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLACE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (ONES_27 ?x2))
+
+	;; A WHITE[PERSON??] MAY HAVE SOCKS.
+
+		(and (white_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SOCKS_27 ?x1))
+
+	;; ONES CAN BE WHITE.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WHITE_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE EXACT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXACT_27 ?x2))
+
+;; (KEEP THE PAIRS TOGETHER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU CAN EITHER FOLD THE PAIR IN HALF OR FOLD ONE OF THE CUFFS AROUND BOTH SOCKS)
+
+	;; A PAIR CAN BE IN HALF.
+
+		(and (PAIR_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (HALF_27 ?x2))
+
+;; (ALTERNATIVELY COMMA YOU CAN JUST KEEP THEM FLAT TOGETHER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

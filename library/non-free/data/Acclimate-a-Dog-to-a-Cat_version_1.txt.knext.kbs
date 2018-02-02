@@ -1,0 +1,74 @@
+;; (SPACEPREPARE THE DOG FOR THE NEW ARRIVAL BY GIVING IT ITEMS THAT BELONG TO THE CAT TO SNIFF AND BECOME ACQUAINTED WITH ITS SCENT)
+
+	;; A DOG CAN BE FOR AN ARRIVAL.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ARRIVAL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A SCENT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCENT_27 ?x1))
+
+;; (PLACE THE CAT IN A CARRIER TO KEEP IT SAFE AS YOU ACCLIMATE THE DOG TO THE CAT)
+
+	;; A THING-REFERRED-TO CAN BE SAFE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+	;; A PERSON MAY ACCLIMATE A DOG TO A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ACCLIMATE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (CAT_27 ?x2))
+
+;; (CREATE A SAFE COMMA CLUTTER-FREE ENVIRONMENT TO INTRODUCE THE DOG TO THE CAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ERECT A BARRIER SUCH AS A BABY GATE COMMA ALLOWING THEM TO SNIFF EACH OTHER THROUGH THE BARRIER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KEEP THE DOG ON A LEASH WHEN ACCLIMATING IT TO A CAT COMMA HOLDING IT FIRMLY)
+
+	;; A DOG CAN BE ON A LEASH.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (LEASH_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; (PRAISE THE CAT WHEN IT IS GENTLE AROUND THE DOG AND PRAISE THE DOG WHEN IT IS CALM AROUND THE CAT)
+
+	;; A THING-REFERRED-TO CAN BE GENTLE AROUND A DOG.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENTLE_27 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (DOG_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE CALM AROUND A CAT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (CAT_27 ?x2))

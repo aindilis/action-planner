@@ -1,0 +1,171 @@
+;; (1 GET TOGETHER WITH SOME FRIENDS COMMA AND MAKE A PLAN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EARLY DECEMBER IS USUALLY THE BEST TIME TO PLAN COMMA SO PRESENTS CAN BE GIVEN BEFORE CHRISTMAS)
+
+	;; AN EARLY_DECEMBER[PERSON??] CAN BE A TIME TO PLAN.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (time_27 ?x1) (to_27 ?x1 ?x2) (PLAN_27 ?x2))
+
+	;; A TIME CAN BE TO PLAN.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (PLAN_27 ?x2))
+
+	;; A TIME CAN BE BEST.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; PRESENTS MAY BE GIVE -ED BEFORE A RELIGIOUS-HOLIDAY.
+
+		(and (present_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GIVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BEFORE_27 ?x2) (A_27 ?x2) (RELIGIOUS-HOLIDAY_27 ?x2))
+
+;; (CHOOSE A DATE WHICH IS BEST FOR EVERYONE)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:F K EVERYONE.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (EVERYONE_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ANYTIME BETWEEN 5TH-18TH DECEMBER IS GOOD FOR MOST PEOPLE)
+
+	;; AN ANYTIME[PERSON??] CAN BE GOOD FOR PEOPLE.
+
+		(and (ANYTIME_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (people_27 ?x1))
+
+;; (MAKE SURE NONE OF YOUR FRIENDS WILL BE ON HOLIDAY OR BUSY ON THE DAY)
+
+	;; NONE OF FRIENDS CAN BE ON HOLIDAY.
+
+		(and (none_27 ?x1) (of_27 ?x1 ?x2) (friend_27 ?x2) (be_27 ?e1 ?x1 ?x3) (ON_27 ?x3) (HOLIDAY_27 ?x3))
+
+	;; A NONE CAN BE SURE.
+
+		(and (none_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (PICK A COMFORTABLE COMMA EASY PLACE TO MEET)
+
+	;; A PLACE CAN BE COMFORTABLE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+;; (COFFEE SHOPS ARE GOOD COMMA STARBUCKS WOULD BE A GREAT PLACE)
+
+	;; A STARBUCKS[PERSON??] CAN BE A PLACE.
+
+		(and (starbuck_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (PLACE_27 ?x1))
+
+	;; SHOPS CAN BE GOOD.
+
+		(and (shop_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A COFFEE[PERSON??] MAY HAVE SHOPS.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SHOPS_27 ?x1))
+
+	;; A PLACE CAN BE GREAT.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (YOU COULD GRAB SOME WARM DRINKS AND HAVE A CHAT BEFORE EXCHANGING PRESENTS)
+
+	;; A PERSON MAY GRAB SOME_NUMBER_OF DRINKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GRAB_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (DRINKS_27 ?x1))
+
+	;; DRINKS CAN BE WARM.
+
+		(and (drink_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+	;; A CHAT CAN BE BEFORE PRESENTS.
+
+		(and (CHAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (PRESENTS_27 ?x2))
+
+	;; PRESENTS CAN BE EXCHANGING.
+
+		(and (present_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCHANGING_27 ?x2))
+
+;; (IF YOUR LOCAL COFFEE SHOP IS IN A DEPARTMENT STORE OR SHOPPING CENTER COMMA YOU COULD ALSO DO SOME LAST MINUTE CHRISTMAS SHOPPING IF YOU NEED TO)
+
+	;; A PERSON MAY DO SOME_NUMBER_OF MINUTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (MINUTE_27 ?x1))
+
+	;; A COFFEE SHOP CAN BE IN A DEPARTMENT STORE.
+
+		(and (COFFEE_27 ?x1) (SHOP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DEPARTMENT_27 ?x2) (STORE_27 ?x2))
+
+	;; A PERSON MAY HAVE A COFFEE SHOP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COFFEE_27 ?x1) (SHOP_27 ?x1))
+
+;; (CONFIRM THE TIME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ARRANGING IT AT NIGHT MAY NOT BE GOOD FOR EVERYONE COMMA AND NORMALLY BUSY PLACES ARE USUALLY EVEN BUSIER AT NIGHT DURING THE FESTIVE SEASON)
+
+	;; PLACES CAN BE BUSIER.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSIER_27 ?x2))
+
+	;; PLACES CAN BE BUSY.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSY_27 ?x2))
+
+	;; A SEASON CAN BE FESTIVE.
+
+		(and (SEASON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FESTIVE_27 ?x2))
+
+;; (TRY AND GET EVERYONE THERE FOR MORNING COMMA AFTERNOON OR EVENING TO AVOID THE RUSH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

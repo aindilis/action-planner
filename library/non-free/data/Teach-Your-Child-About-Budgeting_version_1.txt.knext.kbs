@@ -1,0 +1,394 @@
+;; (EXPLAIN TO THEM WHAT YOU ARE DOING WHILE YOU ARE DOING IT)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY DO A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (INVITE THEM TO PARTICIPATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ASK YOUR CHILD TO HELP YOU FIND AND READ THE UNIT PRICE NUMBERS AT THE GROCERY STORE IN ORDER TO FIND THE BEST BARGAINS)
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A PERSON MAY FIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1))
+
+	;; BARGAINS CAN BE BEST.
+
+		(and (bargain_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (YOU CAN ALSO GIVE THEM A BUDGET AND ASK THEM TO COME UP WITH A GROCERY SHOPPING LIST)
+
+	;; A PERSON MAY GIVE INDIVIDUAL -S A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+;; (HAVE THEM LOOK IN THE KITCHEN CABINETS AND REFRIGERATOR TO FIGURE OUT WHAT THE FAMILY WILL NEED FOR THE COMING WEEK COMMA THEN REVIEW THE LIST TOGETHER WITH THEM BEFORE GOING TO THE GROCERY STORE)
+
+	;; INDIVIDUAL -S MAY LOOK IN KITCHEN CABINETS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (in_27 ?x1 ?x2) (KITCHEN_27 ?x2) (CABINETS_27 ?x2))
+
+	;; A FAMILY MAY NEED FOR A WEEK.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (WEEK_27 ?x2))
+
+	;; A WEEK CAN BE COMING.
+
+		(and (week_27 ?x1) (be_27 ?e1 ?x1 ?x2) (coming_27 ?x2))
+
+;; (WHILE SHOPPING COMMA HAND THEM A CALCULATOR TO SEE HOW CLOSE YOU ARE TO YOUR BUDGET AS YOU ADD MORE ITEMS TO THE SHOPPING CART)
+
+	;; A PERSON CAN BE TO A BUDGET.
+
+		(and (person_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BUDGET_27 ?x2))
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+	;; A PERSON MAY ADD ITEMS TO A SHOPPING CART.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (ITEMS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (SHOPPING_27 ?x2) (CART_27 ?x2))
+
+;; (ENCOURAGE THEM TO LOOK FOR COUPONS AND SALES IN WEEKLY FLIERS)
+
+	;; FLIERS CAN BE WEEKLY.
+
+		(and (flier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WEEKLY_27 ?x2))
+
+;; (REVIEW THE FAMILY BUDGET WITH YOUR CHILDREN COMMA ESPECIALLY IF YOU RE ALSO TRYING TO TEACH THEM TO HELP CUT DOWN ON EXPENSES BY DOING THINGS LIKE TURNING OFF LIGHTS WHEN THEY LEAVE A ROOM)
+
+	;; A PERSON MAY HAVE CHILDREN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY LEAVE A ROOM.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (THIS STEP REQUIRES QUITE A BIT OF TRUST)
+
+	;; A STEP MAY REQUIRE A BIT OF TRUST.
+
+		(and (STEP_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (A_27 ?x1) (BIT_27 ?x1) (of_27 ?x1 ?x2) (TRUST_27 ?x2))
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH TRUST.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TRUST_27 ?x2))
+
+;; (START WITH A SMALL AMOUNT AS SOON AS THEY ARE OLD ENOUGH TO UNDERSTAND THAT MONEY CAN BUY THINGS)
+
+	;; START MAY BUY THINGS.
+
+		(and (START_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (THINGS_27 ?x1))
+
+	;; START CAN BE WITH AN AMOUNT.
+
+		(and (START_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (AN_27 ?x2) (AMOUNT_27 ?x2))
+
+	;; AN AMOUNT CAN BE SMALL.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE OLD.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (PAY THEIR ALLOWANCE WITH BILLS AND COINS TO ALLOW THE CHILD TO SORT THEM INTO DIFFERENT CONTAINERS LABELED WITH DIFFERENT BUDGETING CATEGORIES)
+
+	;; AN ALLOWANCE CAN BE WITH BILLS.
+
+		(and (ALLOWANCE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (bill_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE AN ALLOWANCE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ALLOWANCE_27 ?x1))
+
+	;; CONTAINERS MAY BE LABEL -ED WITH BUDGETING CATEGORIES.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LABEL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (BUDGETING_27 ?x2) (CATEGORIES_27 ?x2))
+
+;; (ENCOURAGE PART-TIME WORK INSTEAD OF AN ALLOWANCE WHEN THE TIME IS RIGHT)
+
+	;; WORK CAN BE PART-TIME.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PART-TIME_27 ?x2))
+
+	;; A TIME CAN BE RIGHT.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGHT_27 ?x2))
+
+;; (IT WILL TEACH THEM NOT ONLY TO MANAGE THEIR MONEY BUT ALSO TO MANAGE THEIR TIME)
+
+	;; INDIVIDUAL -S MAY HAVE MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A TIME.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+;; (GIVE THEM PLACES TO PUT THEIR MONEY)
+
+	;; INDIVIDUAL -S MAY HAVE MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; (BUY A PIGGY BANK FOR YOUNGER CHILDREN SO THEY HAVE SOMEWHERE TO KEEP THEIR MONEY TEMPORARILY)
+
+	;; A BANK CAN BE FOR CHILDREN.
+
+		(and (BANK_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CHILDREN_27 ?x2))
+
+	;; A BANK CAN BE PIGGY.
+
+		(and (BANK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PIGGY_27 ?x2))
+
+	;; CHILDREN CAN BE YOUNGER.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNGER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; (EMPLOY VISUAL AIDS SUCH AS LABELED GLASS JARS FOR OLDER CHILDREN SO THEY CAN SEPARATE THEIR MONEY INTO DIFFERENT BUDGETING CATEGORIES)
+
+	;; AIDS MAY SEPARATE MONEY.
+
+		(and (AIDS_27 ?x1) (MAY_27 ?x1) (SEPARATE_27 ?x1) (MONEY_27 ?x1))
+
+	;; AIDS CAN BE EMPLOY.
+
+		(and (AIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPLOY_27 ?x2))
+
+	;; AIDS CAN BE VISUAL.
+
+		(and (AIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISUAL_27 ?x2))
+
+	;; GLASS JARS CAN BE FOR CHILDREN.
+
+		(and (GLASS_27 ?x1) (JARS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CHILDREN_27 ?x2))
+
+	;; GLASS JARS CAN BE LABELED.
+
+		(and (GLASS_27 ?x1) (JARS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LABELED_27 ?x2))
+
+	;; CHILDREN CAN BE OLDER.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLDER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; (OPEN A SAVINGS ACCOUNT SO THEY HAVE SOMEWHERE TO SAVE THEIR MONEY FOR THE LONG TERM)
+
+	;; SAVINGS MAY ACCOUNT.
+
+		(and (SAVINGS_27 ?x1) (MAY_27 ?x1) (ACCOUNT_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+	;; A TERM CAN BE LONG.
+
+		(and (TERM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (EXPLAIN HOW INTEREST ACCUMULATES WHEN THEY ARE OLD ENOUGH TO UNDERSTAND)
+
+	;; INDIVIDUAL -S CAN BE OLD.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (DEVELOP A BUDGET TOGETHER THAT INCLUDES MAKING SHORT AND LONG-TERM GOALS THAT INCLUDE A SAVINGS PLAN COMMA NO MATTER HOW SMALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONSIDER THE FOLLOWING BUDGET AS ONE EXAMPLE  DONATE 10 % TO A CHURCH OR A CHARITY)
+
+	;; A BUDGET CAN BE FOLLOWING.
+
+		(and (BUDGET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (following_27 ?x2))
+
+;; (INVEST % IN A SAVINGS ACCOUNT COMMA SAVINGS BONDS OR THE STOCK MARKET)
+
+	;; 
+
+	;; ((:I (:Q SOME-NUMBER-OF %.N) IN.P NIL))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (SOME-NUMBER-OF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (kbs2_kif_quote_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SAVE % FOR A SPECIAL TOY COMMA GAME COMMA OR OTHER PURCHASE)
+
+	;; SOME_NUMBER_OF % CAN BE FOR A TOY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (TOY_27 ?x2))
+
+;; (SPEND % RIGHT AWAY ON IMMEDIATE OR DAILY EXPENSES SUCH AS LUNCHES COMMA SCHOOL SUPPLIES COMMA CLOTHING COMMA BIRTHDAY GIFTS COMMA AND SO ON)
+
+	;; 
+
+	;; ((:I (:Q SOME-NUMBER-OF %.N) ON.P NIL))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (SOME-NUMBER-OF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (kbs2_kif_quote_2EN_27 ?x1) (ON_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [25]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ESTABLISH LIMITS)
+
+	;; AN ESTABLISH[PERSON??] MAY LIMIT.
+
+		(and (ESTABLISH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (LIMIT_27 ?x1))
+
+;; (DO N T BAIL THEM OUT IF THEY SPEND THEIR MONEY TOO QUICKLY)
+
+	;; INDIVIDUAL -S MAY SPEND MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SPEND_27 ?x1) (MONEY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE MONEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; (ALLOW THEM TO EXPERIENCE THE CONSEQUENCES OF THEIR ACTIONS WHILE THEY LIVE UNDER YOUR ROOF)
+
+	;; ACTIONS MAY HAVE CONSEQUENCES.
+
+		(and (ACTIONS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONSEQUENCES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE ACTIONS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ACTIONS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY LIVE UNDER A ROOF.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1) (UNDER_27 ?x1) (A_27 ?x1) (ROOF_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOF_27 ?x1))
+
+;; (CREDIT CARD COMPANIES HAVE LEARNED THAT COLLEGE STUDENTS ARE EXCELLENT CUSTOMERS EVEN THOUGH THEY DO N T HAVE JOBS BECAUSE PARENTS ARE QUICK TO BAIL THEM OUT WHEN THEY GET IN TOO DEEP)
+
+	;; CARD COMPANIES MAY LEARN A PROPOSITION.
+
+		(and (CARD_27 ?x1) (company_27 ?x1) (MAY_27 ?x1) (LEARN_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A CREDIT[PERSON??] MAY HAVE CARD COMPANIES.
+
+		(and (CREDIT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (CARD_27 ?x1) (company_27 ?x1))
+
+	;; COLLEGE STUDENTS CAN BE CUSTOMERS.
+
+		(and (college_27 ?x1) (student_27 ?x1) (be_27 ?e1 ?x1 ?x2) (customer_27 ?x2))
+
+	;; CUSTOMERS CAN BE EXCELLENT.
+
+		(and (customer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IF YOU TEACH YOUR CHILD ABOUT BUDGETING COMMA YOU MIGHT AVOID THIS SITUATION IN THE FUTURE)
+
+	;; A PERSON MAY AVOID A SITUATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (AVOID_27 ?x1) (A_27 ?x1) (SITUATION_27 ?x1))
+
+	;; A PERSON MAY TEACH A CHILD ABOUT BUDGETING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TEACH_27 ?x1) (A_27 ?x1) (CHILD_27 ?x1) (ABOUT_27 ?x1) (BUDGETING_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A SITUATION CAN BE IN A FUTURE.
+
+		(and (SITUATION_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FUTURE_27 ?x2))
+
+;; (DO N T BUY YOUR CHILD WHATEVER THEY ASK FOR)
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (BUDGETING IS ABOUT MAKING CHOICES)
+
+	;; 
+
+	;; ((:I (:Q DET BUDGETING.NAME) ABOUT.P (:F KA NIL)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (BUDGETING_2ENAME_27 ?x1) (ABOUT_2EP_27 ?x2) (F_27 ?x3) (KA_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [32]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THEY RE USED TO GETTING EVERYTHING THEY WANT COMMA THEY LL NEVER UNDERSTAND HOW TO PRIORITIZE COMMA WHICH IS WHAT BUDGETING IS ALL ABOUT)
+
+	;; INDIVIDUAL -S MAY WANT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [34]>

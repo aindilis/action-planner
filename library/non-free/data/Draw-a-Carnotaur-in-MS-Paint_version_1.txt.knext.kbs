@@ -1,0 +1,31 @@
+;; (DECIDE WHERE THE TRIANGLE FOR THE MOUTH WILL GO)
+
+	;; A TRIANGLE MAY GO.
+
+		(and (TRIANGLE_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A TRIANGLE CAN BE FOR A MOUTH.
+
+		(and (triangle_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MOUTH_27 ?x2))
+
+;; (AFTER THAT COMMA FILL THE MOUTH WITH SMALLER TRIANGLES COMMA AS FOR THESE ARE THE TEETH)
+
+	;; TRIANGLES CAN BE SMALLER.
+
+		(and (triangle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; A THING CAN BE TEETH.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TEETH_27 ?x2))
+
+;; (DRAW ONE CURVED LINE NEAR THE TOP OF THE HEAD)
+
+	;; A DRAW[PERSON??] MAY CURVE LINE.
+
+		(and (DRAW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CURVE_27 ?x1) (LINE_27 ?x1))
+
+	;; A HEAD MAY HAVE A TOP.
+
+		(and (HEAD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOP_27 ?x1))

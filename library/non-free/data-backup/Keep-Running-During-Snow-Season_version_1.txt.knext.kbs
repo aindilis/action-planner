@@ -1,0 +1,368 @@
+;; (WIKIHOW -RRB- DRESS APPROPRIATELY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (VISIT YOUR LOCAL RUNNING SUPPLIES STORE FOR GOOD GEAR)
+
+	;; A GEAR CAN BE GOOD.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (IT IS IMPORTANT TO COVER UP YOUR EXTREMITIES IN PARTICULAR COMMA SUCH AS FINGERS COMMA EARS COMMA NOSE COMMA CHEEKS COMMA CHIN COMMA
+ WRISTS AND TOES COMMA AS THESE ARE ESPECIALLY SUSCEPTIBLE TO BEING FROZEN)
+
+	;; A PERSON MAY HAVE EXTREMITIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXTREMITIES_27 ?x1))
+
+;; (GET GOOD SOCKS COMMA SHOES COMMA MITTENS/GLOVES COMMA HATS AND FACE AND NECK PROTECTION)
+
+	;; SOCKS CAN BE GOOD.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (DRESS IN LAYERS COMMA JUST AS YOU WOULD FOR OTHER WINTER SPORTS AND USE WIND-PROTECTIVE GEAR AS THE OUTER LAYERS)
+
+	;; A GEAR CAN BE WIND-PROTECTIVE.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WIND-PROTECTIVE_27 ?x2))
+
+	;; LAYERS CAN BE OUTER.
+
+		(and (layer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTER_27 ?x2))
+
+;; (GET GOOD SHOES AND RUN IN WELL GROOMED AREAS)
+
+	;; SHOES CAN BE GOOD.
+
+		(and (shoe_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; AREAS CAN BE GROOMED.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROOMED_27 ?x2))
+
+;; (IF RUNNING ON SNOW AND ICY SIDEWALKS COMMA YOU MUST BE WELL EQUIPPED)
+
+	;; A PERSON CAN BE EQUIPPED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EQUIPPED_27 ?x2))
+
+;; (FALLS ON ICE CAN RESULT IN SUCH INJURIES AS GRAZES COMMA BROKEN BONES AND TEETH)
+
+	;; A FALLS[PERSON??] MAY RESULT IN INJURIES.
+
+		(and (fall_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (RESULT_27 ?x1) (in_27 ?x1 ?x2) (INJURIES_27 ?x2))
+
+	;; A FALLS[PERSON??] CAN BE ON ICE.
+
+		(and (fall_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (ON_27 ?x1) (ICE_27 ?x1))
+
+	;; BONES CAN BE BROKEN.
+
+		(and (bone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BROKEN_27 ?x2))
+
+;; (GET SHOES THAT ARE APPROPRIATE FOR RUNNING IN THE SNOW SEASON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AND IT IS BEST TO STICK TO CLEARED SIDEWALKS COMMA GROOMED RUNNING TRAILS AND PLACES WHERE YOU ARE CERTAIN THAT THERE IS NO ICE OR
+ LIKELIHOOD OF DROPS UNDER SNOW COVER COMMA SUCH AS COVERED DRAINS COMMA HOLES OR HOLLOWS)
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; SIDEWALKS CAN BE CLEARED.
+
+		(and (sidewalk_27 ?x1) (be_27 ?e1 ?x1 ?e2) (clear_27 ?e2 ?x1))
+
+	;; A PERSON CAN BE CERTAIN A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CERTAIN_27 ?x2) (A_27 ?x2) (PROPOSITION_27 ?x2))
+
+	;; ICE CAN BE CONSTITUTED_OF_OR_FILLED_WITH DROPS.
+
+		(and (ICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DROPS_27 ?x2))
+
+	;; DROPS CAN BE UNDER SNOW COVER.
+
+		(and (drop_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNDER_27 ?x2) (SNOW_27 ?x2) (COVER_27 ?x2))
+
+	;; DRAINS CAN BE COVERED.
+
+		(and (drain_27 ?x1) (be_27 ?e1 ?x1 ?e2) (cover_27 ?e2 ?x1))
+
+;; (ALSO BE WARY OF TREE ROOTS IN PARKS THAT MIGHT BE BARELY COVERED IN SNOW COMMA ESPECIALLY AS THE SEASON BEGINS TO THAW)
+
+	;; TREE ROOTS CAN BE IN PARKS.
+
+		(and (tree_27 ?x1) (root_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (park_27 ?x2))
+
+	;; A SEASON MAY BEGIN TO THAW.
+
+		(and (SEASON_27 ?x1) (MAY_27 ?x1) (BEGIN_27 ?x1) (to_27 ?x1 ?x2) (THAW_27 ?x2))
+
+;; (EXAMPLE OF SUITABLE RUNNING TRAIL DURING SNOW SEASON WATCH OUT FOR OTHER SNOW SPORTS ENTHUSIASTS)
+
+	;; TRAIL CAN BE DURING SNOW SEASON.
+
+		(and (TRAIL_27 ?x1) (be_27 ?e1 ?x1) (during_27 ?x1 ?x2) (SNOW_27 ?x2) (SEASON_27 ?x2))
+
+	;; A TRAIL CAN BE SUITABLE.
+
+		(and (TRAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUITABLE_27 ?x2))
+
+	;; A TRAIL CAN BE RUNNING.
+
+		(and (TRAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RUNNING_27 ?x2))
+
+;; (IF SHARING YOUR RUNNING SPACE WITH SKIERS COMMA SLEDDERS AND SNOWSHOERS COMMA BE AWARE OF THEIR TRAIL AREAS AND KEEP OUT OF THEIR WAY -
+ DO NOT RUN OR JOG ON SKI AND SLED TRAILS)
+
+	;; A PERSON MAY HAVE A SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+	;; A SPACE CAN BE RUNNING.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RUNNING_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE TRAIL AREAS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TRAIL_27 ?x1) (AREAS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A WAY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+;; (SKIERS AND SLEDDERS WILL BE FASTER THAN YOU AND GENERALLY DO NOT EXPECT TO SEE RUNNERS ON TRAILS DURING SNOW SEASON)
+
+	;; SKIERS CAN BE FASTER.
+
+		(and (skier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FASTER_27 ?x2))
+
+	;; RUNNERS CAN BE ON TRAILS.
+
+		(and (runner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (TRAILS_27 ?x2))
+
+;; (IT IS GENERALLY NOT A GOOD IDEA TO RUN ON SNOWSHOE TRAILS EITHER COMMA AS THESE WILL HAVE DEEP SNOW THAT IS UNSUITABLE FOR NORMAL RUNNING
+ OR WALKING AND YOU LL SIMPLY SINK UP TO YOUR KNEES OR THIGHS)
+
+	;; A THING-REFERRED-TO CAN BE AN IDEA.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; TRAILS CAN BE SNOWSHOE.
+
+		(and (trail_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SNOWSHOE_27 ?x2))
+
+	;; A THING MAY HAVE SNOW.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SNOW_27 ?x1))
+
+	;; SNOW CAN BE DEEP.
+
+		(and (SNOW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEEP_27 ?x2))
+
+	;; A PERSON MAY HAVE KNEES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KNEES_27 ?x1))
+
+;; (IF YOUR LOCAL PARK HAS N T SET ASIDE A RUNNING AREA COMMA ASK FOR ONE TO BE STARTED)
+
+	;; A PERSON MAY HAVE A PARK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARK_27 ?x1))
+
+	;; AN AREA CAN BE RUNNING.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RUNNING_27 ?x2))
+
+;; (DO N T PUSH YOURSELF TO THE LIMITS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RUNNING DURING SNOW SEASON IS VERY DIFFERENT FROM OTHER TIMES OF THE YEAR)
+
+	;; A YEAR MAY HAVE TIMES.
+
+		(and (year_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TIMES_27 ?x1))
+
+;; (YOUR BODY WILL BECOME EXHAUSTED FAR MORE QUICKLY AND WILL USE UP ITS ENERGY RESERVES VERY QUICKLY)
+
+	;; A BODY MAY BECOME.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (BECOME_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE ENERGY RESERVES.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ENERGY_27 ?x1) (RESERVES_27 ?x1))
+
+;; (DRINK A LOT OF WATER TO KEEP HYDRATED AND CARRY SOME SNACK BARS OR NUTS TO KEEP YOU SUSTAINED)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [22]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WATCH THE WIND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AS MENTIONED ABOVE COMMA WIND PROTECTIVE GEAR IS VERY IMPORTANT)
+
+	;; WIND CAN BE IMPORTANT.
+
+		(and (WIND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (THE WIND CAN CAUSE FROSTBITE AND BURNS VERY QUICKLY IF YOU HAVE N T TAKEN PRECAUTIONS)
+
+	;; A WIND MAY CAUSE FROSTBITE.
+
+		(and (WIND_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (FROSTBITE_27 ?x1))
+
+	;; A PERSON MAY TAKE PRECAUTIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (PRECAUTIONS_27 ?x1))
+
+;; (USE VASELINE OR A SIMILAR BARRIER CREAM TO PROTECT YOUR FACE AND USE CLOTHING TO KEEP THE WIND OFF EXTREMITIES)
+
+	;; A PERSON MAY HAVE A FACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FACE_27 ?x1))
+
+;; (WEAR GOGGLES OR GLASSES IF NEEDED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [27]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO N T DRINK ALCOHOL OR SMOKE BEFORE GOING RUNNING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [28]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALCOHOL INCREASES HEAT LOSS AND NICOTINE HARMS THE BODY S HEAT CONTROL MECHANISMS)
+
+	;; A BODY MAY HAVE HEAT CONTROL MECHANISMS.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HEAT_27 ?x1) (CONTROL_27 ?x1) (MECHANISMS_27 ?x1))
+
+;; (GET INSIDE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [30]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WHEN YOU HAVE FINISHED RUNNING OR JOGGING COMMA DO NOT HANG AROUND OUTSIDE IN SWEATY CLOTHING)
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+	;; A CLOTHING CAN BE SWEATY.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SWEATY_27 ?x2))
+
+;; (DOING SO CAN BRING ON HYPOTHERMIA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [32]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [33]>

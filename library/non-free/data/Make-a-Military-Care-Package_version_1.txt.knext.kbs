@@ -1,0 +1,250 @@
+;; (YOU WILL FIND FLAT RATE BOXES FOR APO/FPO ADDRESSES)
+
+	;; A PERSON MAY FIND RATE BOXES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (RATE_27 ?x1) (BOXES_27 ?x1))
+
+	;; RATE BOXES CAN BE FLAT.
+
+		(and (rate_27 ?x1) (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+	;; AN APO/FPO[PERSON??] MAY HAVE ADDRESSES.
+
+		(and (APO_2FFPO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ADDRESSES_27 ?x1))
+
+;; (THESE ARE FOR TROOPS OVERSEAS AND THE USPS WILL MAIL YOU THESE BOXES FOR FREE)
+
+	;; A THING CAN BE FOR TROOPS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TROOPS_27 ?x2))
+
+	;; USPS MAY MAIL A PERSON BOXES.
+
+		(and (USPS_27 ?x1) (MAY_27 ?x1) (MAIL_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (BOXES_27 ?x1))
+
+;; (THE SHIPPING COSTS FOR THE FLAT RATE IS USUALLY CHEAPER THAN SHIPPING BY WEIGHT COMMA DEPENDING ON WHAT YOU ARE SENDING)
+
+	;; COSTS CAN BE CHEAPER.
+
+		(and (cost_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAPER_27 ?x2))
+
+	;; COSTS CAN BE FOR A RATE.
+
+		(and (cost_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (rate_27 ?x2))
+
+	;; COSTS CAN BE SHIPPING.
+
+		(and (cost_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHIPPING_27 ?x2))
+
+	;; A RATE CAN BE FLAT.
+
+		(and (rate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+	;; A PERSON MAY SEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEND_27 ?x1))
+
+;; (MAKE SURE ANYTHING YOU ARE PLANNING TO SEND -LRB- TOOTHPASTE COMMA SANITIZER COMMA ETC -RRB- IS IN TRAVEL-SIZE ACCESSORIES)
+
+	;; ANYTHING CAN BE IN ACCESSORIES.
+
+		(and (anything_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (accessory_27 ?x2))
+
+	;; AN ANYTHING CAN BE MAKE.
+
+		(and (anything_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2))
+
+	;; AN ANYTHING CAN BE SURE.
+
+		(and (anything_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; ACCESSORIES CAN BE TRAVEL-SIZE.
+
+		(and (accessory_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRAVEL-SIZE_27 ?x2))
+
+;; (IT WILL BE A LOT EASIER FOR MARINES TO CARRY AROUND WITH THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAPE THE BOX UP REALLY WELL AFTER YOU ARE DONE)
+
+	;; A PERSON MAY BE DO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF YOU ARE TAKING THE BOX TO A LOCAL OR NON-MILITARY POST OFFICE COMMA YOU MAY EITHER BE REJECTED -LRB- AS THEY DO N T SEND TO POS -RRB- COMMA HAVE TO PAY A FEE COMMA OR NEED TO FILL OUT A CUSTOMS FORM)
+
+	;; A PERSON MAY BE REJECT -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REJECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (YOU LL ALSO NEED TO FILL OUT A CUSTOMS FORM IF TAKEN TO A MILITARY POST OFFICE)
+
+	;; A POST OFFICE CAN BE MILITARY.
+
+		(and (POST_27 ?x1) (OFFICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MILITARY_27 ?x2))
+
+;; (-LRB- NAME -RRB-  SSGT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT EVERYTHING IN ZIPLOCK BAGGIES)
+
+	;; 
+
+	;; ((:I NIL IN.P (:Q DET ZIPLOCK.NAME)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (IN_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (ZIPLOCK_2ENAME_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS IS TO AVOID SAND AND OTHER THINGS GETTING IN STUFF)
+
+	;; SAND MAY GET IN STUFF.
+
+		(and (SAND_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (in_27 ?x1 ?x2) (STUFF_27 ?x2))
+
+;; (IT ALSO HELPS THE MILITARY COMMA AS THEY IN TURN COMMA USE THE BAGGIES FOR OTHER USES)
+
+	;; A MILITARY MAY USE BAGGIES.
+
+		(and (MILITARY_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (BAGGIES_27 ?x1))
+
+;; (SECURE COOKIES AND OTHER CANDIES VERY WELL BEFORE PUTTING IT INTO THE BOX)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU ARE SENDING FOOD LIKE THESE COMMA MAKE SURE YOU PLAN TO SEND IT AS SOON AS POSSIBLE)
+
+	;; A PERSON MAY SEND FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEND_27 ?x1) (FOOD_27 ?x1))
+
+;; (WRAP LAPTOPS AND OTHER VERY IMPORTANT VALUABLES IN BUBBLE WRAP A FEW TIMES AND TAPE IT UP VERY WELL)
+
+	;; LAPTOPS MAY WRAP TIMES.
+
+		(and (LAPTOPS_27 ?x1) (MAY_27 ?x1) (WRAP_27 ?x1) (TIMES_27 ?x1))
+
+	;; A WRAP[PERSON??] MAY HAVE LAPTOPS.
+
+		(and (WRAP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (LAPTOPS_27 ?x1))
+
+	;; VALUABLES CAN BE IN BUBBLE.
+
+		(and (valuable_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (BUBBLE_27 ?x2))
+
+	;; VALUABLES CAN BE IMPORTANT.
+
+		(and (valuable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (LABEL EVERYTHING COMMA ESPECIALLY IF YOU ARE CREATING THE TOOTHPASTE AND SANITIZER BOTTLES)
+
+	;; AN EVERYTHING CAN BE LABEL.
+
+		(and (EVERYTHING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LABEL_27 ?x2))
+
+	;; A PERSON MAY CREATE A TOOTHPASTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CREATE_27 ?x1) (A_27 ?x1) (TOOTHPASTE_27 ?x1))
+
+;; (MARINES SHARE & GIVE OUT ITEMS COMMA SO PLEASE DO N T LEAVE THE DECIDING TO THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AVOID ANYTHING THAT CAN MELT)
+
+	;; AN ANYTHING CAN BE AVOID.
+
+		(and (ANYTHING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+;; (IRAQ CAN GET UP TO 120 DEGREES FAHRENHEIT OR HIGHER)
+
+	;; A COUNTRY MAY GET_UP TO SOME_NUMBER_OF DEGREES.
+
+		(and (COUNTRY_27 ?x1) (MAY_27 ?x1) (GET_5FUP_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (DEGREES_27 ?x2))
+
+	;; SOME_NUMBER_OF DEGREES CAN BE FAHRENHEIT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DEGREES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAHRENHEIT_27 ?x2))
+
+;; (ENSURE THAT CARE PACKAGES STAY RATED PG-13 OR LOWER)
+
+	;; 
+
+	;; ((:I (:F K (:F NN CARE.N (:F PLUR PACKAGE.N))) (:F STAY.V NIL)))
+
+		(and (I_27 ?x4) (F_27 ?x1) (K_27 ?x1) (F_27 ?x2) (NN_27 ?x2) (CARE_2EN_27 ?x2) (F_27 ?x3) (PLUR_27 ?x3) (PACKAGE_2EN_27 ?x3) (F_27 ?x4) (STAY_2EV_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [22]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [23]>
+
+;; (THIS MEANS OMIT ALL ADULT ONLY ITEMS OUT OF IT)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+	;; ITEMS CAN BE ADULT.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADULT_27 ?x2))

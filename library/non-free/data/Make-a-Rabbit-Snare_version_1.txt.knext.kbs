@@ -1,0 +1,83 @@
+;; (RUBBERLOCATE AN AREA WHERE THERE ARE PLENTY OF RABBITS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LOOK FOR DROPPINGS AND HOLES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RABBITS NEARLY ALWAYS STAY IN THE SAME AREA COMMA SO PLACE YOUR SNARE NEARBY)
+
+	;; RABBITS MAY STAY IN AN AREA.
+
+		(and (rabbit_27 ?x1) (STAY_27 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE A SNARE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SNARE_27 ?x1))
+
+;; (ALSO COMMA BIG BRUSH PILES WORK COMMA SO FIND THE NARROWEST TRAIL/ENTERING AND PLACE IT THERE)
+
+	;; BRUSH PILES CAN BE BIG.
+
+		(and (BRUSH_27 ?x1) (PILES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; A TRAIL/ENTERING CAN BE NARROWEST.
+
+		(and (trail-SLASH-entering_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NARROWEST_27 ?x2))
+
+;; (CAMOUFLAGE YOUR SNARE)
+
+	;; A PERSON MAY HAVE A SNARE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SNARE_27 ?x1))
+
+;; (MEASURE OUT ABOUT 2 FT AND 5 INCHES OF WIRE)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FOLD 1 TIP AT ABOUT 1 AND HALF INCHES COMMA MAKE A LOOP COMMA AND TWIST THE REST OF THE WIRE ABOUT 5 TIMES)
+
+	;; SOME_NUMBER_OF TIP MAY MAKE A LOOP.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TIP_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (LOOP_27 ?x1))
+
+	;; A WIRE MAY HAVE A REST.
+
+		(and (WIRE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+;; (PUSH THE OTHER END THROUGH THE LOOP AND DO STEP 2 TO THE SECOND END)
+
+	;; STEP CAN BE TO AN END.
+
+		(and (step_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (END_27 ?x2))

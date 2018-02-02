@@ -1,0 +1,192 @@
+;; (PREPARE A NOTICE COMMA THIS SHOULD INCLUDE THE DATE COMMA TIME COMMA AGENDA COMMA AND VENUE OF THE MEETING)
+
+	;; A THING MAY INCLUDE A DATE OF A MEETING.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1) (of_27 ?x1 ?x2) (meeting_27 ?x2))
+
+	;; A MEETING MAY HAVE A DATE.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+;; (DISTRIBUTE THE NOTICE TO THE MEMBERS IN GOOD TIME FOR THE MEETING)
+
+	;; 
+
+	;; ((:I (:Q THE (:F PLUR MEMBER.N)) IN.P NIL))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (MEMBER_2EN_27 ?x2) (IN_2EP_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ATTACH THE MINUTES OF THE PREVIOUS MEETING -LRB- IF THERE HAS BEEN ONE -RRB-)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS GIVES MEMBERS THE CHANCE TO BRING UP ANYTHING THEY DO NOT UNDERSTAND OR DISAGREE WITH)
+
+	;; A THING MAY GIVE MEMBERS A CHANCE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (MEMBERS_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (GET BASIC ITEMS IN PLACE)
+
+	;; ITEMS CAN BE BASIC.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+;; (SET OUT CHAIRS AND TABLES BEFORE THE MEETING BEGINS)
+
+	;; A MEETING MAY BEGIN.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (BEGIN_27 ?x1))
+
+;; (PROVIDE PENS AND PAPER FOR EVERYONE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLACE A PITCHER OF WATER IN THE MIDDLE OF THE TABLE AND PUT GLASSES AROUND THE TABLE)
+
+	;; A PITCHER CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (PITCHER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+	;; A TABLE MAY HAVE A MIDDLE.
+
+		(and (TABLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIDDLE_27 ?x1))
+
+;; (CALL THE MEETING TO ORDER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS MEANS THE CHAIRPERSON ASKS EVERYONE TO STOP TALKING AS THE MEETING IS ABOUT TO BEGIN)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+;; (DETERMINE THE QUARTERLY GOALS FOR THE TEAM)
+
+	;; GOALS CAN BE FOR A TEAM.
+
+		(and (goal_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (TEAM_27 ?x2))
+
+	;; GOALS CAN BE QUARTERLY.
+
+		(and (goal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUARTERLY_27 ?x2))
+
+;; (THE AGENDA IS A LIST OF THE TOPICS YOU LL ADDRESS TO GET TO THAT OBJECTIVE COMMA WITH A TIME LIMIT TO KEEP YOU ON TRACK)
+
+	;; AN AGENDA CAN BE A LIST OF TOPICS.
+
+		(and (AGENDA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LIST_27 ?x2) (of_27 ?x2 ?x3) (TOPICS_27 ?x3))
+
+	;; TOPICS MAY HAVE A LIST.
+
+		(and (TOPICS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [15]>
+
+;; (REVIEW THE STATUS OF LAST QUARTER S GOALS -LRB- 15 MINUTES -RRB- COMMA 2)
+
+	;; GOALS MAY HAVE A STATUS.
+
+		(and (goal_27 ?x1) (HAVE_27 ?x1) (A_27 ?x2) (STATUS_27 ?x2))
+
+	;; QUARTER MAY HAVE GOALS.
+
+		(and (QUARTER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GOALS_27 ?x1))
+
+;; (ROUND-TABLE SUGGESTIONS FOR GOALS -LRB- 20 MINUTES -RRB- COMMA 3)
+
+	;; SUGGESTIONS CAN BE FOR GOALS.
+
+		(and (suggestion_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (goal_27 ?x2))
+
+	;; SUGGESTIONS CAN BE ROUND-TABLE.
+
+		(and (suggestion_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROUND-TABLE_27 ?x2))
+
+;; (PICK TOP 5 GOALS -LRB- 10 MINUTES -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PASS AROUND THE ATTENDANCE BOOK OR SHEET OF PAPER AND ASK EVERYONE ATTENDING TO SIGN THEIR NAMES AT THE BEGINNING OF THE MEETING)
+
+	;; PASS CAN BE AROUND AN ATTENDANCE BOOK OF PAPER.
+
+		(and (pass_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (AN_27 ?x2) (ATTENDANCE_27 ?x2) (BOOK_27 ?x2) (of_27 ?x2 ?x3) (PAPER_27 ?x3))
+
+	;; PAPER MAY UNDERGO AN ATTENDANCE BOOK.
+
+		(and (PAPER_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (ATTENDANCE_27 ?x1) (BOOK_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE NAMES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NAMES_27 ?x1))
+
+	;; A MEETING MAY HAVE A BEGINNING.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (beginning_27 ?x1))
+
+;; (THESE NAMES WILL BE ENTERED IN THE MINUTES)
+
+	;; NAMES MAY BE ENTER -ED IN MINUTES.
+
+		(and (NAMES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENTER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?e1 ?x3) (minute_27 ?x3))
+
+;; (ASK THE MINUTES SECRETARY TO WRITE DOWN THE MAIN POINTS OF THE MEETING FOR TYPING UP LATER)
+
+	;; A MEETING MAY HAVE POINTS.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POINTS_27 ?x1))

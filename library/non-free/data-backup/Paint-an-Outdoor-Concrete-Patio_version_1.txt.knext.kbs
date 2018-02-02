@@ -1,0 +1,330 @@
+;; (FEATUREPREPARE THE CONCRETE SURFACE THAT YOU PLAN TO PAINT)
+
+	;; A SURFACE CAN BE CONCRETE.
+
+		(and (SURFACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+;; (CLEAR THE ENTIRE SURFACE OF FURNITURE COMMA FLOWERPOTS AND TOYS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SWEEP AND CLEAN THE PATIO THOROUGHLY TO REMOVE ANY DIRT AND DUST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SCRUB THE PATIO TO REMOVE OIL SPILLS OR ANY TYPE OF STICKY GRIME FROM THE CONCRETE SURFACE)
+
+	;; A GRIME CAN BE STICKY.
+
+		(and (GRIME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STICKY_27 ?x2))
+
+	;; A SURFACE CAN BE CONCRETE.
+
+		(and (SURFACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+;; (RENT A PRESSURE SPRAYER TO REMOVE STUBBORN GRIME)
+
+	;; A GRIME CAN BE STUBBORN.
+
+		(and (GRIME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STUBBORN_27 ?x2))
+
+;; (WORK WITH A PAINT REMOVING SOLVENT AND/OR SCRAPERS TO REMOVE ANY OLD PAINT)
+
+	;; A PAINT MAY REMOVE SOLVENT.
+
+		(and (PAINT_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (SOLVENT_27 ?x1))
+
+	;; A PAINT CAN BE OLD.
+
+		(and (PAINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (THIS STEP CAN BE TIME CONSUMING COMMA BUT IT S NECESSARY FOR A BEAUTIFUL PAINTED CONCRETE PATIO)
+
+	;; A STEP CAN BE TIME CONSUMING.
+
+		(and (STEP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIME_27 ?x2) (CONSUMING_27 ?x2))
+
+	;; A PATIO CAN BE BEAUTIFUL.
+
+		(and (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEAUTIFUL_27 ?x2))
+
+	;; A PATIO CAN BE CONCRETE.
+
+		(and (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+;; (OTHERWISE COMMA YOU LL END UP WITH VISIBLE BUMPS AND AN UNEVEN TEXTURE ON THE PAINTED CONCRETE PATIO)
+
+	;; BUMPS CAN BE VISIBLE.
+
+		(and (bump_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISIBLE_27 ?x2))
+
+	;; A TEXTURE CAN BE ON A CONCRETE PATIO.
+
+		(and (TEXTURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (CONCRETE_27 ?x2) (PATIO_27 ?x2))
+
+	;; A TEXTURE CAN BE UNEVEN.
+
+		(and (TEXTURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNEVEN_27 ?x2))
+
+	;; A CONCRETE PATIO CAN BE PAINTED.
+
+		(and (CONCRETE_27 ?x1) (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?e2) (paint_27 ?e2 ?x1))
+
+;; (GIVE THE PATIO CLEANING PROCESS THOROUGH ATTENTION)
+
+	;; A CLEANING PROCESS CAN BE PATIO.
+
+		(and (CLEANING_27 ?x1) (process_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PATIO_27 ?x2))
+
+	;; ATTENTION CAN BE THOROUGH.
+
+		(and (ATTENTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THOROUGH_27 ?x2))
+
+;; (EVEN IF THE PATIO DOES N T APPEAR TO BE DIRTY COMMA CLEAN IT ANYWAY)
+
+	;; A PATIO MAY DO.
+
+		(and (PATIO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (SPECS OF DUST CAN BE HARD TO SEE COMMA BUT THEY CAN MESS UP A NEW PAINT JOB)
+
+	;; SPECS CAN BE CONSTITUTED_OF_OR_FILLED_WITH DUST.
+
+		(and (spec_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DUST_27 ?x2))
+
+	;; INDIVIDUAL -S MAY MESS_UP A PAINT JOB.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MESS_5FUP_27 ?x1) (A_27 ?x1) (PAINT_27 ?x1) (JOB_27 ?x1))
+
+;; (THE PATIO CLEANING WILL DEFINE THE QUALITY OF YOUR FINISHED PAINTED CONCRETE PATIO)
+
+	;; A PATIO CLEANING MAY DEFINE A QUALITY OF A PATIO.
+
+		(and (PATIO_27 ?x1) (CLEANING_27 ?x1) (MAY_27 ?x1) (DEFINE_27 ?x1) (A_27 ?x1) (QUALITY_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PATIO_27 ?x2))
+
+	;; A PATIO MAY HAVE A QUALITY.
+
+		(and (PATIO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (QUALITY_27 ?x1))
+
+	;; A PERSON MAY HAVE A PATIO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATIO_27 ?x1))
+
+	;; A PATIO CAN BE FINISHED.
+
+		(and (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINISHED_27 ?x2))
+
+	;; A PATIO CAN BE PAINTED.
+
+		(and (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?e2) (paint_27 ?e2 ?x1))
+
+;; (SELECT THE CONCRETE PAINT YOU WANT TO USE)
+
+	;; A SELECT[PERSON??] MAY PAINT.
+
+		(and (SELECT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PAINT_27 ?x1))
+
+;; (THE COLOR SHOULD COMPLIMENT YOUR PATIO AREA)
+
+	;; A COLOR MAY COMPLIMENT A PATIO AREA.
+
+		(and (COLOR_27 ?x1) (MAY_27 ?x1) (COMPLIMENT_27 ?x1) (A_27 ?x1) (PATIO_27 ?x1) (AREA_27 ?x1))
+
+	;; A PERSON MAY HAVE A PATIO AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATIO_27 ?x1) (AREA_27 ?x1))
+
+;; (ASK PAINT PROFESSIONALS IN YOUR AREA FOR RECOMMENDATIONS OF CONCRETE PAINTS THAT WILL WITHSTAND THE WEATHER EXTREMES FOR YOUR OUTDOOR
+ PATIO AREA)
+
+	;; AN AREA CAN BE FOR RECOMMENDATIONS OF PAINTS.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (recommendation_27 ?x2) (of_27 ?x2 ?x3) (paint_27 ?x3))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; RECOMMENDATIONS CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAINTS.
+
+		(and (recommendation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (paint_27 ?x2))
+
+	;; PAINTS CAN BE CONCRETE.
+
+		(and (paint_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+	;; A PERSON MAY HAVE A PATIO AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATIO_27 ?x1) (AREA_27 ?x1))
+
+	;; A PATIO AREA CAN BE OUTDOOR.
+
+		(and (PATIO_27 ?x1) (AREA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+;; (USE PAINTERS OR MASKING TAPE TO PROTECT THE PATIO EDGES COMMA DOORFRAMES OR AREAS YOU DO NOT WANT TO HAVE PAINT ON)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (BEGIN PAINTING)
+
+	;; A PAINTING CAN BE BEGIN.
+
+		(and (painting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEGIN_27 ?x2))
+
+;; (USE A LONG-HANDLED BRUSH OR A BRUSH-LENGTH EXTENDER TO MAKE THE PROCESS OF PAINTING EASIER)
+
+	;; A BRUSH CAN BE LONG-HANDLED.
+
+		(and (BRUSH_27 ?x1) (be_27 ?e1 ?x1) (long-handled_27 ?x1))
+
+	;; AN EXTENDER CAN BE BRUSH-LENGTH.
+
+		(and (EXTENDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRUSH-LENGTH_27 ?x2))
+
+	;; A PROCESS OF PAINTING CAN BE EASIER.
+
+		(and (process_27 ?x1) (of_27 ?x1 ?x2) (painting_27 ?x2) (be_27 ?e1 ?x1 ?x3) (EASIER_27 ?x3))
+
+;; (START IN A CORNER USING EVEN BRUSH STROKES COMMA WHILE WORKING YOUR WAY OUTWARD)
+
+	;; START MAY OUTWARD.
+
+		(and (START_27 ?x1) (MAY_27 ?x1) (OUTWARD_27 ?x1))
+
+	;; START CAN BE IN A CORNER.
+
+		(and (START_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CORNER_27 ?x2))
+
+	;; A CORNER MAY USE STROKES.
+
+		(and (CORNER_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (STROKES_27 ?x1))
+
+	;; STROKES CAN BE BRUSH.
+
+		(and (stroke_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRUSH_27 ?x2))
+
+	;; A PERSON MAY HAVE A WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+;; (COVER THE ENTIRE PATIO AREA IN A LIGHT COAT OF CONCRETE PAINT)
+
+	;; A PATIO AREA CAN BE IN A COAT OF PAINT.
+
+		(and (PATIO_27 ?x1) (AREA_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (COAT_27 ?x2) (of_27 ?x2 ?x3) (PAINT_27 ?x3))
+
+	;; A COAT CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAINT.
+
+		(and (COAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAINT_27 ?x2))
+
+	;; A COAT CAN BE LIGHT.
+
+		(and (COAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+	;; A PAINT CAN BE CONCRETE.
+
+		(and (PAINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+;; (ALLOW THIS FIRST COAT TO DRY COMPLETELY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS SHOULD TAKETO 4 HOURS OR THE LENGTH OF TIME RECOMMENDED BY THE CONCRETE PAINT MANUFACTURER)
+
+	;; A THING MAY TAKETO SOME_NUMBER_OF HOURS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (TAKETO_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (HOURS_27 ?x1))
+
+	;; A PAINT MANUFACTURER CAN BE CONCRETE.
+
+		(and (PAINT_27 ?x1) (MANUFACTURER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+;; (APPLY SUBSEQUENT COATS OF PAINT UNTIL YOU ACHIEVE THE DESIRED LOOK)
+
+	;; COATS MAY PAINT.
+
+		(and (coat_27 ?x1) (MAY_27 ?x1) (PAINT_27 ?x1))
+
+	;; COATS CAN BE SUBSEQUENT.
+
+		(and (coat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUBSEQUENT_27 ?x2))
+
+	;; A PERSON MAY ACHIEVE A LOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ACHIEVE_27 ?x1) (A_27 ?x1) (LOOK_27 ?x1))
+
+	;; A LOOK CAN BE DESIRED.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESIRED_27 ?x2))
+
+;; (ALLOW PAINT TO DRY BETWEEN EACH COAT COMMA AS RECOMMENDED BY THE MANUFACTURER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [26]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GIVE YOUR NEWLY PAINTED CONCRETE PATIO TIME TO DRY COMMA SET OR CURE BEFORE USING IT)
+
+	;; A PERSON MAY HAVE A PATIO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATIO_27 ?x1))
+
+	;; A PATIO CAN BE PAINTED.
+
+		(and (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?e2) (paint_27 ?e2 ?x1))
+
+	;; A PATIO CAN BE CONCRETE.
+
+		(and (PATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONCRETE_27 ?x2))
+
+;; (IN MOST CASES COMMA THIS CAN TAKE SEVERAL DAYS COMMA DEPENDING ON YOUR CLIMATE)
+
+	;; A THING MAY TAKE SOME_NUMBER_OF DAYS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (DAYS_27 ?x1))
+
+	;; A PERSON MAY HAVE A CLIMATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLIMATE_27 ?x1))

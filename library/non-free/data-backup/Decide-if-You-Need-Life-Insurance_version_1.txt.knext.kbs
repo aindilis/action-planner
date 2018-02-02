@@ -1,0 +1,122 @@
+;; (MAYBE YOU HAVE A HOME LOAN COMMA CAR LOAN COMMA STUDENT LOAN COMMA CREDIT CARD DEBT COMMA OR OTHER TYPES OF OUTSTANDING LOANS YOU OWE MONEY ON)
+
+	;; A PERSON MAY OWE_ON MONEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (OWE_5FON_27 ?x1) (MONEY_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOME LOAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1) (LOAN_27 ?x1))
+
+	;; LOANS CAN BE OUTSTANDING.
+
+		(and (loan_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTSTANDING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (THE AVERAGE FUNERAL MAY COST OVER $ COMMA500 ACCORDING TO THE NATIONAL FUNERAL DIRECTORS ASSOCIATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (SOME PEOPLE PURCHASE LIFE INSURANCE TO HELP PROVIDE FUNDS TO A CHARITABLE FOUNDATION OR ORGANIZATION WHEN THEY DIE)
+
+	;; A FOUNDATION CAN BE CHARITABLE.
+
+		(and (foundation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHARITABLE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DIE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DIE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; (SOME BUSINESS-OWNERS PURCHASE LIFE INSURANCE TO HELP PROVIDE FUNDS FOR THEIR FAMILY TO CONTINUE THEIR BUSINESS AFTER THEY ARE GONE)
+
+	;; SOME_NUMBER_OF PURCHASE LIFE INSURANCE MAY PROVIDE FUNDS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PURCHASE_27 ?x1) (LIFE_27 ?x1) (INSURANCE_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (FUNDS_27 ?x1))
+
+	;; A PURCHASE LIFE INSURANCE CAN BE BUSINESS-OWNERS.
+
+		(and (PURCHASE_27 ?x1) (LIFE_27 ?x1) (INSURANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSINESS-OWNERS_27 ?x2))
+
+	;; FUNDS CAN BE FOR A FAMILY.
+
+		(and (fund_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (FAMILY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A FAMILY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A BUSINESS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUSINESS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE GO -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IT MAY COST MONEY TO SEARCH FOR AND FIND A REPLACEMENT FOR YOU TO RUN YOUR BUSINESS AFTER YOU ARE GONE)
+
+	;; A REPLACEMENT CAN BE FOR A PERSON.
+
+		(and (REPLACEMENT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY HAVE A BUSINESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUSINESS_27 ?x1))
+
+	;; A PERSON MAY BE GO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IN ADDITION COMMA SOME BUSINESS OWNERS WHO OWN A BUSINESS WITH A PARTNER MAY BUY LIFE INSURANCE TO HELP THEIR FAMILY BUY-OUT THE REMAINING BUSINESS OWNER AFTER THEIR DEATH COMMA SO YOUR FAMILY WOULD OWN THE
+ ENTIRE BUSINESS)
+
+	;; A BUSINESS CAN BE WITH A PARTNER.
+
+		(and (BUSINESS_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PARTNER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A FAMILY BUY-OUT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1) (BUY-OUT_27 ?x1))
+
+	;; A BUSINESS OWNER CAN BE REMAINING.
+
+		(and (BUSINESS_27 ?x1) (OWNER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMAINING_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A DEATH.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DEATH_27 ?x1))
+
+	;; A FAMILY MAY OWN A BUSINESS.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (OWN_27 ?x1) (A_27 ?x1) (BUSINESS_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))

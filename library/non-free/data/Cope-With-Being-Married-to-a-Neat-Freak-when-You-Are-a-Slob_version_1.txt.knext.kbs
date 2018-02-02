@@ -1,0 +1,647 @@
+;; (THE IDEA BEHIND DOING THIS IS THAT YOU LL PRESENT THESE CONCERNS TO YOUR SPOUSE COMMA OR AT LEAST USE THIS AS TO BRAINSTORM WHAT TO SAY TO YOUR SPOUSE COMMA ALONG WITH FACTUAL SITUATIONS TO BACK UP YOUR POINTS)
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+	;; SITUATIONS CAN BE FACTUAL.
+
+		(and (situation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FACTUAL_27 ?x2))
+
+	;; A PERSON MAY HAVE POINTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POINTS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (I PROPOSE WE BUY A BOOKCASE TO PUT THEM IN SO THAT I STOP MAKING PILES AND SHE STOPS MOVING THEM OUT OF THE BEDROOM)
+
+	;; PERSON -S MAY BUY A BOOKCASE.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (BOOKCASE_27 ?x1))
+
+	;; A PERSON MAY STOP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STOP_27 ?x1))
+
+	;; A FEMALE MAY STOP.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (STOP_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (IT D BE OKAY IF HE DID MOST OF THE COOKING BUT HE DOES N T AND I CA N T FIND ANYTHING)
+
+	;; A MALE MAY DO.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY FIND ANYTHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (ANYTHING_27 ?x1))
+
+;; (I PROPOSE WE SPEND AN AFTERNOON SORTING THE PANTRY INTO AN ORDER THAT WORKS PRINCIPALLY FOR ME BUT THAT HE UNDERSTANDS WELL ENOUGH TO USE AS IT IS AND TO LEAVE MY ORDER ALONE)
+
+	;; A PERSON MAY PROPOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PROPOSE_27 ?x1))
+
+	;; PERSON -S MAY SPEND AN AFTERNOON.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SPEND_27 ?x1) (AN_27 ?x1) (AFTERNOON_27 ?x1))
+
+	;; AN AFTERNOON MAY SORT A PANTRY.
+
+		(and (AFTERNOON_27 ?x1) (MAY_27 ?x1) (SORT_27 ?x1) (A_27 ?x1) (PANTRY_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE AN ORDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ORDER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; (IT S A WASTE OF WATER AND I CA N T BEAR CLEAN TOWELS EVERY DAY AS THEY RE NOT SOFT)
+
+	;; A WASTE CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (WASTE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+	;; A PERSON MAY BEAR TOWELS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BEAR_27 ?x1) (TOWELS_27 ?x1))
+
+	;; TOWELS CAN BE CLEAN.
+
+		(and (towel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (I PROPOSE THAT WE HAVE A TALK ABOUT WHY MY SPOUSE NEEDS TO DO THIS AND TO PERHAPS FIND A WAY OF KEEPING MY TOWEL UNWASHED FOR A WEEK)
+
+	;; A PERSON MAY PROPOSE A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PROPOSE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; PERSON -S MAY HAVE A TALK.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TALK_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A TOWEL UNWASHED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOWEL_27 ?x1) (UNWASHED_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; (I LL BE THE FIRST TO ADMIT THEY RE MESSY BUT I DO N T HAVE TIME OR THE INTEREST IN DOING MUCH ELSE WHILE OUR BEDROOM IS SUCH A MESS)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A BEDROOM CAN BE A MESS.
+
+		(and (BEDROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (MESS_27 ?x2))
+
+	;; PERSON -S MAY HAVE A BEDROOM.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEDROOM_27 ?x1))
+
+;; (I PROPOSE THAT WE VISIT A BEDROOM STORAGE STORE TOGETHER AND FIND REALLY EASY-TO-USE STORAGE CONTAINERS THAT I CAN DUMP MY CLOTHES INTO SO THAT SHE FEELS HAPPIER AND I DO N T FEEL LIKE IT S SO HARD TO KEEP THE
+ PILES FROM HAPPENING)
+
+	;; A PERSON MAY PROPOSE A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PROPOSE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; PERSON -S MAY VISIT A BEDROOM STORAGE STORE.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (VISIT_27 ?x1) (A_27 ?x1) (BEDROOM_27 ?x1) (STORAGE_27 ?x1) (STORE_27 ?x1))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; A FEMALE MAY FEEL HAPPIER.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (HAPPIER_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (SIT DOWN WITH YOUR SPOUSE AT A TIME YOU RE BOTH RELAXED COMMA CALM COMMA AND IN NO HURRY TO GET ANYWHERE)
+
+	;; A SPOUSE CAN BE AT A TIME.
+
+		(and (SPOUSE_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+;; (A WEEKEND IS A GOOD TIME COMMA OR PERHAPS DURING A VACATION)
+
+	;; A TIME CAN BE GOOD.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (BEGIN ADDRESSING THE SITUATION BY TELLING YOUR SPOUSE THE PROBLEM)
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [10]>
+
+;; (THAT IS NOT GOING TO WIN OVER YOUR SPOUSE AND IS A SURE ARGUMENT STARTER)
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+	;; AN ARGUMENT STARTER CAN BE SURE.
+
+		(and (ARGUMENT_27 ?x1) (STARTER_27 ?x1) (be_27 ?e1 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [12]>
+
+;; (IF YOUR SPOUSE GETS DEFENSIVE COMMA STAY CALM)
+
+	;; A SPOUSE MAY GET DEFENSIVE.
+
+		(and (SPOUSE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (DEFENSIVE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; (WAIT UNTIL THEY RE DONE COMMA AND THEN PROPOSE YOUR COMPROMISES COMMA EXPLAINING WHY YOU CHOSE THOSE PARTICULAR HABITS IN A NON - ACCUSING MANNER)
+
+	;; A PERSON MAY HAVE COMPROMISES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPROMISES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE HABITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (HABITS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [13]>
+
+;; (IN ADDITION COMMA PLAN TO SHARE CHORES DAILY OR WEEKLY IN SMALL AMOUNTS)
+
+	;; AMOUNTS CAN BE SMALL.
+
+		(and (amount_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (DISCUSS YOUR PARTNER S FEELINGS ABOUT THE COMPROMISES)
+
+	;; FEELINGS CAN BE ABOUT COMPROMISES.
+
+		(and (feeling_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (COMPROMISES_27 ?x2))
+
+	;; A PARTNER MAY HAVE FEELINGS.
+
+		(and (PARTNER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FEELINGS_27 ?x1))
+
+	;; A PERSON MAY HAVE A PARTNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+;; (AFTER TRYING THEM OUT FOR A BIT COMMA IF THE COMPROMISES SEEM UNFAIR TO EITHER ONE OF YOU COMMA GO BACK TO THE DRAWING BOARD AND RENEGOTIATE THEM)
+
+	;; COMPROMISES CAN BE UNFAIR TO SOME_NUMBER_OF ONE OF A PERSON.
+
+		(and (compromise_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNFAIR_27 ?x2) (to_27 ?e1 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (of_27 ?x3 ?x4) (A_27 ?x4) (PERSON_27 ?x4))
+
+;; (BE OPEN COMMA AND REALIZE THAT OLD HABITS DIE HARD)
+
+	;; HABITS MAY DIE HARD.
+
+		(and (HABITS_27 ?x1) (MAY_27 ?x1) (DIE_27 ?x1) (HARD_27 ?x1))
+
+	;; HABITS CAN BE OLD.
+
+		(and (habit_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [14]>
+
+;; (DO N T OVER STRESS IF YOUR PARTNER IS UNWILLING OR UNPRODUCTIVE WITH THE COMPROMISES)
+
+	;; A PARTNER CAN BE UNWILLING.
+
+		(and (partner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNWILLING_27 ?x2))
+
+	;; A PERSON MAY HAVE A PARTNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+;; (SHOW THEM THE COMPROMISES WORK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 11 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF THEY START TO FALTER COMMA HOLD UP YOUR SIDE OF THE COMPROMISE AND IN DOING SO COMMA HELP THEM TO NOTICE THAT IT S IMPORTANT TO YOU COMMA AND AS SUCH COMMA SHOULD BE TO THEM)
+
+	;; A COMPROMISE MAY HAVE A SIDE.
+
+		(and (COMPROMISE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+;; (THIS IS ABOUT YOUR RELATIONSHIP COMMA AFTER ALL)
+
+	;; A THING CAN BE ABOUT A RELATIONSHIP.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (RELATIONSHIP_27 ?x2))
+
+	;; A PERSON MAY HAVE A RELATIONSHIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RELATIONSHIP_27 ?x1))
+
+;; (KEEP IN MIND THAT PROGRESS IS MEASURED DIFFERENTLY BY THE NEAT FREAK AND BY THE CLUTTER SLOB)
+
+	;; PROGRESS MAY BE MEASURE -ED.
+
+		(and (progress_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEASURE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A FREAK CAN BE NEAT.
+
+		(and (FREAK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAT_27 ?x2))
+
+;; (FOR THE SLOB COMMA CLEARING UP TAKES A LOT MORE TIME AND EFFORT COMMA AND INCLUDES A LOT OF EMOTIONAL CHURNING TO DEAL WITH THE CLUTTER)
+
+	;; CLEARING MAY TAKE TIME.
+
+		(and (clearing_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (TIME_27 ?x1))
+
+	;; A CHURNING CAN BE EMOTIONAL.
+
+		(and (CHURNING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMOTIONAL_27 ?x2))
+
+;; (FOR THE NEAT FREAK COMMA ANGER CAN BUILD UP INTO RESENTMENT THAT THINGS ARE N T IMPROVING FAST ENOUGH AND IT S IMPORTANT TO LEARN TO STIFLE THE CRITICISM AND TO CONTROL THE FRUSTRATION REALIZING THAT THE TIME
+ NEEDED IS PROBABLY LONGER THAN THE NEAT FREAK WOULD LIKE)
+
+	;; ANGER MAY BUILD_UP A PROPOSITION.
+
+		(and (ANGER_27 ?x1) (MAY_27 ?x1) (BUILD_5FUP_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; THINGS MAY IMPROVE.
+
+		(and (thing_27 ?e1 ?x1) (MAY_27 ?x1) (IMPROVE_27 ?x1))
+
+	;; A FRUSTRATION MAY REALIZE A PROPOSITION.
+
+		(and (FRUSTRATION_27 ?x1) (MAY_27 ?x1) (REALIZE_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A TIME CAN BE LONGER.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONGER_27 ?x2))
+
+	;; A TIME MAY BE NEED -ED.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEED_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A FREAK MAY LIKE.
+
+		(and (FREAK_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+	;; A FREAK CAN BE NEAT.
+
+		(and (FREAK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAT_27 ?x2))
+
+;; (KEEP ANOTHER FACTOR IN MIND  THE NEAT FREAK MAY GET MORE RESULTS IN LESS TIME THROUGH PRACTICE AND KNOW-HOW)
+
+	;; SOME_NUMBER_OF FACTOR CAN BE IN MIND.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FACTOR_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MIND_27 ?x2))
+
+	;; A FREAK MAY GET RESULTS.
+
+		(and (FREAK_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (RESULTS_27 ?x1))
+
+	;; A FREAK CAN BE NEAT.
+
+		(and (FREAK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAT_27 ?x2))
+
+;; (MANY SLOBS ARE N T LAZY COMMA THEY TRY JUST AS HARD AS NEAT FREAKS BUT DO N T HAVE AS MUCH EXPERIENCE)
+
+	;; INDIVIDUAL -S MAY TRY AS FREAKS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (TRY_27 ?x1) (AS_27 ?x1) (FREAKS_27 ?x1))
+
+	;; SOME_NUMBER_OF SLOBS CAN BE LAZY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SLOBS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LAZY_27 ?x2))
+
+	;; FREAKS CAN BE HARD.
+
+		(and (freak_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; FREAKS CAN BE NEAT.
+
+		(and (freak_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAT_27 ?x2))
+
+;; (OBSERVE THE WAYS EACH PARTNER DOES THE SAME CHORE AT A TIME WHEN THAT PARTNER S IN A GOOD MOOD AND MOTIVATED TO DO A GOOD JOB)
+
+	;; WAYS MAY DO A CHORE.
+
+		(and (WAYS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (CHORE_27 ?x1))
+
+	;; A MOOD CAN BE GOOD.
+
+		(and (MOOD_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A JOB CAN BE GOOD.
+
+		(and (JOB_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (TIME IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 11 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DISCUSS METHODS OF CLEANING)
+
+	;; METHODS CAN BE CONSTITUTED_OF_OR_FILLED_WITH CLEANING.
+
+		(and (method_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CLEANING_27 ?x2))
+
+	;; METHODS CAN BE DISCUSS.
+
+		(and (method_27 ?x1) (be_27 ?e1 ?x1 ?x2) (discuss_27 ?x2))
+
+;; (MILITARY PEOPLE OFTEN CLEAN MUCH FASTER AND MORE EFFICIENTLY THAN CIVILIANS BECAUSE THEY RE TAUGHT HOW IN BASIC TRAINING)
+
+	;; PEOPLE MAY CLEAN.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (CLEAN_27 ?x1))
+
+	;; PEOPLE CAN BE MILITARY.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MILITARY_27 ?x2))
+
+	;; A TRAINING CAN BE BASIC.
+
+		(and (training_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+;; (LOOK FOR THE SILVER LININGS THERE ARE MANY)
+
+	;; SILVER MAY LINING.
+
+		(and (SILVER_27 ?x1) (MAY_27 ?x1) (LINING_27 ?x1))
+
+;; (FOR EXAMPLE COMMA A NEAT FREAK KEEPS THINGS TIDY AND IN GOOD SHAPE SO THAT YOU CAN RECEIVE THOSE VISITORS AND DO N T SUCCUMB TO HOARDING TOO MUCH)
+
+	;; A FREAK MAY KEEP.
+
+		(and (FREAK_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1))
+
+	;; A FREAK CAN BE NEAT.
+
+		(and (FREAK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAT_27 ?x2))
+
+	;; THINGS MAY TID.
+
+		(and (thing_27 ?e1 ?x1) (MAY_27 ?x1) (TID_27 ?x1))
+
+	;; A SHAPE CAN BE GOOD.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY RECEIVE VISITORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RECEIVE_27 ?x1) (VISITORS_27 ?x1))
+
+;; (AND A SLOB LETS A NEAT FREAK LEARN TO LET DOWN THEIR HAIR NOW AND THEN AND NOT WORRY SO MUCH IF THE SOFA COVER IS SLIGHTLY AWRY OR THE BOOKS ARE N T DUSTED THIS WEEK)
+
+	;; A SLOB MAY LET.
+
+		(and (SLOB_27 ?x1) (MAY_27 ?x1) (LET_27 ?x1))
+
+	;; A FREAK CAN BE NEAT.
+
+		(and (FREAK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAT_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE HAIR.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HAIR_27 ?x1))
+
+	;; A SOFA COVER CAN BE AWRY.
+
+		(and (SOFA_27 ?x1) (COVER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AWRY_27 ?x2))
+
+	;; BOOKS MAY DUST A WEEK.
+
+		(and (BOOKS_27 ?x1) (MAY_27 ?x1) (DUST_27 ?x1) (A_27 ?x1) (WEEK_27 ?x1))
+
+;; (BOTH OF YOU HAVE A WONDERFUL OPPORTUNITY TO LEARN MUCH FROM ONE ANOTHER ABOUT COMPROMISE COMMA ACCEPTANCE COMMA AND LEARNING TO LOVE THE NEGATIVE PARTS ABOUT OURSELVES WE OFTEN TRY TO BURY)
+
+	;; SOME_NUMBER_OF THING OF A PERSON MAY HAVE AN OPPORTUNITY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (AN_27 ?x2) (OPPORTUNITY_27 ?x2))
+
+	;; AN OPPORTUNITY CAN BE WONDERFUL.
+
+		(and (OPPORTUNITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WONDERFUL_27 ?x2))
+
+	;; PARTS CAN BE ABOUT PERSON -S.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (PERSON_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; PARTS CAN BE NEGATIVE.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEGATIVE_27 ?x2))

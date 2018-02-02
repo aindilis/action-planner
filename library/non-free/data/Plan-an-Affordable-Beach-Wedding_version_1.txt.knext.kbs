@@ -1,0 +1,263 @@
+;; (CAMERACHOOSE YOUR LOCATION WISELY)
+
+	;; A PERSON MAY HAVE A LOCATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCATION_27 ?x1))
+
+;; (BEACHES ARE USUALLY BREEZY)
+
+	;; BEACHES CAN BE BREEZY.
+
+		(and (beach_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BREEZY_27 ?x2))
+
+;; (TRY TO PICK A COVE OR AREA PROTECTED FROM DIRECT WINDS FOR YOUR CEREMONY)
+
+	;; A COVE MAY BE PROTECT -ED FROM WINDS.
+
+		(and (COVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROTECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (WINDS_27 ?x2))
+
+	;; WINDS CAN BE FOR A CEREMONY.
+
+		(and (wind_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (CEREMONY_27 ?x2))
+
+	;; WINDS CAN BE DIRECT.
+
+		(and (wind_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRECT_27 ?x2))
+
+	;; A PERSON MAY HAVE A CEREMONY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CEREMONY_27 ?x1))
+
+;; (BE MINDFUL OF THE TIDES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DECIDE HOW MANY GUESTS WILL BE ATTENDING)
+
+	;; GUESTS MAY ATTEND.
+
+		(and (GUESTS_27 ?x1) (MAY_27 ?x1) (ATTEND_27 ?x1))
+
+;; (MOST BEACHES DO NOT REQUIRE A SPECIAL PERMIT FOR SMALL INFORMAL WEDDINGS)
+
+	;; BEACHES MAY DO.
+
+		(and (beach_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERMIT CAN BE FOR WEDDINGS.
+
+		(and (PERMIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WEDDINGS_27 ?x2))
+
+	;; WEDDINGS CAN BE SMALL.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; WEDDINGS CAN BE INFORMAL.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INFORMAL_27 ?x2))
+
+;; (CHECK WITH LOCAL AUTHORITIES TO BE SURE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FIND A WEDDING OFFICIATE LOCAL TO THE BEACH OF YOUR CHOICE TO PERFORM YOUR WEDDING CEREMONY)
+
+	;; A WEDDING OFFICIATE CAN BE LOCAL TO A BEACH OF A CHOICE.
+
+		(and (WEDDING_27 ?x1) (OFFICIATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCAL_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (BEACH_27 ?x3) (of_27 ?x3 ?x4) (A_27 ?x4) (CHOICE_27 ?x4))
+
+	;; A CHOICE MAY HAVE A BEACH.
+
+		(and (CHOICE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEACH_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+	;; A PERSON MAY HAVE A WEDDING CEREMONY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WEDDING_27 ?x1) (CEREMONY_27 ?x1))
+
+;; (OFTEN THEY SPECIALIZE IN BEACH WEDDINGS AND CAN PROVIDE USEFUL TIPS AS WELL AS VERY AFFORDABLE PACKAGE DEALS)
+
+	;; INDIVIDUAL -S MAY SPECIALIZE IN BEACH WEDDINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SPECIALIZE_27 ?x1) (in_27 ?x1 ?x2) (BEACH_27 ?x2) (WEDDINGS_27 ?x2))
+
+	;; TIPS CAN BE USEFUL.
+
+		(and (TIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEFUL_27 ?x2))
+
+	;; PACKAGE DEALS CAN BE AFFORDABLE.
+
+		(and (package_27 ?x1) (deal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFFORDABLE_27 ?x2))
+
+;; (WEDDING PACKAGES ARE BECOMING VERY POPULAR AND ARE IDEAL FOR BUSY COUPLES)
+
+	;; WEDDING PACKAGES CAN BE POPULAR.
+
+		(and (wedding_27 ?x1) (package_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; COUPLES CAN BE BUSY.
+
+		(and (couple_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSY_27 ?x2))
+
+;; (OFTEN THEY INCLUDE EVERYTHING YOU NEED FROM THE BOUQUET TO THE PHOTOGRAPHY TO THE FILING OF YOUR MARRIAGE LICENSE)
+
+	;; INDIVIDUAL -S MAY INCLUDE EVERYTHING.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (EVERYTHING_27 ?x1))
+
+	;; A PERSON MAY NEED FROM A BOUQUET TO A PHOTOGRAPHY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (BOUQUET_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PHOTOGRAPHY_27 ?x2))
+
+	;; A BOUQUET CAN BE TO A PHOTOGRAPHY.
+
+		(and (BOUQUET_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PHOTOGRAPHY_27 ?x2))
+
+	;; A MARRIAGE LICENSE MAY UNDERGO A FILING.
+
+		(and (MARRIAGE_27 ?x1) (LICENSE_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (FILING_27 ?x1))
+
+	;; A PERSON MAY HAVE A MARRIAGE LICENSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MARRIAGE_27 ?x1) (LICENSE_27 ?x1))
+
+;; (MINIMIZE YOUR RECEPTION EXPENSES BY PLANNING A SUNSET CEREMONY FOLLOWED BY A SIMPLE BUT ELEGANT WINE AND CHEESE RECEPTION RIGHT ON THE BEACH)
+
+	;; A PERSON MAY HAVE RECEPTION EXPENSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RECEPTION_27 ?x1) (EXPENSES_27 ?x1))
+
+	;; A CEREMONY MAY BE FOLLOW -ED BY A WINE.
+
+		(and (CEREMONY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOLLOW_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (WINE_27 ?x2))
+
+	;; A CEREMONY CAN BE SUNSET.
+
+		(and (CEREMONY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUNSET_27 ?x2))
+
+	;; A WINE CAN BE ON A BEACH.
+
+		(and (WINE_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (BEACH_27 ?x2))
+
+	;; A WINE CAN BE SIMPLE.
+
+		(and (WINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (RENT AN OUTDOOR CANOPY TO PROTECT YOUR RECEPTION AREA FROM RAIN SHOWERS AND UNINVITED SEAGULLS)
+
+	;; A CANOPY CAN BE OUTDOOR.
+
+		(and (CANOPY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+	;; A PERSON MAY HAVE A RECEPTION AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RECEPTION_27 ?x1) (AREA_27 ?x1))
+
+	;; SEAGULLS CAN BE UNINVITED.
+
+		(and (seagull_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNINVITED_27 ?x2))
+
+;; (FOR A TROPICAL FLARE COMMA DECORATE THE CANOPY WITH TULLE AND TWINKLING MINI-LIGHTS AND SILK FLOWERS)
+
+	;; A FLARE CAN BE TROPICAL.
+
+		(and (FLARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TROPICAL_27 ?x2))
+
+;; (USE HURRICANE CANDLES FOR LIGHTING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [17]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (REMEMBER YOUR GUEST S COMFORT AND SAFETY)
+
+	;; A GUEST MAY HAVE A COMFORT.
+
+		(and (GUEST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMFORT_27 ?x1))
+
+	;; A PERSON MAY HAVE A GUEST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GUEST_27 ?x1))
+
+;; (PROVIDE SEATING FOR THE ELDERLY AS WELL AS SUNSCREEN AND INSECT REPELLENT JUST IN CASE)
+
+	;; 
+
+	;; ((:I (:F K SEATING.N) FOR.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (SEATING_2EN_27 ?x1) (FOR_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF SOME OF YOUR GUESTS HAVE MOBILITY IMPAIRMENTS RECOGNIZE THAT IT S NEARLY IMPOSSIBLE TO PUSH A WHEELCHAIR IN THE SAND COMMA AND IT S VERY HARD FOR PEOPLE WHO HAVE DIFFICULTY WALKING TO NEGOTIATE SAND AS WELL)
+
+	;; SOME_NUMBER_OF THING OF GUESTS MAY HAVE MOBILITY IMPAIRMENTS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (GUESTS_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (MOBILITY_27 ?x2) (IMPAIRMENTS_27 ?x2))
+
+	;; GUESTS MAY HAVE A THING.
+
+		(and (GUESTS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+	;; A WHEELCHAIR CAN BE IN SAND.
+
+		(and (WHEELCHAIR_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SAND_27 ?x2))
+
+;; (MANY BEACHES HAVE WALKWAYS OR PLATFORMS)
+
+	;; SOME_NUMBER_OF BEACHES MAY HAVE WALKWAYS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (BEACHES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALKWAYS_27 ?x1))
+
+;; (USE THESE ACCORDINGLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [22]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

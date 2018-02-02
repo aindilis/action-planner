@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>Clips: Pattern Matching</title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+<h2>8 Pattern Matching</h2>
+
+<H3>Variables</H3>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> output
+    (suggestion <FONT COLOR=#FF0000>?action</FONT>)
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t crlf <font color="#008000">"I would like to suggest you to "</font>
+                crlf <FONT COLOR=#FF0000>?action</FONT> crlf crlf) )
+</PRE>
+<H3>Multiple Use of Variables</H3>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> eye-color
+    (find (eye-color <FONT COLOR=#FF0000>?eye</FONT>))
+    (person (name ?name) (eye-color <FONT COLOR=#FF0000>?eye</FONT>))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t crlf ?name
+                " has " <FONT COLOR=#FF0000>?eye</FONT> " eye." crlf))
+</PRE>
+<H3>Fact Addresses</H3>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> process-moved-information
+    <FONT COLOR=#FF0000>?f1</FONT> <FONT COLOR=#FF0000><-</FONT> (moved (name ?name) (address ?address))
+    <FONT COLOR=#FF0000>?f2</FONT> <FONT COLOR=#FF0000><-</FONT> (person (name ?name))
+    =&gt;
+    (<font color="#8000FF"><b>retract</b></font> ?f1)           <FONT color=#0040a0>;a MUST or infinite loop</FONT>
+    (<font color="#8000FF"><b>modify</b></font> ?f2 (address ?address)))
+</PRE>
+
+<H3>Single-field Wildcards</H3>
+<PRE>
+(<font color="#8000FF"><b>deftemplate</b></font> person
+    (multislot name)
+    (slot phone-number))
+(<font color="#8000FF"><b>defrule</b></font> print-telephone-number
+    (person (name <FONT COLOR=#FF0000>? ?</FONT> ?last-name)
+            (phone-number ?phone))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?phone crlf))
+</PRE>
+<H3>Multifield Wildcards</H3>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> print-telephone-number
+    (person (name <FONT COLOR=#FF0000>$?</FONT> ?last-name)
+            (phone-number ?phone))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?phone crlf))
+</PRE>
+<H3>Blocks World</H3>
+<LI><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/blocks.htm">pseudocode</A>
+<H3>knowledge base in Clips</H3>
+
+<OL>
+<LI><A HREF="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/clips/examples/blocks-0.clp">first version</A>
+<LI><A HREF="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/clips/examples/Book/blocks.clp">revised version</A>
+<LI><A HREF="http://www.csie.ntu.edu.tw/~sylee/jess/stack.htm">Web Demo -- in Jess</A>
+<LI><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/blocks.htm">Web Demo -- in WebClips</A>
+</OL>
+<H3>Field Contraints</H3>
+<H4>Not Field Contraint</H4>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> person-without-brown-hair
+    (person (name ?name)
+            (hair <FONT COLOR=#FF0080><B>~</B></FONT>brown))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?name <font color="#008000">" does not have brown hair."</font> crlf))
+</PRE>
+<H4>Or Field Contraint</H4>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> person-with-brown-or-black-hair
+    (person (name ?name)
+            (hair brown<FONT COLOR=#FF0080><B>|</B></FONT>black))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?name <font color="#008000">" has dark hair."</font> crlf))
+</PRE>
+
+<H4>And Field Contraint</H4>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> person-with-brown-or-black-hair
+    (person (name ?name)
+            (hair ?color<FONT COLOR=#FF0080><B>&</B></FONT>brown|black))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?name <font color="#008000">" has "</font> ?color <font color="#008000">" hair."</font> crlf))
+
+(<font color="#8000FF"><b>defrule</b></font> person-without-brown-nor-black-hair
+    (person (name ?name)
+            (hair ?color&~brown|~black))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?name <font color="#008000">" has "</font> ?color <font color="#008000">" hair."</font> crlf))
+
+</PRE>
+
+
+<H4>Combining Field Contraint</H4>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> complex-eye-hair-match
+    (person (name ?name1)
+            (eyes <FONT COLOR=#FF0000>?eyes1</FONT>&blue|green)
+            (hair <FONT COLOR=#FF0000>?hair1</FONT>&~black))
+    (person (name ?name2&~?name1)
+            (eyes <FONT COLOR=#8000FF>?eyes2</FONT>&<FONT COLOR=#FF0000>~eyes1</FONT>)
+            (hair <FONT COLOR=#8000FF>?hair2</FONT>&red|<FONT COLOR=#FF0000>?hair1</FONT>))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t ?name1 <font color="#008000">" has "</font> <FONT COLOR=#FF0000>?eyes1</FONT> <font color="#008000">"eyes and "</font>
+             <FONT COLOR=#FF0000>?hair1</FONT> <font color="#008000">" hair."</font> crlf)
+    (<font color="#8000FF"><b>printout</b></font> t ?name2 <font color="#008000">" has "</font> <FONT COLOR=#8000FF>?eyes2</FONT> <font color="#008000">"eyes and "</font>
+             <FONT COLOR=#8000FF>?hair2</FONT> <font color="#008000">" hair."</font> crlf))
+</PRE>
+
+<H3><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.html">Functions</A></H3>
+
+<H4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.5.1.html">Elementary Math Functions</A></H4>
+<H4>Variable Number of Aruguments</H4>
+
+<H3><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.1.html">bind Function</A></H3>
+<PRE>
+   (<font color="#8000FF"><b>bind</b></font> ?new-size (- ?size ?choice))
+</PRE>
+<H3><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.4.2.html">I/O Functions</A></H3>
+<H4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.4.2.4.html">read</A></H4>
+<PRE>
+(<font color="#8000FF"><b>defrule</b></font> player-select
+   (phase choose-player)
+   =&gt;
+   (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Who moves first (Computer: c "</font>
+               <font color="#008000">"Human: h)? "</font>)
+   (<font color="#8000FF"><b>assert</b></font> (player-select (<font color="#FF0000"><b>read</b></font>))))
+</PRE>
+
+<H4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.4.2.1.html">open</A></H4>
+<PRE>
+(<FONT COLOR=#FF0000>open</font> <font color="#008000">"input.dat"</font> data <font color="#008000">"r"</font>)
+</PRE>
+<H4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.4.2.2.html">close</A></H4>
+<PRE>
+(<FONT COLOR=#FF0000>open</FONT> <font color="#008000">"example.dat"</font> xmp <font color="#008000">"w"</font>)
+(<font color="#8000FF"><b>printout</b></font> xmp <font color="#008000">"green"</font> crlf)
+(<font color="#8000FF"><b>printout</b></font> xmp 7 crlf)
+(<FONT COLOR=#FF0000>close</FONT> xmp)
+
+(<FONT COLOR=#FF0000>open</FONT> <font color="#008000">"example.dat"</font> xmp <font color="#008000">"r"</font>)
+(<font color="#8000FF"><b>read</b></font> xmp)
+(<font color="#8000FF"><b>read</b></font> xmp)
+(<FONT COLOR=#FF0000>close</FONT> xmp)
+</PRE>
+<H4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.4.2.6.html">format</A></H4>
+<PRE>
+(<FONT COLOR=#FF0000>format</FONT> nil <font color="#008000">"Name: %-15s Age: %3d"</font>
+         <font color="#008000">"Bob Green"</font> 35)
+(<font color="#8000FF"><b>bind</b></font> ?name
+    (<FONT COLOR=#FF0000>format</FONT> nil <font color="#008000">"Name: %-15s Age: %3d"</font>
+             <font color="#008000">"Bob Green"</font> 35))
+(<font color="#8000FF"><b>printout</b></font> t ?name)
+</PRE>
+<H4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.4.2.5.html">readline</A></H4>
+<PRE>
+(<font color="#FF0000">readline</font> xmp)
+</PRE>
+
+<p>Previous <a href="intro.htm">Clips Introduction</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="advpattern.htm">Advanced Pattern Matching</a>
+
+</body></html>

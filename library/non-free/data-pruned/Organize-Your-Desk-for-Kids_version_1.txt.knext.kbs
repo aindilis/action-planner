@@ -1,0 +1,63 @@
+;; (GET A TRASHBAG AND CLEANING SUPPLIES FOR WHAT TYPE OF DESK YOU HAVE)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (CLEAN OFF YOUR DESK WITH THE CLEANING SUPPLIES AND START SORTING THROUGH YOU STUFF)
+
+	;; A CLEAN[PERSON??] MAY SUPPLY.
+
+		(and (CLEAN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SUPPLY_27 ?x1))
+
+	;; A CLEAN[PERSON??] CAN BE OFF A DESK.
+
+		(and (CLEAN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (OFF_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+	;; A DESK CAN BE WITH A CLEANING.
+
+		(and (DESK_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (cleaning_27 ?x2))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+;; (THROW AWAY ALL YOU TRASH AND FIND SOME BINS COMMA BOXES COMMA AND BAGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF IT IS BROKEN THROW IT AWAY)
+
+	;; A THING-REFERRED-TO MAY BE BREAK -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BREAK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF IT IS USELESS THROW IT AWAY)
+
+	;; A THING-REFERRED-TO CAN BE USELESS.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USELESS_27 ?x2))
+
+;; (IF IT USABLE AND YOU DO N T WANT IT COMMA GIVE IT AWAY)
+
+	;; A THING-REFERRED-TO MAY USABLE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (USABLE_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))

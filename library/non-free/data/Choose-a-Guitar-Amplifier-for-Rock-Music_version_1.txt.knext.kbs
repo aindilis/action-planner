@@ -1,0 +1,2578 @@
+;; (HIGHER WATTAGE TUBE AMPLIFIERS WILL DISTORT AT HIGHER VOLUMES -- WHICH REQUIRE MORE CREATIVE MIXING FOR LIVE SITUATIONS)
+
+	;; TUBE AMPLIFIERS MAY DISTORT AT VOLUMES.
+
+		(and (TUBE_27 ?x1) (AMPLIFIERS_27 ?x1) (MAY_27 ?x1) (DISTORT_27 ?x1) (AT_27 ?x1) (VOLUMES_27 ?x1))
+
+	;; TUBE AMPLIFIERS CAN BE HIGHER.
+
+		(and (TUBE_27 ?x1) (AMPLIFIERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+	;; TUBE AMPLIFIERS CAN BE WATTAGE.
+
+		(and (TUBE_27 ?x1) (amplifier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WATTAGE_27 ?x2))
+
+	;; VOLUMES CAN BE HIGHER.
+
+		(and (volume_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+	;; MIXING CAN BE CREATIVE.
+
+		(and (mixing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATIVE_27 ?x2))
+
+	;; SITUATIONS CAN BE LIVE.
+
+		(and (situation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVE_27 ?x2))
+
+;; (FURTHER COMMA PERCEIVED VOLUME FOR AMP WATTAGE IS AT/10 THE WATTAGE AND 1/2 THE VOLUME)
+
+	;; VOLUME CAN BE AN AT/10.
+
+		(and (volume_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_2F10_27 ?x2))
+
+	;; VOLUME CAN BE FOR AMP WATTAGE.
+
+		(and (volume_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AMP_27 ?x2) (WATTAGE_27 ?x2))
+
+	;; A VOLUME CAN BE PERCEIVED.
+
+		(and (volume_27 ?x1) (be_27 ?e1 ?x1 ?e2) (perceive_27 ?e2 ?x1))
+
+;; (FOR EXAMPLE COMMA A 10 WATT AMPLIFIER SCIENTIFICALLY HALF AS LOUD AS A 100 WATT AMP COMMA ALTHOUGH THE HUMAN EAR DOES N T PERCIEVE IT THIS WAY)
+
+	;; SOME_NUMBER_OF WATT MAY AMPLIFIER AS SOME_NUMBER_OF WATT AMP.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WATT_27 ?x1) (MAY_27 ?x1) (AMPLIFIER_27 ?x1) (AS_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (WATT_27 ?x1) (AMP_27 ?x1))
+
+	;; AN EAR MAY DO.
+
+		(and (EAR_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; AN EAR CAN BE HUMAN.
+
+		(and (EAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUMAN_27 ?x2))
+
+;; (THE WATTAGE AND COST OF AN AMP ARE RARELY RELATED COMMA ASWATT AMPS CAN BE TWO COMMA THREE COMMA OR EVEN TEN TIMES THE COST OF A 100 WATT AMP)
+
+	;; ASWATT AMPS CAN BE A NUMBER_OR_PORTION.
+
+		(and (ASWATT_27 ?x1) (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+	;; A WATTAGE OF AN AMP CAN BE RELATED.
+
+		(and (WATTAGE_27 ?x1) (of_27 ?x1 ?x2) (AMP_27 ?x2) (be_27 ?e1 ?x1 ?x3) (RELATED_27 ?x3))
+
+;; (THE SOUND QUALITY EXPERIENCED FROM AN AMPLIFIER CAN BE DETERMINED BY MANY THINGS COMMA INCLUDING -LRB- BUT NOT LIMITED TO -RRB-  THE PREAMP TUBES USED POWER AMP TUBES USED THE WOOD MATERIAL USED FOR THE SPEAKER
+ CABINET THE TYPE OF SPEAKER CONES THE RESISTANCE OF THE SPEAKERS THE GUITAR USED THE CABLES USED THE EFFECTS USED THE PICKUPS IN THE GUITAR AND EVEN THE FINGERS OF THE PLAYER)
+
+	;; A QUALITY MAY BE EXPERIENCE -ED FROM AN AMPLIFIER.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPERIENCE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (AN_27 ?x2) (AMPLIFIER_27 ?x2))
+
+	;; A QUALITY CAN BE SOUND.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+	;; PREAMP TUBES MAY USE.
+
+		(and (PREAMP_27 ?x1) (TUBES_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; POWER AMP TUBES MAY USE.
+
+		(and (POWER_27 ?x1) (AMP_27 ?x1) (TUBES_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; A WOOD MATERIAL MAY USE A TYPE OF SPEAKER CONES.
+
+		(and (WOOD_27 ?x1) (MATERIAL_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (TYPE_27 ?x1) (of_27 ?x1 ?x2) (SPEAKER_27 ?x2) (CONES_27 ?x2))
+
+	;; SPEAKERS MAY UNDERGO RESISTANCE.
+
+		(and (speaker_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (RESISTANCE_27 ?x1))
+
+	;; A GUITAR MAY USE.
+
+		(and (GUITAR_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; CABLES MAY USE.
+
+		(and (CABLES_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; EFFECTS MAY USE PICKUPS.
+
+		(and (EFFECTS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (PICKUPS_27 ?x1))
+
+	;; A PLAYER MAY HAVE FINGERS.
+
+		(and (PLAYER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FINGERS_27 ?x1))
+
+;; (THERE ARE MANY DIFFERENT BRANDS OF AMPLIFIERS THAT RANGE IN QUALITY AND COST)
+
+	;; SOME_NUMBER_OF BRANDS CAN BE CONSTITUTED_OF_OR_FILLED_WITH AMPLIFIERS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (BRANDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (AMPLIFIERS_27 ?x2))
+
+;; (POPULAR BRANDS INCLUDE  FENDER COMMA MARSHALL COMMA PEAVEY COMMA AND MESA-BOOGIE)
+
+	;; BRANDS MAY INCLUDE A FENDER_COMMA_MARSHALL_COMMA_PEAVEY[PERSON??].
+
+		(and (brand_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (FENDER_5FCOMMA_5FMARSHALL_5FCOMMA_5FPEAVEY_27 ?x1) (PERSON_27 ?x1))
+
+	;; A POPULAR[PERSON??] MAY HAVE BRANDS.
+
+		(and (POPULAR_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (BRANDS_27 ?x1))
+
+;; (COMBO -LRB- COMBINATION -RRB- AMPS COMBINE THE AMPLIFIER ELECTRONICS WITH ONE OR MORE SPEAKERS IN A ONE-PIECE PACKAGE)
+
+	;; A PACKAGE CAN BE ONE-PIECE.
+
+		(and (package_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONE-PIECE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (THE FOLLOWING ARE THE MOST COMMON VARIETIES OF COMBO AMP  MARSHALL MS -- A TINY MICRO AMP WITH NOTHING CLOSE TO REAL MARSHALL TONE MICRO AMPS  1-10 WATTS)
+
+	;; AN AMP CAN BE TINY.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TINY_27 ?x2))
+
+	;; AN AMP CAN BE MICRO.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MICRO_27 ?x2))
+
+;; (THESE ARE TINY COMMA ULTRA-PORTABLE AMPS WHICH ARE USEFUL FOR PRACTICE ON THE GO -LRB- OR WHEN OTHERS ARE TRYING TO SLEEP -RRB-)
+
+	;; PRACTICE CAN BE ON A GO.
+
+		(and (PRACTICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (GO_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [12]>
+
+;; (AS A RULE COMMA THEIR SOUND QUALITY TENDS TO BE POOR -LRB- WHEN COMPARED TO LARGER AMPS -RRB- DUE TO LOW OUTPUT POWER AND LOWER QUALITY CIRCUITRY AND ARE NOT ADEQUATE FOR PROFESSIONAL PERFORMANCES)
+
+	;; INDIVIDUAL -S MAY HAVE A QUALITY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (QUALITY_27 ?x1))
+
+	;; A QUALITY CAN BE SOUND.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+	;; AMPS CAN BE LARGER.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+	;; AN OUTPUT POWER CAN BE LOW.
+
+		(and (OUTPUT_27 ?x1) (POWER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+	;; PERFORMANCES CAN BE PROFESSIONAL.
+
+		(and (performance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFESSIONAL_27 ?x2))
+
+;; (THE MARSHALL MS-2 IS AN EXAMPLE OF A SUPER-PORTABLE -LRB- 1 WATT -RRB- MICRO AMP WHICH HAS RECEIVED GOOD REVIEWS FOR A SOLID STATE AMP OF THIS SIZE)
+
+	;; A MARSHALL[PERSON??] MAY HAVE A MS-2.
+
+		(and (MARSHALL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (ms--NUMBER-_27 ?x1))
+
+	;; REVIEWS CAN BE GOOD.
+
+		(and (review_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A SIZE MAY HAVE A STATE AMP.
+
+		(and (SIZE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STATE_27 ?x1) (AMP_27 ?x1))
+
+	;; A STATE AMP CAN BE SOLID.
+
+		(and (STATE_27 ?x1) (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID_27 ?x2))
+
+;; (ROLAND CUBE - A POPULAR PRACTICE AMP PRACTICE AMPS  10-30 WATTS)
+
+	;; A PRACTICE AMP CAN BE POPULAR.
+
+		(and (PRACTICE_27 ?x1) (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [13]>
+
+;; (IF YOU DO N T HAVE A 10 INCH -LRB- OR LARGER -RRB- SPEAKER COMMA DO N T TRY TO USE THE AMP OUTSIDE THE BEDROOM)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (EXPENSIVE QUALITY AMPLIFIERS WITH AT LEAST 30 WATTS ROOT MEAN SQUARED OUTPUT WITH BETTER FIDELITY AND LESS SIGNAL DISTORTIONS ARE BEST)
+
+	;; QUALITY AMPLIFIERS MAY SQUARE.
+
+		(and (QUALITY_27 ?x1) (AMPLIFIERS_27 ?x1) (MAY_27 ?x1) (SQUARE_27 ?x1))
+
+	;; QUALITY AMPLIFIERS CAN BE WITH ROOT MEAN.
+
+		(and (QUALITY_27 ?x1) (amplifier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (ROOT_27 ?x2) (MEAN_27 ?x2))
+
+	;; QUALITY AMPLIFIERS CAN BE EXPENSIVE.
+
+		(and (quality_27 ?x1) (amplifier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+	;; OUTPUT CAN BE BEST.
+
+		(and (OUTPUT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; OUTPUT CAN BE WITH SIGNAL DISTORTIONS.
+
+		(and (OUTPUT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SIGNAL_27 ?x2) (DISTORTIONS_27 ?x2))
+
+	;; SIGNAL DISTORTIONS CAN BE FIDELITY.
+
+		(and (SIGNAL_27 ?x1) (DISTORTIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIDELITY_27 ?x2))
+
+;; (CRATEX12 COMBO AMP FULL-SIZE 1X12 COMBOS  WITH 50 OR MORE WATTS OF POWER AND AT LEAST ONE 12 INCH SPEAKER COMMA THE 1X12 AMP OFFERS THE SMALLEST PACKAGE WHICH IS CONSIDERED SUITABLE AS A STAND-ALONE AMPLIFIER
+ FOR SMALL GIGS)
+
+	;; COMBO MAY AMP 1X12 COMBOS.
+
+		(and (COMBO_27 ?x1) (MAY_27 ?x1) (AMP_27 ?x1) (kbs2_kif_quote_31X12_27 ?x1) (COMBOS_27 ?x1))
+
+	;; A COMBO CAN BE CRATEX12.
+
+		(and (COMBO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRATEX12_27 ?x2))
+
+	;; 1X12 COMBOS CAN BE FULL-SIZE.
+
+		(and (combo_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL-SIZE_27 ?x2))
+
+	;; AN AMP MAY OFFER A PACKAGE.
+
+		(and (AMP_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (A_27 ?x1) (PACKAGE_27 ?x1))
+
+	;; AN AMP CAN BE 1X12.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_31X12_27 ?x2))
+
+	;; A PACKAGE CAN BE SMALLEST.
+
+		(and (package_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLEST_27 ?x2))
+
+	;; AN AMPLIFIER CAN BE FOR GIGS.
+
+		(and (AMPLIFIER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (GIGS_27 ?x2))
+
+	;; AN AMPLIFIER CAN BE STAND-ALONE.
+
+		(and (AMPLIFIER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STAND-ALONE_27 ?x2))
+
+	;; GIGS CAN BE SMALL.
+
+		(and (gig_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (-LRB- KEEP IN MIND THAT YOU CAN MIC SMALLER AMPS THOUGH -RRB- IN BETTER MODELS COMMA SOUND QUALITY BEGINS TO APPROACH LEVELS ACCEPTABLE TO PROFESSIONAL MUSICIANS)
+
+	;; A PERSON MAY MIC AMPS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MIC_27 ?x1) (AMPS_27 ?x1))
+
+	;; AMPS CAN BE SMALLER.
+
+		(and (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; MODELS CAN BE BETTER.
+
+		(and (model_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; A QUALITY CAN BE SOUND.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+	;; LEVELS CAN BE ACCEPTABLE TO MUSICIANS.
+
+		(and (level_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCEPTABLE_27 ?x2) (to_27 ?e1 ?x3) (MUSICIANS_27 ?x3))
+
+	;; MUSICIANS CAN BE PROFESSIONAL.
+
+		(and (musician_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFESSIONAL_27 ?x2))
+
+;; (QUALITY IS ALWAYS IMPORTANT COMMA BUT PERHAPS EVEN MORE SO IN THE CASE OF THE 1X12 COMBO - WITH A GOOD ONE COMMA YOU LL PROVE THE DOUBTERS WRONG COMMA BUT WITH ONE OF THE MANY DUDS COMMA YOU WO N T BE TAKEN
+ SERIOUSLY)
+
+	;; A PERSON MAY BE TAKE -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAKE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A QUALITY[PERSON??] CAN BE IMPORTANT.
+
+		(and (QUALITY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (IMPORTANT_27 ?x1))
+
+	;; A COMBO MAY HAVE A CASE.
+
+		(and (COMBO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CASE_27 ?x1))
+
+	;; A COMBO CAN BE 1X12.
+
+		(and (COMBO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_31X12_27 ?x2))
+
+	;; AN ONE CAN BE GOOD.
+
+		( (be_27 ?e1))
+
+	;; DOUBTERS CAN BE WRONG.
+
+		(and (doubter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRONG_27 ?x2))
+
+;; (THE 1X12 IS NOT A BIG AMP COMMA AND IF YOU WANT TO BRING IT TO A SERIOUS AUDITION OR GIG WITHOUT ENDURING A STORM OF EYE-ROLLING AND CHUCKLING COMMA IT HAD BETTER STAND OUT FROM THE CROWD)
+
+	;; A 1X12 CAN BE AN AMP.
+
+		(and (kbs2_kif_quote_31X12_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (AMP_27 ?x2))
+
+	;; AN AMP CAN BE BIG.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY STAND_OUT FROM A CROWD.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (STAND_5FOUT_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (CROWD_27 ?x1))
+
+	;; AN AUDITION CAN BE SERIOUS.
+
+		(and (AUDITION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERIOUS_27 ?x2))
+
+	;; A STORM CAN BE CONSTITUTED_OF_OR_FILLED_WITH EYE-ROLLING.
+
+		(and (STORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (EYE-ROLLING_27 ?x2))
+
+;; (EXPENSIVE QUALITY AMPLIFIERS WITH AT LEAST 50 WATT OUTPUT WITH BETTER FIDELITY AND LESS SIGNAL DISTORTIONS ARE BEST FOR STAGE AND RECORDINGS)
+
+	;; QUALITY AMPLIFIERS CAN BE EXPENSIVE.
+
+		(and (quality_27 ?x1) (amplifier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+	;; SIGNAL DISTORTIONS CAN BE FIDELITY.
+
+		(and (SIGNAL_27 ?x1) (DISTORTIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIDELITY_27 ?x2))
+
+;; (A FENDER BANDMASTER AMPLIFIER WITH 50 WATTS OUTPUT MADE IN THE 1960S PERHAPS A STANDARD WAS A DECENT PROFESSIONAL QUALITY AMPLIFIER)
+
+	;; A BANDMASTER AMPLIFIER MAY MAKE.
+
+		(and (BANDMASTER_27 ?x1) (AMPLIFIER_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A FENDER[PERSON??] MAY HAVE A BANDMASTER AMPLIFIER.
+
+		(and (FENDER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BANDMASTER_27 ?x1) (AMPLIFIER_27 ?x1))
+
+	;; A STANDARD CAN BE QUALITY AMPLIFIER.
+
+		(and (STANDARD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUALITY_27 ?x2) (AMPLIFIER_27 ?x2))
+
+	;; A QUALITY AMPLIFIER CAN BE DECENT.
+
+		(and (QUALITY_27 ?x1) (AMPLIFIER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DECENT_27 ?x2))
+
+	;; A QUALITY AMPLIFIER CAN BE PROFESSIONAL.
+
+		(and (QUALITY_27 ?x1) (AMPLIFIER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFESSIONAL_27 ?x2))
+
+;; (CRATEX12 COMBO AMP 2X12 COMBOS ARE SIMILIAR TO 1X12 COMBOS COMMA BUT THEY ADD A SECOND 12 INCH SPEAKER)
+
+	;; AMP 2X12 COMBOS MAY SIMILE TO COMBOS.
+
+		(and (AMP_27 ?x1) (kbs2_kif_quote_32X12_27 ?x1) (COMBOS_27 ?x1) (MAY_27 ?x1) (SIMILE_27 ?x1) (to_27 ?x1 ?x2) (COMBOS_27 ?x2))
+
+	;; AMP 2X12 COMBOS CAN BE CRATEX12.
+
+		(and (AMP_27 ?x1) (kbs2_kif_quote_32X12_27 ?x1) (COMBOS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRATEX12_27 ?x2))
+
+	;; AMP 2X12 COMBOS CAN BE COMBO.
+
+		(and (AMP_27 ?x1) (kbs2_kif_quote_32X12_27 ?x1) (COMBOS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMBO_27 ?x2))
+
+	;; COMBOS CAN BE 1X12.
+
+		(and (combo_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_31X12_27 ?x2))
+
+	;; INDIVIDUAL -S MAY ADD SOME_NUMBER_OF INCH SPEAKER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (INCH_27 ?x1) (SPEAKER_27 ?x1))
+
+;; (THE 2X12 DESIGN IS CONSIDERABLY HEAVIER AND BULKIER THAN THE 1X12 COMMA BUT IT IS STILL A FAVORITE CHOICE OF WORKING MUSICIANS FOR PERFORMANCES AT SMALL TO MEDIUM-SIZED VENUES)
+
+	;; A DESIGN CAN BE HEAVIER.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVIER_27 ?x2))
+
+	;; A DESIGN CAN BE 2X12.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_32X12_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE A CHOICE OF MUSICIANS.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CHOICE_27 ?x2) (of_27 ?x2 ?x3) (MUSICIANS_27 ?x3))
+
+	;; A CHOICE CAN BE CONSTITUTED_OF_OR_FILLED_WITH MUSICIANS.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MUSICIANS_27 ?x2))
+
+	;; A CHOICE CAN BE FAVORITE.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; MUSICIANS CAN BE FOR PERFORMANCES.
+
+		(and (musician_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (performance_27 ?x2))
+
+	;; MUSICIANS CAN BE WORKING.
+
+		(and (musician_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORKING_27 ?x2))
+
+	;; PERFORMANCES CAN BE AT VENUES.
+
+		(and (performance_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (VENUES_27 ?x2))
+
+	;; VENUES CAN BE SMALL.
+
+		(and (venue_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [14]>
+
+;; (THE 2X12 AMP IS SMALL ENOUGH TO BE USED IN THE LIVING ROOM COMMA LIGHT ENOUGH TO BE LUGGED AROUND BY SOMEONE WITHOUT MAJOR BACK PROBLEMS COMMA AND YET FORMIDABLE ENOUGH TO BE TAKEN SERIOUSLY AT REHEARSALS COMMA
+ AUDITIONS COMMA AND EVEN ON STAGE)
+
+	;; AN AMP CAN BE SMALL.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; AN AMP CAN BE 2X12.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_32X12_27 ?x2))
+
+	;; A ROOM CAN BE LIVING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVING_27 ?x2))
+
+;; (FIFTY WATTS OUTPUT OR MORE WITH AT LEAST TWO TWELVE INCH SPEAKERS ARE BEST FOR PRACTICE COMMA PERFORMANCE AND RECORDING)
+
+	;; AN OUTPUT CAN BE WATTS.
+
+		(and (OUTPUT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (watt_27 ?x2))
+
+;; (IF YOU HAVE TO BUY A SINGLE AMP FOR PRACTICE COMMA REHEARSALS COMMA AND CLUB GIGS COMMA A 2X12 IS A GOOD CHOICE)
+
+	;; A 2X12 CAN BE A CHOICE.
+
+		(and (kbs2_kif_quote_32X12_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CHOICE_27 ?x2))
+
+	;; AN AMP CAN BE SINGLE.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SINGLE_27 ?x2))
+
+	;; A CHOICE CAN BE GOOD.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (YOU LL OCCASIONALLY SLIP AND SET THE VOLUME KNOB A BIT TOO HIGH -LRB- ANNIHILATING YOUR UNFORTUNATE NEIGHBORS -RRB- COMMA AND YOU LL BE TEMPTED TO GRIPE ABOUT LUGGING 50-80 POUNDS WORTH OF AMP ALL OVER THE
+ PLACE COMMA BUT IT WILL ALL BE WORTHWHILE WHEN YOU HEAR THE TONE YOU CAN GET FROM A QUALITY MODEL)
+
+	;; A VOLUME KNOB CAN BE HIGH.
+
+		(and (VOLUME_27 ?x1) (KNOB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; A PERSON MAY HAVE NEIGHBORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEIGHBORS_27 ?x1))
+
+	;; NEIGHBORS CAN BE UNFORTUNATE.
+
+		(and (neighbor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNFORTUNATE_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE WORTHWHILE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORTHWHILE_27 ?x2))
+
+	;; A PERSON MAY HEAR A TONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HEAR_27 ?x1) (A_27 ?x1) (TONE_27 ?x1))
+
+	;; A PERSON MAY GET FROM A QUALITY MODEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (QUALITY_27 ?x1) (MODEL_27 ?x1))
+
+;; (KNOW THAT THERE ARE OTHER TYPES OF COMBOS COMMA BUT THESE ARE THE MAINSTAYS)
+
+	;; A KNOW[PERSON??] CAN BE TYPES OF COMBOS.
+
+		(and (KNOW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (type_27 ?x1) (of_27 ?x1 ?x2) (combo_27 ?x2))
+
+	;; A THING CAN BE MAINSTAYS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAINSTAYS_27 ?x2))
+
+;; (HAVING DISCUSSED THEM COMMA WE ARE READY TO MOVE ON TO HEADS AND STACKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SOLDANO HEAD - A HIGH-END AMPLIFIER A HEAD IS AN AMPLIFIER WITHOUT SPEAKERS)
+
+	;; A SOLDANO[PERSON??] MAY HAVE A HEAD.
+
+		(and (SOLDANO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+	;; AN AMPLIFIER CAN BE HIGH-END.
+
+		(and (AMPLIFIER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH-END_27 ?x2))
+
+	;; A HEAD CAN BE AN AMPLIFIER.
+
+		(and (HEAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (AMPLIFIER_27 ?x2))
+
+	;; AN AMPLIFIER CAN BE WITHOUT SPEAKERS.
+
+		(and (AMPLIFIER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITHOUT_27 ?x2) (SPEAKERS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [15]>
+
+;; (A STACK IS A HEAD AND A SET OF CABINETS CONNECTED TOGETHER COMMA READY FOR USE)
+
+	;; A STACK CAN BE A HEAD.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (HEAD_27 ?x2))
+
+	;; A SET CAN BE CONSTITUTED_OF_OR_FILLED_WITH CABINETS.
+
+		(and (SET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CABINETS_27 ?x2))
+
+	;; CABINETS MAY BE CONNECT -ED TOGETHER.
+
+		(and (cabinet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONNECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (TOGETHER_27 ?x2))
+
+;; (STACKS ARE GENERALLY PREFERRED FOR GIGS RATHER THAN PRACTICE COMMA ALTHOUGH THERE S NO RULE AGAINST HAVING A ENORMOUS STACK IN YOUR LIVING ROOM - IF YOUR FAMILY ALLOWS IT)
+
+	;; STACKS MAY BE PREFER -ED FOR GIGS.
+
+		(and (stack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PREFER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?x2 ?x3) (GIGS_27 ?x3))
+
+	;; A STACK CAN BE IN A LIVING ROOM.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LIVING_27 ?x2) (ROOM_27 ?x2))
+
+	;; A STACK CAN BE ENORMOUS.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENORMOUS_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIVING ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIVING_27 ?x1) (ROOM_27 ?x1))
+
+	;; A FAMILY MAY ALLOW A THING-REFERRED-TO.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (ALLOW_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+;; (FAIR WARNING  IN MOST CASES COMMA THEY WO N T)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (STACKS ARE PHYSICALLY BULKY COMMA VERY HEAVY COMMA AND DEVASTATINGLY LOUD)
+
+	;; STACKS CAN BE BULKY.
+
+		(and (stack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BULKY_27 ?x2))
+
+;; (THESE ARE THE TOOLS OF MUSICIANS WHO EITHER PLAY ARENAS AND STADIUMS ON A REGULAR BASIS - OR AT LEAST DREAM OF DOING SO)
+
+	;; A THING CAN BE TOOLS OF MUSICIANS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (tool_27 ?x2) (of_27 ?x2 ?x3) (musician_27 ?x3))
+
+	;; A BASIS CAN BE REGULAR.
+
+		(and (BASIS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REGULAR_27 ?x2))
+
+;; (MARSHALL HALF STACK - A PERENNIAL FAVORITE HEADS ARE ALL ROUGHLY THE SAME SIZE PHYSICALLY COMMA BUT THEY COME IN A VARIETY OF WATTAGES)
+
+	;; HEADS CAN BE A SIZE.
+
+		(and (head_27 ?x1) (be_27 ?e1 ?x1 ?x2) (size_27 ?x2))
+
+	;; HEADS CAN BE PERENNIAL.
+
+		(and (head_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERENNIAL_27 ?x2))
+
+	;; HEADS CAN BE FAVORITE.
+
+		(and (head_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY COME IN VARIETY OF WATTAGES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (in_27 ?x1 ?x2) (VARIETY_27 ?x2) (of_27 ?x1 ?x3) (WATTAGES_27 ?x3))
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATTAGES.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATTAGES_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [16]>
+
+;; (FULL-POWER HEADS ARE GENERALLY 100 WATTS OR MORE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THERE ARE ALSO SUPER HEADS COMMA BOASTING A TINNITUS-INDUCING 200-400 WATTS OF POWER)
+
+	;; HEADS CAN BE SUPER.
+
+		(and (head_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUPER_27 ?x2))
+
+	;; SOME_NUMBER_OF WATTS CAN BE CONSTITUTED_OF_OR_FILLED_WITH POWER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WATTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (POWER_27 ?x2))
+
+;; (FOR PERFORMANCES AT SMALL TO MEDIUM-SIZE VENUES COMMA A SMALL HEAD IS MORE THAN ENOUGH)
+
+	;; PERFORMANCES CAN BE AT VENUES.
+
+		(and (performance_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (VENUES_27 ?x2))
+
+	;; VENUES CAN BE SMALL.
+
+		(and (venue_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A HEAD CAN BE SMALL.
+
+		(and (HEAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (THE SMALLER HEADS ARE OFTEN CONNECTED TO A SINGLE 4X12 CABINET -LRB- WHICH CONTAINS FOUR 12 INCH SPEAKERS COMMA AS THE NAME SUGGESTS -RRB-)
+
+	;; HEADS MAY BE CONNECT -ED TO A CABINET.
+
+		(and (head_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONNECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (CABINET_27 ?x3))
+
+	;; HEADS CAN BE SMALLER.
+
+		(and (head_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; A CABINET CAN BE SINGLE.
+
+		(and (CABINET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SINGLE_27 ?x2))
+
+	;; A CABINET CAN BE 4X12.
+
+		(and (CABINET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_34X12_27 ?x2))
+
+	;; A NAME MAY SUGGEST.
+
+		(and (NAME_27 ?x1) (MAY_27 ?x1) (SUGGEST_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [17]>
+
+;; (BEFORE BUYING A HALF STACK COMMA KEEP IN MIND THEY ARE TOO LARGE AND TOO LOUD FOR MOST BARS OR VENUES WITH A SMALL STAGE -LRB- MOST OF THE GIGS YOU LL ACTUALLY PLAY -RRB- COMMA THEY DO N T FIT IN ANY VEHICLE
+ SMALLER THAN A VAN OR PICKUP COMMA YOUR BANDMATES WILL NOT HELP YOU HAUL IT UP ON STAGE COMMA AND A HALF STACK WILL CAUSE PERMANENT HEARING DAMAGE IF YOU DO N T USE EARPLUGS)
+
+	;; A HALF MAY STACK.
+
+		(and (HALF_27 ?x1) (MAY_27 ?x1) (STACK_27 ?x1))
+
+	;; INDIVIDUAL -S CAN BE LARGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; VENUES CAN BE WITH A STAGE.
+
+		(and (venue_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (stage_27 ?x2))
+
+	;; A STAGE CAN BE SMALL.
+
+		(and (stage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE BANDMATES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BANDMATES_27 ?x1))
+
+	;; A PERSON MAY HAUL A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAUL_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A HALF STACK MAY CAUSE HEARING DAMAGE.
+
+		(and (HALF_27 ?x1) (STACK_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (HEARING_27 ?x1) (DAMAGE_27 ?x1))
+
+	;; A HEARING DAMAGE CAN BE PERMANENT.
+
+		(and (HEARING_27 ?x1) (DAMAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERMANENT_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THE HALF STACK OFFERS PLENTY OF VOLUME COMMA THE PRESENCE OF FOUR SPEAKERS)
+
+	;; 
+
+	;; ((:I (:Q THE (:F NN HALF.N STACK.N)) OFFER.V (:A NIL (:P OF.P (:F K VOLUME.N)))) NIL)
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (F_27 ?x2) (NN_27 ?x2) (HALF_2EN_27 ?x2) (STACK_2EN_27 ?x2) (OFFER_2EV_27 ?x3) (A_27 ?x4) (NIL_27 ?x4) (P_27 ?x5) (OF_2EP_27 ?x5) (F_27 ?x6) (K_27 ?x6) (VOLUME_2EN_27 ?x6) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE THE HEADS -LRB- AMPLIFIER -RRB- THAT THE PROFESSIONALS USE)
+
+	;; PROFESSIONALS MAY USE.
+
+		(and (professional_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+;; (THE FULL STACK IS THE DREAM OF MANY A GUITARIST -LRB- BUT WILL BE FROWNED UPON BY YOUR SOUNDMAN AND EVERYONE ON STAGE WITH YOU -RRB-)
+
+	;; A STACK CAN BE A DREAM OF A GUITARIST.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DREAM_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (GUITARIST_27 ?x3))
+
+	;; A STACK CAN BE FULL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A SOUNDMAN CAN BE ON STAGE.
+
+		(and (SOUNDMAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (STAGE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SOUNDMAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SOUNDMAN_27 ?x1))
+
+;; (THIS IS USUALLY A 100 WATT HEAD CONNECTED TO TWO 4X12 CABINETS COMMA ALTHOUGH OTHER WATTAGES ARE SOMETIMES EMPLOYED)
+
+	;; A THING CAN BE WATT HEAD.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WATT_27 ?x2) (HEAD_27 ?x2))
+
+	;; SOME_NUMBER_OF WATT HEAD MAY BE CONNECT -ED TO SOME_NUMBER_OF CABINETS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WATT_27 ?x1) (HEAD_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONNECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?x2 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (CABINETS_27 ?x3))
+
+	;; CABINETS CAN BE 4X12.
+
+		(and (cabinet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_34X12_27 ?x2))
+
+	;; WATTAGES MAY BE EMPLOY -ED.
+
+		(and (wattage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPLOY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (THE CABINETS ARE STACKED VERTICALLY -LRB- ONE ON TOP OF THE OTHER -RRB- COMMA GIVING THE SETUP ITS DISTINCTIVE NAME)
+
+	;; CABINETS MAY BE STACK -ED.
+
+		(and (cabinet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A NAME.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; A NAME CAN BE DISTINCTIVE.
+
+		(and (NAME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISTINCTIVE_27 ?x2))
+
+;; (A FULL STACK IS AS TALL AS A GROWN MAN COMMA MAKING FOR QUITE AN IMPRESSIVE SIGHT)
+
+	;; A STACK CAN BE TALL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+	;; A STACK CAN BE FULL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A MAN CAN BE GROWN.
+
+		(and (MAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROWN_27 ?x2))
+
+	;; A SIGHT CAN BE IMPRESSIVE.
+
+		(and (SIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPRESSIVE_27 ?x2))
+
+;; (THE SOUND IS EQUALLY IMPRESSIVE)
+
+	;; A SOUND CAN BE IMPRESSIVE.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPRESSIVE_27 ?x2))
+
+;; (IF YOU SET ONE OF THESE UP IN YOUR LIVING ROOM AND PLAY IT TO ITS FULL CAPABILITIES COMMA YOU WILL BE EVICTED FROM THE NEIGHBORHOOD -LRB- UNLESS YOU ARE AN ISOLATED HERMIT -RRB-)
+
+	;; A PERSON MAY BE EVICT -ED FROM A NEIGHBORHOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVICT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (A_27 ?x2) (NEIGHBORHOOD_27 ?x2))
+
+	;; A PERSON MAY SET SOME NUMBER_OR_PORTION OF A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SET_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A ROOM CAN BE LIVING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVING_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE CAPABILITIES.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CAPABILITIES_27 ?x1))
+
+	;; CAPABILITIES CAN BE FULL.
+
+		(and (capability_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A PERSON CAN BE A HERMIT.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (HERMIT_27 ?x2))
+
+	;; A HERMIT CAN BE ISOLATED.
+
+		(and (HERMIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ISOLATED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [18]>
+
+;; (MOST WORKING PROS WILL USE TWO HALF STACKS IN STEREO RATHER THAN BRINGING A FULL STACK ON THE ROAD)
+
+	;; PROS MAY USE SOME_NUMBER_OF HALF STACKS.
+
+		(and (pro_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (HALF_27 ?x1) (STACKS_27 ?x1))
+
+	;; PROS CAN BE WORKING.
+
+		(and (pro_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORKING_27 ?x2))
+
+	;; A STACK CAN BE FULL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; (GUITARISTS WHO ARE TRULY SADISTIC -LRB- IN A SONIC SENSE -RRB- COMMA SUCH AS SOME HEAVY METAL PLAYERS COMMA MAY RUN ONE OF THE 200-400 WATT SUPER HEADS THROUGH A FULL STACK)
+
+	;; GUITARISTS MAY RUN SOME NUMBER_OR_PORTION OF SOME_NUMBER_OF WATT.
+
+		(and (GUITARISTS_27 ?x1) (MAY_27 ?x1) (RUN_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (WATT_27 ?x2))
+
+	;; A SENSE CAN BE SONIC.
+
+		(and (SENSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SONIC_27 ?x2))
+
+	;; METAL PLAYERS CAN BE HEAVY.
+
+		(and (metal_27 ?x1) (player_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; A STACK CAN BE FULL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [19]>
+
+;; (MOST LIVE SHOWS YOU SEE THAT USE FULL STACKS ARE DOING IT AS A STAGE TRICK)
+
+	;; A PERSON MAY SEE A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; USE MAY DO A THING-REFERRED-TO.
+
+		(and (USE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (TYPICALLY ONLY ONE CABINET HAS SPEAKERS IN IT AND THE REST ARE UP THERE FOR SHOW)
+
+	;; A CABINET MAY HAVE SPEAKERS.
+
+		(and (CABINET_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SPEAKERS_27 ?x1))
+
+	;; SPEAKERS CAN BE IN A THING-REFERRED-TO.
+
+		(and (speaker_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A REST CAN BE FOR SHOW.
+
+		(and (REST_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SHOW_27 ?x2))
+
+;; (MOTLEY CRUE USED TO MAKE FAKE SPEAKER GRILLE FRAMES OUT OF BLACK CLOTH AND 2X4S TO MAKE IT LOOK LIKE THE STAGE WAS FULL OF AMP STACKS)
+
+	;; SPEAKER GRILLE FRAMES CAN BE FAKE.
+
+		(and (SPEAKER_27 ?x1) (GRILLE_27 ?x1) (FRAMES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAKE_27 ?x2))
+
+	;; A CLOTH CAN BE BLACK.
+
+		(and (CLOTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY LOOK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1))
+
+	;; A STAGE CAN BE FULL OF AMP STACKS.
+
+		(and (stage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2) (of_27 ?x2 ?x3) (AMP_27 ?x3) (STACKS_27 ?x3))
+
+;; (MOST PROS CURRENTLY USE 2X12 OR HALF STACKS BECAUSE THE SOUND IS EASIER TO CONTROL)
+
+	;; PROS MAY USE 2X12.
+
+		(and (pro_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (kbs2_kif_quote_32X12_27 ?x1))
+
+	;; A SOUND CAN BE EASIER.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (IF YOU REALLY WANT A FULL STACK COMMA BY ALL MEANS GO BUY ONE COMMA BUT YOU LL ALMOST NEVER GET TO USE IT UNLESS YOU ARE DOING A STADIUM TOUR)
+
+	;; A PERSON MAY WANT A STACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (STACK_27 ?x1))
+
+	;; A STACK CAN BE FULL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A PERSON MAY DO A STADIUM TOUR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (STADIUM_27 ?x1) (TOUR_27 ?x1))
+
+;; (THEY ARE JUST TOO BIG TO BE PRACTICAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [20]>
+
+;; (THE FRONT SIDE OF THE RACK COMMA WHEN OPEN COMMA HAS TWO VERTICAL ROWS OF THREADED SCREW HOLES ON THE SIDES)
+
+	;; A SIDE OF A RACK MAY HAVE SOME_NUMBER_OF ROWS OF SCREW HOLES.
+
+		(and (side_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (RACK_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (ROWS_27 ?x2) (of_27 ?x1 ?x3) (SCREW_27 ?x3) (HOLES_27 ?x3))
+
+	;; A RACK MAY HAVE A SIDE.
+
+		(and (RACK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+	;; SOME_NUMBER_OF ROWS CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCREW HOLES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ROWS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCREW_27 ?x2) (HOLES_27 ?x2))
+
+	;; ROWS CAN BE VERTICAL.
+
+		(and (row_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VERTICAL_27 ?x2))
+
+	;; SCREW HOLES CAN BE ON SIDES.
+
+		(and (SCREW_27 ?x1) (HOLES_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (side_27 ?x2))
+
+	;; SCREW HOLES CAN BE THREADED.
+
+		(and (SCREW_27 ?x1) (HOLES_27 ?x1) (be_27 ?e1 ?x1 ?e2) (thread_27 ?e2 ?x1))
+
+;; (RACK SIZES HAVE BEEN STANDARDIZED FOR YEARS -- THEY ARE MADE TO FIT ALL RACK-MOUNTABLE UNITS COMMA INCLUDING RECORDING GEAR COMMA PA AMPLIFIERS COMMA VOCAL PROCESSORS COMMA CHROMATIC TUNERS COMMA DJ GEAR COMMA
+ ETC. IN ADDITION TO GUITAR AMPS)
+
+	;; SIZES MAY BE STANDARDIZE -ED FOR YEARS.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARDIZE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?e1 ?x3) (year_27 ?x3))
+
+	;; SIZES CAN BE RACK.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK_27 ?x2))
+
+	;; AN ALL[PERSON??] MAY HAVE RACK-MOUNTABLE UNITS.
+
+		(and (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RACK-MOUNTABLE_27 ?x1) (UNITS_27 ?x1))
+
+	;; PROCESSORS CAN BE VOCAL.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOCAL_27 ?x2))
+
+	;; TUNERS CAN BE CHROMATIC.
+
+		(and (tuner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHROMATIC_27 ?x2))
+
+	;; A GEAR CAN BE DJ.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DJ_27 ?x2))
+
+;; (RACK SIZES HAVE BEEN STANDARDIZED FOR YEARS -- THEY ARE MADE TO FIT ALL RACK-MOUNTABLE UNITS COMMA INCLUDING RECORDING GEAR COMMA PA AMPLIFIERS COMMA VOCAL PROCESSORS COMMA CHROMATIC TUNERS COMMA DJ GEAR COMMA
+ ETC. IN ADDITION TO GUITAR AMPS)
+
+	;; SIZES MAY BE STANDARDIZE -ED FOR YEARS.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARDIZE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?e1 ?x3) (year_27 ?x3))
+
+	;; SIZES CAN BE RACK.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK_27 ?x2))
+
+	;; AN ALL[PERSON??] MAY HAVE RACK-MOUNTABLE UNITS.
+
+		(and (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RACK-MOUNTABLE_27 ?x1) (UNITS_27 ?x1))
+
+	;; PROCESSORS CAN BE VOCAL.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOCAL_27 ?x2))
+
+	;; TUNERS CAN BE CHROMATIC.
+
+		(and (tuner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHROMATIC_27 ?x2))
+
+	;; A GEAR CAN BE DJ.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DJ_27 ?x2))
+
+;; (RACK SIZES HAVE BEEN STANDARDIZED FOR YEARS -- THEY ARE MADE TO FIT ALL RACK-MOUNTABLE UNITS COMMA INCLUDING RECORDING GEAR COMMA PA AMPLIFIERS COMMA VOCAL PROCESSORS COMMA CHROMATIC TUNERS COMMA DJ GEAR COMMA
+ ETC. IN ADDITION TO GUITAR AMPS)
+
+	;; SIZES MAY BE STANDARDIZE -ED FOR YEARS.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARDIZE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?e1 ?x3) (year_27 ?x3))
+
+	;; SIZES CAN BE RACK.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK_27 ?x2))
+
+	;; AN ALL[PERSON??] MAY HAVE RACK-MOUNTABLE UNITS.
+
+		(and (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RACK-MOUNTABLE_27 ?x1) (UNITS_27 ?x1))
+
+	;; PROCESSORS CAN BE VOCAL.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOCAL_27 ?x2))
+
+	;; TUNERS CAN BE CHROMATIC.
+
+		(and (tuner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHROMATIC_27 ?x2))
+
+	;; A GEAR CAN BE DJ.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DJ_27 ?x2))
+
+;; (RACK SIZES HAVE BEEN STANDARDIZED FOR YEARS -- THEY ARE MADE TO FIT ALL RACK-MOUNTABLE UNITS COMMA INCLUDING RECORDING GEAR COMMA PA AMPLIFIERS COMMA VOCAL PROCESSORS COMMA CHROMATIC TUNERS COMMA DJ GEAR COMMA
+ ETC. IN ADDITION TO GUITAR AMPS)
+
+	;; SIZES MAY BE STANDARDIZE -ED FOR YEARS.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARDIZE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?e1 ?x3) (year_27 ?x3))
+
+	;; SIZES CAN BE RACK.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK_27 ?x2))
+
+	;; AN ALL[PERSON??] MAY HAVE RACK-MOUNTABLE UNITS.
+
+		(and (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RACK-MOUNTABLE_27 ?x1) (UNITS_27 ?x1))
+
+	;; PROCESSORS CAN BE VOCAL.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOCAL_27 ?x2))
+
+	;; TUNERS CAN BE CHROMATIC.
+
+		(and (tuner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHROMATIC_27 ?x2))
+
+	;; A GEAR CAN BE DJ.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DJ_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [21]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort main loop
+Break 12 [22]>
+
+;; (TO FIGURE OUT HOW MANY SPACES A RACK HAS COMMA COUNT THE SCREW HOLES ON ONE SIDE AND DIVIDE IT BY TWO)
+
+	;; SPACES MAY HAVE.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (A RACK-MOUNTED GUITAR AMPLIFIER RIG IS SIMILAR TO HEADS IN THAT THEY HAVE SEPARATE AMPLIFIER COMPONENTS THAT ARE PLUGGED INTO EXTERNAL SPEAKER CABINETS)
+
+	;; A GUITAR AMPLIFIER RIG CAN BE SIMILAR TO HEADS.
+
+		(and (GUITAR_27 ?x1) (AMPLIFIER_27 ?x1) (RIG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMILAR_27 ?x2) (to_27 ?e1 ?x3) (HEADS_27 ?x3))
+
+	;; A GUITAR AMPLIFIER RIG CAN BE RACK-MOUNTED.
+
+		(and (GUITAR_27 ?x1) (AMPLIFIER_27 ?x1) (RIG_27 ?x1) (be_27 ?e1 ?x1) (rack-mounted_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE AMPLIFIER COMPONENTS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AMPLIFIER_27 ?x1) (COMPONENTS_27 ?x1))
+
+	;; AMPLIFIER COMPONENTS CAN BE SEPARATE.
+
+		(and (AMPLIFIER_27 ?x1) (component_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; SPEAKER CABINETS CAN BE EXTERNAL.
+
+		(and (SPEAKER_27 ?x1) (CABINETS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTERNAL_27 ?x2))
+
+;; (BUT NEARLY ALL RACK-MOUNTED AMPLIFIERS ARE BROKEN DOWN INTO TWO FURTHER CATEGORIES -- THE PRE-AMP AND THE POWER AMP)
+
+	;; SOME_NUMBER_OF AMPLIFIERS MAY BE BREAK_DOWN -ED INTO SOME_NUMBER_OF CATEGORIES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AMPLIFIERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BREAK_5FDOWN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (INTO_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CATEGORIES_27 ?x2))
+
+	;; AMPLIFIERS CAN BE RACK-MOUNTED.
+
+		(and (amplifier_27 ?x1) (be_27 ?e1 ?x1) (rack-mounted_27 ?x1))
+
+;; (BOTH HEADS AND COMBOS HAVE THESE SEPARATE COMPONENTS AS WELL -- RACKS MERELY SEPARATE THEM OUT INTO TWO UNITS)
+
+	;; SOME_NUMBER_OF HEADS MAY HAVE COMPONENTS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (HEADS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (component_27 ?x1))
+
+	;; COMPONENTS CAN BE SEPARATE.
+
+		(and (component_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; RACKS MAY SEPARATE_OUT INDIVIDUAL -S.
+
+		(and (RACKS_27 ?x1) (MAY_27 ?x1) (SEPARATE_5FOUT_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (MOST MAJOR AMPLIFIER MANUFACTURERS COMMA INCLUDING MARSHALL COMMA CARVIN COMMA MESA-BOOGIE COMMA AND PEAVEY MAKE RACK-MOUNTABLE AMP RIGS)
+
+	;; AMP RIGS CAN BE RACK-MOUNTABLE.
+
+		(and (AMP_27 ?x1) (RIGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK-MOUNTABLE_27 ?x2))
+
+;; (THE PRE-AMP SHAPES THE SIGNAL ENTERING YOUR AMPLIFIER INTO A TONE)
+
+	;; A PRE-AMP MAY SHAPE A SIGNAL.
+
+		(and (PRE-AMP_27 ?x1) (MAY_27 ?x1) (SHAPE_27 ?x1) (A_27 ?x1) (SIGNAL_27 ?x1))
+
+	;; A SIGNAL MAY ENTER AN AMPLIFIER.
+
+		(and (SIGNAL_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AMPLIFIER_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AMPLIFIER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AMPLIFIER_27 ?x1))
+
+;; (IN ITS BASIC FORM COMMA A PRE-AMP DEFINES THE LEVELS OF TREBLE COMMA BASS COMMA AND MIDDLE IN YOUR TONE)
+
+	;; A PRE-AMP MAY DEFINE LEVELS OF TREBLE.
+
+		(and (PRE-AMP_27 ?x1) (MAY_27 ?x1) (DEFINE_27 ?x1) (LEVELS_27 ?x1) (of_27 ?x1 ?x2) (TREBLE_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A FORM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FORM_27 ?x1))
+
+	;; A FORM CAN BE BASIC.
+
+		(and (FORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+	;; TREBLE CAN BE IN A TONE.
+
+		(and (treble_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (TONE_27 ?x2))
+
+	;; A PERSON MAY HAVE A TONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TONE_27 ?x1))
+
+;; (HOWEVER COMMA FUNCTIONS SUCH AS GAIN COMMA PRESENCE COMMA AND CONTOR HAVE BECOME STANDARD FEATURES OF MODERN GUITAR AMPLIFIERS COMMA AND RACK-MOUNTABLE PRE-AMPS USUALLY HAVE MANY MORE FUNCTIONS INDEED -- THEY
+ ARE ESSENTIALLY EFFECTS PROCESSORS)
+
+	;; FUNCTIONS MAY BECOME FEATURES OF GUITAR AMPLIFIERS.
+
+		(and (function_27 ?x1) (MAY_27 ?x1) (BECOME_27 ?x1) (FEATURES_27 ?x1) (of_27 ?x1 ?x2) (GUITAR_27 ?x2) (AMPLIFIERS_27 ?x2))
+
+	;; FEATURES CAN BE CONSTITUTED_OF_OR_FILLED_WITH GUITAR AMPLIFIERS.
+
+		(and (feature_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (GUITAR_27 ?x2) (AMPLIFIERS_27 ?x2))
+
+	;; FEATURES CAN BE STANDARD.
+
+		(and (feature_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARD_27 ?x2))
+
+	;; GUITAR AMPLIFIERS CAN BE MODERN.
+
+		(and (GUITAR_27 ?x1) (AMPLIFIERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERN_27 ?x2))
+
+	;; PRE-AMPS MAY HAVE SOME_NUMBER_OF FUNCTIONS.
+
+		(and (PRE-AMPS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (FUNCTIONS_27 ?x1))
+
+	;; PRE-AMPS CAN BE RACK-MOUNTABLE.
+
+		(and (PRE-AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK-MOUNTABLE_27 ?x2))
+
+;; (FOOTPEDAL MULTI-EFFECTS PROCESSORS ARE ALSO PRE-AMPS)
+
+	;; PROCESSORS CAN BE PRE-AMPS.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRE-AMPS_27 ?x2))
+
+	;; PROCESSORS CAN BE FOOTPEDAL.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOOTPEDAL_27 ?x2))
+
+	;; PROCESSORS CAN BE MULTI-EFFECTS.
+
+		(and (processor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTI-EFFECTS_27 ?x2))
+
+;; (PLUG YOUR GUITAR INTO THE PRE-AMP)
+
+	;; A PERSON MAY HAVE A GUITAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GUITAR_27 ?x1))
+
+;; (MOST RACK PRE-AMPS ONLY TAKE UP ONE RACK SPACE)
+
+	;; RACK PRE-AMPS MAY TAKE_UP A RACK SPACE.
+
+		(and (RACK_27 ?x1) (PRE-AMPS_27 ?x1) (MAY_27 ?x1) (TAKE_5FUP_27 ?x1) (A_27 ?x1) (RACK_27 ?x1) (SPACE_27 ?x1))
+
+;; (THE POWER AMP IS CONNECTED TO THE PRE-AMP BY A SPEAKER CABLE)
+
+	;; A POWER_AMP[PERSON??] MAY BE CONNECT -ED TO A PRE-AMP BY A SPEAKER CABLE.
+
+		(and (POWER_5FAMP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (CONNECT_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (to_27 ?e1 ?x2) (A_27 ?x2) (PRE-AMP_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (SPEAKER_27 ?x2) (CABLE_27 ?x2))
+
+;; (IT TAKES THE SIGNAL THE PRE-AMP SHAPED AND GIVES IT VOLUME)
+
+	;; A THING-REFERRED-TO MAY TAKE A SIGNAL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (SIGNAL_27 ?x1))
+
+;; (LIKE HEADS COMMA POWER AMPS ARE AVAILABLE IN DIFFERENT SIZES COMMA FROM A MINIMUM OF 50 WATTS TO MONSTER 200-400W POWER AMPS)
+
+	;; POWER AMPS CAN BE AVAILABLE IN SIZES.
+
+		(and (POWER_27 ?x1) (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2) (in_27 ?e1 ?x3) (SIZES_27 ?x3))
+
+	;; A MINIMUM CAN BE CONSTITUTED_OF_OR_FILLED_WITH POWER AMPS.
+
+		(and (MINIMUM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (POWER_27 ?x2) (AMPS_27 ?x2))
+
+;; (100W OR LARGER POWER AMPS WILL TAKE UP TWO RACK SPACES)
+
+	;; SOME NUMBER_OR_PORTION MAY TAKE_UP SOME_NUMBER_OF RACK SPACES.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (TAKE_5FUP_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (RACK_27 ?x1) (SPACES_27 ?x1))
+
+	;; POWER AMPS CAN BE LARGER.
+
+		(and (POWER_27 ?x1) (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+;; (THE POWER AMP PLUGS INTO THE SPEAKER CAB LIKE ON A HEAD)
+
+	;; A POWER AMP MAY PLUG INTO A SPEAKER CAB.
+
+		(and (POWER_27 ?x1) (AMP_27 ?x1) (MAY_27 ?x1) (PLUG_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (SPEAKER_27 ?x1) (CAB_27 ?x1))
+
+;; (HOWEVER COMMA AS MANY POWER AMPS AS YOU WANT CAN BE CONNECTED IN A DAISY CHAIN OR TO DIFFERENT PRE-AMP OUTPUTS TO BOOST THE POWER OF THE SIGNAL COMMA AS WELL AS POSSIBLY BLEND THE TONAL INFLUENCES OF TWO
+ DIFFERENT POWER AMPS)
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+	;; A CHAIN CAN BE DAISY.
+
+		(and (CHAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAISY_27 ?x2))
+
+	;; OUTPUTS CAN BE PRE-AMP.
+
+		(and (output_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRE-AMP_27 ?x2))
+
+	;; A SIGNAL MAY HAVE POWER.
+
+		(and (SIGNAL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POWER_27 ?x1))
+
+	;; INFLUENCES CAN BE TONAL.
+
+		(and (influence_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TONAL_27 ?x2))
+
+;; (DISADVANTAGES OF RACK RIGS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 12 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AS YOU CAN PROBABLY TELL COMMA RACKS ARE FREQUENTLY VERY COMPLICATED RIGS)
+
+	;; RACKS CAN BE RIGS.
+
+		(and (rack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGS_27 ?x2))
+
+	;; A PERSON MAY TELL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TELL_27 ?x1))
+
+	;; RIGS CAN BE COMPLICATED.
+
+		(and (rig_27 ?x1) (be_27 ?e1 ?x1 ?e2) (complicate_27 ?e2 ?x1))
+
+;; (A NOVICE GUITARIST MAY FIND THEM PERPLEXING)
+
+	;; INDIVIDUAL -S CAN BE PERPLEXING.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (perplexing_27 ?x2))
+
+;; (THEY ARE ALSO HEAVIER AND BULKIER THAN HEADS -- AND ADD ONTO THAT THE BULK AND HEFT OF THE RACK ITSELF)
+
+	;; INDIVIDUAL -S CAN BE HEAVIER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVIER_27 ?x2))
+
+	;; A RACK MAY HAVE A BULK.
+
+		(and (RACK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BULK_27 ?x1))
+
+;; (SINCE YOU NEED TO BUY MULTIPLE PRODUCTS AND ACCESSORIES COMMA THE PRICE FOR A NEW RACK RIG CAN BE -LRB- BUT IS N T ALWAYS -RRB- HIGHER THAN THAT OF A HEAD)
+
+	;; A PRICE MAY BE.
+
+		(and (PRICE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; PRODUCTS CAN BE MULTIPLE.
+
+		(and (product_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+	;; A PRICE CAN BE FOR A RACK RIG.
+
+		(and (PRICE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (RACK_27 ?x2) (RIG_27 ?x2))
+
+;; (ADVANTAGES OF RACK RIGS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 12 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort main loop
+Break 13 [23]>
+
+;; (AND IF YOU HAVE A REASONABLY GOOD MIND FOR ENGINEERING OR BASIC SPATIAL SEQUENCING -LRB- I.E. LINING THINGS UP IN ORDER -RRB- COMMA EVEN COMPLICATED DIGITAL PRE-AMPS CAN BE SURPRISINGLY USER-FRIENDLY COMMA
+ PROVIDING A MORE EASY-TO-UNDERSTAND INTERFACE THAN A ROW OF INSCRUTABLE KNOBS ON THE FRONT OF A HEAD OR COMBO)
+
+	;; PRE-AMPS CAN BE USER-FRIENDLY.
+
+		(and (PRE-AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USER-FRIENDLY_27 ?x2))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; A MIND CAN BE FOR ENGINEERING.
+
+		(and (MIND_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ENGINEERING_27 ?x2))
+
+	;; A MIND CAN BE GOOD.
+
+		(and (MIND_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A SEQUENCING CAN BE BASIC.
+
+		(and (SEQUENCING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+	;; A SEQUENCING CAN BE SPATIAL.
+
+		(and (SEQUENCING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPATIAL_27 ?x2))
+
+	;; LINING THINGS CAN BE I.E..
+
+		(and (LINING_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (I_2EE_2E_2E_27 ?x2))
+
+	;; PRE-AMPS CAN BE COMPLICATED.
+
+		(and (PRE-AMPS_27 ?x1) (be_27 ?e1 ?x1 ?e2) (complicate_27 ?e2 ?x1))
+
+	;; PRE-AMPS CAN BE DIGITAL.
+
+		(and (PRE-AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIGITAL_27 ?x2))
+
+	;; AN INTERFACE CAN BE EASY-TO-UNDERSTAND.
+
+		(and (INTERFACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY-TO-UNDERSTAND_27 ?x2))
+
+	;; A ROW CAN BE CONSTITUTED_OF_OR_FILLED_WITH KNOBS.
+
+		(and (ROW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (KNOBS_27 ?x2))
+
+	;; KNOBS CAN BE INSCRUTABLE.
+
+		(and (KNOBS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSCRUTABLE_27 ?x2))
+
+;; (IF YOU ARE ALREADY A DJ COMMA VOCALIST COMMA OR RECORDING ARTIST COMMA OR WANT TO BECOME ANY ONE OF THESE COMMA MANY VALUABLE PRODUCTS ARE AVAILBLE THAT CAN BE MOUNTED RIGHT ON THE SAME RACK WITH YOUR
+ AMPLIFIER)
+
+	;; SOME_NUMBER_OF PRODUCTS CAN BE AVAILBLE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PRODUCTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILBLE_27 ?x2))
+
+	;; A DJ[PERSON??] MAY HAVE A COMMA VOCALIST COMMA OR RECORDING ARTIST.
+
+		(and (DJ_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMMA_27 ?x1) (VOCALIST_27 ?x1) (COMMA_27 ?x1) (OR_27 ?x1) (RECORDING_27 ?x1) (ARTIST_27 ?x1))
+
+	;; A THING MAY HAVE AN ONE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; PRODUCTS CAN BE VALUABLE.
+
+		(and (product_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VALUABLE_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AMPLIFIER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AMPLIFIER_27 ?x1))
+
+;; (ALSO COMMA BIG RACKS FREQUENTLY HAVE CASTER WHEELS COMMA MAKING THEM VERY EASY TO ROLL AROUND COMMA AND HAVING A RACK CAN ALSO SIMPLIFY PRE-GIG OR - PRACTICE SETUP)
+
+	;; RACKS MAY HAVE CASTER WHEELS.
+
+		(and (RACKS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CASTER_27 ?x1) (WHEELS_27 ?x1))
+
+	;; RACKS CAN BE BIG.
+
+		(and (rack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (INSTEAD OF HAVING TO PLUG IN ALL YOUR COMPONENTS FROM SCRATCH COMMA YOUR COMPONENTS CAN ALREADY BE PLUGGED IN AND READY TO GO AS SOON AS YOU WHEEL YOUR RACK ONTO THE STAGE OR INTO THE STUDIO AND REMOVE THE
+ FRONT AND BACK PANELS)
+
+	;; COMPONENTS CAN BE PLUGGED.
+
+		(and (component_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUGGED_27 ?x2))
+
+	;; A PERSON MAY HAVE COMPONENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (component_27 ?x1))
+
+	;; A PERSON MAY WHEEL A RACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WHEEL_27 ?x1) (A_27 ?x1) (RACK_27 ?x1))
+
+	;; A PERSON MAY HAVE A RACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RACK_27 ?x1))
+
+;; (A RACK-MOUNTABLE POWER CONDITIONER -LRB- ESSENTIALLY A RACK-MOUNTED POWER STRIP WITH SURGE PROTECTION -RRB- CAN BE INVALUABLE TO THIS END AS MOST RACK UNITS ARE INDEPENDENTLY POWERED -- SIMPLY PLUG ALL YOUR
+ PRODUCTS INTO THE CONDITIONER COMMA THEN WHENEVER YOU ARRIVE AT A GIG OR PRACTICE COMMA PLUG IN THE ONE MASTER POWER CABLE FROM THE CONDITIONER COMMA PLUG IN YOUR SPEAKER CAB AND GUITAR COMMA SWITCH EVERYTHING
+ ON COMMA AND YOU RE READY TO ROCK)
+
+	;; A POWER CONDITIONER CAN BE INVALUABLE TO AN END.
+
+		(and (POWER_27 ?x1) (CONDITIONER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INVALUABLE_27 ?x2) (to_27 ?e1 ?x3) (END_27 ?x3))
+
+	;; A POWER CONDITIONER CAN BE RACK-MOUNTABLE.
+
+		(and (POWER_27 ?x1) (CONDITIONER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RACK-MOUNTABLE_27 ?x2))
+
+	;; A POWER STRIP CAN BE WITH SURGE PROTECTION.
+
+		(and (POWER_27 ?x1) (STRIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SURGE_27 ?x2) (PROTECTION_27 ?x2))
+
+	;; A POWER STRIP CAN BE RACK-MOUNTED.
+
+		(and (POWER_27 ?x1) (STRIP_27 ?x1) (be_27 ?e1 ?x1) (rack-mounted_27 ?x1))
+
+	;; RACK UNITS MAY BE POWER -ED.
+
+		(and (RACK_27 ?x1) (unit_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POWER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE PRODUCTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRODUCTS_27 ?x1))
+
+	;; A PERSON MAY ARRIVE AT A GIG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ARRIVE_27 ?x1) (AT_27 ?x1) (A_27 ?x1) (GIG_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPEAKER CAB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPEAKER_27 ?x1) (CAB_27 ?x1))
+
+;; (IF YOU HAVE PEDALS COMMA MICROPHONES COMMA ETC COMMA YOU CAN USUALLY FIT THEM INTO THE RACK AS WELL COMMA MAKING IT YOUR ALL-PURPOSE COMMA HIGHLY-PORTABLE GIG BOX -LRB- PROVIDED THAT IT S ON WHEELS -RRB-)
+
+	;; A PERSON MAY FIT INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIT_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; A PERSON MAY HAVE PEDALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PEDALS_27 ?x1))
+
+;; (FINALLY COMMA RACKS ARE UNCOMMON COMMA AND WILL ATTRACT ATTENTION)
+
+	;; RACKS CAN BE UNCOMMON.
+
+		(and (rack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNCOMMON_27 ?x2))
+
+;; (PEOPLE WILL BE IMPRESSED IF YOU WHEEL A RACK RIG INTO REHEARSAL OR PERFORMANCE COMMA BUT BEWARE -- THEY WILL EXPECT YOU TO BE A SEASONED GUITARIST COMMA OR AT LEAST BE ABLE TO EFFECTIVELY USE YOUR RACK)
+
+	;; PEOPLE MAY BE IMPRESS -ED.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY WHEEL A RACK RIG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WHEEL_27 ?x1) (A_27 ?x1) (RACK_27 ?x1) (RIG_27 ?x1))
+
+	;; A GUITARIST CAN BE SEASONED.
+
+		(and (GUITARIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEASONED_27 ?x2))
+
+	;; A PERSON MAY HAVE A RACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RACK_27 ?x1))
+
+;; (DO N T BRING YOUR RACK ANYWHERE UNLESS YOU KNOW HOW TO GET THOSE PRE-AMPS AND PROCESSORS TO DO EXACTLY WHAT YOU WANT THEM TO DO)
+
+	;; A PERSON MAY HAVE A RACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RACK_27 ?x1))
+
+;; (SUCH PROFESSIONALS ASU2 S THE EDGE AND NIRVANA S KURT COBAIN HAVE FAVORED RACK RIGS)
+
+	;; A MALE MAY FAVOR RACK RIGS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (FAVOR_27 ?x1) (RACK_27 ?x1) (RIGS_27 ?x1))
+
+;; (IN ORDER TO GET THE MOST FROM A GUITAR AMPLIFIER COMMA YOU NEED TO UNDERSTAND HOW DIFFERENT TYPES OF AMPS SUIT DIFFERENT STYLES OF MUSIC)
+
+	;; TYPES OF AMPS MAY SUIT STYLES OF MUSIC.
+
+		(and (type_27 ?x1) (of_27 ?x1 ?x2) (AMPS_27 ?x2) (MAY_27 ?x2) (SUIT_27 ?x2) (STYLES_27 ?x2) (of_27 ?x2 ?x3) (MUSIC_27 ?x3))
+
+	;; STYLES CAN BE CONSTITUTED_OF_OR_FILLED_WITH MUSIC.
+
+		(and (style_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MUSIC_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort main loop
+Break 14 [24]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort main loop
+Break 15 [25]>
+
+;; (TONE WARS FENDER TWIN REVERB - A QUINTESSENTIAL VINTAGE AMP VINTAGE AMPS PRODUCE -LRB- OR REPRODUCE -RRB- THE CLASSIC SOUNDS OF EARLY AMPLIFIERS)
+
+	;; AN AMP CAN BE CONSTITUTED_OF_OR_FILLED_WITH AMPLIFIERS.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (AMPLIFIERS_27 ?x2))
+
+	;; AN AMP CAN BE QUINTESSENTIAL.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUINTESSENTIAL_27 ?x2))
+
+	;; AN AMP CAN BE VINTAGE.
+
+		(and (AMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VINTAGE_27 ?x2))
+
+	;; AMPS MAY PRODUCE SOUNDS.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (PRODUCE_27 ?x1) (SOUNDS_27 ?x1))
+
+	;; A VINTAGE[PERSON??] MAY HAVE AMPS.
+
+		(and (VINTAGE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AMPS_27 ?x1))
+
+	;; SOUNDS CAN BE CLASSIC.
+
+		(and (sound_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLASSIC_27 ?x2))
+
+;; (FOR THE JAZZ COMMA BLUES COMMA OR BLUES-ROCK GUITARIST COMMA THE VINTAGE SOUND IS STILL WIDELY CONSIDERED THE BEST TONE AVAILABLE)
+
+	;; A SOUND MAY BE CONSIDER -ED.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSIDER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A GUITARIST CAN BE BLUES-ROCK.
+
+		(and (GUITARIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUES-ROCK_27 ?x2))
+
+	;; A SOUND CAN BE VINTAGE.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VINTAGE_27 ?x2))
+
+	;; A TONE CAN BE AVAILABLE.
+
+		(and (TONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+	;; A TONE CAN BE BEST.
+
+		(and (TONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (VINTAGE AMPS CAN BE ACTUAL ANTIQUES COMMA OR THEY CAN BE MODERN AMPS THAT REPLICATE THE SOUND OF ANTIQUE AMPS)
+
+	;; AMPS CAN BE ANTIQUES.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (antique_27 ?x2))
+
+	;; AMPS CAN BE VINTAGE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VINTAGE_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE AMPS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMPS_27 ?x2))
+
+	;; AMPS CAN BE MODERN.
+
+		(and (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERN_27 ?x2))
+
+	;; AMPS CAN BE ANTIQUE.
+
+		(and (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ANTIQUE_27 ?x2))
+
+;; (ALTHOUGH THERE IS SOME DEBATE ABOUT THE EVOLUTION OF HIGH-GAIN AMPS COMMA MANY BELIEVE THAT A LARGE PART OF THEIR HISTORY IS OWED TO EDDIE VAN HALEN)
+
+	;; SOME_NUMBER_OF THING MAY BELIEVE A PROPOSITION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (MAY_27 ?x1) (BELIEVE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; SOME_NUMBER_OF DEBATE CAN BE ABOUT AN EVOLUTION OF AMPS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DEBATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (AN_27 ?x2) (EVOLUTION_27 ?x2) (of_27 ?x2 ?x3) (AMPS_27 ?x3))
+
+	;; AMPS MAY UNDERGO AN EVOLUTION.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (EVOLUTION_27 ?x1))
+
+	;; AMPS CAN BE HIGH-GAIN.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH-GAIN_27 ?x2))
+
+	;; A PART OF A HISTORY MAY BE OWE -ED TO A MALE.
+
+		(and (part_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (HISTORY_27 ?x2) (be_27 ?e1 ?x1 ?x3) (OWE_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3) (to_27 ?e1 ?x4) (A_27 ?x4) (MALE_27 ?x4))
+
+	;; A HISTORY MAY HAVE A PART.
+
+		(and (HISTORY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PART CAN BE LARGE.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A HISTORY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HISTORY_27 ?x1))
+
+;; (VAN HALEN ACTUALLY KNEW VERY LITTLE ABOUT ELECTRONICS -LRB- HE HAS ADMITTED THAT IS WHY HIS GUITAR WAS SO ODDLY ASSEMBLED -RRB- COMMA AND ONLY GOT HIS HIGH GAIN TONE BY MAXING OUT ALL THE KNOBS ON HIS AMP COMMA
+ THEN BROUGHT THE VOLUME UNDER CONTROL WITH A VARIAC COMMA WHICH BROUGHT DOWN THE AMPS VOLTAGE)
+
+	;; A VAN_HALEN[PERSON??] MAY KNOW LITTLE ABOUT ELECTRONICS.
+
+		(and (VAN_5FHALEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (KNOW_27 ?x1) (LITTLE_27 ?x1) (ABOUT_27 ?x1) (ELECTRONICS_27 ?x1))
+
+	;; A MALE MAY ADMIT A PROPOSITION.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ADMIT_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A GUITAR CAN BE ASSEMBLED.
+
+		(and (GUITAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ASSEMBLED_27 ?x2))
+
+	;; A MALE MAY HAVE A GUITAR.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GUITAR_27 ?x1))
+
+	;; A MALE MAY HAVE A GAIN TONE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GAIN_27 ?x1) (TONE_27 ?x1))
+
+	;; A GAIN TONE CAN BE HIGH.
+
+		(and (GAIN_27 ?x1) (TONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; A MALE MAY HAVE AN AMP.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AMP_27 ?x1))
+
+	;; A VOLTAGE CAN BE AMPS.
+
+		(and (VOLTAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMPS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort main loop
+Break 16 [26]>
+
+;; (AMP MAKERS TRYING TO EMULATED THAT SOUND AT LOWER VOLUMES THEN STARTED ADDING EXTRA GAIN STAGES TO THE PREAMPS OF THEIR AMP DESIGNS COMMA TO ALLOW FOR HIGHER GAIN TONE AT CONTROLLED VOLUMES)
+
+	;; AMP MAKERS MAY START.
+
+		(and (AMP_27 ?x1) (MAKERS_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; GAIN STAGES CAN BE EXTRA.
+
+		(and (GAIN_27 ?x1) (STAGES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; AMP DESIGNS MAY HAVE PREAMPS.
+
+		(and (AMP_27 ?x1) (DESIGNS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PREAMPS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE AMP DESIGNS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AMP_27 ?x1) (DESIGNS_27 ?x1))
+
+	;; GAIN TONE CAN BE AT VOLUMES.
+
+		(and (GAIN_27 ?x1) (TONE_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (VOLUMES_27 ?x2))
+
+	;; A GAIN TONE CAN BE HIGHER.
+
+		(and (GAIN_27 ?x1) (TONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+	;; VOLUMES CAN BE CONTROLLED.
+
+		(and (volume_27 ?x1) (be_27 ?e1 ?x1 ?e2) (control_27 ?e2 ?x1))
+
+;; (AS HEAVY METAL EVOLVED COMMA SO DID THE NEED FOR HIGHER GAIN AMPS)
+
+	;; METAL MAY EVOLVE.
+
+		(and (METAL_27 ?x1) (MAY_27 ?x1) (EVOLVE_27 ?x1))
+
+	;; A METAL CAN BE HEAVY.
+
+		(and (metal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; GAIN AMPS CAN BE HIGHER.
+
+		(and (GAIN_27 ?x1) (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+;; *** - GET: 'S is not a symbol
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort main loop
+Break 17 [27]>
+
+;; (IF YOU WANT TO PLAY JAZZ COMMA BLUES COMMA BLUES-ROCK -LRB- IN THE STYLE OF LED ZEPPELIN -RRB- OR VERY EARLY HEAVY METAL -LRB- IN THE STYLE OF BLACK SABBATH -RRB- COMMA A LOWER GAIN TUBE AMP MAY BE YOUR BEST
+ CHOICE)
+
+	;; A GAIN CAN BE A CHOICE.
+
+		(and (GAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CHOICE_27 ?x2))
+
+	;; A METAL CAN BE BLUES-ROCK.
+
+		(and (metal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUES-ROCK_27 ?x2))
+
+	;; A METAL CAN BE HEAVY.
+
+		(and (metal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+	;; A CHOICE CAN BE BEST.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort main loop
+Break 18 [28]>
+
+;; (NOTE THAT MANY NEWER AMPS CAN PROVIDE BOTH HIGH-GAIN AND VINTAGE SOUNDS COMMA ALTHOUGH SOME PURISTS FEEL THAT THE ONLY VINTAGE AMPS WORTH PLAYING ARE THE ACTUAL ANTIQUE AMPLIFIERS THEMSELVES)
+
+	;; SOME_NUMBER_OF AMPS MAY PROVIDE SOME_NUMBER_OF HIGH-GAIN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AMPS_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (HIGH-GAIN_27 ?x1))
+
+	;; AMPS CAN BE NEWER.
+
+		(and (AMPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEWER_27 ?x2))
+
+	;; SOUNDS CAN BE VINTAGE.
+
+		(and (sound_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VINTAGE_27 ?x2))
+
+	;; SOME_NUMBER_OF PURISTS MAY FEEL A PROPOSITION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PURISTS_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PLAYING CAN BE AMPLIFIERS.
+
+		(and (playing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (amplifier_27 ?x2))
+
+	;; AMPLIFIERS CAN BE ANTIQUE.
+
+		(and (amplifier_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ANTIQUE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort debug loop
+ABORT          :R19     Abort main loop
+Break 19 [29]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort debug loop
+ABORT          :R19     Abort debug loop
+ABORT          :R20     Abort main loop
+Break 20 [30]>
+
+;; (A VACUUM TUBE - THE HEART OF GREAT AMP TONE IN THE VINTAGE DAYS COMMA ALL AMPLIFIERS USED VACUUM TUBES TO ACCOMPLISH THE ACTUAL AMPLIFICATION)
+
+	;; AN AMP TONE CAN BE GREAT.
+
+		(and (AMP_27 ?x1) (TONE_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; DAYS CAN BE VINTAGE.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VINTAGE_27 ?x2))
+
+;; (NOWADAYS COMMA MANY AMPS USE TRANSISTORS INSTEAD COMMA SPARKING A LONG-STANDING DEBATE ABOUT WHICH IS BETTER)
+
+	;; SOME_NUMBER_OF AMPS MAY USE TRANSISTORS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AMPS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (TRANSISTORS_27 ?x1))
+
+	;; A DEBATE CAN BE LONG-STANDING.
+
+		(and (DEBATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG-STANDING_27 ?x2))
+
+;; (THE CONSENSUS IS THAT FOR ALMOST ALL TYPES OF MUSIC COMMA THE SOUND OF TUBES IS NOTICEABLY SUPERIOR)
+
+	;; A CONSENSUS CAN BE A PROPOSITION.
+
+		(and (consensu_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; A SOUND OF TUBES CAN BE SUPERIOR.
+
+		(and (SOUND_27 ?x1) (of_27 ?x1 ?x2) (TUBES_27 ?x2) (be_27 ?e1 ?x1 ?x3) (SUPERIOR_27 ?x3))
+
+;; (HOWEVER COMMA TUBES HAVE SEVERAL DRAWBACKS  TUBES CAN BE EXPENSIVE COMMA DEPENDING THE TUBES USED)
+
+	;; TUBES MAY HAVE SOME_NUMBER_OF DRAWBACKS.
+
+		(and (TUBES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (DRAWBACKS_27 ?x1))
+
+	;; A TUBES[PERSON??] CAN BE EXPENSIVE.
+
+		(and (TUBES_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (EXPENSIVE_27 ?x1))
+
+	;; TUBES MAY BE USE -ED.
+
+		(and (tube_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (EXPECT TO REPLACE THEM AFTEROR MORE YEARS OF USE COMMA DEPENDING ON THEIR QUALITY AND HOW LOUD/OFTEN THEY ARE USED)
+
+	;; INDIVIDUAL -S MAY AFTEROR YEARS OF USE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (AFTEROR_27 ?x1) (YEARS_27 ?x1) (of_27 ?x1 ?x2) (USE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A QUALITY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (QUALITY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE USE -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (TUBES ARE SOMEWHAT UNRELIABLE)
+
+	;; TUBES CAN BE UNRELIABLE.
+
+		(and (tube_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNRELIABLE_27 ?x2))
+
+;; (THEY CAN AND DO GO OUT AT RANDOM TIMES COMMA CRIPPLING THE AMP)
+
+	;; TIMES CAN BE RANDOM.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; (THIS CAN BE ALLEVIATED BY USING GOOD QUALITY TUBES)
+
+	;; QUALITY TUBES CAN BE GOOD.
+
+		(and (QUALITY_27 ?x1) (TUBES_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (TUBES -LRB- AND THE ASSOCIATED DESIGN FACTORS -RRB- ADD CONSIDERABLE WEIGHT TO THE AMPLIFIER)
+
+	;; TUBES MAY ADD WEIGHT TO AN AMPLIFIER.
+
+		(and (TUBES_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (WEIGHT_27 ?x1) (to_27 ?x1 ?x2) (AN_27 ?x2) (AMPLIFIER_27 ?x2))
+
+	;; A DESIGN CAN BE ASSOCIATED.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?e2) (associate_27 ?e2 ?x1))
+
+;; (BACK PROBLEMS CAUSED BY SKINNY GUITAR PLAYERS LUGGING AROUND BIGX12 TUBE COMBOS ARE AN INSURANCE COMPANY S NIGHTMARE)
+
+	;; PROBLEMS CAN BE A NIGHTMARE.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (NIGHTMARE_27 ?x2))
+
+	;; PROBLEMS MAY BE CAUSE -ED BY GUITAR PLAYERS.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAUSE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (GUITAR_27 ?x2) (PLAYERS_27 ?x2))
+
+	;; GUITAR PLAYERS MAY LUG AROUND TUBE COMBOS.
+
+		(and (GUITAR_27 ?x1) (PLAYERS_27 ?x1) (MAY_27 ?x1) (LUG_27 ?x1) (AROUND_27 ?x1) (TUBE_27 ?x1) (COMBOS_27 ?x1))
+
+	;; GUITAR PLAYERS CAN BE SKINNY.
+
+		(and (GUITAR_27 ?x1) (PLAYERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SKINNY_27 ?x2))
+
+	;; TUBE COMBOS CAN BE BIGX12.
+
+		(and (TUBE_27 ?x1) (COMBOS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIGX12_27 ?x2))
+
+	;; AN INSURANCE COMPANY MAY HAVE A NIGHTMARE.
+
+		(and (INSURANCE_27 ?x1) (COMPANY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NIGHTMARE_27 ?x1))
+
+;; (TUBE AMPS ARE COMMA GENERALLY SPEAKING COMMA MORE PRICEY THAN SOLID-STATE AMPS)
+
+	;; AMPS MAY BE.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AMPS CAN BE TUBE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUBE_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; (TUBE AMPS ARE COMMA GENERALLY SPEAKING COMMA MORE PRICEY THAN SOLID-STATE AMPS)
+
+	;; AMPS MAY BE.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AMPS CAN BE TUBE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUBE_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; (TUBE AMPS ARE COMMA GENERALLY SPEAKING COMMA MORE PRICEY THAN SOLID-STATE AMPS)
+
+	;; AMPS MAY BE.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AMPS CAN BE TUBE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUBE_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; (TUBE AMPS ARE COMMA GENERALLY SPEAKING COMMA MORE PRICEY THAN SOLID-STATE AMPS)
+
+	;; AMPS MAY BE.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AMPS CAN BE TUBE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUBE_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; (TUBE AMPS ARE COMMA GENERALLY SPEAKING COMMA MORE PRICEY THAN SOLID-STATE AMPS)
+
+	;; AMPS MAY BE.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AMPS CAN BE TUBE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUBE_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; (TUBE AMPS ARE COMMA GENERALLY SPEAKING COMMA MORE PRICEY THAN SOLID-STATE AMPS)
+
+	;; AMPS MAY BE.
+
+		(and (AMPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AMPS CAN BE TUBE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUBE_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort debug loop
+ABORT          :R19     Abort debug loop
+ABORT          :R20     Abort debug loop
+ABORT          :R21     Abort main loop
+Break 21 [31]>
+
+;; (IF YOU CAN AFFORD A TUBE AMP COMMA YOU SHOULD STRONGLY CONSIDER BUYING ONE)
+
+	;; A PERSON MAY CONSIDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONSIDER_27 ?x1))
+
+	;; A PERSON MAY AFFORD A TUBE AMP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (AFFORD_27 ?x1) (A_27 ?x1) (TUBE_27 ?x1) (AMP_27 ?x1))
+
+;; (IN ALMOST ALL CASES COMMA THE SOUND IS NOTICEABLY BETTER)
+
+	;; A SOUND CAN BE BETTER.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+;; (ONE POSSIBLE EXCEPTION TO THIS IS FOR HEAVY METAL PLAYERS)
+
+	;; AN EXCEPTION TO A THING CAN BE FOR METAL PLAYERS.
+
+		(and (EXCEPTION_27 ?x1) (to_27 ?x1 ?x2) (thing_27 ?x2) (be_27 ?e1 ?x1) (for_27 ?x1 ?x3) (METAL_27 ?x3) (PLAYERS_27 ?x3))
+
+	;; AN EXCEPTION CAN BE TO A THING.
+
+		(and (EXCEPTION_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; METAL PLAYERS CAN BE HEAVY.
+
+		(and (metal_27 ?x1) (player_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (MANY METAL GUITARISTS FIND THAT THE HARSHER SOUND OF TRANSISTORS SUITS THEIR STYLE OF MUSIC)
+
+	;; SOME_NUMBER_OF METAL GUITARISTS MAY FIND A PROPOSITION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (METAL_27 ?x1) (GUITARISTS_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A SOUND OF TRANSISTORS MAY SUIT A STYLE OF MUSIC.
+
+		(and (SOUND_27 ?x1) (of_27 ?x1 ?x2) (TRANSISTORS_27 ?x2) (MAY_27 ?x2) (SUIT_27 ?x2) (A_27 ?x2) (STYLE_27 ?x2) (of_27 ?x1 ?x3) (MUSIC_27 ?x3))
+
+	;; A SOUND CAN BE HARSHER.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARSHER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A STYLE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STYLE_27 ?x1))
+
+;; (GIVEN THE RELIABILITY COMMA WEIGHT COMMA AND PRICE ADVANTAGES OF SOLID-STATE AMPS COMMA EVEN THE PROFESSIONAL-LEVEL HEAVY METAL GUITARIST MAY NOT REQUIRE A TUBE AMP)
+
+	;; A METAL GUITARIST MAY REQUIRE A TUBE AMP.
+
+		(and (METAL_27 ?x1) (GUITARIST_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (A_27 ?x1) (TUBE_27 ?x1) (AMP_27 ?x1))
+
+	;; PRICE ADVANTAGES CAN BE CONSTITUTED_OF_OR_FILLED_WITH AMPS.
+
+		(and (PRICE_27 ?x1) (ADVANTAGES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (AMPS_27 ?x2))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+	;; A METAL GUITARIST CAN BE PROFESSIONAL-LEVEL.
+
+		(and (METAL_27 ?x1) (GUITARIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFESSIONAL-LEVEL_27 ?x2))
+
+	;; A METAL GUITARIST CAN BE HEAVY.
+
+		(and (METAL_27 ?x1) (GUITARIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (PANTERA S DARRELL ABBOTT USED SOLID-STATE AMPS COMMA AS DO MANY OTHER NOTABLE HEAVY METAL MUSICIANS)
+
+	;; A MALE MAY USE AMPS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (AMPS_27 ?x1))
+
+	;; AMPS CAN BE SOLID-STATE.
+
+		(and (amp_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID-STATE_27 ?x2))
+
+;; (YOUR AMP WILL HAVE TWO DIFFERENT KINDS OF TUBES -- PRE-AMP TUBES AND POWER-AMP TUBES -LRB- A FEW COMBOS AND HEADS MIX AND MATCH BETWEEN TUBE AND SOLID-STATE PRE-AMPS AND POWER AMPS -RRB-)
+
+	;; AN AMP MAY HAVE SOME_NUMBER_OF KINDS OF TUBES.
+
+		(and (AMP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (KINDS_27 ?x1) (of_27 ?x1 ?x2) (TUBES_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AMP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AMP_27 ?x1))
+
+	;; TUBES CAN BE PRE-AMP.
+
+		(and (tube_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRE-AMP_27 ?x2))
+
+	;; TUBES CAN BE POWER-AMP.
+
+		(and (tube_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POWER-AMP_27 ?x2))
+
+	;; MIX CAN BE BETWEEN TUBE.
+
+		(and (MIX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (TUBE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort debug loop
+ABORT          :R19     Abort debug loop
+ABORT          :R20     Abort debug loop
+ABORT          :R21     Abort debug loop
+ABORT          :R22     Abort main loop
+Break 22 [32]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort debug loop
+ABORT          :R19     Abort debug loop
+ABORT          :R20     Abort debug loop
+ABORT          :R21     Abort debug loop
+ABORT          :R22     Abort debug loop
+ABORT          :R23     Abort main loop
+Break 23 [33]>
+
+;; (BUT UNLESS YOU RE INTO THE TINNY THRASH-METAL SOUND COMMA NO ARTIFICIAL GAIN SETTING CAN COMPARE TO THE SWEET COMMA DISTORTED TONE OF OVERDRIVEN POWER TUBES TURNED UP TO 7)
+
+	;; A GAIN SETTING MAY COMPARE TO A TONE OF OVERDRIVEN POWER TUBES.
+
+		(and (GAIN_27 ?x1) (SETTING_27 ?x1) (MAY_27 ?x1) (COMPARE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (TONE_27 ?x2) (of_27 ?x1 ?x3) (OVERDRIVEN_27 ?x3) (POWER_27 ?x3) (TUBES_27 ?x3))
+
+	;; A SOUND CAN BE TINNY.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TINNY_27 ?x2))
+
+	;; A SOUND CAN BE THRASH-METAL.
+
+		(and (SOUND_27 ?x1) (be_27 ?e1 ?x1) (thrash-metal_27 ?x1))
+
+	;; A GAIN SETTING CAN BE ARTIFICIAL.
+
+		(and (GAIN_27 ?x1) (SETTING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+	;; A TONE CAN BE SWEET.
+
+		(and (TONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SWEET_27 ?x2))
+
+	;; OVERDRIVEN POWER TUBES MAY BE TURN_UP -ED TO SOME NUMBER_OR_PORTION.
+
+		(and (OVERDRIVEN_27 ?x1) (POWER_27 ?x1) (TUBES_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TURN_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (SOME_27 ?x3) (NUMBER_5FOR_5FPORTION_27 ?x3))
+
+;; (THE PROBLEM IS COMMA MOST GUITARISTS COMMA ESPECIALLY NEW ONES COMMA GO WHOLE HOG FOR A 100W AMP COMMA WHICH CAN NOT BE TURNED UP TO 7 OR 8 IN A SMALL CLUB WITHOUT BLOWING THE DOORS OFF)
+
+	;; GUITARISTS MAY GO HOG.
+
+		(and (GUITARISTS_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (HOG_27 ?x1))
+
+	;; A CLUB CAN BE SMALL.
+
+		(and (CLUB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (THEY TURN THEIR AMPS DOWN TO FOUR OR FIVE COMMA TURN THE GAIN UP TO TEN COMMA AND NEVER KNOW WHAT THEY ARE MISSING THAT THEY COULD GET FROM A 30W AMP TURNED TO 7)
+
+	;; INDIVIDUAL -S MAY HAVE AMPS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AMPS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY MISS A PROPOSITION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MISS_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; INDIVIDUAL -S MAY GET FROM SOME_NUMBER_OF AMP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (FROM_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (AMP_27 ?x1))
+
+	;; SOME_NUMBER_OF AMP MAY BE TURN -ED TO SOME NUMBER_OR_PORTION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AMP_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TURN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (NUMBER_5FOR_5FPORTION_27 ?x3))
+
+;; (ANGUS YOUNG OF AC/DC PLAYS LIVE WITH BOTH A 100W TUBE HEAD TURNED UP TO 6 FOR HIS RHYTHM PARTS COMMA AND A 50W TUBE HEAD CRANKED UP TO 10 FOR COMPARABLE VOLUME BUT EXTRA OVERDRIVE THAT HE SWITCHED TO FOR HIS
+ SOLOS)
+
+	;; A MALE MAY HAVE RHYTHM PARTS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RHYTHM_27 ?x1) (PARTS_27 ?x1))
+
+	;; A VOLUME CAN BE COMPARABLE.
+
+		(and (volume_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPARABLE_27 ?x2))
+
+	;; AN OVERDRIVE CAN BE EXTRA.
+
+		(and (OVERDRIVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A MALE MAY HAVE SOLOS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOLOS_27 ?x1))

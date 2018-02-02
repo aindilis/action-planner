@@ -1,0 +1,19 @@
+#!/usr/bin/perl -w
+
+use ActionPlanner;
+
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new
+  (Name => "ActionPlanner",
+   ReceiveHandler => \&Receive);
+$UNIVERSAL::actionplanner = ActionPlanner->new();
+
+sub Receive {
+  my %args = @_;
+  $UNIVERSAL::actionplanner->ProcessMessage
+    (Message => $args{Message});
+}
+
+$UNIVERSAL::actionplanner->Execute();

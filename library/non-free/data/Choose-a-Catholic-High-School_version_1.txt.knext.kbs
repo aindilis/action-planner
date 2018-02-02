@@ -1,0 +1,190 @@
+;; (SCHOOL -RRB- CONSIDER THE BENEFITS OF ATTENDING A CATHOLIC HIGH SCHOOL)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (IF YOU ARE A ROMAN CATHOLIC COMMA IT IS SENSIBLE TO CHOOSE A CATHOLIC SCHOOL COMMA AS YOU WILL LEARN ABOUT YOUR FAITH IN SCHOOL)
+
+	;; A SCHOOL CAN BE CATHOLIC.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CATHOLIC_27 ?x2))
+
+	;; A PERSON MAY LEARN ABOUT A FAITH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEARN_27 ?x1) (ABOUT_27 ?x1) (A_27 ?x1) (FAITH_27 ?x1))
+
+	;; A FAITH CAN BE IN SCHOOL.
+
+		(and (FAITH_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SCHOOL_27 ?x2))
+
+	;; A PERSON MAY HAVE A FAITH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAITH_27 ?x1))
+
+;; (IF YOU RE NOT CATHOLIC COMMA YOU MIGHT STILL WANT TO ATTEND A CATHOLIC SCHOOL FOR ITS ACADEMICS OR ATHLETIC PROGRAM)
+
+	;; A SCHOOL CAN BE CATHOLIC.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CATHOLIC_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE ACADEMICS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ACADEMICS_27 ?x1))
+
+	;; A PROGRAM CAN BE ATHLETIC.
+
+		(and (PROGRAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATHLETIC_27 ?x2))
+
+;; (IT S IMPORTANT TO KNOW WHAT YOU D LIKE TO GET OUT OF CATHOLIC SCHOOL SO THAT YOU CAN NARROW DOWN YOUR CHOICES)
+
+	;; A SCHOOL CAN BE CATHOLIC.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CATHOLIC_27 ?x2))
+
+	;; A PERSON MAY NARROW_DOWN CHOICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NARROW_5FDOWN_27 ?x1) (CHOICES_27 ?x1))
+
+	;; A PERSON MAY HAVE CHOICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHOICES_27 ?x1))
+
+;; (DO A LITTLE RESEARCH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (VISIT THE SCHOOL WEBSITE OR ATTEND AN EVENT AT THE SCHOOL COMMA SUCH AS A DANCE OR A PLAY)
+
+	;; A SCHOOL MAY WEBSITE.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (WEBSITE_27 ?x1))
+
+	;; AN EVENT CAN BE AT A SCHOOL.
+
+		(and (EVENT_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (SCHOOL_27 ?x2))
+
+;; (LEARN WHAT THE SCHOOL EXCELS IN TO MAKE SURE THAT ATTENDING THE SCHOOL WILL BENEFIT YOU)
+
+	;; LEARN MAY BENEFIT A PERSON.
+
+		(and (LEARN_27 ?x1) (MAY_27 ?x1) (BENEFIT_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (IF YOU LOVE ART COMMA FOR EXAMPLE COMMA IT D BE BEST TO CHOOSE A SCHOOL WITH A GOOD ART PROGRAM)
+
+	;; A PERSON MAY LOVE ART.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1) (ART_27 ?x1))
+
+	;; AN ART PROGRAM CAN BE GOOD.
+
+		(and (ART_27 ?x1) (PROGRAM_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (TRY TO ELIMINATE SOME CHOICES IF YOU DO N T LIKE THEM)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (TAKE THE HIGH SCHOOL SCHOLARSHIP/PLACEMENT EXAM TO TRY TO GET IN AT YOUR-4 TOP CHOICES)
+
+	;; A SCHOOL SCHOLARSHIP/PLACEMENT EXAM CAN BE HIGH.
+
+		(and (SCHOOL_27 ?x1) (SCHOLARSHIP_2FPLACEMENT_27 ?x1) (EXAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; CHOICES CAN BE YOUR-4.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (your--NUMBER-_27 ?x2))
+
+	;; CHOICES CAN BE TOP.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (SHADOW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IS-2 DET A-3 AMOD COMMON-4 NSUBJ PRACTICE-5 AMOD CATHOLIC-7 PREP_IN SCHOOLS-8 RCMOD HELPS-10 AMOD POTENTIAL-11 AMOD INCOMING-12 DOBJ STUDENTS-13 AUX TO-14 XCOMP DECIDE-15 COMPLM WHETHER-16 NSUBJ THEY-17 XSUBJ
+ THEY-17 AUX D-18 CCOMP LIKE-19 AUX TO-20 XCOMP ATTEND-21 DET A-22 DOBJ SCHOOL-23)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SHADOW-3 PREP_ON DAY-4 NSUBJ YOU-6 NSUBJ YOU-6 XSUBJ YOU-6 DET A-8 DOBJ STUDENT-9 DOBJ STUDENT-9 PRT AROUND-10 NN HIS/HER-12 PREP_THROUGH CLASSES-13 CONJ_AND GET-15 AUX TO-16 XCOMP SEE-17 DOBJ WHAT-18 DET AN-19
+ AMOD AVERAGE-20 NN SCHOOL-21 NSUBJ DAY-22 COP IS-23 CCOMP LIKE-24)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (STAY OPEN TO ALL SCHOOLS)
+
+	;; A STAY[PERSON??] MAY OPEN TO SOME_NUMBER_OF SCHOOLS.
+
+		(and (STAY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (OPEN_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SCHOOLS_27 ?x2))
+
+;; (STAY OPEN TO ALL SCHOOLS)
+
+	;; A STAY[PERSON??] MAY OPEN TO SOME_NUMBER_OF SCHOOLS.
+
+		(and (STAY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (OPEN_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SCHOOLS_27 ?x2))

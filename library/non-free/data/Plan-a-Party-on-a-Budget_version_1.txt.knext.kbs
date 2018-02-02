@@ -1,0 +1,283 @@
+;; (DECIDE THE THEME OF YOUR PARTY)
+
+	;; A PARTY MAY HAVE A THEME.
+
+		(and (PARTY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THEME_27 ?x1))
+
+	;; A PERSON MAY HAVE A PARTY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTY_27 ?x1))
+
+;; (MAYBE IT S A BIRTHDAY PARTY COMMA OR A HOLIDAY PARTY COMMA OR AN I M - HAVING-A-PARTY-BECAUSE-I-CAN PARTY)
+
+	;; A PARTY CAN BE HAVING-A-PARTY-BECAUSE-I-CAN.
+
+		(and (PARTY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAVING-A-PARTY-BECAUSE-I-CAN_27 ?x2))
+
+;; (NO MATTER WHAT THE OCCASION COMMA EVEN IF YOU DO N T HAVE ONE COMMA IT S GOOD TO CLARIFY ON A THEME)
+
+	;; AN OCCASION MAY HAVE SOME NUMBER_OR_PORTION.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (HOWEVER COMMA IF YOU DO N T WANT A THEME COMMA THEN YOU CAN SKIP THIS STEP ENTIRELY)
+
+	;; A PERSON MAY SKIP A STEP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SKIP_27 ?x1) (A_27 ?x1) (STEP_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IF YOU DO WANT A THEME COMMA MAKE SURE THAT YOU PICK SOMETHING ORIGINAL AND INTERESTING)
+
+	;; A PERSON MAY WANT A THEME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (THEME_27 ?x1))
+
+	;; A PERSON MAY PICK SOMETHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PICK_27 ?x1) (SOMETHING_27 ?x1))
+
+	;; SOMETHING CAN BE ORIGINAL.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORIGINAL_27 ?x2))
+
+;; (FIGURE OUT WHERE THE PARTY WILL HAPPEN)
+
+	;; A PARTY MAY HAPPEN.
+
+		(and (PARTY_27 ?x1) (MAY_27 ?x1) (HAPPEN_27 ?x1))
+
+;; (IF YOU RE ON A TIGHT BUDGET COMMA THEN YOUR HOUSE WOULD BE YOUR BEST BET)
+
+	;; A HOUSE CAN BE A BET.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (BET_27 ?x2))
+
+	;; A BUDGET CAN BE TIGHT.
+
+		(and (BUDGET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHT_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A BET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BET_27 ?x1))
+
+	;; A BET CAN BE BEST.
+
+		(and (BET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (IF YOU CAN STRETCH THE DOUGH A LITTLE COMMA TRY HAVING IT AT A CLUB OR RENT OUT A RESTAURANT)
+
+	;; A PERSON MAY STRETCH A DOUGH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STRETCH_27 ?x1) (A_27 ?x1) (DOUGH_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [12]>
+
+;; (CREATE YOUR GUEST LIST)
+
+	;; A PERSON MAY HAVE A GUEST LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GUEST_27 ?x1) (LIST_27 ?x1))
+
+;; (SINCE YOU ARE ON A BUDGET COMMA IT WOULD BE BEST NOT TO INVITE ANY MORE THAN 15 PEOPLE)
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A PERSON CAN BE ON A BUDGET.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (BUDGET_27 ?x2))
+
+;; (WORK OUT THE MENU COMMA AND GO POTLUCK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SEEING THAT YOU DO N T HAVE THAT MUCH MONEY TO SPARE COMMA IT WOULD BE A GOOD IDEA TO ASK A COUPLE OF TRUSTWORTHY FRIENDS IF THEY COULD BRING SOME SMALL FOOD ITEMS)
+
+	;; A THING-REFERRED-TO CAN BE AN IDEA.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; FRIENDS CAN BE TRUSTWORTHY.
+
+		(and (friend_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRUSTWORTHY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BRING SOME_NUMBER_OF FOOD ITEMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (FOOD_27 ?x1) (ITEMS_27 ?x1))
+
+	;; FOOD ITEMS CAN BE SMALL.
+
+		(and (food_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (ASK YOUR FRIEND WHO LOVES TO BAKE TO MAKE SOME COOKIES COMMA AND ASK YOUR HELPFUL BUT COOKING-CHALLENGED FRIEND TO PICK UP SOME CHIPS AND DIP)
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+	;; A FRIEND CAN BE HELPFUL.
+
+		(and (FRIEND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+;; (IF YOU PLAY YOU CARDS RIGHT COMMA YOU WILL WIND UP PAYING FOR HALF OR LESS OF THE TOTAL AMOUNT OF FOOD)
+
+	;; A PERSON MAY WIND_UP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WIND_5FUP_27 ?x1))
+
+	;; A PERSON MAY PLAY A PERSON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PLAY_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (FIND A GOOD SOURCE OF MUSIC)
+
+	;; A SOURCE CAN BE CONSTITUTED_OF_OR_FILLED_WITH MUSIC.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MUSIC_27 ?x2))
+
+	;; A SOURCE CAN BE GOOD.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [13]>
+
+;; (YOU OBVIOUSLY DO N T WANT TO GO OUT AND BUY ALL THE NEW CDS COMMA SO IT WOULD BE BEST TO MAYBE BLAST YOUR IPOD ON A SPECIFIC PLAYLIST AT YOUR PARTY)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A PERSON MAY HAVE AN IPOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IPOD_27 ?x1))
+
+	;; A PLAYLIST CAN BE AT A PARTY.
+
+		(and (PLAYLIST_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (PARTY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PARTY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [14]>
+
+;; (ASK A FRIEND WHO IS MUSIC-CRAZY TO BURN YOU A CD OF ALL OF THEIR FAVORITE SONGS AND SPONTANEOUSLY PLAY THEM AT THE PARTY)
+
+	;; SONGS MAY HAVE A THING.
+
+		(and (SONGS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE SONGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SONGS_27 ?x1))
+
+	;; SONGS CAN BE FAVORITE.
+
+		(and (song_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (MAKE SURE THAT YOU HAVE DIFFERENT TYPES OF MUSIC THAT WILL APPEAL TO EVERYBODY)
+
+	;; A PERSON MAY HAVE TYPES OF MUSIC.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TYPES_27 ?x1) (of_27 ?x1 ?x2) (MUSIC_27 ?x2))
+
+;; (SEND OUT INVITATIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU PLAN ON SAVING MONEY ON A STAMP AND PERSONALLY DELIVERING IT TO THEM COMMA BE DISCREET ABOUT IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (VISIT THE DOLLAR STORE SINCE THEY HAVE CHEAP PARTY SUPPLIES LIKE BALLOONS COMMA PAPER CUPS COMMA AND DISPOSABLE UTENSILS)
+
+	;; A DOLLAR MAY STORE.
+
+		(and (DOLLAR_27 ?x1) (MAY_27 ?x1) (STORE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PARTY SUPPLIES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PARTY_27 ?x1) (SUPPLIES_27 ?x1))
+
+	;; PARTY SUPPLIES CAN BE CHEAP.
+
+		(and (party_27 ?x1) (supply_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAP_27 ?x2))
+
+	;; UTENSILS CAN BE DISPOSABLE.
+
+		(and (utensil_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPOSABLE_27 ?x2))

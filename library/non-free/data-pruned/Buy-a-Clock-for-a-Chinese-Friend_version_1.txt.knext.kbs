@@ -1,0 +1,62 @@
+;; (PLAYERSAVOID GIVING A CLOCK AS A SURPRISE GIFT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE YOUR RECIPIENTS KNOW IN ADVANCE WHEN YOU RE GOING TO GIVE THEM A CLOCK)
+
+	;; RECIPIENTS MAY KNOW IN ADVANCE.
+
+		(and (recipient_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (in_27 ?x1 ?x2) (ADVANCE_27 ?x2))
+
+	;; A PERSON MAY HAVE RECIPIENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (recipient_27 ?x1))
+
+;; (IF THEY ARE HESITANT IN THEIR RESPONSE COMMA CHOOSE ANOTHER GIFT)
+
+	;; INDIVIDUAL -S CAN BE HESITANT IN A RESPONSE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HESITANT_27 ?x2) (in_27 ?e1 ?x3) (A_27 ?x3) (RESPONSE_27 ?x3))
+
+	;; INDIVIDUAL -S MAY HAVE A RESPONSE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RESPONSE_27 ?x1))
+
+;; (ADJUST YOUR GIFT GIVING TACTIC FOR THOSE INTERESTED IN CLOCKS)
+
+	;; A PERSON MAY HAVE A GIFT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GIFT_27 ?x1))
+
+	;; A THING MAY BE INTEREST -ED IN CLOCKS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTEREST_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?e1 ?x3) (clock_27 ?x3))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [7]>
+
+;; (ASK IF THEY WOULD LIKE TO BUY THE CLOCK FOR $ 1)
+
+	;; 
+
+	;; ((:I (:Q THE CLOCK.N) FOR.P NIL))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (THE_27 ?x1) (CLOCK_2EN_27 ?x1) (FOR_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

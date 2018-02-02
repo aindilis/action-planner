@@ -1,0 +1,430 @@
+<html>
+<head>
+<title>Clips: Modular Design</title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+<h2>10 Modular Design and Execution Control</h2>
+
+<h3>Deftemplate Attributes</h3>
+<h4>Type</h4>
+<pre>
+(<font color="#8000FF">deftemplate</font> person
+    (<font color="#8000FF">multislot</font> name (<FONT COLOR=#FF0000>type</FONT> SYMBOL))
+    (<font color="#8000FF">slot</font> age (<FONT COLOR=#FF0000>type</FONT> INTEGER)))
+
+(<font color="#8000FF">assert</font> (person (name Fred Smith)
+        (age four)))            <font color="#0040a0">;wrong type</font>
+</pre>
+<p>The type attribute is either ?VARIABLE for any data type,  or one or more of
+SYMBOL, STRING, LEXEME, INTEGER, FLOAT, or NUMBER.
+</p>
+
+<h4>Static and Dynamic Constraint Checking</h4>
+
+<pre>
+(<font color="#8000FF">defrule</font> create-person
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"What's your name? "</font>)
+    (<font color="#8000FF">bind</font> ?name (explode$ (<font color="#8000FF">readline</font>)))
+    (<font color="#8000FF">printout</font> t <font color="#008000">"What's your age? "</font>)
+    (<font color="#8000FF">bind</font> ?age (<font color="#8000FF">read</font>))
+    (<font color="#8000FF">assert</font> (person (name ?name)
+            (age ?age))) )
+</pre>
+<p>
+If age entered is of a wrong type, e.g. "four", it is not checked at parse time.
+Dynamic constraint checking can be enabled using
+</p>
+<pre>
+    (<font color="#8000FF">set-dynamic-constraint-checking</font> TRUE)     <font color="#0040a0">; FALSE if disable</font>
+</pre>
+
+<h4>Allowed Value</h4>
+
+<pre>
+(<font color="#8000FF">deftemplate</font> person
+    (<font color="#8000FF">multislot</font> name (type SYMBOL))
+    (<font color="#8000FF">slot</font> age (type INTEGER))
+    (<font color="#8000FF">slot</font> gender (type SYMBOL)
+            (<FONT COLOR=#FF0000>allowed-symbols</FONT> male female)) )
+</pre>
+
+<h4>Range</h4>
+<pre>
+(<font color="#8000FF">deftemplate</font> person
+    (<font color="#8000FF">multislot</font> name (type SYMBOL))
+    (<font color="#8000FF">slot</font> age (type INTEGER)
+        (<FONT COLOR=#FF0000>range</FONT> 0 ?VARIABLE)) )
+
+</pre>
+<h4>Cardinality</h4>
+<pre>
+(<font color="#8000FF">deftemplate</font> volleyball-team
+    (<font color="#8000FF">slot</font> name (type STRING))
+    (<font color="#8000FF">multislot</font> player (type STRING)
+        (<FONT FACE="">cardinality</FONT> 6 6))
+    (<font color="#8000FF">multislot</font> alternates (type STRING)
+        (<FONT COLOR=#FF0000>cardinality</FONT> 0 2)) )
+</pre>
+<h4>Default</h4>
+The default value is assigned in a slot if no value is explicitly stated in an
+assert command.  The default value is determined when the slot definition is
+parsed.
+<pre>
+(<font color="#8000FF">deftemplate</font> example1                           <font color="#0040a0">;default values</font>
+    (<font color="#8000FF">slot</font> a)                                    <font color="#0040a0">;  nil</font>
+    (<font color="#8000FF">slot</font> b (type INTEGER))                     <font color="#0040a0">;  0</font>
+    (<font color="#8000FF">slot</font> c (allowed-values red green blue))    <font color="#0040a0">;  red</font>
+    (<font color="#8000FF">multislot</font> d)
+    (<font color="#8000FF">multislot</font> e (cardinality 0 2)              <font color="#0040a0">;  3.5 3.5</font>
+        (type FLOAT)
+        (range 3.5 10.0)) )
+
+(<font color="#8000FF">deftemplate</font> example2
+    (<font color="#8000FF">slot</font> a)
+    (<font color="#8000FF">slot</font> b (<font color=#ff0000>default</font> ?NONE)) )                  <font color="#0040a0">;no default value</font>
+
+(<font color="#8000FF">deftemplate</font> example3
+    (<font color="#8000FF">slot</font> a (default 3))                        <font color="#0040a0">; 3</font>
+    (<font color="#8000FF">slot</font> b (default (+ 3 4)))                  <font color="#0040a0">; 7</font>
+    (<font color="#8000FF">multislot</font> c (default a b c))               <font color="#0040a0">; a b c</font>
+    (<font color="#8000FF">multislot</font> d (default (+ 1 2) (+ 3 4))) )   <font color="#0040a0">; 3 7</font>
+</pre>
+
+<p><b>Example</b>:&nbsp;default.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+default))">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/courses/clips/webclips/ch10/default.clp">Source</a>
+</ul>
+</p>
+
+
+<h4>Default-Dynamic</h4>
+
+A slot with default-dynamic attribute will have its default value generated
+when the fact with that slot is asserted.
+<pre>
+(<font color="#8000FF">deftemplate</font> data
+    (<font color="#8000FF">slot</font> create-time (<FONT COLOR=#FF0000>default-dynamic</FONT> (<font color="#8000FF">time</font>)))
+    (<font color="#8000FF">slot</font> value))
+
+(<font color="#8000FF">defrule</font> retract-data-facts-after-one-minute
+    ?f &lt;- (data (create-time ?t1))
+    (current-time ?t2)
+    (<font color="#8000FF">test</font> (&gt; (- ?t2 ?t1) 60))
+    =&gt;
+    (<font color="#8000FF">retract</font> ?f))
+
+(<font color="#8000FF">assert</font> (data (value 3)))
+
+(<font color="#8000FF">assert</font> (current-time (time)))
+</pre>
+
+<p><b>Example</b>:&nbsp;time.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/JessConsole?src=jess/ch10/time.clp">Jess Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/time.clp">Source</a>)
+<li>Type into the jess console:
+<pre>
+(assert (current-time (time)))
+(run)
+(facts)
+</pre>
+</ul>
+</p>
+
+
+<h3>Salience</h3>
+<pre>
+(<font color="#8000FF">deffacts</font> init
+    (priority first)
+    (priority second)
+    (priority third))
+</pre>
+<h4>Without salience declaration</h4>
+
+<pre>
+(<font color="#8000FF">defrule</font> fire-first
+    (priority first)
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Print first"</font> crlf))
+
+(<font color="#8000FF">defrule</font> fire-second
+    (priority second)
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Print second"</font> crlf))
+
+(<font color="#8000FF">defrule</font> fire-third
+    (priority third)
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Print third"</font> crlf))
+</pre>
+<UL>
+<LI><B>Demo</B>:&nbsp;<a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/clips/examples/ch10/priority-1.clp">priority-1.clp</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/examples/ch10/priority-1.clp">source</a>)
+</UL>
+
+<h4>with salience declaration</h4>
+
+To assign a salience value to a rule, use the declare command,
+<pre>
+(<font color="#8000FF">defrule</font> fire-first
+    (<font color="#ff0000">declare</font> (<font color=#ff0000>salience</font> 30))
+    (priority first)
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Print first"</font> crlf))
+
+(<font color="#8000FF">defrule</font> fire-second
+    (<font color="#ff0000">declare</font> (<font color=#ff0000>salience</font> 20))
+    (priority second)
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Print second"</font> crlf))
+
+(<font color="#8000FF">defrule</font> fire-third
+    (<font color="#ff0000">declare</font> (<font color=#ff0000>salience</font> 10))
+    (priority third)
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Print third"</font> crlf))
+</pre>
+<UL>
+<LI><B>Demo</B>:&nbsp;<a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/clips/examples/ch10/priority-2.clp">priority-2.clp</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/examples/ch10/priority-2.clp">source</a>)
+</UL>
+
+<h3>Phases and Control Facts</h3>
+
+<pre>
+(<font color="#8000FF">deffacts</font> control-information
+    (phase detection)
+    (phase-seq detection isolation recovery))
+
+(<font color="#8000FF">defrule</font> change-phase
+    (<font color="#8000FF">declare</font> (salience -10))
+    ?phase &lt;- (phase ?current-phase)
+    ?list  &lt;- (phase-seq ?next-phase
+                         $?other-phases)
+    =&gt;
+    (<font color="#8000FF">retract</font> ?phase ?list)
+    (<font color="#8000FF">assert</font> (phase ?next-phase))
+    (<font color="#8000FF">assert</font> (phase-seq ?other-phases
+                       ?next-phase)))
+</pre>
+<UL>
+<LI><B>Demo</B>:&nbsp;<a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/clips/examples/ch10/control-1.clp">control-1.clp</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/examples/ch10/control-1.clp">source</a>)
+</UL>
+
+<h3>Defmodule</h3>
+
+A knowledge base can be partitioned using the defmodule construct.
+<pre>
+(<font color="#8000FF">defmodule</font> DETECTION)
+(<font color="#8000FF">defmodule</font> ISOLATION)
+(<font color="#8000FF">defmodule</font> RECOVERY)
+
+(<font color="#8000FF">defrule</font> example1 =&gt;)               ; in current module
+(<font color="#8000FF">defrule</font> ISOLATION::example2 =&gt;)    ; in module ISOLATION
+
+(<font color="#8000FF">get-current-module</font>)
+(<font color="#8000FF">set-current-module</font> DETECTION)
+</pre>
+
+<p><b>Example</b>:&nbsp;defmodule.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/ch10/defmodule.clp">Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/defmodule.clp">source</a>)
+</ul>
+</p>
+
+<h3>Importing and Exporting Facts</h3>
+
+<pre>
+(<font color="#8000FF">deftemplate</font> DETECTION::fault
+    (<font color="#8000FF">slot</font> component))
+(<font color="#8000FF">assert</font> (fault (component A)))                 <font color="#0040a0">; in module DETECTION</font>
+
+(<font color="#8000FF">deftemplate</font> ISOLATION::possible-failure
+    (<font color="#8000FF">slot</font> component))
+(<font color="#8000FF">assert</font> (possible-failure (component B)))      <font color="#0040a0">; in module ISOLATION</font>
+
+(<font color="#8000FF">facts</font> DETECTION)      <font color="#0040a0">; (fault (component A))</font>
+(<font color="#8000FF">facts</font> ISOLATION)      <font color="#0040a0">; (possible-failure (component B))</font>
+(<font color="#8000FF">facts</font> RECOVERY)       <font color="#0040a0">; none</font>
+(<font color="#8000FF">facts</font> *)              <font color="#0040a0">; list all facts</font>
+</pre>
+
+
+<h4>export and import</h4>
+
+A fact is "owned" by the module in which its deftemplate is contained.
+To make facts visible to other modules, use the export in the owning module.
+In order to use the deftemplate defined in another module, a module must
+import the deftemplate.
+<p>The export attribute use one of the following formats:</p>
+<pre>
+(<font color="#8000FF">export</font> ?ALL)
+(<font color="#8000FF">export</font> ?NONE)
+(<font color="#8000FF">export deftemplate</font> ?ALL)
+(<font color="#8000FF">export deftemplate</font> ?NONE)
+(<font color="#8000FF">export deftemplate</font> &lt;deftemplate-name&gt;+)
+</pre>
+
+<p>The import attribute use one of the following formats:</p>
+<pre>
+(<font color="#8000FF">import</font> &lt;module-name&gt; ?ALL)
+(<font color="#8000FF">import</font> &lt;module-name&gt; ?NONE)
+(<font color="#8000FF">import</font> &lt;module-name&gt; <font color="#8000FF">deftemplate</font> ?ALL)
+(<font color="#8000FF">import</font> &lt;module-name&gt; <font color="#8000FF">deftemplate</font> ?NONE)
+(<font color="#8000FF">import</font> &lt;module-name&gt; <font color="#8000FF">deftemplate</font> &lt;deftemplate-name&gt;+)
+</pre>
+
+<p><b>Example</b>:&nbsp;defmodule.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+defmodule))">WebClips Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/webclips/ch10/defmodule.clp">Source</a>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/ch10/defmodule.clp">Jess Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/defmodule.clp">source</a>)
+</ul>
+</p>
+
+<p><B>Demo:</B>&nbsp;phases.clp
+<UL>
+<LI><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+phases))">WebClips Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/webclips/ch10/phases.clp">source</a>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/ch10/phases.clp">Jess Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/phases.clp">source</a>)
+</UL>
+
+
+<h3>Modules and Execution Control</h3>
+
+<pre>
+(<font color="#8000FF">defrule</font> DETECTION::rule-1
+    (fault (component A | C))
+    =&gt;)
+
+(<font color="#8000FF">defrule</font> ISOLATION::rule-2
+    (possible-failure (component B | D))
+    =&gt;)
+
+(<font color="#8000FF">defrule</font> RECOVERY::rule-3
+    (fault (component A | C))
+    (possible-failure (component B | D))
+    =&gt;)
+</pre>
+
+<h4>Focus</h4>
+The current focus determines which agenda the <I>run</I> command uses during execution.
+The <I>reset</I> and <I>clear</I> commands automatically set the current focus to the MAIN module.
+<pre>
+(<font color="#FF0000">focus</font> DETECTION)
+(<font color="#FF0000">focus</font> DETECTION ISOLATION RECOVERY)
+</pre>
+<h4>Manipulating and Examining the Focus Stack</h4>
+<pre>
+(list-focus-stack)
+(get-focus-stack)
+(clear-focus-stack)
+(get-focus)         <font color="#0040a0">;get current focus</font>
+(pop-focus)         <font color="#0040a0">;remove current focus</font>
+</pre>
+<h4>Return</h4>
+Terminate current module and return to the next module.
+<pre>
+(<font color="#8000FF">defmodule</font> MAIN
+    (<font color="#8000FF">export</font> <font color="#8000FF">deftemplate</font> initial-fact))          <font color="#0040a0">; must</font>
+
+(<font color="#8000FF">defmodule</font> DETECTION
+    (<font color="#8000FF">import</font> MAIN <font color="#8000FF">deftemplate</font> initial-fact))     <font color="#0040a0">; must</font>
+
+(<font color="#8000FF">defrule</font> MAIN::start
+    =&gt;
+    (<font color="#8000FF">focus</font> DETECTION))
+
+(<font color="#8000FF">defrule</font> DETECTION::example-1
+    =&gt;
+    (<font color="#FF0000">return</font>)
+    (<font color="#8000FF">printout</font> t <font color="#008000">"No printout!"</font> crlf))           <font color="#0040a0">; not printed</font>
+
+(<font color="#8000FF">defrule</font> DETECTION::example-2                   <font color="#0040a0">; no chance to fire</font>
+    =&gt;
+    (<font color="##FF0000">return</font>)
+    (<font color="#8000FF">printout</font> t <font color="#008000">"No printout!"</font> crlf))
+</pre>
+
+<p><b>Example</b>:&nbsp;return.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+return))">WebClips Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/webclips/ch10/return.clp">Source)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/ch10/return.clp">Jess Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/return.clp">source</a>)
+</ul>
+</p>
+note: Jess has no export/import mechanisms.
+<p><b>More Examples</b>:
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/sylee/jess/wine.htm">WINEX: The WINe EXpert system (Certainty Factor)</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/examples/wine.clp">source</a>)
+<li><a href="http://www.csie.ntu.edu.tw/sylee/courses/jess/examples/fate/config2.htm">紫微斗數命盤分析系統</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/examples/fate/config3.clp">source</a>)
+</ul>
+
+<h4>Auto-focus</h4>
+A rule's module is automatically focused upon when that rule, being declared auto-focus, is activated.
+<pre>
+(<font color="#8000FF">defmodule</font> MAIN
+    (<font color="#8000FF">export</font> <font color="#8000FF">deftemplate</font> initial-fact))
+
+(<font color="#8000FF">defmodule</font> DETECTION
+    (<font color="#8000FF">import</font> MAIN <font color="#8000FF">deftemplate</font> initial-fact))
+
+(<font color="#8000FF">defrule</font> DETECTION::example
+    (<font color="#8000FF">declare</font> (<FONT COLOR=#FF0000>auto-focus</FONT> TRUE))
+    =&gt;)
+</pre>
+
+<p><b>Example</b>:&nbsp;autofocus.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+autofocus))">WebClips Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/webclips/ch10/autofocus.clp">Source</a>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/ch10/autofocus.clp">Jess Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/autofocus.clp">source</a>)
+</ul>
+</p>
+
+<h4>Replacing Phases and Control Facts</h4>
+
+<pre>
+(<font color="#8000FF">defmodule</font> DETECTION)
+(<font color="#8000FF">defmodule</font> ISOLATION)
+(<font color="#8000FF">defmodule</font> RECOVERY)
+
+(<font color="#8000FF">deffacts</font> MAIN::control-information
+    (phase-seq DETECTION ISOLATION RECOVERY))
+
+(<font color="#8000FF">defrule</font> change-phase
+    ?list  &lt;- (phase-seq ?next-phase
+                         $?other-phases)
+    =&gt;
+    (<font color="#8000FF">focus</font> ?next-phase)
+    (<font color="#8000FF">retract</font> ?list)
+    (<font color="#8000FF">assert</font> (phase-seq ?other-phases
+                       ?next-phase)))
+
+</pre>
+
+<p><b>Example</b>:&nbsp;control-2.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+control-2))">WebClips Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/clips/webclips/ch10/control-2.clp">Source</a>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/ch10/control-2.clp">Jess Demo</a>
+(<a href="http://www.csie.ntu.edu.tw/courses/jess/ch10/control-2.clp">source</a>)
+</ul>
+</p>
+
+<p>Previous <a href="advpattern.htm">Advanced Pattern Matching</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="procedural.htm">Procedural Programming</a>
+
+</body></html>

@@ -1,0 +1,701 @@
+;; (COLLECTINGFIND ANYTHING WRITTEN BY/ABOUT THE SUBJECT  BOOKS COMMA NEWSPAPERS COMMA MAGAZINES COMMA INTERNET COMMA JOURNALS COMMA LETTERS
+ COMMA VIDEOS COMMA INTERVIEWS COMMA EXISTING BIOGRAPHIES COMMA OR AN AUTOBIOGRAPHY)
+
+	;; ANYTHING MAY BE WRITE -ED.
+
+		(and (anything_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRITE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; AN ANYTHING CAN BE COLLECTINGFIND.
+
+		(and (anything_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLLECTINGFIND_27 ?x2))
+
+	;; BIOGRAPHIES CAN BE EXISTING.
+
+		(and (biography_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+;; (KNOW HOW TO EVALUATE THE CREDIBILITY OF A SOURCE)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONLY USE MATERIAL THAT IS AVAILABLE TO THE PUBLIC COMMA OR THAT YOU CAN GAIN EXPLICIT PERMISSION TO USE IN YOUR RESEARCH COMMA ESPECIALLY
+ IF YOU ARE GOING TO PUBLISH AND DISTRIBUTE THE BIOGRAPHY -LRB- OR ELSE YOU COULD END UP WITH A LAWSUIT ON YOUR HANDS - SEE WARNINGS BELOW
+ -RRB-)
+
+	;; A PERMISSION CAN BE EXPLICIT.
+
+		(and (permission_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPLICIT_27 ?x2))
+
+	;; A PERSON MAY HAVE RESEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESEARCH_27 ?x1))
+
+	;; A LAWSUIT CAN BE ON HANDS.
+
+		(and (LAWSUIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (HANDS_27 ?x2))
+
+	;; A PERSON MAY HAVE HANDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HANDS_27 ?x1))
+
+;; (CONDUCT INTERVIEWS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU CA N T INTERVIEW THE PERSON YOU RE WRITING ABOUT COMMA SEE IF YOU CAN INTERVIEW SOMEONE WHO KNOWS OR KNEW THE SUBJECT)
+
+	;; A PERSON MAY INTERVIEW A PERSON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INTERVIEW_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY INTERVIEW SOMEONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INTERVIEW_27 ?x1) (SOMEONE_27 ?x1))
+
+;; (YOU CAN DO THIS IN PERSON COMMA BY PHONE COMMA OR THROUGH E-MAIL)
+
+	;; A PERSON MAY DO A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A THING CAN BE IN PERSON.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (PERSON_27 ?x2))
+
+;; (REMEMBER TO BE COURTEOUS AND PROFESSIONAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (VISIT PLACES SIGNIFICANT TO THE SUBJECT S LIFE)
+
+	;; A VISIT[PERSON??] MAY PLACE SIGNIFICANT TO A LIFE.
+
+		(and (VISIT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PLACE_27 ?x1) (SIGNIFICANT_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (LIFE_27 ?x2))
+
+	;; A SUBJECT MAY HAVE A LIFE.
+
+		(and (SUBJECT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (THIS CAN BE HELPFUL IN PUTTING YOURSELF IN HIS OR HER SHOES)
+
+	;; 
+
+	;; ((:I (:Q THE THING-REFERRED-TO.N) HELPFUL.A (:P IN.P (:F KA NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (THE_27 ?x1) (THING-REFERRED-TO_2EN_27 ?x1) (HELPFUL_2EA_27 ?x2) (P_27 ?x3) (IN_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (VISUALIZE WITNESSING WHAT THEY WITNESSED)
+
+	;; INDIVIDUAL -S MAY BE WITNESS -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITNESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IMAGINE HOW THEY FELT)
+
+	;; INDIVIDUAL -S MAY FEEL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+;; (TAKE PICTURES FOR THE BIOGRAPHY)
+
+	;; PICTURES CAN BE FOR A BIOGRAPHY.
+
+		(and (picture_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BIOGRAPHY_27 ?x2))
+
+;; (IF YOU CA N T VISIT THE ACTUAL PLACE COMMA TRY TO VISIT A PLACE LIKE IT)
+
+	;; A PERSON MAY VISIT A PLACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VISIT_27 ?x1) (A_27 ?x1) (PLACE_27 ?x1))
+
+;; (HERE ARE SOME IDEAS  WHERE THE PERSON WAS BORN AND DIED)
+
+	;; A PERSON MAY BE BEAR -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEAR_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ILLUSTRATE A SHARP CONTRAST OR POWERFUL SIMILARITY BETWEEN THE TWO)
+
+	;; A CONTRAST CAN BE BETWEEN SOME NUMBER_OR_PORTION.
+
+		(and (contrast_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+	;; A CONTRAST CAN BE SHARP.
+
+		(and (CONTRAST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHARP_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [19]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [20]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [21]>
+
+;; (WHETHER IT WAS BOTANY COMMA POETRY COMMA CLASSICAL MUSIC COMMA OR ARCHITECTURE COMMA IMMERSE YOURSELF IN IT)
+
+	;; A THING-REFERRED-TO CAN BE A BOTANY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (BOTANY_27 ?x2))
+
+	;; MUSIC CAN BE CLASSICAL.
+
+		(and (MUSIC_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLASSICAL_27 ?x2))
+
+;; (TRY AND DISCOVER WHY THE SUBJECT ENJOYED IT)
+
+	;; A SUBJECT MAY ENJOY A THING-REFERRED-TO.
+
+		(and (SUBJECT_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (PHASES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PEOPLE-2 PREP_THROUGH PHASES-5 POSS THEIR-7 PREP_DURING LIVES-8)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE-2 NSUBJ PHASES-3 COP ARE-4 DET EACH-7 PREP_OF OTHER-8 PREP_FOR EXAMPLE-11 DET A-13 NSUBJ PERSON-14 AUX MAY-15 PARATAXIS GO-16 DET
+ A-18 ADVMOD VERY-19 AMOD DEPENDENT-20 PREP_THROUGH PHASE-21 ADVMOD THEN-23 DET A-24 ADVMOD VERY-25 AMOD INDEPENDENT-26 APPOS PHASE-27
+ ADVMOD THEN-29 DOBJ SOMETHING-30 DET THE-32 PREP_IN MIDDLE-33)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALTERNATIVELY COMMA PERHAPS SOMEONE S LIFE BEGINS PROMISINGLY AND GRADUALLY UNRAVELS -- A TRAGEDY OF SORTS)
+
+	;; A LIFE MAY BEGIN.
+
+		(and (LIFE_27 ?x1) (MAY_27 ?x1) (BEGIN_27 ?x1))
+
+	;; A TRAGEDY CAN BE CONSTITUTED_OF_OR_FILLED_WITH SORTS.
+
+		(and (tragedy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SORTS_27 ?x2))
+
+;; (CYCLES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SITUATIONS-4 NSUBJ SITUATIONS-4 RCMOD REPEAT-6 DOBJ THEMSELVES-7 DET A-9 POSS PERSON-10 PREP_IN LIFE-12)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAYBE THIS PERSON REACHES OUT COMMA GETS HURT COMMA BECOMES RECLUSIVE COMMA HEALS COMMA AND BEGINS AGAIN)
+
+	;; A PERSON MAY REACH_OUT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REACH_5FOUT_27 ?x1))
+
+;; (OR THE SUBJECT SETS A LOFTY GOAL COMMA BURNS OUT COMMA DRAWS WISDOM FROM THE EXPERIENCE COMMA AND STARTS OVER WITH A NEW GOAL)
+
+	;; A SUBJECT MAY SET A GOAL.
+
+		(and (SUBJECT_27 ?x1) (MAY_27 ?x1) (SET_27 ?x1) (A_27 ?x1) (GOAL_27 ?x1))
+
+	;; A GOAL CAN BE LOFTY.
+
+		(and (GOAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOFTY_27 ?x2))
+
+;; (ADDICTION ALSO TENDS TO PLAY OUT IN CYCLES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [22]>
+
+;; (TURNING POINTS)
+
+	;; TURNING MAY POINT.
+
+		(and (TURNING_27 ?x1) (MAY_27 ?x1) (POINT_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [23]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [24]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [25]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [26]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [27]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [28]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort main loop
+Break 12 [29]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort main loop
+Break 13 [30]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort main loop
+Break 14 [31]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort main loop
+Break 15 [32]>
+
+;; (DECIDE HOW TO RECOUNT THE PERSON S LIFE)
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (WRITE AN OUTLINE AND FILL IN THE DETAILS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TRY TO USE THE ORGANIZATION TO SUPPORT THE THESIS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CHRONOLOGICAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TIMELINE-4 XCOMP RECOUNTING-6 DET EACH-7 DOBJ EVENT-8 DET THE-10 PREP_IN ORDER-11 REL WHICH-13 NSUBJ IT-14 RCMOD HAPPENED-15)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IS-2 DET THE-3 AMOD SIMPLEST-4 AUX TO-6 INFMOD GO-7 NSUBJ IT-10 COP S-11 CONJ_BUT DIFFICULT-12 AUX TO-13 XCOMP SUPPORT-14 POSS YOUR-15
+ DOBJ THESIS-16 DET THIS-18 PREP_IN CONTEXT-19)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FLASHBACKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RECENT-3 CONJ_OR CURRENT-5 AMOD CURRENT-5 DOBJ SITUATION-6 ADVMOD THEN-8 DEP FLASHBACK-10 DET AN-13 AMOD EARLIER-14 PREP_TO POINT-15 DET
+ THAT-17 POSS PERSON-18 PREP_IN LIFE-20)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IS-2 PREPC_FOR ILLUSTRATING-5 DOBJ CAUSE-6 DOBJ EFFECT-8 CONJ_AND EFFECT-8 ADVMOD HOW-11 REL HOW-11 NSUBJ THIS-12 DOBJ LED-13 CONJ_OR
+ LED-13 PREP_TO THAT-15)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IS-2 PREPC_FOR ILLUSTRATING-5 DOBJ CAUSE-6 DOBJ EFFECT-8 CONJ_AND EFFECT-8 ADVMOD HOW-11 REL HOW-11 NSUBJ THIS-12 DOBJ LED-13 CONJ_OR
+ LED-13 PREP_TO THAT-15)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IS-2 PREPC_FOR ILLUSTRATING-5 DOBJ CAUSE-6 DOBJ EFFECT-8 CONJ_AND EFFECT-8 ADVMOD HOW-11 REL HOW-11 NSUBJ THIS-12 DOBJ LED-13 CONJ_OR
+ LED-13 PREP_TO THAT-15)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 15 [32]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WORK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; (THE-2 POSS PERSON-3 NSUBJPASS LIFE-5 AUXPASS IS-6 ADVMOD CLOSELY-7 ADVCL TIED-8 AMOD HIS-10 CONJ_OR HER-12 AMOD HER-12 PREP_TO CAREER-13
+
+		(and (POSS_27 ?x1) (PERSON-3_27 ?x1) (NSUBJPASS_27 ?x1) (LIFE-5_27 ?x1) (AUXPASS_27 ?x1) (IS-6_27 ?x1) (ADVMOD_27 ?x1) (CLOSELY-7_27 ?x1) (ADVCL_27 ?x1) (TIED-8_27 ?x1) (AMOD_27 ?x1) (HIS-10_27 ?x1) (CONJ_5FOR_27 ?x1) (HER-12_27 ?x1) (AMOD_27 ?x1) (HER-12_27 ?x1) (PREP_5FTO_27 ?x1) (career--NUMBER-_27 ?x1))
+
+	;; NSUBJ YOU-15 AUX CAN-16 NSUBJ IT-18 ADVMOD UP-19 DEP BY-20 NN JOB-21 POBJ POSITIONS-22 POBJ WORKS-24 CONJ_OR WORKS-24 CCOMP CREATED-25)
+
+		(and (NSUBJ_27 ?x1) (YOU-15_27 ?x1) (AUX_27 ?x1) (CAN-16_27 ?x1) (NSUBJ_27 ?x1) (IT-18_27 ?x1) (ADVMOD_27 ?x1) (UP-19_27 ?x1) (DEP_27 ?x1) (BY-20_27 ?x1) (NN_27 ?x1) (JOB-21_27 ?x1) (POBJ_27 ?x1) (POSITIONS-22_27 ?x1) (POBJ_27 ?x1) (WORKS-24_27 ?x1) (CONJ_5FOR_27 ?x1) (WORKS-24_27 ?x1) (CCOMP_27 ?x1) (CREATED-25_27 ?x1))
+
+;; (THIS CAN BE TIED TO PHASES OR CYCLES IN THE SUBJECT S LIFE)
+
+	;; A THING MAY BE TIE -ED TO PHASES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (PHASES_27 ?x3))
+
+	;; A SUBJECT MAY HAVE A LIFE.
+
+		(and (SUBJECT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (ACCOMPLISHMENTS/EVENTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 16 [33]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IDEA-2 XSUBJ IDEA-2 AUX TO-4 XCOMP START-5 XCOMP END-7 CONJ_AND END-7 PREP_WITH EVENTS-9 NSUBJ EVENTS-9 RCMOD MIRROR-11 DET EACH-12 DOBJ
+ OTHER-13 DET SOME-15 PREP_IN WAY-16)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 16 [33]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MAYBE YOU CAN START WITH A TOY BOAT THAT THE SUBJECT MADE WHEN THEY WERE COMMA AND END OFF WITH A MILITARY SUBMARINE THAT THEY DESIGNED
+ AT AGE 55)
+
+	;; A PERSON MAY START A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A SUBMARINE CAN BE MILITARY.
+
+		(and (SUBMARINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MILITARY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE DESIGN -ED AT AGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESIGN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (AT_27 ?x2) (AGE_27 ?x2))

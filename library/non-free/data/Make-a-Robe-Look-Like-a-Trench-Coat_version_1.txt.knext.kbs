@@ -1,0 +1,61 @@
+;; (CLOTHBRUSHGO TO A STORE THAT SELLS HALLOWEEN COSTUMES AND ACCESSORIES)
+
+	;; CLOTHBRUSHGO CAN BE TO A STORE.
+
+		(and (CLOTHBRUSHGO_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (STORE_27 ?x2))
+
+;; (OR TRY A THRIFT STORE/OPPORTUNITY SHOP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PURCHASE A BLACK ROBE THAT GOES WITH THE SCREAM COSTUME)
+
+	;; A ROBE CAN BE BLACK.
+
+		(and (ROBE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+;; (GET SOME SHARP SCISSORS AND CUT A STRAIGHT LINE THAT GOES FROM THE BOTTOM MIDDLE TO THE MIDDLE OF THE HOLE THE HEAD COMES OUT OF)
+
+	;; SCISSORS CAN BE SHARP.
+
+		(and (scissor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHARP_27 ?x2))
+
+	;; A LINE CAN BE STRAIGHT.
+
+		(and (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRAIGHT_27 ?x2))
+
+	;; A MIDDLE CAN BE BOTTOM.
+
+		(and (MIDDLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOTTOM_27 ?x2))
+
+	;; A HOLE MAY HAVE A MIDDLE.
+
+		(and (HOLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIDDLE_27 ?x1))
+
+;; (IF THERE ARE FAKE TEARS ON THE SLEEVES COMMA SLOWLY AND CAREFULLY CUT THEM OFF -LRB- UNLESS YOU LIKE THEM -RRB-)
+
+	;; TEARS CAN BE ON SLEEVES.
+
+		(and (tear_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (SLEEVES_27 ?x2))
+
+	;; TEARS CAN BE FAKE.
+
+		(and (tear_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAKE_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE OFF.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFF_27 ?x2))
+
+	;; A PERSON MAY LIKE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))

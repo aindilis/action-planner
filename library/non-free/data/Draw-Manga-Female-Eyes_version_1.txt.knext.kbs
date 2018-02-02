@@ -1,0 +1,221 @@
+;; (DO N T WORRY COMMA YOUR CIRCLE DOES N T HAVE TO BE PERFECT)
+
+	;; A CIRCLE MAY DO.
+
+		(and (CIRCLE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A CIRCLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CIRCLE_27 ?x1))
+
+;; (THIS EXAMPLE SHOWS THE ROUNDNESS OF THE FEMALE MANGA EYES IN MANGA COMMA THE FEMALE EYE TENDS TO BE DRAWN ROUNDER THAN THE MALE EYE COMMA
+ SO THE CIRCULAR SHAPE IS VERY IMPORTANT)
+
+	;; AN EXAMPLE MAY SHOW.
+
+		(and (EXAMPLE_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1))
+
+	;; ROUNDNESS OF A MANGA MAY EYE.
+
+		(and (roundness_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (MANGA_27 ?x2) (MAY_27 ?x2) (EYE_27 ?x2))
+
+	;; A MANGA MAY HAVE ROUNDNESS.
+
+		(and (MANGA_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROUNDNESS_27 ?x1))
+
+	;; A MANGA CAN BE FEMALE.
+
+		(and (MANGA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEMALE_27 ?x2))
+
+	;; AN EYE CAN BE FEMALE.
+
+		(and (EYE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEMALE_27 ?x2))
+
+	;; AN EYE CAN BE MALE.
+
+		(and (EYE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MALE_27 ?x2))
+
+	;; A SHAPE CAN BE IMPORTANT.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A SHAPE CAN BE CIRCULAR.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CIRCULAR_27 ?x2))
+
+;; (-LRB- 1 -RRB- DRAW ANOTHER CIRCLE INSIDE THE MAIN SHAPE IN THE TOP RIGHT CORNER)
+
+	;; A SHAPE CAN BE IN A RIGHT CORNER.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (RIGHT_27 ?x2) (CORNER_27 ?x2))
+
+	;; A RIGHT CORNER CAN BE TOP.
+
+		(and (RIGHT_27 ?x1) (CORNER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+;; (THIS WILL BE A HIGHLIGHT)
+
+	;; A THING CAN BE A HIGHLIGHT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (HIGHLIGHT_27 ?x2))
+
+;; (DRAW AN OVAL IN THE CENTER OF THE MAIN SHAPE FOR THE PUPIL)
+
+	;; A SHAPE MAY HAVE A CENTER.
+
+		(and (SHAPE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+	;; A SHAPE CAN BE FOR A PUPIL.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PUPIL_27 ?x2))
+
+;; (JUST MAKE SURE THAT THE HIGHLIGHT IS ON TOP COMMA SO THAT IT OBSCURES THE TOP RIGHT PART OF THE PUPIL)
+
+	;; A HIGHLIGHT CAN BE ON TOP.
+
+		(and (HIGHLIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (TOP_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY OBSCURE A RIGHT PART OF A PUPIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (OBSCURE_27 ?x1) (A_27 ?x1) (RIGHT_27 ?x1) (PART_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PUPIL_27 ?x2))
+
+	;; A PUPIL MAY HAVE A RIGHT PART.
+
+		(and (PUPIL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RIGHT_27 ?x1) (PART_27 ?x1))
+
+	;; A RIGHT PART CAN BE TOP.
+
+		(and (RIGHT_27 ?x1) (PART_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+;; (SHADE THE PUPIL IN BLACK)
+
+	;; 
+
+	;; ((:I (:Q THE PUPIL.N) IN.P NIL))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (THE_27 ?x1) (PUPIL_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE PUPIL SHAPES VARY IN MANGA COMMA -LRB- 2 -RRB- SO FIND WHAT WORKS BEST FOR YOU BUT BE SURE TO INCLUDE THE HIGHLIGHT)
+
+	;; PUPIL SHAPES MAY VARY IN MANGA.
+
+		(and (PUPIL_27 ?x1) (SHAPES_27 ?x1) (MAY_27 ?x1) (VARY_27 ?x1) (in_27 ?x1 ?x2) (MANGA_27 ?x2))
+
+;; (STARTING AT THE TOP OF THE MAIN CIRCLE COMMA AND AVOIDING THE HIGHLIGHT AND PUPIL COMMA SHADE FROM DARK TO LIGHT COMMA TO THE BOTTOM OF
+ THE EYE)
+
+	;; A CIRCLE MAY HAVE A TOP.
+
+		(and (CIRCLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOP_27 ?x1))
+
+	;; SHADE CAN BE FROM DARK TO LIGHT.
+
+		(and (SHADE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (DARK_27 ?x2) (to_27 ?e1 ?x3) (LIGHT_27 ?x3))
+
+	;; DARK CAN BE TO LIGHT.
+
+		(and (DARK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (LIGHT_27 ?x2))
+
+	;; AN EYE MAY HAVE A BOTTOM.
+
+		(and (EYE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1))
+
+;; (YOU MAY WANT TO USE A THICKER PENCIL FOR THIS STEP)
+
+	;; A PENCIL CAN BE THICKER.
+
+		(and (PENCIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THICKER_27 ?x2))
+
+;; (ADD ADDITIONAL HIGHLIGHTS COMMA IF WANTED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BEAR IN MIND THAT HIGHLIGHTS MAKE THE CHARACTER LOOK MORE FEMININE AND CHILD-LIKE)
+
+	;; A BEAR[PERSON??] MAY LOOK FEMININE.
+
+		(and (BEAR_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (LOOK_27 ?x1) (FEMININE_27 ?x1))
+
+	;; A BEAR[PERSON??] CAN BE IN MIND.
+
+		(and (BEAR_27 ?x1) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1) (in_27 ?x1) (MIND_27 ?x1))
+
+;; (SEE THE LUSCIOUS LASHES EVEN THOUGH IN REAL LIFE COMMA SOME MALES CAN HAVE EQUALLY LUSCIOUS EYELASHES COMMA WHEN DRAWING THE FEMALE EYE
+ COMMA IT IS COMMONPLACE TO EMPHASIZE THE EYELASHES BY MAKING THEM LONG AND THICK COMMA AS A SIGN OF FEMININITY)
+
+	;; LUSCIOUS MAY LASH.
+
+		(and (LUSCIOUS_27 ?x1) (MAY_27 ?x1) (LASH_27 ?x1))
+
+	;; SOME_NUMBER_OF MALES MAY HAVE EYELASHES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MALES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EYELASHES_27 ?x1))
+
+	;; A LIFE CAN BE REAL.
+
+		(and (LIFE_27 ?x1) (be_27 ?e1 ?x1) (real_27 ?x1))
+
+	;; EYELASHES CAN BE LUSCIOUS.
+
+		(and (eyelash_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LUSCIOUS_27 ?x2))
+
+	;; AN EYE CAN BE FEMALE.
+
+		(and (EYE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEMALE_27 ?x2))
+
+	;; A SIGN CAN BE CONSTITUTED_OF_OR_FILLED_WITH FEMININITY.
+
+		(and (SIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FEMININITY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [16]>
+
+;; (-LRB- -RRB- ADD SOME EXTRA SPARKLE TO THE PUPILS IF WISHED)
+
+	;; A SPARKLE CAN BE EXTRA.
+
+		(and (SPARKLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (USING A BLACK OUTLINING PEN OR A FELT TIP COMMA OUTLINE THE EYE COMMA LEAVING THE SHADING WITHOUT AN OUTLINE)
+
+	;; A PEN CAN BE BLACK.
+
+		(and (PEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+	;; A PEN CAN BE OUTLINING.
+
+		(and (pen_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTLINING_27 ?x2))
+
+	;; A TIP CAN BE FELT.
+
+		(and (TIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FELT_27 ?x2))
+
+;; (ERASE THE PENCIL LINES COMMA AGAIN LEAVING THE SHADING)
+
+	;; AN ERASE[PERSON??] MAY LEAVE A SHADING.
+
+		(and (ERASE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (LEAVE_27 ?x1) (A_27 ?x1) (SHADING_27 ?x1))

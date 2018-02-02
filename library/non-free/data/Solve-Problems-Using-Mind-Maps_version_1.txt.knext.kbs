@@ -1,0 +1,110 @@
+;; (INTERESTSSTART YOUR MIND MAP WITH THE TOPIC OF YOUR PROBLEM)
+
+	;; A PERSON MAY HAVE A MIND MAP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1) (MAP_27 ?x1))
+
+	;; A PROBLEM MAY HAVE A TOPIC.
+
+		(and (PROBLEM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOPIC_27 ?x1))
+
+	;; A PERSON MAY HAVE A PROBLEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AVOID A DESCRIPTION OF YOUR PROBLEM THAT IS TOO NARROW)
+
+	;; A PROBLEM MAY HAVE A DESCRIPTION.
+
+		(and (PROBLEM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESCRIPTION_27 ?x1))
+
+	;; A PERSON MAY HAVE A PROBLEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (USE THE IDEAL STRATEGY FOR PROBLEM SOLVING)
+
+	;; A STRATEGY CAN BE FOR PROBLEM.
+
+		(and (strategy_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PROBLEM_27 ?x2))
+
+	;; A STRATEGY CAN BE IDEAL.
+
+		(and (STRATEGY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDEAL_27 ?x2))
+
+	;; PROBLEM MAY SOLVE.
+
+		(and (PROBLEM_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1))
+
+;; (IDEAL STANDS FOR I = IDENTIFY PROBLEMS AND OPPORTUNITIES D = DEFINE ALTERNATIVE GOALS E = EXPLORE POSSIBLE STRATEGIES A = ANTICIPATE AND ACT L = LOOK AND LEARN)
+
+	;; AN IDEAL[PERSON??] MAY STAND.
+
+		(and (IDEAL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (STAND_27 ?x1))
+
+	;; PROBLEMS CAN BE IDENTIFY.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDENTIFY_27 ?x2))
+
+	;; A = MAY ANTICIPATE.
+
+		(and (MAY_27 ?x1) (ANTICIPATE_27 ?x1))
+
+;; (MAKE THE IDEAL STAGES THE MAIN BRANCHES OF YOUR MAP)
+
+	;; AN IDEAL[PERSON??] MAY HAVE STAGES.
+
+		(and (IDEAL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (stage_27 ?x1))
+
+	;; A MAP MAY HAVE BRANCHES.
+
+		(and (MAP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BRANCHES_27 ?x1))
+
+	;; A PERSON MAY HAVE A MAP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MAP_27 ?x1))
+
+;; (DEVELOP YOUR IDEAS ON EACH STAGE)
+
+	;; A PERSON MAY HAVE IDEAS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (IDEAS_27 ?x1))
+
+;; (DEVELOP YOUR IDEAS IN SUBBRANCHES)
+
+	;; A PERSON MAY HAVE IDEAS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (IDEAS_27 ?x1))
+
+;; (USE PROBLEM SOLVING TOOLS FOR EACH STAGE)
+
+	;; USE PROBLEM MAY SOLVE TOOLS.
+
+		(and (USE_27 ?x1) (PROBLEM_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (TOOLS_27 ?x1))
+
+	;; TOOLS CAN BE FOR SOME_NUMBER_OF STAGE.
+
+		(and (tool_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (STAGE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (SEE THE VIDEO BELOW FOR AN EXAMPLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

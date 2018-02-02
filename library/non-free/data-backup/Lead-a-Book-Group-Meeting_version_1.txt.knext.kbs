@@ -1,0 +1,587 @@
+;; (HOST AT HOME  ARRANGE FOR A SPOUSE OR SITTER TO ATTEND CHILDREN)
+
+	;; A HOST[PERSON??] CAN BE AT_HOME.
+
+		(and (HOST_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (AT_5FHOME_27 ?x1))
+
+	;; AN ARRANGE[PERSON??] CAN BE FOR A SPOUSE.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+;; (PETS  KEEP PETS AWAY FROM THE MEETING AREA)
+
+	;; PETS CAN BE KEEP.
+
+		(and (pet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2))
+
+;; (INQUIRE IF YOUR GUESTS HAVE ALLERGIES OR FEARS OF ANIMALS)
+
+	;; GUESTS MAY HAVE ALLERGIES OF ANIMALS.
+
+		(and (GUESTS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ALLERGIES_27 ?x1) (of_27 ?x1 ?x2) (animal_27 ?x2))
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+	;; ALLERGIES CAN BE CONSTITUTED_OF_OR_FILLED_WITH ANIMALS.
+
+		(and (allergy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ANIMALS_27 ?x2))
+
+;; (KNOW THE NUMBER OF CLUB MEMBERS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KNOW HOW MANY ARE COMING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLAN FOR AT LEASTMORE GUESTS THAN YOU EXPECT)
+
+	;; A PLAN[PERSON??] MAY EXPECT.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (EXPECT_27 ?x1))
+
+	;; GUESTS CAN BE LEASTMORE.
+
+		(and (guest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEASTMORE_27 ?x2))
+
+;; (KNOW WHETHER OR NOT YOUR GROUP IS LOOKING FOR OR INTRODUCING NEW MEMBERS)
+
+	;; A PERSON MAY HAVE A GROUP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GROUP_27 ?x1))
+
+;; (TIME AND PLACE  KNOW WHERE AND WHEN THE MEETING IS HELD)
+
+	;; A MEETING MAY BE HOLD -ED.
+
+		(and (meeting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (MAKE SURE EVERYONE ELSE KNOWS WHERE THE MEETING IS BEING HELD)
+
+	;; EVERYONE CAN BE ELSE.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AN EVERYONE CAN BE SURE.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A MEETING MAY BE HOLD -ED.
+
+		(and (meeting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (PROVIDE CLEAR DIRECTIONS)
+
+	;; DIRECTIONS CAN BE CLEAR.
+
+		(and (direction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+;; (FOOD  PROVIDE FOOD ACCORDING TO TIME OF DAY -LRB- EX  COFFEE COMMA DANISHES COMMA SLICED FRUIT FOR MORNING-MIDDAY COMMA WINE WITH CHEESE AND CRACKERS IN THE EVENING -RRB-)
+
+	;; FOOD CAN BE PROVIDE.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROVIDE_27 ?x2))
+
+	;; FRUIT CAN BE FOR MORNING-MIDDAY.
+
+		(and (FRUIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (MORNING-MIDDAY_27 ?x2))
+
+	;; A FRUIT CAN BE SLICED.
+
+		(and (FRUIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLICED_27 ?x2))
+
+	;; WINE CAN BE WITH CHEESE.
+
+		(and (WINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (CHEESE_27 ?x2))
+
+;; (CHECK TO ENSURE YOUR GUESTS DO NOT HAVE ALLERGIES TO INGREDIENTS SUCH AS PEANUTS)
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+;; (SEATING  ARRANGE ENOUGH SEATS FOR YOUR GUESTS TO SIT COMFORTABLY)
+
+	;; SEATS CAN BE FOR GUESTS.
+
+		(and (seat_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (GUESTS_27 ?x2))
+
+	;; SEATS CAN BE ARRANGE.
+
+		(and (seat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (arrange_27 ?x2))
+
+	;; SEATS CAN BE ENOUGH.
+
+		(and (seat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+;; (PLACE CHAIRS IN A CIRCULAR FASHION TO EQUALIZE GUEST AND PROMOTE DISCUSSION)
+
+	;; CHAIRS CAN BE IN A FASHION.
+
+		(and (chair_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FASHION_27 ?x2))
+
+	;; A FASHION CAN BE CIRCULAR.
+
+		(and (FASHION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CIRCULAR_27 ?x2))
+
+;; (ROOM TEMPERATURE  SET THERMOSTAT TO A COMFORTABLE TEMPERATURE)
+
+	;; SET THERMOSTAT CAN BE TO A TEMPERATURE.
+
+		(and (SET_27 ?x1) (THERMOSTAT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (TEMPERATURE_27 ?x2))
+
+	;; A TEMPERATURE CAN BE COMFORTABLE.
+
+		(and (TEMPERATURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+;; (ENVIRONMENT  CLEANSE ENVIRONMENT FROM BAD SMELLS COMMA DIRT COMMA DUST COMMA OR UNSANITARY DETAILS)
+
+	;; ENVIRONMENT CAN BE FROM SMELLS.
+
+		(and (ENVIRONMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (SMELLS_27 ?x2))
+
+	;; AN ENVIRONMENT CAN BE CLEANSE.
+
+		(and (ENVIRONMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEANSE_27 ?x2))
+
+	;; A SMELLS CAN BE BAD.
+
+		(and (SMELLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+;; (PUNCTUALITY  BE ON TIME)
+
+	;; A BE[PERSON??] CAN BE ON TIME.
+
+		(and (be_27 ?e1 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (ON_27 ?x1) (TIME_27 ?x1))
+
+;; (YOU SHOULD BE READY OR ARRIVE TEN MINUTES BEFORE YOUR GUEST TO ENSURE EVERYTHING IS READY)
+
+	;; A PERSON CAN BE READY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+	;; A GUEST CAN BE READY.
+
+		(and (GUEST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+	;; A PERSON MAY HAVE A GUEST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GUEST_27 ?x1))
+
+;; (READ THE BOOK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE YOU READ THE CORRECT BOOK)
+
+	;; A PERSON MAY READ A BOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (READ_27 ?x1) (A_27 ?x1) (BOOK_27 ?x1))
+
+	;; A BOOK CAN BE CORRECT.
+
+		(and (BOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORRECT_27 ?x2))
+
+;; (IF THE BOOK WAS HARD TO UNDERSTAND COMMA RESEARCH AND MAKE NOTES SO THAT YOU UNDERSTAND THE BOOK AND CAN EXPLAIN IT TO OTHERS)
+
+	;; A PERSON MAY UNDERSTAND A BOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (UNDERSTAND_27 ?x1) (A_27 ?x1) (BOOK_27 ?x1))
+
+;; (NOTES  MAKE NOTES ABOUT THE BOOK)
+
+	;; NOTES CAN BE ABOUT A BOOK.
+
+		(and (note_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (BOOK_27 ?x2))
+
+	;; NOTES CAN BE MAKE.
+
+		(and (note_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2))
+
+;; (IF YOU MAKE NOTES INSIDE THE BOOK COMMA MARK YOUR PAGES TO FIND THEM IMMEDIATELY)
+
+	;; A PERSON MAY MAKE NOTES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (NOTES_27 ?x1))
+
+	;; A PERSON MAY HAVE PAGES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PAGES_27 ?x1))
+
+;; (KNOW WHAT YOU RE GOING TO DISCUSS BEFORE THE MEETING)
+
+	;; A PERSON MAY RE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RE_27 ?x1))
+
+;; (DISCUSSION TOPICS  DECIDE 8 10 QUESTIONS OR DISCUSSION TOPICS ABOUT THE BOOK)
+
+	;; DISCUSSION TOPICS CAN BE ABOUT A BOOK.
+
+		(and (DISCUSSION_27 ?x1) (TOPICS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (BOOK_27 ?x2))
+
+;; (MAKE SURE YOUR QUESTIONS/TOPICS PROMOTE DISCUSSION)
+
+	;; QUESTIONS/TOPICS MAY PROMOTE DISCUSSION.
+
+		(and (QUESTIONS_2FTOPICS_27 ?x1) (MAY_27 ?x1) (PROMOTE_27 ?x1) (DISCUSSION_27 ?x1))
+
+	;; A PERSON MAY HAVE QUESTIONS/TOPICS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (QUESTIONS_2FTOPICS_27 ?x1))
+
+;; (DO NOT ASK YES OR NO QUESTIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [29]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE THE GROUP HAS NOT READ IT PREVIOUSLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [30]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RESEARCH BASIC INFORMATION ABOUT YOUR SELECTION)
+
+	;; BASIC INFORMATION CAN BE ABOUT A SELECTION.
+
+		(and (BASIC_27 ?x1) (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (SELECTION_27 ?x2))
+
+	;; A RESEARCH[PERSON??] MAY HAVE A BASIC INFORMATION.
+
+		(and (RESEARCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BASIC_27 ?x1) (INFORMATION_27 ?x1))
+
+	;; A PERSON MAY HAVE A SELECTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SELECTION_27 ?x1))
+
+;; (WRITE DOWN THE NAME OF THE AUTHOR AND BOOK TITLE WITH CORRECT SPELLING)
+
+	;; AN AUTHOR MAY HAVE A NAME.
+
+		(and (AUTHOR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; AN AUTHOR CAN BE WITH SPELLING.
+
+		(and (AUTHOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SPELLING_27 ?x2))
+
+	;; A SPELLING CAN BE CORRECT.
+
+		(and (SPELLING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORRECT_27 ?x2))
+
+;; (GREET EVERYONE WITH A SMILE AND PLEASANT ATTITUDE)
+
+	;; EVERYONE CAN BE WITH A SMILE.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (SMILE_27 ?x2))
+
+	;; AN EVERYONE CAN BE GREET.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREET_27 ?x2))
+
+	;; AN ATTITUDE CAN BE PLEASANT.
+
+		(and (ATTITUDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLEASANT_27 ?x2))
+
+;; (IT IS YOUR JOB TO MAKE EVERYONE FEEL COMFORTABLE IN THE ENVIRONMENT)
+
+	;; A THING-REFERRED-TO CAN BE A JOB.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (JOB_27 ?x2))
+
+	;; A PERSON MAY HAVE A JOB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JOB_27 ?x1))
+
+	;; EVERYONE MAY FEEL COMFORTABLE IN AN ENVIRONMENT.
+
+		(and (EVERYONE_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (COMFORTABLE_27 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (ENVIRONMENT_27 ?x2))
+
+;; (SHOW YOUR GUESTS  WHERE THEY CAN PUT THEIR THINGS)
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY PUT THINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (THINGS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE THINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THINGS_27 ?x1))
+
+;; (PRESENT REFRESHMENTS IN AN OBVIOUS BUT NOT OBTRUSIVE SPOT)
+
+	;; A PRESENT[PERSON??] MAY REFRESHMENT IN A SPOT.
+
+		(and (PRESENT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (REFRESHMENT_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SPOT_27 ?x2))
+
+	;; A SPOT CAN BE OBVIOUS.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBVIOUS_27 ?x2))
+
+;; (THIS SHOWS THEM THAT THEY ARE WELCOME TO HELP THEMSELVES)
+
+	;; A THING MAY SHOW INDIVIDUAL -S A PROPOSITION.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+;; (DON T START IMMEDIATELY)
+
+	;; A MALE MAY START.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+;; (GUESTS WILL WANT TO MINGLE AFTER PUTTING THEIR THINGS DOWN)
+
+	;; INDIVIDUAL -S MAY HAVE THINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THINGS_27 ?x1))
+
+;; (INTRODUCE ANY NEW MEMBERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [40]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO SO WHEN EVERYONE IS SEATED)
+
+	;; EVERYONE MAY BE SEAT -ED.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEAT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ALLOW THE NEW MEMBER TO SAY A FEW THINGS ABOUT HIM OR HERSELF)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [42]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE THE GUEST FEEL ESPECIALLY WELCOME AND COMFORTABLE)
+
+	;; A GUEST MAY FEEL WELCOME.
+
+		(and (GUEST_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (WELCOME_27 ?x1))
+
+;; (DON T BE INTRUSIVE)
+
+	;; A MALE MAY T.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (T_27 ?x1))
+
+;; (START THE DISCUSSION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [45]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU SHOULD ALREADY HAVE YOUR BOOK AND DISCUSSION TOPICS READY)
+
+	;; A BOOK CAN BE READY.
+
+		(and (BOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+	;; A PERSON MAY HAVE A BOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOOK_27 ?x1))
+
+;; (ALLOW CONVERSATION TO FLOW FREELY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [47]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONTROL ANY OUTSIDE CONVERSATION)
+
+	;; A CONVERSATION CAN BE OUTSIDE.
+
+		(and (conversation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTSIDE_27 ?x2))
+
+;; (DON T LET CONVERSATION STRAY AWAY FROM DISCUSSION OF THE BOOK)
+
+	;; A MALE MAY LET.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (LET_27 ?x1))
+
+	;; CONVERSATION MAY STRAY_AWAY FROM DISCUSSION OF A BOOK.
+
+		(and (CONVERSATION_27 ?x1) (MAY_27 ?x1) (STRAY_5FAWAY_27 ?x1) (FROM_27 ?x1) (DISCUSSION_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BOOK_27 ?x2))
+
+	;; A BOOK MAY UNDERGO A DISCUSSION.
+
+		(and (BOOK_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (DISCUSSION_27 ?x1))
+
+;; (LET THE OTHERS ANSWER QUESTIONS OR DISCUSS TOPICS FIRST)
+
+	;; OTHERS MAY ANSWER QUESTIONS.
+
+		(and (other_27 ?x1) (MAY_27 ?x1) (ANSWER_27 ?x1) (QUESTIONS_27 ?x1))
+
+;; (IF ONE OF YOUR GUESTS HAS A QUESTION OR TOPIC THAT IS NOT ON YOUR LIST COMMA DO NOT HESITATE TO LET THE GROUP ANSWER OR DISCUSS THE TOPIC)
+
+	;; SOME NUMBER_OR_PORTION OF GUESTS MAY HAVE A QUESTION.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (GUESTS_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (A_27 ?x2) (QUESTION_27 ?x2))
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; (WRAP UP THE DISCUSSION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [52]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DON T RUSH OTHER MEMBERS)
+
+	;; A MALE MAY RUSH MEMBERS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (RUSH_27 ?x1) (MEMBERS_27 ?x1))
+
+;; (LET EVERYONE TAKE THEIR TURN SPEAKING AND PRESENTING THOUGHTS AND OPINIONS)
+
+	;; EVERYONE MAY TAKE A TURN.
+
+		(and (EVERYONE_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (TURN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A TURN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TURN_27 ?x1))
+
+;; (PLAN THE NEXT MEETING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [55]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DECIDE WHO WILL HOST AND WHAT BOOK TO READ)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [56]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

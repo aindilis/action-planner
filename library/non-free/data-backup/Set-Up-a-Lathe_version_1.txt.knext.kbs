@@ -1,0 +1,169 @@
+;; (FRIENDGATHER ALL THE MATERIAL AND TOOLS FOR THE SETUP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SLIDE THE LIVE CENTER IN THE HEADSTOCK COMMA AND THE DEAD CENTER IN THE TAIL STOCK)
+
+	;; A CENTER CAN BE IN A HEADSTOCK.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HEADSTOCK_27 ?x2))
+
+	;; A CENTER CAN BE LIVE.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVE_27 ?x2))
+
+	;; A CENTER CAN BE IN A STOCK.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (stock_27 ?x2))
+
+	;; A CENTER CAN BE DEAD.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEAD_27 ?x2))
+
+	;; A STOCK CAN BE TAIL.
+
+		(and (stock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAIL_27 ?x2))
+
+;; (PUT A GUIDE BAR IN BETWEEN THE TWO CENTERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT THE DIAL INDICATOR ON THE STAND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT THE STAND ON THE CARRIAGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (APPLY PRESSURE TOWARDS THE BAR WITH THE DIAL INDICATOR)
+
+	;; PRESSURE CAN BE APPLY.
+
+		(and (PRESSURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPLY_27 ?x2))
+
+;; (ONCE APPLIED PRESSURE COMMA MOVE THE CARRIAGE ALONG THE BAR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE GAUGE SHOULD NOT MOVE COMMA AND IF IT DID N T MOVE COMMA IT IS BALANCED)
+
+	;; A GAUGE MAY MOVE.
+
+		(and (GAUGE_27 ?x1) (MAY_27 ?x1) (MOVE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE BALANCE -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BALANCE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (SLIDE THE CHUCK ON THE HEAD AND TURN THE SCREW CLOCKWISE ON THE HEAD UNTIL IT S TIGHT)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL TIGHT.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (TIGHT_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TURN THE CHUCK BY HAND TO CHECK THAT EVERYTHING IS SNUG)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT THE TOOL BIT ON THE TOOL POST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALIGN THE TOOL WITH THE DEAD CENTER)
+
+	;; A TOOL CAN BE WITH A CENTER.
+
+		(and (TOOL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (CENTER_27 ?x2))
+
+	;; A CENTER CAN BE DEAD.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEAD_27 ?x2))
+
+;; (PUT THE MATERIAL IN THE CHUCK)
+
+	;; A MATERIAL CAN BE IN A CHUCK.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CHUCK_27 ?x2))

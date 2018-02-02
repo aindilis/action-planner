@@ -1,0 +1,352 @@
+;; (FOAM PEANUTS MAKE FOR GOOD CUSHIONING PUT CUSHION FOAM OR PACKING PEANUTS AT THE BOTTOM OF THE BOX BEFORE ADDING ANY WRAPPED PIECES)
+
+	;; FOAM PEANUTS MAY MAKE.
+
+		(and (FOAM_27 ?x1) (PEANUTS_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; CUSHIONING MAY PUT CUSHION FOAM.
+
+		(and (CUSHIONING_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (CUSHION_27 ?x1) (FOAM_27 ?x1))
+
+	;; A CUSHIONING CAN BE GOOD.
+
+		(and (cushioning_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A BOX MAY HAVE A BOTTOM.
+
+		(and (BOX_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1))
+
+	;; PIECES CAN BE WRAPPED.
+
+		(and (piece_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRAPPED_27 ?x2))
+
+;; (WRAPPING AN INDIVIDUAL PLATE WRAP INDIVIDUAL ITEMS IN NEWSPAPER OR BUBBLE WRAP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WRAP EACH PIECE SEPARATELY FOR ADDED PROTECTION)
+
+	;; PROTECTION CAN BE ADDED.
+
+		(and (protection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADDED_27 ?x2))
+
+;; (IF YOU WRAP MORE THAN ONE ITEM PER SHEET OF PAPER COMMA BE SURE THAT NO CHINA OR GLASS AREAS COME INTO CONTACT WITH OTHER GLASS OR CHINA)
+
+	;; A CHINA MAY COME INTO CONTACT.
+
+		(and (CHINA_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (INTO_27 ?x1) (CONTACT_27 ?x1))
+
+;; (ENSURE ADEQUATE LAYERING AND EXCELLENT PADDING AROUND EACH ITEM - THIS IS N T THE TIME TO SKIMP ON WRAPPING MATERIALS)
+
+	;; LAYERING CAN BE AROUND SOME_NUMBER_OF ITEM.
+
+		(and (layering_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (ITEM_27 ?x2))
+
+	;; A LAYERING CAN BE ENSURE.
+
+		(and (layering_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENSURE_27 ?x2))
+
+	;; A LAYERING CAN BE ADEQUATE.
+
+		(and (LAYERING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADEQUATE_27 ?x2))
+
+	;; A PADDING CAN BE EXCELLENT.
+
+		(and (padding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; A THING CAN BE A TIME.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+;; (SHOWING THE GAP SPACE FOR PACKING PACK THE WRAPPED ITEMS INTO THE BOX)
+
+	;; ITEMS CAN BE WRAPPED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRAPPED_27 ?x2))
+
+;; (ARRANGE THE WRAPPED ITEMS IN THE BOX COMMA WITH CUSHION FOAM OR SCRUNCHED-UP PAPER PLACED BETWEEN EACH PIECE)
+
+	;; AN ARRANGE_THE[PERSON??] MAY WRAP ITEMS.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (WRAP_27 ?x1) (ITEMS_27 ?x1))
+
+	;; CUSHION FOAM MAY BE PLACE -ED BETWEEN SOME_NUMBER_OF PIECE.
+
+		(and (CUSHION_27 ?x1) (FOAM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLACE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BETWEEN_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (PIECE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [10]>
+
+;; (CERTAIN ITEMS REQUIRE SPECIAL ATTENTION  PLACE PLATES ON EDGE FOR PLATES COMMA PLACE THEM ON THEIR EDGE COMMA AS THEY ARE MUCH STRONGER
+ PACKED THAT WAY)
+
+	;; ITEMS MAY REQUIRE ATTENTION.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (ATTENTION_27 ?x1))
+
+	;; PLATES CAN BE ON EDGE.
+
+		(and (plate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (EDGE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE AN EDGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EDGE_27 ?x1))
+
+;; (PUT SCRUNCHED UP NEWSPAPER AT THE BOTTOM OF A BOX CARRYING PLATES COMMA AND THEN SLIDE CARDBOARD COMMA BUBBLE WRAP COMMA OR FOAM BETWEEN
+ THEM)
+
+	;; A BOX MAY CARRY PLATES.
+
+		(and (BOX_27 ?x1) (MAY_27 ?x1) (CARRY_27 ?x1) (PLATES_27 ?x1))
+
+;; (IT IS RECOMMENDED TO WRAP EACH PLATE IN A FEW SHEETS OF PAPER TO KEEP THEM WELL PADDED AND TO PREVENT THEM FROM COMING INTO CONTACT WITH
+ EACH OTHER)
+
+	;; SOME_NUMBER_OF PLATE CAN BE IN SHEETS OF PAPER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLATE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (sheet_27 ?x2) (of_27 ?x2 ?x3) (PAPER_27 ?x3))
+
+	;; SHEETS CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAPER.
+
+		(and (sheet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAPER_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE PADDED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?e2) (pad_27 ?e2 ?x1))
+
+;; (A SMALL CHINA KEEPSAKE LIDDED DISH WITH BUBBLE WRAP ALWAYS PUT SOME FORM OF CUSHIONING BETWEEN THE LIDS AND THE MAIN PORTION OF LIDDED
+ ITEMS COMMA SUCH AS SUGAR BOWLS COMMA TEAPOTS COMMA AND CASSEROLE DISHES)
+
+	;; A CHINA KEEPSAKE MAY LID.
+
+		(and (CHINA_27 ?x1) (KEEPSAKE_27 ?x1) (MAY_27 ?x1) (LID_27 ?x1))
+
+	;; A CHINA KEEPSAKE CAN BE SMALL.
+
+		(and (CHINA_27 ?x1) (KEEPSAKE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; DISH MAY PUT SOME_NUMBER_OF FORM OF CUSHIONING.
+
+		(and (DISH_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (FORM_27 ?x1) (of_27 ?x1 ?x2) (CUSHIONING_27 ?x2))
+
+	;; DISH CAN BE WITH BUBBLE WRAP.
+
+		(and (DISH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (BUBBLE_27 ?x2) (WRAP_27 ?x2))
+
+	;; SOME_NUMBER_OF FORM CAN BE CONSTITUTED_OF_OR_FILLED_WITH CUSHIONING.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CUSHIONING_27 ?x2))
+
+	;; CUSHIONING CAN BE BETWEEN LIDS.
+
+		(and (cushioning_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (LIDS_27 ?x2))
+
+	;; ITEMS CAN BE LIDDED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIDDED_27 ?x2))
+
+	;; DISHES CAN BE CASSEROLE.
+
+		(and (dish_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CASSEROLE_27 ?x2))
+
+;; (ONCE YOU HAVE DONE THAT COMMA YOU CAN WRAP THE ITEM AS A SINGLE UNIT)
+
+	;; A PERSON MAY WRAP AN ITEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRAP_27 ?x1) (AN_27 ?x1) (ITEM_27 ?x1))
+
+	;; A PERSON MAY DO A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; AN UNIT CAN BE SINGLE.
+
+		(and (UNIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SINGLE_27 ?x2))
+
+;; (NORMALLY THE GLASSES WOULD BE WRAPPED TOO COMMA BUT THEY ARE UNWRAPPED IN THIS IMAGE TO HELP DEMONSTRATE THE CARDBOARD DIVIDERS IN USE
+ MAKE A SET OF INSIDE SPACERS FROM CARDBOARD TO KEEP YOUR GLASSWARE SEPARATED)
+
+	;; GLASSES MAY BE WRAP -ED.
+
+		(and (glass_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRAP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE UNWRAP -ED IN AN IMAGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNWRAP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (AN_27 ?x3) (IMAGE_27 ?x3))
+
+	;; CARDBOARD DIVIDERS CAN BE IN USE.
+
+		(and (CARDBOARD_27 ?x1) (DIVIDERS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (USE_27 ?x2))
+
+	;; A SET CAN BE CONSTITUTED_OF_OR_FILLED_WITH SPACERS.
+
+		(and (SET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SPACERS_27 ?x2))
+
+	;; SPACERS CAN BE FROM CARDBOARD.
+
+		(and (spacer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (CARDBOARD_27 ?x2))
+
+	;; SPACERS CAN BE INSIDE.
+
+		(and (spacer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSIDE_27 ?x2))
+
+	;; A GLASSWARE CAN BE SEPARATED.
+
+		(and (GLASSWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATED_27 ?x2))
+
+	;; A PERSON MAY HAVE A GLASSWARE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GLASSWARE_27 ?x1))
+
+;; (DOING THIS CAN SAVE THEM FROM BEING BROKEN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALSO COMMA HEAVIER GLASSES SHOULD BE PACKED ON THE BOTTOM COMMA WITH LIGHTER COMMA MORE FRAGILE GLASSES PLACED ON TOP)
+
+	;; GLASSES MAY BE PACK -ED ON A BOTTOM.
+
+		(and (glass_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (BOTTOM_27 ?x2))
+
+	;; GLASSES CAN BE HEAVIER.
+
+		(and (glass_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVIER_27 ?x2))
+
+;; (MAKE SURE ALL GAPS ARE FILLED FILL IN ALL THE EMPTY AREAS OF THE BOX WITH FOAM COMMA SCRUNCHED-UP PAPER COMMA OR PACKING PEANUTS)
+
+	;; SOME_NUMBER_OF GAPS MAY BE FILL -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (GAPS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A FILL[PERSON??] CAN BE IN AREAS OF A BOX.
+
+		(and (FILL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (in_27 ?x1) (AREAS_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BOX_27 ?x2))
+
+	;; A BOX MAY HAVE AREAS.
+
+		(and (BOX_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AREAS_27 ?x1))
+
+	;; AREAS CAN BE EMPTY.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+	;; A PAPER CAN BE SCRUNCHED-UP.
+
+		(and (PAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCRUNCHED-UP_27 ?x2))
+
+;; (THIS WILL PREVENT THE ITEMS FROM MOVING AROUND OR SHIFTING INSIDE THE BOX)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHECK FOR MOVEMENT)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:F K MOVEMENT.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (MOVEMENT_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THERE IS ANY MOVEMENT COMMA ADD MORE STUFFING TO PREVENT IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU ARE USING A SHIPPER SUCH AS FEDEX OR UPS COMMA USE DOUBLE BOXING WITH PACKING PEANUTS TO FILL EMPTY SPACE BETWEEN THE OUTER AND
+ INNER BOXES)
+
+	;; A PERSON MAY USE A SHIPPER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (SHIPPER_27 ?x1))
+
+	;; A BOXING CAN BE DOUBLE.
+
+		(and (BOXING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOUBLE_27 ?x2))
+
+	;; A SPACE CAN BE EMPTY.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+;; (CHECK FOR THE POTENTIAL FOR INDENTATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THE BOX CAN BE COMPRESSED IN ANY WAY FROM ITEMS PLACED ON IT COMMA THIS PRESSURE CAN DAMAGE THE CONTENTS)
+
+	;; PRESSURE MAY DAMAGE CONTENTS.
+
+		(and (PRESSURE_27 ?x1) (MAY_27 ?x1) (DAMAGE_27 ?x1) (CONTENTS_27 ?x1))
+
+	;; A BOX MAY BE COMPRESS -ED IN A WAY.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?e1 ?x3) (way_27 ?x3))
+
+	;; ITEMS MAY BE PLACE -ED ON A THING-REFERRED-TO.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLACE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (IF YOU CAN PRESS THE LID IN COMMA ADD MORE STUFFING TO STOP IT FROM BEING COMPRESSED)
+
+	;; A PERSON MAY PRESS_IN A LID.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PRESS_5FIN_27 ?x1) (A_27 ?x1) (LID_27 ?x1))

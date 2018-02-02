@@ -1,0 +1,803 @@
+;; (FASTEN ALL SHELVES SECURELY TO THE WALLS)
+
+	;; A FASTEN[PERSON??] MAY SHELVES TO WALLS.
+
+		(and (FASTEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (SHELVES_27 ?x1) (to_27 ?x2) (wall_27 ?x2))
+
+;; (USE BRACKETS TO ATTACH WALL UNITS COMMA BOOKCASES COMMA AND OTHER TALL FURNITURE TO WALL STUDS)
+
+	;; FURNITURE CAN BE TALL.
+
+		(and (FURNITURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (STANDARD STEEL BRACKETS ARE FINE AND EASY TO APPLY)
+
+	;; STEEL BRACKETS CAN BE FINE.
+
+		(and (steel_27 ?x1) (bracket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINE_27 ?x2))
+
+	;; A STANDARD[PERSON??] MAY HAVE STEEL BRACKETS.
+
+		(and (STANDARD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (STEEL_27 ?x1) (bracket_27 ?x1))
+
+;; (PLACE LARGE COMMA HEAVY OBJECTS ON LOWER SHELVES OR ON THE FLOOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THEY MIGHT FALL DURING AN EARTHQUAKE AND THE LESS DISTANCE THEY HAVE TO FALL COMMA THE BETTER)
+
+	;; INDIVIDUAL -S MAY FALL DURING AN EARTHQUAKE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FALL_27 ?x1) (during_27 ?x1 ?x2) (earthquake_27 ?x2))
+
+;; (YOU CAN ALSO SCREW OBJECTS ONTO THINGS COMMA SUCH AS A DESK)
+
+	;; A PERSON MAY SCREW OBJECTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SCREW_27 ?x1) (OBJECTS_27 ?x1))
+
+;; (PLACE AN EYE SCREW IN THE WALL COMMA AND TIE THE THREAD AROUND THE OBJECT -LRB- SUCH AS A VASE -RRB- AND THEN TIED IT TO THE EYE SCREW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE CARE OF PRECIOUS ORNAMENTS BY STICKING THEM DOWN PLACE BREAKABLE ITEMS -LRB- BOTTLES COMMA GLASS COMMA CHINA COMMA ETC. -RRB- IN CLOSED CABINETS THAT HAVE LATCHES)
+
+	;; ORNAMENTS CAN BE PRECIOUS.
+
+		(and (ornament_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRECIOUS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY PLACE ITEMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PLACE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; ITEMS CAN BE IN CABINETS.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (cabinet_27 ?x2))
+
+	;; ITEMS CAN BE BREAKABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BREAKABLE_27 ?x2))
+
+	;; CABINETS CAN BE CLOSED.
+
+		(and (cabinet_27 ?x1) (be_27 ?e1 ?x1 ?e2) (close_27 ?e2 ?x1))
+
+;; (LOCK OR LATCH THEM UP SO THAT THE CABINET DOORS CAN NOT FLY OPEN)
+
+	;; CABINET DOORS MAY FLY OPEN.
+
+		(and (CABINET_27 ?x1) (DOORS_27 ?x1) (MAY_27 ?x1) (FLY_27 ?x1) (OPEN_27 ?x1))
+
+;; (USE POSTER TACK/PLASTIC PUTTY TO KEEP ORNAMENTS COMMA FIGURINES COMMA AND GLASSWARE ADHERED TO SHELVES AND MANTELPIECES)
+
+	;; USE POSTER MAY ADHERE TO SHELVES.
+
+		(and (USE_27 ?x1) (POSTER_27 ?x1) (MAY_27 ?x1) (ADHERE_27 ?x1) (to_27 ?x1 ?x2) (SHELVES_27 ?x2))
+
+	;; USE POSTER CAN BE TACK/PLASTIC.
+
+		(and (USE_27 ?x1) (POSTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TACK_2FPLASTIC_27 ?x2))
+
+;; (-LRB- THERE ARE EVEN SPECIAL COMMERCIAL QUAKE PUTTIES AVAILABLE)
+
+	;; QUAKE PUTTIES CAN BE AVAILABLE.
+
+		(and (QUAKE_27 ?x1) (PUTTIES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+	;; QUAKE PUTTIES CAN BE COMMERCIAL.
+
+		(and (QUAKE_27 ?x1) (putty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMERCIAL_27 ?x2))
+
+;; (HEAVY PICTURES COMMA LIGHT FIXTURES COMMA AND MIRRORS SHOULD BE HUNG AWAY FROM BEDS COMMA COUCHES COMMA AND ANYWHERE THAT SOMEONE MIGHT SIT)
+
+	;; PICTURES MAY BE HANG_AWAY -ED FROM BEDS.
+
+		(and (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANG_5FAWAY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (BEDS_27 ?x2))
+
+	;; PICTURES CAN BE HEAVY.
+
+		(and (picture_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; FIXTURES CAN BE LIGHT.
+
+		(and (fixture_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+	;; SOMEONE MAY SIT.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (SIT_27 ?x1))
+
+;; (CONVENTIONAL PICTURE HOOKS WILL NOT HOLD PICTURES DURING AN EARTHQUAKE BUT THEY ARE EASY TO FIX - SIMPLY PUSH THE HOOK CLOSED COMMA OR USE A FILLER MATERIAL TO FILL THE GAP BETWEEN THE HOOK AND ITS BACKING)
+
+	;; PICTURE HOOKS MAY HOLD PICTURES.
+
+		(and (PICTURE_27 ?x1) (HOOKS_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1) (PICTURES_27 ?x1))
+
+	;; PICTURE HOOKS CAN BE CONVENTIONAL.
+
+		(and (PICTURE_27 ?x1) (HOOKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONVENTIONAL_27 ?x2))
+
+	;; A HOOK MAY BE CLOSE -ED.
+
+		(and (HOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A GAP CAN BE BETWEEN A HOOK.
+
+		(and (GAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (A_27 ?x2) (HOOK_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A BACKING.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKING_27 ?x1))
+
+;; (OTHER ALTERNATIVES INCLUDE BUYING SPECIAL ART HOOKS COMMA AND ENSURING THAT HEAVY PAINTING HAVE ADEQUATE COMMA STRONG HOOKS COMMA AND STRONG CORD)
+
+	;; A PAINTING CAN BE HEAVY.
+
+		(and (painting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; A CORD CAN BE STRONG.
+
+		(and (CORD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+;; (IF YOU HAVE ANY DEEP CRACKS IN THE CEILING OR FOUNDATIONS COMMA REPAIR THESE IMMEDIATELY)
+
+	;; A PERSON MAY HAVE CRACKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CRACKS_27 ?x1))
+
+	;; CRACKS CAN BE IN A CEILING.
+
+		(and (crack_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CEILING_27 ?x2))
+
+	;; CRACKS CAN BE DEEP.
+
+		(and (crack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEEP_27 ?x2))
+
+;; (YOU MIGHT NEED TO CONSULT AN EXPERT IF THERE ARE SIGNS OF STRUCTURAL WEAKNESS)
+
+	;; SIGNS CAN BE CONSTITUTED_OF_OR_FILLED_WITH WEAKNESS.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WEAKNESS_27 ?x2))
+
+	;; A WEAKNESS CAN BE STRUCTURAL.
+
+		(and (WEAKNESS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRUCTURAL_27 ?x2))
+
+;; (MAKE SURE THAT THE HOT WATER HEATER IS STABLE AND CAN NOT TOPPLE OVER EVALUATE YOUR ELECTRICAL WIRING COMMA ELECTRICAL APPLIANCES COMMA AND GAS CONNECTIONS)
+
+	;; A WATER HEATER CAN BE STABLE.
+
+		(and (WATER_27 ?x1) (HEATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STABLE_27 ?x2))
+
+	;; A WATER HEATER CAN BE HOT.
+
+		(and (WATER_27 ?x1) (HEATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; A PERSON MAY HAVE A WIRING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WIRING_27 ?x1))
+
+	;; A WIRING CAN BE ELECTRICAL.
+
+		(and (WIRING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRICAL_27 ?x2))
+
+	;; APPLIANCES CAN BE ELECTRICAL.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRICAL_27 ?x2))
+
+;; (DO ANY REPAIRS IF NEEDED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [20]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DURING AN EARTHQUAKE COMMA FAULTY FITTINGS AND WIRING CAN BECOME A POTENTIAL FIRE HAZARD)
+
+	;; FITTINGS MAY BECOME A FIRE HAZARD.
+
+		(and (FITTINGS_27 ?x1) (MAY_27 ?x1) (BECOME_27 ?x1) (A_27 ?x1) (FIRE_27 ?x1) (HAZARD_27 ?x1))
+
+	;; FITTINGS CAN BE FAULTY.
+
+		(and (fitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAULTY_27 ?x2))
+
+;; (WHEN SECURING APPLIANCES COMMA BE SURE NOT TO DRILL HOLES IN THEM - USE EXISTING HOLES COMMA OR MAKE LOOPS FROM LEATHER COMMA ETC. COMMA THAT CAN BE GLUED ONTO AN APPLIANCE)
+
+	;; HOLES CAN BE EXISTING.
+
+		(and (hole_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+;; (KEEP APPLIANCES TURNED OFF AND UNPLUGGED COMMA SO THAT THE OUTLET IS NOT NEAR THE METAL PART OF THE CORD)
+
+	;; APPLIANCES MAY TURN_OFF.
+
+		(and (appliance_27 ?x1) (MAY_27 ?x1) (TURN_5FOFF_27 ?x1))
+
+	;; APPLIANCES CAN BE KEEP.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2))
+
+	;; A CORD MAY UNDERGO A METAL PART.
+
+		(and (CORD_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (METAL_27 ?x1) (part_27 ?x1))
+
+;; (ATTACH OR SECURE APPLIANCES TO PREVENT SLIDING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (NON-SLIP MATS ARE A GOOD CHOICE UNDER SMALLER APPLIANCES COMMA OR TRY VELCRO OR RUBBER CUPS UNDER LEGS)
+
+	;; MATS CAN BE A CHOICE.
+
+		(and (mat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CHOICE_27 ?x2))
+
+	;; MATS CAN BE NON-SLIP.
+
+		(and (mat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NON-SLIP_27 ?x2))
+
+	;; A CHOICE CAN BE UNDER APPLIANCES.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1) (under_27 ?x1 ?x2) (appliance_27 ?x2))
+
+	;; A CHOICE CAN BE GOOD.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; APPLIANCES CAN BE SMALLER.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (IF THE WATER HEATER TOPPLES OVER COMMA YOU LOSE AN EXCELLENT SOURCE OF DRINKING WATER COMMA SO IT PAYS TO KEEP IT INTACT AND UPRIGHT)
+
+	;; A PERSON MAY LOSE A SOURCE OF DRINKING WATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOSE_27 ?x1) (A_27 ?x1) (SOURCE_27 ?x1) (of_27 ?x1 ?x2) (DRINKING_27 ?x2) (WATER_27 ?x2))
+
+	;; A WATER HEATER MAY TOPPLE_OVER.
+
+		(and (WATER_27 ?x1) (HEATER_27 ?x1) (MAY_27 ?x1) (TOPPLE_5FOVER_27 ?x1))
+
+	;; A SOURCE CAN BE CONSTITUTED_OF_OR_FILLED_WITH DRINKING WATER.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DRINKING_27 ?x2) (WATER_27 ?x2))
+
+	;; A SOURCE CAN BE EXCELLENT.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE INTACT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTACT_27 ?x2))
+
+;; (SECURE YOUR WATER HEATER BY STRAPPING IT TO WALL STUDS -LRB- NOT JUST THE DRYWALL -RRB- AND BOLTING IT TO THE FLOOR)
+
+	;; A PERSON MAY HAVE A WATER HEATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WATER_27 ?x1) (HEATER_27 ?x1))
+
+;; (EITHER PURCHASE STRAPS AS PART OF A PLUMBING KIT COMMA OR MAKE YOUR OWN STRAPS FROM PERFORATED STRAPPING)
+
+	;; A PERSON MAY HAVE STRAPS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STRAPS_27 ?x1))
+
+	;; A STRAPPING CAN BE PERFORATED.
+
+		(and (strapping_27 ?x1) (be_27 ?e1 ?x1 ?e2) (perforate_27 ?e2 ?x1))
+
+;; (USE SCREWS AND TURNBUCKLES TO HOLD THE HEATER IN PLACE)
+
+	;; A HEATER CAN BE IN PLACE.
+
+		(and (HEATER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (PLACE_27 ?x2))
+
+;; (SCREW OR NAIL TIMBER BLOCKS TO THE FLOOR AROUND THE HEATER)
+
+	;; A FLOOR CAN BE AROUND A HEATER.
+
+		(and (FLOOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HEATER_27 ?x2))
+
+;; (FIT TIMBER BLOCKS SNUGLY BEHIND THE CYLINDER AND WALL AND GLUE INTO PLACE)
+
+	;; TIMBER MAY BLOCK BEHIND A CYLINDER.
+
+		(and (TIMBER_27 ?x1) (MAY_27 ?x1) (BLOCK_27 ?x1) (BEHIND_27 ?x1) (A_27 ?x1) (CYLINDER_27 ?x1))
+
+	;; A FIT[PERSON??] MAY HAVE A TIMBER.
+
+		(and (FIT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TIMBER_27 ?x1))
+
+;; (OVERHEAD LIGHT FIXTURES SHOULD BE BRACED TO PREVENT THEM FROM FALLING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [32]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A CHAIN AND HOOKS IN THE WALL TO KEEP IT IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [34]>
+
+;; (BATTERIES WILL BE HARD TO FIND COMMA IF YOU CAN FIND THEM)
+
+	;; A PERSON MAY FIND INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (SOME MODELS WILL CHARGE CELL PHONES COMMA BUT THE CELL PHONE TOWERS MAY BE DAMAGED COMMA EVEN DESTROYED)
+
+	;; SOME_NUMBER_OF MODELS MAY CHARGE CELL PHONES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MODELS_27 ?x1) (MAY_27 ?x1) (CHARGE_27 ?x1) (CELL_27 ?x1) (PHONES_27 ?x1))
+
+	;; CELL PHONE TOWERS MAY BE DAMAGE -ED.
+
+		(and (CELL_27 ?x1) (PHONE_27 ?x1) (TOWERS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAMAGE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [35]>
+
+;; (THESE ARE SAFER THAN CANDLES COMMA SINCE YOU WILL BE DEALING WITH RUPTURED GAS LINES COMMA FLAMMABLE COMMA EXPLOSIVE GAS)
+
+	;; A THING CAN BE SAFER.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFER_27 ?x2))
+
+	;; A PERSON MAY DEAL WITH GAS LINES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DEAL_27 ?x1) (WITH_27 ?x1) (GAS_27 ?x1) (LINES_27 ?x1))
+
+	;; GAS LINES CAN BE RUPTURED.
+
+		(and (GAS_27 ?x1) (LINES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RUPTURED_27 ?x2))
+
+;; (FIRST AID KIT AND MANUAL EMERGENCY FOOD AND WATER -LRB- SOME SOURCES SAY YOU SHOULD HAVE UP TOWEEKS WORTH OF EXTRA FOOD ON HAND IN CASE RESCUE WORKERS CAN NOT REACH YOUR LOCATION -RRB- NONELECTRIC CAN OPENER
+ ESSENTIAL MEDICINES CASH AND CREDIT CARDS STURDY SHOES FOR EACH FAMILY MEMBER)
+
+	;; AID KIT MAY OPENER AN ESSENTIAL_MEDICINES_CASH[PERSON??].
+
+		(and (AID_27 ?x1) (KIT_27 ?x1) (MAY_27 ?x1) (OPENER_27 ?x1) (AN_27 ?x1) (ESSENTIAL_5FMEDICINES_5FCASH_27 ?x1) (PERSON_27 ?x1))
+
+	;; SOME_NUMBER_OF SOURCES MAY SAY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SOURCES_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+	;; FOOD CAN BE ON HAND.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (HAND_27 ?x2))
+
+	;; FOOD CAN BE EXTRA.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; HAND CAN BE IN CASE RESCUE WORKERS.
+
+		(and (HAND_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (CASE_27 ?x2) (RESCUE_27 ?x2) (WORKERS_27 ?x2))
+
+	;; A PERSON MAY HAVE A LOCATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCATION_27 ?x1))
+
+	;; A STURDY[PERSON??] MAY HAVE SHOES.
+
+		(and (STURDY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SHOES_27 ?x1))

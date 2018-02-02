@@ -1,0 +1,187 @@
+;; (CHECK YOUR CALENDAR TO MAKE SURE YOU RE NOT SCHEDULING THE PARTY AT THE SAME TIME AS YOUR CHILD S SOCCER GAME OR PIANO LESSONS)
+
+	;; A PERSON MAY HAVE A CALENDAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALENDAR_27 ?x1))
+
+	;; A TIME CAN BE AS A GAME.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (A_27 ?x2) (GAME_27 ?x2))
+
+	;; A CHILD MAY HAVE A GAME.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GAME_27 ?x1))
+
+	;; A GAME CAN BE SOCCER.
+
+		(and (GAME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOCCER_27 ?x2))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (MAKE SURE YOU WRITE DOWN THE NAME OF EACH GUEST INVITED COMMA SO YOU KNOW HOW MANY CHAIRS COMMA HOW MUCH FOOD COMMA GOODY BAGS COMMA ETC.
+ THAT YOU WILL NEED)
+
+	;; A PERSON MAY WRITE_DOWN A NAME OF SOME_NUMBER_OF GUEST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRITE_5FDOWN_27 ?x1) (A_27 ?x1) (NAME_27 ?x1) (of_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (GUEST_27 ?x2))
+
+	;; SOME_NUMBER_OF GUEST MAY BE INVITE -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (GUEST_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INVITE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; FOOD MAY ETC A PROPOSITION.
+
+		(and (FOOD_27 ?x1) (MAY_27 ?x1) (ETC_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; BAGS CAN BE GOODY.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GOODY_27 ?x2))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (BUY DECORATIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU GO TO A PARTY STORE COMMA THEY WILL HAVE EVERYTHING YOU NEED COMMA AND YOU WO N T HAVE TO GO TO FIVE DIFFERENT STORES FOR ALL YOUR
+ SUPPLIES)
+
+	;; INDIVIDUAL -S MAY HAVE EVERYTHING.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EVERYTHING_27 ?x1))
+
+	;; A PERSON MAY GO TO A PARTY STORE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PARTY_27 ?x2) (STORE_27 ?x2))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; SOME_NUMBER_OF STORES CAN BE FOR SUPPLIES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (STORES_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (supply_27 ?x2))
+
+	;; A PERSON MAY HAVE SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPLIES_27 ?x1))
+
+;; (AT THE PARTY STORE COMMA THEY EVEN HAVE GOODY BAGS COMMA AND TOYS TO PUT IN THEM)
+
+	;; BAGS CAN BE GOODY.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GOODY_27 ?x2))
+
+;; (PLAN SOME GAMES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THESE ARE ALMOST MANDATORY FOR CHILDREN S PARTIES COMMA BUT YOU CAN SUBSTITUTE CRAFT PROJECTS COMMA OR RENTING A BOUNCE ROOM OR A CLOWN)
+
+	;; CHILDREN MAY HAVE PARTIES.
+
+		(and (CHILDREN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PARTIES_27 ?x1))
+
+	;; A PERSON MAY SUBSTITUTE CRAFT PROJECTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SUBSTITUTE_27 ?x1) (CRAFT_27 ?x1) (PROJECTS_27 ?x1))
+
+;; (-LRB- LOOK IN YOUR PHONE BOOK FOR PARTY RENTALS NEAR YOU)
+
+	;; A PERSON MAY HAVE A PHONE BOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PHONE_27 ?x1) (BOOK_27 ?x1))
+
+;; (PLAN THE PARTY FOOD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MOST IMPORTANTLY COMMA YOU LL NEED TO DECIDE WHETHER TO BUY A CAKE OR MAKE ONE -LRB- OR TWO -RRB-)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE TO GET YOUR ORDER IN ON TIME OR TO SHOP FOR INGREDIENTS AHEAD OF TIME SO YOU CAN MAKE THE CAKE -LRB- S -RRB- THE NIGHT BEFORE
+ THE PARTY)
+
+	;; A PERSON MAY HAVE AN ORDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ORDER_27 ?x1))
+
+	;; A PERSON MAY MAKE A CAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (CAKE_27 ?x1))
+
+;; (MAKE SURE TO GET YOUR ORDER IN ON TIME OR TO SHOP FOR INGREDIENTS AHEAD OF TIME SO YOU CAN MAKE THE CAKE -LRB- S -RRB- THE NIGHT BEFORE
+ THE PARTY)
+
+	;; A PERSON MAY HAVE AN ORDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ORDER_27 ?x1))
+
+	;; A PERSON MAY MAKE A CAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (CAKE_27 ?x1))
+
+;; (MAKE SURE TO GET YOUR ORDER IN ON TIME OR TO SHOP FOR INGREDIENTS AHEAD OF TIME SO YOU CAN MAKE THE CAKE -LRB- S -RRB- THE NIGHT BEFORE
+ THE PARTY)
+
+	;; A PERSON MAY HAVE AN ORDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ORDER_27 ?x1))
+
+	;; A PERSON MAY MAKE A CAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (CAKE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>

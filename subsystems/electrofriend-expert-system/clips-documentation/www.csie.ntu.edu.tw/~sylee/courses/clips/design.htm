@@ -1,0 +1,493 @@
+<html>
+<head>
+<title>Clips: Design Examples</title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+<h2>12 Design Examples</h2>
+
+<h3>12.2 Certainty Factors</h3>
+<pre>
+(<font color="#8000FF">defmodule</font> OAV (<font color="#8000FF">export</font> deftemplate oav))
+
+(<font color="#8000FF">deftemplate</font> OAV::oav
+   (<font color="#8000FF">multislot</font> object (<font color="#8000FF">type</font> SYMBOL))
+   (<font color="#8000FF">multislot</font> attribute (<font color="#8000FF">type</font> SYMBOL))
+   (<font color="#8000FF">multislot</font> value )
+   (<font color="#8000FF">slot</font> CF (<font color="#8000FF">type</font> FLOAT) (<font color="#8000FF">range</font> -1.0 +1.0)))
+
+(<font color="#8000FF">set-fact-duplication TRUE</font>)
+
+(<font color="#8000FF">defmethod</font> OAV::combine-certainties
+   ((?CF1 NUMBER (> ?CF1 0)) (?CF2 NUMBER (> ?CF2 0)))
+    (- (+ ?CF1 ?CF2) (* ?CF1 ?CF2)))
+
+(<font color="#8000FF">defrule</font> OAV::combine-certainties
+   (<font color="#8000FF">declare</font> (<font color="#8000FF">auto-focus TRUE</font>))
+   ?fact1 &lt;- (oav (object $?o)
+                  (attribute $?a)
+                  (value $?v)
+                  (CF ?C1))
+   ?fact2 &lt;- (oav (object $?o)
+                  (attribute $?a)
+                  (value $?v)
+                  (CF ?C2))
+   (<font color="#8000FF">test</font> (<font color="#0080FF">neq</font> ?fact1 ?fact2))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?fact1)
+   (<font color="#8000FF">modify</font> ?fact2
+       (CF (combine-certainties ?CF1 ?CF2))))
+
+</pre>
+The following MYCIN rule
+<pre>
+IF
+    The stain of the organism is gramneg and
+    The morphology of the organism is rod and
+    The patient is a compromised host
+THEN
+    There is suggestive evidence (0.6) that the
+    identity of the organism is pseudomonas
+
+</pre>
+can be rewritten in CLIPS:
+<pre>
+(<font color="#8000FF">defmodule</font> IDENTITY (<font color="#8000FF">import</font> OAV deftemplate oav))
+
+(<font color="#8000FF">defrule</font> IDENTITY::MYCIN-to-CLIPS-translation
+   (<font color="#8000FF">declare</font> (<font color="#8000FF">auto-focus TRUE</font>))
+   (oav (object organism)
+        (attribute stain)
+        (value gramneg)
+        (CF ?C1))
+   (oav (object organism)
+        (attribute morphology)
+        (value rod)
+        (CF ?C2))
+   (oav (object patient)
+        (attribute is a)
+        (value compromised host)
+        (CF ?C3))
+   (<font color="#8000FF">test</font> (> (<font color="#0080FF">min</font> ?C1 ?C2 ?C3) 0.2))
+   =&gt;
+   (<font color="#8000FF">bind</font> ?C4 (* (<font color="#0080FF">min</font> ?C1 ?C2 ?C3) 0.6))
+   (<font color="#8000FF">assert</font> (oav (object organism)
+            (attribute identity)
+            (value pseudomonas)
+            (CF ?C4))))
+
+</pre>
+
+<h4>Examples:</h4>
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/clips/examples/cf.clp">cf.clp</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/jess/examples/cf.clp">Demo</a>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/clips/examples/other/wine.clp">WINEX: The WINe EXpert system</a>
+(<a href="http://www.csie.ntu.edu.tw/~sylee/jess/wine.htm">Demo</a>)
+</ul>
+
+<h3>12.3 Decision Tree</h3>
+node structure
+<pre>
+(<font color="#8000FF">deftemplate</font> node
+   (<font color="#8000FF">slot</font> name)
+   (<font color="#8000FF">slot</font> type)
+   (<font color="#8000FF">slot</font> question)
+   (<font color="#8000FF">slot</font> yes-node)
+   (<font color="#8000FF">slot</font> no-node)
+   (<font color="#8000FF">slot</font> answer))
+
+</pre>
+
+initialize
+<pre>
+(<font color="#8000FF">defrule</font> initialize
+   (<font color="#8000FF">not</font> (node (name root)))
+   =&gt;
+   (<font color="#8000FF">load-facts</font> <font color="#008000">"animal.dat"</font>)
+   (<font color="#8000FF">assert</font> (current-node root)))
+
+</pre>
+
+ask the question
+<pre>
+(<font color="#8000FF">deffunction</font> ask-yes-or-no (?question)
+   (<font color="#8000FF">printout</font> t ?question <font color="#008000">" (yes or no) "</font>)
+   (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+   (<font color="#8000FF">while</font> (<font color="#8000FF">and</font> (<font color="#8000FF">neq</font> ?answer yes) (<font color="#8000FF">neq</font> ?answer no))
+      (<font color="#8000FF">printout</font> t ?question <font color="#008000">" (yes or no) "</font>)
+      (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>)))
+   (<font color="#8000FF">return</font> ?answer))
+
+(<font color="#8000FF">defrule</font> ask-decision-node-question
+   ?node &lt;- (current-node ?name)
+   (node (name ?name)
+         (type decision)
+         (question ?question))
+   (<font color="#8000FF">not</font> (answer ?))
+   =&gt;
+   (<font color="#8000FF">assert</font> (answer (ask-yes-or-no ?question))))
+
+</pre>
+
+response to the answer
+<pre>
+(<font color="#8000FF">defrule</font> proceed-to-yes-branch
+   ?node &lt;- (current-node ?name)
+   (node (name ?name)
+         (type decision)
+         (yes-node ?yes-branch))
+   ?answer &lt;- (answer yes)
+   =&gt;
+   (<font color="#8000FF">retract</font> ?node ?answer)
+   (<font color="#8000FF">assert</font> (current-node ?yes-branch)))
+
+(<font color="#8000FF">defrule</font> proceed-to-no-branch
+   ?node &lt;- (current-node ?name)
+   (node (name ?name)
+         (type decision)
+         (no-node ?no-branch))
+   ?answer &lt;- (answer no)
+   =&gt;
+   (<font color="#8000FF">retract</font> ?node ?answer)
+   (<font color="#8000FF">assert</font> (current-node ?no-branch)))
+
+</pre>
+
+ask-if-answer-node-is-correct
+<pre>
+(<font color="#8000FF">defrule</font> ask-if-answer-node-is-correct
+   ?node &lt;- (current-node ?name)
+   (node (name ?name) (type answer)
+         (answer ?value))
+   (<font color="#8000FF">not</font> (answer ?))
+   =&gt;
+   (<font color="#8000FF">printout</font> t <font color="#008000">"I guess it is a "</font> ?value <font color="#8000FF">crlf</font>)
+   (<font color="#8000FF">assert</font> (answer (ask-yes-or-no <font color="#008000">"Am I correct?"</font>))))
+
+</pre>
+
+answer-node-guess
+<pre>
+(<font color="#8000FF">defrule</font> answer-node-guess-is-correct
+   ?node &lt;- (current-node ?name)
+   (node (name ?name) (type answer))
+   ?answer &lt;- (answer yes)
+   =&gt;
+   (<font color="#8000FF">retract</font> ?node ?answer))
+
+(<font color="#8000FF">defrule</font> answer-node-guess-is-incorrect
+   ?node &lt;- (current-node ?name)
+   (node (name ?name) (type answer))
+   ?answer &lt;- (answer no)
+   =&gt;
+   (<font color="#8000FF">assert</font> (replace-answer-node ?name))
+   (<font color="#8000FF">retract</font> ?node ?answer))
+
+</pre>
+
+replace-answer-node
+<pre>
+(<font color="#8000FF">defrule</font> replace-answer-node
+   ?phase &lt;- (replace-answer-node ?name)
+   ?data &lt;- (node (name ?name)
+                  (type answer)
+                  (answer ?value))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?phase)
+   <font color="#0040a0">; Determine what the guess should have been</font>
+
+   (<font color="#8000FF">printout</font> t <font color="#008000">"What is the animal? "</font>)
+   (<font color="#8000FF">bind</font> ?new-animal (<font color="#8000FF">read</font>))
+   <font color="#0040a0">; Get the question for the guess</font>
+   (<font color="#8000FF">printout</font> t <font color="#008000">"What question when answered yes "</font>)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"will distinguish "</font> <font color="#8000FF">crlf</font> <font color="#008000">"   a "</font>)
+   (<font color="#8000FF">printout</font> t ?new-animal <font color="#008000">" from a "</font> ?value <font color="#008000">"? "</font>)
+   (<font color="#8000FF">bind</font> ?question (<font color="#8000FF">readline</font>))
+   (<font color="#8000FF">printout</font> t <font color="#008000">"Now I can guess "</font> ?new-animal <font color="#8000FF">crlf</font>)
+   <font color="#0040a0">; Create the new learned nodes</font>
+
+   (<font color="#8000FF">bind</font> ?newnode1 (<font color="#8000FF">gensym</font>*))
+   (<font color="#8000FF">bind</font> ?newnode2 (<font color="#8000FF">gensym</font>*))
+   (<font color="#8000FF">modify</font> ?data (type decision)
+                 (question ?question)
+                 (yes-node ?newnode1)
+                 (no-node ?newnode2))
+   (<font color="#8000FF">assert</font> (node (name ?newnode1)
+                 (type answer)
+                 (answer ?new-animal)))
+   (<font color="#8000FF">assert</font> (node (name ?newnode2)
+                 (type answer)
+                 (answer ?value)))
+   )
+</pre>
+
+<h4>Complete Example</h4>
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/animal.clp">Self Learning Animal Classification</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/JessServlet2?fileRB=animal0">Demo</a>)
+</ul>
+
+<h3>12.4 Backward Chaining</h3>
+A template for backward chaining rules:
+
+<pre>
+(deftemplate BC::rule
+    (multislot if)
+    (multislot then))
+
+</pre>
+<p />Each antecedent, &lt;condition>, is either
+<pre>
+    &lt;attribute> is &lt;value>
+</pre>
+        or
+<pre>
+    &lt;attribute> is &lt;value> and &lt;condition>
+
+</pre>
+
+<pre>(<font color="#8000FF">deftemplate</font> BC::attribute
+   (<font color="#8000FF">slot</font> name)
+   (<font color="#8000FF">slot</font> value))
+
+(<font color="#8000FF">deftemplate</font> BC::goal
+   (<font color="#8000FF">slot</font> attribute))
+
+</pre>
+
+<h4>Backward Chaining Inference Engine</h4>
+
+<pre>(<font color="#8000FF">defrule</font> BC::attempt-rule
+   (goal (attribute ?g-name))
+   (rule (<font color="#8000FF">if</font> ?a-name $?)
+         (<font color="#8000FF">then</font> ?g-name $?))
+   (<font color="#8000FF">not</font> (attribute (name ?a-name)))
+   (<font color="#8000FF">not</font> (goal (attribute ?a-name)))
+   =&gt;
+   (<font color="#8000FF">assert</font> (goal (attribute ?a-name))))
+
+(<font color="#8000FF">defrule</font> BC::ask-attribute-value
+   ?goal &lt;- (goal (attribute ?g-name))
+   (<font color="#8000FF">not</font> (attribute (name ?g-name)))
+   (<font color="#8000FF">not</font> (rule (<font color="#8000FF">then</font> ?g-name $?)))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?goal)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"What is the value of "</font> ?g-name <font color="#008000">"? "</font>)
+   (<font color="#8000FF">assert</font> (attribute (name ?g-name)
+                      (value (<font color="#8000FF">read</font>)))))
+
+(<font color="#8000FF">defrule</font> BC::goal-satisfied
+   (<font color="#8000FF">declare</font> (<font color="#8000FF">salience</font> 100))
+   ?goal &lt;- (goal (attribute ?g-name))
+   (attribute (name ?g-name))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?goal))
+
+(<font color="#8000FF">defrule</font> BC::rule-satisfied
+   (<font color="#8000FF">declare</font> (<font color="#8000FF">salience</font> 100))
+   (goal (attribute ?g-name))
+   (attribute (name ?a-name)
+              (value ?a-value))
+   ?rule &lt;- (rule (if ?a-name is ?a-value)
+                  (<font color="#8000FF">then</font> ?g-name is ?g-value))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?rule)
+   (<font color="#8000FF">assert</font> (attribute (name ?g-name)
+                      (value ?g-value))))
+
+(<font color="#8000FF">defrule</font> BC::remove-rule-no-match
+   (<font color="#8000FF">declare</font> (<font color="#8000FF">salience</font> 100))
+   (goal (attribute ?g-name))
+   (attribute (name ?a-name) (value ?a-value))
+   ?rule &lt;- (rule (if ?a-name is ~?a-value)
+                  (<font color="#8000FF">then</font> ?g-name is ?g-value))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?rule))
+
+(<font color="#8000FF">defrule</font> BC::modify-rule-match
+   (<font color="#8000FF">declare</font> (<font color="#8000FF">salience</font> 100))
+   (goal (attribute ?g-name))
+   (attribute (name ?a-name) (value ?a-value))
+   ?rule &lt;- (rule (if ?a-name is ?a-value and
+                      $?rest-if)
+                  (<font color="#8000FF">then</font> ?g-name is ?g-value))
+   =&gt;
+   (<font color="#8000FF">retract</font> ?rule)
+   (<font color="#8000FF">modify</font> ?rule (<font color="#8000FF">if</font> $?rest-if)))
+
+</pre>
+
+<h4>Example: Wine Selection</h4>
+<p>To select the best color of wine
+ to serve with a meal.
+
+<pre>(<font color="#8000FF">deffacts</font> MAIN::wine-rules
+   (rule (<font color="#8000FF">if</font> main-course is red-meat)
+         (<font color="#8000FF">then</font> best-color is red))
+
+   (rule (<font color="#8000FF">if</font> main-course is fish)
+         (<font color="#8000FF">then</font> best-color is white))
+
+   (rule (<font color="#8000FF">if</font> main-course is poultry <font color="#8000FF">and</font>
+             meal-is-turkey is yes)
+         (<font color="#8000FF">then</font> best-color is red))
+
+   (rule (<font color="#8000FF">if</font> main-course is poultry <font color="#8000FF">and</font>
+             meal-is-turkey is no)
+         (<font color="#8000FF">then</font> best-color is white)))
+
+(<font color="#8000FF">deffacts</font> MAIN::initial-goal
+   (goal (attribute best-color)))
+
+</pre>
+
+<h4>Complete Examples</h4>
+<ol>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/clips/examples/book/wine.clp">Wine Selection</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/JessServlet2?fileRB=wine0">Demo</a>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/clips/examples/other/animal.clp">Animal Identification</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/JessServlet2?fileRB=animal&amp;titleRB=The&#32;Animal&#32;Identification&#32;System">Demo</a>)
+(<a href="http://www.csie.ntu.edu.tw/sylee/courses/clips/examples/other/animal.txt">plain rules</a>)
+<br><a href="http://www.csie.ntu.edu.tw/servlets/JessServlet2?fileRB=animal2&amp;titleRB=Animal&#32;Identification&#32;Expert&#32;System">動物辨認系統</a>
+</ol>
+
+<h3>Backward Chaining Mechanism for Jess</h3>
+
+<h4>Example: Factorial</h4>
+<pre><font color="#0040a0">; The backward chaining demo from chapter 7 of "Jess in Action"</font>
+<font color="#0040a0">;</font>
+
+(<b><font color="#FF0000">do-backward-chaining</font> factorial</b>)
+
+(<font color="#8000FF">defrule</font> print-factorial-10
+    (factorial 10 ?r1)  <font color="#0040a0">; Jess automatically assert (need-factorial 10 nil)</font>
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"The factorial of 10 is "</font> ?r1 <font color="#8000FF">crlf</font>))
+
+(<font color="#8000FF">defrule</font> do-factorial
+    (<b>need-factorial</b> ?x ?)
+    =&gt;
+    <font color="#0040a0">;; compute the factorial of ?x in ?r </font>
+
+    (<font color="#8000FF">bind</font> ?r 1)
+    (<font color="#8000FF">bind</font> ?n ?x)
+    (<font color="#8000FF">while</font> (&gt; ?n 1)
+        (<font color="#8000FF">bind</font> ?r (* ?r ?n))
+        (<font color="#8000FF">bind</font> ?n (- ?n 1)))
+    (<font color="#8000FF">assert</font> (factorial ?x ?r)))
+
+</pre>
+
+<b>Jess Demo</b>
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/JessConsole?src=jess/jia/factorial.clp">Factorial</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/jess/jia/factorial.clp">source code</a>)
+</ul>
+
+<h4>Example: Theater Transportation Consultation</h4>
+<pre>(<font color="#8000FF">deftemplate</font> question
+    <font color="#008000">"A question the application may ask"</font>
+    (<font color="#8000FF">slot</font> text)       <font color="#0040a0">;; The question itself </font>
+    (<font color="#8000FF">slot</font> type)       <font color="#0040a0">;; Can be multi, text, or numeric </font>
+    (<font color="#8000FF">multislot</font> valid) <font color="#0040a0">;; The allowed answers for type multi</font>
+    (<font color="#8000FF">slot</font> ident))     <font color="#0040a0">;; The "name" of the question </font>
+
+(<font color="#8000FF">deftemplate</font> answer
+  (<font color="#8000FF">slot</font> ident)
+  (<font color="#8000FF">slot</font> text))
+
+(<font color="#FF0000"><b>do-backward-chaining</b></font> <b><font color="#0000FF">answer</font></b>)
+
+(<font color="#8000FF">defrule</font> supply-answers
+    <font color="#0040a0">;(declare (auto-focus TRUE)) </font>
+    (<b><font color="#2000FF">need-answer</font></b> (ident ?id))
+    (<font color="#8000FF">not</font> (answer (ident ?id)))
+    (<font color="#8000FF">not</font> (ask ?))
+    =&gt;
+    (<font color="#8000FF">assert</font> (ask ?id))
+    (<font color="#8000FF">return</font>))
+
+<font color="#0040a0">; </font><font color="#0040A0">encoded rules</font>
+(<font color="#8000FF">deffacts</font> question-data
+    (question (ident miles)
+      (type number) (valid)
+      (text <font color="#008000">"How many miles is the theater away?"</font>))
+    (question (ident minutes)
+      (type number) (valid)
+      (text <font color="#008000">"How many minutes is the show time from now?"</font>))
+    (question
+      (ident location) (type multi) (valid yes no)
+      (text <font color="#008000">"Is the theater located in downtown?"</font>))
+    (question
+      (ident weather-condition) (type multi) (valid bad good)
+      (text <font color="#008000">"What is the weather condition?"</font>))
+    )
+
+(<font color="#8000FF">defrule</font> rule1
+    (answer (ident miles) (text  ?d))
+    (<font color="#8000FF">test</font> (&gt;= (integer ?d) 2))
+    =&gt;
+    (<font color="#8000FF">assert</font> (transportation-means drive)) )
+
+(<font color="#8000FF">defrule</font> rule2
+    (answer (ident miles) (text  ?d))
+    (<font color="#8000FF">test</font> (&lt; (integer ?d) 2))
+    (answer (ident minutes) (text  ?t))
+    (<font color="#8000FF">test</font> (&lt;= (integer ?t) 15))
+    <font color="#0040a0">;(theater (miles ?d&:(&gt; ?d 1)) </font>
+    =&gt;
+    (<font color="#8000FF">assert</font> (transportation-means drive)) )
+
+(<font color="#8000FF">defrule</font> rule3
+    (answer (ident miles) (text  ?d))
+    (<font color="#8000FF">test</font> (&lt; (integer ?d) 2))
+    (answer (ident minutes) (text  ?t))
+    (<font color="#8000FF">test</font> (&gt; (integer ?t) 15))
+    =&gt;
+    (<font color="#8000FF">assert</font> (transportation-means walk)) )
+
+(<font color="#8000FF">defrule</font> rule4
+    (transportation-means  drive)
+    (answer (ident location) (text  yes))
+    =&gt;
+    (<font color="#8000FF">assert</font> (suggestion-action <font color="#008000">"take a cab"</font>)) )
+
+(<font color="#8000FF">defrule</font> rule5
+    (transportation-means  drive)
+    (answer (ident location) (text  no))
+    =&gt;
+    (<font color="#8000FF">assert</font> (suggestion-action <font color="#008000">"drive your car"</font>)) )
+
+(<font color="#8000FF">defrule</font> rule6
+    (transportation-means walk)
+    (answer (ident weather-condition) (text bad))
+    =&gt;
+    (<font color="#8000FF">assert</font> (suggestion-action <font color="#008000">"take a coat and walk"</font>)) )
+
+(<font color="#8000FF">defrule</font> rule7
+    (transportation-means walk)
+    (answer (ident weather-condition) (text good))
+    =&gt;
+    (<font color="#8000FF">assert</font> (suggestion-action walk)) )
+
+</pre>
+
+<h4>Complete Examples</h4>
+<ol>
+<li><a href="http://www.csie.ntu.edu.tw/servlets/JessServlet2?fileRB=theater">Demo: Theater Transportation Consultation</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/theater.clp">source code</a>) (<A href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/theater.htm">pseudo code</A>)
+<li><a href="http://www.csie.ntu.edu.tw/servlets/JessServlet2?fileRB=cli_computer">Demo: PC Repair Assistant</a>
+(<a href="http://www.csie.ntu.edu.tw/servlets/CLPCodeViewer?source=/sylee/courses/jess/jia/cli_computer.clp">source code</a>)
+</ol>
+
+<h3>References</h3>
+<ul>
+  <li><a href="https://secure.manning.com/friedman-hill">Jess In Action</a>, chapter 12, by E. Friedman-Hill, Manning, 2003.</li>
+</ul>
+
+<p>Previous <a href="efficiency.htm">Efficiency in Rule-based Languages</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+</p>
+
+</body></html>

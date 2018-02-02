@@ -1,0 +1,281 @@
+;; (DRESS FOR THE APPROPRIATE ACTIVITY LEVEL)
+
+	;; A DRESS[PERSON??] CAN BE FOR AN ACTIVITY LEVEL.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (ACTIVITY_27 ?x1) (LEVEL_27 ?x1))
+
+	;; AN ACTIVITY LEVEL CAN BE APPROPRIATE.
+
+		(and (ACTIVITY_27 ?x1) (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; (DRESSING FOR AN ACTIVE DAY OF SKIING WILL BE DIFFERENT THAN DRESSING FOR A SEDENTARY DAY OF ICE FISHING)
+
+	;; A DAY CAN BE ACTIVE.
+
+		(and (DAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTIVE_27 ?x2))
+
+	;; A DAY CAN BE SEDENTARY.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEDENTARY_27 ?x2))
+
+;; (BUY OR FIND A PAIR OF INSULATED BOOTS)
+
+	;; BOOTS CAN BE INSULATED.
+
+		(and (boot_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSULATED_27 ?x2))
+
+;; (IDEALLY COMMA THE LINING SHOULD BE WOOL OR SYNTHETIC -- NOT COTTON)
+
+	;; A LINING CAN BE A WOOL.
+
+		(and (LINING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (WOOL_27 ?x2))
+
+;; (LININGS CAN BE PURCHASED SEPERATELY)
+
+	;; LININGS MAY BE PURCHASE -ED.
+
+		(and (LININGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PURCHASE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (YOU CAN PURCHASE BOOTS ALREADY WITH THE LINING COMMA OR USE BOOTS TWO SIZES LARGER THAN USUAL COMMA AND USE A LINING)
+
+	;; A PERSON MAY PURCHASE BOOTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1) (BOOTS_27 ?x1))
+
+;; (WEAR WINTER SOCKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WARM WINTER SOCKS ARE IMPORTANT IN KEEPING WARM DRY FEET)
+
+	;; WINTER SOCKS CAN BE WARM.
+
+		(and (WINTER_27 ?x1) (SOCKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+	;; FEET CAN BE WARM.
+
+		(and (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+	;; FEET CAN BE DRY.
+
+		(and (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (YOU CAN LAYER SOCKS COMMA BUT BE CAREFUL THAT YOUR FEET ARE COMFORTABLE AND THE CIRCULATION IS N T SHUT DOWN)
+
+	;; A PERSON MAY LAYER SOCKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LAYER_27 ?x1) (SOCKS_27 ?x1))
+
+	;; FEET CAN BE COMFORTABLE.
+
+		(and (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+	;; A PERSON MAY HAVE FEET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FEET_27 ?x1))
+
+	;; A CIRCULATION MAY BE SHUT_DOWN -ED.
+
+		(and (CIRCULATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHUT_5FDOWN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (USE A GOOD QUALITY COAT COMMA PARKA COMMA OR JACKET)
+
+	;; A QUALITY COAT CAN BE GOOD.
+
+		(and (QUALITY_27 ?x1) (COAT_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (GENERALLY SPEAKING COMMA THE THICKER THE BETTER COMMA WHETHER IT IS A SYNTHETIC SKI JACKET COMMA A WOOL PEA COAT COMMA OR A DOWN JACKET)
+
+	;; A THING-REFERRED-TO CAN BE SKI JACKET.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SKI_27 ?x2) (JACKET_27 ?x2))
+
+	;; A SKI JACKET CAN BE SYNTHETIC.
+
+		(and (SKI_27 ?x1) (JACKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SYNTHETIC_27 ?x2))
+
+	;; A JACKET CAN BE DOWN.
+
+		(and (JACKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOWN_27 ?x2))
+
+;; (WEAR A BASE LAYER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [12]>
+
+;; (MERINO WOOL PRODUCTS ARE RECOGNIZED AS ONE OF THE BEST BASE LAYERS AVAILABLE)
+
+	;; WOOL PRODUCTS MAY BE RECOGNIZE -ED AS SOME NUMBER_OR_PORTION OF BASE LAYERS.
+
+		(and (WOOL_27 ?x1) (PRODUCTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOGNIZE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (AS_27 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2) (of_27 ?x2 ?x3) (BASE_27 ?x3) (LAYERS_27 ?x3))
+
+	;; A MERINO[PERSON??] MAY HAVE WOOL PRODUCTS.
+
+		(and (MERINO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (WOOL_27 ?x1) (PRODUCTS_27 ?x1))
+
+	;; BASE LAYERS CAN BE AVAILABLE.
+
+		(and (BASE_27 ?x1) (LAYERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+	;; BASE LAYERS CAN BE BEST.
+
+		(and (BASE_27 ?x1) (LAYERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (WEAR A HAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (REMEMBER - HEAT RISES COMMA AND YOU DO N T WANT TO LOSE IT)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (WEAR GLOVES OR MITTENS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FINGERS AND HANDS ARE VERY VULNERABLE TO THE COLD COMMA SO KEEP THEM COVERED)
+
+	;; A FINGERS[PERSON??] CAN BE VULNERABLE TO A COLD.
+
+		(and (finger_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (VULNERABLE_27 ?x1) (to_27 ?e1 ?x2) (A_27 ?x2) (COLD_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE COVERED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?e2) (cover_27 ?e2 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [13]>
+
+;; (HAND WARMERS CAN BE USEFUL COMMA ESPECIALLY IF YOU DO N T HAVE SHELTER HANDY)
+
+	;; WARMERS CAN BE USEFUL.
+
+		(and (warmer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEFUL_27 ?x2))
+
+	;; WARMERS CAN BE HAND.
+
+		(and (warmer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAND_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THEY CAN BE PURCHASED AT ANY OUTDOOR OR HUNTING STORE)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F BE.PASV PURCHASE.V) (:P AT.P NIL)))
+
+		(and (I_27 ?x4) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (BE_2EPASV_27 ?x3) (PURCHASE_2EV_27 ?x3) (P_27 ?x4) (AT_2EP_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (NEVER USE THESE AS A SUBSTITUTE FOR DRESSING WARMLY COMMA HOWEVER)
+
+	;; A THING CAN BE AS A SUBSTITUTE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (A_27 ?x2) (SUBSTITUTE_27 ?x2))
+
+;; (WEAR MORE THAN ONE LAYER ON YOUR LEGS)
+
+	;; A PERSON MAY HAVE LEGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LEGS_27 ?x1))
+
+;; (ODDLY COMMA SOME PEOPLE WILL WEAR FIVE LAYERS ON THEIR TORSO COMMA AND ONLY ONE LAYER ON THE LEGS)
+
+	;; SOME_NUMBER_OF PEOPLE MAY WEAR SOME_NUMBER_OF LAYERS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (WEAR_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (LAYERS_27 ?x1))
+
+	;; SOME_NUMBER_OF LAYERS CAN BE ON A TORSO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (LAYERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (TORSO_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A TORSO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TORSO_27 ?x1))
+
+	;; A LAYER CAN BE ON LEGS.
+
+		(and (LAYER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (LEGS_27 ?x2))
+
+;; (AT MINIMUM COMMA HAVE A BASE LAYER LIKE LONG UNDERWEAR AND AN OUTER LAYER COMMA LIKE SNOWBOARDING PANTS)
+
+	;; AN UNDERWEAR CAN BE LONG.
+
+		(and (UNDERWEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; A LAYER CAN BE OUTER.
+
+		(and (LAYER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTER_27 ?x2))
+
+	;; PANTS CAN BE SNOWBOARDING.
+
+		(and (pant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SNOWBOARDING_27 ?x2))

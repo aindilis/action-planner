@@ -1,0 +1,198 @@
+;; (DON T BRING IN CDS AND BOOKS YOU NEVER USE AT WORK)
+
+	;; A MALE MAY BRING IN CDS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (in_27 ?x1 ?x2) (CDS_27 ?x2))
+
+	;; A PERSON MAY USE AT WORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (AT_27 ?x1) (WORK_27 ?x1))
+
+;; (GIVE AWAY THE KNICK-KNACKS  NO MATTER HOW MUCH YOU LIKE THEM COMMA THEY SIMPLY DON T BELONG IN AN OFFICE)
+
+	;; T MAY BELONG IN AN OFFICE.
+
+		(and (T_27 ?x1) (MAY_27 ?x1) (BELONG_27 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (OFFICE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DON_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (FOR WHAT YOU HAVE TO KEEP COMMA USE DRAWERS  YOU DON T HAVE TO EXHIBIT EVERYTHING RANDOMLY AROUND THE ROOM)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F DON.V (:P HAVE.V NIL) (:F K T.N))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (DON_2EV_27 ?x2) (P_27 ?x3) (HAVE_2EV_27 ?x3) (NIL_27 ?x3) (F_27 ?x4) (K_27 ?x4) (T_2EN_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO NOT USE POST-ITS IN YOUR OFFICE COMMA UNLESS IT S YOUR BRAND)
+
+	;; A PERSON MAY HAVE AN OFFICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE A BRAND.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (brand_27 ?x2))
+
+	;; A PERSON MAY HAVE A BRAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (brand_27 ?x1))
+
+;; (THEY MAKE THE PLACE LOOK EXTREMELY UNPROFESSIONAL AND CHAOTIC)
+
+	;; INDIVIDUAL -S MAY MAKE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A PLACE MAY LOOK UNPROFESSIONAL.
+
+		(and (PLACE_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (UNPROFESSIONAL_27 ?x1))
+
+;; (GO FOR AN ELECTRONIC REMINDER INSTEAD)
+
+	;; A REMINDER CAN BE ELECTRONIC.
+
+		(and (REMINDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRONIC_27 ?x2))
+
+;; (THEY CAN PERFECTLY DEAL WITH YOUR TO-DOS)
+
+	;; INDIVIDUAL -S MAY DEAL WITH TO-DOS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DEAL_27 ?x1) (WITH_27 ?x1) (TO-DOS_27 ?x1))
+
+	;; A PERSON MAY HAVE TO-DOS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TO-DOS_27 ?x1))
+
+;; (GO WIRELESS)
+
+	;; A GO[PERSON??] MAY WIRELES.
+
+		(and (GO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (WIRELES_27 ?x1))
+
+;; (IF YOU HAVEN T DONE THAT ALREADY COMMA YOU MUST BECOME AWARE THIS IS COMPULSORY)
+
+	;; A THING CAN BE COMPULSORY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPULSORY_27 ?x2))
+
+	;; A PERSON MAY HAVE T.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (T_27 ?x1))
+
+	;; T MAY BE DO -ED.
+
+		(and (T_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON CAN BE AWARE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AWARE_27 ?x2))
+
+;; (THERE S NO WAY TO ORGANIZE THOSE BUNCHES OF CABLES IN A DECENT WAY WITHIN SUCH A SMALL ROOM)
+
+	;; CABLES CAN BE IN A WAY.
+
+		(and (cable_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE DECENT.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DECENT_27 ?x2))
+
+	;; A ROOM CAN BE SMALL.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (REMEMBER THAT A CLEAN COMMA WELL LIGHTED PLACE IS WHAT YOU WANT)
+
+	;; A PLACE CAN BE CLEAN.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (IF YOU DON T HAVE A ROOM WITH A VIEW COMMA BE GENEROUS WITH LIGHTING EQUIPMENT)
+
+	;; A PERSON MAY DON HAVE A ROOM T.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DON_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1) (T_27 ?x1))
+
+	;; A ROOM CAN BE WITH A VIEW.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (VIEW_27 ?x2))
+
+;; (HAVE THE PLACE CLEANED AND KEEP IT FRESH)
+
+	;; A PLACE MAY BE CLEAN -ED.
+
+		(and (PLACE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE FRESH.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+;; (LIGHT COLORS MAY GIVE SOME ILLUSION OF SPACE)
+
+	;; COLORS MAY GIVE SOME_NUMBER_OF ILLUSION OF SPACE.
+
+		(and (COLORS_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (ILLUSION_27 ?x1) (OF_27 ?x1) (SPACE_27 ?x1))
+
+	;; A LIGHT[PERSON??] MAY HAVE COLORS.
+
+		(and (LIGHT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (COLORS_27 ?x1))
+
+	;; SOME_NUMBER_OF ILLUSION CAN BE CONSTITUTED_OF_OR_FILLED_WITH SPACE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ILLUSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SPACE_27 ?x2))
+
+;; (MATCH COLORS TO SHOW THAT YOU CARE)
+
+	;; A PERSON MAY CARE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CARE_27 ?x1))
+
+;; (EVEN IF IT IS AN APARTMENT COMMA DON T LET IT LOOK LIKE ONE)
+
+	;; T MAY LET.
+
+		(and (T_27 ?x1) (MAY_27 ?x1) (LET_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE AN APARTMENT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (APARTMENT_27 ?x2))
+
+	;; A T CAN BE DON.
+
+		(and (T_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DON_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY LOOK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1))
+
+;; (NOT BEING ABLE TO SEPARATE THE PLACE WHERE YOU EAT OR SLEEP FROM THE PLACE YOU WORK IN LOOKS QUITE AMATEURISH AND MESSY)
+
+	;; A PERSON MAY EAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1))
+
+	;; A PERSON MAY WORK_IN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WORK_5FIN_27 ?x1))

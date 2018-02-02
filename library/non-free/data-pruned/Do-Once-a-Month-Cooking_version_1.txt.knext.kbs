@@ -1,0 +1,411 @@
+;; (SPOONSMAKE A MENU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (COLLECT RECIPES FROM VARIOUS SOURCES)
+
+	;; RECIPES CAN BE FROM SOURCES.
+
+		(and (recipe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (SOURCES_27 ?x2))
+
+	;; RECIPES CAN BE COLLECT.
+
+		(and (recipe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLLECT_27 ?x2))
+
+;; (READ SEVERAL ONCE-A-MONTH TYPE COOK BOOKS FOR IDEAS)
+
+	;; SOME_NUMBER_OF TYPE COOK BOOKS CAN BE FOR IDEAS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TYPE_27 ?x1) (COOK_27 ?x1) (BOOKS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (IDEAS_27 ?x2))
+
+	;; TYPE COOK BOOKS CAN BE ONCE-A-MONTH.
+
+		(and (TYPE_27 ?x1) (COOK_27 ?x1) (BOOKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONCE-A-MONTH_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (WHEN YOU RE MAKING LARGE BATCHES COMMA YOU DO N T WANT TO EXPERIMENT WITH NEW RECIPES)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; BATCHES CAN BE LARGE.
+
+		(and (batch_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (ASSUMING YOU RE ONLY MAKING DINNERS COMMA YOU DO N T NEED TO COOK THIRTY DIFFERENT DISHES)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (SOUPS COMMA STEWS AND CASSEROLES ARE THE EASIEST TO COOK AHEAD OF TIME COMMA BUT MAKE SURE YOU DO N T GO OVERBOARD ON THESE)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (KEEP THE DISHES VARIED)
+
+	;; DISHES CAN BE VARIED.
+
+		(and (dish_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VARIED_27 ?x2))
+
+;; (MAKE A BIG BATCH OF EMPANADAS AND/OR WONTONS)
+
+	;; A BATCH CAN BE CONSTITUTED_OF_OR_FILLED_WITH EMPANADAS.
+
+		(and (BATCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (EMPANADAS_27 ?x2))
+
+	;; A BATCH CAN BE BIG.
+
+		(and (BATCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (MAKE A POT OF TOMATO SAUCE WITH MEAT IN IT -LRB- OR PESTO -RRB- COMMA COOK SOME PASTA COMMA AND FREEZE BOTH -LRB- STORED SEPARATELY -RRB-)
+
+	;; A POT CAN BE CONSTITUTED_OF_OR_FILLED_WITH TOMATO SAUCE.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TOMATO_27 ?x2) (SAUCE_27 ?x2))
+
+	;; MEAT CAN BE IN A THING-REFERRED-TO.
+
+		(and (MEAT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (AVOID FOODS THAT DO N T FREEZE WELL)
+
+	;; FOODS CAN BE AVOID.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+;; (YOGURT -LRB- MAY CHANGE TEXTURE -RRB- HEAVY CREAM -LRB- WILL NOT WHIP WHEN THAWED BUT CAN BE USED FOR COOKING -RRB- PASTAS & GRAINS -LRB- SOFTER AFTER FREEZING/REHEATING - UNDERCOOK BEFORE FREEZING TO
+ COUNTER-BALANCE -RRB- SEASONINGS COMMA ONIONS COMMA GREEN PEPPERS COMMA HERBS & FLAVORINGS -LRB- FLAVOR MAY INCREASE OR DIMINISH WITH FREEZING)
+
+	;; UNDERCOOK CAN BE BEFORE FREEZING.
+
+		(and (UNDERCOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (FREEZING_27 ?x2))
+
+	;; PEPPERS CAN BE GREEN.
+
+		(and (pepper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+	;; FLAVOR MAY INCREASE.
+
+		(and (FLAVOR_27 ?x1) (MAY_27 ?x1) (INCREASE_27 ?x1))
+
+;; (ADD AFTERWARDS WHEN POSSIBLE -RRB- THICKENED SAUCES OR STEWS -LRB- MAY NEED THINNING AFTER THAWING -RRB- GRAVIES OR FAT-BASED SAUCES -LRB- MAY SEPARATE & NEED TO BE RECOMBINED -RRB- DO N T THICKEN STEWS UNTIL
+ YOU RE READY TO EAT THEM)
+
+	;; A GRAVIES[PERSON??] MAY DO.
+
+		(and (GRAVIES_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A THICKENED[PERSON??] MAY SAUCE.
+
+		(and (thicken_27 ?e1 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SAUCE_27 ?x1))
+
+	;; SAUCES CAN BE FAT-BASED.
+
+		(and (sauce_27 ?x1) (be_27 ?e1 ?x1) (fat-based_27 ?x1))
+
+;; (LIQUIDS WITH CORNSTARCH OR FLOUR ADDED CAN SEPARATE AFTER FREEZING AND THE TEXTURE IS N T QUITE RIGHT)
+
+	;; LIQUIDS MAY ADD.
+
+		(and (LIQUIDS_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1))
+
+	;; LIQUIDS CAN BE WITH CORNSTARCH.
+
+		(and (LIQUIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (CORNSTARCH_27 ?x2))
+
+	;; FREEZING CAN BE RIGHT.
+
+		(and (freezing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGHT_27 ?x2))
+
+;; (THICKEN AFTER THAWING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ-DELIMITED-LIST from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: illegal end of dotted list
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; (FREEZE THE COMPONENTS OF SOUP SEPARATELY -LRB- BROTH COMMA CHICKEN COMMA BLANCHED ONIONS COMMA CELERY COMMA AND CARROTS -RRB- RATHER THAN FREEZING THE ASSEMBLED SOUP)
+
+	;; ONIONS CAN BE BLANCHED.
+
+		(and (onion_27 ?x1) (be_27 ?e1 ?x1 ?e2) (blanch_27 ?e2 ?x1))
+
+	;; A SOUP CAN BE ASSEMBLED.
+
+		(and (SOUP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ASSEMBLED_27 ?x2))
+
+;; (MAKE A GROCERY LIST AND GO SHOPPING USING THE RECIPES SELECTED)
+
+	;; SHOPPING MAY USE RECIPES.
+
+		(and (shop_27 ?e1 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (RECIPES_27 ?x1))
+
+	;; RECIPES MAY BE SELECT -ED.
+
+		(and (recipe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SELECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (LOOK AT ALL YOUR INGREDIENTS LISTS AND CONSOLIDATE THEM SO YOU KNOW EXACTLY HOW MUCH OF EACH INGREDIENT YOU LL NEED)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+;; (SHOP THE DAY BEFORE THE COOKING SESSION)
+
+	;; A SESSION CAN BE COOKING.
+
+		(and (SESSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (cooking_27 ?x2))
+
+;; (GATHER FLYERS FROM YOUR LOCAL GROCERY STORES AND SUPERMARKETS TO SEE WHAT S ON SALE)
+
+	;; A GATHER[PERSON??] MAY FLYER FROM GROCERY STORES.
+
+		(and (GATHER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FLYER_27 ?x1) (FROM_27 ?x1) (GROCERY_27 ?x1) (STORES_27 ?x1))
+
+	;; A PERSON MAY HAVE GROCERY STORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GROCERY_27 ?x1) (STORES_27 ?x1))
+
+;; (GATHER FLYERS FROM YOUR LOCAL GROCERY STORES AND SUPERMARKETS TO SEE WHAT S ON SALE)
+
+	;; A GATHER[PERSON??] MAY FLYER FROM GROCERY STORES.
+
+		(and (GATHER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FLYER_27 ?x1) (FROM_27 ?x1) (GROCERY_27 ?x1) (STORES_27 ?x1))
+
+	;; A PERSON MAY HAVE GROCERY STORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GROCERY_27 ?x1) (STORES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; (DO N T FORGET TO STOCK UP ON STORAGE CONTAINERS AND SUPPLIES -LRB- SEALABLE BAGS COMMA PLASTIC CONTAINERS COMMA ALUMINUM FOIL COMMA PLASTIC WRAP -RRB-)
+
+	;; BAGS CAN BE SEALABLE.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEALABLE_27 ?x2))
+
+	;; CONTAINERS CAN BE PLASTIC.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A WRAP CAN BE PLASTIC.
+
+		(and (WRAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (SET OUT ALL THE COOKING UTENSILS AND PANS THE NIGHT BEFORE IN PREPARATION FOR THE TOMORROW S COOK-A-THON)
+
+	;; UTENSILS CAN BE COOKING.
+
+		(and (utensil_27 ?x1) (be_27 ?e1 ?x1 ?x2) (cooking_27 ?x2))
+
+	;; PREPARATION CAN BE FOR A COOK-A-THON.
+
+		(and (preparation_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (COOK-A-THON_27 ?x2))
+
+	;; A TOMORROW MAY HAVE A COOK-A-THON.
+
+		(and (TOMORROW_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COOK-A-THON_27 ?x1))
+
+;; (YOU MAY ALSO WANT TO DO SOME OF THE MINOR FOOD PREPARATION)
+
+	;; A FOOD PREPARATION MAY HAVE A THING.
+
+		(and (FOOD_27 ?x1) (PREPARATION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (A GOOD EXAMPLE WOULD BE TO CHOP ONIONS USING A FOOD PROCESSOR AND THEN REFRIGERATING THE CHOPPED ONIONS FOR LATER USE)
+
+	;; AN EXAMPLE CAN BE GOOD.
+
+		(and (EXAMPLE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; ONIONS CAN BE FOR USE.
+
+		(and (onion_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (USE_27 ?x2))
+
+	;; ONIONS CAN BE CHOPPED.
+
+		(and (onion_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHOPPED_27 ?x2))
+
+;; (PRINT AND TAPE THE RECIPES TO THE CUPBOARD DOORS FOR EASE OF READING WHILE COOKING)
+
+	;; RECIPES CAN BE TO DOORS.
+
+		(and (recipe_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (DOORS_27 ?x2))
+
+	;; DOORS CAN BE FOR EASE OF READING WHILE COOKING.
+
+		(and (door_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EASE_27 ?x2) (of_27 ?x2 ?x3) (READING_27 ?x3) (while_27 ?e1 ?x4) (COOKING_27 ?x4))
+
+	;; DOORS CAN BE CUPBOARD.
+
+		(and (door_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CUPBOARD_27 ?x2))
+
+;; (FOLLOW THE COOKING AND FREEZING DIRECTIONS FOR EACH RECIPE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THINK OF YOUR KITCHEN AS AN ASSEMBLY LINE)
+
+	;; A PERSON MAY HAVE A KITCHEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KITCHEN_27 ?x1))
+
+;; (EFFICIENCY IS KEY)
+
+	;; AN EFFICIENCY[PERSON??] CAN BE KEY.
+
+		(and (EFFICIENCY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (KEY_27 ?x1))
+
+;; (START CROCK POT RECIPES AND PREPARING WHOLE CHICKENS FIRST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO COMMON KITCHEN TASKS ALL AT ONCE)
+
+	;; KITCHEN TASKS CAN BE COMMON.
+
+		(and (KITCHEN_27 ?x1) (TASKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+;; (FOR EXAMPLE COMMA IF SEVERAL OF YOUR DISHES WILL REQUIRE GROUND BEEF COMMA COOK IT ALL AT ONCE)
+
+	;; SOME NUMBER_OR_PORTION OF DISHES MAY REQUIRE GROUND BEEF.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (DISHES_27 ?x2) (MAY_27 ?x2) (REQUIRE_27 ?x2) (GROUND_27 ?x2) (BEEF_27 ?x2))
+
+	;; A PERSON MAY HAVE DISHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DISHES_27 ?x1))
+
+;; (BLANCH VEGETABLES BEFORE YOU FREEZE THEM TO PRESERVE COLOR COMMA FLAVOR COMMA AND TEXTURE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FREEZER BAGS - REMOVE AS MUCH AIR AS POSSIBLE)
+
+	;; BAGS CAN BE FREEZER.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREEZER_27 ?x2))
+
+	;; A REMOVE[PERSON??] CAN BE AS AIR.
+
+		(and (REMOVE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (AS_27 ?x1) (AIR_27 ?x1))
+
+	;; AIR CAN BE POSSIBLE.
+
+		(and (AIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+;; (A VACUUM SEALER IS HIGHLY RECOMMENDED)
+
+	;; A VACUUM SEALER CAN BE RECOMMENDED.
+
+		(and (VACUUM_27 ?x1) (SEALER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMENDED_27 ?x2))
+
+;; (A VACUUM SEALER IS HIGHLY RECOMMENDED)
+
+	;; A VACUUM SEALER CAN BE RECOMMENDED.
+
+		(and (VACUUM_27 ?x1) (SEALER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMENDED_27 ?x2))
+
+;; (A VACUUM SEALER IS HIGHLY RECOMMENDED)
+
+	;; A VACUUM SEALER CAN BE RECOMMENDED.
+
+		(and (VACUUM_27 ?x1) (SEALER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMENDED_27 ?x2))
+
+;; (A VACUUM SEALER IS HIGHLY RECOMMENDED)
+
+	;; A VACUUM SEALER CAN BE RECOMMENDED.
+
+		(and (VACUUM_27 ?x1) (SEALER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMENDED_27 ?x2))
+
+;; (A VACUUM SEALER IS HIGHLY RECOMMENDED)
+
+	;; A VACUUM SEALER CAN BE RECOMMENDED.
+
+		(and (VACUUM_27 ?x1) (SEALER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMENDED_27 ?x2))

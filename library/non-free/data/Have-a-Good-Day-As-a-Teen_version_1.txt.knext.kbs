@@ -1,0 +1,375 @@
+;; (YOU WILL NEED ENERGY)
+
+	;; A PERSON MAY NEED ENERGY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (ENERGY_27 ?x1))
+
+;; (EAT A HEALTHY COMMA NUTRITIOUS COMMA AND ENERGY BOOSTING BREAKFAST)
+
+	;; ENERGY MAY BOOST BREAKFAST.
+
+		(and (ENERGY_27 ?x1) (MAY_27 ?x1) (BOOST_27 ?x1) (BREAKFAST_27 ?x1))
+
+;; (STAY AWAY FROM SUGARED CEREALS AND CAFFEINE COMMA -LRB- NO FROOT LOOPS OR MOUNTAIN DEW -RRB- AS THEY WILL GIVE YOU A BOOST AND THEN YOU WILL BE VERY GROGGY)
+
+	;; CEREALS CAN BE SUGARED.
+
+		(and (cereal_27 ?x1) (be_27 ?e1 ?x1 ?e2) (sugar_27 ?e2 ?x1))
+
+	;; A PERSON CAN BE GROGGY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROGGY_27 ?x2))
+
+;; (EAT OATMEAL WITH FRUIT COMMA OR HEARTY BACON STRIPS AND PANCAKES)
+
+	;; AN EAT[PERSON??] MAY OATMEAL WITH FRUIT.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (OATMEAL_27 ?x1) (WITH_27 ?x1) (FRUIT_27 ?x1))
+
+	;; BACON STRIPS CAN BE HEARTY.
+
+		(and (BACON_27 ?x1) (STRIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEARTY_27 ?x2))
+
+;; (DO SOMETHING FUN UNTIL LATE MORNING READ A BOOK COMMA PLAY A BOARD GAME COMMA OR JUST PRACTICE YOUR VIOLIN UNTIL AROUND TEN O CLOCK AM)
+
+	;; A PERSON MAY HAVE A VIOLIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VIOLIN_27 ?x1))
+
+;; (DO SOMETHING THAT YOU ENJOY COMMA AND IT WILL GET YOU IN A GOOD MOOD FOR THE REST OF THE DAY)
+
+	;; A PERSON MAY ENJOY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY GET A PERSON.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A MOOD CAN BE FOR A REST OF A DAY.
+
+		(and (MOOD_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (REST_27 ?x2) (of_27 ?x2 ?x3) (day_27 ?x3))
+
+	;; A MOOD CAN BE GOOD.
+
+		(and (MOOD_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A DAY MAY HAVE A REST.
+
+		(and (DAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+;; (BAKE COOKIES COMMA LEMON BARS COMMA OR MAKE PUDDING)
+
+	;; COOKIES MAY BAR.
+
+		(and (cookie_27 ?x1) (MAY_27 ?x1) (BAR_27 ?x1))
+
+	;; COOKIES CAN BE BAKE.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAKE_27 ?x2))
+
+;; (YOU WILL NEED IT LATER IN THE DAY)
+
+	;; A PERSON MAY NEED A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (BE SURE TO FOLLOW THE RECIPE INSTRUCTIONS OR YOU COULD END UP WITH ONE TOUGH COOKIE COMMA OR WORSE)
+
+	;; A PERSON MAY END.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (END_27 ?x1))
+
+	;; A COOKIE CAN BE TOUGH.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1) (tough_27 ?x1))
+
+;; (BUT HAVE FUN WITH IT)
+
+	;; FUN CAN BE WITH A THING-REFERRED-TO.
+
+		(and (FUN_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (INVITE A FRIEND COMMA COUSIN COMMA OR SIBLING TO GO TO THE PARK WITH YOU)
+
+	;; A PARK CAN BE WITH A PERSON.
+
+		(and (PARK_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (BRING A PICNIC BASKET FULL OF YUMMY FOOD COMMA AND WHATEVER YOU MADE EARLIER)
+
+	;; FOOD CAN BE YUMMY.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YUMMY_27 ?x2))
+
+	;; A PERSON MAY MAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+;; *** - GET: 'N is not a symbol
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort main loop
+Break 1 [15]>
+
+;; (HAVE A PICNIC IN THE PARK WITH YOUR FRIEND COMMA COUSIN COMMA OR WHOEVER YOU BROUGHT TO THE PARK WITH YOU)
+
+	;; A PICNIC CAN BE IN A PARK.
+
+		(and (PICNIC_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PARK_27 ?x2))
+
+	;; A PARK CAN BE WITH A FRIEND.
+
+		(and (PARK_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (FRIEND_27 ?x2))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+	;; A PERSON MAY BRING TO A PARK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PARK_27 ?x2))
+
+;; (LAY A SOFT BLANKET ON THE GRASS AND JUST HAVE FUN)
+
+	;; A BLANKET CAN BE SOFT.
+
+		(and (BLANKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOFT_27 ?x2))
+
+;; (GOOD FOODS ARE SANDWICHES COMMA APPLES COMMA PEARS COMMA COOKIES COMMA AND BAKED PATATO/CORN CHIPS)
+
+	;; FOODS CAN BE SANDWICHES.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (sandwich_27 ?x2))
+
+	;; FOODS CAN BE GOOD.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (BE SURE TO BRING JUICE BOXES AND WATER BOTTLES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLAY AGAIN IN THE PARK WITH YOUR FRIEND)
+
+	;; A PARK CAN BE WITH A FRIEND.
+
+		(and (PARK_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (FRIEND_27 ?x2))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (HAVE FUN COMMA PLAY TAG COMMA AND SWING ON THE SWINGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU SHOULD HAVE LOTS OF ENERGY FROM THE HEALTHY LUNCH YOU ATE EARLIER)
+
+	;; A PERSON MAY EAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1))
+
+	;; A PERSON MAY HAVE LOTS OF ENERGY FROM A LUNCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LOTS_27 ?x1) (of_27 ?x1 ?x2) (ENERGY_27 ?x2) (FROM_27 ?x2) (A_27 ?x2) (LUNCH_27 ?x2))
+
+	;; A LUNCH CAN BE HEALTHY.
+
+		(and (LUNCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+;; (BE CAREFUL THOUGH COMMA YOU DO N T WANT TO GET HURT ON THE PLAYGROUND)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IF YOU GET TIRED COMMA JUST SIT ON A PARK BENCH AND WATCH THE PRETTY DUCKS COMMA SQUIRRLES COMMA ECT)
+
+	;; A PERSON MAY GET TIRED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (TIRED_27 ?x1))
+
+	;; AN ECT CAN BE DUCKS.
+
+		(and (ECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DUCKS_27 ?x2))
+
+;; (CHANGE INTO YOUR SWIMMING SUIT AND TAKE A DIP IN THE NEIGHBORHOOD POOL WITH YOUR FRIENDS AND SIBLINGS)
+
+	;; A PERSON MAY HAVE A SWIMMING SUIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SWIMMING_27 ?x1) (SUIT_27 ?x1))
+
+	;; A DIP CAN BE IN A NEIGHBORHOOD POOL.
+
+		(and (DIP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (NEIGHBORHOOD_27 ?x2) (POOL_27 ?x2))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (MAKE IT A PARTY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SWIM TO YOUR HEARTS DESIRE COMMA YOU CAN EVEN RACE YOUR FRIENDS)
+
+	;; A PERSON MAY RACE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RACE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (JUMP INTO THE DEEP END IF YOU CAN SWIM COMMA AND HAVE A CONTEST TO SEE WHO CAN MAKE THE BEST SPLASH)
+
+	;; AN END CAN BE DEEP.
+
+		(and (END_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEEP_27 ?x2))
+
+	;; A PERSON MAY SWIM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SWIM_27 ?x1))
+
+	;; A SPLASH CAN BE BEST.
+
+		(and (SPLASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (HEAD HOME AND DO SOMETHING QUITE AND VERY FUN COMMA LIKE STUDY FOR SCHOOL COMMA TIDY UP YOUR ROOM COMMA ORGANIZE YOUR DRESSER COMMA AND EVEN PRACTICE YOUR MUSICAL INSTRUMENT)
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE A DRESSER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRESSER_27 ?x1))
+
+	;; A PERSON MAY HAVE AN INSTRUMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSTRUMENT_27 ?x1))
+
+	;; AN INSTRUMENT CAN BE MUSICAL.
+
+		(and (INSTRUMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MUSICAL_27 ?x2))
+
+;; (IF THIS IS N T YOUR STYLE COMMA MAKE SOMETHING WITH CLAY COMMA PLAY LEGOS COMMA OR JUST DANCE AROUND TO YOUR FAVORITE MUSIC)
+
+	;; A THING CAN BE A STYLE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STYLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A STYLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STYLE_27 ?x1))
+
+	;; A PERSON MAY HAVE MUSIC.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MUSIC_27 ?x1))
+
+	;; MUSIC CAN BE FAVORITE.
+
+		(and (MUSIC_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (SING LIKE NOBODY IS LISTENING COMMA DANCE LIKE NOBODY IS WATCHING)
+
+	;; DANCE MAY WATCH.
+
+		(and (DANCE_27 ?x1) (MAY_27 ?x1) (WATCH_27 ?x1))
+
+	;; NOBODY MAY LISTEN.
+
+		(and (NOBODY_27 ?x1) (MAY_27 ?x1) (LISTEN_27 ?x1))
+
+;; (JUST HAVE FUN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (EAT A YUMMY IN MY TUMMMY DINNER WITH YOUR PARENTS COMMA SIBLINGS COMMA AND PETS)
+
+	;; A YUMMY CAN BE IN A DINNER.
+
+		(and (YUMMY_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DINNER_27 ?x2))
+
+	;; A PERSON MAY HAVE A DINNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DINNER_27 ?x1))
+
+	;; A DINNER CAN BE TUMMMY.
+
+		(and (DINNER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TUMMMY_27 ?x2))
+
+	;; A PERSON MAY HAVE PARENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+;; (ASK YOUR MOM IF YOU CAN INVITE A FEW FRIENDS OVER FOR DINNER)
+
+	;; A PERSON MAY HAVE A MOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOM_27 ?x1))
+
+	;; A PERSON MAY INVITE_OVER FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INVITE_5FOVER_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (GOOD DINNERS ARE CHICKEN AND VEGETABLES COMMA HOMEMADE FRIED POTATO SLICES COMMA BAKED POTATO COMMA AND FOR A SPECIAL OCCASION COMMA TURKEY)
+
+	;; DINNERS CAN BE GOOD.
+
+		(and (dinner_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; POTATO SLICES CAN BE HOMEMADE.
+
+		(and (POTATO_27 ?x1) (SLICES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOMEMADE_27 ?x2))
+
+	;; POTATO SLICES CAN BE FRIED.
+
+		(and (POTATO_27 ?x1) (SLICES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRIED_27 ?x2))
+
+	;; A POTATO CAN BE BAKED.
+
+		(and (POTATO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAKED_27 ?x2))

@@ -1,0 +1,755 @@
+;; (THOSE WANTING TO SPEND MORE TIME IN THE PARK AND LESS ON THE ROAD MAY WISH TO CONSIDER COMMUTER FLIGHTS FROM PHOENIX TO FLAGSTAFF COMMA ARIZONA -LRB- FLG -RRB- OR PAGE COMMA ARIZONA -LRB- PGA -RRB-)
+
+	;; 
+
+	;; ((:I (:Q THE THING-REFERRED-TO.N) WANT.V NIL))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (THE_27 ?x1) (THING-REFERRED-TO_2EN_27 ?x1) (WANT_2EV_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU WILL DRIVE TO THE AREA COMMA ESTIMATED DRIVE TIMES TO THE SOUTH RIM FROM MAJOR WESTERN CITIES ARE AS FOLLOWS  PHOENIX COMMA ARIZONA  4.5 HOURS LAS VEGAS COMMA NEVADA  HOURS ALBUQUERQUE COMMA NEW MEXICO 
+ HOURS LOS ANGELES COMMA CALIFORNIA  HOURS SALT LAKE CITY COMMA UTAH  HOURS DENVER COMMA COLORADO  HOURS DECIDE WHICH PART OF THE GRAND CANYON TO VISIT)
+
+	;; A PERSON MAY DRIVE TO AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRIVE_27 ?x1) (to_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; DRIVE TIMES CAN BE TO A SOUTH_RIM[PERSON??].
+
+		(and (DRIVE_27 ?x1) (TIMES_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (SOUTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; DRIVE TIMES CAN BE ESTIMATED.
+
+		(and (DRIVE_27 ?x1) (TIMES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESTIMATED_27 ?x2))
+
+	;; A SOUTH_RIM[PERSON??] CAN BE FROM CITIES.
+
+		(and (SOUTH_5FRIM_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (FROM_27 ?x1) (CITIES_27 ?x1))
+
+	;; HOURS MAY DECIDE.
+
+		(and (hour_27 ?x1) (MAY_27 ?x1) (DECIDE_27 ?x1))
+
+;; (IF IT IS YOUR FIRST VISIT TO GRAND CANYON NATIONAL PARK AND/OR YOU ARE TRAVELING WITH CHILDREN COMMA YOU LL MOST LIKELY WANT TO VISIT THE SOUTH RIM FOR ITS RELATIVE ABUNDANCE OF HOTELS COMMA SERVICES AND
+ ACTIVITIES)
+
+	;; A PERSON MAY LL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A VISIT TO A GRAND_CANYON_NATIONAL_PARK_AND/OR[PERSON??].
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (VISIT_27 ?x2) (to_27 ?x2 ?x3) (A_27 ?x3) (GRAND_5FCANYON_5FNATIONAL_5FPARK_5FAND_2FOR_27 ?x3) (kbs2_kif_quote_5B_27 ?x3) (PERSON_27 ?x3))
+
+	;; A VISIT CAN BE TO A GRAND_CANYON_NATIONAL_PARK_AND/OR[PERSON??].
+
+		(and (VISIT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?e1 ?x2) (A_27 ?x2) (GRAND_5FCANYON_5FNATIONAL_5FPARK_5FAND_2FOR_27 ?x2) )
+
+	;; A PERSON MAY HAVE A VISIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VISIT_27 ?x1))
+
+	;; A PERSON MAY TRAVEL WITH CHILDREN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1) (WITH_27 ?x1) (CHILDREN_27 ?x1))
+
+	;; HOTELS MAY UNDERGO AN ABUNDANCE.
+
+		(and (HOTELS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (ABUNDANCE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE AN ABUNDANCE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ABUNDANCE_27 ?x1))
+
+	;; AN ABUNDANCE CAN BE RELATIVE.
+
+		(and (ABUNDANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELATIVE_27 ?x2))
+
+;; (GRAND CANYON SOUTH RIM IS OPEN YEAR-ROUND COMMA MAKING IT THE BEST CHOICE FOR A WINTERTIME VISIT)
+
+	;; A CHOICE CAN BE FOR A VISIT.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (VISIT_27 ?x2))
+
+	;; A CHOICE CAN BE BEST.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A VISIT CAN BE WINTERTIME.
+
+		(and (VISIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WINTERTIME_27 ?x2))
+
+;; (NOTE THAT YOU LL BE AT A HIGH ALTITUDE COMMA SO YOU MIGHT WANT TO READ HOW TO PREVENT ALTITUDE SICKNESS COMMA JUST IN CASE)
+
+	;; AN ALTITUDE CAN BE HIGH.
+
+		(and (ALTITUDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (PLAN TO EXPERIENCE SUNRISE COMMA SUNSET COMMA OR BOTH IF POSSIBLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THEY ARE SPECTACULAR)
+
+	;; INDIVIDUAL -S CAN BE SPECTACULAR.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECTACULAR_27 ?x2))
+
+;; (IF YOU PLAN TO SPEND THE NIGHT MAKE YOUR ROOM RESERVATIONS BEFORE YOU LEAVE HOME)
+
+	;; A PERSON MAY HAVE ROOM RESERVATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROOM_27 ?x1) (RESERVATIONS_27 ?x1))
+
+	;; A PERSON MAY LEAVE HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1) (HOME_27 ?x1))
+
+;; (ROOMS ARE LIMITED)
+
+	;; ROOMS CAN BE LIMITED.
+
+		(and (room_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIMITED_27 ?x2))
+
+;; (CAMPING IS AVAILABLE BUT ALSO LIMITED)
+
+	;; CAMPING CAN BE AVAILABLE.
+
+		(and (camping_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+;; (PLAN TO DO SOME HIKING DOWN ONE OF THE TRAILS INTO THE CANYON TO FULLY APPRECIATE THE SCALE OF THE CANYON)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IT WILL TAKE TWICE THE TIME TO HIKE OUT OF THE CANYON THAT IT WILL TO HIKE DOWN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A HALF HOUR WALK DOWN WILL TAKE AT LEAST AN HOUR BACK)
+
+	;; A HOUR WALK MAY TAKE.
+
+		(and (HOUR_27 ?x1) (WALK_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+	;; A HOUR WALK CAN BE HALF.
+
+		(and (HOUR_27 ?x1) (WALK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HALF_27 ?x2))
+
+;; (AN HOUR DOWN CAN EASILY BECOME AHOUR ORDEAL WITH TIME USED TO ENJOY THE VIEW)
+
+	;; 
+
+	;; ((:I (:Q A{N} HOUR.N) BECOME.V (:F K (:F NN AHOUR.N ORDEAL.N)) (:P WITH.P NIL)))
+
+		(and (I_27 ?x3) (Q_27 ?x2) (A_27 ?x2) (N_27 ?x1) (HOUR_2EN_27 ?x2) (BECOME_2EV_27 ?x3) (F_27 ?x4) (K_27 ?x4) (F_27 ?x5) (NN_27 ?x5) (AHOUR_2EN_27 ?x5) (ORDEAL_2EN_27 ?x5) (P_27 ?x6) (WITH_2EP_27 ?x6) (NIL_27 ?x6))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DEHYDRATION IS A COMMON PROBLEM)
+
+	;; A DEHYDRATION[PERSON??] CAN BE A PROBLEM.
+
+		(and (DEHYDRATION_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+	;; A PROBLEM CAN BE COMMON.
+
+		(and (PROBLEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+;; (BRING WATER WITH YOU EVEN FOR SHORT HIKES)
+
+	;; WATER CAN BE WITH A PERSON.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; WATER CAN BE BRING.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (bring_27 ?x2))
+
+	;; HIKES CAN BE SHORT.
+
+		(and (hike_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+;; (SHARE YOUR WATER WITH THOSE YOU SEE ARE SUFFERING)
+
+	;; WATER MAY SUFFER.
+
+		(and (WATER_27 ?x1) (MAY_27 ?x1) (SUFFER_27 ?x1))
+
+	;; WATER CAN BE WITH A THING.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE WATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WATER_27 ?x1))
+
+	;; A PERSON MAY SEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1))
+
+;; (YOU WILL BECOME AN INSTANT HERO)
+
+	;; A PERSON MAY BECOME A HERO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BECOME_27 ?x1) (A_27 ?x1) (HERO_27 ?x1))
+
+	;; A HERO CAN BE INSTANT.
+
+		(and (HERO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSTANT_27 ?x2))
+
+;; (GRAND CANYON NORTH RIM COMMA WHICH IS ONLY OPEN FROM MID-MAY THROUGH MID-OCTOBER COMMA IS BETTER SUITED TO COUPLES COMMA HIKERS AND THOSE SEEKING A QUIETER COMMA MORE LOW-KEY GRAND CANYON EXPERIENCE)
+
+	;; A GRAND_CANYON_NORTH_RIM[PERSON??] MAY BE SUIT -ED TO COUPLES.
+
+		(and (GRAND_5FCANYON_5FNORTH_5FRIM_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (SUIT_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (to_27 ?e1 ?x2) (couple_27 ?x2))
+
+	;; AN EXPERIENCE CAN BE LOW-KEY.
+
+		(and (EXPERIENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW-KEY_27 ?x2))
+
+	;; A GRAND_CANYON[PERSON??] MAY HAVE AN EXPERIENCE.
+
+		(and (GRAND_5FCANYON_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; (VISITOR SERVICES AT THE NORTH RIM ARE FEWER IN NUMBER AND SMALLER IN SCALE)
+
+	;; SERVICES CAN BE FEWER IN NUMBER.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEWER_27 ?x2) (in_27 ?e1 ?x3) (NUMBER_27 ?x3))
+
+	;; SERVICES CAN BE AT A NORTH_RIM[PERSON??].
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (NORTH_5FRIM_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SERVICES CAN BE VISITOR.
+
+		(and (service_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITOR_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [23]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [24]>
+
+;; (GRAND CANYON RESERVATIONS CENTERS TEND TO EXPERIENCE VERY HIGH CALL VOLUME DURING PEAK TRAVEL MONTHS)
+
+	;; A CALL VOLUME CAN BE HIGH.
+
+		(and (CALL_27 ?x1) (VOLUME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; TRAVEL MONTHS CAN BE PEAK.
+
+		(and (TRAVEL_27 ?x1) (MONTHS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEAK_27 ?x2))
+
+;; (GRAND CANYON RESERVATIONS CENTERS TEND TO EXPERIENCE VERY HIGH CALL VOLUME DURING PEAK TRAVEL MONTHS)
+
+	;; A CALL VOLUME CAN BE HIGH.
+
+		(and (CALL_27 ?x1) (VOLUME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; TRAVEL MONTHS CAN BE PEAK.
+
+		(and (TRAVEL_27 ?x1) (MONTHS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEAK_27 ?x2))
+
+;; (GRAND CANYON RESERVATIONS CENTERS TEND TO EXPERIENCE VERY HIGH CALL VOLUME DURING PEAK TRAVEL MONTHS)
+
+	;; A CALL VOLUME CAN BE HIGH.
+
+		(and (CALL_27 ?x1) (VOLUME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; TRAVEL MONTHS CAN BE PEAK.
+
+		(and (TRAVEL_27 ?x1) (MONTHS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEAK_27 ?x2))
+
+;; (GRAND CANYON RESERVATIONS CENTERS TEND TO EXPERIENCE VERY HIGH CALL VOLUME DURING PEAK TRAVEL MONTHS)
+
+	;; A CALL VOLUME CAN BE HIGH.
+
+		(and (CALL_27 ?x1) (VOLUME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; TRAVEL MONTHS CAN BE PEAK.
+
+		(and (TRAVEL_27 ?x1) (MONTHS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEAK_27 ?x2))
+
+;; (GRAND CANYON RESERVATIONS CENTERS TEND TO EXPERIENCE VERY HIGH CALL VOLUME DURING PEAK TRAVEL MONTHS)
+
+	;; A CALL VOLUME CAN BE HIGH.
+
+		(and (CALL_27 ?x1) (VOLUME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; TRAVEL MONTHS CAN BE PEAK.
+
+		(and (TRAVEL_27 ?x1) (MONTHS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEAK_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [25]>
+
+;; (PRINT YOUR VARIOUS CONFIRMATIONS AND KEEP THEM IN A NOTEBOOK COMMA ENVELOPE COMMA OR WHATEVER WORKS FOR YOU)
+
+	;; A PERSON MAY HAVE CONFIRMATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONFIRMATIONS_27 ?x1))
+
+;; (TAKE THIS PAPERWORK WITH YOU ON VACATION SO YOU CAN REFER TO IT QUICKLY IF NEEDED)
+
+	;; A PERSON CAN BE ON VACATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (VACATION_27 ?x2))
+
+	;; A PERSON MAY REFER TO A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REFER_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (YOU CAN LATER USE SOME OF IT FOR TRIPS DOWN MEMORY LANE  HOW TO START A SCRAPBOOK)
+
+	;; A PERSON MAY USE SOME_NUMBER_OF THING OF A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (THING-REFERRED-TO_27 ?x2))

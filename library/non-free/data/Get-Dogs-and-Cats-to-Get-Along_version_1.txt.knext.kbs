@@ -1,0 +1,56 @@
+;; (TOYSKEEP THE PETS SEPARATE AT FIRST)
+
+	;; PETS CAN BE SEPARATE.
+
+		(and (pet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (ALTERNATE ROOMS IN WHICH YOU KEEP THE ANIMALS COMMA SO THEY CAN SNIFF WHERE EACH OTHER HAS BEEN WITHOUT THE OTHER ANIMAL BEING PRESENT)
+
+	;; ROOMS CAN BE ALTERNATE.
+
+		(and (ROOMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTERNATE_27 ?x2))
+
+	;; A PERSON MAY KEEP ANIMALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (ANIMALS_27 ?x1))
+
+	;; AN ANIMAL CAN BE PRESENT.
+
+		(and (ANIMAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRESENT_27 ?x2))
+
+;; (PLACE THE SMALLER ANIMAL IN A CRATE FOR SAFETY AND ALLOW THE LARGER ANIMAL TO SNIFF ALL AROUND IT)
+
+	;; AN ANIMAL CAN BE SMALLER.
+
+		(and (ANIMAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; A CRATE CAN BE FOR SAFETY.
+
+		(and (CRATE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SAFETY_27 ?x2))
+
+	;; AN ANIMAL CAN BE LARGER.
+
+		(and (ANIMAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+	;; SOME_NUMBER_OF THING CAN BE AROUND A THING-REFERRED-TO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (REPEAT THIS IN 10-20 MINUTE INCREMENTS FOR A FEW DAYS)
+
+	;; A THING CAN BE IN SOME_NUMBER_OF INCREMENTS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (INCREMENTS_27 ?x2))
+
+	;; SOME_NUMBER_OF INCREMENTS CAN BE FOR DAYS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (INCREMENTS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (day_27 ?x2))
+
+	;; INCREMENTS CAN BE MINUTE.
+
+		(and (increment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINUTE_27 ?x2))

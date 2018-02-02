@@ -1,0 +1,601 @@
+;; (CONSIDER A SMALLER ONE IF YOU WANT TO CARRY THE BAG LONG DISTANCES)
+
+	;; AN ONE CAN BE SMALLER.
+
+		(and (be_27 ?e1 ?x1) (SMALLER_27 ?x1))
+
+	;; DISTANCES CAN BE LONG.
+
+		(and (distance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (SIZE AND WEIGHT EFFICIENCY  CHOOSE A BAG AS LITTLE OF WHOSE SIZE AND WEIGHT IS ITSELF AS POSSIBLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AVOID THE NEED FOR EXPENSIVE EXTRA-LIGHT MATERIALS WITH A SIMPLE TOUGH COMMA FLOPPY NYLON BAG)
+
+	;; MATERIALS CAN BE EXPENSIVE.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+	;; MATERIALS CAN BE EXTRA-LIGHT.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA-LIGHT_27 ?x2))
+
+;; (AVOID BULKY EXTENDING HANDLES AND WHEELS WITH A BAG WITH A STRAP COMMA OR COMMA PREFERABLY COMMA MUCH MORE COMFORTABLE AND UNRESTRICTIVE BACKPACK-TYPE STRAPS)
+
+	;; EXTENDING MAY HANDLE.
+
+		(and (EXTENDING_27 ?x1) (MAY_27 ?x1) (HANDLE_27 ?x1))
+
+	;; EXTENDING CAN BE AVOID.
+
+		(and (extending_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+	;; EXTENDING CAN BE BULKY.
+
+		(and (extending_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BULKY_27 ?x2))
+
+	;; A BAG CAN BE WITH A STRAP.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (STRAP_27 ?x2))
+
+	;; STRAPS CAN BE COMFORTABLE.
+
+		(and (strap_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+	;; STRAPS CAN BE BACKPACK-TYPE.
+
+		(and (strap_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKPACK-TYPE_27 ?x2))
+
+;; (AVOID OR REDUCE A NEED FOR PADDING BY PACKING SEMI-DELICATE ITEMS SUCH AS STURDY LAPTOPS AND MODERN TOUGH PLASTIC CAMERAS WITHIN CLOTHES)
+
+	;; ITEMS CAN BE SEMI-DELICATE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEMI-DELICATE_27 ?x2))
+
+	;; LAPTOPS CAN BE STURDY.
+
+		(and (laptop_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STURDY_27 ?x2))
+
+	;; CAMERAS CAN BE MODERN.
+
+		(and (CAMERAS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERN_27 ?x2))
+
+	;; CAMERAS CAN BE TOUGH.
+
+		(and (camera_27 ?x1) (be_27 ?e1 ?x1) (tough_27 ?x1))
+
+	;; CAMERAS CAN BE PLASTIC.
+
+		(and (camera_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (POCKETS  MULTIPLE POCKETS HELP KEEP THINGS ORGANIZED)
+
+	;; POCKETS MAY HELP.
+
+		(and (POCKETS_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1))
+
+	;; POCKETS CAN BE MULTIPLE.
+
+		(and (pocket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+	;; THINGS CAN BE ORGANIZED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?e2) (organize_27 ?e2 ?x1))
+
+;; (POCKETS ACCESSIBLE FROM THE OUTSIDE PROVIDE CONVENIENT ACCESS TO TRAVEL PARAPHERNALIA SUCH AS AN INFLATABLE NECK PILLOW OR OTHER SLEEPING AIDS AND SNACKS COMMA WITHOUT UNPACKING OR RUMMAGING)
+
+	;; POCKETS CAN BE ACCESSIBLE FROM AN OUTSIDE.
+
+		(and (pocket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCESSIBLE_27 ?x2) (FROM_27 ?x2) (AN_27 ?x2) (OUTSIDE_27 ?x2))
+
+	;; ACCESS CAN BE CONVENIENT.
+
+		(and (access_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONVENIENT_27 ?x2))
+
+	;; A NECK PILLOW CAN BE INFLATABLE.
+
+		(and (NECK_27 ?x1) (PILLOW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INFLATABLE_27 ?x2))
+
+	;; AIDS CAN BE SLEEPING.
+
+		(and (AIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLEEPING_27 ?x2))
+
+;; (YOUR CHOICE OF BAG MAY EVOLVE WITH YOUR CHOICES FOR ITS CONTENTS)
+
+	;; A CHOICE OF BAG MAY EVOLVE WITH CHOICES.
+
+		(and (CHOICE_27 ?x1) (of_27 ?x1 ?x2) (BAG_27 ?x2) (MAY_27 ?x2) (EVOLVE_27 ?x2) (WITH_27 ?x2) (CHOICES_27 ?x2))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+	;; CHOICES CAN BE FOR CONTENTS.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (content_27 ?x2))
+
+	;; A PERSON MAY HAVE CHOICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHOICES_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE CONTENTS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (content_27 ?x1))
+
+;; (IT SHOULD HAVE JUST A LITTLE ROOM FOR EXTRAS COMMA NOT SO MUCH THAT THE CAREFULLY PACKED CONTENTS SHIFT AROUND IN TRANSIT)
+
+	;; A THING-REFERRED-TO MAY HAVE A ROOM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A ROOM CAN BE FOR EXTRAS.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EXTRAS_27 ?x2))
+
+	;; CONTENTS MAY SHIFT_AROUND IN TRANSIT.
+
+		(and (content_27 ?x1) (MAY_27 ?x1) (SHIFT_5FAROUND_27 ?x1) (in_27 ?x1 ?x2) (TRANSIT_27 ?x2))
+
+	;; CONTENTS CAN BE PACKED.
+
+		(and (content_27 ?x1) (be_27 ?e1 ?x1 ?e2) (pack_27 ?e2 ?x1))
+
+;; (ASK YOURSELF IF EACH ITEM IS REALLY NECESSARY)
+
+	;; SOME_NUMBER_OF ITEM CAN BE NECESSARY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [11]>
+
+;; (GATHER ESSENTIALS  THREE CHANGES OF CLOTHING -LRB- AT MOST -RRB-)
+
+	;; ESSENTIALS CAN BE GATHER.
+
+		(and (essential_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GATHER_27 ?x2))
+
+	;; SOME_NUMBER_OF CHANGES CAN BE CONSTITUTED_OF_OR_FILLED_WITH CLOTHING.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CHANGES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CLOTHING_27 ?x2))
+
+;; (PERHAPS MORE SOCKS COMMA UNDERWEAR AND SHIRTS THAN PANTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONSIDER SYNTHETICS COMMA WHICH ARE LIGHTER COMMA FOLD UP SMALLER COMMA SLIDE PAST EACH OTHER READILY RATHER THAN DISTORTING PILES COMMA AND DRY FASTER -- ESPECIALLY FOR PANTS COMMA WHERE ANY DIFFERENCE IN FEEL
+ IS LESS NOTICEABLE)
+
+	;; SYNTHETICS CAN BE CONSIDER.
+
+		(and (synthetic_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSIDER_27 ?x2))
+
+	;; A DIFFERENCE CAN BE NOTICEABLE.
+
+		(and (DIFFERENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NOTICEABLE_27 ?x2))
+
+	;; A DIFFERENCE CAN BE IN FEEL.
+
+		(and (DIFFERENCE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (FEEL_27 ?x2))
+
+;; (LAUNDRY DETERGENT FOR WASHING BY HAND)
+
+	;; A DETERGENT CAN BE LAUNDRY.
+
+		(and (DETERGENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LAUNDRY_27 ?x2))
+
+;; (POWDERED IS MUCH EASIER TO HANDLE THAN LIQUID COMMA AND ALLOWED ON AIRPLANES)
+
+	;; A POWDERED[PERSON??] CAN BE EASIER.
+
+		(and (POWDERED_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (EASIER_27 ?x1))
+
+;; (A UNIVERSAL SINK STOPPER AND PORTABLE CLOTHESLINE)
+
+	;; A SINK STOPPER MAY CLOTHESLINE.
+
+		(and (SINK_27 ?x1) (STOPPER_27 ?x1) (MAY_27 ?x1) (CLOTHESLINE_27 ?x1))
+
+	;; A SINK STOPPER CAN BE UNIVERSAL.
+
+		(and (SINK_27 ?x1) (STOPPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNIVERSAL_27 ?x2))
+
+;; (A UNIVERSAL SINK STOPPER -LRB- A FLAT RUBBER DISK COMMA AVAILABLE AT ANY HARDWARE STORE -RRB-)
+
+	;; A SINK STOPPER CAN BE UNIVERSAL.
+
+		(and (SINK_27 ?x1) (STOPPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNIVERSAL_27 ?x2))
+
+	;; A STORE CAN BE FLAT.
+
+		(and (STORE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (A RUBBER BALL CAN BE AN ALTERNATIVE COMMA BUT CHECK THAT IT DOES N T TEND TO FLOAT AND IS PLENTY BIG NOT TO RISK FALLING IN)
+
+	;; A RUBBER BALL CAN BE AN ALTERNATIVE.
+
+		(and (RUBBER_27 ?x1) (BALL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (ALTERNATIVE_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (A PORTABLE CLOTHESLINE -LRB- AVAILABLE AT ANY CAMPING OR TRAVEL GOODS STORE -RRB-)
+
+	;; A CLOTHESLINE CAN BE PORTABLE.
+
+		(and (CLOTHESLINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PORTABLE_27 ?x2))
+
+;; (TOILETRIES MEDICATIONS EMPTY WATER CONTAINER)
+
+	;; TOILETRIES MAY MEDICATION WATER CONTAINER.
+
+		(and (TOILETRIES_27 ?x1) (MAY_27 ?x1) (MEDICATION_27 ?x1) (WATER_27 ?x1) (CONTAINER_27 ?x1))
+
+	;; A WATER CONTAINER CAN BE EMPTY.
+
+		(and (WATER_27 ?x1) (CONTAINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+;; (A BOTTLE WILL DO)
+
+	;; A BOTTLE MAY DO.
+
+		(and (BOTTLE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [12]>
+
+;; (EMPTY PLASTIC BAGS)
+
+	;; PLASTIC CAN BE EMPTY.
+
+		(and (PLASTIC_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+;; (YOU CAN PUT DIRTY CLOTHES IN THEM UNTIL WASHING TO KEEP THEM FROM CONTAMINATING THE CLEAN ONES)
+
+	;; A PERSON MAY PUT CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; CLOTHES CAN BE IN INDIVIDUAL -S.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; CLOTHES CAN BE DIRTY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+	;; ONES CAN BE CLEAN.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (THEY SHOULD BE CLEAR SO THEY ARE N T CONFUSED WITH TRASH AND THROWN AWAY)
+
+	;; INDIVIDUAL -S CAN BE CLEAR.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE CONFUSE -ED WITH TRASH.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONFUSE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (TRASH_27 ?x2))
+
+;; (TRY PRODUCE BAGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE BUNDLE METHOD OF PACKING)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [13]>
+
+;; (STUFF UNDERWEAR AND SOCKS INTO SHOES TO SAVE SPACE AND TO PREVENT CRUSHING SHOES)
+
+	;; UNDERWEAR AND SOCKS CAN BE INTO SHOES.
+
+		(and (UNDERWEAR_27 ?x1) (and_27 ?x2 ?x1 ?x3) (SOCKS_27 ?x3) (be_27 ?e1 ?x1 ?x4) (INTO_27 ?x4) (SHOES_27 ?x4))
+
+	;; A STUFF[PERSON??] MAY HAVE UNDERWEAR AND SOCKS.
+
+		(and (STUFF_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (UNDERWEAR_27 ?x1) (and_27 ?x2 ?x1 ?x3) (SOCKS_27 ?x3))
+
+	;; SHOES CAN BE CRUSHING.
+
+		(and (shoe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRUSHING_27 ?x2))
+
+;; (THE BUNDLE METHOD SAVES THE MOST SPACE AND ALSO REDUCES WRINKLING)
+
+	;; A BUNDLE METHOD MAY SAVE A SPACE.
+
+		(and (BUNDLE_27 ?x1) (METHOD_27 ?x1) (MAY_27 ?x1) (SAVE_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+;; (THE NOW-STANDARD QUART BAGGIE)
+
+	;; A QUART MAY BAGGIE.
+
+		(and (QUART_27 ?x1) (MAY_27 ?x1) (BAGGIE_27 ?x1))
+
+	;; A QUART CAN BE NOW-STANDARD.
+
+		(and (QUART_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NOW-STANDARD_27 ?x2))
+
+;; (BUY TOILETRIES IN MINIATURE SIZES OR TRANSFER LIQUID CONTENTS LIKE SHAMPOO INTO SMALLER TRAVEL BOTTLES)
+
+	;; SIZES CAN BE MINIATURE.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; CONTENTS CAN BE LIQUID.
+
+		(and (content_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIQUID_27 ?x2))
+
+	;; TRAVEL BOTTLES CAN BE SMALLER.
+
+		(and (travel_27 ?x1) (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (SAVE HOTEL/AIRPLANE TOILETRIES SO YOU CAN PACK THEM THE NEXT TIME YOU TRAVEL)
+
+	;; TOILETRIES CAN BE HOTEL/AIRPLANE.
+
+		(and (toiletry_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOTEL_2FAIRPLANE_27 ?x2))
+
+	;; A PERSON MAY PACK INDIVIDUAL -S A TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+	;; A PERSON MAY TRAVEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1))
+
+;; (PUT TOILETRIES THAT COULD LEAK -LRB- SHAMPOO COMMA GEL COMMA ETC. -RRB- IN PLASTIC BAGS TO AVOID THE HASSLE OF HAVING YOUR CLOTHES COVERED IN LIQUID SOAP)
+
+	;; TOILETRIES MAY BE COVER -ED IN SOAP.
+
+		(and (toiletry_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COVER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (SOAP_27 ?x3))
+
+	;; TOILETRIES CAN BE IN BAGS.
+
+		(and (toiletry_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (BAGS_27 ?x2))
+
+	;; TOILETRIES CAN BE PUT.
+
+		(and (toiletry_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUT_27 ?x2))
+
+	;; BAGS CAN BE PLASTIC.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; A SOAP CAN BE LIQUID.
+
+		(and (SOAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIQUID_27 ?x2))
+
+;; (IF YOU USE BAR SOAP -LRB- WHICH CAN SUBSTITUTE FOR OTHER FORMS OF SOAP SUCH AS SHAMPOO AND SHAVING CREAM -RRB- COMMA GET A VENTILATED HOLDER FOR IT SO IT DOES N T TURN TO MUSH THROUGH USE AND STORAGE)
+
+	;; A PERSON MAY USE BAR SOAP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (BAR_27 ?x1) (SOAP_27 ?x1))
+
+	;; FORMS CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOAP.
+
+		(and (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOAP_27 ?x2))
+
+	;; A HOLDER CAN BE FOR A THING-REFERRED-TO.
+
+		(and (HOLDER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A HOLDER CAN BE VENTILATED.
+
+		(and (HOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VENTILATED_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (BAGS ARE ALSO USEFUL IF CLOTHING DOES N T COMPLETELY DRY OVERNIGHT)
+
+	;; BAGS CAN BE USEFUL.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEFUL_27 ?x2))
+
+	;; CLOTHING MAY DO.
+
+		(and (CLOTHING_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (FOR QUICKER TRIPS THROUGH AIRPORT SECURITY COMMA TRY TO USE SOLIDS RATHER THAN LIQUIDS)
+
+	;; TRIPS CAN BE QUICKER.
+
+		(and (TRIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUICKER_27 ?x2))
+
+;; (SHAMPOO IS AVAILABLE IN SOLID SOAP-BLOCK FORM AND EVEN SINGLE-USE SHEETS)
+
+	;; A SHAMPOO[PERSON??] CAN BE AVAILABLE IN FORM.
+
+		(and (SHAMPOO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (AVAILABLE_27 ?x1) (in_27 ?e1 ?x2) (FORM_27 ?x2))
+
+	;; A FORM CAN BE SOLID.
+
+		(and (FORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID_27 ?x2))
+
+	;; A FORM CAN BE SOAP-BLOCK.
+
+		(and (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOAP-BLOCK_27 ?x2))
+
+;; (CHECK AT A BACKPACKING OR OUTDOOR STORE)
+
+	;; A STORE CAN BE BACKPACKING.
+
+		(and (store_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKPACKING_27 ?x2))
+
+;; (ALTERNATIVELY COMMA PURCHASE TOILETRIES AT YOUR DESTINATION TO AVOID SECURITY ISSUES)
+
+	;; A PERSON MAY HAVE A DESTINATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESTINATION_27 ?x1))
+
+;; (THEY MAY EVEN BE CHEAPER COMMA DEPENDING ON THE CURRENCY)
+
+	;; INDIVIDUAL -S CAN BE CHEAPER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAPER_27 ?x2))
+
+;; (READ THE ELECTRONICS LABEL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU MAY NEED A TRANSFORMER TO CHANGE THE CURRENT COMMA FREQUENCY COMMA AND/OR VOLTAGE AS WELL AS THE PIN CONFIGURATION)
+
+	;; A PERSON MAY NEED A TRANSFORMER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (TRANSFORMER_27 ?x1))
+
+;; (MINIMIZE THE NUMBER OF ITEMS THAT REQUIRE ELECTRICITY COMMA ESPECIALLY THOSE THAT NEED TO BE PLUGGED IN CONTINUALLY RATHER THAN BRIEFLY TO RECHARGE COMMA AS CONVERTERS CAN BE COSTLY AND SPACE-CONSUMING)
+
+	;; CONVERTERS CAN BE COSTLY.
+
+		(and (converter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COSTLY_27 ?x2))
+
+;; (SHAVING COMMA OF COURSE COMMA CAN BE DONE BY HAND)
+
+	;; A SHAVING[PERSON??] MAY BE DO -ED BY HAND.
+
+		(and (SHAVING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DO_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (BY_27 ?x1) (HAND_27 ?x1))
+
+;; (DISPOSABLE BATTERIES CAN BE A GOOD OPTION FOR SIMPLE LOW-POWER ELECTRONICS SUCH AS CLOCKS COMMA BUT ARE N T A GREAT OPTION FOR HIGHER-POWER DEVICES SUCH AS CAMERAS  THEY WILL DIE MUCH FASTER THAN RECHARGEABLES)
+
+	;; BATTERIES CAN BE AN OPTION.
+
+		(and (battery_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTION_27 ?x2))
+
+	;; BATTERIES CAN BE DISPOSABLE.
+
+		(and (battery_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPOSABLE_27 ?x2))
+
+	;; AN OPTION CAN BE FOR ELECTRONICS.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ELECTRONICS_27 ?x2))
+
+	;; AN OPTION CAN BE GOOD.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; ELECTRONICS CAN BE SIMPLE.
+
+		(and (electronic_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; ELECTRONICS CAN BE LOW-POWER.
+
+		(and (electronic_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW-POWER_27 ?x2))
+
+	;; AN OPTION CAN BE GREAT.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; DEVICES CAN BE HIGHER-POWER.
+
+		(and (device_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER-POWER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DIE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DIE_27 ?x1))

@@ -1,0 +1,61 @@
+;; (PUT UP ART COMMA POSTERS COMMA OR PRINTS PRINTS THAT YOU LIKE)
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (TO ORDER POSTERS ONLINE COMMA TRY WWW.ALLPOSTERS.COM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET NEW BED LINENS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE POSTERS WITH PICTURES OF YOU AND YOUR FRIENDS COMMA TICKET STUBS COMMA NOTES YOU PASSED)
+
+	;; PICTURES CAN BE SHOW A PERSON.
+
+		(and (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; FRIENDS MAY NOTE.
+
+		(and (friend_27 ?x1) (MAY_27 ?x1) (NOTE_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; A PERSON MAY PASS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PASS_27 ?x1))
+
+;; (MAKE SURE THAT YOU LIKE YOUR ROOM)
+
+	;; A PERSON MAY LIKE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))

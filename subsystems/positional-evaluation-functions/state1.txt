@@ -1,0 +1,56 @@
+Alive(Organism)
+Dead(Organism)
+
+Prefer(Organism,Alive(Organism),Dead(Organism))
+
+----------------------------------------
+
+Alive(Organism)
+Sick(Organism)
+Dead(Organism)
+
+# Prefer(Organism,Alive(Organism),Dead(Organism))
+Prefer(Organism,Alive(Organism),Sick(Organism))
+Prefer(Organism,Sick(Organism),Dead(Organism))
+
+----------------------------------------
+
+Alive(Organism)
+Sick(Organism)
+Dying(Organism)
+Dead(Organism)
+
+Prefer(Organism,Alive(Organism),Sick(Organism))
+Prefer(Organism,Sick(Organism),Dying(Organism))
+# this last one is debatable
+Prefer(Organism,Dying(Organism),Dead(Organism))
+
+----------------------------------------
+
+Alive(Organism)
+Sick(Organism)
+Dying(Organism)
+Dead(Organism)
+
+Prefer(Organism,Alive(Organism),Sick(Organism))
+Prefer(Organism,Sick(Organism),Dying(Organism))
+# this last one is debatable, how to model that debate
+Prefer(Organism,Dying(Organism),Dead(Organism))
+
+----------------------------------------
+
+# use divisi to extract these state preferences
+
+Live Long and Prosper
+
+
+
+# a list of negative states
+
+Being Dumped
+Being Disliked
+Being Laughed at
+Being Ridiculed
+
+# Maybe get these states from the bible using text mining
+

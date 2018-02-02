@@ -1,0 +1,120 @@
+;; (FILL CONTAINERS FULL WITH A SOIL MIXTURE)
+
+	;; CONTAINERS CAN BE FULL WITH A SOIL MIXTURE.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2) (WITH_27 ?x2) (A_27 ?x2) (SOIL_27 ?x2) (MIXTURE_27 ?x2))
+
+	;; CONTAINERS CAN BE FILL.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2))
+
+;; (PAT DOWN THE SOIL TO BE SURE THERE ARE NO AIR POCKETS OR YOUR SEEDS MIGHT DROP RIGHT TO THE BOTTOM)
+
+	;; A FEMALE MAY DROP.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (DROP_27 ?x1))
+
+	;; A PERSON MAY HAVE SEEDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SEEDS_27 ?x1))
+
+;; (SOW THE HERB SEEDS 1-3 TIMES DEEPER THAN THE SIZE OF THE SEED)
+
+	;; A SEED MAY HAVE A SIZE.
+
+		(and (SEED_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIZE_27 ?x1))
+
+;; (VERY TINY SEEDS NEED ONLY TO BE PRESSED INTO THE SOIL)
+
+	;; SEEDS MAY NEED.
+
+		(and (SEEDS_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; SEEDS CAN BE TINY.
+
+		(and (seed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TINY_27 ?x2))
+
+;; (WATER THE SEEDS AND COVER THE CONTAINERS WITH PLASTIC KITCHEN WRAP)
+
+	;; A KITCHEN WRAP CAN BE PLASTIC.
+
+		(and (KITCHEN_27 ?x1) (WRAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (THIS WILL KEEP THE SOIL WARM AND ELIMINATE THE NEED TO WATER UNTIL THE SEEDLINGS EMERGE)
+
+	;; A SOIL MAY WARM.
+
+		(and (SOIL_27 ?x1) (MAY_27 ?x1) (WARM_27 ?x1))
+
+	;; SEEDLINGS MAY EMERGE.
+
+		(and (SEEDLINGS_27 ?x1) (MAY_27 ?x1) (EMERGE_27 ?x1))
+
+;; (PLACE FLATS IN A WARM COMMA SUNNY AREA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (UNTIL THE SEEDS EMERGE COMMA KEEP THE SOIL DAMP)
+
+	;; SEEDS MAY EMERGE.
+
+		(and (SEEDS_27 ?x1) (MAY_27 ?x1) (EMERGE_27 ?x1))
+
+	;; A SOIL MAY DAMP.
+
+		(and (SOIL_27 ?x1) (MAY_27 ?x1) (DAMP_27 ?x1))
+
+;; (SEEDLINGS EMERGING REMOVE THE PLASTIC ONCE THE SEEDLINGS EMERGE)
+
+	;; SEEDLINGS MAY REMOVE PLASTIC.
+
+		(and (SEEDLINGS_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (PLASTIC_27 ?x1))
+
+	;; SEEDLINGS MAY EMERGE.
+
+		(and (SEEDLINGS_27 ?x1) (MAY_27 ?x1) (EMERGE_27 ?x1))
+
+	;; SEEDLINGS MAY EMERGE.
+
+		(and (SEEDLINGS_27 ?x1) (MAY_27 ?x1) (EMERGE_27 ?x1))
+
+;; (IF YOU PLAN TO TRANSFER YOUR SEEDLINGS TO THE GARDEN COMMA WAIT UNTIL AT LEAST TWO SETS OF LEAVES HAVE EMERGED)
+
+	;; A PERSON MAY HAVE SEEDLINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SEEDLINGS_27 ?x1))
+
+;; (ONCE IT IS WARM ENOUGH COMMA START LEAVING THEM OUTSIDE A FEW HOURS A DAY)
+
+	;; A THING-REFERRED-TO CAN BE WARM.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>
+
+;; (WATER WELL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="big5" />
+<title>Personality Analysis Demo</title>
+</head>
+<body bgcolor="#bfd2bd">
+<h2>個性分析</h2>
+<FONT SIZE="+1">
+歡迎光臨 * * 個性分析系統 * *</FONT>
+<P>心理測驗:
+<OL>
+<LI> 暸解自己的個性
+<LI> 你是什麼樣的人
+<LI> 亂世英雄
+</OL>
+<FORM METHOD=POST ACTION="http://210.70.83.101/servlets/JessServlet">
+  <INPUT TYPE="hidden" NAME="fileRB" VALUE="com">
+  請選題目(one,two,three) :
+<INPUT TYPE="hidden" NAME="fact_name" VALUE=w-y>
+<INPUT TYPE="radio" NAME="slot" VALUE="one" checked>1
+<INPUT TYPE="radio" NAME="slot" VALUE="two" >2
+<INPUT TYPE="radio" NAME="slot" VALUE="three" >3
+<INPUT TYPE="hidden" NAME="load_facts" VALUE="yes">
+  <p />Reset?
+       <input type="radio" name="reset" value="no" checked>no
+       <input type="radio" name="reset" value="yes" >yes
+  <p /><INPUT TYPE=submit VALUE="Play">
+</FORM>
+
+</body></html>

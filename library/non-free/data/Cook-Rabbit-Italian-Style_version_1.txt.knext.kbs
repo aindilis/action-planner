@@ -1,0 +1,61 @@
+;; (TRANSFER THE RABBIT PIECES TO THE PLATE USING TONGS)
+
+	;; A PLATE MAY USE TONGS.
+
+		(and (PLATE_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (TONGS_27 ?x1))
+
+;; (GIVE THE REMAINING SAUCE A GOOD STIR)
+
+	;; A SAUCE CAN BE REMAINING.
+
+		(and (SAUCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMAINING_27 ?x2))
+
+	;; A STIR CAN BE GOOD.
+
+		(and (STIR_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (ADD ALL OF THE FRESH HERBS TO THE SAUCE)
+
+	;; HERBS MAY HAVE A THING.
+
+		(and (HERBS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; HERBS CAN BE FRESH.
+
+		(and (HERBS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+;; (SIMMER UNTIL SLIGHTLY REDUCED COMMA ABOUT 5 MINUTES)
+
+	;; A SIMMER[PERSON??] MAY REDUCE.
+
+		(and (SIMMER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (REDUCE_27 ?x1))
+
+;; (ADD THE RABBIT BACK INTO THE SAUCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SIMMER UNTIL HEATED THROUGH COMMA ABOUT 3 MINUTES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

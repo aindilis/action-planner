@@ -1,0 +1,231 @@
+;; (ADDRESSBUY YOUR TICKETS AS EARLY AS POSSIBLE TO AVOID A LONG WAIT FOR TICKETS)
+
+	;; A PERSON MAY HAVE TICKETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TICKETS_27 ?x1))
+
+	;; A WAIT CAN BE FOR TICKETS.
+
+		(and (WAIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ticket_27 ?x2))
+
+	;; A WAIT CAN BE LONG.
+
+		(and (WAIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (YOU CAN BUY PACKAGES THAT INCLUDE TICKETS AND HOTEL RATES ON DISNEYLAND.COM)
+
+	;; A PERSON MAY BUY PACKAGES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (PACKAGES_27 ?x1))
+
+;; (PRICES AT DISNEYLAND ARE HIGH COMMA SO CONSIDER HOW MANY TIMES YOU WILL GO TO DISNEYLAND IN THE NEXT YEAR)
+
+	;; PRICES CAN BE HIGH.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; PRICES CAN BE AT A DISNEYLAND[PERSON??].
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (DISNEYLAND_27 ?x2) (PERSON_27 ?x1))
+
+	;; A PERSON MAY GO TO A DISNEYLAND[PERSON??].
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (DISNEYLAND_27 ?x2) (PERSON_27 ?x1))
+
+;; (IF IT S MORE THAN TWO OR THREE COMMA CONSIDER BUYING A YEAR LONG PASS)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL MORE.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (MORE_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THERE ARE 4 KINDS OF ANNUAL PASS -LRB- IN ORDER OF THE CHEAPEST -RRB-  SOUTHERN CALIFORNIA SELECT -LRB- YOU HAVE TO LIVE IN SOUTHERN CALIFORNIA AND THERE ARE 175 DAYS YOU CAN GO TO DISNEYLAND -RRB- COMMA
+ SOUTHERN CALIFORNIA PASS -LRB- YOU HAVE TO LIVE IN SOUTHERN CALIFORNIA AND THERE ARE 220 DAYS YOU CAN ATTEND -RRB- COMMA DELUXE ANNUAL PASS -LRB- AVAILABLE TO ALL GUESTS COMMA 315 DAYS YOU CAN ATTEND -RRB-
+ COMMA AND PREMIUM ANNUAL PASS -LRB- AVAILABLE TO ALL GUEST -RRB-)
+
+	;; A PERSON MAY GO TO A DISNEYLAND[PERSON??].
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (DISNEYLAND_27 ?x2) (PERSON_27 ?x1))
+
+	;; AN AVAILABLE[PERSON??] CAN BE TO SOME_NUMBER_OF GUESTS.
+
+		(and (AVAILABLE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (to_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (GUESTS_27 ?x1))
+
+	;; DAYS CAN BE 315.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY ATTEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ATTEND_27 ?x1))
+
+;; (SHOW UP TO THE PARK AS EARLY AS POSSIBLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HOURS ARE SUBJECT TO CHANGE SO LOOK IT UP BEFOREHAND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WITH PARKING AND GETTING TO THE FRONT GATE COMMA ALLOW 30-40 MINUTES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE FRONT GATE OPENS HALF AN HOUR BEFORE THE ACTUAL PARK OPENS COMMA SO TAKE THIS TIME TO LOOK AROUND IN THE SHOPS)
+
+	;; 
+
+	;; ((:I NIL BEFORE.P (:Q THE PARK.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (BEFORE_2EP_27 ?x1) (Q_27 ?x2) (THE_27 ?x2) (PARK_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF IT IS EARLY ENOUGH IN THE DAY COMMA YOU MAY BE ABLE TO ARRANGE AN EXPRESS PICK-UP OF YOUR SOUVENIRS AT THE FRONT OF THE PARK WHEN YOUR DAY IS OVER)
+
+	;; A THING-REFERRED-TO CAN BE IN A DAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (DAY_27 ?x2))
+
+	;; SOUVENIRS MAY HAVE A PICK-UP.
+
+		(and (SOUVENIRS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PICK-UP_27 ?x1))
+
+	;; A PICK-UP CAN BE EXPRESS.
+
+		(and (PICK-UP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (express_27 ?x2))
+
+	;; A PERSON MAY HAVE SOUVENIRS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOUVENIRS_27 ?x1))
+
+	;; A PARK MAY HAVE A FRONT.
+
+		(and (PARK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRONT_27 ?x1))
+
+	;; A PERSON MAY HAVE A DAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DAY_27 ?x1))
+
+;; (ASK A CAST MEMBER AT THE SHOP IN QUESTION ABOUT EXPRESS PICK-UP AND THEY WILL BE HAPPY TO ASSIST YOU)
+
+	;; A SHOP CAN BE IN QUESTION.
+
+		(and (SHOP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (QUESTION_27 ?x2))
+
+	;; QUESTION CAN BE ABOUT PICK-UP.
+
+		(and (QUESTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (PICK-UP_27 ?x2))
+
+	;; A PICK-UP CAN BE EXPRESS.
+
+		(and (PICK-UP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (express_27 ?x2))
+
+;; (WALK AS FAST AS YOU CAN TO THE MOST POPULAR RIDES COMMA ONCE THE PARK OPENS -LRB- INDIANA JONES COMMA SPLASH MOUNTAIN COMMA SPACE MOUNTAIN COMMA MATTERHORN COMMA AND THUNDER MOUNTAIN RAILROAD -RRB- COMMA
+ BECAUSE LATER IN THE DAY THESE RIDES WILL HAVE INCREDIBLY LONG LINES)
+
+	;; RIDES CAN BE POPULAR.
+
+		(and (ride_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; A PARK MAY OPEN.
+
+		(and (PARK_27 ?x1) (MAY_27 ?x1) (OPEN_27 ?x1))
+
+	;; RIDES MAY HAVE LINES.
+
+		(and (RIDES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LINES_27 ?x1))
+
+	;; LINES CAN BE LONG.
+
+		(and (line_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [15]>
+
+;; *** - EVAL: undefined function PP
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead of (FDEFINITION 'PP).
+RETRY          :R2      Retry
+STORE-VALUE    :R3      Input a new value for (FDEFINITION 'PP).
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 2 [16]>
+
+;; (JUST INSERT YOUR TICKET OR PASS INTO THE MACHINE -LRB- LOCATED NEAR THE RIDE COMMA JUST ASK A CAST MEMBER -RRB- AND OUT WILL POP OUT A TICKET WITH A TIME)
+
+	;; A PERSON MAY HAVE A TICKET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TICKET_27 ?x1))
+
+	;; A TICKET CAN BE WITH A TIME.
+
+		(and (TICKET_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (time_27 ?x2))
+
+;; (THIS TIME COMMA USUALLY AN HOUR AWAY COMMA IS THE TIME YOU MAY RETURN TO THE RIDE AND CUT FAR AHEAD OF THE LINE)
+
+	;; A TIME CAN BE A TIME.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+	;; A PERSON MAY RETURN TO A RIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETURN_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (IT S SORT OF A PLACEHOLDER - YOU CAN GO DO OTHER THINGS COMMA INSTEAD OF WAITING IN THE LINE)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "-8"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [17]>

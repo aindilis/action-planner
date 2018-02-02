@@ -1,0 +1,250 @@
+;; (ALONEMAKE SURE YOU HAVE A DOUBLE-LEVEL IGLOO)
+
+	;; A PERSON MAY HAVE AN IGLOO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IGLOO_27 ?x1))
+
+	;; AN IGLOO CAN BE DOUBLE-LEVEL.
+
+		(and (IGLOO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOUBLE-LEVEL_27 ?x2))
+
+;; (YOU NEED LOTS OF ROOM)
+
+	;; A PERSON MAY NEED LOTS OF ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (LOTS_27 ?x1) (of_27 ?x1 ?x2) (ROOM_27 ?x2))
+
+;; (IN THE BOTTOM LEVEL COMMA PUT LOTS OF CHAIRS OR COUCHES)
+
+	;; A LEVEL CAN BE BOTTOM.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOTTOM_27 ?x2))
+
+;; (THIS WILL BE THE WAITING ROOM)
+
+	;; A THING CAN BE A ROOM.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A ROOM CAN BE WAITING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WAITING_27 ?x2))
+
+;; (HAVE LITTLE TABLES WITH SNACKS OR FLOWERS IN FRONT OF CHAIRS)
+
+	;; TABLES CAN BE WITH SNACKS.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SNACKS_27 ?x2))
+
+	;; SNACKS CAN BE IN_FRONT_OF CHAIRS.
+
+		(and (snack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IN_5FFRONT_5FOF_27 ?x2) (CHAIRS_27 ?x2))
+
+;; (BUY A TICKET BOOTH OR A HALF-CIRCLE TABLE)
+
+	;; A TABLE CAN BE HALF-CIRCLE.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HALF-CIRCLE_27 ?x2))
+
+;; (PUT A CHAIR BEHIND IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS WILL BE THE SPOT WHERE PEOPLE WILL REQUEST A SPOT IN THE HOSPITAL)
+
+	;; A THING CAN BE A SPOT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SPOT_27 ?x2))
+
+	;; PEOPLE MAY REQUEST A SPOT.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (REQUEST_27 ?x1) (A_27 ?x1) (SPOT_27 ?x1))
+
+	;; A SPOT CAN BE IN A HOSPITAL.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOSPITAL_27 ?x2))
+
+;; (IF POSSIBLE COMMA PUT A TV IN THE WAITING ROOM)
+
+	;; A TV CAN BE IN A ROOM.
+
+		(and (tv_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A ROOM CAN BE WAITING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WAITING_27 ?x2))
+
+;; (PUT THE CHANNEL ON THE TWO PENGUINS RACING)
+
+	;; SOME_NUMBER_OF PENGUINS MAY RACE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PENGUINS_27 ?x1) (MAY_27 ?x1) (RACE_27 ?x1))
+
+;; (FOR THE UPSTAIRS COMMA BUY MANY -LRB- 6-15 -RRB- LOUNGE CHAIRS COMMA OR 3 OR 4 COUCHES PUT TOGETHER WITH SNOW LUMPS ON TOP)
+
+	;; 
+
+	;; ((:I NIL (:F BE.PASV PUT.V)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (F_27 ?x2) (BE_2EPASV_27 ?x2) (PUT_2EV_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLACE THEM THROUGHOUT THE UPSTAIRS COMMA NONE TOO CLOSE)
+
+	;; NONE CAN BE CLOSE.
+
+		(and (none_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSE_27 ?x2))
+
+;; (THESE WILL BE HOSPITAL BEDS)
+
+	;; A THING CAN BE HOSPITAL BEDS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOSPITAL_27 ?x2) (BEDS_27 ?x2))
+
+;; (MAKE SURE TO LEAVE AN AREA IN THE CORNER BY THE DOOR)
+
+	;; AN AREA CAN BE IN A CORNER.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CORNER_27 ?x2))
+
+;; (PUT PUFFLE WATER BOTTLES-NOT BOWLS-ON THE EDGE OF EACH HOSPITAL BED)
+
+	;; A PUFFLE WATER BOTTLES-NOT BOWLS-ON CAN BE PUT.
+
+		(and (PUFFLE_27 ?x1) (WATER_27 ?x1) (BOTTLES-NOT_27 ?x1) (BOWLS-ON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUT_27 ?x2))
+
+;; (BESIDE THE BEDS COMMA PUT NORMAL CHAIRS)
+
+	;; CHAIRS CAN BE NORMAL.
+
+		(and (CHAIRS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+;; (THESE WILL BE FOR DOCTORS TO SIT)
+
+	;; A THING CAN BE FOR DOCTORS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (DOCTORS_27 ?x2))
+
+;; (IF YOU CAN AFFORD IT COMMA PUT A COMPUTER DESK BEHIND EACH LOUNGE CHAIR)
+
+	;; A PERSON MAY AFFORD A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (AFFORD_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (HAVE AT LEAST 3 SINKS SOMEWHERE IN THE HOSPITAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THESE WILL BE FOR DOCTORS TO WASH HANDS)
+
+	;; A THING CAN BE FOR DOCTORS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (DOCTORS_27 ?x2))
+
+;; (PLACE TWO CABINETS IN THE HOSPITAL -LRB- DOWNSTAIRS OR UPSTAIRS WORK -RRB-)
+
+	;; SOME_NUMBER_OF CABINETS CAN BE IN A HOSPITAL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CABINETS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOSPITAL_27 ?x2))
+
+;; (THESE WILL BE MEDICINE CABINETS)
+
+	;; A THING CAN BE MEDICINE CABINETS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDICINE_27 ?x2) (CABINETS_27 ?x2))
+
+;; (IN THE CORNER BY THE DOOR COMMA PUT PUFFLE BED NEAR THE OUTER EDGE)
+
+	;; A BED CAN BE PUFFLE.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUFFLE_27 ?x2))
+
+	;; AN EDGE CAN BE OUTER.
+
+		(and (EDGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTER_27 ?x2))
+
+;; (YOU SHOULD HAVE A SMALL AREA)
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; AN AREA CAN BE SMALL.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (PUT INSIDE THE AREA A WOODEN CHAIR)
+
+	;; A CHAIR CAN BE WOODEN.
+
+		(and (CHAIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WOODEN_27 ?x2))
+
+;; (ON THE CHAIR COMMA PUT A WATER BOWL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [28]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU NOW HAVE A TOILET)
+
+	;; A PERSON MAY HAVE A TOILET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOILET_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [30]>
+
+;; (IF THERE IS ROOM COMMA PUT A RECYCLE BIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [30]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [31]>

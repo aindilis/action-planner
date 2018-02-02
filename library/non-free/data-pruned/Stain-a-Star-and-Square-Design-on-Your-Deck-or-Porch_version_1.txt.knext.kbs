@@ -1,0 +1,217 @@
+;; (USE THE STRAIGHT EDGE AND CARPENTER PENCIL TO MARK-OFF THE DESIGNS ON THE DECK)
+
+	;; AN EDGE CAN BE STRAIGHT.
+
+		(and (EDGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRAIGHT_27 ?x2))
+
+;; (TAPE OFF)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAPE OFF THE SELECTED DESIGNS)
+
+	;; DESIGNS CAN BE SELECTED.
+
+		(and (design_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SELECTED_27 ?x2))
+
+;; (STAIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONE-2 DET A-5 PREP_AT TIME-6)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RED-2 NN DECK-3 NSUBJ STAIN-4 DET THE-6 AMOD LARGEST-7 DOBJ AREA-8 DET THE-10 PREP_OF DECK-11)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BEGIN -RRB- -RRB- APPLYING RED TO ALL THE DECK AREAS OUTSIDE THE TAPED-OFF SECTIONS)
+
+	;; SECTIONS CAN BE TAPED-OFF.
+
+		(and (section_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAPED-OFF_27 ?x2))
+
+;; (GO BACK TO TAPE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALLOW THE RED TO DRY BEFORE APPLYING ADJACENT COLORS)
+
+	;; COLORS CAN BE ADJACENT.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADJACENT_27 ?x2))
+
+;; (CHECK THE LABEL ON YOUR PRODUCT FOR DRYING TIMES)
+
+	;; A LABEL CAN BE ON A PRODUCT.
+
+		(and (LABEL_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (PRODUCT_27 ?x2))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (SOME LATEX STAINS DRY TO THE TOUCH IN AS LITTLE AS TWO HOURS COMMA OTHER STAINS MAY REQUIRE LONGER)
+
+	;; STAINS MAY REQUIRE.
+
+		(and (stain_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1))
+
+	;; SOME_NUMBER_OF LATEX MAY STAIN DRY TO A TOUCH.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (LATEX_27 ?x1) (MAY_27 ?x1) (STAIN_27 ?x1) (DRY_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (TOUCH_27 ?x2))
+
+;; (REMOVE THE TAPE AND RE-TAPE THE OUTSIDE EDGES OF THE TRIANGLES AND SQUARE TO KEEP THE COLOR FROM BLEEDING ONTO THE STAIN ALREADY APPLIED)
+
+	;; TRIANGLES MAY HAVE EDGES.
+
+		(and (TRIANGLES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EDGES_27 ?x1))
+
+	;; EDGES CAN BE OUTSIDE.
+
+		(and (edge_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTSIDE_27 ?x2))
+
+	;; A STAIN MAY BE APPLY -ED.
+
+		(and (STAIN_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPLY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (NOW APPLY THE BLUE STAIN IN THE TRIANGLES WITH THE SMALL SYNTHETIC BRUSH)
+
+	;; A STAIN CAN BE BLUE.
+
+		(and (STAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUE_27 ?x2))
+
+	;; TRIANGLES CAN BE WITH A BRUSH.
+
+		(and (triangle_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (BRUSH_27 ?x2))
+
+	;; A BRUSH CAN BE SMALL.
+
+		(and (BRUSH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A BRUSH CAN BE SYNTHETIC.
+
+		(and (BRUSH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SYNTHETIC_27 ?x2))
+
+;; (GET IT SQUARED AWAY)
+
+	;; A THING-REFERRED-TO MAY SQUARE_AWAY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SQUARE_5FAWAY_27 ?x1))
+
+;; (SINCE THE MIDDLE SQUARE DOES NOT TOUCH THE BLUE TRIANGLE COMMA BEGIN APPLYING WHITE STAIN TO THE MIDDLE SQUARE)
+
+	;; A SQUARE MAY DO.
+
+		(and (SQUARE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A TRIANGLE CAN BE BLUE.
+
+		(and (triangle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUE_27 ?x2))
+
+	;; STAIN CAN BE WHITE.
+
+		(and (stain_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WHITE_27 ?x2))
+
+	;; A SQUARE CAN BE MIDDLE.
+
+		(and (SQUARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MIDDLE_27 ?x2))
+
+;; (ADD THE STAR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONCE THE MIDDLE SQUARE IS DRY COMMA TAPE DOWN THE STAR STENCIL IN THE MIDDLE)
+
+	;; TAPE MAY STENCIL IN A MIDDLE.
+
+		(and (TAPE_27 ?x1) (MAY_27 ?x1) (STENCIL_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MIDDLE_27 ?x2))
+
+	;; A SQUARE CAN BE DRY.
+
+		(and (SQUARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+	;; A SQUARE CAN BE MIDDLE.
+
+		(and (SQUARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MIDDLE_27 ?x2))
+
+;; (SIMPLY USE A SMALL COMMA THIN PAINT BRUSH TO FILL IN THE STAR SHAPE WITH BLUE STAIN)
+
+	;; STAIN CAN BE BLUE.
+
+		(and (stain_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUE_27 ?x2))
+
+;; (ALLOW TO DRY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

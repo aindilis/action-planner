@@ -1,0 +1,451 @@
+;; (SUPPLIESTHINK LIGHT AND SMALL - COMPARED WITH WESTERNERS COMMA JAPANESE PEOPLE TEND TO TRAVEL WITH SMALLER SIZE LUGGAGE)
+
+	;; PEOPLE CAN BE JAPANESE.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JAPANESE_27 ?x2))
+
+	;; A SIZE LUGGAGE CAN BE SMALLER.
+
+		(and (SIZE_27 ?x1) (LUGGAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (AS A RESULT COMMA THERE USUALLY IS N T A WIDE SPACE TO STORE LARGE LUGGAGE IN TRAINS -LRB- INCLUDING THE SHINKANSEN - THE BULLET TRAIN -RRB-)
+
+	;; A SPACE CAN BE WIDE.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WIDE_27 ?x2))
+
+	;; A LUGGAGE CAN BE LARGE.
+
+		(and (LUGGAGE_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (COIN LOCKERS IN SUBWAY STATIONS ARE N T LARGE ENOUGH TO HOLD BIG SUITCASES EITHER)
+
+	;; LOCKERS CAN BE LARGE.
+
+		(and (locker_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; LOCKERS CAN BE IN SUBWAY STATIONS.
+
+		(and (locker_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SUBWAY_27 ?x2) (STATIONS_27 ?x2))
+
+	;; A COIN[PERSON??] MAY HAVE LOCKERS.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (LOCKERS_27 ?x1))
+
+	;; SUITCASES CAN BE BIG.
+
+		(and (suitcase_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (SUBWAY STATIONS IN TOKYO CONSIST OF ENDLESS PATHWAYS COMMA SOME INCLUDE STAIRS -LRB- AND NO ELEVATORS -RRB-)
+
+	;; SOME_NUMBER_OF THING MAY INCLUDE STAIRS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (STAIRS_27 ?x1))
+
+	;; STATIONS MAY CONSIST OF PATHWAYS.
+
+		(and (station_27 ?x1) (MAY_27 ?x1) (CONSIST_27 ?x1) (of_27 ?x1 ?x2) (pathway_27 ?x2))
+
+	;; STATIONS CAN BE IN A WORLD-CITY.
+
+		(and (station_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (WORLD-CITY_27 ?x2))
+
+	;; STATIONS CAN BE SUBWAY.
+
+		(and (station_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUBWAY_27 ?x2))
+
+	;; PATHWAYS CAN BE ENDLESS.
+
+		(and (pathway_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENDLESS_27 ?x2))
+
+;; (PLANNING TO USE THE SUBWAY WITH LUGGAGE IN HAND IS NOT A GOOD IDEA)
+
+	;; A PLANNING[PERSON??] CAN BE AN IDEA.
+
+		(and (planning_27 ?x1) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; LUGGAGE CAN BE IN HAND.
+
+		(and (LUGGAGE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (HAND_27 ?x2))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (BRING CASH - MANY STORES AND RESTAURANTS MIGHT NOT ACCEPT CREDIT CARDS)
+
+	;; CASH CAN BE BRING.
+
+		(and (cash_27 ?x1) (be_27 ?e1 ?x1 ?x2) (bring_27 ?x2))
+
+	;; SOME_NUMBER_OF STORES MAY ACCEPT CREDIT CARDS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (STORES_27 ?x1) (MAY_27 ?x1) (ACCEPT_27 ?x1) (CREDIT_27 ?x1) (CARDS_27 ?x1))
+
+;; (IT S A GOOD IDEA TO PREPARE FOR THAT BY BRINGING A SUBSTANTIAL AMOUNT OF JAPANESE YEN IN CASH)
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; AN AMOUNT CAN BE SUBSTANTIAL.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUBSTANTIAL_27 ?x2))
+
+	;; YEN CAN BE IN CASH.
+
+		(and (yen_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (CASH_27 ?x2))
+
+	;; YEN CAN BE JAPANESE.
+
+		(and (yen_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JAPANESE_27 ?x2))
+
+;; (PACK A PAIR OF SHOES THAT YOU CAN SLIP OFF EASILY)
+
+	;; A PERSON MAY SLIP_OFF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SLIP_5FOFF_27 ?x1))
+
+;; (SINCE IT S A JAPANESE CUSTOM TO WALK WITHOUT SHOES INDOORS COMMA YOU MIGHT HAVE TO TAKE OFF YOUR SHOES FREQUENTLY)
+
+	;; A CUSTOM CAN BE JAPANESE.
+
+		(and (CUSTOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JAPANESE_27 ?x2))
+
+	;; A PERSON MAY HAVE SHOES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SHOES_27 ?x1))
+
+;; (BE SURE TO PACK YOUR BEST LOOKING SOCKS AND PANTYHOSE TO AVOID ANY EMBARRASSMENT WHEN YOU TAKE OFF YOUR SHOES)
+
+	;; A PERSON MAY TAKE_OFF SHOES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_5FOFF_27 ?x1) (SHOES_27 ?x1))
+
+	;; A PERSON MAY HAVE SHOES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SHOES_27 ?x1))
+
+;; (TAKE COMFORTABLE SHOES FOR WALKING COMMA YOU LL BE DOING A LOT OF THAT)
+
+	;; SHOES CAN BE COMFORTABLE.
+
+		(and (shoe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+;; (CARRY A MINI-TOWEL IN YOUR BAG FOR DRYING YOUR HANDS)
+
+	;; A MINI-TOWEL CAN BE IN A BAG.
+
+		(and (MINI-TOWEL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BAG_27 ?x2))
+
+	;; A PERSON MAY HAVE A BAG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAG_27 ?x1))
+
+	;; A PERSON MAY HAVE HANDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HANDS_27 ?x1))
+
+;; (MOST RESTROOMS COMMA IN SPITE OF THEIR EXTREME CLEANLINESS COMMA DO NOT PROVIDE PAPER TOWELS)
+
+	;; RESTROOMS MAY DO.
+
+		(and (RESTROOMS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A CLEANLINESS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (cleanliness_27 ?x1))
+
+	;; A CLEANLINESS CAN BE EXTREME.
+
+		(and (cleanliness_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTREME_27 ?x2))
+
+;; (CARRYING A MINI TOWEL IS A VERY COMMON JAPANESE THING TO DO)
+
+	;; A THING CAN BE COMMON.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+	;; A THING CAN BE JAPANESE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JAPANESE_27 ?x2))
+
+;; (IF YOU WANT TO FEEL LIKE PART OF THE CROWD - JEANS ARE NOT AN OPTION WHILE DINING)
+
+	;; A JEANS[PERSON??] CAN BE OPTION WHILE DINING.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (OPTION_27 ?x1) (while_27 ?e1 ?x2) (DINING_27 ?x2))
+
+	;; A CROWD MAY HAVE PART.
+
+		(and (CROWD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PART_27 ?x1))
+
+;; (CASUAL CLOTHES ARE FINE FOR SIGHTSEEING COMMA BUT MOST TOKYO CITIZENS DRESS VERY FORMALLY - A SUIT OR A JACKET FOR MEN COMMA LONG SHORTS ARE OKAY FOR MEN AS LONG AS THE BEACH LOOK IS AVOIDED)
+
+	;; CLOTHES CAN BE FINE FOR SIGHTSEEING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINE_27 ?x2) (for_27 ?e1 ?x3) (SIGHTSEEING_27 ?x3))
+
+	;; CLOTHES CAN BE CASUAL.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CASUAL_27 ?x2))
+
+	;; CITIZENS MAY DRESS FORMALLY.
+
+		(and (citizen_27 ?x1) (MAY_27 ?x1) (DRESS_27 ?x1) (FORMALLY_27 ?x1))
+
+	;; A WORLD-CITY MAY HAVE CITIZENS.
+
+		(and (WORLD-CITY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CITIZENS_27 ?x1))
+
+	;; A SUIT CAN BE OKAY FOR MEN.
+
+		(and (SUIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OKAY_27 ?x2) (for_27 ?e1 ?x3) (MEN_27 ?x3))
+
+	;; A JACKET CAN BE FOR MEN.
+
+		(and (JACKET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (MEN_27 ?x2))
+
+	;; SHORTS CAN BE LONG.
+
+		(and (short_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; A BEACH LOOK MAY BE AVOID -ED.
+
+		(and (BEACH_27 ?x1) (LOOK_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (WOMEN USUALLY WEAR SKIRTS AND HIGH HEELS)
+
+	;; A WOMEN[PERSON??] MAY WEAR A SKIRTS[PERSON??].
+
+		(and (WOMEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (WEAR_27 ?x1) (A_27 ?x1) (SKIRTS_27 ?x1) (PERSON_27 ?x1))
+
+	;; HEELS CAN BE HIGH.
+
+		(and (heel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (REVEALING CLOTHES ARE NOT COMMON AMONG JAPANESE WOMEN)
+
+	;; CLOTHES CAN BE COMMON AMONG WOMEN.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (AMONG_27 ?x2) (WOMEN_27 ?x2))
+
+	;; CLOTHES CAN BE REVEALING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REVEALING_27 ?x2))
+
+	;; WOMEN CAN BE JAPANESE.
+
+		(and (WOMEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JAPANESE_27 ?x2))
+
+;; (WOMEN ARE LIKELY TO FEEL VERY OUT OF PLACE IN SHORTS OR CLEAVAGE)
+
+	;; PLACE CAN BE IN SHORTS.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (short_27 ?x2))
+
+;; (MEN SHOULD AVOID BLACK TIES AND WOMEN SHOULD AVOID AN ALL-BLACK LOOK - SINCE THIS IS THE FUNERAL ATTIRE)
+
+	;; MEN MAY AVOID.
+
+		(and (MEN_27 ?x1) (MAY_27 ?x1) (AVOID_27 ?x1))
+
+	;; TIES MAY AVOID A LOOK.
+
+		(and (TIES_27 ?x1) (MAY_27 ?x1) (AVOID_27 ?x1) (A_27 ?x1) (LOOK_27 ?x1))
+
+	;; TIES CAN BE BLACK.
+
+		(and (ty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+	;; A LOOK CAN BE ALL-BLACK.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALL-BLACK_27 ?x2))
+
+	;; A THING CAN BE AN ATTIRE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (ATTIRE_27 ?x2))
+
+	;; AN ATTIRE CAN BE FUNERAL.
+
+		(and (ATTIRE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FUNERAL_27 ?x2))
+
+;; (PACKING WARM CLOTHING IS A MUST IN WINTER)
+
+	;; A CLOTHING CAN BE PACKING.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (packing_27 ?x2))
+
+	;; A CLOTHING CAN BE WARM.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+;; (THE WIND IS FREEZING COLD)
+
+	;; A WIND CAN BE COLD.
+
+		(and (WIND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (YOUR LIST SHOULD INCLUDE GLOVES COMMA LONG UNDERWEAR COMMA A SCARF COMMA AND A WARM KNITTED HAT)
+
+	;; A LIST MAY INCLUDE A GLOVES[PERSON??].
+
+		(and (LIST_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (GLOVES_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; AN UNDERWEAR CAN BE LONG.
+
+		(and (UNDERWEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; A HAT CAN BE WARM.
+
+		(and (HAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+	;; A HAT CAN BE KNITTED.
+
+		(and (HAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KNITTED_27 ?x2))
+
+;; (WINTER IS VERY DRY COMMA AND PEOPLE WITH SENSITIVE SKIN SHOULD PACK THEIR FAVORITE SKIN LOTION IN ABUNDANCE)
+
+	;; A WINTER[PERSON??] CAN BE DRY.
+
+		(and (WINTER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DRY_27 ?x1))
+
+	;; PEOPLE MAY PACK A SKIN LOTION.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1) (A_27 ?x1) (SKIN_27 ?x1) (LOTION_27 ?x1))
+
+	;; PEOPLE CAN BE WITH SKIN.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SKIN_27 ?x2))
+
+	;; SKIN CAN BE SENSITIVE.
+
+		(and (SKIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SENSITIVE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A SKIN LOTION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SKIN_27 ?x1) (LOTION_27 ?x1))
+
+	;; A SKIN LOTION CAN BE FAVORITE.
+
+		(and (SKIN_27 ?x1) (LOTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (WET SEASON - PACK AN UMBRELLA)
+
+	;; A SEASON CAN BE WET.
+
+		(and (SEASON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+;; (IN THE SUMMER - COTTON CLOTHING IS THE BEST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [28]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MOST PLACES ARE AIR-CONDITIONED COMMA SO PUT A LIGHT JACKET ON YOUR CHECKLIST)
+
+	;; PLACES CAN BE AIR-CONDITIONED.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1) (air-conditioned_27 ?x1))
+
+	;; A JACKET CAN BE LIGHT.
+
+		(and (JACKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+	;; A PERSON MAY HAVE A CHECKLIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHECKLIST_27 ?x1))
+
+;; (AUTUMN AND SPRING TIPS - PACKING LIGHT JACKETS AND SWEATERS IS RECOMMENDED)
+
+	;; JACKETS CAN BE LIGHT.
+
+		(and (jacket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+	;; SWEATERS MAY BE RECOMMEND -ED.
+
+		(and (sweater_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (EVENING CLOTHING MUST BE WARMER COMMA SINCE THE TEMPERATURES DROP DRASTICALLY)
+
+	;; A CLOTHING CAN BE EVENING.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVENING_27 ?x2))
+
+	;; THE TEMPERATURES MAY DROP.
+
+		(and (TEMPERATURES_27 ?x1) (MAY_27 ?x1) (DROP_27 ?x1))
+
+;; (MAKE SURE TO PACK A CONVERTER OR PLUG - THE ELECTRICITY IN TOKYO IS 100 VOLTS)
+
+	;; ELECTRICITY CAN BE VOLTS.
+
+		(and (ELECTRICITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (volt_27 ?x2))
+
+	;; ELECTRICITY CAN BE IN A WORLD-CITY.
+
+		(and (ELECTRICITY_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (WORLD-CITY_27 ?x2))
+
+;; (AMERICAN APPLIANCES CAN BE USED IN JAPAN WITHOUT A CONVERTER ALTHOUGH THEY WILL HAVE LESS POWER)
+
+	;; APPLIANCES MAY BE USE -ED IN A COUNTRY.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (COUNTRY_27 ?x3))
+
+	;; APPLIANCES CAN BE AMERICAN.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMERICAN_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE POWER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POWER_27 ?x1))
+
+;; (IF YOUR APPLIANCES ARE THREE-PRONGED COMMA YOU NEED A PLUG SINCE JAPANESE APPLIANCES ARE TWO-PRONGED)
+
+	;; A PERSON MAY NEED A PLUG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (PLUG_27 ?x1))
+
+	;; APPLIANCES CAN BE THREE-PRONGED.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1) (three-pronged_27 ?x1))
+
+	;; A PERSON MAY HAVE APPLIANCES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (APPLIANCES_27 ?x1))
+
+	;; APPLIANCES CAN BE TWO-PRONGED.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1) (two-pronged_27 ?x1))
+
+	;; APPLIANCES CAN BE JAPANESE.
+
+		(and (appliance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JAPANESE_27 ?x2))
+
+;; (YOU CAN PURCHASE CONVERTERS AND PLUGS IN THE AIRPORT SHOPS)
+
+	;; A PERSON MAY PURCHASE CONVERTERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1) (CONVERTERS_27 ?x1))

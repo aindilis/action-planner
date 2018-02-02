@@ -1,0 +1,658 @@
+;; (ALSOCHOOSE YOUR CLASSES CAREFULLY THROUGHOUT HIGH SCHOOL)
+
+	;; A PERSON MAY HAVE CLASSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLASSES_27 ?x1))
+
+	;; A SCHOOL CAN BE HIGH.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (TAKE CLASSES THAT WILL CHALLENGE YOU COMMA BUT NOT THAT WILL BE IMPOSSIBLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO N T LET PEOPLE SCARE YOU AWAY FROM TAKING CLASSES THAT WILL STIMULATE YOUR MIND COMMA BUT ALSO REMEMBER THAT TAKING TOO MANY APS AND
+ HONOR CLASSES MAY HURT YOU COMMA NOT HELP YOU)
+
+	;; PEOPLE MAY SCARE A PERSON.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (SCARE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (TAKE AP COURSES)
+
+	;; AN AP[PERSON??] MAY HAVE COURSES.
+
+		(and (AP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (COURSES_27 ?x1))
+
+;; (DO N T TAKE COMMA BUT ONE OR TWO A YEAR SHOWS ADMISSION OFFICERS THAT YOU ARE SERIOUS ABOUT YOUR EDUCATION AND WILL TAKE ON A CHALLENGE)
+
+	;; A PERSON CAN BE SERIOUS ABOUT AN EDUCATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERIOUS_27 ?x2) (ABOUT_27 ?x2) (AN_27 ?x2) (EDUCATION_27 ?x2))
+
+	;; A PERSON MAY HAVE AN EDUCATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EDUCATION_27 ?x1))
+
+;; (ALSO COMMA PASSING THE AP EXAM GAINS YOU COLLEGE CREDITS AND CAN SOMETIMES SAVE YOU TUITION MONEY)
+
+	;; AN AP[PERSON??] MAY HAVE AN EXAM.
+
+		(and (AP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXAM_27 ?x1))
+
+;; (IF YOU THINK YOU ARE TAKING ON A TOUGH LOAD COMMA REQUEST A PREP PERIOD IF YOUR SCHOOL ALLOWS IT)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PERSON MAY TAKE ON A LOAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (LOAD_27 ?x1))
+
+	;; A LOAD CAN BE TOUGH.
+
+		(and (LOAD_27 ?x1) (be_27 ?e1 ?x1) (tough_27 ?x1))
+
+	;; A SCHOOL MAY ALLOW A THING-REFERRED-TO.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (ALLOW_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (HAVING AN EXTRA HOUR DURING THE SCHOOL DAY TO SIMPLY RELAX COMMA CATCH UP ON HOMEWORK COMMA OR HANG OUT WITH YOUR FRIENDS GOES A LONG WAY
+ TOWARDS KEEPING YOU SANE AND FOCUSED)
+
+	;; A HOUR CAN BE DURING A SCHOOL DAY.
+
+		(and (HOUR_27 ?x1) (be_27 ?e1 ?x1) (during_27 ?x1 ?x2) (A_27 ?x2) (SCHOOL_27 ?x2) (DAY_27 ?x2))
+
+	;; A HOUR CAN BE EXTRA.
+
+		(and (HOUR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; A WAY CAN BE LONG.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; A PERSON CAN BE SANE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SANE_27 ?x2))
+
+;; (HIGHER GRADES WILL GIVE YOU MORE CHOICES WHEN CHOOSING BETWEEN COLLEGES COMMA AND WILL ALSO GIVE YOU BETTER FINANCIAL AID)
+
+	;; GRADES MAY GIVE A PERSON CHOICES.
+
+		(and (GRADES_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (CHOICES_27 ?x1))
+
+	;; GRADES CAN BE HIGHER.
+
+		(and (grade_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+	;; AID CAN BE BETTER.
+
+		(and (aid_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; AID CAN BE FINANCIAL.
+
+		(and (AID_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINANCIAL_27 ?x2))
+
+;; (STUDY FOR TESTS)
+
+	;; A STUDY[PERSON??] CAN BE FOR TESTS.
+
+		(and (STUDY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (test_27 ?x1))
+
+;; (KNOW WHICH STUDY TECHNIQUES WORK BEST FOR YOU COMMA AND USE THEM)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:Q DET PERSON*.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (PERSON_2A_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (GET INVOLVED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE SPECIAL KNOWLEDGE YOU HAVE TO HELP OTHERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (SHOW EVEN MORE OF YOUR LEADERSHIP QUALITIES BY TALKING TO TEACHERS AND STAFF)
+
+	;; A PERSON MAY HAVE LEADERSHIP QUALITIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LEADERSHIP_27 ?x1) (QUALITIES_27 ?x1))
+
+;; (SHOW THEM YOUR RESPECT)
+
+	;; A PERSON MAY HAVE A RESPECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RESPECT_27 ?x1))
+
+;; (ALSO TALK TO STUDENTS AROUND YOUR SCHOOL OFTEN)
+
+	;; STUDENTS CAN BE AROUND A SCHOOL.
+
+		(and (student_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (SCHOOL_27 ?x2))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (RUN FOR LEADERSHIP POSITIONS IN YOUR EXTRA-CURRICULAR ACTIVITIES)
+
+	;; A RUN[PERSON??] CAN BE FOR LEADERSHIP POSITIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (LEADERSHIP_27 ?x1) (POSITIONS_27 ?x1))
+
+	;; A PERSON MAY HAVE ACTIVITIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ACTIVITIES_27 ?x1))
+
+	;; ACTIVITIES CAN BE EXTRA-CURRICULAR.
+
+		(and (activity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA-CURRICULAR_27 ?x2))
+
+;; (INSTEAD OF JOINING ALL THE EXTRACURRICULARS YOU CAN COMMA PICK A FEW YOU ENJOY AND STICK WITH THEM)
+
+	;; A PERSON MAY ENJOY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1))
+
+;; (COLLEGES WILL BE IMPRESSED BY YOUR DEDICATION AND COMMITMENT)
+
+	;; COLLEGES MAY BE IMPRESS -ED BY A DEDICATION.
+
+		(and (college_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (DEDICATION_27 ?x2))
+
+	;; A PERSON MAY HAVE A DEDICATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DEDICATION_27 ?x1))
+
+;; (CHOOSE A FOCUS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (-LRB- 1 -RRB- FIGURE OUT WHAT YOU ARE INTERESTED IN COMMA AND TRY TO FIND WHAT KIND OF JOBS YOU MIGHT LIKE TO HAVE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; (TAKE MORE COURSES IN THAT AREA COMMA FIND AN INTERNSHIP COMMA GET A JOB COMMA VOLUNTEER -- THE OPPORTUNITIES ARE ENDLESS)
+
+	;; VOLUNTEER CAN BE ENDLESS.
+
+		(and (VOLUNTEER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENDLESS_27 ?x2))
+
+;; (ENTER CONTESTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EVEN IF YOU DO N T WIN COMMA THE TIME AND EFFORT YOU PUT INTO THE CONTESTS CAN ONLY HELP)
+
+	;; A TIME MAY HELP.
+
+		(and (TIME_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY PUT INTO CONTESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (INTO_27 ?x1) (CONTESTS_27 ?x1))
+
+;; (MOST COLLEGES TAKE EITHER)
+
+	;; COLLEGES MAY TAKE.
+
+		(and (college_27 ?x1) (take_27 ?e1 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; (WHILE THESE SCORES WILL NOT DETERMINE YOUR ACCEPTANCE OR REJECTION ALONE COMMA IT IS HELPFUL TO GET A GOOD SCORE)
+
+	;; SCORES MAY DETERMINE AN ACCEPTANCE.
+
+		(and (SCORES_27 ?x1) (MAY_27 ?x1) (DETERMINE_27 ?x1) (AN_27 ?x1) (ACCEPTANCE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ACCEPTANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ACCEPTANCE_27 ?x1))
+
+	;; A SCORE CAN BE GOOD.
+
+		(and (SCORE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; (WORK ON VOCABULARY WORDS COMMA MATH PROBLEMS COMMA AND SAT TIPS OF THE DAY)
+
+	;; A DAY MAY HAVE SAT TIPS.
+
+		(and (DAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SAT_27 ?x1) (TIPS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [11]>
+
+;; (PLENTY OF PEOPLE DO N T TAKE PREP CLASSES AND STILL GET EXCELLENT SCORES COMMA AND OTHER PEOPLE TAKE CLASSES AND IMPROVE THEIR SCORES
+ CONSIDERABLY)
+
+	;; A PLENTY[PERSON??] OF PEOPLE MAY DO.
+
+		(and (PLENTY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (of_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; SCORES CAN BE EXCELLENT.
+
+		(and (score_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; PEOPLE MAY TAKE CLASSES.
+
+		(and (PEOPLE_27 ?x1) (take_27 ?e1 ?x1 ?x2) (class_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE SCORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SCORES_27 ?x1))
+
+;; (GET A TEST PREP BOOK AND WORK THROUGH IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FOCUS ON AREAS THAT YOU ARE NOT SO STRONG ON COMMA AND TAKE LOTS OF PRACTICE TESTS)
+
+	;; FOCUS CAN BE ON AREAS.
+
+		(and (focu_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (AREAS_27 ?x2))
+
+;; (CHOOSE A VARIETY OF SCHOOLS TO APPLY TO AND ANALYZE YOUR CHANCES AT GETTING IN BY LOOKING AT MEAN TEST SCORES AND GPAS)
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLS.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLS_27 ?x2))
+
+	;; A PERSON MAY HAVE CHANCES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHANCES_27 ?x1))
+
+	;; TEST SCORES CAN BE MEAN.
+
+		(and (TEST_27 ?x1) (SCORES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEAN_27 ?x2))
+
+;; (CHOOSE A COUPLE SCHOOLS THAT ARE A STRETCH COMMA A GOOD AMOUNT OF TARGET SCHOOLS COMMA AND A FEW SAFETY SCHOOLS)
+
+	;; AN AMOUNT CAN BE GOOD.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (IF YOU APPLY ONLY TO IVY LEAGUE SCHOOLS COMMA YOU SIGNIFICANTLY DECREASE YOUR CHANCES OF GETTING INTO COLLEGE AS THOSE ARE SOME OF THE
+ MOST SELECTIVE SCHOOLS IN THE COUNTRY)
+
+	;; A PERSON MAY DECREASE CHANCES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DECREASE_27 ?x1) (CHANCES_27 ?x1))
+
+	;; A PERSON MAY APPLY TO SCHOOLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (APPLY_27 ?x1) (to_27 ?x1 ?x2) (SCHOOLS_27 ?x2))
+
+	;; AN IVY_LEAGUE[PERSON??] MAY HAVE SCHOOLS.
+
+		(and (IVY_5FLEAGUE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SCHOOLS_27 ?x1))
+
+	;; A PERSON MAY HAVE CHANCES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHANCES_27 ?x1))
+
+	;; A THING CAN BE SOME_NUMBER_OF THING OF SCHOOLS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (thing_27 ?x2) (of_27 ?x2 ?x3) (school_27 ?x3))
+
+	;; SCHOOLS MAY HAVE A THING.
+
+		(and (school_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x1))
+
+	;; SCHOOLS CAN BE IN A COUNTRY.
+
+		(and (school_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (COUNTRY_27 ?x2))
+
+	;; SCHOOLS CAN BE SELECTIVE.
+
+		(and (school_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SELECTIVE_27 ?x2))
+
+;; (WRITE AMAZING ESSAYS)
+
+	;; ESSAYS CAN BE AMAZING.
+
+		(and (essay_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMAZING_27 ?x2))
+
+;; (YOUR ESSAYS GIVE THE COLLEGE A CHANCE TO SEE HOW YOU WRITE AND HOW YOU THINK - YOUR VIEWS ON LIFE)
+
+	;; A PERSON MAY HAVE ESSAYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ESSAYS_27 ?x1))
+
+	;; A PERSON MAY WRITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRITE_27 ?x1))
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; VIEWS CAN BE ON LIFE.
+
+		(and (view_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (LIFE_27 ?x2))
+
+	;; A PERSON MAY HAVE VIEWS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (VIEWS_27 ?x1))
+
+;; (-LRB- 3 -RRB- RELAX)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST OF THE TIME COMMA YOUR INTERVIEW WILL NOT MAKE OR BREAK YOU COMMA UNLESS YOU MAKE AN EXTREMELY BAD IMPRESSION BY SHOWING UP IN TORN
+ JEANS AND A SWEATY T-SHIRT AND START SWEARING AT THE ADMISSIONS OFFICER)
+
+	;; A PERSON MAY HAVE AN INTERVIEW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INTERVIEW_27 ?x1))
+
+	;; AN IMPRESSION CAN BE BAD.
+
+		(and (IMPRESSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+	;; JEANS CAN BE TORN.
+
+		(and (jean_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TORN_27 ?x2))
+
+	;; A T-SHIRT CAN BE SWEATY.
+
+		(and (T-SHIRT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SWEATY_27 ?x2))
+
+;; (RESEARCH THE SCHOOL BEFORE GOING TO THE INTERVIEW)
+
+	;; 
+
+	;; ((:I (:Q DET RESEARCH.NAME) (:F NIL (:P GO.V (:P TO.P (:Q THE INTERVIEW.N))))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (RESEARCH_2ENAME_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (GO_2EV_27 ?x3) (P_27 ?x4) (TO_2EP_27 ?x4) (Q_27 ?x5) (THE_27 ?x5) (INTERVIEW_2EN_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THINK ABOUT WHY YOU ARE APPLYING COMMA WHY IT WOULD BE A GOOD SCHOOL FOR YOU AND WHAT YOU WOULD BRING TO THE SCHOOL)
+
+	;; A PERSON MAY APPLY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (APPLY_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A SCHOOL.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SCHOOL_27 ?x2))
+
+	;; A SCHOOL CAN BE FOR A PERSON.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A SCHOOL CAN BE GOOD.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY BRING TO A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (SCHOOL_27 ?x2))
+
+;; (SHOW THE INTERVIEWER EXACTLY WHO YOU ARE AND WHY YOU ARE INTERESTING)
+
+	;; A PERSON MAY BE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON CAN BE INTERESTING.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (interesting_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [12]>
+
+;; (LOOK ON THE INTERNET FOR SOME COMMON COLLEGE INTERVIEW QUESTIONS -LRB- -RRB- COMMA AND THINK OF YOUR ANSWERS)
+
+	;; AN INTERNET CAN BE FOR SOME_NUMBER_OF COLLEGE INTERVIEW QUESTIONS.
+
+		(and (INTERNET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (COLLEGE_27 ?x2) (INTERVIEW_27 ?x2) (QUESTIONS_27 ?x2))
+
+	;; COLLEGE INTERVIEW QUESTIONS CAN BE COMMON.
+
+		(and (COLLEGE_27 ?x1) (INTERVIEW_27 ?x1) (QUESTIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+	;; A PERSON MAY HAVE ANSWERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANSWERS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [14]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [15]>
+
+;; (BRUSH UP ON SOME CURRENT EVENTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [16]>

@@ -1,0 +1,188 @@
+<html>
+<head>
+   <title>Procedural Programming
+   </title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+
+<h2>Procedural Programming</a></h2>
+<h3>Some <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/rhs.htm">RHS Functions</a></h3>
+<h3><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.html">Procedural Functions</a></h3>
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.2.html">if</a></h4>
+<pre>(<font color="#8000FF">defrule</font> continuous-check
+    ?phase &lt;- (phase check-continuous)
+    =&gt;
+    (<font color="#8000FF">retract</font> ?phase)
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Continuous? "</font>)
+    (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+    (<font color="#FF0000">if</font> (or (eq ?answer y) (eq ?answer yes))
+        <font color="#FF0000">then</font> (<font color="#8000FF">assert</font> (phase continue))
+        <font color="#FF0000">else</font> (<font color="#8000FF">assert</font> (phase halt))) )
+</pre>
+
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.3.html">while</a></h4>
+<pre><font color="#0040a0">;for input error checking</font>
+(<font color="#8000FF">defrule</font> player-select
+    (phase choose-player) <font color="#0040a0">; control pattern</font>
+    =&gt;
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Who moves first (Computer: c "</font>
+               <font color="#008000">"Human: h)? "</font>)
+    (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+    (<font color="#FF0000">while</font> (and (neq ?answer c) (neq ?answer h))
+        do
+        (<font color="#8000FF">printout</font> t <font color="#008000">"Choose c or h only."</font> <font color="#8000FF">crlf</font>)
+        (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+    (<font color="#8000FF">assert</font> (player-select ?answer)) )
+</pre>
+
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.4.html">loop-for-count</a></h4>
+<pre>(<b><font color="#8000FF">loop-for-count</font></b> (?cnt1 2 4) <b><font color="#8000FF">do</font></b>
+   (<b><font color="#8000FF">loop-for-count</font></b> (?cnt2 3) <b><font color="#8000FF">do</font></b>
+      (<font color="#8000FF">printout</font> t ?cnt1 <font color="#008000">&quot; "</font>)
+      (<b><font color="#8000FF">loop-for-count</font></b> 3 <b><font color="#8000FF">do</font></b>
+         (<font color="#8000FF">printout</font> t <font color="#008000">&quot;."</font>))
+      (<font color="#8000FF">printout</font> t <font color="#008000">" &quot; </font>?cnt2 <font color="#8000FF">crlf</font>)))
+</pre>
+
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.6.html">progn$</a></h4>
+<pre>(<b><font color="#8000FF">progn$</font></b> (<font color="#8000FF">create$</font> 1 2 3)
+   (<font color="#8000FF">printout</font> t . <font color="#8000FF">crlf</font>))
+</pre>
+<pre>(<b><font color="#8000FF">progn$</font></b> (<font color="#8000FF">?v (create$</font> a b c))
+   (<font color="#8000FF">printout</font> t ?v-index &quot; &quot; ?v <font color="#8000FF">crlf</font>))
+</pre>
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.8.html">break</a></h4>
+<pre>    (<font color="#FF0000">break</font>)
+</pre>
+
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node13.7.4.html">halt</a></h4>
+<pre>    (<font color="#FF0000">halt</FONT>)</pre>
+
+<pre>(<font color="#8000FF">defrule</font> continuous-check
+    ?phase &lt;- (phase check-continuous)
+    =&gt;
+    (<font color="#8000FF">retract</font> ?phase)
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Continuous? "</font>)
+    (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+    (<font color="#8000FF">while</font> (and (neq ?answer yes) (neq ?answer no))
+        do
+        (<font color="#8000FF">printout</font> t <font color="#008000">&quot;C</font>ontinu<font color="#008000">e? "</font>)
+        (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+    (<font color="#8000FF">assert</font> (phase continue))
+    (<font color="#8000FF">if</font> (neq ?answer yes)
+        <font color="#8000FF">then</font> (<font color="#FF0000">halt</font>)))</pre>
+
+
+<h3><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node7.html">Deffunction Construct</a></h3>
+
+<pre>(<font color="#8000FF"><b>deffunction </b></font> hypotenuse-length (?a ?b)
+   (** (+ (* ?a ?a) (* ?b ?b)) 0.5))
+</pre>
+
+<pre>(<font color="#8000FF"><b>deffunction </b></font> check-input (?question ?values)
+   (<font color="#8000FF">printout</font> t ?question &quot; &quot; ?values &quot; &quot;)
+   (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+   (<font color="#8000FF">while</font> (not (member$ ?answer ?values))
+        (<font color="#8000FF">printout</font> t ?question &quot; &quot; ?values &quot; &quot;)
+        (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>)))</pre>
+
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.6.7.html">return Function</a></h4>
+
+<pre>(<font color="#8000FF"><b>deffunction </b></font> hypotenuse-length (?a ?b)
+   (<font color="#8000FF">bind</font> ?tmp (+ (* ?a ?a) (* ?b ?b)))		;local var ?tmp
+   (<font color="#FF0000">return</font> (** ?tmp 0.5)))
+</pre>
+
+<h4>Revisiting the Sticks Program</h4>
+<pre>(<font color="#8000FF"><b>deffunction </b></font> check-input (?question ?values)
+   (<font color="#8000FF">printout</font> t ?question &quot; &quot; ?values &quot; &quot;)
+   (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+   (<font color="#8000FF">while</font> (not (member$ ?answer ?values))
+        (<font color="#8000FF">printout</font> t ?question &quot; &quot; ?values &quot; &quot;)
+        (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>)))
+   (<font color="#FF0000">return</font> ?answer))
+</pre>
+
+<pre>(<font color="#8000FF">defrule</font> player-select
+   (phase choose-player)
+   =&gt;
+   (<font color="#8000FF">bind</font> ?player
+         (check-input
+          &quot;Who moves first (Computer: c &quot; &quot;Human: h)? &quot;
+          <font color="#FF0000">(create$ c h)</font>))
+   (<font color="#8000FF">assert</font> (player-move ?player)))
+</pre>
+
+<p><b>Revised Sticks Program</b>
+<UL>
+<LI>
+<a href="http://210.70.83.101/servlets/CLPCodeViewer?type=url&source=/sylee/courses/clips/examples/Book/sticks2.clp">Complete Sticks Rule base</a>
+</UL>
+
+<h4>Wildcard Parameter</h4>
+<pre>(<font color="#8000FF"><b>deffunction </b></font> check-input (?question <font color="#FF0000">$?values</font>)
+   (<font color="#8000FF">printout</font> t ?question &quot; &quot; ?values &quot; &quot;)
+   (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>))
+   (<font color="#8000FF">while</font> (not (member$ ?answer ?values))
+        (<font color="#8000FF">printout</font> t ?question &quot; &quot; ?values &quot; &quot;)
+        (<font color="#8000FF">bind</font> ?answer (<font color="#8000FF">read</font>)))
+   (<font color="#FF0000">return</font> ?answer))</pre>
+
+<pre>(<font color="#8000FF">defrule</font> player-select<br>&nbsp;&nbsp; (phase choose-player)<br>&nbsp;&nbsp; =&gt;<br>&nbsp;&nbsp; (<font color="#8000FF">bind</font> ?player<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (check-input<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Who moves first (Computer: c &quot; &quot;Human: h)? &quot;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">c h</font>))<br>&nbsp;&nbsp; (<font color="#8000FF">assert</font> (player-move ?player)))
+</pre>
+
+<h3><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node6.html">Defglobal Construct</a></h3>
+
+<pre>(<font color="#8000FF"><b>defglobal </b></font>?*debug-print* = nil)
+
+(<font color="#8000FF"><b>defrule</b></font> debug-example
+    (data ?x)
+    =&gt;
+    (<font color="#8000FF">printout</font> ?*debug-print*
+    &quot;Debug-example ?x = &quot; ?x &quot; &quot; <font color="#8000FF">crlf</font>)
+</pre>
+
+
+<h3>Useful <A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node13.html">Commands</A> and Functions</h3>
+
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node13.1.10.html">system</a></li>
+<PRE>(<font color="#8000FF"><b>defrule</b></font> list-directory
+    (list-directory ?dir)
+    =&gt;
+    (system <font color="#008000">"dir "</font> ?dir))
+
+</PRE>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node13.1.8.html">batch</a></li>
+<PRE>(<font color="#8000FF"><b>batch</b></font> <font color="#008000">"commands.bat"</font>)
+
+</PRE>
+<li>dribble-on and dribble-off</li>
+<PRE>(<font color="#8000FF"><b>dribble-on</b></font> &lt;file-name&gt;)
+(<font color="#8000FF"><b>dribble-off</b></font>)
+
+</PRE>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.7.4.html">random</a> and <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.7.5.html">
+seed</a></li>
+<PRE>(<font color="#8000FF"><b>deffunction</b></font> roll-die ()
+   (random 1 6))
+
+(<font color="#8000FF"><b>seed</b></font> 30)
+</PRE>
+</UL>
+
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node13.1.8.html">sort</a></li>
+<PRE>(<font color="#8000FF"><b>sort</b></font> <font color="#008000">&gt; 4 3 5 7 2 7</font>)	;(2 3 4 5 7 7)
+
+</PRE>
+</UL>
+
+<p>Previous <a href="efficiency.htm">Efficiency in Rule-Based Languages</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="class.htm">Introduction to COOL : Class and Inheritance</a>
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Web Interface for Jess</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0" charset="big5" />
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#EFFFFF">
+
+<h1>建置網頁介面</h1>
+<h2>建置簡單的網頁介面</h2>
+<h3>收集單項問題的回答,網頁介面的設計較為簡單</h3>
+<oL>
+<LI>只有一單項問題的情形
+<UL>
+<LI>Demo: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/blocks.htm" target="_new">Block world</a>
+(html file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/blocks.htm" target="_new">blocks.htm</a>)
+<li>clips files :
+<UL>
+<LI>without web interface: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/book/blocks.clp" target="_new">blocks.clp</a>
+<LI>with web interface: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/blocks.clp" target="_new">blocks.clp</a>
+</UL>
+<LI>servlet file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/Blocks.java" target="_new">Blocks.java</a>
+</UL>
+<p>
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/BServlet.java" target="_new">BServlet.java</a> 可用以處理這類問題, 但限於 Unordered Fact:
+<ul>Demos:
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/blocks2.htm" target="_new">Block world</a>
+(clips files : blocks.clp)
+(html file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/blocks2.htm" target="_new">blocks2.htm</a>)
+</ul>
+<p>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/CServlet.java" target="_new">CServlet.java</a> 可用以處理 Ordered Fact:
+<ol>Demos:
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/poker/count.htm" target="_new">Count points for a card hand</a>
+(html file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/poker/count.htm" target="_new">count.htm</a>)
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/parse.htm" target="_new">Parse a simple sentence</a>
+(html file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/parse.htm" target="_new">parse.htm</a>)
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/eliza.htm" target="_new">A computer "Psychiatrist"</a>
+(html file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/eliza.htm" target="_new">eliza.htm</a>)
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/Poker/counting0.clp&amp;title=Bridge%20Bidding" target="_new">Count points for a card hand</a>
+<br>(jess file : <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/poker/counting0.clp" target="_new">counting0.clp</a>,
+<a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/poker/counting2.clp" target="_new">counting2.clp</a>)
+</ol>
+</ol>
+
+
+<h3>連續收集單項問題的回答</h3>
+<ul>
+<li>servlet的設計必須逐次記錄答案,這就要用到session。
+<li>系統也要用(read-from-web ...)產生收集單項問題的網頁, clips file 中(read)用(read-from-web ...)代替。 例如,
+<pre>
+(<font color="#8000FF">defrule</font> one-y
+   (one y)
+   =&gt;
+   (<font color="#8000FF">printout</font> t <font color="#008000">" "</font> <font color="#8000FF">crlf</font>)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"問題一．你認為你是一個有個性，有自己的思想及主見的人嗎？(y/n)"</font>)
+   (<font color="#8000FF">bind</font> ?yn (<font color="#8000FF"><b>read</b></font>))
+   (<font color="#8000FF">assert</font> (gquestion1 ?yn)))
+
+</pre>
+改為
+<pre>
+(<font color="#8000FF">defrule</font> one-y
+   (one y)
+   =&gt;
+   (<font color="#8000FF">printout</font> t <font color="#008000">" "</font> <font color="#8000FF">crlf</font>)
+   (<b>read-from-web</b> <font color="#008000">"問題一．你認為你是一個有個性，有自己的思想及主見的人嗎？(y/n)"</font> gquestion1))
+
+</pre>
+經過servlet的處理, assert an ordered fact: (gquestion1 y)。函式 read-from-web 的設計如下:
+<pre>
+(<font color="#8000FF">deffunction</font> read-from-web (?prompt ?factName)
+   (<font color="#8000FF">printout</font> t ?prompt)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"&lt;FORM METHOD=POST ACTION=http://"</font> ?*host* <font color="#008000">"/servlets/JessServlet>"</font>)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"&lt;INPUT TYPE=\&quot;hidden\&quot; NAME=\&quot;fileRB\&quot; VALUE=\&quot;com\&quot;&gt;"</font>)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"&lt;INPUT TYPE=\&quot;hidden\&quot; NAME=\&quot;fact_name\&quot; VALUE="</font> ?factName <font color="#008000">"&gt;"</font>)
+   (<font color="#8000FF">printout</font> t <font color="#8000FF">crlf</font> <font color="#008000">"&lt;INPUT TYPE=\&quot;radio\&quot; NAME=\&quot;slot\&quot; VALUE=\&quot;n\&quot; checked&gt;no"</font>)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"&lt;INPUT TYPE=\&quot;radio\&quot; NAME=\&quot;slot\&quot; VALUE=\&quot;y\&quot; &gt;yes"</font>)
+   (<font color="#8000FF">printout</font> t <font color="#8000FF">crlf</font> <font color="#8000FF">crlf</font> <font color="#008000">"&lt;p&gt;&lt;INPUT TYPE=submit VALUE=\&quot;Enter\&quot;&gt;"</font>)
+   (<font color="#8000FF">printout</font> t <font color="#008000">"&lt;/FORM&gt;"</font>)
+   )
+
+</pre>
+
+<LI>Demo: <a href="projects/com/com.htm" target="_new">個性分析測驗系統</a> by 王怡菁, 石貴中。
+<li>clips files :
+<UL>
+<LI>without web interface: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/com/com0.clp" target="_new">com0.clp</a>
+<LI>with web interface: <a href="projects/com/com.clp" target="_new">com.clp</a>
+</UL>
+<LI>jess servlets and related files : <BR>JessServlet.java, ReteControl.java, toUnicode.java
+</UL>
+</oL>
+
+<h2>建置一般的網頁介面</h2>
+經由單一網頁收集多項問題的回答
+<ol>
+<li>Demo: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/libHelper/index.html" target="_new">參考諮詢專家系統</a> by 魏煜娟。
+<BR>此系統的 servlet <u>QF.java</u> 的設計
+參考 <a href="JessTest2.java">JessTest2.java</a>, 較為簡單。
+<p>
+<LI>Demo: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/cholesterol/cholesterol.htm" target="_new">cholesterol系統</a>。
+<BR>此系統的 servlet <u>cholesterol.java</u> 的設計,需要處理 default values。
+<ul>
+<LI>clips file: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/other/cholesterol/Project.clp" target="_new">Project.clp</a>
+<LI>servlet file: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/examples/cholesterol/cholesterol.java" target="_new">cholesterol.java</a>
+</UL>
+<p>
+<li>Demo: <a href="http://www.csie.ntu.edu.tw/~sylee/jess/wine.htm" target="_new">WINEX: The WINe EXpert system</a>
+<ul>
+<LI>clips file: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/other/wine.clp" target="_new">Project.clp</a>
+<LI>servlet file: <u>JessServlet.java</u>
+</UL>
+</ol>
+假如多項問題的回答,在規則中沒有設計發問次序的控制, 則在發問後使用<b>(halt)</b>暫停, 以免在單一網頁出現同時多項問題。 例如,
+<pre>
+(<font color="#8000FF">defrule</font> QUESTIONS::ask-a-question
+   ?f &lt;- (question (already-asked FALSE)
+                   (the-question ?the-question)
+                   (attribute ?the-attribute)
+                   (valid-answers $?valid-answers))
+   =&gt;
+   (<font color="#8000FF">modify</font> ?f (already-asked TRUE))
+   (read-from-web ?the-question ?the-attribute ?valid-answers)
+   (<font color="#8000FF"><b>halt</b></font>)
+   (<font color="#8000FF">set-current-module</font> QUESTIONS)   <font color="#0040a0">; to keep answer in the same module</font>
+ )
+
+</pre>
+<h3>References</h3>
+<ul>
+<LI>Sec. 4.4.6 I/O Routers in <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/docs/library.html">4. Introduction to Programming with Jess in Java</a>
+<LI><a href="http://www.deitel.com/books/jHTP5/">Java How to Program, 5/e, by Deitel</a>
+</ul>
+
+</body>
+</html>

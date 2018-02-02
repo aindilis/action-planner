@@ -1,0 +1,134 @@
+;; (THIS WILL ALSO KEEP YOU FROM IMPULSE SHOPPING AS YOU CAN JUST GRAB AND GO WITH MOST ITEMS)
+
+	;; A THING MAY KEEP A PERSON FROM IMPULSE SHOPPING.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (FROM_27 ?x1) (IMPULSE_27 ?x1) (SHOPPING_27 ?x1))
+
+	;; A PERSON MAY GRAB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GRAB_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (LOOK AT YOUR LIST AGAIN TO MAKE SURE YOU HAVE N T PUT ANY EXTRA ITEMS YOU DO N T REALLY NEED)
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A PERSON MAY PUT ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (ITEMS_27 ?x1))
+
+	;; ITEMS CAN BE EXTRA.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (SHOP AT A LOW COST GROCERY STORE OR DISCOUNT OUTLET)
+
+	;; A SHOP[PERSON??] CAN BE AT A COST GROCERY STORE.
+
+		(and (SHOP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (at_27 ?x1) (A_27 ?x1) (COST_27 ?x1) (GROCERY_27 ?x1) (STORE_27 ?x1))
+
+	;; A COST GROCERY STORE CAN BE LOW.
+
+		(and (COST_27 ?x1) (GROCERY_27 ?x1) (STORE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (BUY ONLY THE NECESSITIES FOR YOUR HOME)
+
+	;; NECESSITIES CAN BE FOR A HOME.
+
+		(and (necessity_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (THIS MEANS FOOD -LRB- NO SPECIALTY ITEMS -RRB- COMMA AND TOILET PAPER)
+
+	;; A THING MAY MEAN FOOD.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1) (FOOD_27 ?x1))
+
+	;; ITEMS CAN BE SPECIALTY.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECIALTY_27 ?x2))
+
+;; (ALLOW YOURSELF FEW COMMA IF ANY COMMA LUXURIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE COUPONS AS THEY ARE AN EXCELLENT WAY TO SAVE MONEY ON CERTAIN ITEMS)
+
+	;; A USE[PERSON??] MAY COUPON.
+
+		(and (USE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (COUPON_27 ?x1))
+
+	;; INDIVIDUAL -S CAN BE A WAY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE EXCELLENT.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+;; (MAKE SURE THAT THE COUPONS THAT YOU HAVE CAN BE USED IN THE STORE OF YOUR CHOICE)
+
+	;; COUPONS MAY BE USE -ED IN A STORE OF A CHOICE.
+
+		(and (coupon_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORE_27 ?x3) (of_27 ?x2 ?x4) (A_27 ?x4) (CHOICE_27 ?x4))
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A CHOICE MAY HAVE A STORE.
+
+		(and (CHOICE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORE_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (BE SURE TO ALLOCATE A FEW EXTRA DOLLARS FOR TAXES)
+
+	;; DOLLARS CAN BE FOR TAXES.
+
+		(and (dollar_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (tax_27 ?x2))
+
+	;; DOLLARS CAN BE EXTRA.
+
+		(and (dollar_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (-LRB- UNLESS YOU LIVE IN A STATE WITHOUT FOOD TAXES -RRB-)
+
+	;; A PERSON MAY LIVE IN A STATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1) (in_27 ?x1 ?x2) (state_27 ?x2))

@@ -1,0 +1,41 @@
+travelEurope(jiannis).			hasID(jiannis).hasTicket(jiannis).hasSuitcase(scB, jiannis).suitcaseContainsGun(scA).personHoldsLicence(jiannis).
+
+hasPets(jiannis).haveChip(jiannis).areVaccinated(jiannis).haveCage(jiannis).passedSecuritySearch(jiannis).
+
+
+
+~travelEurope(iwanna).isPregnant(iwanna).~pregnantMoreThan7Months(iwanna).
+hasSuitcase(scC, iwanna).suitcaseContainsLiquid(scC).passedSecuritySearch(iwanna).hasPassport(iwanna).hasTicket(iwanna).
+
+
+
+travelEurope(zwnianakis).~hasID(zwnianakis).hasPassport(zwnianakis).hasSuitcase(scD, zwnianakis).suitcaseContainsPuncheon(scD).passedSecuritySearch(zwnianakis).
+
+
+
+ageLessThan6(anna).hasPets(anna).haveChip(anna).~areVaccinated(anna).haveCage(anna).hasTicket(anna).~accompaniedParent(anna).passedSecuritySearch(anna).
+
+
+pass1:	=> acceptableIdentification(Person).pass2: ~travelEurope(Person), ~hasPassport(Person)		=> ~acceptableIdentification(Person).pass3: travelEurope(Person), ~hasID(Person), ~hasPassport(Person) 		=> ~acceptableIdentification(Person).pass2 > pass1.pass3 > pass1.
+
+
+sc1: hasSuitcase(Sc, Person)		=> acceptableSuitcase(Sc, Person).sc2: hasSuitcase(Sc, Person), suitcaseContainsLiquid(Sc)		=> ~acceptableSuitcase(Sc, Person).sc3: hasSuitcase(Sc, Person), suitcaseContainsGun(Sc), ~personHoldsLicence(Person)		=> ~acceptableSuitcase(Sc, Person).sc4: hasSuitcase(Sc, Person), suitcaseContainsSpray(Sc)		=> ~acceptableSuitcase(Sc, Person).sc5: hasSuitcase(Sc, Person), suitcaseContainsExplosive(Sc)		=> ~acceptableSuitcase(Sc, Person).sc6: hasSuitcase(Sc, Person), suitcaseContainsPuncheon(Sc)		=> ~acceptableSuitcase(Sc, Person).sc2 > sc1.  sc3 > sc1.   sc4 > sc1.   sc5 > sc1.   sc6 > sc1.
+
+
+age1:	=> acceptableAge(Person).age2: ageLessThan12(Person), ~accompanied(Person)		=> ~acceptableAge(Person). age3: ageLessThan6(Person), ~accompaniedParent(Person)		=> ~acceptableAge(Person).age2 > age1. age3 > age1.
+
+
+preg1:	=> pregnantCheck(Person).preg2: isPregnant(Person), pregnantMoreThan7Months(Person)		=> ~pregnantCheck(Person).preg2 > preg1.
+
+
+pet1:	=> acceptablePets(Person).pet2: hasPets(Person), ~areVaccinated(Person)		=> ~acceptablePets(Person). pet3: hasPets(Person), ~haveChip(Person)		=> ~acceptablePets(Person). pet4: hasPets(Person), ~haveCage(Person)		=> ~acceptablePets(Person).pet2 > pet1.  pet3 > pet1.  pet4 > pet1.
+
+
+r2: ~hasTicket(Person) => ~acceptable(Person).
+r3: ~acceptableIdentification(Person) => ~acceptable(Person).r4: ~acceptableSuitcase(Sc, Person) => ~acceptable(Person).r5: ~passedSecuritySearch(Person) => ~acceptable(Person).r6: ~acceptableAge(Person) => ~acceptable(Person).r7: ~pregnantCheck(Person) => ~acceptable(Person).r8: ~acceptablePets(Person) => ~acceptable(Person).
+
+
+r1: => acceptable(Person).
+r2 > r1. r3>r1. r4>r1. r5>r1. r6>r1. r7>r1. r8>r1.
+
+

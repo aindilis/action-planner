@@ -1,0 +1,61 @@
+;; (ARRANGE THEM INTO A SORT OF COLLAGE ON YOUR WALL)
+
+	;; COLLAGE CAN BE ON A WALL.
+
+		(and (collage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (WALL_27 ?x2))
+
+	;; A PERSON MAY HAVE A WALL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WALL_27 ?x1))
+
+;; (STICK THE PICTURES TO YOUR WALL IN THE WAY YOU DECIDED)
+
+	;; A PERSON MAY DECIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DECIDE_27 ?x1))
+
+	;; A WALL CAN BE IN A WAY.
+
+		(and (WALL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (way_27 ?x2))
+
+	;; A PERSON MAY HAVE A WALL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WALL_27 ?x1))
+
+;; (YOU HAVE A CHOICE OF MANY DIFFERENT ADHESIVES - BLU-TACK COMMA STICKY TAPE COMMA GLUE)
+
+	;; A PERSON MAY HAVE A CHOICE OF SOME_NUMBER_OF ADHESIVES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1) (of_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (ADHESIVES_27 ?x2))
+
+	;; A CHOICE CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF ADHESIVES.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (ADHESIVES_27 ?x2))
+
+	;; A TAPE CAN BE STICKY.
+
+		(and (TAPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STICKY_27 ?x2))
+
+;; (ADD SOME PICTURES OF YOURSELF COMMA FAMILY AND FRIENDS IF YOU LIKE)
+
+	;; SOME_NUMBER_OF PICTURES CAN BE SHOW A PERSON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (YOU MIGHT ALSO WANT TO ADD SOME STICKERS - STARS ETC.)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

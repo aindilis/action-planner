@@ -1,0 +1,121 @@
+.video-js {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  margin: 0px;
+  font-size: 13px;
+  line-height: 19px;
+  overflow-x: hidden;
+}
+
+.video-js .vjs-poster {
+    position: absolute;
+    left: 0;
+}
+
+.vjs-controls {
+    z-index: 20;
+}
+
+.video-js .share {
+    position: absolute;
+    top: 0; right: 0;
+    width: 10%;
+    max-width: 110px;
+    min-width: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.video-js .share ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.video-js .share li {
+    position: relative;
+    display: inline-block;;
+    width: 80%;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    z-index: 9;
+}
+
+.video-js .share li .dummy {
+    padding-top: 100%;
+}
+
+.video-js .share li a {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 70%;
+    color: #E8E8E8;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: inherit;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 640px) {
+    .video-js .share li a {
+        font-size: 0.8em;
+    }
+}
+
+.video-js .testing .something {
+    color: #F9F900;
+    /* Just changing this to test a compressor thing. */
+}
+
+.video-js .share li a:hover {
+    opacity: 1 !important;
+    color: #F9F900;
+}
+
+.video-js .share .fb a {
+    background: url('../share/fb_up_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .fb a:hover {
+    background: url('../share/fb_over_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .tw a {
+    background: url('../share/twitter_up_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .tw a:hover {
+    background: url('../share/twitter_over_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .embed a {
+    background: url('../share/embed_up_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .embed a:hover {
+    background: url('../share/embed_over_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .email a {
+    background: url('../share/email_up_2x.png');
+    background-size: 100%;
+}
+
+.video-js .share .email a:hover {
+    background: url('../share/email_over_2x.png');
+    background-size: 100%;
+}

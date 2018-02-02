@@ -1,0 +1,189 @@
+;; (DECIDE WHAT SONGS YOUR BAND WILL BE PLAYING AND REHEARSE THEM)
+
+	;; SONGS MAY PLAY.
+
+		(and (SONGS_27 ?x1) (MAY_27 ?x1) (PLAY_27 ?x1))
+
+	;; A PERSON MAY HAVE A BAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAND_27 ?x1))
+
+;; (MAKE SURE TO HAVE A DRESS REHEARSAL ON STAGE BEFORE THE CONCERT)
+
+	;; A DRESS REHEARSAL CAN BE ON STAGE.
+
+		(and (DRESS_27 ?x1) (REHEARSAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (STAGE_27 ?x2))
+
+;; (CHOOSE THE PART OF YOUR HOUSE THAT YOU WISH TO HAVE THE CONCERT AT)
+
+	;; A HOUSE MAY HAVE A PART.
+
+		(and (HOUSE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (IT WOULD BE BEST TO CHOOSE SOMEWHERE WITH A FLAT SURFACE)
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A SURFACE CAN BE FLAT.
+
+		(and (SURFACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (IF YOU DO N T HAVE A BIG ENOUGH YARD COMMA YOU COULD ALWAYS HAVE YOUR BAND SET UP IN THE GARAGE AND THE AUDIENCE BE OUTSIDE OR HAVE IT INSIDE YOUR HOUSE IF YOU HAVE ENOUGH SPACE)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A YARD CAN BE BIG.
+
+		(and (YARD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; A YARD CAN BE ENOUGH.
+
+		(and (YARD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; A BAND MAY BE SET_UP -ED IN A GARAGE.
+
+		(and (BAND_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SET_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (GARAGE_27 ?x3))
+
+	;; A PERSON MAY HAVE A BAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAND_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SPACE_27 ?x1))
+
+	;; A SPACE CAN BE ENOUGH.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (ADVERTISE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONCE EVERYTHING IS PLANNED OUT COMMA MAKE FLYERS TO ADVERTISE YOUR BAND S EVENT)
+
+	;; EVERYTHING MAY BE PLAN_OUT -ED.
+
+		(and (everything_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAN_5FOUT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A BAND MAY HAVE AN EVENT.
+
+		(and (BAND_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+	;; A PERSON MAY HAVE A BAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAND_27 ?x1))
+
+;; (YOU COULD STICK THEM UP AROUND YOUR NEIGHBORHOOD OR AT SCHOOL -LRB- IF ALLOWED -RRB- AND HAND THEM OUT TO YOUR FRIENDS COMMA NEIGHBORS AND FAMILY)
+
+	;; A PERSON MAY STICK_UP INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STICK_5FUP_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; A PERSON MAY HAVE A NEIGHBORHOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEIGHBORHOOD_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (IF YOU WANT COMMA CHARGE A FEE)
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (YOU MAY BE HAVING THIS EVENT TO MAKE MONEY IN WHICH CASE YOU SHOULD CREATE A REASONABLE FEE TO ENTER)
+
+	;; A FEE CAN BE REASONABLE.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REASONABLE_27 ?x2))
+
+;; (DECORATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLACE-3 DET ALL-5 PREP_OF LITTER-6 PREP_OF GARBAGE-8 CONJ_AND GARBAGE-8)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PICK DECORATIONS THAT FIT WITH YOUR KIND OF MUSIC)
+
+	;; A PICK[PERSON??] MAY DECORATION A FIT WITH A KIND OF MUSIC.
+
+		(and (PICK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DECORATION_27 ?x1) (A_27 ?x1) (FIT_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (KIND_27 ?x1) (of_27 ?x1 ?x2) (MUSIC_27 ?x2))
+
+	;; A PERSON MAY HAVE A KIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KIND_27 ?x1))
+
+;; (BALLOONS COMMA BANNERS COMMA STREAMERS AND OTHER PARTY DECORATIONS SHOULD BE CONSIDERED)
+
+	;; BALLOONS MAY BE CONSIDER -ED.
+
+		(and (balloon_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSIDER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (SET UP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [17]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SET UP THE DECORATIONS AND GET READY A FEW HOURS BEFORE SO THAT YOU CAN HAVE ONE FINAL REHEARSAL)
+
+	;; A PERSON MAY HAVE A REHEARSAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REHEARSAL_27 ?x1))

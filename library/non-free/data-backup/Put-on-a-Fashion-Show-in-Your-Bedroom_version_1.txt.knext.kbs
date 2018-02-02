@@ -1,0 +1,204 @@
+;; (ETC. PUT YOUR BED TO THE SIDE OF THE ROOM)
+
+	;; AN ETC.[PERSON??] MAY PUT A BED TO A SIDE OF A ROOM.
+
+		(and (ETC_2E_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (bed_27 ?e1 ?x1) (to_27 ?e1 ?x2) (side_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (ROOM_27 ?x3))
+
+	;; A PERSON MAY HAVE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; A ROOM MAY HAVE A SIDE.
+
+		(and (ROOM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+;; (PUT IT UP AGAINST THE WALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF AT ALL POSSIBLE COMMA ASK YOUR PARENTS IF YOU CAN MOVE YOUR BED INTO ANOTHER ROOM)
+
+	;; A PERSON MAY HAVE PARENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+	;; A PERSON MAY MOVE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MOVE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; A PERSON MAY HAVE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+;; (GET A GIANT MIRROR AND PUT IT WHERE YOU CAN SEE YOUR WHOLE BODY)
+
+	;; A MIRROR CAN BE GIANT.
+
+		(and (MIRROR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GIANT_27 ?x2))
+
+	;; A PERSON MAY SEE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (YOU CAN PUT THE MIRROR ON A LARGE WALL OR THERE ARE STAND-ALONE FULL BODY MIRRORS YOU CAN USE FOR MOBILITY)
+
+	;; A PERSON MAY PUT A MIRROR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (MIRROR_27 ?x1))
+
+	;; A WALL CAN BE LARGE.
+
+		(and (WALL_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; BODY MIRRORS CAN BE STAND-ALONE.
+
+		(and (BODY_27 ?x1) (MIRRORS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STAND-ALONE_27 ?x2))
+
+	;; BODY MIRRORS CAN BE FULL.
+
+		(and (BODY_27 ?x1) (MIRRORS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A PERSON MAY USE FOR MOBILITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (for_27 ?x1 ?x2) (MOBILITY_27 ?x2))
+
+;; (FIND A CLOTHING RACK AND PUT ON BRAND OR STYLE OF CLOTHES ON IT)
+
+	;; CLOTHES CAN BE ON A THING-REFERRED-TO.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (ATTACH THE ONE SIDE OF THE RACK TO THE WALL SO IT WO N T FALL OVER)
+
+	;; A RACK CAN BE TO A WALL.
+
+		(and (RACK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (WALL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY FALL_OVER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FALL_5FOVER_27 ?x1))
+
+;; (IF POSSIBLE COMMA HAVE IT LEANING ON A WALL)
+
+	;; A THING-REFERRED-TO MAY LEAN ON A WALL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (LEAN_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (WALL_27 ?x1))
+
+;; (MAKE A STAGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU WANT TO GO COMPLETELY WILD COMMA MAKE A RED CARPET OR A FASHION MODEL STAGE THAT YOU CAN WALK ON)
+
+	;; A PERSON MAY WALK_ON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WALK_5FON_27 ?x1))
+
+;; (ADD CHAIRS AT THE END SO YOUR FRIENDS CAN RATE YOUR OUTFITS)
+
+	;; AN ADD[PERSON??] MAY CHAIR AT AN END.
+
+		(and (ADD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CHAIR_27 ?x1) (at_27 ?x1 ?x2) (END_27 ?x2))
+
+	;; FRIENDS MAY RATE OUTFITS.
+
+		(and (friend_27 ?x1) (MAY_27 ?x1) (RATE_27 ?x1) (OUTFITS_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; A PERSON MAY HAVE OUTFITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OUTFITS_27 ?x1))
+
+;; (HAVE A STEREO THAT PLAYS THE MUSIC THAT SUITS YOUR OUTFITS)
+
+	;; A PERSON MAY HAVE OUTFITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OUTFITS_27 ?x1))
+
+;; (FIND OLD SHOE BOXES AND TISSUE PAPER TO CREATE AN EVEN BETTER SHOE STORE LOOK)
+
+	;; SHOE BOXES CAN BE OLD.
+
+		(and (SHOE_27 ?x1) (BOXES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; A SHOE STORE LOOK CAN BE BETTER.
+
+		(and (SHOE_27 ?x1) (STORE_27 ?x1) (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+;; (HAVE A VANITY OR DESK WHERE YOU CAN KEEP ALL OF YOUR MAKEUP)
+
+	;; A PERSON MAY KEEP SOME_NUMBER_OF THING OF A MAKEUP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (MAKEUP_27 ?x2))
+
+	;; A MAKEUP MAY HAVE A THING.
+
+		(and (MAKEUP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE A MAKEUP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MAKEUP_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [17]>
+
+;; (PUT UP PICTURES OF MODELS WITH SIMILAR STYLES)
+
+	;; PICTURES CAN BE SHOW MODELS.
+
+		(and (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (MODELS_27 ?x2))
+
+	;; MODELS CAN BE WITH STYLES.
+
+		(and (model_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (style_27 ?x2))
+
+;; (YOU CAN ALSO GET YOUR OWN PICTURE BLOWN UP TO WALL SIZE TO MAKE YOUR OWN POSTERS)
+
+	;; A PERSON MAY GET A PICTURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (PICTURE_27 ?x1))
+
+	;; A PICTURE MAY BE BLOW_UP -ED TO WALL SIZE.
+
+		(and (PICTURE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLOW_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?x2 ?x3) (WALL_27 ?x3) (SIZE_27 ?x3))
+
+	;; A PERSON MAY HAVE A PICTURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PICTURE_27 ?x1))
+
+	;; A PERSON MAY HAVE POSTERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POSTERS_27 ?x1))

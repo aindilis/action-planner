@@ -1,0 +1,496 @@
+;; (EFFECTIVEACCEPT THE FACT THAT THERE ARE SOME THINGS IN YOUR LIFE THAT YOU ARE NOT HAPPY WITH  YOUR JOB COMMA YOUR RELATIONSHIP COMMA YOUR BODY)
+
+	;; SOME_NUMBER_OF THINGS CAN BE IN A LIFE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THINGS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LIFE_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+	;; A PERSON CAN BE HAPPY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAPPY_27 ?x2))
+
+	;; A PERSON MAY HAVE A JOB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JOB_27 ?x1))
+
+	;; A PERSON MAY HAVE A RELATIONSHIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RELATIONSHIP_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (THERE IS ALWAYS A ROOT TO YOUR ANXIETY AND PANIC)
+
+	;; A ROOT CAN BE TO ANXIETY.
+
+		(and (ROOT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (ANXIETY_27 ?x2))
+
+	;; A PERSON MAY HAVE ANXIETY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANXIETY_27 ?x1))
+
+;; (YOU MAY PANIC IN A CERTAIN SITUATION COMMA WHICH PROBABLY HAS NO RELATION TO THE REAL ISSUE)
+
+	;; A PERSON MAY PANIC IN A SITUATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PANIC_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SITUATION_27 ?x2))
+
+	;; A RELATION CAN BE TO AN ISSUE.
+
+		(and (relation_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (AN_27 ?x2) (ISSUE_27 ?x2))
+
+	;; AN ISSUE CAN BE REAL.
+
+		(and (ISSUE_27 ?x1) (be_27 ?e1 ?x1) (real_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (THIS IS VERY IMPORTANT COMMA AS IT ALLOWS YOU TO RETRAIN YOUR MIND INTO LETTING YOU AGAIN BELIEVE THAT THERE IS N T A DANGER IN GOING TO THE MALL COMMA OR DRIVING A CAR)
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; A PERSON MAY BELIEVE A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BELIEVE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+;; (YOU HAVE TOLD YOUR MIND THAT THESE THINGS ARE PUTTING YOUR BODY IN DANGER COMMA AND YOUR BODY IS REACTING TO THE THREAT)
+
+	;; A PERSON MAY TELL A MIND A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TELL_27 ?x1) (A_27 ?x1) (MIND_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; THINGS MAY PUT A BODY.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A BODY MAY REACT TO A THREAT.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (REACT_27 ?x1) (to_27 ?x1 ?x2) (threat_27 ?x2))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (BUT REALLY COMMA THERE IS NOT A THREAT AT THE TIME COMMA YOUR MIND IS TRICKING YOUR BODY)
+
+	;; A MIND MAY TRICK A BODY.
+
+		(and (MIND_27 ?x1) (MAY_27 ?x1) (TRICK_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A THREAT CAN BE AT A TIME.
+
+		(and (threat_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (IF COMMA FOR INSTANCE COMMA THERE WAS A REAL THREAT THEN YOUR BODY WOULD RESPOND AS NECESSARY)
+
+	;; A BODY MAY RESPOND NECESSARY.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (RESPOND_27 ?x1) (NECESSARY_27 ?x1))
+
+	;; A THREAT CAN BE REAL.
+
+		(and (threat_27 ?x1) (be_27 ?e1 ?x1) (real_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (THIS IS WHAT OUR BODIES ARE DESIGNED TO DO)
+
+	;; PERSON -S MAY HAVE BODIES.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BODIES_27 ?x1))
+
+;; (BECOME FAMILIAR WITH COMMA AND COMFORTABLE GOING THROUGH YOUR BODILY SENSATIONS AGAIN)
+
+	;; A PERSON MAY HAVE SENSATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SENSATIONS_27 ?x1))
+
+	;; SENSATIONS CAN BE BODILY.
+
+		(and (sensation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BODILY_27 ?x2))
+
+;; (WHEN WE SUFFER FROM PANIC ATTACKS COMMA OUR BODIES ALMOST FORGET TO RECOGNIZE THE SYMPTOMS AS BEING NORMAL)
+
+	;; PERSON -S MAY SUFFER FROM PANIC ATTACKS.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SUFFER_27 ?x1) (FROM_27 ?x1) (PANIC_27 ?x1) (ATTACKS_27 ?x1))
+
+	;; PERSON -S MAY HAVE BODIES.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BODIES_27 ?x1))
+
+;; (OUR MINDS THINK WE ARE IN DANGER COMMA THEREFORE TRIGGERING MORE SYMPTONS AND COMMA WELL COMMA YOU CAN SEE THE VICIOUS CYCLE)
+
+	;; PERSON -S MAY HAVE MINDS.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MINDS_27 ?x1))
+
+	;; PERSON -S CAN BE IN DANGER.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (DANGER_27 ?x2))
+
+	;; A PERSON MAY SEE A CYCLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (A_27 ?x1) (CYCLE_27 ?x1))
+
+	;; A CYCLE CAN BE VICIOUS.
+
+		(and (CYCLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VICIOUS_27 ?x2))
+
+;; (ONCE YOU FAMILIARIZE YOURSELF WITH THESE SENSATIONS COMMA YOU CAN RE-TRAIN YOUR MIND TO KNOW THAT THIS IS YOUR BODY S WAY OF REACTING COMMA YOU ARE NOT IN DANGER COMMA AND THERE IS NO NEED TO GET SCARED OR
+ PANIC)
+
+	;; A PERSON MAY RE-TRAIN A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RE-TRAIN_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; A PERSON MAY FAMILIARIZE A PERSON WITH SENSATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FAMILIARIZE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (WITH_27 ?x1) (SENSATIONS_27 ?x1))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; A BODY MAY HAVE A WAY.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A PERSON CAN BE IN DANGER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (DANGER_27 ?x2))
+
+;; (PRACTICE GOING OVER YOUR BODILY SENSATIONS AT HOME OR WHEREVER YOU FEEL COMFORTABLE)
+
+	;; A PRACTICE[PERSON??] MAY GO_OVER SENSATIONS.
+
+		(and (PRACTICE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (GO_5FOVER_27 ?x1) (SENSATIONS_27 ?x1))
+
+	;; A PERSON MAY HAVE SENSATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SENSATIONS_27 ?x1))
+
+	;; SENSATIONS CAN BE BODILY.
+
+		(and (sensation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BODILY_27 ?x2))
+
+	;; A PERSON MAY FEEL COMFORTABLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (COMFORTABLE_27 ?x1))
+
+;; (GRADUALLY YOU LL BE ABLE TO GO FOR LONGER PERIODS OF TIME)
+
+	;; PERIODS CAN BE LONGER.
+
+		(and (period_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONGER_27 ?x2))
+
+;; (ONCE YOU KNOW THE SENSATION COMMA AND THAT YOUR BODY CAN HANDLE QUITE A BIT OF IT COMMA YOU CAN TELL YOURSELF THAT THIS IS A NORMAL REACTION FOR YOUR BODY AND NOTHING IS GOING TO HAPPEN TO YOU)
+
+	;; A PERSON MAY TELL A PERSON A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TELL_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PERSON MAY KNOW A SENSATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (SENSATION_27 ?x1))
+
+	;; A BODY MAY HANDLE A BIT OF A THING-REFERRED-TO.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (HANDLE_27 ?x1) (A_27 ?x1) (BIT_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A THING CAN BE A REACTION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (reaction_27 ?x2))
+
+	;; A REACTION CAN BE FOR A BODY.
+
+		(and (reaction_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BODY_27 ?x2))
+
+	;; A REACTION CAN BE NORMAL.
+
+		(and (reaction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (MOVE ONTO ANOTHER SENSATION COMMA LIKE DEPERSONALIZATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (-LRB- WARNING  DO NOT TRY THIS IF YOU HAVE COMMA OR THINK YOU MAY HAVE COMMA DISSOCIATIVE DISORDER OR PTSD)
+
+	;; WARNING MAY DISSOCIATIVE DISORDER.
+
+		(and (WARNING_27 ?x1) (MAY_27 ?x1) (DISSOCIATIVE_27 ?x1) (DISORDER_27 ?x1))
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (INCEST AND CHILD SEXUAL ABUSE SURVIVORS ARE PARTICULARLY VULNERABLE TO DISSOCIATION)
+
+	;; INCEST CAN BE VULNERABLE TO DISSOCIATION.
+
+		(and (INCEST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VULNERABLE_27 ?x2) (to_27 ?e1 ?x3) (DISSOCIATION_27 ?x3))
+
+;; (THIS CAN BE VERY FRIGHTENING FOR SOMEONE WHO DOES N T KNOW THE MEANING)
+
+	;; A THING CAN BE FRIGHTENING FOR SOMEONE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRIGHTENING_27 ?x2) (for_27 ?e1 ?x3) (SOMEONE_27 ?x3))
+
+;; (THIS IS DEPERSONALIZATION)
+
+	;; A THING CAN BE DEPERSONALIZATION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEPERSONALIZATION_27 ?x2))
+
+;; (WE DO N T GET ANXIOUS IN THOSE SCENARIOS COMMA BUT WHEN IT HAPPENS DURING A PANIC ATTACK COMMA IT CAN BRING THE ANXIETY TO A HIGHER LEVEL)
+
+	;; PERSON -S MAY DO.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BRING ANXIETY TO A LEVEL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (ANXIETY_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAPPEN DURING A PANIC ATTACK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAPPEN_27 ?x1) (DURING_27 ?x1) (A_27 ?x1) (PANIC_27 ?x1) (ATTACK_27 ?x1))
+
+	;; A LEVEL CAN BE HIGHER.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+;; (FOR THIS COMMA TRY STANDING IN FRONT OF THE MIRROR COMMA STARING AT YOURSELF COMMA NOT SAYING A WORD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AFTER AWHILE COMMA YOU ARE GOING TO START FEELING AS IF YOUR MIND AND BODY ARE IN DIFFERENT PLACES)
+
+	;; A MIND CAN BE IN PLACES.
+
+		(and (MIND_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (place_27 ?x2))
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+;; (KEEP TRYING THIS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (GO FOR LONGER AND LONGER PERIODS UNTIL YOU ARE COMFORTABLE WITH THE SENSATION)
+
+	;; PERIODS CAN BE LONGER.
+
+		(and (period_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONGER_27 ?x2))
+
+	;; A PERSON CAN BE COMFORTABLE WITH A SENSATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2) (WITH_27 ?x2) (A_27 ?x2) (SENSATION_27 ?x2))
+
+;; (TEACH YOUR MIND THAT IT IS NORMAL FOR YOUR HEART RATE TO INCREASE/DECREASE THROUGHOUT THE DAY)
+
+	;; A PERSON MAY HAVE A MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE NORMAL FOR A HEART RATE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2) (for_27 ?e1 ?x3) (A_27 ?x3) (HEART_27 ?x3) (RATE_27 ?x3))
+
+	;; A PERSON MAY HAVE A HEART RATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEART_27 ?x1) (RATE_27 ?x1))
+
+;; (SOMETIMES DURING AN ATTACK COMMA YOUR HEART MAY START RACING AND THIS MIGHT LEAD YOU TO BELIEVE THAT YOU RE HAVING A HEART ATTACK)
+
+	;; A HEART MAY START RACING.
+
+		(and (HEART_27 ?x1) (MAY_27 ?x1) (START_27 ?x1) (RACING_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEART.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEART_27 ?x1))
+
+;; (THE MIND OFTEN THEN TRICKS THE BODY TO REACT EVEN MORE COMMA THEREFORE STARTING THE CYCLE OF AN ATTACK)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT CAN AND WILL WITH NO ADVERSE AFFECTS)
+
+	;; AN AFFECTS CAN BE ADVERSE.
+
+		(and (AFFECTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVERSE_27 ?x2))
+
+;; (TRY A MIND SKILL CALLED SCRIPTING)
+
+	;; A MIND SKILL MAY BE CALL -ED.
+
+		(and (MIND_27 ?x1) (SKILL_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (THIS IS NOT A PHYSICAL SENSATION BUT A MENTAL EXERCISE)
+
+	;; A THING CAN BE A SENSATION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SENSATION_27 ?x2))
+
+	;; A SENSATION CAN BE PHYSICAL.
+
+		(and (SENSATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PHYSICAL_27 ?x2))
+
+	;; AN EXERCISE CAN BE MENTAL.
+
+		(and (EXERCISE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MENTAL_27 ?x2))
+
+;; (TAKE YOUR FEAR -LRB- S -RRB- AND WRITE EACH ONE OUT COMMA BEING VERY DETAILED AND SPECIFIC)
+
+	;; A PERSON MAY HAVE A FEAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (fear_27 ?x1))
+
+;; (WRITE EVERY ASPECT OF THE FEAR COMMA AND DO N T STOP EVEN AT THE POINT WHEN YOU THINK YOU ARE DONE)
+
+	;; A FEAR MAY HAVE AN ASPECT.
+
+		(and (FEAR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ASPECT_27 ?x1))
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PERSON MAY BE DO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (MAKE SURE THAT YOU WRITE OUT THE FINAL CONSEQUENCE)
+
+	;; A PERSON MAY WRITE_OUT A CONSEQUENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRITE_5FOUT_27 ?x1) (A_27 ?x1) (CONSEQUENCE_27 ?x1))
+
+;; (THEN TAKE THIS STORY OF YOURS AND READ IT OVER AND OVER AND OVER AGAIN)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT MAY BE SCARY AND DIFFICULT TO DO IN THE BEGINNING BUT COMMA EVENTUALLY COMMA YOU WILL SEE HOW SILLY IT SOUNDS)
+
+	;; A THING-REFERRED-TO CAN BE SCARY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCARY_27 ?x2))
+
+	;; A PERSON MAY SEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY SOUND.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SOUND_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>

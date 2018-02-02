@@ -1,0 +1,723 @@
+;; (ONE SIDE FOR PAPERS THAT YOU NEED TO TAKE HOME AND WORK ON COMMA AND THE OTHER SIDE FOR THE WORK THAT YOU HAVE COMPLETED AND NEED TURN IN
+ THE NEXT DAY)
+
+	;; A SIDE MAY TURN IN A DAY.
+
+		(and (SIDE_27 ?x1) (MAY_27 ?x1) (TURN_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DAY_27 ?x2))
+
+	;; A SIDE CAN BE FOR PAPERS.
+
+		(and (side_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (paper_27 ?x2))
+
+	;; A PERSON MAY COMPLETE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COMPLETE_27 ?x1))
+
+;; (THIS MAKES IT EASIER TO KNOW WHAT HOMEWORK YOU HAVE TO TURN IN OR NOT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALSO ON TOP OF PAPERS COMMA PUT YOUR NAME SO YOUR MOM WO N T FORGET IT)
+
+	;; A PERSON MAY HAVE A NAME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; A MOM MAY FORGET A THING-REFERRED-TO.
+
+		(and (MOM_27 ?x1) (MAY_27 ?x1) (FORGET_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A MOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOM_27 ?x1))
+
+;; (GET ANY SUPPLIES THAT YOU MAY NEED COMMA BUT DO N T HAVE)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (BEING PREPARED IS IMPORTANT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EVEN IF THAT CERTAIN ITEM WAS N T ON THE SUPPLIES LIST COMMA YOU SHOULD GET IT IF YOU REALLY FEEL YOU NEED IT)
+
+	;; A PERSON MAY GET A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY FEEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+	;; A PERSON MAY NEED A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (GO THROUGH FOLDERS AND GET RID OF PAPERS YOU NO LONGER NEED)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (HAVING ALL OF THOSE EXTRA PAPERS THAT YOU GOT BACK A MONTH AGO IN YOUR FOLDER WILL MAKE IT HEAVY)
+
+	;; PAPERS MAY HAVE A THING.
+
+		(and (paper_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; PAPERS CAN BE EXTRA.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY HAVE A FOLDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOLDER_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE HEAVY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (IT MAY BEND AND TEAR)
+
+	;; A THING-REFERRED-TO MAY BEND.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (BEND_27 ?x1))
+
+;; (BUT WORST OF ALL COMMA YOU WO N T BE ABLE TO FIND PAPERS WHEN YOU NEED THEM)
+
+	;; A PERSON MAY NEED INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (PUT ALL GRADED PAPERS IN A SEPARATE FOLDER WHEN YOU CLEAN OUT THE FOLDERS FROM SCHOOL)
+
+	;; PAPERS CAN BE GRADED.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRADED_27 ?x2))
+
+	;; A FOLDER CAN BE SEPARATE.
+
+		(and (FOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; A PERSON MAY CLEAN_OUT FOLDERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CLEAN_5FOUT_27 ?x1) (folder_27 ?x1))
+
+	;; FOLDERS CAN BE FROM SCHOOL.
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (SCHOOL_27 ?x2))
+
+;; (TO SUMMARIZE THIS UP IF YOU DO N T UNDERSTAND - CLEAN OUT THE FOLDERS YOU DO USE COMMA PUT ALL GRADED WORK THAT YOU CLEANED OUT IN AN
+ EXTRA FOLDER OR BINDER COMMA KEEP IT UNDER YOUR BED OR IN YOUR CLOSET)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; WORK CAN BE GRADED.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRADED_27 ?x2))
+
+	;; A PERSON MAY CLEAN_OUT IN A FOLDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CLEAN_5FOUT_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FOLDER_27 ?x2))
+
+	;; A FOLDER CAN BE EXTRA.
+
+		(and (FOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY HAVE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+	;; A PERSON MAY HAVE A CLOSET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSET_27 ?x1))
+
+;; (BUT BEFORE YOU INSTALL THAT SHELF COMMA CLEAN OUT ANY PAPERS YOU DO N T NEED)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY INSTALL A SHELF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INSTALL_27 ?x1) (A_27 ?x1) (SHELF_27 ?x1))
+
+;; (-LRB- REMEMBER TO CLEAN OUT YOUR LOCKER EVERY WEEK OR TWO)
+
+	;; REMEMBER MAY LOCKER SOME_NUMBER_OF WEEK.
+
+		(and (REMEMBER_27 ?x1) (MAY_27 ?x1) (LOCKER_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (WEEK_27 ?x1))
+
+	;; A PERSON MAY HAVE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (THIS WILL ENSURE THAT YOUR LOCKER WILL STAY CLEAN AND ORGANIZED)
+
+	;; A THING MAY ENSURE A PROPOSITION.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ENSURE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; A LOCKER MAY STAY CLEAN.
+
+		(and (LOCKER_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1) (CLEAN_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (GET A PLANNER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLANNERS ARE VERY HELPFUL)
+
+	;; PLANNERS CAN BE HELPFUL.
+
+		(and (planner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+;; (MOST SCHOOLS SELL THEM COMMA BUT SOME DO N T)
+
+	;; SCHOOLS MAY SELL INDIVIDUAL -S.
+
+		(and (SCHOOLS_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; SOME_NUMBER_OF THING MAY DO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (BUY ONE OR MAKE YOUR OWN IF THE SCHOOL DOES N T PROVIDE ONE)
+
+	;; A SCHOOL MAY DO.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (WRITE DOWN HOMEWORK COMMA TESTS COMMA CLUB MEETING DATES COMMA ANYTHING THAT YOU NEED TO KNOW OR ANYTHING YOU MAY FORGET)
+
+	;; A PERSON MAY FORGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FORGET_27 ?x1))
+
+;; (MAKE SURE TO LOOK IN IT BEFORE YOU GO HOME SO THAT YOU TAKE HOME EVERYTHING THAT YOU NEED)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY TAKE HOME EVERYTHING A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (HOME_27 ?x1) (EVERYTHING_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (PUT PAPERS IN FOLDERS)
+
+	;; 
+
+	;; ((:I NIL IN.P (:F K (:F PLUR FOLDER.N))))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (IN_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (F_27 ?x3) (PLUR_27 ?x3) (FOLDER_2EN_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS MAY SEEM OBVIOUS COMMA BUT PUT ANY PAPERS YOU NEED TO KEEP IN ITS SUBJECT FOLDER)
+
+	;; A THING CAN BE OBVIOUS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBVIOUS_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A SUBJECT FOLDER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUBJECT_27 ?x1) (FOLDER_27 ?x1))
+
+;; (DO N T LET LOOSE PAPERS MANGLE ABOUT)
+
+	;; PAPERS MAY MANGLE_ABOUT.
+
+		(and (paper_27 ?x1) (MAY_27 ?x1) (MANGLE_5FABOUT_27 ?x1))
+
+	;; PAPERS CAN BE LOOSE.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (TAKE THOSE EXTRA SECONDS AND PUT THEM IN A FOLDER)
+
+	;; SECONDS CAN BE EXTRA.
+
+		(and (second_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (THAT WAY COMMA YOU LL HAVE THEM WHEN YOU NEED THEM)
+
+	;; A PERSON MAY NEED INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (IF YOU HAVE AN IMPORTANT PAPER THAT YOU DO N T WANT RUINED COMMA TRY GETTING SOME PAGE PROTECTORS)
+
+	;; A PERSON MAY HAVE A PAPER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PAPER_27 ?x1))
+
+	;; A PAPER CAN BE IMPORTANT.
+
+		(and (PAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (ANOTHER WAY TO GET ORGANIZED IS TO USE AN ACCORDION FOLDER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [30]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ACCORDION FOLDERS ARE THE FOLDERS THAT EXPAND AND HAVE MANY PLACES FOR DIFFERENT KINDS OF PAPER)
+
+	;; ACCORDION FOLDERS CAN BE FOLDERS.
+
+		(and (accordion_27 ?x1) (folder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (folder_27 ?x2))
+
+	;; SOME_NUMBER_OF PLACES CAN BE FOR KINDS OF PAPER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLACES_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (KINDS_27 ?x2) (of_27 ?x2 ?x3) (PAPER_27 ?x3))
+
+;; (AN EXPANDABLE FILE FOLDER)
+
+	;; AN EXPANDABLE MAY FILE FOLDER.
+
+		(and (EXPANDABLE_27 ?x1) (MAY_27 ?x1) (FILE_27 ?x1) (FOLDER_27 ?x1))
+
+;; (IF YOU HAVE NO ASSIGNMENTS TO WORK ON COMMA TALK QUIETLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (NEVER DRAW A TEACHER S ATTENTION TO YOU WITH GOOFY BEHAVIOR)
+
+	;; A TEACHER MAY HAVE ATTENTION.
+
+		(and (TEACHER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ATTENTION_27 ?x1))
+
+	;; A BEHAVIOR CAN BE GOOFY.
+
+		(and (BEHAVIOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GOOFY_27 ?x2))
+
+;; (WHEN YOU KNOW SOMETHING IS DUE IN SAY COMMA TWO WEEKS COMMA GET YOUR SUPPLIES AS SOON AS POSSIBLE)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; SOMETHING CAN BE DUE IN SAY.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DUE_27 ?x2) (in_27 ?e1 ?x3) (SAY_27 ?x3))
+
+	;; A PERSON MAY HAVE SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPLIES_27 ?x1))
+
+;; (WHEN YOU GET YOUR SUPPLIES COMMA DRAFT OUT WHAT YOU WILL BE DOING WITH YOUR PROJECT)
+
+	;; A PERSON MAY GET SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (SUPPLIES_27 ?x1))
+
+	;; A PERSON MAY HAVE SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPLIES_27 ?x1))
+
+	;; A PERSON MAY DO WITH A PROJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (project_27 ?x1))
+
+	;; A PERSON MAY HAVE A PROJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROJECT_27 ?x1))
+
+;; (WORK ON IT A LITTLE EACH DAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [37]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO NOT WAIT UNTIL THE LAST MINUTE TO BEGIN YOUR PROJECT)
+
+	;; A PERSON MAY HAVE A PROJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROJECT_27 ?x1))
+
+;; (THE NIGHT BEFORE THE PROJECT IS DUE COMMA LOOK OVER IT)
+
+	;; A NIGHT MAY LOOK_OVER A THING-REFERRED-TO.
+
+		(and (NIGHT_27 ?x1) (MAY_27 ?x1) (LOOK_5FOVER_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PROJECT CAN BE DUE.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DUE_27 ?x2))
+
+;; (SEE IF YOU HAVE MISSED ANY IMPORTANT STEPS)
+
+	;; A PERSON MAY MISS STEPS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MISS_27 ?x1) (STEPS_27 ?x1))
+
+	;; STEPS CAN BE IMPORTANT.
+
+		(and (step_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (PUT WHAT IS DUE IN A SMALL PILE NEXT TO YOUR BACKPACK)
+
+	;; A PILE CAN BE SMALL.
+
+		(and (PILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A PERSON MAY HAVE A BACKPACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKPACK_27 ?x1))
+
+;; (IF IT IS AN ESSAY COMMA PUT IT IN YOUR FOLDER)
+
+	;; A THING-REFERRED-TO CAN BE AN ESSAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (ESSAY_27 ?x2))
+
+	;; A PERSON MAY HAVE A FOLDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOLDER_27 ?x1))
+
+;; (IF IT IS RAINING OR SNOWING COMMA PUT YOUR PROJECT IN YOUR BACKPACK OR COVER IT WITH A GARBAGE BAG)
+
+	;; A THING-REFERRED-TO MAY RAIN.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (RAIN_27 ?x1))
+
+	;; A PERSON MAY HAVE A PROJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROJECT_27 ?x1))
+
+	;; A PERSON MAY HAVE A BACKPACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKPACK_27 ?x1))
+
+;; (AT YOUR HOUSE COMMA DESIGNATE A SPOT FOR SCHOOL)
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A SPOT CAN BE FOR SCHOOL.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SCHOOL_27 ?x2))
+
+;; (HAVE A DESK WITH PAPER COMMA PENCILS COMMA PENS AND OTHER SCHOOL SUPPLIES IN YOUR ROOM OR IN A PLACE WHERE IT IS QUIET)
+
+	;; SCHOOL SUPPLIES CAN BE IN A ROOM.
+
+		(and (SCHOOL_27 ?x1) (SUPPLIES_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE QUIET.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUIET_27 ?x2))
+
+;; (THIS IS FOR YOUR HOMEWORK AND PROJECTS)
+
+	;; A THING CAN BE FOR A HOMEWORK.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (HOMEWORK_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOMEWORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOMEWORK_27 ?x1))
+
+;; (ALL SUPPLIES SHOULD BE KEPT HERE)
+
+	;; SOME_NUMBER_OF SUPPLIES MAY BE KEEP -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SUPPLIES_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (PUT YOUR BACKPACK BY YOUR DESK)
+
+	;; A PERSON MAY HAVE A BACKPACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKPACK_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+;; (THIS WILL LET YOUR BODY KNOW THAT THIS IS A PLACE FOR WORK AND NOT A PLACE TO PLAY)
+
+	;; A BODY MAY KNOW A PROPOSITION.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A THING CAN BE A PLACE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PLACE_27 ?x2))
+
+	;; A PLACE CAN BE FOR WORK.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WORK_27 ?x2))
+
+;; (PUT DATES ON YOUR PAPERS)
+
+	;; A PERSON MAY HAVE PAPERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (paper_27 ?x1))
+
+;; (WHEN YOU START TAKING NOTES COMMA PUT THE DATE AT THE TOP OF THE PAPER COMMA SO THAT IF THE TEACHER WANTS THE WORK FROM A SPECIFIC DAY
+ COMMA YOU LL HAVE IT)
+
+	;; A PERSON MAY START.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; A PAPER MAY HAVE A TOP.
+
+		(and (PAPER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOP_27 ?x1))
+
+	;; A TEACHER MAY WANT WORK FROM A DAY.
+
+		(and (TEACHER_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (WORK_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (DAY_27 ?x1))
+
+;; (ALSO COMMA IF A FRIEND NEEDS NOTES FROM A CERTAIN TIME YOU LL HAVE IT)
+
+	;; A FRIEND MAY NEED NOTES FROM A TIME.
+
+		(and (FRIEND_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (NOTES_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (TIME_27 ?x1))
+
+;; (DO HOMEWORK AS SOON AS YOU GET IT)
+
+	;; A PERSON MAY GET A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (DO IT THAT SAME NIGHT BEFORE YOUR FAVORITE PROGRAM COMES ON TV OR YOU GO OUT)
+
+	;; A PERSON MAY HAVE A PROGRAM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROGRAM_27 ?x1))
+
+	;; A PROGRAM CAN BE FAVORITE.
+
+		(and (PROGRAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; A PERSON MAY GO_OUT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_5FOUT_27 ?x1))
+
+;; (IF YOU DO N T COMMA I CAN GUARANTEE YOU WILL BE DOING IT ON THE BUS COMMA OR YOU WO N T DO IT ALL AND THEN GET IN TROUBLE WITH THE
+ TEACHER)
+
+	;; A PERSON MAY GUARANTEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GUARANTEE_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY DO A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (CATCH UP ON MISSED WORK)
+
+	;; A CATCH[PERSON??] MAY MISS WORK.
+
+		(and (CATCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (MISS_27 ?x1) (WORK_27 ?x1))
+
+;; (IF YOU RE ABSENT COMMA DO THE MAKE-UP WORK RIGHT AWAY)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL ABSENT.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (ABSENT_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [57]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU DO N T THEN YOU WILL GET BEHIND AND MAYBE EVEN MISS OUT A WHOLE SECTION WHICH MIGHT COME UP IN SOME END OF YEAR EXAMS)
+
+	;; A PERSON MAY GET_BEHIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_5FBEHIND_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; SOME_NUMBER_OF END CAN BE CONSTITUTED_OF_OR_FILLED_WITH YEAR EXAMS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (END_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (YEAR_27 ?x2) (EXAMS_27 ?x2))
+
+;; (USE PLASTIC SLEEVES OR HOLE PUNCH SHEETS TO KEEP THEM TOGETHER IN YOUR FOLDER)
+
+	;; A PERSON MAY HAVE A FOLDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOLDER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [60]>
+
+;; (IT WILL ONLY HELP YOU)
+
+	;; A THING-REFERRED-TO MAY HELP A PERSON.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (INVEST IN A LABELER COMMA WITH STICKY PAPER)
+
+	;; INVEST CAN BE IN A LABELER.
+
+		(and (INVEST_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LABELER_27 ?x2))
+
+	;; A PAPER CAN BE STICKY.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STICKY_27 ?x2))
+
+;; (EVERY NIGHT TAKE ALL YOUR SCHOOL STUFF HOME INCLUDING BINDERS COMMA FOLDERS COMMA NOTEBOOKS COMMA ETC. COMMA AND LABEL IT ACCORDING TO
+ PERIOD COMMA SUBJECT COMMA AND TIME THAT CLASS STARTS)
+
+	;; SOME_NUMBER_OF NIGHT MAY TAKE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (NIGHT_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+	;; CLASS MAY START.
+
+		(and (CLASS_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+;; (I ALSO RECOMMEND PUTTING YOUR CURRENT GRADE ON THE INSIDE OF THE APPROPRIATE NOTEBOOK/FOLDER FOR THAT SUBJECT)
+
+	;; A PERSON MAY RECOMMEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RECOMMEND_27 ?x1))
+
+	;; A PERSON MAY HAVE A GRADE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GRADE_27 ?x1))
+
+	;; A NOTEBOOK/FOLDER MAY HAVE AN INSIDE.
+
+		(and (NOTEBOOK_2FFOLDER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSIDE_27 ?x1))
+
+	;; A NOTEBOOK/FOLDER CAN BE FOR A SUBJECT.
+
+		(and (NOTEBOOK_2FFOLDER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (SUBJECT_27 ?x2))
+
+	;; A NOTEBOOK/FOLDER CAN BE APPROPRIATE.
+
+		(and (NOTEBOOK_2FFOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; (IT WILL HELP YOU STAY FOCUSED ON GETTING IT HIGHER)
+
+	;; A PERSON MAY STAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE HIGHER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+;; (TAKE EVERYTHING YOU NEED HOME AT NIGHT)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (YOU DO N T WANT TO BE DOING HOMEWORK AND NOTICE YOU FORGOT A BINDER OR NOTEBOOK)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY FORGET A BINDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FORGET_27 ?x1) (A_27 ?x1) (BINDER_27 ?x1))

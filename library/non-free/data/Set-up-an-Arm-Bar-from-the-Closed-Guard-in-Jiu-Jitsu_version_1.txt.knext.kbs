@@ -1,0 +1,77 @@
+;; (CROSS GRAB HIS RIGHT ELBOW WITH YOUR RIGHT HAND)
+
+	;; A CROSS[PERSON??] MAY GRAB AN ELBOW WITH A HAND.
+
+		(and (CROSS_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (GRAB_27 ?x1) (AN_27 ?x1) (ELBOW_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (HAND_27 ?x1))
+
+	;; A MALE MAY HAVE AN ELBOW.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ELBOW_27 ?x1))
+
+	;; A PERSON MAY HAVE A HAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HAND_27 ?x1))
+
+;; (AS YOU SECURE THE ARM COMMA LIFT YOUR HIPS OFF THE FLOOR TO CREATE MORE PULLING FORCE)
+
+	;; A PERSON MAY SECURE AN ARM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SECURE_27 ?x1) (AN_27 ?x1) (ARM_27 ?x1))
+
+	;; A PERSON MAY HAVE HIPS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HIPS_27 ?x1))
+
+	;; A FORCE CAN BE PULLING.
+
+		(and (force_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PULLING_27 ?x2))
+
+;; (PULL HIS ARM OVER AND CRUNCH HIS LEGS AND CHEST IN)
+
+	;; A MALE MAY HAVE AN ARM.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ARM_27 ?x1))
+
+	;; A MALE MAY HAVE LEGS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LEGS_27 ?x1))
+
+;; (OPEN BOTH LEGS AT THE SAME TIME AND THROW THEM UP IN A REVERSE CRUNCH MANNER)
+
+	;; A CRUNCH MANNER CAN BE REVERSE.
+
+		(and (CRUNCH_27 ?x1) (MANNER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REVERSE_27 ?x2))
+
+;; (CLICK FOR CLOSER VIEW IMMEDIATELY CLOSE YOUR LEGS AND LOCK YOUR OPPONENT S SHOULDER UP TO KEEP HIM FROM ESCAPING)
+
+	;; CLICK MAY CLOSE LEGS.
+
+		(and (CLICK_27 ?x1) (MAY_27 ?x1) (CLOSE_27 ?x1) (LEGS_27 ?x1))
+
+	;; CLICK CAN BE FOR VIEW.
+
+		(and (click_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (VIEW_27 ?x2))
+
+	;; A VIEW CAN BE CLOSER.
+
+		(and (VIEW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSER_27 ?x2))
+
+	;; A PERSON MAY HAVE LEGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LEGS_27 ?x1))
+
+	;; AN OPPONENT MAY HAVE A SHOULDER.
+
+		(and (OPPONENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SHOULDER_27 ?x1))
+
+	;; A PERSON MAY HAVE AN OPPONENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OPPONENT_27 ?x1))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort main loop
+Break 1 [8]>

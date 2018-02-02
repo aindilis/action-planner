@@ -1,0 +1,451 @@
+;; (ALSO CHECK THE LABEL TO ENSURE THAT YOU RE BUYING A PLANT THAT WILL SURVIVE IN YOUR CLIMATE ZONE)
+
+	;; A PERSON MAY HAVE A CLIMATE ZONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLIMATE_27 ?x1) (ZONE_27 ?x1))
+
+;; (CHOOSE YOUR PLANTING AREA ACCORDING TO THE SUN/SHADE REQUIREMENTS OF THE PLANT YOU PURCHASED)
+
+	;; A PERSON MAY PURCHASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1))
+
+	;; A PERSON MAY HAVE A PLANTING AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLANTING_27 ?x1) (AREA_27 ?x1))
+
+	;; A PLANT MAY UNDERGO REQUIREMENTS.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (REQUIREMENTS_27 ?x1))
+
+	;; REQUIREMENTS CAN BE SUN/SHADE.
+
+		(and (requirement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUN_2FSHADE_27 ?x2))
+
+;; (WORK THE SOIL TO A DEPTH OF AT LEAST 12-18 INCHES ALL AROUND THE PLANTING AREA)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THE SOIL IS TOO HARD OR DRY COMMA YOU CAN AMEND IT WITH PEAT MOSS COMMA COMMERCIALLY BAGGED SOIL COMMA AND/OR COMPOST TO IMPROVE THE
+ TEXTURE)
+
+	;; A PERSON MAY AMEND A THING-REFERRED-TO WITH MOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (AMEND_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1) (WITH_27 ?x1) (MOSS_27 ?x1))
+
+	;; A SOIL CAN BE HARD.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; MOSS CAN BE PEAT.
+
+		(and (moss_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEAT_27 ?x2))
+
+	;; A SOIL CAN BE BAGGED.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?e2) (bag_27 ?e2 ?x1))
+
+;; (POWDERY OR EXTREMELY SANDY SOIL MAY TOO FINE OR POROUS TO HOLD WATER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE OTHER EXTREME IS HEAVY CLAY THAT HOLDS TOO MUCH WATER AND CAN SMOTHER THE ROOTS)
+
+	;; AN EXTREME CAN BE A CLAY.
+
+		(and (EXTREME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CLAY_27 ?x2))
+
+	;; A CLAY CAN BE HEAVY.
+
+		(and (CLAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (YOU WANT SOIL THAT IS CRUMBLY AND SOFT AND THAT CAN BE PACKED TIGHTLY AROUND THE ROOTBALL)
+
+	;; A PERSON MAY WANT SOIL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (SOIL_27 ?x1))
+
+;; (YOU CAN ADD FERTILIZER IF YOU WANT YOUR PLANT TO FLOWER MORE VIGOROUSLY)
+
+	;; A PERSON MAY ADD FERTILIZER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (FERTILIZER_27 ?x1))
+
+	;; A PERSON MAY WANT A PLANT TO FLOWER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (PLANT_27 ?x1) (to_27 ?x1 ?x2) (FLOWER_27 ?x2))
+
+	;; A PERSON MAY HAVE A PLANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLANT_27 ?x1))
+
+;; (MOST PLANTS COMMA HOWEVER COMMA HAVE FERTILIZER CRYSTALS OR BEADS ALREADY IN THE SOIL WHEN YOU PURCHASE THEM)
+
+	;; PLANTS MAY HAVE FERTILIZER CRYSTALS.
+
+		(and (plant_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FERTILIZER_27 ?x1) (CRYSTALS_27 ?x1))
+
+	;; A PERSON MAY PURCHASE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (THERE ARE PRODUCTS THAT BOOST ROOT GROWTH THAT YOU CAN ADD AT THE TIME OF PLANTING)
+
+	;; A PERSON MAY ADD AT A TIME OF PLANTING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2) (of_27 ?x2 ?x3) (planting_27 ?x3))
+
+;; (READ THE LABEL CAREFULLY FOR THE APPROPRIATE DOSE)
+
+	;; A DOSE CAN BE APPROPRIATE.
+
+		(and (DOSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; (BE SURE NOT TO OVERFERTILIZE COMMA WHICH CAN BURN THE PLANT ROOTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DIG A HOLE COMMA ABOUT TWICE AS LARGE AS THE DIAMETER OF THE FLOWER S POT)
+
+	;; A FLOWER MAY HAVE A POT.
+
+		(and (FLOWER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (POT_27 ?x1))
+
+;; (IF THE PLANT IS ROOTBOUND -LRB- THE ROOTS ARE TIGHTLY WRAPPED AROUND THE ROOTBALL -RRB- COMMA TAKE A SHARP GARDEN KNIFE AND SLIT THE SIDE
+ OF THE ROOTBALL FROM TOP TO BOTTOM ON AT LEAST FOUR SIDES COMMA ALSO SLICING OFF THE BOTTOM OF THE ROOTBALL IF IT COMMA TOO COMMA IS
+ TANGLED WITH ROOTS)
+
+	;; A PLANT MAY BE ROOTBOUND -ED.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROOTBOUND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; ROOTS CAN BE WRAPPED AROUND A ROOTBALL.
+
+		(and (root_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRAPPED_27 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (ROOTBALL_27 ?x2))
+
+	;; A GARDEN KNIFE CAN BE SHARP.
+
+		(and (GARDEN_27 ?x1) (KNIFE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHARP_27 ?x2))
+
+	;; A ROOTBALL MAY HAVE A SIDE.
+
+		(and (ROOTBALL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+	;; A ROOTBALL CAN BE FROM TOP.
+
+		(and (ROOTBALL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (TOP_27 ?x2))
+
+	;; A ROOTBALL MAY HAVE A BOTTOM.
+
+		(and (ROOTBALL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE TANGLE -ED WITH ROOTS.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TANGLE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (ROOTS_27 ?x2))
+
+;; (PLACE THE PLANT IN THE CENTER OF THE HOLE)
+
+	;; A HOLE MAY HAVE A CENTER.
+
+		(and (HOLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+;; (IF THE ROOTS ARE LOOSE COMMA SPREAD THE ROOTS GENTLY UNDER AND AROUND THE PLANT)
+
+	;; ROOTS CAN BE LOOSE.
+
+		(and (root_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (SPREAD A LAYER OF LOOSE DIRT AROUND THE BASE OF THE ROOTBALL)
+
+	;; A LAYER CAN BE CONSTITUTED_OF_OR_FILLED_WITH DIRT.
+
+		(and (LAYER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DIRT_27 ?x2))
+
+	;; DIRT CAN BE LOOSE.
+
+		(and (DIRT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+	;; A ROOTBALL MAY HAVE A BASE.
+
+		(and (ROOTBALL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BASE_27 ?x1))
+
+;; (WITH YOUR GARDEN HOSE OR BUCKET COMMA ADD ENOUGH WATER TO COVER THE DIRT)
+
+	;; A PERSON MAY HAVE A GARDEN HOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1) (HOSE_27 ?x1))
+
+	;; WATER CAN BE ENOUGH.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (ADD ANOTHER LAYER OF DIRT TO THE HOLE AND MORE WATER TO COVER)
+
+	;; DIRT CAN BE TO A HOLE.
+
+		(and (DIRT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (HOLE_27 ?x2))
+
+;; (REPEAT UNTIL ENOUGH SOIL HAS BEEN ADDED TO THE HOLE TO COMPLETELY COVER THE ROOT BALL)
+
+	;; REPEAT MAY BE ADD -ED TO A HOLE.
+
+		(and (REPEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (HOLE_27 ?x3))
+
+	;; REPEAT CAN BE UNTIL SOIL.
+
+		(and (repeat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNTIL_27 ?x2) (SOIL_27 ?x2))
+
+	;; A SOIL CAN BE ENOUGH.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (THE SOIL MAY BE SOFT AND MUDDY)
+
+	;; A SOIL CAN BE SOFT.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOFT_27 ?x2))
+
+;; (LET IT SIT FOR A BIT UNTIL THE WATER DRAINS DOWN COMMA AND THEN PRESS DOWN ALL AROUND THE EDGE OF THE ROOT BALL WITH YOUR FIST OR YOUR
+ FOOT UNTIL THE PLANT IS TIGHTLY HELD IN THE HOLE)
+
+	;; A THING-REFERRED-TO MAY SIT FOR A BIT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SIT_27 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BIT_27 ?x2))
+
+	;; WATER MAY DRAIN_DOWN.
+
+		(and (WATER_27 ?x1) (MAY_27 ?x1) (DRAIN_5FDOWN_27 ?x1))
+
+	;; A ROOT BALL MAY HAVE AN EDGE.
+
+		(and (ROOT_27 ?x1) (BALL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EDGE_27 ?x1))
+
+	;; A PERSON MAY HAVE A FIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FIST_27 ?x1))
+
+	;; A PERSON MAY HAVE A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A PLANT CAN BE HELD IN A HOLE.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELD_27 ?x2) (in_27 ?e1 ?x3) (A_27 ?x3) (HOLE_27 ?x3))
+
+;; (THEN ADD DIRT UP TO THE POINT ON THE STEM OF THE PLANT WHERE ITS NATURAL SOIL LINE WOULD BE -LRB- YOU CAN USUALLY TELL BECAUSE THE STEM
+ WILL BE DARKENED WITH DIRT UP TO THAT POINT AND THEN CLEAN ABOVE IT -RRB-)
+
+	;; A POINT CAN BE ON A STEM OF A PLANT.
+
+		(and (POINT_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (STEM_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (PLANT_27 ?x3))
+
+	;; A PLANT MAY HAVE A STEM.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STEM_27 ?x1))
+
+	;; A SOIL LINE MAY BE.
+
+		(and (SOIL_27 ?x1) (LINE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A SOIL LINE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SOIL_27 ?x1) (LINE_27 ?x1))
+
+	;; A SOIL LINE CAN BE NATURAL.
+
+		(and (SOIL_27 ?x1) (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATURAL_27 ?x2))
+
+	;; A PERSON MAY TELL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TELL_27 ?x1))
+
+	;; A STEM MAY BE DARKEN -ED WITH DIRT.
+
+		(and (STEM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARKEN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (DIRT_27 ?x2))
+
+;; (DO NOT ADD DIRT ABOVE THE SOIL LINE OR THE PLANT S ROOTS MAY NOT SURVIVE)
+
+	;; A PLANT MAY HAVE ROOTS.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROOTS_27 ?x1))
+
+;; (PRESS DOWN AGAIN ALL AROUND THE ROOTBALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [27]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MULCH THE PLANT TO A DEPTH OF ABOUT TWO INCHES WITH A GOOD DENSE MULCH COMMA ABOUT TWO INCHES OUT FROM THE STEM TO THE EDGE OF THE OUTER
+ LEAVES OR BRANCHERS)
+
+	;; A MULCH CAN BE GOOD.
+
+		(and (MULCH_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A MULCH CAN BE DENSE.
+
+		(and (MULCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DENSE_27 ?x2))
+
+	;; A STEM CAN BE TO AN EDGE OF LEAVES.
+
+		(and (STEM_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (EDGE_27 ?x2) (of_27 ?x2 ?x3) (leaf_27 ?x3))
+
+	;; LEAVES MAY HAVE AN EDGE.
+
+		(and (leaf_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EDGE_27 ?x1))
+
+	;; LEAVES CAN BE OUTER.
+
+		(and (leaf_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTER_27 ?x2))
+
+;; (DO N T MULCH RIGHT NEXT TO THE STEM TO REDUCE THE POSSIBILITY OF INSECT OR RODENT ACTIVITY)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [29]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PRESS DOWN AGAIN ALL AROUND THE ROOT BALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [30]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TO TEST WHETHER THE PLANT IS SECURELY IN THE HOLE COMMA GRAB IT AT ITS BASE AND GENTLY TUG)
+
+	;; A PLANT CAN BE IN A HOLE.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOLE_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A BASE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BASE_27 ?x1))
+
+;; (IF THE PLANT COMES LOOSE OR WIGGLES AROUND COMMA YOU HAVE N T PACKED THE SOIL TIGHTLY ENOUGH)
+
+	;; A PERSON MAY PACK A SOIL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1) (A_27 ?x1) (SOIL_27 ?x1))
+
+	;; A PLANT MAY COME LOOSE.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (LOOSE_27 ?x1))
+
+;; (IF IT HOLDS FIRM COMMA THE PLANT IS SITUATED CORRECTLY)
+
+	;; A PLANT MAY BE SITUATE -ED.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SITUATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HOLD FIRM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1) (FIRM_27 ?x1))
+
+;; (USE A WATER CAN TO WATER THE PLANTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [34]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A WATER CAN TO WATER THE PLANTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [34]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A WATER CAN TO WATER THE PLANTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [34]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE A WATER CAN TO WATER THE PLANTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [34]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

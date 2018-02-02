@@ -1,0 +1,275 @@
+;; (DRILLMAKE ALL OF THE BEDS)
+
+	;; BEDS MAY HAVE A THING.
+
+		(and (bed_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x2))
+
+;; (GO TO ALL THE BEDROOMS AND MAKE ALL THE BEDS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE BED IS THE FIRST THING PEOPLE LOOK AT COMMA SO MAKE SURE IT S TIDY)
+
+	;; A BED CAN BE A THING.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+;; (WHILE YOUR AT IT COMMA PICK UP THINGS ON THE FLOOR AND PUT THEM WHERE THERE SUPPOSED TO BE)
+
+	;; A PERSON MAY HAVE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; THINGS CAN BE ON A FLOOR.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (FLOOR_27 ?x2))
+
+;; (IF YOU DO N T HAVE TIME FOR THAT COMMA THEN JUST THROW THE STUFF IN THE CLOSET)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; STUFF CAN BE IN A CLOSET.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CLOSET_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (TIDY UP THE LIVING ROOM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE LIVING ROOM IS THE FIRST THING PEOPLE GENERALY SEE WHEN THEY COME INTO YOUR HOUSE)
+
+	;; A ROOM CAN BE A THING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A ROOM CAN BE LIVING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVING_27 ?x2))
+
+	;; INDIVIDUAL -S MAY COME INTO A HOUSE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (MAKE YOUR LIVING ROOM LOOK INVITING)
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A ROOM CAN BE LIVING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVING_27 ?x2))
+
+;; (FOR A QUICK CLEAN UP COMMA TAKE EVERYTHING OFF THE COUNTER THAT HAS THE SINK COMMA AND WIPE IT DOWN WITH A DISINFECTING WIPE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WHILE IT DRIES COMMA CLEAN THE MIRROR AND MAKE SURE THERE IS TOLIET PAPER)
+
+	;; A THING-REFERRED-TO MAY DRY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DRY_27 ?x1))
+
+	;; A PAPER CAN BE TOLIET.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOLIET_27 ?x2))
+
+;; (PUT EVERYTHING BACK TO WHERE IT WAS)
+
+	;; A THING-REFERRED-TO MAY BE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (MAKE THE KITCHEN LOOK NICE)
+
+	;; A KITCHEN LOOK CAN BE NICE.
+
+		(and (KITCHEN_27 ?x1) (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+;; (KITCHEN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (JUST-2 AUX MIGHT-3 COP BE-4 DET THE-5 AMOD HARDEST-6)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU MUST DO THE DISHES)
+
+	;; A PERSON MAY DO DISHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (DISHES_27 ?x1))
+
+;; (IT IS TIME CONSUMING COMMA BUT DIRTY DISHES MAKE A KITCHEN LOOK UNTIDY)
+
+	;; A THING-REFERRED-TO CAN BE TIME CONSUMING.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIME_27 ?x2) (CONSUMING_27 ?x2))
+
+	;; DISHES MAY MAKE.
+
+		(and (dish_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; DISHES CAN BE DIRTY.
+
+		(and (dish_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+	;; A KITCHEN MAY LOOK.
+
+		(and (KITCHEN_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1))
+
+;; (AFTER THE DISHES ARE DONE COMMA TAKE EVERYTHING OFF THE TABLE YOU USUALLY EAT ON COMMA AND WIPE IT DOWN WITH A DISINFECTING WIPE)
+
+	;; DISHES MAY BE DO -ED.
+
+		(and (dish_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY EAT_ON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EAT_5FON_27 ?x1))
+
+	;; A WIPE CAN BE DISINFECTING.
+
+		(and (WIPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (disinfecting_27 ?x2))
+
+;; (THEN COMMA WIPE DOWN THE COUNTERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT EVERYTHING BACK WHERE IT WAS)
+
+	;; AN EVERYTHING CAN BE PUT.
+
+		(and (EVERYTHING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUT_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY BE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (MANTAIN YOUR APPEARANCE)
+
+	;; A PERSON MAY HAVE AN APPEARANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (APPEARANCE_27 ?x1))
+
+;; (YOU ARE PROBALY CLEANING BECAUSE YOU ARE EXPECTING SOMEBODY)
+
+	;; A PERSON MAY CLEAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CLEAN_27 ?x1))
+
+	;; A PERSON MAY EXPECT SOMEBODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EXPECT_27 ?x1) (SOMEBODY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; (GO AROUND YOUR HOUSE AND MAKE SURE YOUR PERSONAL BELONGINGS ARE WHERE THEY ARE SUPPOST TO BE)
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE BELONGINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BELONGINGS_27 ?x1))
+
+	;; BELONGINGS CAN BE PERSONAL.
+
+		(and (belonging_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; (CONSIDER CLEANING THE CLOSETS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

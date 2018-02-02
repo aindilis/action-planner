@@ -1,0 +1,117 @@
+;; (-LRB- OPTIONAL -RRB- GREASE THE INSIDE OF THE MUG WITH COOKING SPRAY)
+
+	;; A MUG MAY HAVE AN INSIDE.
+
+		(and (MUG_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSIDE_27 ?x1))
+
+	;; A MUG CAN BE WITH SPRAY.
+
+		(and (MUG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SPRAY_27 ?x2))
+
+	;; A SPRAY CAN BE COOKING.
+
+		(and (SPRAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (cooking_27 ?x2))
+
+;; (MEASURE AND POUR THE DRY INGREDIENTS INTO THE MUG)
+
+	;; INGREDIENTS CAN BE DRY.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+;; (STIR INGREDIENTS WITH A SPOON)
+
+	;; INGREDIENTS CAN BE WITH A SPOON.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (SPOON_27 ?x2))
+
+	;; INGREDIENTS CAN BE STIR.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STIR_27 ?x2))
+
+;; (CRACK THE EGG AND ADD IT TO THE MUG)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STIR TO GET THE EGG INCORPORATED IN THE DRY INGREDIENTS)
+
+	;; STIR MAY BE INCORPORATE -ED IN INGREDIENTS.
+
+		(and (STIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCORPORATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?e1 ?x3) (ingredient_27 ?x3))
+
+	;; INGREDIENTS CAN BE DRY.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+;; (MEASURE AND POUR THE WET INGREDIENTS INTO THE MUG)
+
+	;; INGREDIENTS CAN BE WET.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; (USE YOUR SPOON TO SCRAPE THE BOTTOM)
+
+	;; A PERSON MAY HAVE A SPOON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOON_27 ?x1))
+
+;; (FOLD THE BOTTOM MIXTURE ONTO THE TOP A FEW TIMES TO GET ALL OF THE DRY INGREDIENTS -LRB- CHOCOLATE POWDER AND FLOUR -RRB- MOISTENED AND INCORPORATED WITH THE WET INGREDIENTS -LRB- WATER COMMA EGG COMMA AND OIL
+ -RRB-)
+
+	;; A MIXTURE CAN BE BOTTOM.
+
+		(and (MIXTURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOTTOM_27 ?x2))
+
+	;; INGREDIENTS MAY HAVE A THING.
+
+		(and (ingredient_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; INGREDIENTS CAN BE DRY.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+	;; INGREDIENTS CAN BE WET.
+
+		(and (ingredient_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+;; (MICROWAVE ON HIGH FOR 3 MINUTES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TIMING MAY BE DIFFERENT FOR VARIOUS WATT AMOUNTS)
+
+	;; TIMING CAN BE DIFFERENT FOR WATT AMOUNTS.
+
+		(and (timing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIFFERENT_27 ?x2) (for_27 ?e1 ?x3) (WATT_27 ?x3) (AMOUNTS_27 ?x3))
+
+;; (WATCH AS THE CAKE STARTS TO RISE WHILE IN THE MICROWAVE)
+
+	;; A WATCH[PERSON??] CAN BE AS A CAKE.
+
+		(and (WATCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (as_27 ?x1) (A_27 ?x1) (CAKE_27 ?x1))

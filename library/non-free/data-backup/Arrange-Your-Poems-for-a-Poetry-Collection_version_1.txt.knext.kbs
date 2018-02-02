@@ -1,0 +1,48 @@
+;; (-LRB- OPTIONAL -RRB- MAKE A PLAN AND ARRANGE YOUR PRIORITIES  1 -RRB- ALPHABETICAL ORDER OF THE AUTHOR S NAMES COMMA 2 -RRB- ALPHABETICAL
+ ORDER OF THE TITLES)
+
+	;; A PERSON MAY HAVE PRIORITIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRIORITIES_27 ?x1))
+
+	;; AN AUTHOR MAY HAVE NAMES.
+
+		(and (AUTHOR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NAMES_27 ?x1))
+
+	;; AN ORDER CAN BE ALPHABETICAL.
+
+		(and (ORDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALPHABETICAL_27 ?x2))
+
+;; (CONSIDER ORDERING THEM IN THE ORDER OF THE TITLES)
+
+	;; TITLES MAY HAVE AN ORDER.
+
+		(and (TITLES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ORDER_27 ?x1))
+
+;; (TRY BY DATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IT COULD BE BY THE ORDER OF THE DATES EACH POEM WAS PUBLISHED)
+
+	;; A THING-REFERRED-TO CAN BE BY AN ORDER OF DATES.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1) (by_27 ?x1 ?x2) (order_27 ?x2) (of_27 ?x2 ?x3) (DATES_27 ?x3))
+
+	;; DATES MAY HAVE AN ORDER.
+
+		(and (DATES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ORDER_27 ?x1))
+
+	;; SOME_NUMBER_OF POEM MAY BE PUBLISH -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (POEM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUBLISH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))

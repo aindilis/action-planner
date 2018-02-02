@@ -1,0 +1,139 @@
+<html>
+<head>
+   <title>FuzzyJess
+   </title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+
+<h2>Introduction to Fuzzy Jess Toolkit</h2>
+<h3>Fuzzy Variable, Fuzzy Set and Fuzzy Value</h3>
+Fuzzy concepts are represented using fuzzy variables, fuzzy sets and fuzzy values in the Fuzzy Java toolkit.
+<pre>
+    ;; FuzzyVariable : Java class
+    ;;      Jess globle variables are used to hold Java objects
+
+    (import nrc.fuzzy.*)
+    (defglobal ?*tempFvar* = (new FuzzyVariable "temperature" 0.0 100.0 "C"))
+    (defglobal ?*pressFvar* = (new FuzzyVariable "pressure" 0.0 10.0 "kilo-pascals"))
+
+    ;; using an array of (x,y) values to define a Fuzzy set
+
+    (bind ?xHot  (create$ 25.0 35.0))
+    (bind ?yHot  (create$ 0.0 1.0))
+    (bind ?xCold (create$ 5.0 15.0))
+    (bind ?yCold (create$ 1.0 0.0))
+    (?*tempFvar* addTerm "hot" ?xHot ?yHot 2)
+    (?*tempFvar* addTerm "cold" ?xCold ?yCold 2)
+
+    <a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/HotCold.clp">Show</a>
+
+    ;; using already defined terms of fuzzy variables and linguistic expressions
+
+    (load-package nrc.fuzzy.jess.FuzzyFunctions)
+
+    (?*tempFvar* addTerm "veryHot" "very hot")
+    (?*tempFvar* addTerm "medium" "not hot and (not cold)")
+
+    ;; assert a fuzzy fact.
+    ;; FuzzyValue : Java class
+
+    (assert (theTemp (new FuzzyValue ?*tempFvar* "very medium")))
+
+    <a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/HotCold2.clp">Show</a>
+</pre>
+
+<h3>Fuzzy Sets</h3>
+
+<h4>Fuzzy Set Hierarchy</h4>
+<p><img SRC="http://www.csie.ntu.edu.tw/~sylee/courses/FuzzyJ/FShierarchy.gif" height=241 width=638 align=ABSBOTTOM>
+<pre>
+    (load-package nrc.fuzzy.jess.FuzzyFunctions)
+    (?*fcnFvar* addTerm "trapezoid" (new TrapezoidFuzzySet 3.0 3.8 6.5 7.0))
+    (?*fcnFvar* addTerm "rectangle" (new RectangleFuzzySet 3.8 6.5))
+    (?*fcnFvar* addTerm "triangle"  (new TriangleFuzzySet 3.0 5.4 7.0))
+    (?*fcnFvar* addTerm "pi"        (new PIFuzzySet 4.7 2.0))
+    (?*fcnFvar* addTerm "s"         (new SFuzzySet 1.0 9.0))
+    (?*fcnFvar* addTerm "z"         (new ZFuzzySet 1.0 9.0))
+</pre>
+<p>Plot
+<pre>
+ (printout t (call (new FuzzyValue ?*fcnFvar* "trapezoid")
+                    plotFuzzyValue "*") crlf)
+</pre>
+<ol>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/trapezoidFcn.clp">TrapezoidFuzzySet</a>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/rectangleFcn.clp">RectangleFuzzySet</a>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/triangleFcn.clp">TriangleFuzzySet</a>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/piFcn.clp">PIFuzzySet</a>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/sFcn.clp">SFuzzySet</a>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/zFcn.clp">ZFuzzySet</a>
+</ol>
+
+<pre>
+    (defglobal ?*rlf* = (new RightLinearFunction))
+    (?*fcnFvar* addTerm "right" (new RFuzzySet 0.0 5.0 ?*rlf*))
+
+    (defglobal ?*llf* = (new LeftLinearFunction))
+    (?*fcnFvar* addTerm "left"  (new LFuzzySet 5.5 7.0 ?*llf*))
+</pre>
+
+<p>Plot
+<ol>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/right.clp">RFuzzySet</a>
+<li><a href="http://210.70.83.101/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/left.clp">LFuzzySet</a>
+</ol>
+
+<h3>Fuzzy Rules</h3>
+
+A Fuzzy rule holds three sets of fuzzy values representing the antecedents, conclusions and input values of a rule.
+<pre>
+    ;; the rule 'if temperature hot then pressure low or medium'
+    (defrule temp-hot-press-lowOrMedium
+        (theTemp ?t&:(fuzzy-match ?t "hot"))
+        =>
+        (assert (thePress (new FuzzyValue ?*pressFvar* "low or medium")))
+    )
+</pre>
+<p>
+When a temperature fact is asserted that has a FuzzyValue in it, the fuzzy-match will
+compare the FuzzyValue in the fact to the FuzzyValue hot.
+
+<h3>Certainty Factor</h3>
+In Jess the User Function, fuzzy-rule-similarity provides the same value that
+FuzzyCLIPS would for a fuzzy-crisp rule's Certainty Factor for the crisp facts to be asserted.
+The other function, fuzzy-rule-match-score, uses a different measure of similarity,
+the degree of matching between the fuzzy values.
+
+<pre>
+    (defrule identify-tall-people "determine strength of tallness for a person"
+        (person (name ?n) (height ?ht&:(fuzzy-match ?ht "tall")))
+        =>
+        (printout t ?n " is tall with degree (similarity) " (fuzzy-rule-similarity) crlf)
+        (printout t ?n " is tall with degree (match) " (fuzzy-rule-match-score) crlf)
+    )
+</pre>
+
+<h3>Examples</h3>
+<p>
+<oL>
+<LI>Temperature -> Pressure: TempPres.clp&nbsp;(<a href="http://www.csie.ntu.edu.tw/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/TempPres.clp">Demo</a>)
+&nbsp;(<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/fuzzyj/TempPres.clp">jess source</a>)
+<LI>Temperature -> Pressure with global contribution: TempPres2.clp&nbsp;(<a href="http://www.csie.ntu.edu.tw/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/TempPres2.clp">Demo</a>)
+&nbsp;(<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/fuzzyj/TempPres2.clp">jess source</a>)
+<LI>Similarity and Match-score: height.clp&nbsp;(<a href="http://www.csie.ntu.edu.tw/servlets/FuzzyJess?source=/sylee/courses/fuzzyj/height.clp">Demo</a>)
+&nbsp;(<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/fuzzyj/height.clp">jess source</a>)
+</ol>
+</p>
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/FuzzyJ/FuzzyJConsole.htm">Fuzzy Jess Console</a></h4>
+<h4><a href="http://www.iit.nrc.ca/IR_public/fuzzy/fuzzyJDocs/index.html">Fuzzy Java/Jess Document</a></h4>
+<h4>Reference:</h4>
+<UL>
+<LI><a href="http://ai.iit.nrc.ca/IR_public/fuzzy/fuzzyJToolkit.html">Fuzzy Java Toolkit Home</a>
+<li><a href="http://www.flll.uni-linz.ac.at/pdw/fuzzy/fuzzy.html">A brief course in Fuzzy Logic and Fuzzy Control</a></li>
+<li><a href="http://www.austinlinks.com/Fuzzy/expert-systems.html">Fuzzy Expert Systems</a></li>
+<li><a href="http://www.emsl.pnl.gov:2080/proj/neuron/fuzzy/demos.html">Fuzzy Logic On-line Demos</a></li>
+<li><a href="http://www.cs.nthu.edu.tw/~jang/nfsc.htm">Internet's Resources for Neuro-Fuzzy and Soft Computing</a></li>
+</UL>
+</body>
+</html>

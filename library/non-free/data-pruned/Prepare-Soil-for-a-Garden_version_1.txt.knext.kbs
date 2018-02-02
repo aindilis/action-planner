@@ -1,0 +1,334 @@
+;; (SAMPLE THE SOIL MATERIAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BASIC SOILS CAN BE SAND COMMA SANDY LOAM COMMA LOAM COMMA LOAMY CLAY COMMA AND CLAY)
+
+	;; SOILS CAN BE SAND.
+
+		(and (soil_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAND_27 ?x2))
+
+	;; A BASIC[PERSON??] MAY HAVE SOILS.
+
+		(and (BASIC_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SOILS_27 ?x1))
+
+	;; A LOAM CAN BE SANDY.
+
+		(and (LOAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SANDY_27 ?x2))
+
+	;; A CLAY CAN BE LOAMY.
+
+		(and (CLAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOAMY_27 ?x2))
+
+;; (THE CLAY SOILS DO NOT DRAIN WELL COMMA AND WILL NEED LOAM COMMA SAND COMMA OR OTHER AMENDMENTS TO ALLOW EXCESS WATER TO DRAIN FROM THEM)
+
+	;; SOILS MAY DO.
+
+		(and (SOILS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; SOILS CAN BE CLAY.
+
+		(and (soil_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLAY_27 ?x2))
+
+	;; WATER CAN BE EXCESS.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+;; (SANDY SOIL ALLOWS TOO MUCH WATER TO DRAIN COMMA AND WILL NEED TO BE HEAVILY COMPOSTED OR FORTIFIED WITH CLAY OR GOOD TOPSOIL)
+
+	;; A FEMALE MAY HAVE A SOIL.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SOIL_27 ?x1))
+
+	;; A TOPSOIL CAN BE CLAY.
+
+		(and (TOPSOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLAY_27 ?x2))
+
+;; (GARDEN SUPPLY STORES CAN TEST THE SOIL PH COMMA OR ACIDITY COMMA AND MAY RECOMMEND ADDING LIME OR SULFUR TO ADJUST THE ACID LEVEL YOU
+ SPECIFIC PLANTS REQUIRE)
+
+	;; PLANTS MAY REQUIRE.
+
+		(and (plant_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1))
+
+	;; SUPPLY STORES MAY TEST A SOIL PH.
+
+		(and (SUPPLY_27 ?x1) (STORES_27 ?x1) (MAY_27 ?x1) (TEST_27 ?x1) (A_27 ?x1) (SOIL_27 ?x1) (PH_27 ?x1))
+
+	;; A GARDEN[PERSON??] MAY HAVE SUPPLY STORES.
+
+		(and (GARDEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPLY_27 ?x1) (STORES_27 ?x1))
+
+;; (PLAN THE GARDEN LAYOUT COMMA ALLOWING ROOM FOR PLANTS TO SPREAD OUT COMMA VINE COMMA OR BUSH AS THEY MATURE)
+
+	;; A PLAN[PERSON??] MAY VIN.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (VIN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY MATURE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MATURE_27 ?x1))
+
+;; (WATERMELONS COMMA CUCUMBERS COMMA AND SQUASH REQUIRE LOTS OF SPACE COMMA WHERE ONIONS COMMA RADISHES COMMA AND BEETS CAN BE GROWN IN
+ SMALLER SPACES)
+
+	;; WATERMELONS MAY REQUIRE LOTS OF SPACE.
+
+		(and (watermelon_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (LOTS_27 ?x1) (of_27 ?x1 ?x2) (SPACE_27 ?x2))
+
+	;; ONIONS MAY BE GROW -ED IN SPACES.
+
+		(and (onion_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROW_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (SPACES_27 ?x3))
+
+	;; SPACES CAN BE SMALLER.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (GIVE YOURSELF ROOM TO WORK COMMA AND ROOM FOR THE PLANTS TO GROW)
+
+	;; ROOM CAN BE FOR PLANTS.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (plant_27 ?x2))
+
+;; (STRIP OFF THE OVERGROWTH FROM YOUR PLOT COMMA REMOVING WEEDS COMMA GRASSES COMMA AND OTHER MATERIALS TO THE CLEAN GROUND)
+
+	;; A STRIP[PERSON??] MAY GRASS.
+
+		(and (STRIP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (GRASS_27 ?x1))
+
+	;; A STRIP[PERSON??] CAN BE OFF AN OVERGROWTH.
+
+		(and (STRIP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (OFF_27 ?x1) (AN_27 ?x1) (OVERGROWTH_27 ?x1))
+
+	;; AN OVERGROWTH CAN BE FROM A PLOT.
+
+		(and (OVERGROWTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (PLOT_27 ?x2))
+
+	;; A PERSON MAY HAVE A PLOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLOT_27 ?x1))
+
+	;; A GROUND CAN BE CLEAN.
+
+		(and (GROUND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (THESE CAN GO TO THE COMPOST PILE FOR LATER USE COMMA BUT SHOULD N T BE INCORPORATED UNTIL THEY HAVE COMPOSTED)
+
+	;; A THING MAY GO TO A PILE.
+
+		(and (thing_27 ?x1) (go_27 ?e1 ?x1) (to_27 ?e1 ?x2) (A_27 ?x2) (PILE_27 ?x2))
+
+	;; A PILE CAN BE FOR USE.
+
+		(and (PILE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (USE_27 ?x2))
+
+	;; A PILE CAN BE COMPOST.
+
+		(and (PILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPOST_27 ?x2))
+
+	;; INDIVIDUAL -S MAY COMPOST.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (COMPOST_27 ?x1))
+
+;; (TURN THE SOIL USING A SHOVEL OR MOTOR DRIVEN ROTARY TILLER AS DEEP AS YOU CAN)
+
+	;; TURN MAY USE A SHOVEL.
+
+		(and (TURN_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (SHOVEL_27 ?x1))
+
+	;; A SHOVEL MAY BE DRIVE -ED.
+
+		(and (SHOVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRIVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A TILLER CAN BE ROTARY.
+
+		(and (tiller_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROTARY_27 ?x2))
+
+;; (REMEMBER COMMA THE ROOTS OF YOUR PLANTS WILL EXTEND DEEP IN THE GROUND TO FIND NUTRIENTS AND MOISTURE COMMA AND BY DIGGING OR TILLING
+ COMMA YOU LOOSEN THE MATERIAL SO THEY CAN DO SO)
+
+	;; ROOTS OF PLANTS MAY EXTEND IN THE GROUND.
+
+		(and (root_27 ?x1) (of_27 ?x1 ?x2) (PLANTS_27 ?x2) (MAY_27 ?x2) (EXTEND_27 ?x2) (in_27 ?x2 ?x3) (GROUND_27 ?x3))
+
+	;; PLANTS MAY HAVE ROOTS.
+
+		(and (plant_27 ?x1)  )
+
+	;; A PERSON MAY HAVE PLANTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PLANTS_27 ?x1))
+
+	;; A PERSON MAY LOOSEN A MATERIAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOOSEN_27 ?x1) (A_27 ?x1) (MATERIAL_27 ?x1))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (REMOVE ANY LARGE STONES OR ROCKS AS YOU WORK COMMA ALONG WITH ANY ROOTS OR DEBRIS YOU ENCOUNTER)
+
+	;; STONES CAN BE LARGE.
+
+		(and (stone_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY WORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+;; (YOU MAY NEED TO MAKE MORE THAN ONE PASS TO BREAK UP VERY COMPACTED SOILS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ADD SOIL AMENDMENTS YOU HAVE DETERMINED YOU WILL NEED TO BALANCE THE PH OF THE SOIL AND CONDITION IT TO SUPPORT GOOD PLANT GROWTH)
+
+	;; A PERSON MAY DETERMINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DETERMINE_27 ?x1))
+
+	;; A SOIL MAY HAVE A PH.
+
+		(and (SOIL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PH_27 ?x1))
+
+	;; A PLANT GROWTH CAN BE GOOD.
+
+		(and (PLANT_27 ?x1) (GROWTH_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (THIS MAY MEAN ADDING COMPOST OR TOPSOIL TO SAND COMMA OR SAND TO HEAVY CLAY COMMA AND BECAUSE THIS VARIES SO GREATLY FROM AREA TO AREA
+ COMMA IT MAY HELP TO TALK TO A LOCAL GARDENER OR COUNTY EXTENSION AGENT FOR ADVICE)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+	;; COMPOST CAN BE TO SAND.
+
+		(and (compost_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?e1 ?x2) (SAND_27 ?x2))
+
+	;; SAND CAN BE TO CLAY.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (CLAY_27 ?x2))
+
+	;; A CLAY CAN BE HEAVY.
+
+		(and (CLAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; A GARDENER CAN BE FOR ADVICE.
+
+		(and (GARDENER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ADVICE_27 ?x2))
+
+;; (DIG OR TILL THE GARDEN AGAIN TO MIX IN THE AMENDMENTS COMMA AS NECESSARY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SMOOTH THE SOIL WITH A RAKE COMMA EVENING OUT LOW AND HIGH SPOTS -LRB- UNLESS YOU WISH TO CREATE HEIGHT VARIATIONS FOR VISUAL INTEREST OR
+ DRAINAGE -RRB-)
+
+	;; SPOTS CAN BE LOW.
+
+		(and (spot_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+	;; INTEREST CAN BE VISUAL.
+
+		(and (interest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISUAL_27 ?x2))
+
+;; (FERTILIZE THE SOIL BASED ON PLANT NEEDS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TOO MUCH NITROGEN CAN CAUSE WONDERFUL FOLIAGE COMMA BUT NO FRUIT COMMA AND THIS IS NOT THE NORMAL GOAL OF THE HOME GARDENER)
+
+	;; NITROGEN MAY CAUSE FOLIAGE.
+
+		(and (NITROGEN_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (FOLIAGE_27 ?x1))
+
+	;; A FOLIAGE CAN BE WONDERFUL.
+
+		(and (foliage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WONDERFUL_27 ?x2))
+
+	;; A THING CAN BE A GOAL OF A HOME GARDENER.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (GOAL_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (HOME_27 ?x3) (GARDENER_27 ?x3))
+
+	;; A HOME GARDENER MAY UNDERGO A GOAL.
+
+		(and (HOME_27 ?x1) (GARDENER_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (GOAL_27 ?x1))
+
+	;; A GOAL CAN BE NORMAL.
+
+		(and (GOAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+;; (TURN THE SOIL AND MIX IT THOROUGHLY ONE MORE TIME AFTER ALL AMENDMENTS HAVE BEEN ADDED)
+
+	;; A THING-REFERRED-TO MAY THOROUGHLY A TIME.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (THOROUGHLY_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+	;; SOME_NUMBER_OF AMENDMENTS MAY BE ADD -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AMENDMENTS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ALLOW THE SOIL TO REST FOR SEVERAL DAYS COMMA AND KEEP IT MOIST IF POSSIBLE COMMA BEFORE PLANTING)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F MOIST.V NIL)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (MOIST_2EV_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

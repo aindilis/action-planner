@@ -1,0 +1,94 @@
+;; (HOLD THE BAGUA WITH THE WISDOM/CAREER/HELPFUL PEOPLE SECTIONS FACING YOU AND PARALLEL TO THE MAIN ENTRYWAY WALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE MAIN ENTRYWAY ALWAYS FALLS IN THE WISDOM COMMA CAREER OR HELPFUL PEOPLE AREAS)
+
+	;; AN ENTRYWAY MAY FALL IN A WISDOM.
+
+		(and (ENTRYWAY_27 ?x1) (MAY_27 ?x1) (FALL_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (WISDOM_27 ?x2))
+
+;; (DETERMINE WHICH SECTION YOU ARE STANDING IN)
+
+	;; A DETERMINE[PERSON??] MAY STAND_IN.
+
+		(and (DETERMINE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (STAND_5FIN_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (THE LEFT CORNER/AREA IS THE WISDOM AREA COMMA AS SHOWN ON THE BAGUA MAP)
+
+	;; A CORNER/AREA CAN BE AN AREA.
+
+		(and (CORNER_2FAREA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (area_27 ?x2))
+
+	;; A WISDOM[PERSON??] MAY HAVE AN AREA.
+
+		(and (WISDOM_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (area_27 ?x1))
+
+;; (THE MIDDLE AREA IS THE CAREER AREA)
+
+	;; AN AREA CAN BE AN AREA.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (area_27 ?x2))
+
+	;; AN AREA CAN BE MIDDLE.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MIDDLE_27 ?x2))
+
+	;; A CAREER[PERSON??] MAY HAVE AN AREA.
+
+		(and (CAREER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (area_27 ?x1))
+
+;; (THE RIGHT CORNER/AREA IS THE HELPFUL PEOPLE AREA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE THE BAGUA MAP IN THE SAME WAY TO DETERMINE WHERE THE OTHER SECTIONS OF THE BAGUA MAP ARE LOCATED)
+
+	;; A BAGUA MAP CAN BE IN A WAY.
+
+		(and (BAGUA_27 ?x1) (MAP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (way_27 ?x2))
+
+	;; SECTIONS OF A BAGUA MAP CAN BE LOCATED.
+
+		(and (section_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BAGUA_27 ?x2) (MAP_27 ?x2) (be_27 ?e1 ?x1 ?x3) (LOCATED_27 ?x3))
+
+	;; A BAGUA MAP MAY HAVE SECTIONS.
+
+		(and (BAGUA_27 ?x1) (MAP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SECTIONS_27 ?x1))
+
+;; (ONCE YOU VE IDENTIFIED EACH AREA OF THE BAGUA COMMA GO ON TO THE NEXT STEP)
+
+	;; A BAGUA MAY HAVE AN AREA.
+
+		(and (BAGUA_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))

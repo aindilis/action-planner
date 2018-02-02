@@ -1,0 +1,672 @@
+;; (IT WILL ALSO DEPEND ON THE SIZE OF YOUR YARD AND GARDEN COMMA AND WHETHER OR NOT YOU HAVE PETS AND OTHER ANIMALS ON YOUR PROPERTY)
+
+	;; A THING-REFERRED-TO MAY DEPEND ON A SIZE OF A YARD.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DEPEND_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (size_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARD_27 ?x2))
+
+	;; A YARD MAY HAVE A SIZE.
+
+		(and (YARD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIZE_27 ?x1))
+
+	;; A PERSON MAY HAVE A YARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (YARD_27 ?x1))
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; ANIMALS CAN BE ON A PROPERTY.
+
+		(and (animal_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (PROPERTY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PROPERTY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROPERTY_27 ?x1))
+
+;; (SOME ANIMALS COMMA LIKE EARTHWORMS AND BEES COMMA ACTIVELY IMPROVE YOUR GARDEN)
+
+	;; SOME_NUMBER_OF ANIMALS MAY IMPROVE A GARDEN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ANIMALS_27 ?x1) (MAY_27 ?x1) (IMPROVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (SOME COMMA LIKE BUTTERFLIES COMMA HELP YOUR GARDEN BY LOOKING PRETTY AND NOT DAMAGING IT IN THE PROCESS)
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (SOME COMMA LIKE LADYBUGS COMMA BATS COMMA SPIDERS COMMA AND CATS COMMA EAT OR SCARE AWAY OTHERS BEFORE THEY EAT YOUR GARDEN)
+
+	;; SOME_NUMBER_OF THING MAY EAT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1))
+
+	;; INDIVIDUAL -S MAY EAT A GARDEN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (NOT EVERYTHING HELPFUL TO YOUR GARDEN SHOULD BE ENCOURAGED INTO CLOSE CONTACT WITH PEOPLE COMMA PARTICULARLY CHILDREN)
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; A CONTACT CAN BE CLOSE.
+
+		(and (contact_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSE_27 ?x2))
+
+;; (YOU PROBABLY WO N T WANT A BEE COLONY RIGHT BY YOUR HOUSE -LRB- BUT A BEEKEEPER MIGHT VOLUNTEER TO TAKE IT -LRB- 1 -RRB- -RRB-)
+
+	;; A PERSON MAY WANT A BEE COLONY RIGHT BY A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (BEE_27 ?x1) (COLONY_27 ?x1) (RIGHT_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (IN ITS NATURAL ENVIRONMENT COMMA INCLUDING WILDER PARTS OF YOUR YARD COMMA IT CAN NIBBLE DOWN OVERGROWN PLANTS THAT WOULD CHOKE OUT A
+ BEAUTIFUL VARIETY OF SPECIES)
+
+	;; A THING-REFERRED-TO MAY NIBBLE_DOWN OVERGROWN PLANTS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (NIBBLE_5FDOWN_27 ?x1) (OVERGROWN_27 ?x1) (PLANTS_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE AN ENVIRONMENT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ENVIRONMENT_27 ?x1))
+
+	;; AN ENVIRONMENT CAN BE NATURAL.
+
+		(and (ENVIRONMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATURAL_27 ?x2))
+
+	;; A YARD MAY HAVE WILDER PARTS.
+
+		(and (YARD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WILDER_27 ?x1) (PARTS_27 ?x1))
+
+	;; A PERSON MAY HAVE A YARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (YARD_27 ?x1))
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH SPECIES.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SPECIES_27 ?x2))
+
+	;; VARIETY CAN BE BEAUTIFUL.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEAUTIFUL_27 ?x2))
+
+;; (APPRECIATE ANIMALS IN THEIR NATIVE REGIONS AS INTERESTING COMMA IMPORTANT PARTS OF THE WEB OF LIFE)
+
+	;; ANIMALS CAN BE IN REGIONS.
+
+		(and (animal_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (region_27 ?x2))
+
+	;; ANIMALS CAN BE APPRECIATE.
+
+		(and (animal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPRECIATE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE REGIONS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (REGIONS_27 ?x1))
+
+	;; REGIONS CAN BE NATIVE.
+
+		(and (region_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATIVE_27 ?x2))
+
+	;; PARTS CAN BE INTERESTING.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (interesting_27 ?x2))
+
+;; (BRING BACK THE BIRDS GROW PLANTS THAT ATTRACT BIRDS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HAVING MORE BIRDS IN YOUR GARDEN IS BENEFICIAL FOR YOU BECAUSE BIRDS EAT PEST INSECTS)
+
+	;; BIRDS CAN BE IN A GARDEN.
+
+		(and (bird_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; BIRDS MAY EAT INSECTS.
+
+		(and (BIRDS_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1) (INSECTS_27 ?x1))
+
+	;; INSECTS CAN BE PEST.
+
+		(and (insect_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEST_27 ?x2))
+
+;; (IN ADDITION COMMA PEOPLE LOVE WATCHING BIRDS SET UP HOMES COMMA FEED IN COMMA AND FLY AROUND THEIR OWN GARDEN SPACE COMMA THEIR INTRINSIC
+ VALUE BEING THEIR BEAUTY)
+
+	;; PEOPLE MAY LOVE.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1))
+
+	;; BIRDS MAY SET_UP HOMES.
+
+		(and (BIRDS_27 ?x1) (MAY_27 ?x1) (SET_5FUP_27 ?x1) (HOMES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A GARDEN SPACE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1) (SPACE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A VALUE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VALUE_27 ?x1))
+
+	;; A VALUE CAN BE INTRINSIC.
+
+		(and (VALUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTRINSIC_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A BEAUTY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEAUTY_27 ?x1))
+
+;; (ATTRACTING BIRDS TO YOUR GARDEN WILL DEPEND ON THE TYPE OF BIRDS COMMA AS THEY LL ALL HAVE THEIR INDIVIDUAL PREFERENCES COMMA SUCH AS
+ HUMMING BIRDS LOVING RED FLOWERS)
+
+	;; BIRDS TO A GARDEN MAY DEPEND ON A TYPE OF BIRDS.
+
+		(and (bird_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2) (MAY_27 ?x2) (DEPEND_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (TYPE_27 ?x2) (of_27 ?x2 ?x3) (BIRDS_27 ?x3))
+
+	;; BIRDS CAN BE TO A GARDEN.
+
+		(and (bird_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; BIRDS CAN BE ATTRACTING.
+
+		(and (bird_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTING_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PREFERENCES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PREFERENCES_27 ?x1))
+
+	;; BIRDS MAY LOVE FLOWERS.
+
+		(and (BIRDS_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1) (FLOWERS_27 ?x1))
+
+	;; BIRDS CAN BE HUMMING.
+
+		(and (bird_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUMMING_27 ?x2))
+
+	;; FLOWERS CAN BE RED.
+
+		(and (flower_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+;; (DO RESEARCH ON THE BIRDS ON YOUR AREA AND THEIR PREFERENCES BEFORE PURCHASING AND PLANTING THEIR FAVORITE PLANTS)
+
+	;; RESEARCH CAN BE ON BIRDS.
+
+		(and (RESEARCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (BIRDS_27 ?x2))
+
+	;; BIRDS CAN BE ON AN AREA.
+
+		(and (bird_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PREFERENCES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PREFERENCES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PLANTS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PLANTS_27 ?x1))
+
+	;; PLANTS CAN BE FAVORITE.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (READ HOW TO ATTRACT BIRDS TO YOUR GARDEN FOR MORE IDEAS)
+
+	;; A GARDEN CAN BE FOR IDEAS.
+
+		(and (GARDEN_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (IDEAS_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (BUTTERFLIES LOVE FLOWERING PLANTS GROW PLANTS THAT ATTRACT BUTTERFLIES)
+
+	;; BUTTERFLIES MAY LOVE PLANTS.
+
+		(and (butterfly_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1) (PLANTS_27 ?x1))
+
+	;; A GROW[PERSON??] MAY HAVE PLANTS.
+
+		(and (GROW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (plant_27 ?x1))
+
+;; (BUTTERFLIES ARE ALSO ATTRACTIVE AND MOST PEOPLE ARE MORE THAN HAPPY TO HAVE THEIR GARDEN FILLED WITH BUTTERFLIES)
+
+	;; BUTTERFLIES CAN BE ATTRACTIVE.
+
+		(and (butterfly_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2))
+
+	;; A GARDEN MAY BE FILL -ED WITH BUTTERFLIES.
+
+		(and (GARDEN_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (BUTTERFLIES_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A GARDEN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (BUTTERFLIES LOVE A RANGE OF FLOWERING PLANTS COMMA INCLUDING BUDDLEIA COMMA ALSO KNOWN AS THE BUTTERFLY BUSH)
+
+	;; BUTTERFLIES MAY LOVE A RANGE OF PLANTS.
+
+		(and (butterfly_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1) (A_27 ?x1) (RANGE_27 ?x1) (of_27 ?x1 ?x2) (plant_27 ?x2))
+
+	;; A RANGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH PLANTS.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PLANTS_27 ?x2))
+
+	;; PLANTS CAN BE FLOWERING.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLOWERING_27 ?x2))
+
+;; (READ HOW TO CREATE A BUTTERFLY GARDEN AND HOW TO ATTRACT BUTTERFLIES FOR MORE IDEAS)
+
+	;; BUTTERFLIES CAN BE FOR IDEAS.
+
+		(and (butterfly_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (IDEAS_27 ?x2))
+
+;; (BEES LOVE LAVENDER GROW PLANTS THAT ATTRACT BEES)
+
+	;; BEES MAY LOVE PLANTS.
+
+		(and (bee_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1) (PLANTS_27 ?x1))
+
+	;; A LAVENDER_GROW[PERSON??] MAY HAVE PLANTS.
+
+		(and (LAVENDER_5FGROW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (plant_27 ?x1))
+
+;; (BEES ARE THE ULTIMATE POLLINATORS COMMA VITAL TO KEEP YOUR GARDEN COMMA VEGETABLES COMMA AND FRUITS GROWING STRONG)
+
+	;; BEES CAN BE POLLINATORS.
+
+		(and (bee_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POLLINATORS_27 ?x2))
+
+	;; POLLINATORS CAN BE ULTIMATE.
+
+		(and (pollinator_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ULTIMATE_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; FRUITS CAN BE STRONG.
+
+		(and (fruit_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+;; (ATTRACTING MORE OF THEM TO THE GARDEN MAKES COMMON SENSE)
+
+	;; A SENSE CAN BE COMMON.
+
+		(and (SENSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+;; (HAVE MANY FLOWERING PLANTS IN YOUR GARDEN COMMA INCLUDING LAVENDER COMMA TO ATTRACT BEES)
+
+	;; SOME_NUMBER_OF PLANTS CAN BE IN A GARDEN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLANTS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; PLANTS CAN BE FLOWERING.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLOWERING_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (READ HOW TO ATTRACT HONEY BEES FOR SOME MORE IDEAS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [25]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GROW PLANTS THAT ATTRACT LADYBUGS)
+
+	;; PLANTS MAY LADYBUG.
+
+		(and (plant_27 ?x1) (MAY_27 ?x1) (LADYBUG_27 ?x1))
+
+	;; PLANTS CAN BE GROW.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROW_27 ?x2))
+
+;; (LADYBUGS FEED ON APHIDS AND ARE EXCELLENT TO HAVE AROUND YOUR ROSES AND OTHER PLANTS THAT APHIDS ENJOY SUCKING THE LIFE OUT OF)
+
+	;; LADYBUGS MAY FEED ON APHIDS.
+
+		(and (LADYBUGS_27 ?x1) (MAY_27 ?x1) (FEED_27 ?x1) (ON_27 ?x1) (APHIDS_27 ?x1))
+
+	;; A PERSON MAY HAVE ROSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROSES_27 ?x1))
+
+	;; APHIDS MAY ENJOY.
+
+		(and (APHIDS_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1))
+
+;; (LADYBUGS LIKE THE PLANT YARROW)
+
+	;; LADYBUGS MAY YARROW.
+
+		(and (LADYBUGS_27 ?x1) (MAY_27 ?x1) (YARROW_27 ?x1))
+
+;; (READ HOW TO BUILD A LADYBUG HOUSE FOR MORE IDEAS)
+
+	;; A HOUSE CAN BE FOR IDEAS.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (IDEAS_27 ?x2))
+
+	;; A HOUSE CAN BE LADYBUG.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LADYBUG_27 ?x2))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (CREATE SPACES FOR FROGS IN YOUR GARDEN ATTRACT MORE FROGS TO YOUR GARDEN)
+
+	;; SPACES MAY ATTRACT FROGS TO A GARDEN.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (FROGS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; SPACES CAN BE FOR FROGS.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FROGS_27 ?x2))
+
+	;; SPACES CAN BE CREATE.
+
+		(and (space_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2))
+
+	;; FROGS CAN BE IN A GARDEN.
+
+		(and (frog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))

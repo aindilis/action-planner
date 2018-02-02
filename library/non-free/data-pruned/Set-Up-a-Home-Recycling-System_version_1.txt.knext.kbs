@@ -1,0 +1,73 @@
+;; (SET UP A PLACE IN YOUR HOME FOR COLLECTION OF CLEAN PAPER COMMA CANS COMMA PLASTIC CONTAINERS AND UNBROKEN GLASS)
+
+	;; A PLACE CAN BE IN A HOME.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A HOME CAN BE FOR COLLECTION OF PAPER.
+
+		(and (HOME_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (collection_27 ?x2) (of_27 ?x2 ?x3) (PAPER_27 ?x3))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; PAPER MAY UNDERGO A COLLECTION.
+
+		(and (PAPER_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (collection_27 ?x1))
+
+	;; A PAPER CAN BE CLEAN.
+
+		(and (PAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; CONTAINERS CAN BE PLASTIC.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A GLASS CAN BE UNBROKEN.
+
+		(and (GLASS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNBROKEN_27 ?x2))
+
+;; (THESE WILL BE CLEAN ALTHOUGH THEY CAN BE SOMEWHAT UNSIGHTLY)
+
+	;; A THING CAN BE CLEAN.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE UNSIGHTLY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNSIGHTLY_27 ?x2))
+
+;; (NO NEED TO WORRY ABOUT BUGS OR ODORS FROM HERE THOUGH)
+
+	;; 
+
+	;; ((:I (:F K (:F PLUR BUG.N)) FROM.P NIL))
+
+		(and (I_27 ?x3) (F_27 ?x1) (K_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (BUG_2EN_27 ?x2) (FROM_2EP_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE BIN FOR PAPER WILL PROBABLY BE THE LARGEST)
+
+	;; A BIN[PERSON??] CAN BE FOR PAPER.
+
+		(and (BIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (PAPER_27 ?x1))
+
+;; (PAPER WASTE IS COMPOST)
+
+	;; WASTE CAN BE A COMPOST[PERSON??].
+
+		(and (WASTE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (COMPOST_27 ?x2) (PERSON_27 ?x3))
+
+	;; A PAPER[PERSON??] MAY HAVE A WASTE.
+
+		(and (PAPER_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WASTE_27 ?x1))

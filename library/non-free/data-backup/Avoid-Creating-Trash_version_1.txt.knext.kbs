@@ -1,0 +1,823 @@
+;; (BUY ONE LARGER CONTAINER INSTEAD OF MANY SMALLER ONES)
+
+	;; A CONTAINER CAN BE LARGER.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+	;; ONES CAN BE SMALLER.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (SINCE YOU ARE PAYING FOR LESS PACKAGING AND SHIPPING COMMA YOU MAY ALSO PAY LESS BY BUYING IN BULK)
+
+	;; A PERSON MAY PAY FOR PACKAGING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (for_27 ?x1 ?x2) (PACKAGING_27 ?x2))
+
+;; (ASK YOUR BUTCHER TO WRAP YOUR MEAT IN PEACH PAPER ONLY COMMA THEN ATTACH THE PRICE ON TOP TO KEEP THE PAPER FOLDED)
+
+	;; A PERSON MAY HAVE A BUTCHER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUTCHER_27 ?x1))
+
+	;; A PERSON MAY HAVE MEAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MEAT_27 ?x1))
+
+	;; A PAPER CAN BE PEACH.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEACH_27 ?x2))
+
+	;; A PRICE CAN BE ON TOP.
+
+		(and (PRICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (TOP_27 ?x2))
+
+	;; A PAPER CAN BE FOLDED.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?e2) (fold_27 ?e2 ?x1))
+
+;; (PEACH PAPER IS A STRONG COMMA WATER AND OIL PROOF BEEF OR PORK WRAPPING PAPER NORMALLY USED TO SPLIT STAGES OF MEAT INSIDE A STYROFOAM
+ TRAY)
+
+	;; A PAPER CAN BE PEACH.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PEACH_27 ?x2))
+
+	;; STAGES CAN BE CONSTITUTED_OF_OR_FILLED_WITH MEAT.
+
+		(and (stage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MEAT_27 ?x2))
+
+;; (IT IS AVAILABLE IN ROLLS OR IN SHEET)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BUY FRESH COMMA UNPACKED COMMA FRUITS AND VEGETABLES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BUY GRAINS COMMA PASTA AND DRIED FRUIT IN BULK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LOOK AT WHETHER THE PACKAGE IS RECYCLABLE IN YOUR AREA BEFORE YOU BUY)
+
+	;; A PACKAGE CAN BE RECYCLABLE IN AN AREA.
+
+		(and (package_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECYCLABLE_27 ?x2) (in_27 ?e1 ?x3) (area_27 ?x3))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; A PERSON MAY BUY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1))
+
+;; (PLASTIC GROCERY BAGS)
+
+	;; A GROCERY CAN BE PLASTIC.
+
+		(and (GROCERY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (OFTEN COMMA THE PACKAGE AN ITEM COMES IN IS JUST AS CONVENIENT AS PUTTING THAT PACKAGE IN ANOTHER BAG)
+
+	;; AN ITEM MAY COME_IN.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (COME_5FIN_27 ?x1))
+
+;; (ASK FOR NO BAGS IF YOU ONLY BOUGHT ITEMS THAT YOU CAN EASILY CARRY OR IF THE ITEMS ARE GOING STRAIGHT FROM CART TO CAR TO KITCHEN)
+
+	;; A PERSON MAY BUY ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (ITEMS_27 ?x1))
+
+	;; A PERSON MAY CARRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CARRY_27 ?x1))
+
+	;; ITEMS MAY GO FROM CART.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (FROM_27 ?x1) (CART_27 ?x1))
+
+;; (PACK YOUR PURCHASES YOURSELF)
+
+	;; A PERSON MAY HAVE PURCHASES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PURCHASES_27 ?x1))
+
+;; (YOU CAN PACK THEM YOUR OWN WAY AND SAVE TIME AND BAGS)
+
+	;; A PERSON MAY HAVE A WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+;; (IF YOU CAN NOT AVOID GETTING A PLASTIC BAG FROM THE STORE RE USE IT AS A TRASH BAG FOR THE BATHROOM COMMA BEDROOM OR KID S ROOM)
+
+	;; A PERSON MAY AVOID.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (AVOID_27 ?x1))
+
+	;; A BAG CAN BE PLASTIC.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A TRASH BAG CAN BE FOR A BATHROOM.
+
+		(and (TRASH_27 ?x1) (BAG_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BATHROOM_27 ?x2))
+
+	;; KID MAY HAVE A ROOM.
+
+		(and (KID_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (A TALL STACK)
+
+	;; A STACK CAN BE TALL.
+
+		(and (STACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (AVOID COLLECTING BROCHURES AND FLYERS)
+
+	;; BROCHURES CAN BE COLLECTING.
+
+		(and (brochure_27 ?x1) (be_27 ?e1 ?x1 ?x2) (collecting_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [19]>
+
+;; (USE REUSABLE GIFT BAGS)
+
+	;; GIFT BAGS CAN BE REUSABLE.
+
+		(and (GIFT_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REUSABLE_27 ?x2))
+
+;; (USED BUT STILL USABLE BOOKS AT A GARAGE SALE)
+
+	;; BOOKS CAN BE AT A GARAGE SALE.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (GARAGE_27 ?x2) (SALE_27 ?x2))
+
+;; (GIVE AWAY OR SELL WHAT YOU DO N T NEED)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (TRY FREECYCLE COMMA CRAIGSLIST COMMA OR YOUR LOCAL CHARITY)
+
+	;; A PERSON MAY HAVE A CHARITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHARITY_27 ?x1))
+
+;; (PURCHASE USED PRODUCTS FROM GARAGE SALES COMMA CLASSIFIED ADS COMMA OR ANYWHERE ELSE THEY ARE AVAILABLE)
+
+	;; INDIVIDUAL -S CAN BE AVAILABLE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+	;; A PURCHASE[PERSON??] MAY USE PRODUCTS FROM GARAGE SALES.
+
+		(and (PURCHASE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (USE_27 ?x1) (PRODUCTS_27 ?x1) (FROM_27 ?x1) (GARAGE_27 ?x1) (SALES_27 ?x1))
+
+	;; ADS CAN BE CLASSIFIED.
+
+		(and (ad_27 ?x1) (be_27 ?e1 ?x1 ?e2) (classify_27 ?e2 ?x1))
+
+;; (YOU LL SAVE MONEY AND REDUCE THE DEMAND FOR NEW PRODUCTS)
+
+	;; A DEMAND CAN BE FOR PRODUCTS.
+
+		(and (demand_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (product_27 ?x2))
+
+;; (BUYING USED IS A DIRECT FORM OF RECYCLING)
+
+	;; BUYING CAN BE A FORM OF RECYCLING.
+
+		(and (buying_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (FORM_27 ?x2) (of_27 ?x2 ?x3) (RECYCLING_27 ?x3))
+
+	;; BUYING MAY BE USE -ED.
+
+		(and (buying_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A FORM CAN BE CONSTITUTED_OF_OR_FILLED_WITH RECYCLING.
+
+		(and (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RECYCLING_27 ?x2))
+
+	;; A FORM CAN BE DIRECT.
+
+		(and (FORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRECT_27 ?x2))
+
+;; (CHOOSE TO REUSE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE FABRIC NAPKINS INSTEAD OF PAPER NAPKINS OR PAPER TOWELS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FIND TWO OR THREE PER MEMBER OF YOUR FAMILY -LRB- HINT  THRIFT STORES AND GARAGE SALES ARE A GREAT SOURCE -RRB-)
+
+	;; A FAMILY MAY HAVE MEMBER.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MEMBER_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; HINT CAN BE A SOURCE.
+
+		(and (HINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SOURCE_27 ?x2))
+
+	;; A SOURCE CAN BE GREAT.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (IF THEY DO N T ALL MATCH AND THEY RE NOT TOO DIRTY COMMA FAMILY MEMBERS CAN USE THEM FOR MORE THAN ONE MEAL)
+
+	;; FAMILY MEMBERS MAY USE INDIVIDUAL -S.
+
+		(and (FAMILY_27 ?x1) (MEMBERS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (PACK A WASTE-FREE LUNCH)
+
+	;; A LUNCH CAN BE WASTE-FREE.
+
+		(and (LUNCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WASTE-FREE_27 ?x2))
+
+;; (USE A LUNCHBOX COMMA NOT A PAPER BAG)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE REUSABLE FOOD CONTAINERS INSTEAD OF PLASTIC BAGS OR PREPACKAGED DRINKS COMMA BOTH IN YOUR LUNCH BOX AND AT HOME)
+
+	;; FOOD CONTAINERS CAN BE REUSABLE.
+
+		(and (food_27 ?x1) (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REUSABLE_27 ?x2))
+
+	;; BAGS CAN BE PLASTIC.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; DRINKS CAN BE PREPACKAGED.
+
+		(and (drink_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PREPACKAGED_27 ?x2))
+
+	;; A PERSON MAY HAVE A LUNCH BOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUNCH_27 ?x1) (BOX_27 ?x1))
+
+;; (IF YOU DO USE PLASTIC ZIPPER BAGS FOR FOOD STORAGE COMMA YOU CAN WASH AND REUSE THEM SEVERAL TIMES)
+
+	;; A PERSON MAY WASH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WASH_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; ZIPPER BAGS CAN BE PLASTIC.
+
+		(and (ZIPPER_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (DO N T REUSE BAGS THAT CONTAINED MEAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AVOID USING PAPER PLATES COMMA PAPER OR PLASTIC TABLECLOTHS COMMA AND PLASTIC COMMA DISPOSABLE FLATWARE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE A WASHCLOTH INSTEAD OF A DISPOSABLE FACE WIPE)
+
+	;; A FACE CAN BE DISPOSABLE.
+
+		(and (FACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPOSABLE_27 ?x2))
+
+;; (USE FABRIC COMMA NOT PAPER COMMA TOWELS COMMA IN THE KITCHEN AND BATHROOM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THEY RE STURDIER AND MORE ABSORBENT COMMA BESIDES)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F NIL STURDIER.A)))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (NIL_27 ?x3) (STURDIER_2EA_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN WITH TERRY TOWELS INSTEAD OF PAPER TOWELS OR WIPES)
+
+	;; A CLEAN[PERSON??] CAN BE WITH TOWELS.
+
+		(and (CLEAN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (with_27 ?x1) (towel_27 ?x1))
+
+	;; TOWELS CAN BE TERRY.
+
+		(and (towel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TERRY_27 ?x2))
+
+;; (SOME CLOTH DIAPERS HAVE EVOLVED)
+
+	;; SOME_NUMBER_OF CLOTH DIAPERS MAY EVOLVE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CLOTH_27 ?x1) (DIAPERS_27 ?x1) (MAY_27 ?x1) (EVOLVE_27 ?x1))
+
+;; (USE CLOTH DIAPERS COMMA AT LEAST WHEN YOU ARE AT HOME)
+
+	;; A PERSON CAN BE AT_HOME.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_5FHOME_27 ?x2))
+
+;; (WASH THE DIAPERS INSTEAD OF THROWING THEM AWAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE A MENSTRUAL CUP OR WASHABLE FABRIC PADS)
+
+	;; A CUP CAN BE MENSTRUAL.
+
+		(and (CUP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MENSTRUAL_27 ?x2))
+
+	;; FABRIC PADS CAN BE WASHABLE.
+
+		(and (FABRIC_27 ?x1) (PADS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WASHABLE_27 ?x2))
+
+;; (USE LESS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BUY ONLY AS MUCH OF SOMETHING AS YOU KNOW YOU CAN USE BEFORE IT SPOILS)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; A PERSON MAY USE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY SPOIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SPOIL_27 ?x1))
+
+;; (THIS MAY MEAN A ONE-WEEK SUPPLY OF PERISHABLE FOODS)
+
+	;; A THING MAY MEAN A SUPPLY OF FOODS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1) (A_27 ?x1) (SUPPLY_27 ?x1) (of_27 ?x1 ?x2) (food_27 ?x2))
+
+	;; A SUPPLY CAN BE CONSTITUTED_OF_OR_FILLED_WITH FOODS.
+
+		(and (SUPPLY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FOODS_27 ?x2))
+
+	;; A SUPPLY CAN BE ONE-WEEK.
+
+		(and (SUPPLY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONE-WEEK_27 ?x2))
+
+	;; FOODS CAN BE PERISHABLE.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERISHABLE_27 ?x2))
+
+;; (CUT DRYER SHEETS COMMA PAPER TOWELS COMMA TISSUES COMMA AND OTHER THINGS INTO SMALLER PIECES IF YOU DO NOT NEED THE WHOLE THING)
+
+	;; A CUT[PERSON??] MAY DRYER SHEETS.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DRYER_27 ?x1) (SHEETS_27 ?x1))
+
+	;; PIECES CAN BE SMALLER.
+
+		(and (piece_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (EMPTY THE TRASH WITHOUT REPLACING THE LINER COMMA UNLESS THE LINER IS HEAVILY SOILED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SEPARATING OUT ESPECIALLY MESSY TRASH COMMA SUCH AS VEGETABLE SCRAPS FOR COMPOST COMMA WILL KEEP LINERS USABLE FOR LONGER)
+
+	;; A TRASH CAN BE MESSY.
+
+		(and (TRASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MESSY_27 ?x2))
+
+	;; VEGETABLE SCRAPS CAN BE FOR COMPOST.
+
+		(and (VEGETABLE_27 ?x1) (SCRAPS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (COMPOST_27 ?x2))
+
+;; (REUSE GROCERY BAGS FOR TRASH CAN LINERS WHEREVER POSSIBLE)
+
+	;; GROCERY BAGS CAN BE FOR TRASH.
+
+		(and (GROCERY_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TRASH_27 ?x2))
+
+	;; GROCERY BAGS CAN BE REUSE.
+
+		(and (GROCERY_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REUSE_27 ?x2))
+
+;; (USE ONLY AS MUCH SOAP AND DETERGENT AS YOU REALLY NEED)
+
+	;; USE MAY NEED.
+
+		(and (USE_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (OPEN YOUR WASHER DURING THE CYCLE)
+
+	;; A PERSON MAY HAVE A WASHER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WASHER_27 ?x1))
+
+;; (IF THE WATER FEELS SLIPPERY COMMA AND -LRB- IN A TOP-LOADER -RRB- LOOKS SUDSY COMMA TRY CUTTING BACK JUST A BIT ON THE AMOUNT OF
+ DETERGENT YOU USE COMMA REGARDLESS OF WHAT THE CUP SAYS)
+
+	;; A PERSON MAY USE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; A CUP MAY SAY.
+
+		(and (CUP_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (SEE HOW LITTLE SHAMPOO AND DISH SOAP YOU REALLY NEED COMMA TOO)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (MANY PRODUCTS ARE VERY CONCENTRATED AND COMMA PAST A CERTAIN POINT COMMA MORE SOAP DOES NOT MEAN CLEANER)
+
+	;; SOME_NUMBER_OF PRODUCTS CAN BE CONCENTRATED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PRODUCTS_27 ?x1) (be_27 ?e1 ?x1 ?e2) (concentrate_27 ?e2 ?x1))
+
+	;; SOAP MAY DO.
+
+		(and (SOAP_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (COOK AT HOME)
+
+	;; A COOK[PERSON??] CAN BE AT_HOME.
+
+		(and (COOK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (AT_5FHOME_27 ?x1))
+
+;; (RAW INGREDIENTS OFTEN COME WITH LESS PACKAGING THAN PREPARED COMMA BOXED FOODS)
+
+	;; INGREDIENTS MAY COME WITH PACKAGING.
+
+		(and (ingredient_27 ?x1) (COME_27 ?x1) (WITH_27 ?x2) (PACKAGING_27 ?x2))
+
+	;; A RAW[PERSON??] MAY HAVE INGREDIENTS.
+
+		(and (RAW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ingredient_27 ?x1))
+
+	;; FOODS CAN BE PREPARED.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PREPARED_27 ?x2))
+
+;; (HOME COMPOSTING)
+
+	;; A HOME[PERSON??] MAY COMPOST.
+
+		(and (HOME_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (COMPOST_27 ?x1))
+
+;; (COMPOST AND MULCH YOUR GARDEN WITH WHAT YOU GROW THERE)
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; A PERSON MAY GROW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GROW_27 ?x1))
+
+;; (IT WILL CUT DOWN YOUR YARD AND VEGETABLE WASTE TREMENDOUSLY -LRB- OFTEN AROUND 15 % OF THE WASTE THAT HOUSEHOLDS PRODUCE -LRB- 3 -RRB-
+ -RRB- AND IT WILL IMPROVE YOUR SOIL AND YOUR GARDEN WITHOUT THE USE OF CHEMICAL FERTILIZER)
+
+	;; A THING-REFERRED-TO MAY CUT_DOWN A YARD.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CUT_5FDOWN_27 ?x1) (A_27 ?x1) (YARD_27 ?x1))
+
+	;; A PERSON MAY HAVE A YARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (YARD_27 ?x1))
+
+	;; A WASTE MAY HAVE A %.
+
+		(and (WASTE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (kbs2_kif_quote_25_27 ?x1))
+
+	;; HOUSEHOLDS MAY PRODUCE.
+
+		(and (HOUSEHOLDS_27 ?x1) (MAY_27 ?x1) (PRODUCE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY IMPROVE A SOIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (IMPROVE_27 ?x1) (A_27 ?x1) (SOIL_27 ?x1))
+
+	;; A PERSON MAY HAVE A SOIL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SOIL_27 ?x1))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (IF YOU CAN USE MOSTLY MATERIALS YOU WERE PRODUCING ANYWAY COMMA SUCH AS GRASS CLIPPINGS AND FALLEN LEAVES COMMA YOU WILL ALSO SAVE MANY
+ TRIPS TO THE NURSERY OR HARDWARE STORE TO BUY MULCH AND SOIL)
+
+	;; A PERSON MAY SAVE SOME_NUMBER_OF TRIPS TO A NURSERY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (TRIPS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (NURSERY_27 ?x2))
+
+	;; A PERSON MAY USE MATERIALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (MATERIALS_27 ?x1))
+
+	;; A PERSON MAY PRODUCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PRODUCE_27 ?x1))
+
+	;; LEAVES CAN BE FALLEN.
+
+		(and (leaf_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FALLEN_27 ?x2))
+
+;; (BORROW COMMA LEND COMMA RENT COMMA AND SHARE)
+
+	;; A BORROW[PERSON??] MAY LEND.
+
+		(and (BORROW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (LEND_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [20]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [21]>
+
+;; (USE YOUR LOCAL PUBLIC LIBRARY)
+
+	;; A PERSON MAY HAVE A LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIBRARY_27 ?x1))
+
+	;; A LIBRARY CAN BE PUBLIC.
+
+		(and (LIBRARY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUBLIC_27 ?x2))
+
+;; (BORROW BOOKS COMMA MUSIC COMMA MOVIES COMMA MAGAZINES COMMA NEWSPAPERS AND THEN RETURN THEM TO SHARE WITH OTHERS INSTEAD OF CREATING
+ MORE)
+
+	;; BOOKS CAN BE BORROW.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BORROW_27 ?x2))
+
+;; (MAINTAIN AND REPAIR INSTEAD OF REPLACING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO N T THROW OUT YOUR VACUUM CLEANER IF IT IS N T PICKING UP)
+
+	;; A PERSON MAY HAVE A VACUUM CLEANER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VACUUM_27 ?x1) (CLEANER_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY PICK_UP.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (PICK_5FUP_27 ?x1))
+
+;; (CHECK THE BAG AND THE BELT AND MAKE SURE THE HOSES ARE FREE OF CLOGS)
+
+	;; HOSES CAN BE FREE OF CLOGS.
+
+		(and (hose_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2) (of_27 ?x2 ?x3) (clog_27 ?x3))
+
+;; (BUY FOR DURABILITY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WHENEVER POSSIBLE COMMA CHOOSE A PRODUCT THAT YOU WILL USE FOR A LONG TIME AND BE ABLE TO MAINTAIN AND REPAIR SHOULD IT BE NECESSARY)
+
+	;; A PERSON MAY USE FOR A TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (for_27 ?x1 ?x2) (time_27 ?x2))
+
+	;; A TIME CAN BE LONG.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (IT MAY COST A BIT MORE UP FRONT COMMA BUT IT WILL SAVE WASTE AND MONEY IN THE LONG RUN)
+
+	;; A THING-REFERRED-TO MAY COST A BIT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (COST_27 ?x1) (A_27 ?x1) (BIT_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY SAVE WASTE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SAVE_27 ?x1) (WASTE_27 ?x1))
+
+	;; A RUN CAN BE LONG.
+
+		(and (RUN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (DURABILITY GOES FOR STYLE AND FASHION COMMA TOO)
+
+	;; A DURABILITY[PERSON??] MAY GO FOR STYLE.
+
+		(and (DURABILITY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (go_27 ?e1) (for_27 ?e1 ?x1) (STYLE_27 ?x1))
+
+;; (IT S NOT ALWAYS POSSIBLE TO TELL BEFORE BUYING SOMETHING HOW SOON IT WILL BE HOPELESSLY OUT OF DATE COMMA BUT IT IS USUALLY POSSIBLE TO
+ BUY SIMPLE COMMA CLASSIC STYLES THAT YOU LIKE AND CAN WEAR OR DISPLAY IN YOUR HOME FOR A LONG TIME)
+
+	;; A THING-REFERRED-TO CAN BE OUT OF DATE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUT_27 ?x2) (of_27 ?x2 ?x3) (DATE_27 ?x3))
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+	;; A HOME CAN BE FOR A TIME.
+
+		(and (HOME_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (time_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A TIME CAN BE LONG.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))

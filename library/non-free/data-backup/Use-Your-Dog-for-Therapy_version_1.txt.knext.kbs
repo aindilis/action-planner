@@ -1,0 +1,69 @@
+;; (THEY SHOULD ALSO BE ABLE TO STAY STILL AND CALM WHEN THESE OBJECTS ARE MOVED AROUND THEM)
+
+	;; OBJECTS MAY BE MOVE -ED AROUND INDIVIDUAL -S.
+
+		(and (object_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (AROUND_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; (CONTACT A PETS AS THERAPY GROUP FOR DETAILED INFORMATION ON THE TRAINING REQUIRED)
+
+	;; A CONTACT_A_PETS[PERSON??] MAY REQUIRE.
+
+		(and (CONTACT_5FA_5FPETS_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (REQUIRE_27 ?x1))
+
+	;; A CONTACT_A_PETS[PERSON??] CAN BE AS GROUP.
+
+		(and (CONTACT_5FA_5FPETS_27 ?x1) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (AS_27 ?x1) (GROUP_27 ?x1))
+
+	;; GROUP CAN BE FOR INFORMATION.
+
+		(and (GROUP_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INFORMATION_27 ?x2))
+
+	;; A THERAPY[PERSON??] MAY HAVE A GROUP.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GROUP_27 ?x1))
+
+	;; INFORMATION CAN BE ON A TRAINING.
+
+		(and (information_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (training_27 ?x2))
+
+	;; AN INFORMATION CAN BE DETAILED.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DETAILED_27 ?x2))
+
+;; (CONTACT LOCAL NURSING HOME FACILITIES AND HOSPITALS TO GAUGE THEIR LEVEL OF INTEREST)
+
+	;; INDIVIDUAL -S MAY HAVE A LEVEL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LEVEL_27 ?x1))
+
+;; (KEEP VISITS TO AN HOUR S DURATION TO AVOID TIRING THE DOG)
+
+	;; A HOUR MAY HAVE A DURATION.
+
+		(and (HOUR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DURATION_27 ?x1))
+
+;; (INSIST ON BEING ACCOMPANIED BY A STAFF MEMBER AT ALL TIMES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS IS A SAFETY ISSUE)
+
+	;; A THING CAN BE SAFETY ISSUE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFETY_27 ?x2) (ISSUE_27 ?x2))

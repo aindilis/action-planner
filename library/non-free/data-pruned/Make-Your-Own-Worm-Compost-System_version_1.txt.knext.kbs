@@ -1,0 +1,993 @@
+;; (USE RUBBER STORAGE TOTES COMMA GALVANIZED TUBS COMMA WOOD COMMA OR PLASTIC)
+
+	;; TUBS CAN BE GALVANIZED.
+
+		(and (TUBS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GALVANIZED_27 ?x2))
+
+;; (A WOODEN BIN)
+
+	;; A BIN CAN BE WOODEN.
+
+		(and (BIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WOODEN_27 ?x2))
+
+;; (MATERIAL  RUBBER IS CHEAP COMMA EASY TO USE AND DURABLE)
+
+	;; A RUBBER[PERSON??] CAN BE CHEAP.
+
+		(and (RUBBER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (CHEAP_27 ?x1))
+
+;; (GALVANIZED TUBS ARE SOMEWHAT COSTLY BUT WILL LAST FOREVER)
+
+	;; TUBS CAN BE COSTLY.
+
+		(and (TUBS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COSTLY_27 ?x2))
+
+	;; TUBS CAN BE GALVANIZED.
+
+		(and (TUBS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GALVANIZED_27 ?x2))
+
+;; (WOOD WILL EVENTUALLY BE EATEN COMMA AND PLASTIC CRACKS EASILY COMMA BUT EITHER WILL DO IN A PINCH)
+
+	;; A WOOD[PERSON??] MAY BE EAT -ED.
+
+		(and (WOOD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (EAT_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; CRACKS CAN BE PLASTIC.
+
+		(and (crack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; SOME_NUMBER_OF THING MAY DO IN A PINCH.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PINCH_27 ?x2))
+
+;; (SOME PEOPLE PREFER WOODEN COMPOST WORM BINS BECAUSE THEY MAY BREATHE BETTER AND ABSORB EXCESS MOISTURE -LRB- -RRB- COMMA WHICH CAN BE
+ HAZARDOUS TO THE WORMS)
+
+	;; SOME_NUMBER_OF PEOPLE MAY PREFER WORM BINS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (PREFER_27 ?x1) (WORM_27 ?x1) (BINS_27 ?x1))
+
+	;; WORM BINS CAN BE WOODEN.
+
+		(and (WORM_27 ?x1) (BINS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WOODEN_27 ?x2))
+
+	;; WORM BINS CAN BE COMPOST.
+
+		(and (WORM_27 ?x1) (BINS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPOST_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BREATHE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BREATHE_27 ?x1))
+
+	;; MOISTURE -LRB- CAN BE EXCESS.
+
+		(and (MOISTURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+;; (JUST DO N T USE CHEMICALLY-TREATED WOOD COMMA WHICH MAY BE DANGEROUS TO WORMS OR LEACH HARMFUL CHEMICALS INTO YOUR COMPOST)
+
+	;; A WOOD CAN BE CHEMICALLY-TREATED.
+
+		(and (WOOD_27 ?x1) (be_27 ?e1 ?x1) (chemically-treated_27 ?x1))
+
+	;; CHEMICALS CAN BE HARMFUL.
+
+		(and (chemical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARMFUL_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPOST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPOST_27 ?x1))
+
+;; (5-GALLON PLASTIC BUCKETS NOW FOR SALE BY MOST HARDWARE STORES CAN BE USED - ESPECIALLY IF YOU LIVE IN AN APARTMENT)
+
+	;; BUCKETS MAY BE USE -ED.
+
+		(and (bucket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; BUCKETS CAN BE FOR SALE.
+
+		(and (bucket_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SALE_27 ?x2))
+
+	;; BUCKETS CAN BE 5-GALLON.
+
+		(and (bucket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_35-GALLON_27 ?x2))
+
+	;; BUCKETS CAN BE PLASTIC.
+
+		(and (bucket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; SALE CAN BE BY HARDWARE STORES.
+
+		(and (sale_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BY_27 ?x2) (HARDWARE_27 ?x2) (STORES_27 ?x2))
+
+	;; A PERSON MAY LIVE IN AN APARTMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (APARTMENT_27 ?x2))
+
+;; (CLEAN THE BIG 5-GALLON SOAP BUCKETS THOROUGHLY AND LET THEM SIT FOR A DAY OR SO FILLED WITH CLEAN WATER BEFORE USING AS A WORM BIN)
+
+	;; SOAP BUCKETS CAN BE BIG.
+
+		(and (SOAP_27 ?x1) (BUCKETS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; SOAP BUCKETS CAN BE 5-GALLON.
+
+		(and (SOAP_27 ?x1) (BUCKETS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_35-GALLON_27 ?x2))
+
+	;; INDIVIDUAL -S MAY SIT FOR A DAY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SIT_27 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DAY_27 ?x2))
+
+	;; WATER CAN BE CLEAN.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (DRILLING HOLES TO VENTILATE A RUBBER TUB)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (VENTILATION  YOUR BIN SHOULD BE WELL-VENTILATED COMMA WITH SEVERAL/8 INCH -LRB- 3MM -RRB- HOLES 4 INCHES -LRB- 100MM -RRB- FROM THE
+ BOTTOM -LRB- OTHERWISE THE WORMS WILL STAY AT THE BOTTOM OF THE BIN AND YOU MAY DROWN YOUR WORMS -RRB-)
+
+	;; A BIN CAN BE WELL-VENTILATED.
+
+		(and (BIN_27 ?x1) (be_27 ?e1 ?x1) (well-ventilated_27 ?x1))
+
+	;; A PERSON MAY HAVE A BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIN_27 ?x1))
+
+	;; AN INCH CAN BE SEVERAL/8.
+
+		(and (INCH_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; SOME_NUMBER_OF INCHES CAN BE FROM A BOTTOM.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (INCHES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (BOTTOM_27 ?x2))
+
+	;; WORMS MAY STAY AT A BOTTOM OF A BIN[PERSON??].
+
+		(and (WORMS_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1) (AT_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BIN_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY DROWN WORMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DROWN_27 ?x1) (WORMS_27 ?x1))
+
+	;; A PERSON MAY HAVE WORMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORMS_27 ?x1))
+
+;; (FOR EXAMPLE COMMA YOU CAN BUILD A WORM BIN OUT OF A LARGE PLASTIC TUB WITH SEVERAL DOZEN SMALL HOLES DRILLED OUT ON THE BOTTOM AND SIDES)
+
+	;; A PERSON MAY BUILD_OUT A WORM BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUILD_5FOUT_27 ?x1) (A_27 ?x1) (WORM_27 ?x1) (BIN_27 ?x1))
+
+	;; A TUB CAN BE LARGE.
+
+		(and (TUB_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A TUB CAN BE PLASTIC.
+
+		(and (TUB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (UNTREATED WOODEN BINS ARE NATURALLY VENTILATED BECAUSE OF STRUCTURE OF WOOD)
+
+	;; BINS CAN BE VENTILATED.
+
+		(and (bin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VENTILATED_27 ?x2))
+
+	;; BINS CAN BE UNTREATED.
+
+		(and (bin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNTREATED_27 ?x2))
+
+	;; BINS CAN BE WOODEN.
+
+		(and (bin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WOODEN_27 ?x2))
+
+;; (-LRB- 2 -RRB- SIZE  THE LARGER YOU MAKE THE CONTAINER COMMA THE MORE WORMS IT CAN SUSTAIN)
+
+	;; A PERSON MAY MAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A CONTAINER MAY SUSTAIN.
+
+		(and (CONTAINER_27 ?x1) (MAY_27 ?x1) (SUSTAIN_27 ?x1))
+
+;; (ESTIMATEPOUND -LRB- 0.45 KG -RRB- OF WORMS -LRB- 1COMMA200 -RRB- FOR EVERY SQUARE FOOT OF SURFACE AREA)
+
+	;; WORMS CAN BE FOR SOME_NUMBER_OF FOOT OF SURFACE AREA.
+
+		(and (worm_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (FOOT_27 ?x2) (of_27 ?x2 ?x3) (SURFACE_27 ?x3) (AREA_27 ?x3))
+
+	;; SOME_NUMBER_OF FOOT CAN BE CONSTITUTED_OF_OR_FILLED_WITH SURFACE AREA.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FOOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SURFACE_27 ?x2) (AREA_27 ?x2))
+
+	;; A FOOT CAN BE SQUARE.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+;; (THE MAXIMUM PRODUCTIVE DEPTH FOR YOUR BIN IS 24 INCHES -LRB- 61CM -RRB- DEEP BECAUSE COMPOSTING WORMS WILL NOT GO FURTHER DOWN THAN THAT)
+
+	;; DEPTH CAN BE FOR A BIN.
+
+		(and (DEPTH_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BIN_27 ?x2))
+
+	;; DEPTH CAN BE PRODUCTIVE.
+
+		(and (DEPTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRODUCTIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE A BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIN_27 ?x1))
+
+	;; WORMS MAY GO.
+
+		(and (WORMS_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; WORMS CAN BE COMPOSTING.
+
+		(and (worm_27 ?x1) (be_27 ?e1 ?x1 ?x2) (composting_27 ?x2))
+
+;; (COVER  THE BIN SHOULD HAVE A COVER TO PREVENT LIGHT FROM GETTING IN AND TO PREVENT THE COMPOST FROM DRYING OUT)
+
+	;; A BIN[PERSON??] MAY HAVE A COVER.
+
+		(and (BIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (cover_27 ?x1))
+
+;; (CHOOSE OR MAKE A LID THAT CAN BE REMOVED IF YOUR COMPOST IS TOO WET)
+
+	;; A COMPOST CAN BE WET.
+
+		(and (COMPOST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPOST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPOST_27 ?x1))
+
+;; (USE A CANVAS TARP COMMA DOUBLED OVER AND BUNGEE-CORDED ON COMMA OR KEPT IN PLACE WITH WOOD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BURLAP SACKS ALSO WORK WELL COMMA AND CAN BE WATERED DIRECTLY)
+
+	;; SACKS MAY WORK.
+
+		(and (SACKS_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; SACKS CAN BE BURLAP.
+
+		(and (sack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BURLAP_27 ?x2))
+
+;; (USEOLD CAR TIRES  TO MAKE A FOUR-TIRE WORMERY COMMA CREATE A BASE FROM OLD BRICKS OR FLAGSTONES -LRB- MUST BE FLAT AND WITH AS FEW CRACKS
+ AS POSSIBLE -RRB-)
+
+	;; CAR TIRES CAN BE USEOLD.
+
+		(and (car_27 ?x1) (TIRES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEOLD_27 ?x2))
+
+	;; A WORMERY CAN BE FOUR-TIRE.
+
+		(and (WORMERY_27 ?x1) (be_27 ?e1 ?x1) (four-tire_27 ?x1))
+
+	;; BRICKS CAN BE OLD.
+
+		(and (brick_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; SOME_NUMBER_OF CRACKS CAN BE POSSIBLE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CRACKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+;; (PLACE A LAYER OF HEAVY NEWSPAPER ON TOP OF THE BRICKS)
+
+	;; A LAYER CAN BE CONSTITUTED_OF_OR_FILLED_WITH NEWSPAPER.
+
+		(and (LAYER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (NEWSPAPER_27 ?x2))
+
+	;; A NEWSPAPER CAN BE HEAVY.
+
+		(and (NEWSPAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (STUFF FOUR OLD TIRES WITH NEWSPAPERS)
+
+	;; TIRES CAN BE OLD.
+
+		(and (tire_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (PILE THE TIRES ON TOP OF EACH OTHER COMMA WITH THE FIRST TIRE ON THE SUNDAY NEWSPAPER)
+
+	;; A TIRE CAN BE ON A NEWSPAPER.
+
+		(and (tire_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (NEWSPAPER_27 ?x2))
+
+	;; A WEEKDAY MAY HAVE A NEWSPAPER.
+
+		(and (WEEKDAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEWSPAPER_27 ?x1))
+
+;; (PUT SOME SCRUNCHED UP PAPER OR CARDBOARD IN THE BOTTOM TO SOAK UP ANY EXCESS LIQUID)
+
+	;; SOME_NUMBER_OF THING MAY BE SCRUNCH_UP -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCRUNCH_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; PAPER CAN BE IN A BOTTOM.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BOTTOM_27 ?x2))
+
+	;; A LIQUID CAN BE EXCESS.
+
+		(and (LIQUID_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+;; (FILL THE ENTIRE WORMERY WITH ORGANIC MATERIAL -LRB- SEMI-COMPOSTED IS BEST -RRB-)
+
+	;; A MATERIAL CAN BE ORGANIC.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORGANIC_27 ?x2))
+
+;; (ADD THE COMPOSTING WORMS -LRB- TIGER OR BRANDLING SPECIES ARE BEST -RRB-)
+
+	;; WORMS CAN BE COMPOSTING.
+
+		(and (worm_27 ?x1) (be_27 ?e1 ?x1 ?x2) (composting_27 ?x2))
+
+	;; TIGER CAN BE BEST.
+
+		(and (tiger_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (USE A PIECE OF BOARD WEIGHED DOWN WITH BRICKS AS A LID)
+
+	;; A PIECE CAN BE CONSTITUTED_OF_OR_FILLED_WITH BOARD.
+
+		(and (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BOARD_27 ?x2))
+
+	;; BOARD MAY BE WEIGH_DOWN -ED WITH BRICKS.
+
+		(and (BOARD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WEIGH_5FDOWN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (BRICKS_27 ?x2))
+
+	;; BRICKS CAN BE AS A LID.
+
+		(and (brick_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (A_27 ?x2) (LID_27 ?x2))
+
+;; (THE LID MUST BE BIG ENOUGH TO STOP RAIN GETTING IN)
+
+	;; A LID CAN BE BIG.
+
+		(and (LID_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; RAIN MAY GET_IN.
+
+		(and (RAIN_27 ?x1) (MAY_27 ?x1) (GET_5FIN_27 ?x1))
+
+;; (HARVEST A TIRE S WORTH OF FERTILIZER ROUGHLY EVERY 8 WEEKS -LRB- DURING WARM MONTHS -RRB-)
+
+	;; A TIRE MAY HAVE WORTH.
+
+		(and (TIRE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORTH_27 ?x1))
+
+	;; MONTHS CAN BE WARM.
+
+		(and (month_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+;; (SHREDDED NEWSPAPER FOR WORM BEDDING)
+
+	;; NEWSPAPER CAN BE FOR WORM BEDDING.
+
+		(and (NEWSPAPER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WORM_27 ?x2) (BEDDING_27 ?x2))
+
+	;; A NEWSPAPER CAN BE SHREDDED.
+
+		(and (NEWSPAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHREDDED_27 ?x2))
+
+;; (PREPARE THE BOX FOR WORMS)
+
+	;; A BOX CAN BE FOR WORMS.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WORMS_27 ?x2))
+
+;; (FILL YOUR BIN WITH THIN STRIPS OF UNBLEACHED CORRUGATED CARDBOARD OR SHREDDED NEWSPAPER COMMA STRAW COMMA DRY GRASS COMMA OR SOME SIMILAR
+ MATERIAL)
+
+	;; A PERSON MAY HAVE A BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIN_27 ?x1))
+
+	;; STRIPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH CARDBOARD.
+
+		(and (strip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CARDBOARD_27 ?x2))
+
+	;; STRIPS CAN BE THIN.
+
+		(and (strip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THIN_27 ?x2))
+
+	;; A CARDBOARD CAN BE UNBLEACHED.
+
+		(and (CARDBOARD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNBLEACHED_27 ?x2))
+
+	;; A CARDBOARD CAN BE CORRUGATED.
+
+		(and (CARDBOARD_27 ?x1) (be_27 ?e1 ?x1 ?e2) (corrugate_27 ?e2 ?x1))
+
+	;; A NEWSPAPER CAN BE SHREDDED.
+
+		(and (NEWSPAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHREDDED_27 ?x2))
+
+	;; GRASS CAN BE DRY.
+
+		(and (esparto_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+;; (THIS PROVIDES A SOURCE OF FIBER TO THE WORMS AND KEEPS THE BIN WELL-VENTILATED)
+
+	;; A THING MAY PROVIDE A SOURCE OF FIBER TO WORMS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (A_27 ?x1) (SOURCE_27 ?x1) (of_27 ?x1 ?x2) (FIBER_27 ?x2) (to_27 ?x1 ?x3) (WORMS_27 ?x3))
+
+	;; A SOURCE CAN BE CONSTITUTED_OF_OR_FILLED_WITH FIBER.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FIBER_27 ?x2))
+
+	;; A BIN[PERSON??] CAN BE WELL-VENTILATED.
+
+		(and (BIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		( (be_27 ?e1))
+
+;; (SPRINKLE A HANDFUL OF DIRT ON TOP COMMA AND THOROUGHLY MOISTEN)
+
+	;; A HANDFUL CAN BE CONSTITUTED_OF_OR_FILLED_WITH DIRT.
+
+		(and (HANDFUL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DIRT_27 ?x2))
+
+;; (ALLOW THE WATER TO SOAK IN FOR AT LEAST A DAY BEFORE ADDING WORMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [38]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU CAN ALSO USE CANADIAN PEAT MOSS COMMA WHICH IS MORE EXPENSIVE BUT YIELDS A LOAMIER VERMICOMPOST)
+
+	;; A PERSON MAY USE PEAT MOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (PEAT_27 ?x1) (MOSS_27 ?x1))
+
+	;; PEAT MOSS CAN BE CANADIAN.
+
+		(and (peat_27 ?x1) (MOSS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANADIAN_27 ?x2))
+
+;; (WORMS ARRIVE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [40]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET WORMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [41]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET WORMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [41]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET WORMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [41]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET WORMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [41]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [42]>
+
+;; (THEY DO NOT REPRODUCE QUITE AS FAST AS THE RED WIGGLERS COMMA BUT GROW TO BE LARGER COMMA EAT COARSER PAPER AND CARDBOARD BETTER COMMA
+ AND SEEM TO BE HEARTIER)
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; WIGGLERS CAN BE RED.
+
+		(and (wiggler_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+	;; A PAPER CAN BE COARSER.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COARSER_27 ?x2))
+
+;; (THEY ARE ALSO BETTER FISHING WORMS WHEN THEY DO REACH FULL SIZE)
+
+	;; INDIVIDUAL -S CAN BE FISHING WORMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FISHING_27 ?x2) (WORMS_27 ?x2))
+
+	;; FISHING WORMS CAN BE BETTER.
+
+		(and (FISHING_27 ?x1) (WORMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A SIZE CAN BE FULL.
+
+		(and (SIZE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; (HOWEVER COMMA WITH ANY NON-NATIVE SPECIES COMMA IT IS IMPORTANT NOT TO ALLOW THEM TO REACH THE WILD)
+
+	;; A THING-REFERRED-TO CAN BE IMPORTANT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A SPECIES CAN BE NON-NATIVE.
+
+		(and (specy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NON-NATIVE_27 ?x2))
+
+;; (THEIR VORACIOUS APPETITES AND REPRODUCTIVE RATES -LRB- ESPECIALLY AMONG THE RED WIGGLERS -RRB- HAVE BEEN KNOWN TO UPSET THE DELICATE
+ BALANCE OF THE HARDWOOD FORESTS BY CONSUMING THE LEAF LITTER TOO QUICKLY)
+
+	;; INDIVIDUAL -S MAY HAVE APPETITES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (APPETITES_27 ?x1))
+
+	;; APPETITES CAN BE VORACIOUS.
+
+		(and (appetite_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VORACIOUS_27 ?x2))
+
+	;; RATES CAN BE REPRODUCTIVE.
+
+		(and (rate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPRODUCTIVE_27 ?x2))
+
+	;; WIGGLERS CAN BE RED.
+
+		(and (wiggler_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+	;; HARDWOOD FORESTS MAY UNDERGO A BALANCE.
+
+		(and (HARDWOOD_27 ?x1) (FORESTS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (BALANCE_27 ?x1))
+
+	;; A BALANCE CAN BE DELICATE.
+
+		(and (BALANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DELICATE_27 ?x2))
+
+;; (THIS EVENT LEAVES TOO LITTLE LEAF LETTER TO SLOWLY INCUBATE THE HARD SHELLED NUTS AND LEADS TO EXCESSIVE EROSION AS WELL AS NEGATIVELY
+ AFFECTING THE PH OF THE SOIL)
+
+	;; NUTS CAN BE HARD.
+
+		(and (nut_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; NUTS CAN BE SHELLED.
+
+		(and (nut_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHELLED_27 ?x2))
+
+	;; AN EROSION CAN BE EXCESSIVE.
+
+		(and (EROSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCESSIVE_27 ?x2))
+
+	;; A SOIL MAY HAVE A PH.
+
+		(and (SOIL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PH_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [43]>
+
+;; (FEED YOUR WORMS FRUIT AND VEGETABLE SCRAPS AND REFRESH THE BEDDING AS NECESSARY)
+
+	;; A PERSON MAY HAVE A FRUIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRUIT_27 ?x1))
+
+	;; A FRUIT CAN BE WORMS.
+
+		(and (FRUIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORMS_27 ?x2))
+
+	;; A BEDDING CAN BE NECESSARY.
+
+		(and (bedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+;; (MAINTAIN YOUR BIN)
+
+	;; A PERSON MAY HAVE A BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIN_27 ?x1))
+
+;; (KEEPING YOUR BIN ELEVATED OFF THE GROUND COMMA USING BRICKS COMMA CINDER BLOCKS COMMA OR WHATEVER IS CONVENIENT WILL HELP SPEED
+ COMPOSTING AND KEEP YOUR WORMS HAPPY)
+
+	;; A BIN MAY ELEVATE_OFF THE GROUND.
+
+		(and (BIN_27 ?x1) (MAY_27 ?x1) (ELEVATE_5FOFF_27 ?x1) (THE_27 ?x1) (GROUND_27 ?x1))
+
+	;; A PERSON MAY HAVE A BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIN_27 ?x1))
+
+	;; WORMS CAN BE HAPPY.
+
+		(and (WORMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAPPY_27 ?x2))
+
+	;; A PERSON MAY HAVE WORMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORMS_27 ?x1))
+
+;; (WORMS ARE CAPABLE OF ESCAPING ALMOST ANYTHING COMMA BUT IF YOU KEEP YOUR WORMS FED AND PROPERLY DAMP COMMA THEY SHOULD NOT TRY TO ESCAPE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [43]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (A LIGHT IN THE SAME AREA WILL ENSURE YOUR WORMS STAY PUT)
+
+	;; A LIGHT CAN BE IN AN AREA.
+
+		(and (LIGHT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; WORMS MAY STAY.
+
+		(and (WORMS_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1))
+
+	;; A PERSON MAY HAVE WORMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORMS_27 ?x1))
+
+;; (SPRINKLE THE SURFACE WITH WATER EVERY OTHER DAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [43]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FEED YOUR WORMS VEGETABLE SCRAPS AT LEAST ONCE A WEEK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [43]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FEEDING LIGHTLY AND OFTEN WILL PRODUCE MORE WORMS -LRB- WHICH IS GOOD WHEN STARTING A NEW BIN -RRB- AND LARGE AMOUNTS FED LESS OFTEN WILL
+ FATTEN YOUR WORMS -LRB- GOOD FOR FISHING -RRB-)
+
+	;; A FEEDING[PERSON??] MAY PRODUCE WORMS.
+
+		(and (FEEDING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PRODUCE_27 ?x1) (WORMS_27 ?x1))
+
+	;; AMOUNTS MAY FATTEN WORMS.
+
+		(and (amount_27 ?x1) (MAY_27 ?x1) (FATTEN_27 ?x1) (WORMS_27 ?x1))
+
+	;; AMOUNTS MAY BE FED -ED.
+
+		(and (amount_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FED_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; AMOUNTS CAN BE LARGE.
+
+		(and (amount_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY HAVE WORMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORMS_27 ?x1))
+
+;; (ADD MORE CARDBOARD COMMA SHREDDED NEWSPAPER COMMA HAY COMMA OR OTHER FIBROUS MATERIAL ONCE A MONTH COMMA OR AS NEEDED)
+
+	;; NEWSPAPER MAY MATERIA A MONTH.
+
+		(and (NEWSPAPER_27 ?x1) (MAY_27 ?x1) (MATERIA_27 ?x1) (A_27 ?x1) (MONTH_27 ?x1))
+
+	;; A NEWSPAPER CAN BE SHREDDED.
+
+		(and (NEWSPAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHREDDED_27 ?x2))
+
+;; (YOUR WORMS WILL REDUCE EVERYTHING IN YOUR BIN QUICKLY)
+
+	;; WORMS MAY REDUCE EVERYTHING.
+
+		(and (WORMS_27 ?x1) (MAY_27 ?x1) (REDUCE_27 ?x1) (EVERYTHING_27 ?x1))
+
+	;; A PERSON MAY HAVE WORMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORMS_27 ?x1))
+
+	;; EVERYTHING CAN BE IN A BIN.
+
+		(and (everything_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BIN_27 ?x2))
+
+	;; A PERSON MAY HAVE A BIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIN_27 ?x1))
+
+;; (YOU WILL START WITH A FULL BIN OF COMPOST OR PAPER/CARDBOARD COMMA AND SOON IT WILL BE HALF FULL)
+
+	;; A PERSON MAY START WITH A BIN OF COMPOST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (BIN_27 ?x1) (of_27 ?x1 ?x2) (COMPOST_27 ?x2))
+
+	;; A BIN CAN BE CONSTITUTED_OF_OR_FILLED_WITH COMPOST.
+
+		(and (BIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (COMPOST_27 ?x2))
+
+	;; A BIN CAN BE FULL.
+
+		(and (BIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE FULL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; (THIS IS THE TIME TO ADD FIBROUS MATERIAL)
+
+	;; A THING CAN BE A TIME.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+	;; A MATERIAL CAN BE FIBROUS.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (fibrou_27 ?x2))
+
+;; (HARVEST THE COMPOST COMMA USING ONE OF THE FOLLOWING TECHNIQUES)
+
+	;; HARVEST MAY USE SOME NUMBER_OR_PORTION OF TECHNIQUES.
+
+		(and (HARVEST_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (TECHNIQUES_27 ?x2))
+
+	;; TECHNIQUES CAN BE FOLLOWING.
+
+		(and (technique_27 ?x1) (be_27 ?e1 ?x1 ?x2) (following_27 ?x2))
+
+;; (PULL BACK THE TOP LAYERS OF BEDDING TO HARVEST THE COMPOST OR CHECK PROGRESS)
+
+	;; LAYERS CAN BE TOP.
+
+		(and (layer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+;; (PUT ON RUBBER GLOVES COMMA AND MOVE ANY LARGE UN-COMPOSTED VEGETABLE MATTER TO ONE SIDE)
+
+	;; A VEGETABLE MATTER CAN BE LARGE.
+
+		(and (VEGETABLE_27 ?x1) (MATTER_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A VEGETABLE MATTER CAN BE UN-COMPOSTED.
+
+		(and (VEGETABLE_27 ?x1) (MATTER_27 ?x1) (be_27 ?e1 ?x1) (un-composted_27 ?x1))
+
+;; (THEN COMMA WITH YOUR GLOVED HANDS COMMA GENTLY SCOOP A SECTION OF WORMS AND COMPOST MIXTURE ONTO A BRIGHTLY LIT PIECE OF NEWSPAPER OR
+ PLASTIC WRAP)
+
+	;; A PERSON MAY HAVE HANDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HANDS_27 ?x1))
+
+	;; HANDS CAN BE GLOVED.
+
+		(and (hand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GLOVED_27 ?x2))
+
+	;; A SECTION CAN BE CONSTITUTED_OF_OR_FILLED_WITH WORMS.
+
+		(and (section_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WORMS_27 ?x2))
+
+	;; A PIECE CAN BE CONSTITUTED_OF_OR_FILLED_WITH NEWSPAPER.
+
+		(and (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (NEWSPAPER_27 ?x2))
+
+	;; A PIECE CAN BE LIT.
+
+		(and (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIT_27 ?x2))
+
+;; (SCRAPE OFF THE COMPOST IN LAYERS)
+
+	;; A COMPOST CAN BE IN LAYERS.
+
+		(and (compost_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (layer_27 ?x2))
+
+;; (WAIT A WHILE GIVING THE WORMS TIME TO BURROW INTO THE CENTER OF THE MOUND)
+
+	;; A TIME CAN BE WORMS.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORMS_27 ?x2))
+
+	;; A MOUND MAY HAVE A CENTER.
+
+		(and (MOUND_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+;; (EVENTUALLY YOU WILL END UP WITH A PILE OF COMPOST NEXT TO A PILE OF WORMS)
+
+	;; A PERSON MAY END_UP WITH A PILE OF COMPOST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (END_5FUP_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (PILE_27 ?x1) (of_27 ?x1 ?x2) (COMPOST_27 ?x2))
+
+	;; A PILE CAN BE CONSTITUTED_OF_OR_FILLED_WITH COMPOST.
+
+		(and (PILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (COMPOST_27 ?x2))
+
+	;; A PILE CAN BE CONSTITUTED_OF_OR_FILLED_WITH WORMS.
+
+		(and (PILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WORMS_27 ?x2))
+
+;; (RETURN THE WORMS TO THE BIN COMMA DO WHATEVER YOU WANT WITH THE COMPOST COMMA AND REPEAT)
+
+	;; A PERSON MAY WANT WITH A COMPOST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (COMPOST_27 ?x1))
+
+;; (IF YOU PREFER A HANDS-OFF TECHNIQUE COMMA SIMPLY PUSH THE CONTENTS OF THE BIN ALL TO ONE SIDE AND ADD FRESH FOOD COMMA WATER COMMA DIRT
+ COMMA AND BEDDING TO THE EMPTY SPACE)
+
+	;; A PERSON MAY PREFER A TECHNIQUE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PREFER_27 ?x1) (A_27 ?x1) (TECHNIQUE_27 ?x1))
+
+	;; A TECHNIQUE CAN BE HANDS-OFF.
+
+		(and (TECHNIQUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDS-OFF_27 ?x2))
+
+	;; FOOD CAN BE FRESH.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+	;; A SPACE CAN BE EMPTY.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+;; (THE WORMS WILL SLOWLY MIGRATE OVER ON THEIR OWN)
+
+	;; 
+
+	;; ((:I (:Q THE (:F PLUR WORM.N)) MIGRATE_OVER.V (:P ON.P NIL)))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (WORM_2EN_27 ?x2) (MIGRATE_5FOVER_2EV_27 ?x3) (P_27 ?x4) (ON_2EP_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [43]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS REQUIRES MUCH MORE PATIENCE COMMA OF COURSE)
+
+	;; A THING MAY REQUIRE PATIENCE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (PATIENCE_27 ?x1))
+
+;; (THE LAST TECHNIQUE IS TO USE A SEPARATOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [43]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BARREL SEPARATORS ARE EXPENSIVE AND AVAILABLE ON THE INTERNET)
+
+	;; SEPARATORS CAN BE EXPENSIVE.
+
+		(and (separator_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+	;; SEPARATORS CAN BE BARREL.
+
+		(and (separator_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BARREL_27 ?x2))
+
+;; (YOU CAN ALSO MAKE YOUR OWN SHAKER BOX)
+
+	;; A PERSON MAY MAKE A SHAKER BOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (SHAKER_27 ?x1) (BOX_27 ?x1))
+
+	;; A PERSON MAY HAVE A SHAKER BOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SHAKER_27 ?x1) (BOX_27 ?x1))

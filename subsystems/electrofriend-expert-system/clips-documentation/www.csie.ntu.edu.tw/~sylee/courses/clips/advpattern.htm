@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>Clips: Advanced Pattern Matching</title>
+<link rel="stylesheet" type="text/css" href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+<h2>9 Advanced Pattern Matching</h2>
+
+<H3>The Game of Sticks</H3>
+<PRE>(<font color="#8000FF"><b>deffacts</b></font> initial-phase
+   (phase choose-player))
+
+(<font color="#8000FF"><b>defrule</b></font> player-select
+   <FONT COLOR=#FF0000>(phase choose-player)</FONT> <font color="#0040a0">; control pattern</font>
+   =&gt;
+   (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Who moves first (Computer: c "</font>
+               <font color="#008000">"Human: h)? "</font>)
+   (<font color="#8000FF"><b>assert</b></font> (player-select (<font color="#8000FF"><b>read</b></font>))))
+
+(<font color="#8000FF"><b>defrule</b></font> good-player-choice
+   ?phase &lt;- <FONT COLOR=#FF0000>(phase choose-player)</FONT>
+   ?choice &lt;- (player-select ?player&c | h)
+   =&gt;
+   (<font color="#8000FF"><b>retract</b></font> ?phase ?choice)
+   (<font color="#8000FF"><b>assert</b></font> (player-move ?player)))
+
+(<font color="#8000FF"><b>defrule</b></font> bad-player-choice    <font color="#0040a0">; if bad, then back to previous page</font>
+   ?phase &lt;- <FONT COLOR=#FF0000>(phase choose-player)</FONT>
+   ?choice &lt;- (player-select ?player&~c&~h)
+   =&gt;
+   (<font color="#8000FF"><b>retract</b></font> ?phase ?choice)
+   (<font color="#8000FF"><b>assert</b></font> <FONT COLOR=#FF0000>(phase choose-player)</FONT>)
+   (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Choose c or h only."</font> crlf)
+   )
+
+</PRE>
+<H3><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.1.html">Predicate Functions</A></H3>
+<H3>test Conditional Element</H3>
+<PRE>(<font color="#8000FF"><b>defrule</b></font> get-human-move
+   (player-move h)
+   (pile-size ?size)
+   (<FONT COLOR=#FF0000>test</FONT> (&gt; ?size 1))
+   =&gt;
+   (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"How many sticks do you wish to take? "</font>)
+   (<font color="#8000FF"><b>assert</b></font> (human-takes (<font color="#8000FF"><b>read</b></font>))))
+
+(<font color="#8000FF"><b>defrule</b></font> good-human-move
+   ?whose-turn &lt;- (player-move h)
+   (pile-size ?size)
+   ?number-taken &lt;- (human-takes ?choice)
+   (<FONT COLOR=#FF0000>test</FONT> (and (integerp ?choice)
+              (&gt;= ?choice 1)
+              (&lt;= ?choice 3)
+              (&lt; ?choice ?size)))
+   =&gt;
+   (<font color="#8000FF"><b>retract</b></font> ?whose-turn ?number-taken)
+   (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Human made a valid move."</font> crlf)
+   (<font color="#8000FF"><b>assert</b></font> (player-move c)))
+
+(<font color="#8000FF"><b>defrule</b></font> bad-human-move
+   ?whose-turn &lt;- (player-move h)
+   (pile-size ?size)
+   ?number-taken &lt;- (human-takes ?choice)
+   (<FONT COLOR=#FF0000>test</FONT> (or (not (integerp ?choice))
+             (&lt; ?choice 1)
+             (&gt; ?choice 3)
+             (&gt;= ?choice ?size)))
+   =&gt;
+   (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Human made an invalid move."</font> crlf)
+   (<font color="#8000FF"><b>retract</b></font> ?whose-turn ?number-taken)
+   (<font color="#8000FF"><b>assert</b></font> (player-move h)))
+
+</PRE>
+
+<H3>Predicate Field Constraint</H3>
+
+<PRE>(pile-size ?size)
+(test (&gt; ?size 1))
+
+(pile-size ?size&<FONT COLOR=#FF0080><B>:</B></FONT>(&gt; ?size 1))
+
+(data ?item&<FONT COLOR=#FF0080><B>:</B></FONT>(stringp ?item)|(symbolp ?item))
+</PRE>
+<H3>Return Value Field Constraint</H3>
+<PRE>(<font color="#8000FF"><b>deftemplate</b></font> take-sticks
+   (slot how-many)         <font color="#0040a0">; Number of sticks to take.</font>
+   (slot for-remainder))   <font color="#0040a0">; Remainder when stack is</font>
+                           <font color="#0040a0">; divided by 4.</font>
+(<font color="#8000FF"><b>deffacts</b></font> take-sticks-information
+   (take-sticks (how-many 1) (for-remainder 1))
+   (take-sticks (how-many 1) (for-remainder 2))
+   (take-sticks (how-many 2) (for-remainder 3))
+   (take-sticks (how-many 3) (for-remainder 0)))
+
+(<font color="#8000FF"><b>defrule</b></font> computer-move
+   ?whose-turn &lt;- (player-move c)
+   ?pile &lt;- (pile-size ?size&:(&gt; ?size 1))
+   (take-sticks (how-many ?number)
+                (for-remainder ?X&:(<FONT COLOR=#FF0080><B>=</B></FONT> ?X (mod ?size 4))))
+   =&gt;
+   (<font color="#8000FF"><b>retract</b></font> ?whose-turn ?pile)
+   (<font color="#8000FF"><b>assert</b></font> (pile-size (- ?size ?number)))
+   (<font color="#8000FF"><b>assert</b></font> (player-move h)))
+</PRE>
+<h3>Sticks Program</H3>
+<UL>
+<LI>
+<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/Book/sticks.clp">
+Complete Sticks Rule base</a>
+<LI><A HREF="http://www.csie.ntu.edu.tw/~sylee/jess/sticks.htm">Web Demo -- in Jess</A>
+</UL>
+<h3><i>or</i> Conditional Element</h3>
+<PRE>(<font color="#8000FF"><b>defrule</b></font> shut-off-electricity
+    (<FONT COLOR=#FF0000>or</FONT> (emergency (type flood))
+        (extinguisher-sysetem (type water-sprinkler)
+                              (status on))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Shut off the electricity."</font> crlf))
+</PRE>
+<h3><i>and</i> Conditional Element</h3>
+<PRE>(<font color="#8000FF"><b>defrule</b></font> use-carbon-dioxide-extinguisher
+    ?system &lt;- (extingisher-system
+                    (type carbon-dioxide)
+                    (status off))
+    (or (emergency (type class-B-fire))
+        (<FONT COLOR=#FF0000>and</FONT> (emergency (type class-C-fire))
+             (electrical-power (status off))))
+    =&gt;
+    (<font color="#8000FF"><b>modify</b></font> ?system (status on))
+    (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Use carbon dioxide extinguisher"</font> crlf))
+</PRE>
+<h3><i>not</i> Conditional Element</h3>
+<pre>(<font color="#8000FF"><b>defrule</b></font> largest-number
+    (number ?x)
+    (<FONT COLOR=#FF0000>not</FONT> (number ?y&:(&gt; ?y ?x)))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Largest number is "</font> ?x crlf))
+</pre>
+<p><font color=#FF0000>Note</font>: Variables bound within a <i>not</i> CE retain their value only within the scope of the <i>not</i> CE.
+
+<p><b>Example:</b> Find the largest integer
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/largest-1.clp">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/largest-1.clp">Source</a>
+</ul>
+
+<h3><i>exists</i> Conditional Element</h3>
+Pattern match based on the existence of at least one fact that matches a pattern.
+<pre>(<font color="#8000FF"><b>defrule</b></font> operator-alert-for-emergency
+    (<FONT COLOR=#FF0000>exist</FONT> (emergency))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t <font color="#008000">"Emergency: Operator Alert"</font> crlf)
+    (<font color="#8000FF"><b>assert</b></font> (operator-alert)))
+</pre>
+<p><b>Demo:</b>
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/emergency-wo-exist.clp">Without Exist CE</a>
+(<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/emergency-wo-exist.clp">source</a>)
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/emergency-exist.clp">With Exist CE</a>
+(<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/emergency-exist.clp">source</a>)
+</ul>
+
+<h3><i>forall</i> Conditional Element</h3>
+<PRE>(<font color="#8000FF"><b>deftemplate</b></font> emergency
+    (slot type)
+    (slot location))
+
+(<font color="#8000FF"><b>deftemplate</b></font> fire-squad
+    (slot name)
+    (slot location))
+
+(<font color="#8000FF"><b>deftemplate</b></font> evacuated
+    (slot building))
+
+(<font color="#8000FF"><b>defrule</b></font> all-fires-being-handled
+    (<FONT COLOR=#FF0000>forall</FONT> (emergency (type fire)
+                       (location ?where))
+            (fire-squad (location ?where))
+            (evacuated (building ?where)))
+    =&gt;
+    (<font color="#8000FF"><b>printout</b></font> t
+            <font color="#008000">"All buildings that are on fire "</font> crlf
+            <font color="#008000">"have been evacuated and "</font> crlf
+            <font color="#008000">"have firefighters on location."</font> crlf))
+</PRE>
+
+<p><b>Example:</b>
+<ul>
+<li>forall  CE: <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/emergency-1.clp">emergency-1.clp</a>
+&nbsp;(<a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+emergency-1))">Demo</a>)
+</ul>
+
+<h3><i>logical</i> Conditional Element</h3>
+Logical CE allows a dependency to be created between the facts that match the patterns in the LHS of a rule and the facts
+that are asserted from the RHS of the rule.
+<pre>(<font color="#8000FF"><b>defrule</b></font> noxious-fumes-present
+    (emergency (type fire))
+    (noxious-fumes-present)
+    =&gt;
+    (<font color="#8000FF"><b>assert</b></font> (use-oxygen-mask)))
+
+(<font color="#8000FF"><b>defrule</b></font> noxious-fumes-present
+    (<FONT COLOR=#FF0000>logical</FONT> (emergency (type fire))
+             (noxious-fumes-present))
+    =&gt;
+    (<font color="#8000FF"><b>assert</b></font> (use-oxygen-mask)))
+</pre>
+<p><b>Example: logical CE</b>
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+logical))">Webclips Demo</a>
+( <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/logical.clp">source</a> )
+<li><a href="http://www.csie.ntu.edu.tw/servlets/JessConsole?src=clips/examples/logical.clp">Jess Demo</a>
+( <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/logical.clp">source</a> )
+</ul>
+
+<p>Previous <a href="pattern.htm">Pattern Matching</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="module.htm">Modular Design and Execution Control</a>
+
+</body></html>

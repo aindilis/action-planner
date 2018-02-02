@@ -1,0 +1,396 @@
+;; (CANCER -LRB- 23 % -RRB- 3)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STROKES -LRB- 7 % -RRB- 4)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LUNG DISEASES -LRB- 5 % -RRB- 5)
+
+	;; A LUNG[PERSON??] MAY DISEASE SOME NUMBER_OR_PORTION.
+
+		(and (LUNG_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DISEASE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+;; (INJURIES -LRB- 4 % -RRB- 6)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DIABETES -LRB- 3 % -RRB- 7)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (INFLUENZA OR PNEUMONIA -LRB- 3 % -RRB- 8)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALZHEIMER S DISEASE -LRB- 2 % -RRB- 9)
+
+	;; AN ALZHEIMER[PERSON??] MAY BE A DISEASE[PERSON??].
+
+		(and (ALZHEIMER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (DISEASE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+;; (INFLAMMATION OF THE KIDNEY -LRB- 2 % -RRB- 10)
+
+	;; A KIDNEY[PERSON??] MAY UNDERGO AN INFLAMMATION.
+
+		(and (KIDNEY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (INFLAMMATION_27 ?x1))
+
+;; (BLOOD POISONING -LRB- 1 % -RRB- AVOID SMOKING TOBACCO PRODUCTS AND OTHER FORMS OF TOBACCO SUCH AS SNUFF AND CHEWING TOBACCO COMMA WHICH ARE CERTAINLY A WASTE OF MONEY COMMA ARE HIGHLY ADDICTIVE AND MAY LEAD TO
+ CANCER)
+
+	;; A BLOOD_POISONING[PERSON??] MAY AVOID TOBACCO PRODUCTS.
+
+		(and (BLOOD_5FPOISONING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (AVOID_27 ?x1) (TOBACCO_27 ?x1) (PRODUCTS_27 ?x1))
+
+	;; TOBACCO PRODUCTS CAN BE SMOKING.
+
+		(and (TOBACCO_27 ?x1) (PRODUCTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMOKING_27 ?x2))
+
+	;; FORMS CAN BE CONSTITUTED_OF_OR_FILLED_WITH TOBACCO.
+
+		(and (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TOBACCO_27 ?x2))
+
+	;; A WASTE CAN BE CONSTITUTED_OF_OR_FILLED_WITH MONEY.
+
+		(and (WASTE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MONEY_27 ?x2))
+
+;; (ALWAYS LOOK BOTH WAYS WHEN CROSSING THE STREET COMMA IT MAY SEEN TRIVIAL COMMA BUT YOU NEVER WANT TO TAKE CHANCES WITH YOUR LIFE)
+
+	;; AN ALWAYS[PERSON??] MAY LOOK SOME_NUMBER_OF WAYS.
+
+		(and (ALWAYS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (LOOK_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (WAYS_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE SEE -ED TRIVIAL.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (TRIVIAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (TAKE CARE OF YOUR TEETH COMMA BAD DENTAL HEALTH WITH ITS CONSTANT INFLAMMATION HAS BEEN LINKED TO OTHER HEALTH PROBLEMS OUTSIDE OF THE MOUTH COMMA INCLUDING ELEVATED CHOLESTEROL IN BLOOD VESSELS)
+
+	;; HEALTH MAY BE LINK -ED TO HEALTH PROBLEMS.
+
+		(and (HEALTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LINK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?x2 ?x3) (HEALTH_27 ?x3) (PROBLEMS_27 ?x3))
+
+	;; TEETH MAY HAVE CARE.
+
+		(and (TEETH_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CARE_27 ?x1))
+
+	;; A PERSON MAY HAVE TEETH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TEETH_27 ?x1))
+
+	;; HEALTH CAN BE WITH AN INFLAMMATION.
+
+		(and (HEALTH_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (AN_27 ?x2) (INFLAMMATION_27 ?x2))
+
+	;; HEALTH CAN BE BAD.
+
+		(and (HEALTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+	;; HEALTH CAN BE DENTAL.
+
+		(and (HEALTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DENTAL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE AN INFLAMMATION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFLAMMATION_27 ?x1))
+
+	;; CHOLESTEROL CAN BE IN BLOOD VESSELS.
+
+		(and (CHOLESTEROL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (BLOOD_27 ?x2) (VESSELS_27 ?x2))
+
+	;; A CHOLESTEROL CAN BE ELEVATED.
+
+		(and (CHOLESTEROL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELEVATED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>
+
+;; (AVOID TANNING AND EXPOSURE TO THE ULTRA-VIOLET LIGHT OF TANNING BEDS AND THE SUN)
+
+	;; TANNING CAN BE TO A LIGHT.
+
+		(and (tanning_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (LIGHT_27 ?x2))
+
+	;; A TANNING CAN BE AVOID.
+
+		(and (TANNING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+	;; A LIGHT CAN BE ULTRA-VIOLET.
+
+		(and (LIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ULTRA-VIOLET_27 ?x2))
+
+	;; BEDS CAN BE TANNING.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TANNING_27 ?x2))
+
+;; (TANNING ALONG WITH SUNBURN DAMAGES THE SKIN COMMA PROMOTES AGE SPOTS AND CAUSES SKIN CANCER WHICH CAN METASTASIZE -LRB- SPREAD -RRB- TO OTHER ORGANS)
+
+	;; AGE MAY SPOT.
+
+		(and (AGE_27 ?x1) (MAY_27 ?x1) (SPOT_27 ?x1))
+
+	;; AN AGE CAN BE PROMOTES.
+
+		(and (AGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (promote_27 ?x2))
+
+;; (DRINK A SMALL JUICE GLASS OF RED WINE FOR SOOTHING THE NERVES COMMA DIGESTIVE TRACT AND CIRCULATORY SYSTEM)
+
+	;; A JUICE GLASS CAN BE CONSTITUTED_OF_OR_FILLED_WITH WINE.
+
+		(and (JUICE_27 ?x1) (GLASS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WINE_27 ?x2))
+
+	;; A JUICE GLASS CAN BE SMALL.
+
+		(and (JUICE_27 ?x1) (GLASS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; WINE CAN BE FOR NERVES.
+
+		(and (WINE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (NERVES_27 ?x2))
+
+	;; A WINE CAN BE RED.
+
+		(and (WINE_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+	;; A TRACT CAN BE DIGESTIVE.
+
+		(and (TRACT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIGESTIVE_27 ?x2))
+
+	;; A SYSTEM CAN BE CIRCULATORY.
+
+		(and (SYSTEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CIRCULATORY_27 ?x2))
+
+;; (SOME PEOPLE FIND THAT THE TIME FOR THEIR WINE IS JUST BEFORE BED TO HELP GOING TO SLEEP)
+
+	;; SOME_NUMBER_OF PEOPLE MAY FIND A PROPOSITION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A TIME CAN BE FOR A WINE.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (WINE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A WINE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WINE_27 ?x1))
+
+;; (TAKE YOUR DAILY CALCIUM SUPPLEMENT AT BEDTIME TO SOOTHE THE STOMACH AND SETTLE THE NERVES WHICH HELPS RESTFUL SLEEP)
+
+	;; A PERSON MAY HAVE A CALCIUM SUPPLEMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALCIUM_27 ?x1) (SUPPLEMENT_27 ?x1))
+
+	;; A CALCIUM SUPPLEMENT CAN BE DAILY.
+
+		(and (CALCIUM_27 ?x1) (SUPPLEMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAILY_27 ?x2))
+
+	;; SLEEP CAN BE RESTFUL.
+
+		(and (SLEEP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESTFUL_27 ?x2))
+
+;; (DARK GREEN VEGETABLES ARE RICH SOURCE OF CALCIUM AND OTHER HAVE A SMALL AMOUNT OF DARK CHOCOLATES -- BITTERSWEET COMMA SEMISWEET OR SWEET -- IN CANDIES AND AS CONDIMENTS SPRINKLED OR MELTED AND DRIZZLED OVER
+ OTHER FOODS)
+
+	;; VEGETABLES CAN BE RICH.
+
+		(and (vegetable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RICH_27 ?x2))
+
+	;; VEGETABLES CAN BE DARK.
+
+		(and (vegetable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+	;; VEGETABLES CAN BE GREEN.
+
+		(and (vegetable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+	;; SOURCE OF CALCIUM MAY HAVE AN AMOUNT OF CHOCOLATES.
+
+		(and (source_27 ?x1) (of_27 ?x1 ?x2) (CALCIUM_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (AN_27 ?x2) (AMOUNT_27 ?x2) (of_27 ?x2 ?x3) (CHOCOLATES_27 ?x3))
+
+	;; AN AMOUNT CAN BE SMALL.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; CHOCOLATES CAN BE DARK.
+
+		(and (chocolate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+	;; CONDIMENTS MAY SPRINKLE.
+
+		(and (condiment_27 ?x1) (MAY_27 ?x1) (SPRINKLE_27 ?x1))
+
+;; (AVOID EXCESSIVE PROCESSED FOODS WHICH INCLUDE COMMA PROCESSED SUGARS COMMA SALT COMMA PROCESSED FLOUR PRODUCTS COMMA HYDROGENATED FATS OR ANIMAL FATS  INCLUDING GRAVIES COMMA ICE CREAM AND RICH DESSERTS)
+
+	;; FOODS MAY PROCESS FLOUR PRODUCTS.
+
+		(and (food_27 ?x1) (MAY_27 ?x1) (PROCESS_27 ?x1) (FLOUR_27 ?x1) (PRODUCTS_27 ?x1))
+
+	;; FOODS CAN BE AVOID.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+	;; FOODS CAN BE EXCESSIVE.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCESSIVE_27 ?x2))
+
+	;; FOODS CAN BE PROCESSED.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?e2) (process_27 ?e2 ?x1))
+
+	;; SUGARS CAN BE PROCESSED.
+
+		(and (sugar_27 ?x1) (be_27 ?e1 ?x1 ?e2) (process_27 ?e2 ?x1))
+
+	;; FATS CAN BE HYDROGENATED.
+
+		(and (fat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HYDROGENATED_27 ?x2))
+
+	;; DESSERTS CAN BE RICH.
+
+		(and (dessert_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RICH_27 ?x2))
+
+;; (DRINK ABOUT 8 GLASSES OF WATER DAILY)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DRINK GREEN TEA AND OTHER KINDS OF FRESHLY BREWED TEAS)
+
+	;; TEA CAN BE GREEN.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+;; (AVOID SUGARED DRINKS COMMA CARBONATED DRINKS COMMA AS WELL AS CREAM AND WHOLE MILK)
+
+	;; DRINKS CAN BE AVOID.
+
+		(and (drink_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+	;; DRINKS CAN BE SUGARED.
+
+		(and (drink_27 ?x1) (be_27 ?e1 ?x1 ?e2) (sugar_27 ?e2 ?x1))
+
+	;; DRINKS CAN BE CARBONATED.
+
+		(and (drink_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CARBONATED_27 ?x2))
+
+;; (TAKE SUPPLEMENTS SUCH AS EXTRA VITAMIN-C COMMA FISH OIL COMMA RED RICE YEAST COMMA CALCIUM COMMA CO-ENZYME-Q10 COMMA GLUCOSAMINE WITH CHONDROITAN AND MULTI-VITAMINS WITH MINERALS)
+
+	;; A VITAMIN-C CAN BE EXTRA.
+
+		(and (VITAMIN-C_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A RICE YEAST CAN BE RED.
+
+		(and (RICE_27 ?x1) (YEAST_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+;; (SWIMMING WILL KEEP YOU YOUNGER LONGER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CREATE A THOROUGH FITNESS PLAN OF ROTATIONS USING DIFFERENT KINDS OF EXERCISES IN WEIGHT TRAINING AND ON MACHINES FOR ALL PARTS OF THE BODY)
+
+	;; A FITNESS PLAN CAN BE CONSTITUTED_OF_OR_FILLED_WITH ROTATIONS.
+
+		(and (FITNESS_27 ?x1) (PLAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ROTATIONS_27 ?x2))
+
+	;; A FITNESS PLAN CAN BE THOROUGH.
+
+		(and (FITNESS_27 ?x1) (PLAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THOROUGH_27 ?x2))
+
+	;; ROTATIONS MAY USE KINDS OF EXERCISES.
+
+		(and (ROTATIONS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (KINDS_27 ?x1) (of_27 ?x1 ?x2) (exercise_27 ?x2))
+
+	;; MACHINES CAN BE FOR SOME_NUMBER_OF PARTS OF A BODY.
+
+		(and (machine_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (PARTS_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (BODY_27 ?x3))
+
+	;; A BODY MAY HAVE PARTS.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PARTS_27 ?x1))

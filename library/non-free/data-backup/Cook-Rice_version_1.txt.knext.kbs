@@ -1,0 +1,1207 @@
+;; (CONSIDER WHETHER OR NOT YOU WISH TO WASH THE RICE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FOR RICE BOUGHT IN A WESTERN COUNTRY COMMA IT HAS ALREADY BEEN WASHED AND CLEANED PRIOR TO PURCHASE)
+
+	;; A THING-REFERRED-TO MAY BE WASH -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WASH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; RICE MAY BE BUY -ED IN A COUNTRY.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (COUNTRY_27 ?x3))
+
+;; (-LRB- 2 -RRB- -LRB- 3 -RRB- WASHING WILL SIMPLY REMOVE NUTRIENTS -LRB- FOR EXAMPLE COMMA IN THE UNITED STATES COMMA COMMON RICE IS USUALLY FORTIFIED WITH VITAMINS AND MINERALS LIKE IRON AND NIACIN -RRB-)
+
+	;; A WASHING[PERSON??] MAY REMOVE NUTRIENTS.
+
+		(and (WASHING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (REMOVE_27 ?x1) (NUTRIENTS_27 ?x1))
+
+	;; RICE MAY BE FORTIFY -ED WITH VITAMINS.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FORTIFY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (VITAMINS_27 ?x2))
+
+	;; RICE CAN BE COMMON.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+;; (HOWEVER COMMA WASHING IS CONSIDERED USEFUL FOR SEPARATING THE GRAINS OF RICE -LRB- AND IS OFTEN DONE IN ASIAN COUNTRIES -RRB- COMMA -LRB- 4 -RRB- RESULTING IN FLUFFIER COMMA LIGHTER COOKED RICE WITH A FULLER
+ GRAIN THAT DOES N T STICK)
+
+	;; A WASHING[PERSON??] MAY BE CONSIDER -ED USEFUL.
+
+		(and (WASHING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (CONSIDER_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (USEFUL_27 ?x1))
+
+	;; COUNTRIES CAN BE ASIAN.
+
+		(and (country_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ASIAN_27 ?x2))
+
+	;; RICE CAN BE COOKED.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (cook_27 ?e2 ?x1))
+
+;; (AND THE LAROUSSE GASTRONOMIQUE RECOMMENDS THAT UNLESS RICE HAS BEEN PRETREATED OR PRE-COOKED COMMA IT SHOULD ALWAYS BE WASHED IN RUNNING WATER AND DRAINED WELL PRIOR TO COOKING)
+
+	;; A LAROUSSE_GASTRONOMIQUE[PERSON??] MAY RECOMMEND A PROPOSITION.
+
+		(and (LAROUSSE_5FGASTRONOMIQUE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (RECOMMEND_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; RICE CAN BE PRETREATED.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRETREATED_27 ?x2))
+
+;; (-LRB- 5 -RRB- WASHING WILL REMOVE A GOOD PERCENTAGE OF THE STARCH IN THE GRAIN COMMA LEAVING THE PROTEIN INTACT)
+
+	;; SOME NUMBER_OR_PORTION MAY REMOVE A PERCENTAGE OF A STARCH.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (A_27 ?x1) (percentage_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (STARCH_27 ?x2))
+
+	;; A STARCH MAY HAVE A PERCENTAGE.
+
+		(and (STARCH_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (percentage_27 ?x1))
+
+	;; A PERCENTAGE CAN BE GOOD.
+
+		(and (percentage_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A STARCH CAN BE IN A GRAIN.
+
+		(and (STARCH_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GRAIN_27 ?x2))
+
+	;; A PROTEIN CAN BE INTACT.
+
+		(and (protein_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTACT_27 ?x2))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; (-LRB- 6 -RRB- SOAKING RICE IS MORE COMMON IN ASIA THAN THE WEST BUT SOME RICE STILL NEEDS SOAKING APART FROM BASMATI RICE AND WILD RICE COMMA THERE IS NO NEED TO SOAK THE RICE UNLESS THE RECIPE SAYS SO)
+
+	;; RICE CAN BE COMMON IN A CONTINENT.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (continent_27 ?x3))
+
+	;; A SOAKING[PERSON??] MAY HAVE RICE.
+
+		(and (SOAKING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RICE_27 ?x1))
+
+	;; RICE CAN BE WILD.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WILD_27 ?x2))
+
+	;; A RECIPE MAY SAY.
+
+		(and (RECIPE_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [10]>
+
+;; (THE GRAINS SHOULD FEEL TENDER AND NOT HAVE A HARD CENTER)
+
+	;; GRAINS MAY FEEL TENDER.
+
+		(and (GRAINS_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (TENDER_27 ?x1))
+
+	;; A CENTER CAN BE HARD.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+;; (MEASURE ONE CUP OF WASHED RICE INTO A POT)
+
+	;; MEASURE MAY WASH RICE.
+
+		(and (MEASURE_27 ?x1) (MAY_27 ?x1) (WASH_27 ?x1) (RICE_27 ?x1))
+
+;; (IF YOU SKIPPED THE SOAKING/WASHING COMMA YOU CAN START HERE WITH DRY RICE OUT OF THE BAG)
+
+	;; A PERSON MAY START WITH RICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1) (WITH_27 ?x1) (RICE_27 ?x1))
+
+	;; A PERSON MAY SKIP A SOAKING/WASHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SKIP_27 ?x1) (A_27 ?x1) (SOAKING_2FWASHING_27 ?x1))
+
+	;; RICE CAN BE DRY.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+;; (POUR ONE AND A HALF CUPS OF COLD WATER INTO THE POT)
+
+	;; WATER CAN BE COLD.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (IT DEPENDS ON THE RICE AND YOUR PREFERENCE YOU MAY WANT TO ADD 1.75 CUPS OF WATER)
+
+	;; A THING-REFERRED-TO MAY DEPEND ON RICE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DEPEND_27 ?x1) (ON_27 ?x1) (RICE_27 ?x1))
+
+	;; A PERSON MAY HAVE A PREFERENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PREFERENCE_27 ?x1))
+
+	;; SOME_NUMBER_OF CUPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+;; (ADD 1/2 TABLESPOON OF SALT TO THE POT)
+
+	;; SOME_NUMBER_OF TABLESPOON CAN BE CONSTITUTED_OF_OR_FILLED_WITH SALT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TABLESPOON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SALT_27 ?x2))
+
+;; (THIS STEP IS OPTIONAL IF YOU DO N T AGREE ON ADDING SALT TO RICE)
+
+	;; A STEP CAN BE OPTIONAL.
+
+		(and (STEP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTIONAL_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (PLACE THE POT OVER A MODERATE TO HIGH HEAT)
+
+	;; A POT CAN BE OVER HEAT.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (HEAT_27 ?x2))
+
+	;; HEAT CAN BE MODERATE.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERATE_27 ?x2))
+
+;; (WHEN THE RICE COMES TO A ROLLING BOIL COMMA TURN DOWN THE HEAT TO THE MINIMUM POSSIBLE COMMA AND CONTINUE SIMMERING FOR FIVE MORE MINUTES)
+
+	;; RICE MAY COME TO A BOIL.
+
+		(and (RICE_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BOIL_27 ?x2))
+
+	;; A BOIL CAN BE ROLLING.
+
+		(and (BOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROLLING_27 ?x2))
+
+;; (PLACE A WELL SEALED LID ON THE POT AT THIS TIME)
+
+	;; A POT CAN BE AT A TIME.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [11]>
+
+;; (WHEN MAKING RICE COMMA THE ROLLING BOIL IS IMPORTANT SO THAT ENOUGH STEAM BUILDS UP TO COMPLETELY COOK THE RICE WITHOUT IT BEING OVER AN OPEN FLAME)
+
+	;; A BOIL CAN BE IMPORTANT.
+
+		(and (BOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A BOIL CAN BE ROLLING.
+
+		(and (BOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROLLING_27 ?x2))
+
+	;; STEAM CAN BE ENOUGH.
+
+		(and (STEAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE OVER A FLAME.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (A_27 ?x2) (FLAME_27 ?x2))
+
+	;; A FLAME CAN BE OPEN.
+
+		(and (FLAME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPEN_27 ?x2))
+
+;; (TURN OFF THE HEAT AFTER FIVE MINUTES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLACE A PAPER TOWEL BETWEEN THE LID AND THE POT TO AVOID MOISTURE BUILDUP)
+
+	;; A PAPER TOWEL CAN BE BETWEEN A LID.
+
+		(and (PAPER_27 ?x1) (TOWEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (A_27 ?x2) (LID_27 ?x2))
+
+;; (DO NOT LIFT THE LID AS THE STEAM INSIDE WILL COOK THE RICE THROUGH)
+
+	;; STEAM MAY COOK_THROUGH RICE.
+
+		(and (STEAM_27 ?x1) (MAY_27 ?x1) (COOK_5FTHROUGH_27 ?x1) (RICE_27 ?x1))
+
+;; (THE POT OF RICE WILL BE FULLY COOKED COMMA LIGHT AND READY TO EAT ABOUT 10 MINUTES AFTER THE HEAT IS TURNED OFF)
+
+	;; A POT OF RICE CAN BE COOKED.
+
+		(and (POT_27 ?x1) (of_27 ?x1 ?x2) (RICE_27 ?x2) (be_27 ?e1 ?x1 ?e2) (cook_27 ?e2 ?x1))
+
+	;; HEAT MAY BE TURN_OFF -ED.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TURN_5FOFF_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (TAKE A LITTLE TASTE OF THE RICE TO BE SURE IT IS COOKED -LRB- THIS SHOULD BE NO PROBLEM IF YOU MEASURED OUT THE WATER CORRECTLY -RRB-)
+
+	;; RICE MAY HAVE TASTE.
+
+		(and (RICE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TASTE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE COOK -ED.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COOK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING CAN BE A PROBLEM.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PROBLEM_27 ?x2))
+
+	;; A PERSON MAY MEASURE_OUT WATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MEASURE_5FOUT_27 ?x1) (WATER_27 ?x1))
+
+;; (IF THE RICE IS STILL A BIT CRUNCHY COMMA PUT THE LID BACK ON TO RETAIN THE STEAM COMMA AND GET A LITTLE BIT OF HOT WATER FROM THE TAP -LRB- NOT TOO MUCH COMMA MAYBE A QUARTER OF A CUP -RRB- COMMA AND ADD IT TO
+ THE POT)
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+	;; WATER CAN BE HOT.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+;; (PUT THE LID BACK ON AND WAIT ANOTHER FEW MINUTES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ONCE COOKED COMMA REMOVE THE LID AND ALLOW THE STEAM TO ESCAPE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FLUFF THE GRAINS USING A FORK)
+
+	;; GRAINS MAY USE A FORK.
+
+		(and (GRAINS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (FORK_27 ?x1))
+
+;; (-LRB- 17 -RRB- PLACE THE RICE AND WATER INTO A LARGE SAUCEPAN OR POT)
+
+	;; A SAUCEPAN CAN BE LARGE.
+
+		(and (SAUCEPAN_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (THE SUGGESTED RATIO IS 450G -LRB- 1 LB -RRB- LONG-GRAIN WHITE RICE AND 600ML -LRB- 1 PINT -RRB- WATER)
+
+	;; A RATIO CAN BE A 450G.
+
+		(and (RATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (kbs2_kif_quote_3450G_27 ?x2))
+
+	;; A RATIO CAN BE SUGGESTED.
+
+		(and (RATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUGGESTED_27 ?x2))
+
+	;; RICE CAN BE LONG-GRAIN.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG-GRAIN_27 ?x2))
+
+	;; RICE CAN BE WHITE.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WHITE_27 ?x2))
+
+;; (BRING TO THE BOIL OVER MODERATE HEAT)
+
+	;; A BOIL CAN BE OVER HEAT.
+
+		(and (BOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (HEAT_27 ?x2))
+
+	;; HEAT CAN BE MODERATE.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERATE_27 ?x2))
+
+;; (STIR ONCE ONLY COMMA THEN DROP THE HEAT TO A SIMMER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LEAVE TO SIMMER FOR 10-12 MINUTES COMMA UNCOVERED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DURING THIS TIME COMMA THE WATER SHOULD BE ABSORBED BY THE RICE)
+
+	;; WATER MAY BE ABSORB -ED BY RICE.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABSORB_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (RICE_27 ?x2))
+
+;; (TAKE THE POT OFF THE HEAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLACE A DISH CLOTH OVER THE POT AND ADD THE LID OF THE POT OVER THE DISHCLOTH -LRB- IT SHOULD FIT TIGHTLY -RRB-)
+
+	;; A POT MAY HAVE A LID.
+
+		(and (POT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LID_27 ?x1))
+
+	;; A POT CAN BE OVER A DISHCLOTH.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (A_27 ?x2) (DISHCLOTH_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY FIT TIGHTLY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FIT_27 ?x1) (TIGHTLY_27 ?x1))
+
+;; (PLACE THE POT ON A VERY LOW HEAT AND LEAVE IT FOR 10 MINUTES)
+
+	;; HEAT CAN BE LOW.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (PLACE 200G -LRB- 7.05 OZ -RRB- OF RICE INTO THE SAUCEPAN)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PUT A CLEAN FINGER INTO THE RICE)
+
+	;; A FINGER CAN BE CLEAN.
+
+		(and (FINGER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (POUR IN THE WATER UNTIL IT REACHES YOUR FIRST FINGER JOINT)
+
+	;; A THING-REFERRED-TO MAY REACH A FINGER JOINT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (REACH_27 ?x1) (A_27 ?x1) (FINGER_27 ?x1) (JOINT_27 ?x1))
+
+	;; A PERSON MAY HAVE A FINGER JOINT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FINGER_27 ?x1) (JOINT_27 ?x1))
+
+;; (FIT A TIGHT LID ONTO THE SAUCEPAN)
+
+	;; A LID CAN BE TIGHT.
+
+		(and (LID_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHT_27 ?x2))
+
+;; (BRING THE WATER TO THE BOIL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ONCE BOILING COMMA REDUCE TO LOW HEAT AND CONTINUE COOKING)
+
+	;; HEAT CAN BE LOW.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (THE RICE IS READY WHEN STEAM HOLES CAN BE OBSERVED ACROSS THE RICE)
+
+	;; RICE CAN BE READY.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+	;; STEAM HOLES MAY BE OBSERVE -ED ACROSS RICE.
+
+		(and (STEAM_27 ?x1) (HOLES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBSERVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ACROSS_27 ?x2) (RICE_27 ?x2))
+
+;; (THE TRADITIONAL METHOD OF BOILING ADVOCATES TWICE THE VOLUME OF WATER FOR BOILING RICE AS THE STANDARD)
+
+	;; A METHOD CAN BE TRADITIONAL.
+
+		(and (METHOD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRADITIONAL_27 ?x2))
+
+;; (HOWEVER COMMA CHEF PAUL GAYLER SUGGESTS THAT IT IS MUCH BETTER TO BOIL RICE IN FIVE TO SIX TIMES ITS VOLUME OF WATER FOR EXCELLENT RESULTS BECAUSE THIS HELPS TO DILUTE THE STARCH AND LEAVES DISTINCT COMMA LIGHT
+ RICE GRAINS)
+
+	;; CHEF MAY SUGGEST A PROPOSITION.
+
+		(and (CHEF_27 ?x1) (MAY_27 ?x1) (SUGGEST_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE BETTER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; BOIL RICE CAN BE IN A VOLUME OF WATER.
+
+		(and (BOIL_27 ?x1) (RICE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (volume_27 ?x2) (of_27 ?x2 ?x3) (WATER_27 ?x3))
+
+	;; A THING-REFERRED-TO MAY HAVE A VOLUME.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (volume_27 ?x1))
+
+	;; WATER CAN BE FOR RESULTS.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (result_27 ?x2))
+
+	;; RESULTS CAN BE EXCELLENT.
+
+		(and (result_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+;; (-LRB- 23 -RRB- THE FOLLOWING METHOD IS BASED ON PAUL GAYLER S MEASUREMENTS AND METHOD)
+
+	;; SOME NUMBER_OR_PORTION MAY BE BASE -ED ON MEASUREMENTS.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (measurement_27 ?x2))
+
+	;; A METHOD CAN BE FOLLOWING.
+
+		(and (METHOD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (following_27 ?x2))
+
+	;; A MALE MAY HAVE MEASUREMENTS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MEASUREMENTS_27 ?x1))
+
+;; (-LRB- 24 -RRB- USE A LARGE POT OR SAUCEPAN)
+
+	;; A POT CAN BE LARGE.
+
+		(and (POT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (POUR 3 LITERS -LRB- 5 1/4 PINTS -RRB- OF WATER IN THE POT)
+
+	;; WATER CAN BE IN A POT.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (POT_27 ?x2))
+
+;; (BRING THE WATER TO A ROLLING BOIL)
+
+	;; A BOIL CAN BE ROLLING.
+
+		(and (BOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROLLING_27 ?x2))
+
+;; (ADD 460G -LRB- 1 LB -RRB- OF RICE)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (REDUCE THE WATER TO A SIMMER AND COOK FOR 12 TO 15 MINUTES COMMA OR UNTIL TENDER BUT FIRM)
+
+	;; 
+
+	;; ((:I (:Q A{N} SIMMER.N) FOR.P NIL))
+
+		(and (I_27 ?x3) (Q_27 ?x2) (A_27 ?x2) (N_27 ?x1) (SIMMER_2EN_27 ?x2) (FOR_2EP_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WASH THE RICE IN COLD WATER)
+
+	;; RICE CAN BE IN WATER.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; WATER CAN BE COLD.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (GENTLY FRY OVER A LOW TO MEDIUM HEAT)
+
+	;; FRY CAN BE OVER HEAT.
+
+		(and (FRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (HEAT_27 ?x2))
+
+	;; A FRY CAN BE GENTLY.
+
+		(and (FRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENTLY_27 ?x2))
+
+	;; HEAT CAN BE LOW.
+
+		(and (HEAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (IN THIS CASE COMMA STIRRING WITH A WOODEN SPATULA IS ADVISABLE)
+
+	;; A SPATULA CAN BE WOODEN.
+
+		(and (SPATULA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WOODEN_27 ?x2))
+
+;; (AVOID BROWNING OR BURNING THE RICE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT SHOULD BECOME TRANSPARENT BUT NOT BROWNED)
+
+	;; A THING-REFERRED-TO CAN BE TRANSPARENT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRANSPARENT_27 ?x2))
+
+;; (THE USUAL AMOUNT OF COOKING TIME IS 1 TO 2 MINUTES BUT THIS MAY VARY DEPENDING ON THE RECIPE)
+
+	;; AN AMOUNT CAN BE USUAL.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USUAL_27 ?x2))
+
+;; (-LRB- 26 -RRB- READ THE INSTRUCTIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RICE COOKERS VARY AND YOU SHOULD UNDERSTAND THE INS AND OUTS OF YOUR RICE COOKER PRIOR TO USE)
+
+	;; COOKERS MAY VARY.
+
+		(and (cooker_27 ?x1) (MAY_27 ?x1) (VARY_27 ?x1))
+
+	;; A RICE[PERSON??] MAY HAVE COOKERS.
+
+		(and (RICE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (COOKERS_27 ?x1))
+
+	;; A PERSON MAY UNDERSTAND AN INS OF A RICE COOKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (UNDERSTAND_27 ?x1) (AN_27 ?x1) (INS_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (RICE_27 ?x2) (COOKER_27 ?x2))
+
+	;; A RICE COOKER MAY HAVE AN INS.
+
+		(and (RICE_27 ?x1) (COOKER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INS_27 ?x1))
+
+	;; A PERSON MAY HAVE A RICE COOKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RICE_27 ?x1) (COOKER_27 ?x1))
+
+;; (IT IS ALSO IMPORTANT TO PURCHASE A GOOD QUALITY RICE COOKER TO ENSURE THAT THE THERMOSTAT IS ACCURATE)
+
+	;; A QUALITY RICE COOKER CAN BE GOOD.
+
+		(and (QUALITY_27 ?x1) (RICE_27 ?x1) (COOKER_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A THERMOSTAT CAN BE ACCURATE.
+
+		(and (thermostat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCURATE_27 ?x2))
+
+;; (FIND A BOWL LARGE ENOUGH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE RATIO OF RICE TO WATER SHOULD BE 450G -LRB- 1 LB -RRB- RICE AND 600ML -LRB- 1 PINT -RRB- WATER COMMA SO CHECK THE BOWL CAN MANAGE THIS AMOUNT)
+
+	;; RICE CAN BE TO WATER.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; A BOWL MAY MANAGE AN AMOUNT.
+
+		(and (BOWL_27 ?x1) (MAY_27 ?x1) (MANAGE_27 ?x1) (AN_27 ?x1) (AMOUNT_27 ?x1))
+
+;; (ADD BOTH WATER AND RICE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CONSIDER ADDING A TOUCH OF OIL TO THE WATER)
+
+	;; A TOUCH CAN BE CONSTITUTED_OF_OR_FILLED_WITH OIL.
+
+		(and (TOUCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (OIL_27 ?x2))
+
+;; (THIS CAN HELP PREVENT THE RICE FROM BOILING OVER)
+
+	;; A THING MAY HELP.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1))
+
+;; (-LRB- 30 -RRB- COVER THE BOWL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLACE THE BOWL IN THE MICROWAVE WITH CARE)
+
+	;; A MICROWAVE CAN BE WITH CARE.
+
+		(and (MICROWAVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (CARE_27 ?x2))
+
+;; (MICROWAVE INITIALLY FOR 5 MINUTES ON FULL POWER)
+
+	;; A MICROWAVE[PERSON??] CAN BE FOR SOME_NUMBER_OF MINUTES.
+
+		(and (MICROWAVE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (MINUTES_27 ?x1))
+
+	;; POWER CAN BE FULL.
+
+		(and (power_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; (MICROWAVE ON HALF POWER FOR 15 MINUTES)
+
+	;; A MICROWAVE[PERSON??] CAN BE ON POWER.
+
+		(and (MICROWAVE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (ON_27 ?x1) (POWER_27 ?x1))
+
+;; (AVOID STIRRING IT AT ANY STAGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BLANCH THE RICE IN HOT WATER)
+
+	;; RICE CAN BE IN WATER.
+
+		(and (RICE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; WATER CAN BE HOT.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+;; (RINSE IT AND DRAIN IT WELL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (POUR THE MILK INTO A SAUCEPAN OR POT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE AMOUNT SHOULD BE STATED IN THE RECIPE)
+
+	;; AN AMOUNT MAY BE STATE -ED IN A RECIPE.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (RECIPE_27 ?x3))

@@ -1,0 +1,47 @@
+.vast-video-js .vjs-control-bar{ z-index: 2; }
+
+.vast-video-js .vjs-control-bar .vjs-progress-control{
+    display: none;
+}
+
+.vast-video-js .share{
+    display: none !important;
+}
+
+.vast-video-js .vjs-vast-blocker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+}
+.vast-video-js .vjs-skip-button {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: auto;
+    background-color: #000;
+    color: #AAA;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 12px;
+    padding: 10px;
+    z-index: 3;
+}
+
+.vast-video-js .vjs-skip-button.enabled {
+    cursor: pointer;
+    color: #fff;
+}
+
+.vast-video-js .vjs-skip-button.enabled:hover {
+    cursor: pointer;
+    background: #333;
+}
+
+.vjs-skip-button{
+    display: none;
+}

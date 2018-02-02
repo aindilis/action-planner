@@ -1,0 +1,1478 @@
+;; (BAGSAVOID CARCINOGENS)
+
+	;; BAGSAVOID MAY CARCINOGEN.
+
+		(and (BAGSAVOID_27 ?x1) (MAY_27 ?x1) (CARCINOGEN_27 ?x1))
+
+;; (CARCINOGENS CAUSE CANCER COMMA WHICH CAN KILL YOU)
+
+	;; CARCINOGENS MAY CAUSE CANCER.
+
+		(and (carcinogen_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (CANCER_27 ?x1))
+
+;; (QUIT SMOKING)
+
+	;; A SMOKING CAN BE QUIT.
+
+		(and (SMOKING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUIT_27 ?x2))
+
+;; (ANY FORM OF SMOKE IS BAD FOR YOU COMMA NO MATTER HOW LITTLE YOU TAKE IN)
+
+	;; A FORM OF SMOKE CAN BE BAD FOR A PERSON.
+
+		(and (form_27 ?x1) (of_27 ?x1 ?x2) (SMOKE_27 ?x2) (be_27 ?e1 ?x1 ?x3) (BAD_27 ?x3) (for_27 ?e1 ?x4) (A_27 ?x4) (PERSON_27 ?x4))
+
+	;; A FORM CAN BE CONSTITUTED_OF_OR_FILLED_WITH SMOKE.
+
+		(and (FORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SMOKE_27 ?x2))
+
+	;; A PERSON MAY TAKE_IN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_5FIN_27 ?x1))
+
+;; (THE MAJORITY OF THE MEDICAL COMMUNITY STATES THAT SMOKING IS VERY HAZARDOUS TO YOUR HEALTH AND CAN OFTEN RESULT IN PREMATURE DEATH)
+
+	;; A MAJORITY OF A COMMUNITY MAY STATE A PROPOSITION.
+
+		(and (MAJORITY_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (COMMUNITY_27 ?x2) (MAY_27 ?x2) (STATE_27 ?x2) (A_27 ?x2) (proposition_27 ?x2))
+
+	;; A COMMUNITY MAY HAVE A MAJORITY.
+
+		(and (COMMUNITY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MAJORITY_27 ?x1))
+
+	;; A COMMUNITY CAN BE MEDICAL.
+
+		(and (COMMUNITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDICAL_27 ?x2))
+
+	;; SMOKING CAN BE HAZARDOUS TO HEALTH.
+
+		(and (smoke_27 ?e1) (be_27 ?e2 ?e1 ?x1) (HAZARDOUS_27 ?x1) (to_27 ?e2 ?x2) (HEALTH_27 ?x2))
+
+	;; A PERSON MAY HAVE HEALTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HEALTH_27 ?x1))
+
+	;; A DEATH CAN BE PREMATURE.
+
+		(and (DEATH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PREMATURE_27 ?x2))
+
+;; (WEAR SUNBLOCK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EVEN IF YOU ARE DARK SKINNED AND HAVE NO HISTORY OF SKIN CANCER IN YOUR FAMILY COMMA THE INCREASING NUMBER OF UVA AND UVB RAYS HITTING THE EARTH FROM THE SUN POSE A THREAT TO ANYONE AND EVERYONE WHO SPENDS MORE
+ THANMINUTES A DAY OUT OF THE HOUSE OR OFFICE)
+
+	;; A NUMBER OF UVA MAY POSE A THREAT TO ANYONE.
+
+		(and (NUMBER_27 ?x1) (of_27 ?x1 ?x2) (UVA_27 ?x2) (MAY_27 ?x2) (POSE_27 ?x2) (A_27 ?x2) (THREAT_27 ?x2) (to_27 ?x1 ?x3) (ANYONE_27 ?x3))
+
+	;; A PERSON CAN BE DARK.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+	;; A HISTORY CAN BE CONSTITUTED_OF_OR_FILLED_WITH SKIN CANCER.
+
+		(and (HISTORY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SKIN_27 ?x2) (CANCER_27 ?x2))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A NUMBER CAN BE INCREASING.
+
+		(and (NUMBER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCREASING_27 ?x2))
+
+	;; A THREAT CAN BE TO ANYONE.
+
+		(and (threat_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (ANYONE_27 ?x2))
+
+	;; A HOUSE MAY HAVE THANMINUTES.
+
+		(and (HOUSE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THANMINUTES_27 ?x1))
+
+;; (HOWEVER COMMA REMEMBER TO ALSO SPEND SOME TIME IN THE SUN)
+
+	;; SOME_NUMBER_OF TIME CAN BE IN THE SUN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TIME_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SUN_27 ?x2))
+
+;; (VITAMIN D IS VERY IMPORTANT TO YOUR HEALTH)
+
+	;; VITAMIN D CAN BE IMPORTANT TO HEALTH.
+
+		(and (VITAMIN_27 ?x1) (D_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2) (to_27 ?e1 ?x3) (HEALTH_27 ?x3))
+
+	;; A PERSON MAY HAVE HEALTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HEALTH_27 ?x1))
+
+;; (JUST REMEMBER TO APPLY SUNBLOCK AND NOT TO SPEND TOO MUCH TIME IN HARSH COMMA DIRECT SUNLIGHT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHANGE YOUR PATTERNS OF CONSUMPTION)
+
+	;; A PERSON MAY HAVE PATTERNS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PATTERNS_27 ?x1))
+
+;; (DRINK PLENTY OF WATER)
+
+	;; DRINK PLENTY CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (DRINK_27 ?x1) (PLENTY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+;; (THE UNIVERSAL SOLVENT IS A MOST EFFECTIVE WEAPON AGAINST TOXINS AND MANY OTHER VIOLATORS)
+
+	;; A SOLVENT CAN BE A WEAPON.
+
+		(and (SOLVENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (WEAPON_27 ?x2))
+
+	;; A SOLVENT CAN BE UNIVERSAL.
+
+		(and (SOLVENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNIVERSAL_27 ?x2))
+
+	;; A WEAPON CAN BE AGAINST TOXINS.
+
+		(and (WEAPON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AGAINST_27 ?x2) (TOXINS_27 ?x2))
+
+	;; A WEAPON CAN BE EFFECTIVE.
+
+		(and (WEAPON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EFFECTIVE_27 ?x2))
+
+;; (IT FLUSHES OUT YOUR SYSTEM LIKE NOTHING ELSE DOES)
+
+	;; A THING-REFERRED-TO MAY FLUSH_OUT A SYSTEM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FLUSH_5FOUT_27 ?x1) (A_27 ?x1) (SYSTEM_27 ?x1))
+
+	;; A PERSON MAY HAVE A SYSTEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SYSTEM_27 ?x1))
+
+	;; NOTHING MAY DO.
+
+		(and (NOTHING_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (AVOID SIMPLE CARBOHYDRATES)
+
+	;; SIMPLE MAY CARBOHYDRATE.
+
+		(and (SIMPLE_27 ?x1) (MAY_27 ?x1) (CARBOHYDRATE_27 ?x1))
+
+	;; A SIMPLE CAN BE AVOID.
+
+		(and (SIMPLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+;; (CARBOHYDRATES CAUSE YOUR INSULIN LEVELS TO RISE COMMA WHICH HAS BEEN ASSOCIATED WITH INCREASED INCIDENCE OF BREAST CANCER IN MENOPAUSAL WOMEN)
+
+	;; CARBOHYDRATES MAY CAUSE INSULIN LEVELS TO RISE.
+
+		(and (CARBOHYDRATES_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (INSULIN_27 ?x1) (LEVELS_27 ?x1) (to_27 ?x1 ?x2) (RISE_27 ?x2))
+
+	;; A PERSON MAY HAVE INSULIN LEVELS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INSULIN_27 ?x1) (LEVELS_27 ?x1))
+
+	;; AN INCIDENCE CAN BE INCREASED.
+
+		(and (INCIDENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCREASED_27 ?x2))
+
+	;; BREAST CANCER CAN BE IN WOMEN.
+
+		(and (BREAST_27 ?x1) (CANCER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (WOMEN_27 ?x2))
+
+	;; WOMEN CAN BE MENOPAUSAL.
+
+		(and (WOMEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MENOPAUSAL_27 ?x2))
+
+;; (AVOID OVERINDULGING)
+
+	;; AN OVERINDULGING CAN BE AVOID.
+
+		(and (OVERINDULGING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+;; (TOO MUCH OF ANYTHING CAN CAUSE HARM COMMA WHETHER IT BE FOOD COMMA DRINK COMMA DRUGS COMMA OR EVEN MEDICINE -- EVEN TYLENOL CAN BE FATAL IF INGESTED IN GREAT ENOUGH QUANTITY)
+
+	;; A THING-REFERRED-TO CAN BE FOOD.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (food_27 ?x2))
+
+	;; A MEDICINE CAN BE FATAL.
+
+		(and (MEDICINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FATAL_27 ?x2))
+
+	;; A QUANTITY CAN BE GREAT.
+
+		(and (QUANTITY_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; A QUANTITY CAN BE ENOUGH.
+
+		(and (QUANTITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (NON-PRESCRIPTION AND ILLEGAL DRUGS MAY CONTAIN CHEMICALS AND/OR OTHER DRUGS THAT ARE UNFIT FOR HUMAN CONSUMPTION COMMA BUT KEEP IN MIND THAT ALCOHOL AND TOBACCO ARE AMONG THE WORST DRUGS)
+
+	;; CHEMICALS MAY AND DRUGS.
+
+		(and (chemical_27 ?x1) (and_27 ?x1) (DRUGS_27 ?x1))
+
+	;; CONSUMPTION CAN BE HUMAN.
+
+		(and (consumption_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUMAN_27 ?x2))
+
+	;; ALCOHOL CAN BE AMONG DRUGS.
+
+		(and (ALCOHOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMONG_27 ?x2) (DRUGS_27 ?x2))
+
+	;; DRUGS CAN BE WORST.
+
+		(and (drug_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORST_27 ?x2))
+
+;; (DO NOT FORGET THAT CAFFEINE IS ALSO A DRUG)
+
+	;; CAFFEINE CAN BE A DRUG.
+
+		(and (CAFFEINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DRUG_27 ?x2))
+
+;; (ANY DRUG COMMA FROM ALCOHOL TO ASPIRIN COMMA CARRIES WITH IT A RISK OF SHORTENING AND ENDING YOUR LIFE)
+
+	;; ALCOHOL CAN BE TO ASPIRIN.
+
+		(and (ALCOHOL_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (ASPIRIN_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (IF YOU DO DECIDE TO USE ANY DRUGS COMMA BE RESPONSIBLE -- DO YOUR RESEARCH COMMA MAKE SURE YOU UNDERSTAND THEIR PROPERTIES AND SIDE EFFECTS COMMA AND USE THEM APPROPRIATELY)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE RESEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESEARCH_27 ?x1))
+
+	;; A PERSON MAY UNDERSTAND PROPERTIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (UNDERSTAND_27 ?x1) (PROPERTIES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PROPERTIES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PROPERTIES_27 ?x1))
+
+;; (THE SAME APPLIES TO FOOD -- READ NUTRITION LABELS AND DO SOME RESEARCH TO UNDERSTAND WHAT THE INFORMATION MEANS TO YOUR HEALTH)
+
+	;; AN INFORMATION MAY MEAN TO HEALTH.
+
+		(and (INFORMATION_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1) (to_27 ?x1 ?x2) (HEALTH_27 ?x2))
+
+	;; A PERSON MAY HAVE HEALTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HEALTH_27 ?x1))
+
+;; (WITH ANYTHING YOU INGEST COMMA MODERATION IS KEY)
+
+	;; MODERATION CAN BE KEY.
+
+		(and (MODERATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEY_27 ?x2))
+
+	;; A PERSON MAY INGEST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INGEST_27 ?x1))
+
+;; (CONSIDER A CALORIE-RESTRICTION OR INTERMITTENT FASTING DIET)
+
+	;; A DIET CAN BE INTERMITTENT.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERMITTENT_27 ?x2))
+
+	;; A DIET CAN BE FASTING.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FASTING_27 ?x2))
+
+;; (BALANCE YOUR OMEGA -  OMEGA-6 RATIO)
+
+	;; A THING MAY OMEGA.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (OMEGA_27 ?x1))
+
+	;; A PERSON MAY HAVE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A RATIO CAN BE OMEGA-6.
+
+		(and (RATIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OMEGA-6_27 ?x2))
+
+;; (THERE IS MOUNTING EVIDENCE THAT A DIET HIGH IN OMEGA-6 FATTY ACIDS -LRB- FATS -RRB- INCREASES YOUR CHANCE OF CARDIOVASCULAR DISEASE AND CANCER)
+
+	;; EVIDENCE CAN BE MOUNTING.
+
+		(and (EVIDENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOUNTING_27 ?x2))
+
+	;; A DIET MAY INCREASE A CHANCE OF DISEASE.
+
+		(and (DIET_27 ?x1) (MAY_27 ?x1) (INCREASE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1) (of_27 ?x1 ?x2) (DISEASE_27 ?x2))
+
+	;; FATTY ACIDS CAN BE OMEGA-6.
+
+		(and (FATTY_27 ?x1) (ACIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OMEGA-6_27 ?x2))
+
+	;; DISEASE MAY UNDERGO A CHANCE.
+
+		(and (DISEASE_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; A DISEASE CAN BE CARDIOVASCULAR.
+
+		(and (DISEASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CARDIOVASCULAR_27 ?x2))
+
+;; (TO IMPROVE YOUR RATIO COMMA REDUCE YOUR INTAKE OF OMEGA-6 FATS -LRB- PARTICULARLY BAD ARE CORN AND CANOLA OIL COMMA AS WELL AS MANY NUT OILS -RRB- COMMA WHILE INCREASING YOUR INTAKE OF OMEGA-3 FATS FROM FOODS
+ INCLUDING FATTY FISH COMMA ESPECIALLY SALMON)
+
+	;; A PERSON MAY HAVE A RATIO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RATIO_27 ?x1))
+
+	;; FATS CAN BE OMEGA-6.
+
+		(and (fat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OMEGA-6_27 ?x2))
+
+	;; A PERSON MAY HAVE AN INTAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INTAKE_27 ?x1))
+
+	;; FATS CAN BE OMEGA-3.
+
+		(and (fat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OMEGA-3_27 ?x2))
+
+	;; A FISH CAN BE FATTY.
+
+		(and (FISH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FATTY_27 ?x2))
+
+;; (CONSIDER SQUATTING TO DEFECATE COMMA AS IT MAY GREATLY REDUCE YOUR CHANCE OF GETTING COLORECTAL CANCER -LRB- POTENTIAL FATAL -RRB- OR HEMORRHOIDS -LRB- WHICH ARE MOSTLY JUST UNPLEASANT -RRB-)
+
+	;; A PERSON MAY HAVE A CHANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; A CANCER CAN BE COLORECTAL.
+
+		(and (CANCER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLORECTAL_27 ?x2))
+
+;; (CONSUME ANTIOXIDANTS)
+
+	;; A CONSUME[PERSON??] MAY ANTIOXIDANT.
+
+		(and (CONSUME_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ANTIOXIDANT_27 ?x1))
+
+;; (THEY DECREASE THE CHANCE OF DEVELOPING CANCER)
+
+	;; INDIVIDUAL -S MAY DECREASE A CHANCE OF CANCER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DECREASE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1) (of_27 ?x1 ?x2) (CANCER_27 ?x2))
+
+	;; CANCER MAY UNDERGO A CHANCE.
+
+		(and (CANCER_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; A CANCER CAN BE DEVELOPING.
+
+		(and (CANCER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEVELOPING_27 ?x2))
+
+;; (DRINK LOTS OF TEA)
+
+	;; DRINK LOTS CAN BE CONSTITUTED_OF_OR_FILLED_WITH TEA.
+
+		(and (DRINK_27 ?x1) (LOTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TEA_27 ?x2))
+
+;; (THERE ARE TWO MAIN TYPES OF TEA - GREEN AND BLACK)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [34]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BOTH ARE FROM THE THE SAME TREE COMMA HOWEVER GREEN TEA IS LESS PROCESSED THAN BLACK TEA)
+
+	;; SOME_NUMBER_OF THING CAN BE FROM A TREE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (TREE_27 ?x2))
+
+	;; TEA CAN BE PROCESSED.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?e2) (process_27 ?e2 ?x1))
+
+	;; TEA CAN BE GREEN.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+	;; TEA CAN BE BLACK.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+;; (GREEN TEA HAS MANY HEALTH BENEFITS COMMA INCLUDING REPORTEDLY REDUCING THE CHANCE OF HEART ATTACK AND CANCER)
+
+	;; TEA MAY HAVE SOME_NUMBER_OF HEALTH BENEFITS.
+
+		(and (TEA_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (HEALTH_27 ?x1) (benefit_27 ?x1))
+
+	;; A GREEN[PERSON??] MAY HAVE TEA.
+
+		(and (GREEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (TEA_27 ?x1))
+
+	;; HEART ATTACK MAY UNDERGO A CHANCE.
+
+		(and (HEART_27 ?x1) (ATTACK_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+;; (OTHER BENEFITS INCLUDE INCREASED ENERGY AND METABOLIC RATE -LRB- GOOD FOR WEIGHT LOSS -RRB- COMMA AND HIGH ANTIOXIDANT CONTENT -LRB- SLOWS DOWN AGING -RRB-)
+
+	;; BENEFITS MAY INCLUDE ENERGY.
+
+		(and (benefit_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (ENERGY_27 ?x1))
+
+	;; ENERGY CAN BE INCREASED.
+
+		(and (energy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCREASED_27 ?x2))
+
+	;; A RATE CAN BE METABOLIC.
+
+		(and (rate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (METABOLIC_27 ?x2))
+
+	;; AN ANTIOXIDANT CONTENT CAN BE HIGH.
+
+		(and (ANTIOXIDANT_27 ?x1) (CONTENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (BLACK TEA HAS THESE BENEFITS ALSO BUT AT A REDUCED LEVEL)
+
+	;; TEA MAY HAVE BENEFITS.
+
+		(and (TEA_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (benefit_27 ?x1))
+
+	;; A BLACK[PERSON??] MAY HAVE TEA.
+
+		(and (BLACK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (TEA_27 ?x1))
+
+	;; A LEVEL CAN BE REDUCED.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REDUCED_27 ?x2))
+
+;; (TRY AND DRINK 5 CUPS OF GREEN TEA A DAY)
+
+	;; SOME_NUMBER_OF CUPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH TEA.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TEA_27 ?x2))
+
+	;; TEA CAN BE GREEN.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+;; (USING MORE TEA BAGS OR LEAVES IS A BETTER WAY TO MAKE STRONG TEA THAN BREWING LONGER)
+
+	;; A WAY CAN BE BETTER.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; TEA CAN BE STRONG.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+;; (NOTE THAT GREEN TEA TYPICALLY CONTAINS CAFFEINE COMMA WHICH MAY HAVE A NEGATIVE EFFECT ON YOUR HEALTH AND LIFESPAN)
+
+	;; TEA MAY CONTAIN CAFFEINE.
+
+		(and (TEA_27 ?x1) (MAY_27 ?x1) (CONTAIN_27 ?x1) (CAFFEINE_27 ?x1))
+
+	;; TEA CAN BE GREEN.
+
+		(and (TEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+	;; AN EFFECT CAN BE ON HEALTH.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (HEALTH_27 ?x2))
+
+	;; AN EFFECT CAN BE NEGATIVE.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEGATIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE HEALTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HEALTH_27 ?x1))
+
+;; (EAT DARK CHOCOLATE)
+
+	;; CHOCOLATE CAN BE DARK.
+
+		(and (CHOCOLATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+;; (ONE PIECE OF DARK CHOCOLATE A DAY CAN BENEFIT THE HEART AS COCOA SOLIDS HAVE A BENEFICIAL EFFECT OF THE HEART AND ARTERIES)
+
+	;; A PIECE OF CHOCOLATE MAY BENEFIT A HEART.
+
+		(and (PIECE_27 ?x1) (of_27 ?x1 ?x2) (CHOCOLATE_27 ?x2) (MAY_27 ?x2) (BENEFIT_27 ?x2) (A_27 ?x2) (HEART_27 ?x2))
+
+	;; CHOCOLATE CAN BE DARK.
+
+		(and (CHOCOLATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+	;; COCOA SOLIDS MAY HAVE AN EFFECT OF A HEART.
+
+		(and (COCOA_27 ?x1) (SOLIDS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (effect_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (HEART_27 ?x2))
+
+	;; A HEART MAY HAVE AN EFFECT.
+
+		(and (HEART_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (effect_27 ?x1))
+
+	;; AN EFFECT CAN BE BENEFICIAL.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BENEFICIAL_27 ?x2))
+
+;; (DARK CHOCOLATE HAS MORE ANTIOXIDANTS THAN OTHER KINDS OF CHOCOLATE)
+
+	;; CHOCOLATE MAY HAVE ANTIOXIDANTS.
+
+		(and (CHOCOLATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANTIOXIDANTS_27 ?x1))
+
+	;; CHOCOLATE CAN BE DARK.
+
+		(and (CHOCOLATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+;; (LOOK FOR % UNPROCESSED COCOA OR MORE)
+
+	;; A COCOA CAN BE UNPROCESSED.
+
+		(and (COCOA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNPROCESSED_27 ?x2))
+
+;; (CHOCOLATE ALSO MAKES YOU HAPPY -LRB- IN CASE YOU DID NOT KNOW -RRB- BECAUSE IT RELEASES ENDORPHINS)
+
+	;; A PERSON CAN BE HAPPY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAPPY_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY RELEASE ENDORPHINS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (RELEASE_27 ?x1) (ENDORPHINS_27 ?x1))
+
+;; (CHOCOLATE THAT HAS BEEN ALKALIZED OR DUTCHED LOSES MOST OF IT S ANTI-OXIDANT CAPACITY)
+
+	;; A THING-REFERRED-TO MAY HAVE A CAPACITY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAPACITY_27 ?x1))
+
+	;; A CAPACITY CAN BE ANTI-OXIDANT.
+
+		(and (CAPACITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ANTI-OXIDANT_27 ?x2))
+
+;; (DRINK ONE GLASS OF RED WINE A DAY)
+
+	;; A WINE CAN BE RED.
+
+		(and (WINE_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+;; (RED WINE CONTAINS SUBSTANCES CALLED POLYPHENOLS WHICH MAINTAIN THE ELASTICITY OF THE ARTERY WALLS AND ALSO ACT AS ANTIOXIDANTS - THUS HELPING MAINTAIN A HEALTHY HEART AND SLOWING DOWN AGING)
+
+	;; WINE MAY CONTAIN.
+
+		(and (WINE_27 ?x1) (MAY_27 ?x1) (CONTAIN_27 ?x1))
+
+	;; A RED[PERSON??] MAY HAVE A WINE.
+
+		(and (red_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WINE_27 ?x1))
+
+	;; SUBSTANCES MAY CALL POLYPHENOLS.
+
+		(and (substance_27 ?x1) (MAY_27 ?x1) (CALL_27 ?x1) (POLYPHENOLS_27 ?x1))
+
+	;; ARTERY WALLS MAY HAVE AN ELASTICITY.
+
+		(and (ARTERY_27 ?x1) (WALLS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ELASTICITY_27 ?x1))
+
+	;; A HEART CAN BE HEALTHY.
+
+		(and (HEART_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+;; (ANECDOTALLY COMMA THE OLDEST WOMAN IN THE WORLD COMMA JEANNE CALMENT COMMA DRANK ONE GLASS OF WINE A DAY COMMA AND SHE LIVED UNTIL SHE WAS AGE)
+
+	;; A WOMAN MAY DRANK A GLASS OF WINE.
+
+		(and (WOMAN_27 ?x1) (MAY_27 ?x1) (DRANK_27 ?x1) (A_27 ?x1) (GLASS_27 ?x1) (of_27 ?x1 ?x2) (WINE_27 ?x2))
+
+	;; A WOMAN CAN BE IN THE WORLD.
+
+		(and (WOMAN_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (world_27 ?x2))
+
+	;; A WOMAN CAN BE OLDEST.
+
+		(and (WOMAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLDEST_27 ?x2))
+
+	;; A FEMALE MAY LIVE.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1))
+
+	;; A FEMALE CAN BE AN AGE.
+
+		(and (FEMALE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AGE_27 ?x2))
+
+;; (IF YOU WOULD RATHER NOT DRINK WINE EVERYDAY COMMA CONSIDER EATING RED GRAPES INSTEAD)
+
+	;; A PERSON MAY DRINK WINE EVERYDAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRINK_27 ?x1) (WINE_27 ?x1) (EVERYDAY_27 ?x1))
+
+	;; GRAPES CAN BE RED.
+
+		(and (grape_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [52]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [53]>
+
+;; (REDUCE STRESS HAVE CLOSE RELATIONSHIPS)
+
+	;; STRESS MAY HAVE RELATIONSHIPS.
+
+		(and (STRESS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RELATIONSHIPS_27 ?x1))
+
+	;; STRESS CAN BE REDUCE.
+
+		(and (stress_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REDUCE_27 ?x2))
+
+	;; RELATIONSHIPS CAN BE CLOSE.
+
+		(and (relationship_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSE_27 ?x2))
+
+;; (PEOPLE WHO ARE ABLE TO CONFIDE IN CLOSE FRIENDS OR LIFE PARTNERS HAVE BEEN SHOWN TO LIVE LONGER AND HEALTHIER LIVES)
+
+	;; LIVES CAN BE LONGER.
+
+		(and (life_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONGER_27 ?x2))
+
+;; (THIS IS DUE TO THE ALLEVIATION OF STRESS COMMA BOREDOM COMMA AND DEPRESSION)
+
+	;; A THING CAN BE DUE TO AN ALLEVIATION OF STRESS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DUE_27 ?x2) (to_27 ?e1 ?x3) (AN_27 ?x3) (ALLEVIATION_27 ?x3) (of_27 ?x3 ?x4) (STRESS_27 ?x4))
+
+	;; STRESS MAY UNDERGO AN ALLEVIATION.
+
+		(and (STRESS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (ALLEVIATION_27 ?x1))
+
+;; (THE RESULT WILL BE A MENTALLY AND PHYSICALLY HEALTHIER PERSON)
+
+	;; A RESULT CAN BE A MENTALLY.
+
+		(and (RESULT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (MENTALLY_27 ?x2))
+
+	;; A PERSON CAN BE HEALTHIER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHIER_27 ?x2))
+
+;; (CHERISH YOUR FRIENDS AND FAMILY)
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (REDUCE CAUSES OF STRESS AND DEPRESSION IN YOUR LIFE)
+
+	;; CAUSES CAN BE CONSTITUTED_OF_OR_FILLED_WITH STRESS.
+
+		(and (cause_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (STRESS_27 ?x2))
+
+	;; CAUSES CAN BE REDUCE.
+
+		(and (cause_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REDUCE_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (THIS CAN HAVE A VERY NEGATIVE IMPACT ON YOUR HEART COMMA AND OTHER PHYSIOLOGY)
+
+	;; A THING MAY HAVE AN IMPACT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IMPACT_27 ?x1))
+
+	;; AN IMPACT CAN BE ON A HEART.
+
+		(and (IMPACT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (HEART_27 ?x2))
+
+	;; AN IMPACT CAN BE NEGATIVE.
+
+		(and (IMPACT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEGATIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE A HEART.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEART_27 ?x1))
+
+;; (LEARN TO COPE WITH STRESS BY TRYING DIFFERENT RELAXATION TECHNIQUES OR SIMPLY BY LOOKING AT THINGS DIFFERENTLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [53]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TAKE DEEP BREATHS DURING YOUR MOST STRESSFUL MOMENTS)
+
+	;; BREATHS CAN BE DEEP.
+
+		(and (breath_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEEP_27 ?x2))
+
+	;; A PERSON MAY HAVE MOMENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MOMENTS_27 ?x1))
+
+	;; MOMENTS CAN BE STRESSFUL.
+
+		(and (moment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRESSFUL_27 ?x2))
+
+;; (TRY NOT TO BE AFRAID)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [53]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SERIOUSLY COMMA THE WORST STRESS COMES FROM THE INSIDE)
+
+	;; STRESS MAY COME FROM AN INSIDE.
+
+		(and (STRESS_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (FROM_27 ?x1) (AN_27 ?x1) (INSIDE_27 ?x1))
+
+	;; STRESS CAN BE WORST.
+
+		(and (stress_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORST_27 ?x2))
+
+;; (IF YOU ARE IN CONSTANT FEAR OF ANYTHING OR EVERYTHING -LRB- PHOBIAS -RRB- YOU BECOME AS FRAGILE AS AN ANT COMMA ASKING FOR LIFE TO STEP ON YOU)
+
+	;; A PERSON CAN BE FRAGILE AS AN ANT.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRAGILE_27 ?x2) (AS_27 ?x2) (AN_27 ?x2) (ANT_27 ?x2))
+
+	;; A PERSON CAN BE IN FEAR OF ANYTHING.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (FEAR_27 ?x2) (of_27 ?x2 ?x3) (ANYTHING_27 ?x3))
+
+;; (BE AS PASSIVE AND EASY GOING AS YOU CAN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [53]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [54]>
+
+;; (FEAR IS A TOOL COMMA AND IT HAS A PURPOSE COMMA BUT IT IS MOST OFTEN BAD FOR YOUR WELL-BEING)
+
+	;; FEAR CAN BE A TOOL.
+
+		(and (fear_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TOOL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A PURPOSE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURPOSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A WELL-BEING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WELL-BEING_27 ?x1))
+
+;; (DO NOT BE AFRAID COMMA BE AWARE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [54]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LOOK ON THE BRIGHT SIDE)
+
+	;; A SIDE CAN BE BRIGHT.
+
+		(and (SIDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIGHT_27 ?x2))
+
+;; (HAVING AN OPTIMISTIC POINT OF VIEW IS HEALTHY AND THOSE WHO DRINK FROM THE CUP THAT IS HALF FULL TEND TO HAVE A MUCH STRONGER RESILIENCE TO ANY HEALTH PROBLEMS)
+
+	;; A POINT CAN BE CONSTITUTED_OF_OR_FILLED_WITH VIEW.
+
+		(and (POINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (VIEW_27 ?x2))
+
+	;; A POINT CAN BE OPTIMISTIC.
+
+		(and (POINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTIMISTIC_27 ?x2))
+
+	;; A RESILIENCE CAN BE TO HEALTH PROBLEMS.
+
+		(and (RESILIENCE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (HEALTH_27 ?x2) (PROBLEMS_27 ?x2))
+
+	;; A RESILIENCE CAN BE STRONGER.
+
+		(and (RESILIENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONGER_27 ?x2))
+
+;; (KEEP ON WORKING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [54]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT S BEEN PROVEN THAT PEOPLE WHO STAY ACTIVE IN THEIR JOBS COMMA OR VOLUNTEER WORK COMMA LIVE LONGER)
+
+	;; PEOPLE MAY LIVE.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE JOBS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (JOBS_27 ?x1))
+
+;; (BEING A PART OF A COMMUNITY AND/OR WORK-FORCE INTO YOUR GOLDEN YEARS WILL KEEP YOUR LIFE FILLED AND FULFILLING UP UNTIL THE END)
+
+	;; A PERSON MAY HAVE YEARS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (year_27 ?x1))
+
+	;; YEARS CAN BE GOLDEN.
+
+		(and (year_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GOLDEN_27 ?x2))
+
+	;; A LIFE MAY BE FILL -ED.
+
+		(and (LIFE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (SMILE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [54]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RELAXATION-4)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [54]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [55]>
+
+;; (NOT ONLY MORE PEOPLE WILL LIKE YOUR POSITIVE ATTITUDE COMMA BUT YOU LL CHANGE YOUR MOOD)
+
+	;; A PERSON MAY HAVE AN ATTITUDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ATTITUDE_27 ?x1))
+
+	;; AN ATTITUDE CAN BE POSITIVE.
+
+		(and (ATTITUDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSITIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE A MOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOOD_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [56]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [57]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [58]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [59]>
+
+;; (HAVE PURPOSE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 8 [59]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MANY PEOPLE OVER THE AGE OFCLAIM A REASON BEHIND THEIR LIFE COMMA AND SUGGEST THAT THEIR REASON HAS HELPED THEM REACH SUCH AGES)
+
+	;; SOME_NUMBER_OF PEOPLE MAY OFCLAIM A REASON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (OFCLAIM_27 ?x1) (A_27 ?x1) (REASON_27 ?x1))
+
+	;; SOME_NUMBER_OF PEOPLE CAN BE OVER AN AGE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (AN_27 ?x2) (AGE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A LIFE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A REASON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REASON_27 ?x1))
+
+	;; INDIVIDUAL -S MAY REACH AGES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (REACH_27 ?x1) (AGES_27 ?x1))
+
+;; (SOME REASONS FOR LIVING CAN BE AS PRACTICAL AS PROVIDING FOOD FOR OTHERS COMMA OR EVEN AS ABSTRACT AS PROVIDING INSPIRATION)
+
+	;; SOME_NUMBER_OF REASONS CAN BE FOR LIVING.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (REASONS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (LIVING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [60]>
+
+;; (WATCH OUT FOR PROBLEMS THINK FIRST)
+
+	;; A WATCH[PERSON??] MAY THINK.
+
+		(and (WATCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (THINK_27 ?x1))
+
+;; (THIS STEP INCLUDES LOOKING BOTH WAYS BEFORE YOU CROSS THE STREET COMMA AS CHILDREN ARE TAUGHT BUT MANY ADULTS TAKE IT FOR GRANTED COMMA AND WEAR PROTECTIVE GEAR WHEN NECESSARY)
+
+	;; A STEP MAY INCLUDE.
+
+		(and (STEP_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1))
+
+	;; A PERSON MAY CROSS A STREET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CROSS_27 ?x1) (A_27 ?x1) (STREET_27 ?x1))
+
+	;; CHILDREN MAY BE TEACH -ED.
+
+		(and (CHILDREN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TEACH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; SOME_NUMBER_OF ADULTS MAY TAKE A THING-REFERRED-TO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ADULTS_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A GEAR CAN BE PROTECTIVE.
+
+		(and (GEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROTECTIVE_27 ?x2))
+
+;; (WHETHER YOU ARE RIDING A BIKE OR SKATEBOARD COMMA WORKING ON A CONSTRUCTION SITE COMMA OR HANDLING POTENTIALLY HARMFUL SUBSTANCES COMMA BE CAREFUL)
+
+	;; A PERSON MAY RIDE A BIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RIDE_27 ?x1) (A_27 ?x1) (BIKE_27 ?x1))
+
+	;; SUBSTANCES CAN BE HARMFUL.
+
+		(and (substance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARMFUL_27 ?x2))
+
+;; (WHILE THE HUMAN SKULL IS QUITE THICK AND STURDY COMMA SEVERE HEAD TRAUMA CAN RESULT FROM THE BRAIN BEING JOSTLED AROUND INSIDE THE SKULL FROM AN IMPACT COMMA POTENTIALLY RESULTING IN PERMANENT BRAIN DAMAGE OR
+ EVEN DEATH)
+
+	;; HEAD TRAUMA MAY RESULT FROM A BRAIN.
+
+		(and (HEAD_27 ?x1) (TRAUMA_27 ?x1) (MAY_27 ?x1) (RESULT_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (BRAIN_27 ?x1))
+
+	;; A SKULL CAN BE THICK.
+
+		(and (SKULL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THICK_27 ?x2))
+
+	;; A SKULL CAN BE HUMAN.
+
+		(and (SKULL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUMAN_27 ?x2))
+
+	;; A HEAD TRAUMA CAN BE SEVERE.
+
+		(and (HEAD_27 ?x1) (TRAUMA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEVERE_27 ?x2))
+
+	;; A BRAIN MAY BE JOSTLE_AROUND -ED.
+
+		(and (BRAIN_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JOSTLE_5FAROUND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A BRAIN DAMAGE CAN BE PERMANENT.
+
+		(and (BRAIN_27 ?x1) (DAMAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERMANENT_27 ?x2))
+
+;; (BE SAFE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [60]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AVOID POTENTIALLY DANGEROUS ACTIVITIES THAT FREQUENTLY OR OCCASIONALLY END IN DEATH OR DISMEMBERMENT COMMA SUCH AS BULLFIGHTING COMMA OR RELATIONSHIPS WITH DANGEROUS PEOPLE)
+
+	;; ACTIVITIES CAN BE AVOID.
+
+		(and (activity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+	;; ACTIVITIES CAN BE DANGEROUS.
+
+		(and (activity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DANGEROUS_27 ?x2))
+
+	;; RELATIONSHIPS CAN BE WITH PEOPLE.
+
+		(and (relationship_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; PEOPLE CAN BE DANGEROUS.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DANGEROUS_27 ?x2))
+
+;; (ATTEND YEARLY PHYSICALS)
+
+	;; AN ATTEND[PERSON??] MAY PHYSICAL.
+
+		(and (ATTEND_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PHYSICAL_27 ?x1))
+
+;; (IDENTIFYING POTENTIALLY DEADLY HEALTH PROBLEMS EARLY CAN RESULT IN THEIR ERADICATION)
+
+	;; HEALTH PROBLEMS MAY RESULT IN AN ERADICATION.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (MAY_27 ?x1) (RESULT_27 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (ERADICATION_27 ?x2))
+
+	;; HEALTH PROBLEMS CAN BE IDENTIFYING.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDENTIFYING_27 ?x2))
+
+	;; HEALTH PROBLEMS CAN BE DEADLY.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEADLY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE AN ERADICATION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ERADICATION_27 ?x1))
+
+;; (INTRODUCE REGULAR EXERCISE INTO YOUR LIFE)
+
+	;; AN EXERCISE CAN BE REGULAR.
+
+		(and (EXERCISE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REGULAR_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (WHILE MOST PEOPLE LEAD QUITE BUSY LIVES COMMA THE BENEFITS OF EXERCISE USUALLY PRESENT THEMSELVES IN ALL AREAS OF YOUR LIFE)
+
+	;; BENEFITS OF EXERCISE MAY PRESENT INDIVIDUAL -S.
+
+		(and (benefit_27 ?x1) (of_27 ?x1 ?x2) (EXERCISE_27 ?x2) (MAY_27 ?x2) (PRESENT_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; PEOPLE MAY LEAD LIVES.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (LEAD_27 ?x1) (LIVES_27 ?x1))
+
+	;; LIVES CAN BE BUSY.
+
+		(and (life_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSY_27 ?x2))
+
+	;; A LIFE MAY HAVE AREAS.
+
+		(and (LIFE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AREAS_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (GRADUALLY INTRODUCING EXERCISE WILL LEAD TO LONGER PATTERNS OF FITNESS RATHER THAN ADOPTING A HARSH WORKOUT REGIME EACH NEW YEAR S)
+
+	;; PATTERNS CAN BE CONSTITUTED_OF_OR_FILLED_WITH FITNESS.
+
+		(and (pattern_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FITNESS_27 ?x2))
+
+	;; PATTERNS CAN BE LONGER.
+
+		(and (pattern_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONGER_27 ?x2))
+
+	;; A WORKOUT REGIME CAN BE HARSH.
+
+		(and (WORKOUT_27 ?x1) (REGIME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARSH_27 ?x2))
+
+	;; A NEW[PERSON??] MAY HAVE A YEAR.
+
+		(and (NEW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (year_27 ?x1))
+
+;; (A SIMPLE WAY TO START IS WALKING)
+
+	;; A WAY MAY WALK.
+
+		(and (WAY_27 ?x1) (MAY_27 ?x1) (WALK_27 ?x1))
+
+	;; A WAY CAN BE SIMPLE.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [61]>
+
+;; (30 MINUTES A DAY ALSO WORKS BECAUSE IT REDUCES AS MUCH RISK OF A HEART ATTACK AS A HIGHLY INTENSE EXERCISE)
+
+	;; SOME_NUMBER_OF MINUTES MAY WORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MINUTES_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY REDUCE AS RISK OF A HEART ATTACK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (REDUCE_27 ?x1) (AS_27 ?x1) (RISK_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (HEART_27 ?x2) (ATTACK_27 ?x2))
+
+	;; AN EXERCISE CAN BE INTENSE.
+
+		(and (EXERCISE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTENSE_27 ?x2))
+
+;; (EDUCATE YOURSELF)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONE OF THE MOST CONSISTENT MARKERS OF LONGEVITY ACROSS THE WORLD COMMA IN ALL ECONOMIC CONDITIONS IS HIGHER EDUCATION)
+
+	;; SOME NUMBER_OR_PORTION OF MARKERS OF LONGEVITY CAN BE AN EDUCATION.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (MARKERS_27 ?x2) (of_27 ?x1 ?x3) (LONGEVITY_27 ?x3) (be_27 ?e1 ?x1 ?x4) (AN_27 ?x4) (EDUCATION_27 ?x4))
+
+	;; MARKERS CAN BE CONSISTENT.
+
+		(and (marker_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSISTENT_27 ?x2))
+
+	;; LONGEVITY CAN BE ACROSS THE WORLD.
+
+		(and (LONGEVITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACROSS_27 ?x2) (THE_27 ?x2) (WORLD_27 ?x2))
+
+	;; CONDITIONS CAN BE ECONOMIC.
+
+		(and (condition_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ECONOMIC_27 ?x2))
+
+	;; AN EDUCATION CAN BE HIGHER.
+
+		(and (EDUCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+;; (IF YOU STAY IN SCHOOL AND GET A DEGREE COMMA IT SEEMS TO INCREASE YOUR CHANCES OF LIVING LONGER MORE THAN ALMOST ANYTHING ELSE COMMA APART FROM TAKING PHYSICAL CARE OF YOURSELF WITH REGULAR EXERCISE COMMA
+ EATING HEALTHY AND NOT SMOKING)
+
+	;; A PERSON MAY STAY IN SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1) (in_27 ?x1 ?x2) (SCHOOL_27 ?x2))
+
+	;; A PERSON MAY HAVE CHANCES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHANCES_27 ?x1))
+
+	;; CARE CAN BE PHYSICAL.
+
+		(and (CARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PHYSICAL_27 ?x2))
+
+	;; AN EXERCISE CAN BE REGULAR.
+
+		(and (EXERCISE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REGULAR_27 ?x2))
+
+;; (DEVELOP A SLEEP SCHEDULE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT IS NOT AS IMPORTANT TO GET A CERTAIN NUMBER OF HOURS OF SLEEP COMMA SO MUCH AS IT IS TO GET THE SAME AMOUNT OF SLEEP COMMA AT THE SAME TIME COMMA DAY IN AND DAY OUT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [61]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

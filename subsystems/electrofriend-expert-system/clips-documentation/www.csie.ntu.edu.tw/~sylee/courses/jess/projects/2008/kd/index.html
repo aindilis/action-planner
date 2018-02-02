@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>腎臟疾病診斷專家系統</title>
+<style type="text/css">
+<!--
+.style5 {font-family: "王漢宗中仿宋繁", "標楷體"; font-size: 24px; }
+.style6 {
+	font-family: "王漢宗中仿宋繁", "標楷體";
+	font-weight: bold;
+	font-size: 36px;
+}
+.style8 {font-size: 24px}
+-->
+</style>
+<script type="text/javascript" src="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/2008/kd/js/ajax_base.js"></script>
+<script type="text/javascript">
+	function CheckRadio(radio)
+	{
+		var answer = null;
+		for(var i=0;i<radio.length;i++)
+		{
+			if(radio[i].checked)
+				answer = radio[i].value;
+		}
+		return answer;
+	}
+	
+	function SendOut()
+	{
+		var answer_value;
+		var printout_value;
+		var radio = document.getElementsByName("answer");
+		answer_value = CheckRadio(radio);
+		
+		if(answer_value == null)
+		{
+			alert("請選擇是或否");
+			return;
+		}
+		
+		var ajax_object=ajax_init_object();
+		var target_uri="/servlets/DiagnosisServlet";
+		var uri_get_parameter="question="+document.getElementById("question").value+"&answer="+answer_value;
+		ajax_object.open("POST",target_uri,true);
+    	ajax_object.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		ajax_object.onreadystatechange = function() {
+        	if (ajax_object.readyState != 4)
+            	return 0;
+			if(answer_value=="y")
+				printout_value = "是";
+			else
+				printout_value = "否";
+			document.getElementById("input_div_"+document.getElementById("question").value).innerHTML = "<font color=\"blue\">"+printout_value+"</font>";
+			document.getElementById("diagnosis_result").innerHTML+=ajax_object.responseText;
+		}
+    	ajax_object.send(uri_get_parameter);
+	}
+</script>
+</head>
+
+<body>
+<div align="center"><img src="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/2008/kd/img/kidney_header.gif" width="1100" height="150" /></div>
+
+<table width="1100" align="center">
+  <tr class="style5">
+  	<td align="center" bgcolor="#6699FF"><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/2008/kd/index.html">關於系統</a></td>
+    <td align="center" bgcolor="#6600FF"><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/2008/kd/diabetes.html">糖尿病診斷</a></td>
+    <td align="center" bgcolor="#6600FF"><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/projects/2008/kd/renal_failure.html">腎衰竭診斷</a></td>
+  </tr>
+</table>
+<table width="1100" align="center">
+<tr>
+<td style="background-color:#FFCCFF">
+  <div align="center">
+  <p class="style6">系統使用者</p>
+    <p class="style8">　醫師。因具專業知識，可做正確的輸入，診斷系統可做為輔助角色</p>
+    <p>&nbsp;</p>
+    <p class="style6">動機與背景</p>
+    <p class="style8">　醫院醫師所從事的看診與醫療行為需要大量專業知識才能做出正確的診斷&#13;</p>
+    <p class="style8">　但看診時，一般醫師卻不一定能夠將每一個疾病診斷流程完整記憶於腦中</p>
+    <span class="style8"> 　故專家系統可幫助醫師診斷時有專家系統可以提醒下一步的診斷流程 </span></div>
+</tr>
+</table>
+</html>

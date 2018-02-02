@@ -1,0 +1,483 @@
+;; (NOTHING.COM PLAIN ABOUT FAKE SYMPTOMS)
+
+	;; SYMPTOMS CAN BE FAKE.
+
+		(and (symptom_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAKE_27 ?x2))
+
+;; (A DAY BEFORE YOUR DAY-OFF COMMA MAKE HINTS ABOUT YOUR FLU BY CASUALLY REPORTING ABOUT YOUR UNTRUE FLU-LIKE SYMPTOMS THROUGHOUT THE WHOLE
+ DAY TO YOUR COLLEAGUES)
+
+	;; A DAY CAN BE BEFORE A DAY-OFF.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (A_27 ?x2) (DAY-OFF_27 ?x2))
+
+	;; A PERSON MAY HAVE A DAY-OFF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DAY-OFF_27 ?x1))
+
+	;; HINTS CAN BE ABOUT A FLU.
+
+		(and (hint_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (FLU_27 ?x2))
+
+	;; A PERSON MAY HAVE A FLU.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLU_27 ?x1))
+
+	;; A PERSON MAY HAVE SYMPTOMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SYMPTOMS_27 ?x1))
+
+	;; SYMPTOMS CAN BE UNTRUE.
+
+		(and (SYMPTOMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNTRUE_27 ?x2))
+
+	;; SYMPTOMS CAN BE FLU-LIKE.
+
+		(and (symptom_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLU-LIKE_27 ?x2))
+
+	;; A DAY CAN BE TO COLLEAGUES.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?e1 ?x2) (colleague_27 ?x2))
+
+	;; A PERSON MAY HAVE COLLEAGUES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COLLEAGUES_27 ?x1))
+
+;; (FOR EXAMPLE COMMA SAY THAT YOUR BONES HURT AND YOU FEEL A LITTLE SORE ON THAT DAY)
+
+	;; BONES MAY HURT.
+
+		(and (bone_27 ?x1) (MAY_27 ?x1) (HURT_27 ?x1))
+
+	;; A PERSON MAY HAVE BONES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BONES_27 ?x1))
+
+	;; A PERSON MAY FEEL A SORE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (A_27 ?x1) (SORE_27 ?x1))
+
+	;; A SORE CAN BE ON A DAY.
+
+		(and (SORE_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (day_27 ?x2))
+
+;; (THIS WAY COMMA YOUR COWORKERS CAN MAKE THE CONNECTION TO YOUR SYMPTOMS FROM THE DAY BEFORE)
+
+	;; A WAY MAY MAKE A CONNECTION TO SYMPTOMS.
+
+		(and (WAY_27 ?x1) (MAY_27 ?x1) (make_27 ?e1 ?x1 ?x2) (connection_27 ?x2) (to_27 ?x2 ?x3) (SYMPTOMS_27 ?x3))
+
+	;; A PERSON MAY HAVE COWORKERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COWORKERS_27 ?x1))
+
+	;; A PERSON MAY HAVE SYMPTOMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SYMPTOMS_27 ?x1))
+
+;; (CALL YOUR BOSS EARLY THE NEXT MORNING)
+
+	;; A PERSON MAY HAVE A BOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOSS_27 ?x1))
+
+;; (DO NOT DELAY BECAUSE IT WILL CAUSE DISPLEASURE TO YOUR BOSS)
+
+	;; A THING-REFERRED-TO MAY CAUSE DISPLEASURE TO A BOSS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (DISPLEASURE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BOSS_27 ?x2))
+
+	;; A PERSON MAY HAVE A BOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOSS_27 ?x1))
+
+;; (AND ALSO YOU WILL WANT TO AVOID YOUR BOSS FROM LABELING YOU AS A BAD EMPLOYEE BY NOT INFORMING HIM OR HER EARLY)
+
+	;; A PERSON MAY HAVE A BOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOSS_27 ?x1))
+
+	;; AN EMPLOYEE CAN BE BAD.
+
+		(and (EMPLOYEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+	;; A MALE CAN BE EARLY.
+
+		(and (MALE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EARLY_27 ?x2))
+
+;; (MOREOVER COMMA IF YOU CALL EARLY COMMA YOU WILL HAVE A RATHER ROUGH VOICE AFTER WAKING UP)
+
+	;; A PERSON MAY HAVE A VOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VOICE_27 ?x1))
+
+	;; A PERSON MAY CALL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CALL_27 ?x1))
+
+	;; A VOICE CAN BE ROUGH.
+
+		(and (VOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROUGH_27 ?x2))
+
+;; (THIS WILL GIVE YOU SOME ADDED CREDIBILITY MAKE THE CALL A SHORT ONE)
+
+	;; A THING MAY GIVE A PERSON SOME_NUMBER_OF CREDIBILITY.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (CREDIBILITY_27 ?x1))
+
+	;; A CREDIBILITY CAN BE ADDED.
+
+		(and (CREDIBILITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADDED_27 ?x2))
+
+	;; AN ONE CAN BE SHORT.
+
+		(and (be_27 ?e1 ?x1) (SHORT_27 ?x1))
+
+;; (JUST SAY THAT YOU ARE NOT COMING IN AS YOU ARE CALLING IN SICK THAT DAY)
+
+	;; A PERSON MAY COME_IN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COME_5FIN_27 ?x1))
+
+	;; A PERSON MAY CALL A DAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CALL_27 ?x1) (A_27 ?x1) (DAY_27 ?x1))
+
+;; (EXCELLENT CHOICES ARE SEVERE HEADACHE OR STOMACH AILMENT COMMA AS THEY ARE COMMON)
+
+	;; CHOICES CAN BE A HEADACHE.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (HEADACHE_27 ?x2))
+
+	;; CHOICES CAN BE EXCELLENT.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; A HEADACHE CAN BE SEVERE.
+
+		(and (HEADACHE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEVERE_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE COMMON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+;; (DO N T GET TOO DETAILED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "12"
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>
+
+;; (BE PREPARED FOR A Q&A SESSION)
+
+	;; A Q&A[PERSON??] MAY HAVE A SESSION.
+
+		(and (Q_27 ?x2) (kbs2_kif_quote_26_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x3))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SESSION_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [15]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [16]>
+
+;; (TRY TO IMAGINE WHAT KINDS OF QUESTIONS YOUR BOSS MIGHT HAVE)
+
+	;; A BOSS MAY HAVE.
+
+		(and (BOSS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A PERSON MAY HAVE A BOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOSS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [17]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [18]>
+
+;; (YOU-2 DET A-4 DOBJ DOCTOR-5)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU-2 DOBJ ANYTHING-4)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU-2 DOBJ ANYTHING-4)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [19]>
+
+;; (I M NOT GOING TO BE IN TODAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (I WAS UP ALL LAST NIGHT SICK)
+
+	;; A PERSON CAN BE SICK.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SICK_27 ?x2))
+
+;; (MY STOMACH FEELS TERRIBLE)
+
+	;; A STOMACH MAY FEEL TERRIBLE.
+
+		(and (STOMACH_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (TERRIBLE_27 ?x1))
+
+	;; A PERSON MAY HAVE A STOMACH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STOMACH_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [20]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [21]>
+
+;; (I DO N T THINK I SHOULD GO TO WORK TODAY)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [22]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [23]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [24]>
+
+;; (I VE BEEN UP SINCE 00 AM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 11 [24]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort main loop
+Break 12 [25]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort main loop
+Break 13 [26]>
+
+;; (ACT SICK AT WORK)
+
+	;; AN ACT[PERSON??] CAN BE SICK AT WORK.
+
+		(and (ACT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (SICK_27 ?x1) (AT_27 ?x1) (WORK_27 ?x1))
+
+;; (IF YOU REALLY WANT PEOPLE TO BELIEVE YOU COMMA GO TO WORK AS PER NORMAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 13 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BRING A CAN OF SOUP WITH YOU)
+
+	;; A CAN CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOUP.
+
+		(and (be_27 ?e1 ?x1) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x1) (SOUP_27 ?x1))
+
+;; (WHEN THERE ARE AT LEAST THREE PEOPLE IN THE ROOM AT WORK COMMA HOLD YOUR STOMACH COMMA GROAN LOUDLY COMMA HOLD YOUR MOUTH AND THEN DART
+ INTO THE BATHROOM)
+
+	;; A ROOM CAN BE AT WORK.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_27 ?x2) (WORK_27 ?x2))
+
+	;; A PERSON MAY HAVE A STOMACH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STOMACH_27 ?x1))
+
+	;; A PERSON MAY HAVE A MOUTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOUTH_27 ?x1))
+
+;; (SOMEONE WILL PROBABLY COME INTO THE BATHROOM SIMPLY BECAUSE THEY WILL GET CURIOUS COMMA SO CLOSE THE DOOR AND MAKE PUKING SOUNDS WHILE
+ DUMPING THE SOUP)
+
+	;; SOMEONE MAY COME INTO A BATHROOM.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (BATHROOM_27 ?x1))
+
+	;; SOUNDS CAN BE PUKING.
+
+		(and (sound_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUKING_27 ?x2))

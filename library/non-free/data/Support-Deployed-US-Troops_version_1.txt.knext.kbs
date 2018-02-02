@@ -1,0 +1,438 @@
+;; (1 AN ORGANIZATION PREPARES CARE PACKAGES FOR TROOPS)
+
+	;; AN ORGANIZATION MAY PREPARE CARE PACKAGES.
+
+		(and (ORGANIZATION_27 ?x1) (MAY_27 ?x1) (PREPARE_27 ?x1) (CARE_27 ?x1) (PACKAGES_27 ?x1))
+
+	;; CARE PACKAGES CAN BE FOR TROOPS.
+
+		(and (CARE_27 ?x1) (package_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TROOPS_27 ?x2))
+
+;; (LOOK FOR AN ORGANIZATION TO JOIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (ORGANIZATIONS CAN GET ADDRESSES OF CHAPLAINS COMMA FOBS -LRB- FORWARD OPERATING BASES -RRB- COMMA OR BASE COMMANDERS WHO CAN RECEIVE CARE PACKAGES AND MAIL)
+
+	;; AN ORGANIZATIONS[PERSON??] MAY GET ADDRESSES OF A CHAPLAINS[PERSON??].
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (GET_27 ?x1) (ADDRESSES_27 ?x1) (of_27 ?x1 ?x2) (CHAPLAINS_27 ?x2) (PERSON_27 ?x1))
+
+;; (OFTEN ADDRESSES COME TO ORGANIZATIONS FROM FAMILIES)
+
+	;; ADDRESSES MAY COME TO ORGANIZATIONS.
+
+		(and (ADDRESSES_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (to_27 ?x1 ?x2) (ORGANIZATIONS_27 ?x2))
+
+	;; ORGANIZATIONS CAN BE FROM FAMILIES.
+
+		(and (organization_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (FAMILIES_27 ?x2))
+
+;; (CHECK OUT THE ORGANIZATION YOU PLAN TO JOIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MAKE SURE IT IS NOT ONLY LEGITIMATE COMMA BUT THAT IT HAS A GOOD REPUTATION)
+
+	;; A THING-REFERRED-TO CAN BE LEGITIMATE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEGITIMATE_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A REPUTATION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REPUTATION_27 ?x1))
+
+	;; A REPUTATION CAN BE GOOD.
+
+		(and (reputation_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (THERE ARE ORGANIZATIONS OUT THERE THAT ONLY WANT YOUR MONEY)
+
+	;; A PERSON MAY HAVE MONEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [7]>
+
+;; (LOOK AT THOSE PAGES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CONTACT THE MAIN OFFICE OF THE ORGANIZATIONS)
+
+	;; ORGANIZATIONS MAY HAVE AN OFFICE.
+
+		(and (organization_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [9]>
+
+;; (GET THE NECESSARY INFORMATION ON MEMBERSHIP)
+
+	;; AN INFORMATION CAN BE NECESSARY.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [13]>
+
+;; (DO N T BE AFRAID TO CALL THEIR OFFICE AND ASK SOME POINTED QUESTIONS)
+
+	;; INDIVIDUAL -S MAY HAVE AN OFFICE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1))
+
+	;; QUESTIONS CAN BE POINTED.
+
+		(and (question_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POINTED_27 ?x2))
+
+;; (DECIDE ON AN ORGANIZATION TO JOIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (GET INVOLVED WITH PEOPLE FROM THAT ORGANIZATION WHO HAVE THE EXPERIENCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THEY CAN HELP YOU ALONG THE WAY COMMA AVOID MISTAKES COMMA AND MAKE YOUR MEMBERSHIP FUN)
+
+	;; INDIVIDUAL -S MAY HELP A PERSON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE A MEMBERSHIP FUN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MEMBERSHIP_27 ?x1) (FUN_27 ?x1))
+
+;; (GO TO THE MALL AND TALK TO THE RECRUITERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MANY OF THEM HAVE BEEN FORWARD DEPLOYED RECENTLY)
+
+	;; SOME NUMBER_OR_PORTION OF INDIVIDUAL -S MAY BE DEPLOY -ED.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2) (be_27 ?e1 ?x1 ?x3) (DEPLOY_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+;; (THEY CAN BE VERY HELPFUL)
+
+	;; INDIVIDUAL -S CAN BE HELPFUL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+;; (THANK THEM FOR THEIR SERVICE WHILE YOU RE THERE)
+
+	;; INDIVIDUAL -S MAY HAVE A SERVICE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SERVICE_27 ?x1))
+
+;; (USE THE USPS FLAT RATE SHIPPING)
+
+	;; A USPS_FLAT_RATE[PERSON??] MAY HAVE A SHIPPING.
+
+		(and (USPS_5FFLAT_5FRATE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (shipping_27 ?x1))
+
+;; (YOU CAN PUT ANYTHING IN THE BOX AS LONG AS IT FITS COMMA UP TO 70 POUNDS FOR DOMESTIC MAIL)
+
+	;; A PERSON MAY PUT ANYTHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (ANYTHING_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY FIT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FIT_27 ?x1))
+
+	;; MAIL CAN BE DOMESTIC.
+
+		(and (MAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOMESTIC_27 ?x2))
+
+;; (YOU WILL HAVE TO USE A CUSTOMS FORM COMMA BUT AN APO OR FPO ADDRESS IS CONSIDERED DOMESTIC)
+
+	;; AN ADDRESS MAY BE CONSIDER -ED DOMESTIC.
+
+		(and (ADDRESS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSIDER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (DOMESTIC_27 ?x2))
+
+	;; AN APO_OR_FPO[PERSON??] MAY HAVE AN ADDRESS.
+
+		(and (APO_5FOR_5FFPO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ADDRESS_27 ?x1))
+
+;; (SEND AN ASSORTMENT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CHOOSE ITEMS TO SEND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THERE IS A LONG LIST OF ITEMS THAT CAN BE VERY USEFUL TO THE TROOPS -LRB- SEE TIPS -RRB-)
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH ITEMS.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ITEMS_27 ?x2))
+
+	;; A LIST CAN BE LONG.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (IMAGINE A YEAR-LONG CAMPING TRIP)
+
+	;; A TRIP CAN BE YEAR-LONG.
+
+		(and (TRIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YEAR-LONG_27 ?x2))
+
+	;; A TRIP CAN BE CAMPING.
+
+		(and (TRIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAMPING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [14]>
+
+;; (ADOPT A SERVICE MEMBER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (GET AN ADDRESS AND OTHER INFORMATION ABOUT YOUR ADOPTEE)
+
+	;; AN ADDRESS CAN BE ABOUT AN ADOPTEE.
+
+		(and (ADDRESS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (AN_27 ?x2) (ADOPTEE_27 ?x2))
+
+	;; A PERSON MAY HAVE AN ADOPTEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ADOPTEE_27 ?x1))
+
+;; (CONSIDER COMMITTING TO A 6 - 12 MONTH OBLIGATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU MAY NEVER HEAR FROM HIM/HER COMMA BUT THE IMPORTANT THING IS THAT THEY HEAR FROM YOU AND THEY ARE SUPPORTED)
+
+	;; A PERSON MAY HEAR FROM HIM/HER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HEAR_27 ?x1) (FROM_27 ?x1) (HIM_2FHER_27 ?x1))
+
+	;; A THING CAN BE A PROPOSITION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HEAR FROM A PERSON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HEAR_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE SUPPORT -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUPPORT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ADOPT ONE AT FIRST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF ALL GOES WELL YOU MIGHT WANT TO ADOPT ANOTHER LATER)
+
+	;; SOME_NUMBER_OF THING MAY GO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))

@@ -1,0 +1,955 @@
+;; (THIS WAY YOU CAN MAKE SURE THEY GET THEIR ITEMS AND YOU KNOW HOW MUCH MONEY YOU MADE)
+
+	;; A WAY MAY MAKE SURE.
+
+		(and (WAY_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY GET ITEMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (ITEMS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE ITEMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; A PERSON MAY MAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+;; (WHEN MAKING A MASTER LIST COMMA CONSIDER USING A COMPUTERIZED PROGRAM)
+
+	;; A PROGRAM CAN BE COMPUTERIZED.
+
+		(and (program_27 ?x1) (be_27 ?e1 ?x1 ?e2) (computerize_27 ?e2 ?x1))
+
+;; (ANOTHER VOLUNTEER MIGHT BE WILLING TO INPUT THE INFORMATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF SO COMMA MAKE COLUMNS FOR DONOR NAME COMMA ADDRESS COMMA AND PHONE NUMBER COMMA ITEM NUMBER COMMA ITEM DESCRIPTION COMMA AND VALUE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT A NUMBER ON EACH ITEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE SMALL BLANK STICKERS OR LABELS AVAILABLE AT GENERAL STORES AND OFFICE SUPPLY BUSINESSES)
+
+	;; STICKERS CAN BE AVAILABLE AT STORES.
+
+		(and (sticker_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2) (AT_27 ?x2) (STORES_27 ?x2))
+
+	;; STICKERS CAN BE SMALL.
+
+		(and (sticker_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; STICKERS CAN BE BLANK.
+
+		(and (sticker_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLANK_27 ?x2))
+
+	;; STORES CAN BE GENERAL.
+
+		(and (store_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENERAL_27 ?x2))
+
+;; (IF YOU HAVE MORE THAN A FEW ITEMS AND IF ANY OF THEM ARE SIMILAR COMMA IT MAKES KEEPING TRACK MUCH EASIER)
+
+	;; A THING-REFERRED-TO MAY MAKE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A THING OF INDIVIDUAL -S CAN BE SIMILAR.
+
+		(and (thing_27 ?x1) (of_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2) (be_27 ?e1 ?x1 ?x3) (SIMILAR_27 ?x3))
+
+	;; TRACK CAN BE EASIER.
+
+		(and (track_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (PUT THE SAME NUMBER NEXT TO THE ITEM ON YOUR MASTER LIST)
+
+	;; A PERSON MAY HAVE A MASTER LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MASTER_27 ?x1) (LIST_27 ?x1))
+
+;; (PRINT BIDDING SHEETS)
+
+	;; PRINT MAY BID SHEETS.
+
+		(and (PRINT_27 ?x1) (MAY_27 ?x1) (BID_27 ?x1) (SHEETS_27 ?x1))
+
+;; (WRITE THE NAME OF THE ITEM COMMA A SHORT DESCRIPTION OF THE ITEM COMMA HOW MUCH IT IS WORTH COMMA AND WHO DONATED IT)
+
+	;; AN ITEM MAY HAVE A NAME.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; AN ITEM MAY HAVE A DESCRIPTION.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESCRIPTION_27 ?x1))
+
+	;; A DESCRIPTION CAN BE SHORT.
+
+		(and (description_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE WORTH.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORTH_27 ?x2))
+
+;; (-LRB- THIS GIVES THEM A BIT OF ADVERTISING AS A THANK YOU FOR DONATING)
+
+	;; A THING MAY GIVE INDIVIDUAL -S A BIT OF ADVERTISING.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (A_27 ?x1) (BIT_27 ?x1) (of_27 ?x1 ?x2) (ADVERTISING_27 ?x2))
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH ADVERTISING.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ADVERTISING_27 ?x2))
+
+	;; A YOU CAN BE THANK.
+
+		(and (YOU_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THANK_27 ?x2))
+
+;; (INCLUDE A MINIMUM BID -LRB- GENERALLY 20 % OF THE RETAIL VALUE -RRB- AND MINIMUM BID INCREASE INCREMENTS)
+
+	;; A VALUE MAY HAVE A %.
+
+		(and (VALUE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (kbs2_kif_quote_25_27 ?x1))
+
+	;; A VALUE CAN BE RETAIL.
+
+		(and (VALUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RETAIL_27 ?x2))
+
+;; (-LRB- ONE RULE OF THUMB FOR MINIMUM INCREASE  $ 1 FOR ITEMS UP TO $ 50 COMMA $ 2 FOR $ 50 - $ 100 COMMA $ 5 FOR ITEMS OVER $ 100 -RRB-)
+
+	;; THUMB CAN BE FOR INCREASE.
+
+		(and (thumb_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INCREASE_27 ?x2))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort main loop
+Break 1 [16]>
+
+;; (MAKE A LIST OF SUPPLIES YOU THINK YOU LL NEED AND GO SHOPPING)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PERSON MAY LL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1))
+
+;; (-LRB- SEE THINGS YOU LL NEED BELOW)
+
+	;; A PERSON MAY LL A NEED[PERSON??].
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1) (A_27 ?x1) (NEED_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+;; (TRY TO BUY SUPPLIES AT A WAREHOUSE STORE WITH A GENEROUS RETURN POLICY)
+
+	;; A WAREHOUSE STORE CAN BE WITH A RETURN POLICY.
+
+		(and (WAREHOUSE_27 ?x1) (STORE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (RETURN_27 ?x2) (POLICY_27 ?x2))
+
+	;; A RETURN POLICY CAN BE GENEROUS.
+
+		(and (RETURN_27 ?x1) (POLICY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENEROUS_27 ?x2))
+
+;; (IF THE STORE REQUIRES A MEMBERSHIP COMMA KEEP THAT IN MIND WHEN SENDING SOMEONE ON A RUN FOR LAST-MINUTE SUPPLIES)
+
+	;; A STORE MAY REQUIRE A MEMBERSHIP.
+
+		(and (STORE_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (A_27 ?x1) (MEMBERSHIP_27 ?x1))
+
+	;; A THING CAN BE IN MIND.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MIND_27 ?x2))
+
+	;; A RUN CAN BE FOR SUPPLIES.
+
+		(and (RUN_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (supply_27 ?x2))
+
+	;; SUPPLIES CAN BE LAST-MINUTE.
+
+		(and (supply_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LAST-MINUTE_27 ?x2))
+
+;; (AND MAKE SURE THAT PERSON HAS A CELL PHONE AND THAT A KEY PERSON AT THE EVENT HAS THAT NUMBER)
+
+	;; PERSON MAY HAVE A CELL PHONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CELL_27 ?x1) (PHONE_27 ?x1))
+
+	;; A PERSON MAY HAVE A NUMBER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NUMBER_27 ?x1))
+
+	;; A PERSON CAN BE AT AN EVENT.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (EVENT_27 ?x2))
+
+	;; A PERSON CAN BE KEY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEY_27 ?x2))
+
+;; (AFTER THEY HAVE LEFT FOR A SUPPLIES RUN COMMA YOU LL SURELY FIND SOMETHING ELSE THAT NEEDS TO BE PICKED UP)
+
+	;; A PERSON MAY LL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1))
+
+;; (BUY PLENTY OF PENS AND MARKERS COMMA SOME WHITEOUT TAPE COMMA EXTRA BID SHEETS COMMA AND AN EXTRA ROLL OF TAPE TO TAPE YOUR BID SHEETS DOWN)
+
+	;; A TAPE CAN BE WHITEOUT.
+
+		(and (TAPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WHITEOUT_27 ?x2))
+
+	;; BID SHEETS CAN BE EXTRA.
+
+		(and (BID_27 ?x1) (SHEETS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A ROLL CAN BE CONSTITUTED_OF_OR_FILLED_WITH TAPE.
+
+		(and (ROLL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TAPE_27 ?x2))
+
+	;; A ROLL CAN BE EXTRA.
+
+		(and (ROLL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY HAVE BID SHEETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BID_27 ?x1) (SHEETS_27 ?x1))
+
+;; (YOU DO N T WANT PEOPLE WAITING TO WRITE DOWN HOW MUCH MONEY THEY WILL GIVE YOU)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY GIVE A PERSON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (RECRUIT VOLUNTEERS)
+
+	;; A RECRUIT[PERSON??] MAY VOLUNTEER.
+
+		(and (RECRUIT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (VOLUNTEER_27 ?x1))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (A CONTACT LIST COMMA ESPECIALLY AN EMAIL LIST COMMA IS HANDY FOR THIS)
+
+	;; A CONTACT LIST CAN BE HANDY FOR A THING.
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2) (for_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A LIST CAN BE EMAIL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))

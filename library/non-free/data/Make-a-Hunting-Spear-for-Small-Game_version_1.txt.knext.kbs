@@ -1,0 +1,119 @@
+;; (TRY TO MAKE THE TWO ENDS OF THE BRANCH AS EVEN AS POSSIBLE)
+
+	;; A BRANCH MAY HAVE ENDS.
+
+		(and (BRANCH_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ENDS_27 ?x1))
+
+;; (3 PEEL THE BARK OFF OF THE BRANCH WITH A HATCHET)
+
+	;; A BRANCH CAN BE WITH A HATCHET.
+
+		(and (BRANCH_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HATCHET_27 ?x2))
+
+;; (THIS IS OPTIONAL)
+
+	;; A THING CAN BE OPTIONAL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTIONAL_27 ?x2))
+
+;; (4 USE THE KNIFE TO CHOP A CYLINDER ABOUT 1 INCH IN DIAMETER AND ABOUT FOUR TO FIVE FEET LONG)
+
+	;; 
+
+	;; ((:I NIL IN.P (:F K DIAMETER.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (IN_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (DIAMETER_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (5 MAKE SURE YOUR BRANCH IS WELL BALANCED OR YOU WILL NOT BE ABLE TO HUNT WITH IT)
+
+	;; SOME NUMBER_OR_PORTION MAY MAKE SURE.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+	;; A BRANCH MAY BE BALANCE -ED.
+
+		(and (BRANCH_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BALANCE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE A BRANCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BRANCH_27 ?x1))
+
+	;; A PERSON CAN BE ABLE TO HUNT.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABLE_27 ?x2) (to_27 ?e1 ?x3) (HUNT_27 ?x3))
+
+	;; HUNT CAN BE WITH A THING-REFERRED-TO.
+
+		(and (HUNT_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (6 TAKE THE KNIFE AND MAKE A VERY SHARP POINT AT ONE END)
+
+	;; SOME NUMBER_OR_PORTION MAY TAKE A KNIFE.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (KNIFE_27 ?x1))
+
+	;; A POINT CAN BE AT AN END.
+
+		(and (POINT_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (END_27 ?x2))
+
+	;; A POINT CAN BE SHARP.
+
+		(and (POINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHARP_27 ?x2))
+
+;; (ALTERNATIVELY COMMA YOU COULD CUT A NOTCH AND ATTACH A FLAT TRIANGULAR HEAD COMMA BUT THIS MAY BE HARD)
+
+	;; A PERSON MAY CUT A NOTCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CUT_27 ?x1) (A_27 ?x1) (NOTCH_27 ?x1))
+
+	;; A TRIANGULAR HEAD CAN BE FLAT.
+
+		(and (TRIANGULAR_27 ?x1) (HEAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+	;; A THING CAN BE HARD.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+;; (IF YOU MESS UP YOU CAN JUST CARVE A POINT OVER IT)
+
+	;; A PERSON MAY CARVE A POINT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CARVE_27 ?x1) (A_27 ?x1) (POINT_27 ?x1))
+
+	;; A PERSON MAY MES_UP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MES_5FUP_27 ?x1))
+
+	;; A POINT CAN BE OVER A THING-REFERRED-TO.
+
+		(and (POINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (YOU MAY ALSO JUST WANT TO TIE YOUR KNIFE TO THE TIP COMMA BUT CONSIDER YOU RISK LOSING YOUR KNIFE AND THIS WILL HAVE MAJOR EFFECTS ON THE BALANCE)
+
+	;; A PERSON MAY RISK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RISK_27 ?x1))
+
+	;; A PERSON MAY HAVE A KNIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KNIFE_27 ?x1))
+
+	;; A THING MAY HAVE EFFECTS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EFFECTS_27 ?x1))
+
+	;; EFFECTS CAN BE ON A BALANCE.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (BALANCE_27 ?x2))
+
+;; (7 ADD ANY OTHER ITEMS LIKE A HANDLE OR FEATHERS)
+
+	;; SOME NUMBER_OR_PORTION MAY ADD ITEMS.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (ITEMS_27 ?x1))

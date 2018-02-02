@@ -1,0 +1,243 @@
+;; (ADDRESSRE-ROLL A CHARACTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHOOSE GARMENT AND BOW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USING A BOW ALLOWS YOU TO KILL MONSTERS FASTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PICK UP EVERY DROP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LEVEL UP TO 5 COMMA KEEPING MASTERIES AS HIGH AS POSSIBLE)
+
+	;; 
+
+	;; ((:I (:F K (:F PLUR KEEPING.N)) (:F MASTERY.V (:P HIGH.A NIL))))
+
+		(and (I_27 ?x3) (F_27 ?x1) (K_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (KEEPING_2EN_27 ?x2) (F_27 ?x3) (MASTERY_2EV_27 ?x3) (P_27 ?x4) (HIGH_2EA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET YOUR FIRE IMBUE -LRB- FIRST LEVEL 5 SKILL IN FIRE TREE -RRB- AND YOUR ANTI-DEVIL BOW SKILL)
+
+	;; A PERSON MAY HAVE AN IMBUE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IMBUE_27 ?x1))
+
+	;; A FIRE[PERSON??] MAY HAVE AN IMBUE.
+
+		(and (fire_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IMBUE_27 ?x1))
+
+	;; SOME_NUMBER_OF SKILL CAN BE IN TREE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SKILL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (TREE_27 ?x2))
+
+	;; A FIRE[PERSON??] MAY HAVE A TREE.
+
+		(and (fire_27 ?x1) (PERSON_27 ?x2))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (tree_27 ?x1))
+
+	;; A PERSON MAY HAVE A SKILL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SKILL_27 ?x1))
+
+	;; AN ANTI-DEVIL_BOW[PERSON??] MAY HAVE A SKILL.
+
+		(and (ANTI-DEVIL_5FBOW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SKILL_27 ?x1))
+
+;; (CONSTANTLY USE FIRE IMBUE)
+
+	;; A FIRE[PERSON??] CAN BE IMBUE.
+
+		(and (fire_27 ?x1) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (IMBUE_27 ?x1))
+
+;; (GO AHEAD AND GET TO LEVEL 16)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS SESSION WILL TAKE A LONG TIME COMMA BUT WILL GIVE YOU AROUND 100K COMMA DEPENDING ON THE MONSTERS)
+
+	;; A SESSION MAY TAKE A TIME.
+
+		(and (SESSION_27 ?x1) (MAY_27 ?x1) (take_27 ?e1 ?x1 ?x2) (A_27 ?x2) (time_27 ?x2))
+
+	;; A TIME CAN BE LONG.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (RAISE MASTERIES TO LEVEL 7)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LEVEL ANTI-DEVIL AND FIRE IMBUE LEVELS COMMA ADD TWO ARROW COMBO)
+
+	;; A LEVEL_ANTI-DEVIL_AND_FIRE[PERSON??] MAY IMBUE LEVELS.
+
+		(and (LEVEL_5FANTI-DEVIL_5FAND_5FFIRE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (IMBUE_27 ?x1) (LEVELS_27 ?x1))
+
+;; (GO TO BANDIT ARCHERS IN THE BANDIT STRONGHOLD)
+
+	;; A BANDIT_ARCHERS[PERSON??] CAN BE IN A STRONGHOLD.
+
+		(and (BANDIT_5FARCHERS_27 ?x1) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1) (in_27 ?x1) (A_27 ?x1) (STRONGHOLD_27 ?x1))
+
+	;; A BANDIT[PERSON??] MAY HAVE A STRONGHOLD.
+
+		(and (BANDIT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STRONGHOLD_27 ?x1))
+
+;; (PICK UP ALL THEIR DROPS COMMA ESPECIALLY ALCHEMY MATERIALS AND ARMORS)
+
+	;; INDIVIDUAL -S MAY HAVE DROPS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DROPS_27 ?x1))
+
+	;; MATERIALS CAN BE ALCHEMY.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALCHEMY_27 ?x2))
+
+;; (MERCHANT ELEMENTS COMMA CHECK AROUND OTHER STALLS AND SELL AT A SIMILAR PRICE)
+
+	;; MERCHANT ELEMENTS MAY CHECK AROUND STALLS.
+
+		(and (MERCHANT_27 ?x1) (ELEMENTS_27 ?x1) (MAY_27 ?x1) (CHECK_27 ?x1) (AROUND_27 ?x1) (STALLS_27 ?x1))
+
+;; (MERCHANT WEAPON EXILIRS)
+
+	;; A MERCHANT_WEAPON[PERSON??] MAY EXILIR.
+
+		(and (MERCHANT_5FWEAPON_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (EXILIR_27 ?x1))
+
+;; (BUY THEM AROUND 150K AND RESELL THEM AT AROUND 185K)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BUY ACCESSORY ELIXIRS AROUND 30K AND SELL AT 50K)
+
+	;; AN ACCESSORY_ELIXIRS[PERSON??] CAN BE AROUND 30K.
+
+		(and (ACCESSORY_5FELIXIRS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (AROUND_27 ?x1) (kbs2_kif_quote_330K_27 ?x1))
+
+;; (UPGRADE ARMOR AND WEAPONS TO 3 COMMA 5 OR 7 AND SELL THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [20]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONLY UPGRADE 6TH COMMA 7TH AND 8TH DEGREE ARMORS AND WEAPONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

@@ -1,0 +1,466 @@
+;; (POTSRESEARCH FIRST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FIND OUT WHICH BUTTERFLIES ARE COMMON IN YOUR AREA)
+
+	;; BUTTERFLIES CAN BE COMMON IN AN AREA.
+
+		(and (butterfly_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2) (in_27 ?e1 ?x3) (area_27 ?x3))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (OBSERVATION OVER A FEW DAYS AND THE USE OF A BUTTERFLY FIELD GUIDE WILL HELP YOU IN THIS PURSUIT)
+
+	;; OBSERVATION MAY HELP A PERSON.
+
+		(and (OBSERVATION_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; OBSERVATION CAN BE OVER DAYS.
+
+		(and (observation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (DAYS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (NOTE FROM YOUR RESEARCH WHAT THE CATERPILLAR -LRB- LARVAE -RRB- OF THE LOCAL BUTTERFLIES EAT)
+
+	;; A PERSON MAY HAVE RESEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESEARCH_27 ?x1))
+
+	;; A CATERPILLAR OF BUTTERFLIES MAY EAT.
+
+		(and (CATERPILLAR_27 ?x1) (of_27 ?x1 ?x2) (BUTTERFLIES_27 ?x2) (MAY_27 ?x2) (EAT_27 ?x2))
+
+	;; BUTTERFLIES MAY HAVE A CATERPILLAR.
+
+		(and (butterfly_27 ?x1) (HAVE_27 ?x1) (A_27 ?x2) (CATERPILLAR_27 ?x2))
+
+;; (TWO EXCELLENT EXAMPLES ARE  MILKWEED MILKWEED - THIS ATTRACTS THE MONARCH CATERPILLAR)
+
+	;; EXAMPLES CAN BE EXCELLENT.
+
+		(and (example_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; A THING MAY ATTRACT A CATERPILLAR.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (A_27 ?x1) (CATERPILLAR_27 ?x1))
+
+	;; A MONARCH[PERSON??] MAY HAVE A CATERPILLAR.
+
+		(and (MONARCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CATERPILLAR_27 ?x1))
+
+;; (PARSLEY PARSLEY - THIS ATTRACTS THE BLACK SWALLOWTAIL CATERPILLAR)
+
+	;; A THING MAY ATTRACT A CATERPILLAR.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (A_27 ?x1) (CATERPILLAR_27 ?x1))
+
+	;; A BLACK_SWALLOWTAIL[PERSON??] MAY HAVE A CATERPILLAR.
+
+		(and (BLACK_5FSWALLOWTAIL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CATERPILLAR_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (NECTAR PLANTS SERVE AS THE FOOD SOURCE FOR THE BUTTERFLY)
+
+	;; PLANTS MAY SERVE AS A FOOD SOURCE.
+
+		(and (plant_27 ?x1) (MAY_27 ?x1) (SERVE_27 ?x1) (AS_27 ?x1) (A_27 ?x1) (FOOD_27 ?x1) (SOURCE_27 ?x1))
+
+	;; A NECTAR[PERSON??] MAY HAVE PLANTS.
+
+		(and (NECTAR_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (plant_27 ?x1))
+
+	;; A FOOD SOURCE CAN BE FOR A BUTTERFLY.
+
+		(and (FOOD_27 ?x1) (SOURCE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BUTTERFLY_27 ?x2))
+
+;; (THERE IS A VARIETY OF POSSIBLE PLANTS AND SOME OF THEM ARE SHOWN HERE)
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH PLANTS.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PLANTS_27 ?x2))
+
+	;; SOME_NUMBER_OF THING OF INDIVIDUAL -S MAY BE SHOW -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2) (MAY_27 ?x2) (be_27 ?e1 ?x1 ?x3) (SHOW_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+;; (EXCELLENT CHOICES INCLUDE  BUTTERFLY BUSH A BUTTERFLY BUSH - THIS IS SUITABLE FOR A SWALLOWTAIL)
+
+	;; CHOICES MAY INCLUDE A BUTTERFLY_BUSH_A_BUTTERFLY_BUSH[PERSON??].
+
+		(and (CHOICES_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (BUTTERFLY_5FBUSH_5FA_5FBUTTERFLY_5FBUSH_27 ?x1) (PERSON_27 ?x1))
+
+	;; CHOICES CAN BE EXCELLENT.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; A THING CAN BE SUITABLE FOR A SWALLOWTAIL[PERSON??].
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUITABLE_27 ?x2) (for_27 ?e1 ?x3) (A_27 ?x3) (SWALLOWTAIL_27 ?x3) (kbs2_kif_quote_5B_27 ?x3) (PERSON_27 ?x3))
+
+;; (LARGE PLANT  4 FEET -LRB- 1.2 M -RRB- TALL COMMA 6 FEET -LRB- 1.8 M -RRB- WIDE COMMA MAKE SURE IT IS HARDY IN YOUR AREA)
+
+	;; A PLANT CAN BE LARGE.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; SOME_NUMBER_OF FEET MAY MAKE SURE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FEET_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+	;; SOME_NUMBER_OF FEET CAN BE TALL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE HARDY IN AN AREA.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARDY_27 ?x2) (in_27 ?e1 ?x3) (area_27 ?x3))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (SOME VARIETIES ARE CONSIDERED INVASIVE COMMA SO MAKE SURE COMMA IF YOU PURCHASE ONE OF THESE COMMA THAT YOU KEEP IT DEAD-HEADED TO
+ PREVENT SEED PRODUCTION)
+
+	;; SOME_NUMBER_OF VARIETIES MAY BE CONSIDER -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (VARIETIES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSIDER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY PURCHASE SOME NUMBER_OR_PORTION OF A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2))
+
+;; (SWAMP MILKWEED SWAMP MILKWEED - SUITABLE FOR THE SNOWBERRY CLEARWING)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:Q DET SNOWBERRY_CLEARWING.NAME)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (SNOWBERRY_5FCLEARWING_2ENAME_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS PLANT GROWSFEET -LRB- 0.9 M -RRB- TALL AND 18 INCHES -LRB- 0.5 M -RRB- WIDE)
+
+	;; A PLANT GROWSFEET CAN BE TALL.
+
+		(and (PLANT_27 ?x1) (GROWSFEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (IT ALSO SERVES AS THE HOST PLANT FOR MONARCH CATERPILLARS)
+
+	;; A THING-REFERRED-TO MAY SERVE AS A HOST PLANT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SERVE_27 ?x1) (AS_27 ?x1) (A_27 ?x1) (HOST_27 ?x1) (PLANT_27 ?x1))
+
+	;; A HOST PLANT CAN BE FOR CATERPILLARS.
+
+		(and (HOST_27 ?x1) (PLANT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CATERPILLARS_27 ?x2))
+
+	;; A MONARCH[PERSON??] MAY HAVE CATERPILLARS.
+
+		(and (MONARCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (CATERPILLARS_27 ?x1))
+
+;; (JOE PYE WEED JOE PYE WEED - THIS IS SUITABLE FOR THE SWALLOWTAIL)
+
+	;; A THING CAN BE SUITABLE FOR A SWALLOWTAIL[PERSON??].
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUITABLE_27 ?x2) (for_27 ?e1 ?x3) (A_27 ?x3) (SWALLOWTAIL_27 ?x3) (kbs2_kif_quote_5B_27 ?x3) (PERSON_27 ?x3))
+
+;; (IT GROWS TO BE A VERY LARGE PLANT - FEET -LRB- 2.4 M -RRB- TALL AND 4 FEET -LRB- 1.2 M -RRB- WIDE)
+
+	;; A PLANT CAN BE LARGE.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; FEET CAN BE WIDE.
+
+		(and (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WIDE_27 ?x2))
+
+	;; FEET CAN BE TALL.
+
+		(and (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (IT IS A PERENNIAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ASTER ASTER - ASTERS GROW TOFEET -LRB- 0.9 M -RRB- TALL AND 2 FEET -LRB- 0.6 M -RRB- WIDE)
+
+	;; TOFEET CAN BE WIDE.
+
+		(and (TOFEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WIDE_27 ?x2))
+
+	;; TOFEET CAN BE TALL.
+
+		(and (TOFEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (IT IS A PERENNIAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BUTTERFLIES ESPECIALLY LOVE NATIVE VARIETIES)
+
+	;; BUTTERFLIES MAY LOVE VARIETIES.
+
+		(and (butterfly_27 ?x1) (MAY_27 ?x1) (LOVE_27 ?x1) (VARIETIES_27 ?x1))
+
+	;; VARIETIES CAN BE NATIVE.
+
+		(and (variety_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATIVE_27 ?x2))
+
+;; (BEE BALM BEE BALM - THIS PLANT GROWSFEET -LRB- 0.6 M -RRB- TALL AND 18 INCHES -LRB- 0.5 M -RRB- WIDE)
+
+	;; A PLANT GROWSFEET CAN BE TALL.
+
+		(and (PLANT_27 ?x1) (GROWSFEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (IT IS A PERENNIAL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ZINNIA ZINNIA - THIS PLANT IS ATTRACTIVE TO A RANGE OF BUTTERFLIES AND THEY ESPECIALLY LIKE THE TALL VARIETIES)
+
+	;; A PLANT CAN BE ATTRACTIVE TO A RANGE OF BUTTERFLIES.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (RANGE_27 ?x3) (of_27 ?x3 ?x4) (butterfly_27 ?x4))
+
+	;; A RANGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH BUTTERFLIES.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BUTTERFLIES_27 ?x2))
+
+	;; INDIVIDUAL -S MAY LIKE VARIETIES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (VARIETIES_27 ?x1))
+
+	;; VARIETIES CAN BE TALL.
+
+		(and (variety_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TALL_27 ?x2))
+
+;; (THE PLANT GENERALLY GROWSFEET -LRB- 1.2 M -RRB- HIGH AND 1 FOOT -LRB- 0.3 M -RRB- WIDE)
+
+	;; A PLANT CAN BE HIGH.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; A PLANT CAN BE GROWSFEET.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROWSFEET_27 ?x2))
+
+;; (IT IS AN ANNUAL AND IS EASY TO START FROM SEED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PENTAS PENTAS - SUITABLE FOR SWALLOWTAILS)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:Q DET SWALLOWTAILS.NAME)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (SWALLOWTAILS_2ENAME_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS PLANT GROWSFEET -LRB- 0.6 M -RRB- HIGHT AND 3 FEET -LRB- 0.9 M -RRB- WIDE)
+
+	;; A PLANT GROWSFEET CAN BE HIGHT.
+
+		(and (PLANT_27 ?x1) (GROWSFEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHT_27 ?x2))
+
+;; (IT IS AN ANNUAL IN COLD CLIMATES)
+
+	;; CLIMATES CAN BE COLD.
+
+		(and (climate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (HELIOTROPE HELIOTROPE - THIS PLANT ATTRACTS A RANGE OF BUTTERFLIES)
+
+	;; A PLANT MAY ATTRACT A RANGE OF BUTTERFLIES.
+
+		(and (PLANT_27 ?x1) (MAY_27 ?x1) (ATTRACT_27 ?x1) (A_27 ?x1) (RANGE_27 ?x1) (of_27 ?x1 ?x2) (butterfly_27 ?x2))
+
+	;; A RANGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH BUTTERFLIES.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BUTTERFLIES_27 ?x2))
+
+;; (IT GROWS TO A HEIGHT OFFEET -LRB- 0.6 M -RRB- AND A WIDTH OF 1 FOOT -LRB- 0.3 M -RRB- COMMA ALTHOUGH IT IS POSSIBLE TO CONTAIN IT IN A
+ POT)
+
+	;; A THING-REFERRED-TO MAY GROW TO A HEIGHT OFFEET.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GROW_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (HEIGHT_27 ?x2) (OFFEET_27 ?x2))
+
+	;; A WIDTH CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF FOOT.
+
+		(and (WIDTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (FOOT_27 ?x2))
+
+;; (IT WILL REMAIN A PERENNIAL IN TEMPERATE ZONES BUT IS ONLY AN ANNUAL IN COLD CLIMATES)
+
+	;; ZONES CAN BE TEMPERATE.
+
+		(and (zone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TEMPERATE_27 ?x2))
+
+	;; CLIMATES CAN BE COLD.
+
+		(and (climate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (PLAN GARDEN ON PAPER)
+
+	;; PLAN GARDEN CAN BE ON PAPER.
+
+		(and (PLAN_27 ?x1) (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (PAPER_27 ?x2))
+
+;; (DRAW UP A PLAN COMMA OR DECIDE WHERE TO ADD THESE SUGGESTIONS TO A CURRENT GARDEN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (KEEP IN MIND THE FULL GROWN SIZE OF PLANTS DURING THIS PLANNING STAGE)
+
+	;; A SIZE CAN BE FULL.
+
+		(and (SIZE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A SIZE CAN BE GROWN.
+
+		(and (SIZE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROWN_27 ?x2))
+
+;; (ALSO CONSIDER THEIR NEEDS FOR LIGHT AND WATER)
+
+	;; INDIVIDUAL -S MAY HAVE NEEDS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+;; (PURCHASE PLANTS OR SEEDS FROM GARDEN CENTER)
+
+	;; PURCHASE PLANTS CAN BE FROM GARDEN CENTER.
+
+		(and (PURCHASE_27 ?x1) (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (GARDEN_27 ?x2) (CENTER_27 ?x2))
+
+;; (YOU CAN ALSO GET THESE PLANTS AND SEEDS ONLINE)
+
+	;; A PERSON MAY GET PLANTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (PLANTS_27 ?x1))
+
+;; (CHOOSE ROBUST AND HEALTHY PLANTS TO GIVE THEM A GOOD START)
+
+	;; PLANTS CAN BE ROBUST.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROBUST_27 ?x2))
+
+	;; A START CAN BE GOOD.
+
+		(and (START_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (PLANT YOUR BUTTERFLY GARDEN)
+
+	;; A PERSON MAY HAVE A BUTTERFLY GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUTTERFLY_27 ?x1) (GARDEN_27 ?x1))
+
+;; (MAKE SURE TO KEEP NEW PLANTS AND SEEDS WATERED UNTIL PLANTS ARE WELL-ESTABLISHED OR SEEDS GERMINATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (KEEP THE WEEDS AT BAY COMMA TO GIVE THE PLANTS A GOOD CHANCE)
+
+	;; A CHANCE CAN BE GOOD.
+
+		(and (CHANCE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))

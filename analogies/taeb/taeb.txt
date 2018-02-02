@@ -1,0 +1,1056 @@
+skip to main | skip to sidebar
+
+The Tactical Amulet Extraction Bot
+
+Saturday, August 22, 2009
+
+Planar - a TAEB AI
+
+TAEB::AI::Planar is a NetHack AI, written as a plugin for TAEB. (TAEB the
+framework does not contain AI-specific logic itself; instead, it aims to be a
+general platform that can be used both by AIs and by other programs that want
+to interact with NetHack; for instance, it would be plausible to use TAEB to
+implement an Interhack-like program.) The first TAEB AI, historically, is the
+one that is now called Behavioral (and which was originally just part of TAEB
+itself before it was split out); most TAEBs that you will see on
+nethack.alt.org, for instance, run that AI. Planar is a newer attempt to create
+an AI, by me, Alex Smith (ais523) and Stefan O’Rear (sorear); at present, it’s
+used by the bots TAEB523 and sortaeb523 (which run from much the same codebase,
+but are generally configured differently). Planar’s best score so far is 34179,
+in the large room at the end of the second level of Sokoban, which was scored
+locally on my computer; it died walking over a cockatrice corpse when blind and
+gloveless, the dangers of which it hadn’t been told about.
+
+Planar treats NetHack as a pathfinding exercise; just as a computer would use a
+pathfinding algorithm to determine the shortest route from one room to another,
+Planar uses pathfinding algorithms to determine the best ‘route’ from its
+current situation to its eventual goal. The AI is based around resources, which
+are things that the AI can spend, can use, or has to be careful not to run out
+of (for instance, gold or hitpoints), threats, which are things that can be
+mitigated or fixed, but could cause plans to be more dangerous or which prevent
+them working correctly if not fixed (for instance, monsters or a trap on the
+current square), and plans, which are specific goals that it aims for, along
+with an idea of how to accomplish them.
+
+Here is how Planar goes about deciding what to do on any given turn. (Note that
+although Planar remembers what it was thinking on previous turns, it
+recalculates most things every turn to allow for new information, rather than
+blindly continuing with its previous plan.) Each stage of the calculation is
+accompanied by a picture showing an actual situation from a game of NetHack
+that Planar has played (in fact, they’re all from the same game), and the text
+explains how Planar went about dealing with it.
+
+Threats
+
+Threats
+
+The ‘start’ of Planar’s main loop (that is, when it starts dealing with the
+current turn, rather than the previous turn), is checking for threats that
+might make plans more risky. In the picture above, TAEB (the @ sign which
+appears inverse-video in this screenshot because it has a blinking cursor on
+it) has decided that it wants to eat the corpse (the % sign) on the ground,
+probably because it’s relatively hungry and wants to get to the corpse before
+it rots. Although in theory it could walk directly to the corpse and eat it,
+there are two potential problems; to the west is a nymph (a lowercase n) who
+would steal its items if given a chance, and to the east is a golem (an
+apostrophe) who, being a hostile monster, wants to beat the poor TAEB up.
+(Incidentally, Planar always asks for more information, if it’s available and
+doesn’t cost a turn, in order to analyse the situation as well as possible; for
+instance, if the material the golem was made of (relevant because it determines
+how dangerous it is) were undeducible from its colour on-screen, it would ask
+the framework to request NetHack to give more details, in this case by sending
+a farlook command to examine it remotely in detail.) The two monsters here are
+threats; the nymph is a threat to the TAEB’s items (which will be a source of
+resources such as nutrition, damage-potential, and armour), whereas the golem
+will be a threat to the TAEB’s hitpoints (a resource in themselves). Note that
+all threats, as well as everything else in Planar, are quantified so that it
+knows their exact value. (There are two ways to represent the value of things
+inside Planar; one is as a list of amounts of resources, the other is as a
+number that attempts to calculate the total value of all the resources in
+question by using exchange rates. These alter according to the amounts of the
+resources in question; for instance, normally one hitpoint is considerably more
+valuable than one unit of nutrition, but that rate would be rather different if
+the TAEB were healthy but fainting from hunger.) In this case, it would
+estimate the amount of theft the nymph would likely carry out (and as any
+NetHack player knows, that’s generally more than you can easily replace); and
+it would calculate the amount of damage the golem could deal per turn in mêlée
+combat (taking the worst-case scenario; Planar is just as scared of the Random
+Number Generator as any human would be).
+
+The threat-check will quickly try to work out how quickly, on average, the
+monsters could get to each square on the map, and assign a threat function to
+those squares that indicates how damaging the threats could be if we tried to
+route to those squares at a particular moment. This is shown in the tactical
+map above; colder colours represent safer squares, with warmer colours being
+squares that are more threatening. So, for instance, going to the west past the
+nymph without dealing with it first is likely to be suicidal, thus the whole
+area there is filled with magenta (the worst possible colour); likewise, going
+to the east past the golem without dealing with it first is also a bad idea.
+The amount of threat that actually matters depends on when we finish business
+on the square in question; the map above shows the amount of threat (together
+with the amount of tactical cost, which is insignificant on that diagram) on
+each square at the first moment we can reach it, but carrying through
+time-consuming plans on those squares would give the monsters more time to
+catch up. As a result, the nearest unexplored corridor is a safe blue, as the
+TAEB could outrun the monsters along it (golems are rather slow, and the TAEB
+has a head-start over the equally speedy nymph); but the second-nearest
+unexplored corridor ends in a red square, because although the TAEB could get
+away from the golem eventually, the golem would get a few hits in as it walked
+past. So, if it was going exploring, it would use the safer first path.
+
+However, just now the TAEB isn’t exploring; it’s hungry. The corpse shows up as
+brown on the above map, but that map (which was generated from the tactical
+planning stage) is just taking into account the length of time the corpse takes
+to walk to; eating the corpse will also take some time, and the threat function
+will give a higher threat value for a plan involving eating the corpse once the
+time taken is known (which will be calculated in the strategic planning stage).
+
+There’s one other important task carried out by threat checking; for each
+square on the map (to be precise, the current level; as routing for other
+levels is cached, any threat calculation for them would be ignored anyway), it
+tags the square with information on how to mitigate the threat or threats that
+can get there. So for instance, there will be a plan to Mitigate the golem
+(i.e. kill it, eliminate it, or drive it away somehow) in order to make it
+safer to eat the corpse. (After it’s killed the golem, it’ll likely see that
+the nymph is also problematic, and it will try to get rid of her too, probably
+by throwing sharp pointy objects at her. This is another outcome of the threat
+check; it’s rather dangerous to attack a nymph in mêlée if you can help it, and
+the squares further away from her would show a much lower risk as a result,
+meaning that projectiles would be favoured over melee weapons.)
+
+The bottom of the screen shows the decisions that the other stages of the loop
+have made; strategic planning has decided that it’s still worth eating the
+corpse, that getting rid of the golem first is a good idea, and that mêlée is
+the best way to do it; and tactical planning has decided that the best way to
+route near the golem is to walk east of it until the square immediately to its
+west. The chain of plans involved can be seen on the penultimate line of the
+screen; the final (l) on the screen is added by the framework, which knows that
+pressing l is the correct way to walk to the east (whereas the AI would just
+have returned a “walk east” action to the framework).
+
+Tactical planning
+
+Tactics
+
+Once all the threats have been placed on the map, the next step is to work out
+tactics for the turn. Again, this is done by working out how expensive (in
+terms of resources) it is to move to any given square on the map; but this
+time, it’s our own routing we worry about, rather than that of the monsters.
+
+The diagram above shows our TAEB just after it’s killed another monster, again
+wanting to eat it. This time, the monsters around are less threatening; there’s
+just an iguana (the nearby colon) to worry about. Although this particular turn
+came to the same conclusion as the last one analysed (kill the monster so you
+can eat the corpse in peace), tactical planning does not care about what the
+TAEB eventually ends up doing, but rather, how best to get to each square on
+the map.
+
+This is done in terms of tactical plans; a single tactical plan contains a
+suggestion of how to get from one square to another square, together with
+information on how risky it would be (taken from the threat map and from
+information on the cost of the action required). Plans in Planar are very
+specific; as opposed to Behavioral’s behaviours, which are few in number and
+general (such as FixStatus and Defend), a plan in Planar contains information
+about exactly what is to be done (such as ‘move from (12,10) to (13,10) by
+opening the door on (13,10) then walking there’, which would have a cost in
+time based on how much time it would likely take to force the door open). It
+would be entirely common for multiple plans to be considered; for instance, in
+that example with the door, Planar would also be considering kicking that door
+down, which could be faster if, say, it were approaching the door from the
+diagonal (as a broken doorway can be entered diagonally, but one with a door in
+can’t be).
+
+Tactical planning is a form of routing, in physical NetHack space; however,
+unlike most other AIs, a large amount of AI logic is done during tactical
+planning. For instance, Behavioral has a behaviour to open doors so that they
+don’t block routing later; in Planar, opening doors is only done if they’re in
+the way. Likewise, Planar will push boulders (trying not to block corridors in
+the process) and even tunnel through walls if that’s necessary to go where it
+wants to go, or if that’s the fastest way; the tactical planning stage will
+have a plan all ready for any strategic plan that needs to move to the square,
+for whatever reason. The actual routing is done via Dijkstra’s algorithm, in
+order to gain routing information for the whole map at once.
+
+The diagram above shows routing costs, as determined by tactical planning, to
+the whole level; as opposed to the previous example, TAEB523 now has a pickaxe,
+and thus can route into the walls if it wants to. Note that many of the nearby
+walls are considerably more expensive to route to than the corridors and rooms
+near them; but the distant walls have comparable costs to the nearby rooms. The
+reason for this is that digging nearby takes a sufficiently long time that the
+iguana will catch up to the TAEB and attack; but digging distantly would happen
+in the future, after the iguana had already been outrun.
+
+At the end of the tactical planning stage, therefore, it’s possible to quickly
+and efficiently answer any query from the strategic planning stage about how to
+get somewhere, and how risky doing so would be. (Incidentally, in Planar,
+‘risky’ is a technical term meaning ‘difficult, expensive, or both’.) As a
+result, huge numbers of strategic scenarios can be tried, to determine which
+one works best.
+
+Strategic planning
+
+Strategy
+
+Strategic planning is the heart of Planar; threat checks and tactical planning
+are simply calculating information so that strategic planning can refer to it
+quickly, whereas strategic planning decides what, overall, the bot is actually
+going to do.
+
+To start with, there are several standard plans that work on improving Planar’s
+resource situation; for instance, eating when hungry, collecting ammo, and
+picking up useful items. (An item is useful enough to be picked up if its value
+to us, say as a source of food or as a backup armour in case the one we’re
+already carrying around turns out to be cursed, is higher than the drawbacks,
+such as its weight.) This gradual improvement of the character is known as
+resource conversion; if the TAEB can manage a net gain in resources, it does
+so, ignoring the main plan for a while (and going for the largest gains first).
+Therefore, there’s no need for every major plan to take the details of things
+like feeding and shopping into account; it’ll happen automatically without a
+specific request to suppress it. If none of the resource-conversion plans can
+produce an improvement, though, the main plan takes over; this is a
+user-configurable overall goal that the bot is trying to accomplish. In the
+example above, for instance, the main plan is SlowDescent, which explores the
+dungeon from the top down, thoroughly exploring each level before going onto
+the next one.
+
+In order to determine how to accomplish the goal in question, strategic
+planning basically does routing in plan-space, again using Dijkstra’s
+algorithm. In this case, the steps on the route are plans that make other plans
+possible. So, for instance, the chain of plans shown in the picture above are
+SlowDescent | by exploring [this level] | by exploring [a specific square] – by
+walking towards it; the final plan there is a tactical plan, the rest are
+strategic. In order to come to this decision, Planar will start by asking
+SlowDescent if it can be accomplished directly; the answer in this case is
+always ‘no’, because there is no associated action (it’s a “metaplan”, which is
+defined in terms of plans rather than in terms of actions). As a result, it’ll
+look for plans that make up parts of the slow descent, or make it easier to
+accomplish; in this case, the plans in question will be exploring level 1,
+exploring level 2, exploring level 3, and exploring level 4, in that preference
+order. (There’s no problem with more than one plan having the same preference;
+in that case, Planar would simply take the cheapest, leading to a “nearest
+first” exploration of the dungeon. However, SlowDescent is specifically trying
+to explore from the top downwards.)
+
+Each of the level exploration plans are likewise metaplans, which suggest
+exploring particular locations on the level in question. Although Planar would
+like to explore on the first or second floors, if possible, those floors were
+apparently explored out at the time; so as the next-best option, it would
+consider the exploration spots on the third floor. (The picture above is
+showing the cache of exploration spots on the level, cached for speed; warm
+colours show squares in need of exploration, cool colours showing squares that
+have already been explored.) This time, all the exploration spots have the same
+preference level; so the least risky exploration is taken, which in this case,
+with no visible threats, is the nearest. (The tactical planning stage will
+already have the risk of reaching each of the exploration spots, as well as
+everywhere else in the dungeon, ready-calculated so that it can be given very
+quickly when requested; so despite the large number of exploration spots shown,
+strategic planning will not take much time.)
+
+Before enacting the plan in question, various checks are done. Plans are
+skipped if they require more of any resource than is available to spend; so,
+for instance, exploring one square is normally fine, but if that square is next
+to a demon prince and we’re low on hitpoints, it will be considered far too
+risky in terms of hitpoints to attempt. (A different plan would be favoured,
+therefore; probably running away to carry out business in another part of the
+dungeon.) Likewise, something can be too risky in terms of anything else. The
+alternative plans suggested by threat check will also be considered, to see if
+eliminating the threat first and then carrying out the plan will be a better
+idea than just carrying out the plan directly. A plan can be suppressed by the
+previous turn’s plan, to avoid losing sight of a slightly-longer-term goal in
+favour of a short-term goal (so, for instance, it will unequip a shield in
+order to wield a two-handed digging tool, even though normally improving its
+armour would be more urgent than digging through a wall). Finally, a plan might
+not be enacted due to success measurement deciding that it is doomed to fail,
+or create an oscillation, based on observations rather than on known
+information.
+
+Success measurement
+
+Success
+
+Once Planar has decided on a plan, it will find out what action is associated
+with it, and tell the framework that that’s the desired action for the turn.
+After the framework has processed the results of the action and asked for the
+next one, though, Planar does after-the-fact processing on the current turn
+before moving on to consider the next turn’s plan. In particular, it’s trying
+to determine whether the plan worked as expected or not, and whether it’s stuck
+in an oscillation.
+
+Each plan comes with a test to determine whether or not it accomplished what it
+set out to do. For instance, a plan to open a door will check to see if the
+door is now open; if it isn’t, it will check to see if it was for a known
+reason (doors in NetHack sometimes randomly fail to open, which is not a
+problem), or if it was for an unknown reason (for instance, Planar doesn’t yet
+know it can’t open a door if it’s been forced into jackal form by a werejackal,
+but it can determine that it tried to open a door, it didn’t work, and it
+doesn’t know why). If a plan fails unexpectedly, it won’t be retried for some
+time, which increases sharply the more times the plan in question has failed in
+a row. (There’s an exception to this; if something happens to make Planar think
+that the situation has changed, for instance if a tile relevant to the plan in
+question changes glyph or one of the plans marked as part of or an alternative
+to the plan succeeds, it will try again instantly.) This happens for both
+strategic and tactical plans; as always, failure will simply cause it to seek
+alternatives. In this way, Planar can get around deficiencies in either its
+own, or the framework’s, understanding of NetHack; this ability to determine
+what works by experiment will helpfully aid it in handling unexpected
+situations (whereas Behavioral normally responds to such situations with an
+infinite loop as it tries a doomed action over and over again).
+
+More subtly, a plan can seem to be working correctly, but leave TAEB stuck in
+an infinite loop; this is the dreaded “oscillation” that’s so common in
+NetHack-playing AIs. The picture above shows TAEB near a throne room (full of
+letters representing monsters); it looks like a good place to explore from
+afar, but upon approaching more closely, it’s possible to see that it’s full of
+monsters. Planar tends to be cautious around monsters, especially when there
+are alternative plans available; so it would walk away from the throne room,
+forget the location of the monsters (neither the TAEB framework nor Planar
+currently has any way to track the locations of monsters that are
+out-of-sight), walk towards it again, and repeat. The repeated indecision in
+which plan to accomplish is detected in success measurement; and as a result,
+the success measurement deliberately makes up its mind to try one plan or the
+other, by temporarily interfering with both the strategic planning and tactical
+planning stages to help force a particular decision. In the map above,
+therefore, most of the routing map is unexpectedly grey, rather than the usual
+blue; this is because success measurement has detected an oscillation and
+decided to allow only plans that move towards the throne room for a few turns
+(by causing routing to fail when moving away from it). As a result, the TAEB
+has decided to look at the items on the floor in the room instead; and has
+concluded that the safest way to do that is to slaughter the inhabitants of the
+throne room, picking them off at range using projectiles. (The messages at the
+top show that the previous turn, it threw something at a monster and killed it;
+it wants to do that again, but needs to reposition itself first.)
+
+Posted by ais523 3 comments #
+Labels: AI, design, Planar, taeb
+
+Friday, June 12, 2009
+
+Synchronizing with NetHack
+
+One of the nastiest problems TAEB has to solve is also one of the most mundane.
+If you've ever played a game over a network or on a heavily loaded computer,
+you are probably familiar with lag and the problems it creates. While NetHack,
+as a turn-based game, does not suffer from directly lag-caused deaths, it is
+still very difficult to make moves sensibly when the responses are delayed.
+
+Bots like TAEB also suffer from lag, indeed much worse than people do. Twenty
+milliseconds is quite unnoticeable for a human but is an eternity for a bot,
+and even at that timescale issues of finding the end of a turn are normal.
+Furthermore, bots are much less able to recover from partial updates than
+people are, due to the lack of sensible error-recovery.
+
+[halfframe]
+
+Presumably, the player just exited a full-screen menu or changed dungeon level.
+A full screen redraw for NetHack is larger than the MTU of most networks, and
+due to lag, the second packet has been delayed significantly. (This doesn't
+require weird conditions; TCP normally waits until data has been successfully
+received before sending more.) As a result, the lower half of the current frame
+is black. TAEB, on seeing this frame, makes a couple of damaging inferences:
+
+  * The lower half of the level has turned into solid rock. This is an
+    especially nasty case if the redraw was caused by stairs, as TAEB
+    interprets large areas of new stone to indicate a brand new unexplored
+    level, corrupting the dungeon graph.
+  * The bottom line is all spaces and unparsable, resulting in error spam and
+    no stats.
+
+Clearly, bots need a reliable way to tell when NetHack is done sending output
+for the turn. There have been several approaches to this problem over the
+years.
+
+Consistently slow
+
+One of the oldest and simplest approaches is simply to sleep for one second or
+so after every move, to wait for NetHack. This works, most of the time. It has
+two major flaws; first it is very slow, second it is unreliable - if lag spikes
+above 1 second, the bot may see an incomplete frame. Nevertheless, it is very
+simple to implement and has been used in several efforts.
+
+Avoiding the issue
+
+Another approach which has been historically used, most famously by the Angband
+Borg and Rog-o-matic, is to link the bot into the game's input routines. In
+theory, this is foolproof, but it carries dangers of a different sort, in
+addition to the obvious restriction to local games.
+
+If done incautiously, the linking can affect game mechanics or leak
+information, thus compromising the validity of the bot effort. Modifying the
+game requires a very in-depth knowledge of NetHack's implementation, which is
+very unclean and non-transparent in places. Furthermore, requiring the bot to
+be linked into NetHack greatly complicates the build process; the bot cannot be
+built or distributed as a self-contained object unless all of NetHack is
+duplicated, prohibitive effort for many starting projects. As such, the linking
+approach is very rarely used.
+
+We want TAEB to play in tournaments on public servers, which precludes linking.
+
+Inline pings
+
+One approach which is often proposed, but sadly does not work, is the inline
+ping. Simply send an invalid command after every real command, and wait for the
+error. Unfortunately, there is no command which is invalid in every context in
+NetHack. Not even control-r to redraw the screen; it fails in prompts and
+menus.
+
+Telnet ping/pong
+
+Invented by Sartak for NetHack fairly early on, and the most common method in
+use today (in particular, TAEB uses this), this relies on telnet as a side
+channel. A bot connects to a telnet server using a raw TCP socket, and
+implements the protocol itself; after every command is sent, the bot attempts
+to negotiate an invalid telnet stream option (DO 99).
+
+When a telnet daemon receives the packet containing the command, it sees an
+option it does not support and responds in failure (WONT 99), then passes the
+command off to NetHack. Shortly afterward, NetHack's response is responded to
+the bot. Thus, the bot receives NetHack's response very shortly after the
+"pong". In effect, the telnet options are used as a side channel to dynamically
+measure network lag. Since under normal conditions network lag is the dominant
+component of total lag, this gives the bot a very good idea of when the output
+should be expected.
+
+The reliability of this approach is improved by kernel packet coalescing, also
+known as Nagle's algorithm. When the pong is sent, the network implementation
+at the server waits a short time to potentially send a larger packet; if packet
+sending is low-priority, this will additionally tend to be delayed until
+NetHack is done calculating. With the pong and the response generally in the
+same packet, they are guaranteed to arrive at the bot at exactly the same time.
+
+While good enough for bots, this approach is not quite foolproof. If NetHack
+takes a long time to reply to a command, due to system load, slow execution
+(there are several quadratic algorithms in the game, most notably monster
+movement and item stack sorting), or simply being swapped out, it is possible
+for the kernel to time out the attempt to coalesce, and the pong will arrive
+significantly before the output. This has been the source of several
+unreproducible errors in TAEB.
+
+This approach is also limited to telnet servers. It does not help at all with
+lag as it occurs on heavily-loaded local systems, and does not work well with
+other network protocols. In principle SSH could be used, however the vastly
+higher complexity of the SSH protocol makes a custom implementation
+prohibitively difficult.
+
+Expectations and Confusion
+
+Will Noble (futilius)'s bridey works on an entirely different principle from
+the other bots. Instead of relying on out-of-band data to find complete frames,
+bridey is more like a human in that it waits for a frame that looks complete.
+The code which generates actions also provides a predicate for a
+sensible-looking result; fully filled bottom line, cursor on the character,
+etc. When an action is run, bridey waits for a frame that satisfies the
+predicate. To guard against programming oversights, the predicates are made
+partially dependant on wait time, and become more lenient as more data has had
+a chance to arrive.
+
+Actually, bridey combines this with other mechanisms above; the time, as it is
+used in predicates, is measured in telnet ping/pong cycles. For instance, the
+move action has a final timeout of 4 cycles. This allows the reliability of the
+expect system to partially stack on the reliability of ping/pong. bridey, like
+TAEB, uses simple sleeps on the local interface.
+
+Abusing POSIX Job Control for Fun and Profit
+
+In 2008 I developed a novel method, which is currently being adopted by TAEB
+for the local interface. NetHack is single threaded and makes very little use
+of asynchronous calls, so when it is blocked on tty input it cannot possibly
+generate output until more keys arrive. So, if we could somehow find out when
+NetHack blocks, we would solve the synchronization problem permanently - unlike
+the methods above, this is immune to system load.
+
+On the surface, finding out when a process blocks would seem to require
+low-level, privileged, and generally highly nonportable code. However, we are
+not the first user of the information. It is possible in UNIX to move processes
+between the foreground and background at will; if it were possible for
+background processes to read keyboard input, chaos would result. The
+traditional solution is for the kernel to stop any process when it attempts to
+read in the background. Stops, like deaths, result in wait() events; this is
+necessary in order that the shell may continue them.
+
+With this insight, the solution seems fairly obvious - simply put NetHack in
+the background, then when it stops, let it read. There are a few complications
+in this, though. First, it's not possible to simply shovel data into a stopped
+reader; it has to be briefly continued in the foreground. How long is briefly?
+Depends on... system load. Fortunately, there is a trick we can use to
+eliminate inaccuracy - check for data on the virtual keyboard, with ourselves
+in the foreground. If we see anything, the slave needs to read more, and we
+re-continue it, using exponential backoff. Of course, data typed is not always
+immediately available due to line-buffering and various forms of special-key
+processing - but that applies to us too, so we still get the right answer.
+
+Even with that settled, POSIX only allows a process to use job control if it
+lives inside the pseudo-terminal. That means, we need to fork a slave in order
+to do the actual manipulation, and communicate using pipes.
+
+This is very unusual activity terminal driver, and it has exposed two bugs in
+the BSD kernel so far. First, in all known versions of BSD, a process which
+reads in the background does not actually receive the stop signal until it
+returns to user mode; but it returns to user mode only once the wait for
+terminal data completes! In regular usage, this is masked, because when you
+type bg all waiting threads are woken, but it was a killer for us; the eventual
+workaround I found was to briefly change the terminal blocking mode, thus
+forcing the kernel to reconsider all active blocks. Finding this bug, and the
+workaround for it, took an annoyingly long amount of time.
+
+Another bug the project found was that the BSD kernel does a one-second sleep
+whenever a process that is already in the background tries to read. The reasons
+for this are quite unclear, but it has the effect of killing performance of
+this approach. Fortunately, recent versions of Darwin (OS 10.5.7 is known to
+work) have a rewritten sleep system, and this call is no more.
+
+A comparatively minor issue was found in Linux; attempting to read from an idle
+psuedoterminal master fails with a "No such device" error, instead of the EOF
+return that would be expected of devices with pipe semantics. I'm not sure if
+this is a bug, but it did require workaround code.
+
+This method is implemented in the IO::Pty::HalfDuplex perl module.
+
+Variations on the theme
+
+Job control abuse works pretty well on Linux and Darwin, but what if you're on
+a different platform? Well, there's always low-level, privileged, and generally
+non-portable code. As seems to often be the case with hacks like this, it
+usually takes the form of a debugger API abuse; set breakpoints on the
+functions that can read from the terminal, and arrange to capture output
+somehow. These approaches share a common liability; debugger interfaces are
+highly security-sensitive and are often in some way disabled.
+
+  * On most UNIXes (including the BSDs) there is a system call ptrace which
+    fits the bill perfectly. Unfortunately, while the style of ptrace is
+    virtually identical everywhere, no two UNIXes implement the call in exactly
+    the same way. ptrace implements security by refusing to trace processes of
+    other users and denying user and group changes while active; this is a real
+    bother for us, as NetHack is normally installed setgid - it escalates its
+    group to one that can write to the saves and scoreboard.
+  * Windows has a debugger interface which is well documented and consistent
+    across versions. Nice? Well, Windows also has, last time I counted, 30
+    different documented ways to read from the console. Writing the correct
+    traps to catch them all would be interesting, to say the least.
+  * Ironically, the best chances seem to exist on DOS. Programs are debugged by
+    directly hooking the operating system, allowing for a fully consistent
+    interface, and there are very few paths for keyboard reading.
+    Unfortunately, CPAN on DOS is non-functional, and installing any large Perl
+    system without it is extremely tedious.
+  * Departing from the trend of debuggers, it is also possible on the BSDs to
+    simply read the process status. Compared to the ptrace method, this has the
+    advantage of working on segid processes, but requires polling.
+
+I plan to implement most of these in IO::Pty::HalfDuplex.
+
+Conclusion
+
+In the field of bot writing, even the simplest things can prove almost
+insurmountably complex. This is very evident in dealing with lag, both network
+and loading. Lag-related problems are a major cause of unreproducable faults in
+even the most sophisticated NetHack bots. Many of the simplest approaches to
+controlling lag are deeply flawed and will make debugging difficult. Let this
+be a lesson to everyone who wants to start from scratch. Fortunately, you don't
+have to; TAEB is designed to be a framework, to support additional AIs easily.
+
+Posted by sorear 3 comments #
+Labels: design, library, nethack
+
+Sunday, June 7, 2009
+
+Anatomy of a Step
+
+Several people have asked to see more articles about TAEB's architecture. Even
+after working with the codebase for a year and a half, I am still very happy
+with the design. My previous attempts at writing a NetHack bot lasted only a
+month or two before collapsing under their limitations. However, I think we
+finally got it right with TAEB, so I enjoy sharing what we have created.
+
+To introduce the important components of TAEB, I am going to walk through
+TAEB's "main loop". We call each iteration of the main loop a "step". Each step
+vaguely resembles iterations of NetHack's own main loop. Note that this is
+completely unrelated to NetHack's turn counter. Due to the speed system,
+command repetition ("search for twenty turns"), and even paralysis, steps do
+not correspond with turns. The only similarity is that both counters increase
+monotonically. Today, we care only about steps, not turns.
+
+Input
+
+The first thing TAEB does is read input from NetHack. This can involve reading
+from a socket (as in TAEB::Interface::Telnet) or reading from a pseudo-terminal
+(as in TAEB::Interface::Local). I will eventually write a post about the
+mechanics of simply deciding when NetHack is done sending data. It is not at
+all trivial. (update: here's that post)
+
+NetHack prints a stream of characters. Since it provides a full text user
+interface with two-dimensional maps and colors, NetHack prints escape sequences
+. These escape sequences encode commands such as "change the pen color to red"
+(\e[31m) or "go to cell (5, 12)" (\e[12;5H). We run all input through
+Term::VT102 to parse and handle these escape sequences. Term::VT102 then lets
+us ask high-level questions like "what is the text of row 23?" or "what color
+is cell (59, 6)"? We have a subclass TAEB::VT that lets us ask additional
+questions, such as "is the text 'Hit return to continue:' present on the
+terminal?"
+
+We now have something resembling what the player would see (a two-dimensional,
+colored block of text). The next task is to understand what is on the screen.
+Consider the following NetHack terminal:
+
+[screenscra]
+
+As a human, you can figure out a lot of what is going on, even if you have
+never played NetHack. You can see that the player is in combat with a goblin.
+From the bottom lines, you can guess that the player is stuffed with food, and
+probably the character's name. If you have played NetHack, you can recognize
+several more things. The character is a wizard (evidenced by the Evoker title).
+There is a general store in the top left room. The character is currently on
+the bottom of the screen, with a goblin just north of him. You can identify the
+seven rooms of the level, and the features of the dungeon (like stairs, a
+fountain, and many doors).
+
+Such analysis is the job of two components, TAEB::ScreenScraper and
+TAEB::World::Cartographer. The Cartographer analyzes the map to populate
+internal level and tile information, while the ScreenScraper handles other
+input (mostly English text). The ScreenScraper runs first, parsing messages to
+publish announcements. The rest of the system does not have to worry about the
+content of messages, each component just listens for particular high-level
+events.
+
+Thankfully, English text appears in fixed places on the screen; TAEB never has
+to guess which text is prose and which represents the map. Most of the time,
+text only appears on the top and bottom lines. However, menus can appear in
+more places on the screen.
+
+[identify]
+
+Here we have an "identify" menu. The ScreenScraper can detect that there is a
+menu by looking at the text preceding the cursor. If it is "(end)" or "(# of #)
+" then TAEB knows a menu is on the screen.
+
+Menus are interesting because they demand input from the rest of the system.
+The ScreenScraper does not know what items should be identified — it has to ask
+the AI component. Since there can be many menus in a particular step (such as
+identifying several items, one at a time), the ScreenScraper has its own loop
+for parsing different kinds of input. The various kinds of input include menus,
+prompts ("Eat what?"), location requests ("To what position do you want to be
+teleported?"), and ordinary top-line messages.
+
+The ScreenScraper and NetHack may communicate several times before the next
+step is started. What is vital is that the ScreenScraper leaves NetHack in
+"action mode". There are no unresolved prompts, menus, --More-- messages, etc.
+This means that the Cartographer can assume that the cursor is on TAEB. This
+invariant makes TAEB cope perfectly with having a different character glyph due
+to polymorph or invisibility. Other bots (such as "moomaster") have struggled
+with this, since they guessed that the white @ on the screen was the character.
+
+Since the ScreenScraper leaves NetHack in action mode, the Cartographer knows
+that every character between lines 2 and 22 inclusive are the map. If there
+were a menu on screen, TAEB would get massively confused, thinking there are
+suddenly hundreds of monsters floating in a void on the right side of the
+screen.
+
+The Cartographer looks at each cell on the virtual terminal to update each tile
+in TAEB's internal map. It uses cell glyph and color to determine what is on
+each tile. For example, a gray { is a sink.^1 The sink is mapped to a
+TAEB::World::Tile::Sink object. This sink object of course knows things every
+tile knows, such as how many times it has been stepped on by the character,
+what items are on the tile, and what engraving is on the tile. In addition,
+sinks know whether they have produced a black pudding, ring, or foocubus
+through kicking.
+
+One curiosity is that the map is updated after we publish messages from the
+ScreenScraper. If TAEB moves and receives the message "You see here an opal
+ring", the ScreenScraper sees that and announces that there is an opal ring on
+the current tile. However, since the Cartographer has not run, the current tile
+has not been updated yet, so the item would be incorrectly added to the
+previous tile. The crude solution we currently use is to freeze the publisher
+until after the map has been updated. We are not yet sure of a better solution
+to this.
+
+Output
+
+At this point, the map has been updated, all input from NetHack has been
+parsed, and the appropriate announcements have been published. We then redraw
+the screen for the users watching the bot play. We also check if the user typed
+a key. TAEB has many debug commands, such as ~ to open up an interactive REPL
+to inspect and change TAEB's internal state.
+
+Finally, it is time to involve the AI. TAEB simply asks the AI "what now?" This
+can involve arbitrarily complex calculations. One of my favorite features of
+TAEB's design is that its AI is pluggable. TAEB requires only a few methods be
+implemented by the AI, and we are working to trim that down to just "what now?"
+
+There are currently two AIs being developed: Behavioral (by most of the core
+team) and Planar (by ais523). Both are worthy of many posts. We hope to entice
+more developers to work on TAEB AIs! One of our future projects will be
+Interhack on top of TAEB. The intelligence of a TAEB::AI::Interhack would not
+actually be "artificial", of course.
+
+Since TAEB is a framework, the AI will inevitably be tightly-bound to TAEB
+(though, as explained, the converse is not true). The AI is expected to call
+all sorts of methods on TAEB objects, such as "am I currently blind?" (TAEB->
+is_blind), "do I know the identify spell?" (TAEB->find_spell("identify")), "is
+there a fountain on this level?" (TAEB->current_level->has_type("fountain")),
+and so on. We think this is a huge boon to developers seeking to write NetHack
+bots — they can focus solely on the interesting bits of artificial
+intelligence. We handle the programmatic NetHack.
+
+The AI tells TAEB what to do each step through TAEB::Action objects. These
+abstract away the details of interacting with prompts and menus. The AI can
+say:
+
+    sub next_action {
+        # ...
+        if (my $lizard_corpse = TAEB->find_item("lizard corpse")) {
+            return TAEB::Action::Eat->new(
+                food => $lizard_corpse,
+            );
+        }
+        # ...
+    }
+
+The action will take care of responding to the "Eat what?" prompt with
+$lizard_corpse's inventory letter. The action will also respond to unexpected
+prompts, such as "There is a fox corpse here; eat it?". This declarative nature
+pervades TAEB's design to great effect.
+
+Finally, we send the keystrokes for the current action (such as "e" for eat) to
+NetHack.
+
+The action will participate in the next iteration of the main loop to respond
+to prompts and listen for events caused by the action. For example, if TAEB
+receives the message "You stop eating the lizard corpse", then the action will
+know not to remove the lizard corpse from the inventory.
+
+Conclusion
+
+The design of TAEB's main loop has had a significant impact on its (relative)
+longevity. The design of handling all of the input from NetHack as soon as
+possible drove much of the system's design in very positive ways. It encouraged
+the reification of Actions, which has been immeasurably useful. It even
+encouraged the addition of the pubsub system and its later enhancement to
+announcements. Though there are still some lingering quirks caused by this main
+loop design (such as teleportation traps), none seem insurmountable.
+
+-------------------------------------------------------------------------------
+
+Footnotes
+
+ 1. TAEB remaps some dungeon features to avoid conflicts; in core NetHack,
+    sinks are gray #, but so are corridors. Eventually we may be able to remove
+    some remappings due to increasing Cartographer sophistication, but there's
+    no rush. TAEB does not change too many characters as to render its NetHack
+    screens unfamiliar. (back)
+
+Posted by Shawn M Moore 0 comments #
+Labels: design, taeb
+
+Saturday, March 14, 2009
+
+TAEB 0.03
+
+registering upload with PAUSE web server
+POSTing upload for TAEB-0.03.tar.gz
+PAUSE add message sent ok [200]
+
+This is the first version that is actually going to be on the CPAN. I decided
+to put up with Module::Install for a little while longer. :)
+
+Posted by Shawn M Moore 0 comments #
+Labels: release, taeb
+
+TAEB, pubsub, and announcements
+
+TAEB is a decently-sized, componentized program. Components need to be able to
+communicate with each other. For example, the Senses component (which tracks
+the state of TAEB's character) needs to know when we are indebted to a
+shopkeeper so that it can respond to the AI when it asks if TAEB is in debt,
+and for how much. The Cartographer component (which tracks the state of the
+dungeon map) needs to know when TAEB becomes indebted so it can mark the
+current room as a shop. In general, we want any component to be able to listen
+for any update. This will let us remain flexible and extensible; the
+completely-separate AI can listen for any update that the framework can.
+
+We use the publish-subscribe pattern to control this complexity. Pubsub
+decouples those who generate updates (publishers) from those who listen for
+updates (subscribers). TAEB has been using pubsub for a long time now (since
+2008-01-06, according to darcs trackdown). To publish a message, anything in
+the program can call TAEB->enqueue_message("foo" => @arguments). This will call
+the msg_foo method on all subscribers with arguments @arguments. We have a
+component, Publisher, that acts as message broker.
+
+Pubsub has been a great tool for letting TAEB understand messages from NetHack.
+We have a component that is devoted entirely to figuring out what the current
+state of the screen is telling us: the ScreenScraper. The ScreenScraper deals
+mostly with transforming characters on the screen into published messages. For
+example, when the NetHack prints the message "You owe (somebody) (some amount
+of) zorkmids.", the ScreenScraper publishes a debt message with one argument:
+the number of gold pieces TAEB owes. The Senses has a msg_debt method that
+stores this amount of debt in an attribute. The Cartographer has a msg_debt
+method that floodfills the current room's tiles with the shop bit. The
+ScreenScraper does not need to know who cares about debt. The ScreenScraper
+publishes a lot of messages that no component subscribes to yet, and that's
+okay!
+
+I'm happy with this, but there is room for improvement. Simple methods are not
+great message handlers. There are painful bugs lurking when subscriptions
+interact with inheritance. Suppose the AI defines a generic "go to a specific
+tile" behavior. This behavior would need to handle walked so it can track
+TAEB's progress. This GotoTile behavior is then subclassed to produce behaviors
+such as GoUpstairs and GotoCorpse. GotoCorpse might need to handle walked so it
+can age the corpse (so that TAEB doesn't eat rotten corpses). When the
+publisher sends the walked message to the GotoCorpse behavior, it does not
+invoke GotoTile's msg_walked method, because GotoCorpse didn't invoke it. While
+you may argue that GotoCorpse should have known to invoke GotoTile's msg_walked
+as that is part of its public interface, it certainly sucks for usability. It's
+especially painful when GotoTile begins subscribing to walked months after
+GotoCorpse is written!
+
+The potential fixes for this are easy. The one I like best is providing some
+"subscribe to a message" sugar. Where we previously wrote sub msg_walked { ...
+}, we would now write message walked => sub { ... }. This sugar would handle
+publishing to parent classes if there are any. It would still use method calls
+behind the scene; message would install a msg_walked method. This gives us
+maximum flexibility. A subscriber could define an unusual message that would
+only conditionally be published to its parents.
+
+The arguments we pass to each method could be improved as well. It's not
+immediately apparent what arguments the msg_debt method would receive.
+Currently we pass the amount of debt. However, we should also be providing the
+name of the shopkeeper TAEB is indebted to. This would help the Cartographer
+resolve ambiguities when there are multiple rooms and shops in sight. Should we
+rewrite every msg_debt method (including those potentially written by
+third-party, unknown AI hackers) to take named parameters? Should we pass in
+the shopkeeper's name as the second parameter? Should we pass in the name as
+the first parameter? After all, the name does come first in the message NetHack
+prints. We could provide one positional parameter (amount) and one named
+parameter (shopkeeper). Hey wait, it would be useful to also pass which items
+we're buying as well...
+
+The best answer is to make each message an object. We would have a
+TAEB::Message::Status::Debt class with attributes amount and shopkeeper. This
+class could have a method to ask the inventory what items are currently in
+TAEB's shopping cart. If we're feeling cute, we could even overload this
+message to stringify to the amount of debt.
+
+Pubsub with objects as messages is generally called Announcements. The concept
+of announcements is more general than pubsub. Announcements lets subscribers of
+a message communicate with the other subscribers, and even with the publisher.
+
+Currently, when NetHack presents TAEB with a menu to select which items to pick
+up, TAEB will ask the AI whether it wants to pick up each item. The AI is asked
+about the item without the context of the other items that it can pick up. This
+really sucks! If TAEB is toeing the burden line, it needs to be pretty strict
+about what items it will pick up. This means it may refuse to pick up a useful
+item because there just might be an even more useful item further down the
+list.
+
+Instead, TAEB should publish a "pick up items" announcement. This announcement,
+TAEB::Message::Query::PickupItems, would have the list of items. Subscribers
+would select which items they want by invoking methods on the announcement.
+When all subscribers have had a chance at it, the ScreenScraper would select
+the items in NetHack's menu accordingly. The selection doesn't have to be
+binary either; each subscriber could assign a numeric "desire" to each item.
+The ScreenScraper would then select items that have a sum desire greater than
+some cutoff (which would be another decision that some subscriber could set).
+Using announcements would better decouple the AI from the framework.
+
+This is not the first time that turning plain strings into classes has been a
+major improvement for TAEB. Previously, the AI would return a string, a NetHack
+command, as the action to perform next. We then reified actions into classes.
+Letting the current action subscribe to messages, and respond to NetHack
+prompts, vastly improved TAEB's interactions with NetHack. Problems with
+unexpected prompts (such as "Eat this corpse on the ground?") quickly and
+completely vanished. Actions subscribing to messages lets us handle ambiguous
+messages better; if we just applied a unicorn horn, then we can figure out that
+"You feel sick." means the unicorn horn was cursed and TAEB can mark it so.
+
+TAEB does not have announcements yet, but that's my next big project. I'm
+excited by the many possibilities here.
+
+Posted by Shawn M Moore 0 comments #
+Labels: design, pubsub, taeb
+
+Monday, March 2, 2009
+
+Predicting and controlling NetHack's randomness
+
+NetHack, being a single-player game of imperfect knowledge, incorporates a
+large element of randomness. Random numbers control how much damage that
+minotaur will deal you, what the identity of each purple-red potion is, whether
+dipping into that fountain will net you a wish, etc. To generate random
+numbers, NetHack employs a pseudorandom number generator. Wikipedia says:
+
+    A pseudorandom number generator (PRNG) is an algorithm for generating a
+    sequence of numbers that approximates the properties of random numbers. The
+    sequence is not truly random in that it is completely determined by a
+    relatively small set of initial values, called the PRNG's [seed].
+
+Because NetHack uses a PRNG, providing identical input to two separate games,
+sharing the same seed and PRNG algorithm, will lead to the same results in each
+game. This should not be surprising as this is a property fundamental to PRNGs.
+The input must be identical for both games, otherwise the games will diverge;
+on the same turn, casting a spell in game A will do a different amount of
+damage than simple melee in game B. Since the two actions use a different
+amount of random numbers, it would be annoying (but not difficult) to reconcile
+the two games.
+
+NetHack uses the current time (specifically the number of seconds since
+midnight, January 1st, 1970) as the seed for its PRNG. Thus, two games started
+in the same second will have the same seed. You can verify this by typing
+"nethack" into two separate terminals, then quickly hitting enter in each. Once
+you select the same characters, you should be greeted with the same map and
+stats. If not, your clock may have ticked between starting the two games, so
+just try again. If you play both games identically you'll see that you obtain
+the same results in both games. You can, of course, diverge once you experience
+very unfavorable results in one game, such as death.
+
+That's a lot of work just to fool the game. If you're going to those lengths,
+you're better off playing in the immortal "explore mode", or changing the code
+so that it's easier to win. These are some of the reasons that "public server
+ascensions" are more highly valued than local ascensions. You can't change the
+code on the server, or play in god mode, so everyone knows that your server
+ascensions are legitimate.
+
+However, public NetHack servers still use PRNGs, so there still exist some
+serious exploit vectors. On the nethack.alt.org public server, I abused the
+PRNG for demonstrative purposes (though never for actual ascensions). On the
+WowDeath account, I killed myself by kicking wands of wishing on the first
+level — three times in one day.
+
+Though NetHack uses the current time for its seed, it's very easy to change
+that to be, say, an option to NetHack. You can tell NetHack to start a game in
+advance, fooling it into thinking it's 11:00:00. If that game doesn't work out
+so well (perhaps you got a lame starting inventory), you can try again, using a
+seed 11:00:01. Repeat until you find a great starting haul, then start a game
+on the server at that exact time. I went one step further, generating thousands
+of starting levels until a wand of wishing was created as part of the initial
+level. paxed, one of the admins of nethack.alt.org, patched nethack to use a
+truly random seed so that this specific exploit can no longer be used on that
+server.
+
+The trickiest part, which was the only point of failure, was in starting a game
+on the server at some exact second. Due to clock skew, the server could think
+it is several seconds (or even minutes) earlier or later than your clock does.
+The server doesn't broadcast what it thinks the current time is, either. One
+way to actually figure out the current time is through the random seed! Start a
+game on the server, noting the current time on your clock. Then generate
+NetHack games for that time, that time plus a second, that time minus a second,
+plus two seconds, and so on until you get the same starting map and stats. The
+offset you used is the number seconds between your machine and the server, so
+you can use it to know exactly when to start a server game. It's still not as
+exact as I would like, since you only get resolution of a second.
+
+That method actually describes a distinct avenue of exploitation. Since you now
+have a server game and a local game with the same seed, you can play the local
+game (remembering to mirror the input to the server game as well) until you get
+to some point at which you want to diverge. It's actually more powerful than
+even that, because you can modify your local nethack to display object
+identities instead of appearances, or not require exploration for the map. You
+will appear to have x-ray vision or prescience to the audience of your server
+game.
+
+This was actually how I was introduced to practical methods of exploiting
+nethack's PRNG. A nethacker named switch told me to start up a game and wait.
+He then said "See that gold in the upper right corner of the room? It has 70
+gold pieces in it." That was viciously consternating. What he had done is what
+I described in the previous paragraph. He found my game's seed then looked at
+the pile of gold before I did: prescience.
+
+nethack.alt.org has patched the initial seed calculation, but as nethacker
+Adeon has demonstrated, it's still feasible to figure out the game's seed by
+observing random effects. Being able to observe random effects without
+advancing the game's state is very helpful in sussing out the game's seed,
+since monsters moving, level messages, and many more per-turn effects use an
+unknowable amount of random numbers. By using something similar to the artifact
+naming exploit, you can observe the effects of a knowable amount of random
+numbers. Adeon has code that will do exactly this for server games. Once you
+have the seed, you're in control of the random number generator. You can trash
+as many random numbers as you want by using the same actions you used to figure
+out the seed. This will let you make every fountain quaff produce a wish by
+throwing out every random number that wouldn't produce a wish.
+
+The fix for this would be to re-seed the PRNG every n (say, 100) random
+numbers. That way, well before you have a chance figure out the current seed, a
+new one takes its place. Re-seeding must use true random numbers. If not, the
+re-seeding is useless; pseudorandom seeds fall victim to the same exploits.
+[Update March 3rd: paxed has patched this fix into nethack.alt.org as well]
+
+You might wonder why we use PRNGs at all; why not use a truly random source for
+every number? Unfortunately, a computer's pool of truly random numbers is very
+limited; it has to build up by measuring minute temperature changes or internal
+timing variations. NetHack, especially being played by fifty people on a public
+server, would keep that pool empty and harm the game's playability.
+
+This type of exploit could affect many single-player games like NetHack, but I
+don't think there would be value in doing this for other games, since one of
+the preconditions is that server play is more highly valued than local play.
+Commercial games use closed-source servers anyway. The real applicability of
+these techniques is in cryptanalysis. Use truly random numbers for your keys!
+
+Posted by Shawn M Moore 12 comments #
+Labels: exploit, nethack, random
+
+Sunday, March 1, 2009
+
+Where's 0.01?
+
+Due to an issue with Module::Install, the 0.01 tarball I uploaded to CPAN last
+night was empty. I've long disliked Module::Install, so I'm going to get rid of
+it in favor of a plain ExtUtils::MakeMaker or something.
+
+Update June 3rd, 2009: The issue with Module::Install was that it generates an
+empty tarball when there's no MANIFEST. More recent versions of MI are
+thankfully very reluctant to do that.
+
+Posted by Shawn M Moore 0 comments #
+Labels: release, taeb
+Older Posts Home
+Subscribe to: Posts (Atom)
+
+Developers
+
+  * Shawn M Moore (sartak)
+  * Jesse Luehrs (doy)
+  * Stefan O'Rear (sorear)
+  * Sebastian P. (Sebbe)
+  * Sean Kelly (arcanehl)
+  * sawtooth
+  * Alex Smith (ais523)
+
+TAEB's site
+#
+
+Blog Archive
+
+  * ▼  2009 (12)
+      + ▼  August (1)
+          o Planar - a TAEB AI
+      + ►  June (2)
+          o Synchronizing with NetHack
+          o Anatomy of a Step
+      + ►  March (4)
+          o TAEB 0.03
+          o TAEB, pubsub, and announcements
+          o Predicting and controlling NetHack's randomness
+          o Where's 0.01?
+      + ►  February (5)
+          o 0.01
+          o Code stats
+          o Pretty pictures of TAEB development
+          o Modules written and improved for TAEB
+          o 0.01 release
+
+#
+
+Tags
+
+  * AI (1)
+  * design (4)
+  * exploit (1)
+  * images (1)
+  * library (1)
+  * nethack (2)
+  * Planar (1)
+  * pubsub (1)
+  * random (1)
+  * release (4)
+  * taeb (10)
+  * vcs (1)
+
+#
+ 

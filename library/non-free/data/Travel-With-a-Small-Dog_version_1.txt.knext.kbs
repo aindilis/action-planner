@@ -1,0 +1,113 @@
+;; (IF YOU ARE FLYING HAVE YOUR CRATE COMFY)
+
+	;; A PERSON MAY FLY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FLY_27 ?x1))
+
+	;; A PERSON MAY HAVE A COMFY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMFY_27 ?x1))
+
+	;; A COMFY CAN BE CRATE.
+
+		(and (comfy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRATE_27 ?x2))
+
+;; (PUT A BLANKET AND SOMETHING THAT SMELLS LIKE HOME SUCH AS A FAVORITE TOY COMMA OR A TOWEL)
+
+	;; A TOY CAN BE FAVORITE.
+
+		(and (TOY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (HERE IS WHAT YOU SHOULD FILL IT WITH COMMA AN EXTRA LEASH COMMA 1-2 TOYS OR BALLS COMMA A BLANKET COMMA SOMETHING THAT SMELLS LIKE HOME
+ -LRB- A TOWEL WORKS WELL -RRB- COMMA TREATS COMMA 2 DISHES -LRB- FOR WATER AND FOOD -RRB- COMMA AND OBVIOUSLY FOOD)
+
+	;; A LEASH CAN BE EXTRA.
+
+		(and (LEASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; TOYS CAN BE 1-2.
+
+		(and (toy_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A TOWEL MAY WORK.
+
+		(and (TOWEL_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+;; (ONCE YOU GET TO YOUR HOTEL SET UP A LITTLE CORNER WITH ALL YOUR DOGS STUFF)
+
+	;; A PERSON MAY GET TO A HOTEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (HOTEL_27 ?x2))
+
+	;; A HOTEL MAY BE SET_UP -ED.
+
+		(and (HOTEL_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SET_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOTEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOTEL_27 ?x1))
+
+	;; A PERSON MAY HAVE DOGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DOGS_27 ?x1))
+
+;; (HAVE THEIR BED AND TOYS THERE AS WELL)
+
+	;; INDIVIDUAL -S MAY HAVE A BED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; (THIS WILL MAKE THEM UNDERSTAND THIS IS THEIR SPACE)
+
+	;; INDIVIDUAL -S MAY UNDERSTAND.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (UNDERSTAND_27 ?x1))
+
+	;; A THING CAN BE A SPACE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SPACE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A SPACE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+;; (ASK THE HOTEL WHERE IT IS OKAY TO LET YOUR DOG GO TO THE BATHROOM)
+
+	;; A DOG MAY GO TO A BATHROOM.
+
+		(and (DOG_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BATHROOM_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+;; (ASK THE HOTEL WHERE IT IS OKAY TO LET YOUR DOG GO TO THE BATHROOM)
+
+	;; A DOG MAY GO TO A BATHROOM.
+
+		(and (DOG_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BATHROOM_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+;; (ASK THE HOTEL WHERE IT IS OKAY TO LET YOUR DOG GO TO THE BATHROOM)
+
+	;; A DOG MAY GO TO A BATHROOM.
+
+		(and (DOG_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BATHROOM_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))

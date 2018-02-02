@@ -1,0 +1,218 @@
+;; (A GOOD SPOT WILL BE A VERY SHORT WALK FROM THE FIRST TABLES OR GARAGE OF STUFF)
+
+	;; A SPOT CAN BE A WALK.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (WALK_27 ?x2))
+
+	;; A SPOT CAN BE GOOD.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A WALK CAN BE FROM TABLES.
+
+		(and (WALK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (TABLES_27 ?x2))
+
+	;; A WALK CAN BE SHORT.
+
+		(and (WALK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+;; (THIS WAY ANY HEAVY ITEMS WILL BE EASIER TO TRANSPORT TO YOUR CAR COMMA AND MULTIPLE TRIPS WILL TAKE LESS TIME SO YOU CAN BE ON YOUR WAY)
+
+	;; A WAY CAN BE EASIER.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+	;; ITEMS CAN BE HEAVY.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; A PERSON MAY HAVE A CAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+	;; TRIPS MAY TAKE.
+
+		(and (TRIPS_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+	;; TRIPS CAN BE MULTIPLE.
+
+		(and (TRIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+	;; A PERSON CAN BE ON A WAY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (way_27 ?x2))
+
+	;; A PERSON MAY HAVE A WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+;; (IF A CERTAIN ITEM CAUGHT YOUR EYE COMMA IMMEDIATELY GO TO IT)
+
+	;; AN ITEM MAY CATCH AN EYE.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (CATCH_27 ?x1) (AN_27 ?x1) (EYE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EYE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EYE_27 ?x1))
+
+;; (EXAMINE IT AND DETERMINE IF IT IS SOMETHING YOU WANT)
+
+	;; A THING-REFERRED-TO CAN BE A SOMETHING.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (something_27 ?x2))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (IF NOT COMMA SLOWLY BROWSE THROUGH THE REST OF THE GARAGE SALE IN AN ORDERLY FASHION EXAMINING ALL ITEMS CAREFULLY COMMA BUT AT THE SAME
+ TIME QUICKLY)
+
+	;; A SLOWLY[PERSON??] MAY BROWSE THROUGH A REST OF A GARAGE SALE.
+
+		(and (SLOWLY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (BROWSE_27 ?x1) (THROUGH_27 ?x1) (A_27 ?x1) (REST_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (GARAGE_27 ?x2) (SALE_27 ?x2))
+
+	;; A GARAGE SALE MAY HAVE A REST.
+
+		(and (GARAGE_27 ?x1) (SALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+	;; A GARAGE SALE CAN BE IN A FASHION.
+
+		(and (GARAGE_27 ?x1) (SALE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FASHION_27 ?x2))
+
+	;; A FASHION CAN BE ORDERLY.
+
+		(and (FASHION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORDERLY_27 ?x2))
+
+;; (ANYTHING THAT STRIKES YOUR INTEREST INSPECT IT COMMA LOOK IT OVER AND CHECK THE PRICE)
+
+	;; ANYTHING MAY INSPECT A THING-REFERRED-TO.
+
+		(and (ANYTHING_27 ?x1) (MAY_27 ?x1) (INSPECT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE INTEREST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INTEREST_27 ?x1))
+
+;; (AT A GOOD GARAGE SALE YOU SHOULD FIND A NUMBER OF THINGS OF INTEREST TO YOU)
+
+	;; A PERSON MAY FIND A NUMBER OF THINGS OF INTEREST TO A PERSON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (NUMBER_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2) (of_27 ?x2 ?x3) (interest_27 ?x3) (to_27 ?x1 ?x4) (A_27 ?x4) (PERSON_27 ?x4))
+
+	;; A GARAGE SALE CAN BE GOOD.
+
+		(and (GARAGE_27 ?x1) (SALE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; THINGS CAN BE CONSTITUTED_OF_OR_FILLED_WITH INTEREST.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (INTEREST_27 ?x2))
+
+;; (IT IS RECOMMENDED THAT YOU BRING A BAG)
+
+	;; A THING-REFERRED-TO MAY BE RECOMMEND -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY BRING A BAG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (A_27 ?x1) (BAG_27 ?x1))
+
+;; (GO ORDERLY THROUGH ALL THE TABLES AND PILES OF MERCHANDISE)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU THINK A PRICE IS TOO HIGH COMMA TRY TO BARGAIN WITH THEM)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PRICE CAN BE HIGH.
+
+		(and (PRICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (MANY PEOPLE ARE HAPPY TO GET RID OF THE STUFF THEY ARE SELLING COMMA SO TRY TO GET A LOWER PRICE COMMA -LRB- THIS IS KNOWN AS DICKERING
+ -RRB- MANY ARE HAPPY TO SETTLE FOR LESS)
+
+	;; INDIVIDUAL -S MAY SELL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1))
+
+;; (OR EVEN A BEST OFFER OR A POSSIBLE TRADE)
+
+	;; AN OFFER CAN BE BEST.
+
+		(and (OFFER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (REACH AN AGREEMENT YOU BOTH CAN BE HAPPY WITH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HOWEVER SOME PEOPLE WILL REMAIN FIRM)
+
+	;; SOME_NUMBER_OF PEOPLE MAY REMAIN FIRM.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (REMAIN_27 ?x1) (FIRM_27 ?x1))
+
+;; (THE PRICE THEY PUT ON IT COMMA NO IFS ANDS OR BUTS)
+
+	;; A PRICE MAY AND.
+
+		(and (PRICE_27 ?x1) (MAY_27 ?x1) (and_27 ?x2 ?x1))
+
+	;; INDIVIDUAL -S MAY PUT ON A THING-REFERRED-TO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [18]>
+
+;; (IF YOU DO N T LIKE IT SIMPLY PUT IT BACK)
+
+	;; A THING-REFERRED-TO MAY PUT A THING-REFERRED-TO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (SOMETIMES THEN THEY MAY AGREE TO A PRICE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

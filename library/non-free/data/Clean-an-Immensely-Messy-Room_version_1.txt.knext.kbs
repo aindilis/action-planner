@@ -1,0 +1,513 @@
+;; (MOVERSLOOK AT YOUR ROOM)
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (LOOK FOR THE BIG THINGS FIRST)
+
+	;; THINGS CAN BE BIG.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (REALIZING WHAT MAKES YOUR ROOM MESSY IN THE FIRST PLACE IS A GOOD START TO CLEANING IT)
+
+	;; A PERSON MAY HAVE A ROOM MESSY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1) (MESSY_27 ?x1))
+
+	;; A START CAN BE GOOD.
+
+		(and (START_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (SO IF YOU HAVE A BIG TEDDY BEAR OR AN OLD FISH TANK COMMA TAKE IT OUT AND EITHER PUT IT AWAY FOR NOW COMMA OR JUST TRASH IT)
+
+	;; A PERSON MAY HAVE A TEDDY BEAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TEDDY_27 ?x1) (BEAR_27 ?x1))
+
+	;; A TEDDY BEAR CAN BE BIG.
+
+		(and (TEDDY_27 ?x1) (BEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; A FISH TANK CAN BE OLD.
+
+		(and (FISH_27 ?x1) (TANK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (SEE IF YOU HAVE ANY FURNITURE YOU DO N T WANT OR NEED ANYMORE)
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (GET SOMEBODY TO HELP YOU MOVE THEM)
+
+	;; A PERSON MAY MOVE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MOVE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (NOW YOU GOT THE MAIN THINGS OUT COMMA YOU ARE READY TO START CLEANING)
+
+	;; A PERSON MAY GET_OUT THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_5FOUT_27 ?x1) (THINGS_27 ?x1))
+
+;; (PUT YOUR DIRTY CLOTHES INTO LAUNDRY BAGS)
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; CLOTHES CAN BE DIRTY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (PUT UP YOUR TOYS)
+
+	;; A PERSON MAY HAVE TOYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOYS_27 ?x1))
+
+;; (IF YOU ARE STILL YOUNG COMMA AND READING THIS GUIDE AND HAVE TOYS COMMA THEN TAKE YOUR TOYS AND OBSERVE THEM)
+
+	;; A PERSON CAN BE YOUNG.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+	;; A PERSON MAY HAVE TOYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOYS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; (PUT YOUR TOYS INTO 3 PILES  TOYS TO KEEP IN YOUR ROOM COMMA TOYS TO THROW OUT COMMA AND TOYS TO DONATE)
+
+	;; A PERSON MAY HAVE TOYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOYS_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (NOW KEEP YOUR PILES OUT OF YOUR ROOM AND AWAY FOR NOW)
+
+	;; A PERSON MAY HAVE PILES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PILES_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (AGAIN COMMA WE WILL GO BACK TO THAT LATER)
+
+	;; PERSON -S MAY GO_BACK TO A THING.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GO_5FBACK_27 ?x1) (to_27 ?x1 ?x2) (thing_27 ?x2))
+
+;; (PUT UP THE DISHES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (A COMMON THING IN MESSY ROOMS ARE DISHES)
+
+	;; A THING CAN BE DISHES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (dish_27 ?x2))
+
+	;; A THING CAN BE IN ROOMS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ROOMS_27 ?x2))
+
+	;; A THING CAN BE COMMON.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+	;; ROOMS CAN BE MESSY.
+
+		(and (ROOMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MESSY_27 ?x2))
+
+;; (YOU PROBABLY HAVE GLASSES LAYING AROUND WITH A LITTLE SOUR MILK STILL ON THE BOTTOM COMMA AND PLATES WITH SAUCE ALL OVER THEM)
+
+	;; A PERSON MAY HAVE GLASSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GLASSES_27 ?x1))
+
+	;; MILK CAN BE SOUR.
+
+		(and (MILK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUR_27 ?x2))
+
+	;; SOME_NUMBER_OF THING CAN BE OVER INDIVIDUAL -S.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [8]>
+
+;; (ANYWAY COMMA TAKE YOUR DISHES DOWN AND WASH THEM)
+
+	;; A PERSON MAY HAVE DISHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DISHES_27 ?x1))
+
+;; (MAKE SURE YOU DO IT NICE COMMA AND REMEMBER TO PUT THEM BACK IN THE CABINET FOR THE NEXT FAMILY MEMBER OR GUEST TO USE)
+
+	;; A THING-REFERRED-TO CAN BE NICE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+	;; A CABINET CAN BE FOR A FAMILY MEMBER.
+
+		(and (CABINET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (FAMILY_27 ?x2) (MEMBER_27 ?x2))
+
+;; (TAKE A SPONGE AND WIPE ANY GLASS MARKS -LRB- FROM NOT USING A COASTER -RRB- OR SPILLS FROM FOOD AND DRINKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GOOD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE-3 AMOD GROSSEST-4 DOBJ PART-5 PREPC_OF CLEANING-7 POSS YOUR-8 DOBJ ROOM-9 PARTMOD DONE-10)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TO-3 DET THE-4 AMOD NEXT-5 POBJ STEP-6)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE ALL YOUR BOOKS AND DUST THEM)
+
+	;; A PERSON MAY HAVE BOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOOKS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [9]>
+
+;; (IF YOU DO N T HAVE ONE COMMA PUT THEM TO THE SIDE FOR LATER -LRB- WHERE YOU PUT YOUR TOYS AND CLOTHING -RRB-)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY PUT TOYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (TOYS_27 ?x1))
+
+	;; A PERSON MAY HAVE TOYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOYS_27 ?x1))
+
+;; (IF YOU ARE UP TO THIS STEP AND YOU HAVE ANY ANIMALS COMMA CLEAN THEIR CAGE/TANK)
+
+	;; A PERSON CAN BE TO A STEP.
+
+		(and (person_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (STEP_27 ?x2))
+
+	;; A PERSON MAY HAVE ANIMALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANIMALS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A CAGE/TANK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAGE_2FTANK_27 ?x1))
+
+;; (IF YOU HAVE FISH COMMA MAKE SURE THE WATER IS CLEAN)
+
+	;; A PERSON MAY HAVE FISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FISH_27 ?x1))
+
+	;; WATER CAN BE CLEAN.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (IF IT IS N T COMMA READ HOW TO CLEAN A FISH TANK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONCE IT S CLEAN COMMA FEED THEM)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL CLEAN.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (CLEAN_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE THEY ARE HEALTHY)
+
+	;; INDIVIDUAL -S CAN BE HEALTHY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+;; (IF YOU HAVE A BIRD -LRB- S -RRB- COMMA TAKE THEM OUT FOR A LITTLE)
+
+	;; A PERSON MAY HAVE A BIRD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIRD_27 ?x1))
+
+;; (TAKE OUT THEIR NEWSPAPERS FROM THE BOTTOM -LRB- OR SAND IF YOU USE THAT -RRB- AND THROW THEM OUT COMMA REPLACE THEM)
+
+	;; INDIVIDUAL -S MAY HAVE NEWSPAPERS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEWSPAPERS_27 ?x1))
+
+	;; A PERSON MAY USE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (IF YOUR CAGE STILL SMELLS COMMA TAKE YOUR SPONGE AGAIN AND WIPE THE CAGE INSIDE AND OUT)
+
+	;; A CAGE MAY SMELL.
+
+		(and (CAGE_27 ?x1) (MAY_27 ?x1) (SMELL_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPONGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPONGE_27 ?x1))
+
+;; (PUT ANY BIRD TOYS BACK IN AND PLACE YOUR BIRDS IN COMMA WITH IT)
+
+	;; A PERSON MAY HAVE BIRDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BIRDS_27 ?x1))
+
+;; (NOW YOU HAVE A CLEAN BIRD CAGE)
+
+	;; A PERSON MAY HAVE A BIRD CAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIRD_27 ?x1) (CAGE_27 ?x1))
+
+	;; A BIRD CAGE CAN BE CLEAN.
+
+		(and (BIRD_27 ?x1) (CAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (ALSO ON THE RARE OCCASION YOU HAVE A REPTILE COMMA -LRB- IGUANA COMMA TURTLE COMMA SNAKE COMMA ETC. -RRB- CLEAN ANY FECES OUT)
+
+	;; AN OCCASION CAN BE RARE.
+
+		(and (OCCASION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RARE_27 ?x2))
+
+	;; A REPTILE MAY CLE_OUT FECES.
+
+		(and (REPTILE_27 ?x1) (MAY_27 ?x1) (CLE_5FOUT_27 ?x1) (FECES_27 ?x1))
+
+;; (IF YOU HAVE A TURTLE COMMA THEN FOLLOW HOW TO CLEAN A TURTLE TANK)
+
+	;; A PERSON MAY HAVE A TURTLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TURTLE_27 ?x1))
+
+;; (YOU MAY EVEN HAVE A RABBIT)
+
+	;; A PERSON MAY HAVE A RABBIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RABBIT_27 ?x1))
+
+;; (FOLLOW THIS ARTICLE IN THAT CASE  HOW TO CLEAN AN INDOOR RABBIT CAGE)
+
+	;; AN ARTICLE CAN BE IN A CASE.
+
+		(and (ARTICLE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (case_27 ?x2))
+
+;; (IF YOU HAVE A TELEVISION SET COMMA USE TOILET PAPER OR CLOTH TO WIPE THE DUST OFF THE SCREEN)
+
+	;; A PERSON MAY HAVE A TELEVISION SET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TELEVISION_27 ?x1) (SET_27 ?x1))
+
+;; (DO THE SAME FOR THE REST OF THE TELEVISION)
+
+	;; TELEVISION MAY HAVE A REST.
+
+		(and (TELEVISION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+;; (KEEP THE REMOTE SOMEWHERE WHERE YOU LL REMEMBER)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL REMEMBER.V)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (REMEMBER_2EV_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [11]>
+
+;; (THE-3 DOBJ TOYS-4 NSUBJ YOU-5 RCMOD PUT-6 ADVMOD ASIDE-7 CONJ_AND ARRANGE-9 DOBJ THEM-10 POSS YOUR-12 PREP_IN ROOM-13 MARK AS-14 NSUBJ
+ YOU-15 AUX D-16 ADVCL LIKE-17)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 8 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DONATING-3 NN TOY-4 DOBJ PILE-5 PREP_FOR TOMORROW-7 MARK UNLESS-9 NSUBJ YOU-10 ADVCL DID-11 DET THIS-12 DOBJ EARLY-13 DET THE-15 PREP_IN
+ DAY-16)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 8 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE BOOKS CAN STAY UNTIL YOU HAVE A PLACE TO PUT THEM)
+
+	;; BOOKS MAY STAY.
+
+		(and (BOOKS_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1))
+
+	;; A PERSON MAY HAVE A PLACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLACE_27 ?x1))

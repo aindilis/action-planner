@@ -1,0 +1,326 @@
+;; (IF YOU FIND ANY BOOKS WHILE CLEANING OUT COMMA YOU CAN DECIDE WHETHER TO KEEP THEM FOR YOUR LIBRARY OR SELL THEM TO EXCHANGE FOR OTHER
+ BOOKS)
+
+	;; A PERSON MAY DECIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DECIDE_27 ?x1))
+
+	;; A PERSON MAY FIND BOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (BOOKS_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIBRARY_27 ?x1))
+
+;; (PUT IN BOOKSHELVES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (GET SOME BOOKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU HAVE ENOUGH BOOKS TO FILL UP ALL THE BOOKSHELVES YOU PUT IN COMMA GREAT)
+
+	;; A PERSON MAY HAVE BOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOOKS_27 ?x1))
+
+	;; BOOKS CAN BE ENOUGH.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (FILL IT WITH BOOKS ABOUT THINGS YOU ENJOY OR THAT INTEREST YOU)
+
+	;; BOOKS CAN BE ABOUT THINGS.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (THINGS_27 ?x2))
+
+	;; A PERSON MAY ENJOY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1))
+
+;; (AFTER ALL IT IS YOUR LIBRARY)
+
+	;; A THING-REFERRED-TO CAN BE A LIBRARY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LIBRARY_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIBRARY_27 ?x1))
+
+;; (IF YOU ARE FORTUNATE TO HAVE MORE SHELF SPACE THAN BOOKS COMMA YOU CAN CONTINUE TO FILL THEM GRADUALLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BOOKENDS WILL HELP TO STAND UP THE BOOKS UNTIL THE SHELVES ARE FULL)
+
+	;; SHELVES CAN BE FULL.
+
+		(and (shelf_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; (IN ANY CASE COMMA THERE IS NO NEED TO ACCUMULATE BOOKS YOU HAVE NO INTENTION EVER OF READING)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) HAVE.V (:Q A{N} INTENTION.N) (:A NIL (:P OF.P (:F K READING.N)))) NIL)
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (HAVE_2EV_27 ?x2) (Q_27 ?x4) (A_27 ?x4) (N_27 ?x3) (INTENTION_2EN_27 ?x4) (A_27 ?x5) (NIL_27 ?x5) (P_27 ?x6) (OF_2EP_27 ?x6) (F_27 ?x7) (K_27 ?x7) (READING_2EN_27 ?x7) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FILL YOUR BOOKSHELVES)
+
+	;; A PERSON MAY HAVE BOOKSHELVES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOOKSHELVES_27 ?x1))
+
+;; (BE SURE MOST OF THE BOOKSHELVES ARE FILLED)
+
+	;; 
+
+	;; ((:I (:A NIL (:P OF.P (:Q THE (:F PLUR BOOKSHELVE.N)))) (:F BE.PASV FILL.V)) NIL)
+
+		(and (I_27 ?x5) (A_27 ?x1) (NIL_27 ?x1) (P_27 ?x2) (OF_2EP_27 ?x2) (Q_27 ?x3) (THE_27 ?x3) (F_27 ?x4) (PLUR_27 ?x4) (BOOKSHELVE_2EN_27 ?x4) (F_27 ?x5) (BE_2EPASV_27 ?x5) (FILL_2EV_27 ?x5) (NIL_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ALSO COMMA DO N T CRAM BOOKS IN THE SHELVES IF YOU HAVE TOO MANY)
+
+	;; A PERSON MAY HAVE MANY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MANY_27 ?x1))
+
+;; (GET A BASKET TO HOLD THE EXTRAS OR PLACE ANOTHER BOOKCASE SOMEWHERE ELSE COMMA PERHAPS JUST OUTSIDE YOUR CLOSET)
+
+	;; A PERSON MAY HAVE A CLOSET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSET_27 ?x1))
+
+;; (CREATE A PLACE TO READ)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS MIGHT BE SIMPLY A COMFY CHAIR WITH A LAMP)
+
+	;; A THING CAN BE A CHAIR.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CHAIR_27 ?x2))
+
+	;; A CHAIR CAN BE WITH A LAMP.
+
+		(and (CHAIR_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (LAMP_27 ?x2))
+
+	;; A CHAIR CAN BE COMFY.
+
+		(and (CHAIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFY_27 ?x2))
+
+;; (IF YOU LIKE TO WRITE OR IF OTHERS ARE INVITED TO READ THERE COMMA YOU MAY WISH TO INCLUDE A DESK COMMA TABLE COMMA OR SOFA)
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (YOUR SEATING MAY OR MAY NOT SHARE YOUR CLOSET COMMA DEPENDING ON YOUR SPACE AND WHAT YOU WANT TO PUT THERE)
+
+	;; A PERSON MAY HAVE A SEATING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SEATING_27 ?x1))
+
+	;; A PERSON MAY HAVE A CLOSET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSET_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+;; (READ MAKE A READING NOOK IN YOUR ROOM FOR LOTS MORE DETAILS ON CREATING A SPACE TO READ)
+
+	;; A READ[PERSON??] MAY MAKE A READING_NOOK[PERSON??] DETAILS.
+
+		(and (READ_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAKE_27 ?x1) (A_27 ?x1) (READING_5FNOOK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		( (detail_27 ?x1))
+
+	;; A READING_NOOK[PERSON??] CAN BE IN A ROOM.
+
+		(and (READING_5FNOOK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (in_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (KEEP A NOTEBOOK THAT RECORDS BOOKS BORROWED COMMA IF YOU LEND BOOKS)
+
+	;; A PERSON MAY LEND BOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEND_27 ?x1) (BOOKS_27 ?x1))
+
+;; (WRITE DOWN THE NAME OF THE BOOK EACH PERSON BORROWED COMMA THE TITLE AND AUTHOR COMMA AND THE DUE DATE -LRB- IF YOU HAVE ONE -RRB- COMMA
+ SO YOU CAN KEEP TRACK OF WHERE YOUR BOOKS GO)
+
+	;; A BOOK MAY HAVE A NAME.
+
+		(and (BOOK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; A PERSON MAY HAVE SOME NUMBER_OR_PORTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A PERSON MAY KEEP TRACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (TRACK_27 ?x1))
+
+	;; BOOKS MAY GO.
+
+		(and (BOOKS_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE BOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOOKS_27 ?x1))
+
+;; (ADD IN ANYTHING ELSE YOU WANT TO HAVE IN YOUR CLOSET-LIBRARY)
+
+	;; A PERSON MAY HAVE A CLOSET-LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSET-LIBRARY_27 ?x1))
+
+;; (THIS IS YOUR CHOICE OF EXTRA ITEMS YOU MIGHT WANT)
+
+	;; A THING CAN BE A CHOICE OF ITEMS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CHOICE_27 ?x2) (of_27 ?x2 ?x3) (ITEMS_27 ?x3))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+	;; ITEMS CAN BE EXTRA.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (-LRB- CHAIRS COMMA BEANBAGS COMMA ETC. -RRB- SPREAD THE WORD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU WANT OTHER PEOPLE TO SEE AND VISIT YOUR LIBRARY COMMA HAND OUT FLIERS OR TELL FRIENDS AND FAMILY)
+
+	;; A PERSON MAY HAVE A LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIBRARY_27 ?x1))
+
+;; (IF NOT COMMA SKIP THIS STEP AND ENJOY YOUR LIBRARY IN PRIVATE)
+
+	;; A PERSON MAY HAVE A LIBRARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIBRARY_27 ?x1))
+
+;; (IF YOU HAVE KIDS COMMA YOU COULD EVEN DESIGNATE A SPECIAL SHELF -LRB- OR TWO -RRB- JUST FOR THEM AND THEIR FAVORITE BOOKS)
+
+	;; A PERSON MAY DESIGNATE A SHELF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DESIGNATE_27 ?x1) (A_27 ?x1) (SHELF_27 ?x1))
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE BOOKS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOOKS_27 ?x1))
+
+	;; BOOKS CAN BE FAVORITE.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (THEY LL LOVE IT AND SO WILL YOU COMMA BECAUSE THEY LL BE TAKING AN INTEREST IN READING AND LEARNING)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F NIL (:P LOVE.V (:Q DET THING-REFERRED-TO*.N))))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (NIL_27 ?x3) (P_27 ?x4) (LOVE_2EV_27 ?x4) (Q_27 ?x5) (DET_27 ?x5) (THING-REFERRED-TO_2A_2EN_27 ?x5))
+
+	;; (:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F NIL (:P TAKE.V (:Q A{N} INTEREST.N)))))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (NIL_27 ?x3) (P_27 ?x4) (TAKE_2EV_27 ?x4) (Q_27 ?x6) (A_27 ?x6) (N_27 ?x5) (INTEREST_2EN_27 ?x6))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

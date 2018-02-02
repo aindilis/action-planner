@@ -1,0 +1,716 @@
+;; (MEASURE COMMA ADD HALF AN INCH IN ALL DIRECTIONS COMMA AND CUT)
+
+	;; MEASURE MAY ADD AN INCH.
+
+		(and (MEASURE_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (AN_27 ?x1) (INCH_27 ?x1))
+
+;; (MEASURE YOUR IPOD S DIMENSIONS AND ADD HALF AN INCH)
+
+	;; AN IPOD MAY HAVE DIMENSIONS.
+
+		(and (IPOD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DIMENSIONS_27 ?x1))
+
+	;; A PERSON MAY HAVE AN IPOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IPOD_27 ?x1))
+
+;; (ALTERNATIVELY COMMA YOU COULD JUST WRAP THE CLOTH AROUND THE IPOD AND MARK AN EXTRA INCH ALL AROUND)
+
+	;; A PERSON MAY WRAP A CLOTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRAP_27 ?x1) (A_27 ?x1) (CLOTH_27 ?x1))
+
+	;; AN INCH CAN BE EXTRA.
+
+		(and (INCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (CUT THE MATERIAL TO SIZE)
+
+	;; A MATERIAL CAN BE TO SIZE.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (SIZE_27 ?x2))
+
+;; (TRACE YOUR IPOD FACEPLATE ONTO THE PAPER SIDE OF SOME FUSIBLE WEBBING)
+
+	;; A TRACE[PERSON??] MAY FACEPLATE ONTO A PAPER SIDE OF SOME_NUMBER_OF WEBBING.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FACEPLATE_27 ?x1) (ONTO_27 ?x1) (A_27 ?x1) (PAPER_27 ?x1) (SIDE_27 ?x1) (of_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (WEBBING_27 ?x2))
+
+	;; A PERSON MAY HAVE AN IPOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IPOD_27 ?x1))
+
+	;; A WEBBING CAN BE FUSIBLE.
+
+		(and (WEBBING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FUSIBLE_27 ?x2))
+
+;; (BE AS PRECISE AS YOU CAN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS WILL DIRECTLY AFFECT THE LOOK OF YOUR FINAL PRODUCT)
+
+	;; A THING MAY AFFECT A LOOK OF A PRODUCT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (AFFECT_27 ?x1) (A_27 ?x1) (LOOK_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PRODUCT_27 ?x2))
+
+	;; A PRODUCT MAY HAVE A LOOK.
+
+		(and (PRODUCT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOOK_27 ?x1))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (POSITION PARALLEL TO THE EDGE AND IRON INTO PLACE)
+
+	;; A POSITION[PERSON??] MAY PARALLEL TO AN EDGE.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PARALLEL_27 ?x1) (to_27 ?x1 ?x2) (EDGE_27 ?x2))
+
+;; (IRON THE FUSIBLE WEBBING ONTO THE BACK OF YOUR MATERIAL COMMA POSITIONING IT WHERE YOU WANT THE FACE PLATE IN YOUR FINAL PRODUCT)
+
+	;; AN IRON[PERSON??] CAN BE WEBBING ONTO A BACK OF A MATERIAL.
+
+		(and (IRON_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (WEBBING_27 ?x1) (ONTO_27 ?x1) (A_27 ?x1) (BACK_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (MATERIAL_27 ?x2))
+
+	;; A MATERIAL MAY HAVE A BACK.
+
+		(and (MATERIAL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACK_27 ?x1))
+
+	;; A PERSON MAY HAVE A MATERIAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MATERIAL_27 ?x1))
+
+	;; A PERSON MAY WANT A FACE PLATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (FACE_27 ?x1) (PLATE_27 ?x1))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (CUT A SLIT FOR YOUR SCISSOR)
+
+	;; A SLIT CAN BE FOR A SCISSOR.
+
+		(and (SLIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (SCISSOR_27 ?x2))
+
+	;; A PERSON MAY HAVE A SCISSOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCISSOR_27 ?x1))
+
+;; (CUT SLITS IN THE OPENING TO ALLOW YOUR SCISSORS THROUGH)
+
+	;; A CUT[PERSON??] MAY SLIT IN AN OPENING.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SLIT_27 ?x1) (in_27 ?x1 ?x2) (opening_27 ?x2))
+
+	;; A PERSON MAY HAVE SCISSORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SCISSORS_27 ?x1))
+
+;; (CUT TO THE EDGES FROM THE CENTER)
+
+	;; A CUT[PERSON??] CAN BE TO EDGES.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (to_27 ?e1 ?x1) (EDGES_27 ?x1))
+
+;; (CUT RADIATING LINES OUT FROM THE CENTER OF THE CIRCLE UP TO YOUR TRACED LINES)
+
+	;; A CUT[PERSON??] MAY RADIATE_OUT LINES FROM A CENTER OF A CIRCLE.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (RADIATE_5FOUT_27 ?x1) (LINES_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (CIRCLE_27 ?x2))
+
+	;; A CIRCLE MAY HAVE A CENTER.
+
+		(and (CIRCLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+	;; A PERSON MAY HAVE LINES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LINES_27 ?x1))
+
+	;; LINES CAN BE TRACED.
+
+		(and (line_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRACED_27 ?x2))
+
+;; (FOR THE RECTANGLE COMMA CUT TO EACH CORNER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FOR THE CIRCLE COMMA CUT EQUALLY SPACED RADIANT LINES)
+
+	;; LINES CAN BE RADIANT.
+
+		(and (line_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RADIANT_27 ?x2))
+
+;; (PEEL OFF THE PAPER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PEEL OFF THE PAPER BACKING FROM THE FUSIBLE WEBBING)
+
+	;; A PAPER BACKING CAN BE FROM A WEBBING.
+
+		(and (PAPER_27 ?x1) (BACKING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (WEBBING_27 ?x2))
+
+	;; A WEBBING CAN BE FUSIBLE.
+
+		(and (WEBBING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FUSIBLE_27 ?x2))
+
+;; (IRON THE POINTS OUT COMMA USING THE TIP OF YOUR IRON)
+
+	;; AN IRON_THE[PERSON??] MAY POINT_OUT.
+
+		(and (IRON_5FTHE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (POINT_5FOUT_27 ?x1))
+
+	;; AN IRON MAY HAVE A TIP.
+
+		(and (IRON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TIP_27 ?x1))
+
+	;; A PERSON MAY HAVE AN IRON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IRON_27 ?x1))
+
+;; (IRON EACH POINT AWAY FROM THE CENTER)
+
+	;; AN IRON[PERSON??] MAY POINT_AWAY FROM A CENTER.
+
+		(and (IRON_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (POINT_5FAWAY_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+;; (USE ONLY THE TIP OF YOUR IRON TO AVOID GETTING YOUR IRON PLATE STICKY)
+
+	;; AN IRON MAY HAVE A TIP.
+
+		(and (IRON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TIP_27 ?x1))
+
+	;; A PERSON MAY HAVE AN IRON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IRON_27 ?x1))
+
+	;; A PERSON MAY HAVE AN IRON PLATE STICKY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IRON_27 ?x1) (PLATE_27 ?x1) (STICKY_27 ?x1))
+
+;; (CLICKWHEEL OPENING POINTS IRONED AWAY FROM THE OPENING)
+
+	;; OPENING POINTS MAY IRON_AWAY FROM AN OPENING.
+
+		(and (OPENING_27 ?x1) (POINTS_27 ?x1) (MAY_27 ?x1) (IRON_5FAWAY_27 ?x1) (FROM_27 ?x1) (AN_27 ?x1) (OPENING_27 ?x1))
+
+	;; OPENING POINTS CAN BE CLICKWHEEL.
+
+		(and (opening_27 ?x1) (point_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLICKWHEEL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [24]>
+
+;; (NOTE THAT THE LOWER FLAP HAD TO BE TRIMMED TO PREVENT IT OVERLAPPING THE CLICKWHEEL OPENING)
+
+	;; A THING-REFERRED-TO MAY OVERLAP AN OPENING.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (OVERLAP_27 ?x1) (AN_27 ?x1) (OPENING_27 ?x1))
+
+	;; AN OPENING CAN BE CLICKWHEEL.
+
+		(and (OPENING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLICKWHEEL_27 ?x2))
+
+;; (CONTINUE IRONING POINTS AWAY FROM THE CENTER)
+
+	;; IRONING MAY POINT_AWAY FROM A CENTER.
+
+		(and (IRONING_27 ?x1) (MAY_27 ?x1) (POINT_5FAWAY_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+	;; AN IRONING CAN BE CONTINUE.
+
+		(and (IRONING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONTINUE_27 ?x2))
+
+;; (PULL THEM SLIGHTLY WHILE IRONING TO ENLARGE THE OPENING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [24]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (OPEN YOUR PACKAGE OF IRON ON PATCH MATERIAL)
+
+	;; A PERSON MAY HAVE A PACKAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PACKAGE_27 ?x1))
+
+	;; AN IRON_ON_PATCH[PERSON??] MAY HAVE A MATERIAL.
+
+		(and (IRON_5FON_5FPATCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MATERIAL_27 ?x1))
+
+;; (OPEN UP YOUR PACKAGE OF IRON-ON MENDING MATERIAL)
+
+	;; A PERSON MAY HAVE A PACKAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PACKAGE_27 ?x1))
+
+	;; AN IRON-ON_MENDING[PERSON??] MAY HAVE A MATERIAL.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MATERIAL_27 ?x1))
+
+;; (TRACE THE FACEPLATE ONTO THE MENDING MATERIAL)
+
+	;; A MATERIAL CAN BE MENDING.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MENDING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [25]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [26]>
+
+;; (TRIM THE MATERIAL TO SIZE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TRIM YOUR MATERIAL TO NO MORE THAN AN INCH AROUND THE TRACING)
+
+	;; A PERSON MAY HAVE A MATERIAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MATERIAL_27 ?x1))
+
+;; (MITER THE CORNERS IF DESIRED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS WILL MAKE SEWING THEM SLIGHTLY EASIER LATER)
+
+	;; A THING MAY MAKE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+;; (FOLD OVER THE TOP AND BOTTOM EDGES FOLD THE TOP AND BOTTOM EDGES OVER COMMA LEAVING AT LEAST HALF AN INCH BETWEEN THE MARKED EDGES FOR
+ THE IPOD AND THE FOLDED EDGE)
+
+	;; EDGES CAN BE FOR AN IPOD.
+
+		(and (edge_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ipod_27 ?x2))
+
+	;; EDGES CAN BE MARKED.
+
+		(and (edge_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARKED_27 ?x2))
+
+	;; AN EDGE CAN BE FOLDED.
+
+		(and (EDGE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (fold_27 ?e2 ?x1))
+
+;; (PIN IN PLACE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MEASURE CAREFULLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MEASURE TO ENSURE THAT THE TOP AND BOTTOM EDGES ARE PARALLEL TO EACH OTHER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ADJUST PINS IF NECESSARY)
+
+	;; 
+
+	;; ((:I (:Q DET ADJUST.NAME) (:F PIN.V NIL)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (ADJUST_2ENAME_27 ?x1) (F_27 ?x2) (PIN_2EV_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CUT OUT THE OPENINGS FROM THE IRON-ON MENDING MATERIAL CUT OUT THE OPENINGS FROM THE IRON-ON MENDING MATERIAL)
+
+	;; A CUT[PERSON??] MAY CUT_OUT OPENINGS FROM A MENDING MATERIAL.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CUT_5FOUT_27 ?x1) (OPENINGS_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (MENDING_27 ?x1) (MATERIAL_27 ?x1))
+
+	;; OPENINGS CAN BE FROM A MENDING MATERIAL.
+
+		(and (opening_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (MENDING_27 ?x2) (MATERIAL_27 ?x2))
+
+	;; A MENDING MATERIAL CAN BE IRON-ON.
+
+		(and (MENDING_27 ?x1) (MATERIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IRON-ON_27 ?x2))
+
+;; (CUT APPROXIMATELY 1-1 0.5 CM OUTSIDE THE MARKED LINE)
+
+	;; A LINE CAN BE MARKED.
+
+		(and (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARKED_27 ?x2))
+
+;; (TEST FIT THE PATCH MATERIAL TO YOUR OTHER FABRIC AND TRIM TO SIZE IF NECESSARY)
+
+	;; A TEST[PERSON??] MAY FIT A PATCH MATERIAL TO A FABRIC.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FIT_27 ?x1) (A_27 ?x1) (PATCH_27 ?x1) (MATERIAL_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (FABRIC_27 ?x2))
+
+	;; A PERSON MAY HAVE A FABRIC.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FABRIC_27 ?x1))
+
+;; (LINE IT UP AND IRON IT ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LINE UP THE OPENINGS CAREFULLY AND IRON THE PATCH MATERIAL INTO THE BACK SIDE OF THE OTHER FABRIC)
+
+	;; A FABRIC MAY HAVE A SIDE.
+
+		(and (FABRIC_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+;; (FOLD AND MARK YOUR SEAM LINES)
+
+	;; A PERSON MAY HAVE SEAM LINES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SEAM_27 ?x1) (LINES_27 ?x1))
+
+;; (FOLD THE WHOLE THING IN HALF WITH THE PATCH MATERIAL TO THE OUTSIDE)
+
+	;; HALF CAN BE WITH A PATCH MATERIAL.
+
+		(and (HALF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (PATCH_27 ?x2) (MATERIAL_27 ?x2))
+
+;; (TEST FIT TO YOUR IPOD AND PIN ALONG THE LINE TO BE SEWN)
+
+	;; A TEST[PERSON??] MAY FIT TO AN IPOD.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FIT_27 ?x1) (to_27 ?x1 ?x2) (IPOD_27 ?x2))
+
+	;; A PERSON MAY HAVE AN IPOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IPOD_27 ?x1))
+
+;; (SEW THE SIDE SEAM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SEW THE SIDE SEAM AS MARKED AND TEST FIT)
+
+	;; A SIDE SEAM CAN BE MARKED.
+
+		(and (SIDE_27 ?x1) (SEAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARKED_27 ?x2))
+
+;; (ADJUST AS NECESSARY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TRIM THE SEAM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TRIM SEAM ALLOWANCE TO 1/4 INCH -LRB- 3CM -RRB-)
+
+	;; A TRIM[PERSON??] MAY SEAM ALLOWANCE TO SOME_NUMBER_OF INCH.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SEAM_27 ?x1) (ALLOWANCE_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (INCH_27 ?x2))
+
+;; (FOLD SEVERAL LAYERS OF RIBBON FOR THE ATTACHMENT POINT)
+
+	;; LAYERS CAN BE CONSTITUTED_OF_OR_FILLED_WITH RIBBON.
+
+		(and (layer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RIBBON_27 ?x2))
+
+	;; LAYERS CAN BE FOLD.
+
+		(and (layer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOLD_27 ?x2))
+
+;; (FOLD SEVERAL LAYERS OF 1/16TH RIBBON AND PASS THEM THROUGH THE ATTACHMENT RING YOU CHOSE)
+
+	;; SOME_NUMBER_OF LAYERS CAN BE CONSTITUTED_OF_OR_FILLED_WITH RIBBON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (LAYERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RIBBON_27 ?x2))
+
+	;; A RIBBON CAN BE 1/16TH.
+
+		(and (RIBBON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_31_2F16TH_27 ?x2))
+
+	;; A PERSON MAY CHOOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1))
+
+;; (-LRB- THE AUTHOR USED 8 LAYERS OF RIBBON)
+
+	;; AN AUTHOR MAY USE SOME_NUMBER_OF LAYERS OF RIBBON.
+
+		(and (AUTHOR_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (LAYERS_27 ?x1) (OF_27 ?x1) (RIBBON_27 ?x1))
+
+	;; SOME_NUMBER_OF LAYERS CAN BE CONSTITUTED_OF_OR_FILLED_WITH RIBBON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (LAYERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RIBBON_27 ?x2))
+
+;; (D-RINGS COMMA KEYCHAIN RINGS COMMA ETC. ALL WILL WORK WELL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SEW THE RIBBON ENDS TOGETHER)
+
+	;; A SEW[PERSON??] MAY END.
+
+		(and (SEW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (END_27 ?x1))
+
+;; (SEW TOGETHER WELL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SEW THE RIBBON ENDS TOGETHER FIRMLY)
+
+	;; A SEW[PERSON??] MAY END.
+
+		(and (SEW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (END_27 ?x1))
+
+;; (SEW THE RIBBON TO THE SIDE SEAM ALLOWANCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLACE THE RIBBON ENDS ALONG THE SEAM ALLOWANCE FOR THE SIDE SEAM AND SEW THEM FIRMLY IN PLACE)
+
+	;; A RIBBON MAY END_ALONG A SEAM ALLOWANCE.
+
+		(and (RIBBON_27 ?x1) (MAY_27 ?x1) (END_5FALONG_27 ?x1) (A_27 ?x1) (SEAM_27 ?x1) (ALLOWANCE_27 ?x1))
+
+	;; A SEAM ALLOWANCE CAN BE FOR A SIDE SEAM.
+
+		(and (SEAM_27 ?x1) (ALLOWANCE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (SIDE_27 ?x2) (SEAM_27 ?x2))
+
+;; (TOPSTITCH THE EDGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [26]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TOPSTITCH THE EDGE FOR ADDITIONAL REINFORCEMENT OF THE ATTACHMENT POINT)
+
+	;; AN ATTACHMENT POINT MAY UNDERGO A REINFORCEMENT.
+
+		(and (ATTACHMENT_27 ?x1) (POINT_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (REINFORCEMENT_27 ?x1))
+
+;; (SEW THE CENTER OF THE BOTTOM CLOSED COMMA LEAVING THE CORNERS OPEN FOR THE EARBUDS)
+
+	;; A BOTTOM MAY HAVE A CENTER.
+
+		(and (BOTTOM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+	;; CORNERS CAN BE OPEN FOR EARBUDS.
+
+		(and (corner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPEN_27 ?x2) (for_27 ?e1 ?x3) (EARBUDS_27 ?x3))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [27]>

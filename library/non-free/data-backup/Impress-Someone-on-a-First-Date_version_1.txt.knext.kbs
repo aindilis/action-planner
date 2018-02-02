@@ -1,0 +1,371 @@
+;; (MAKE A LIST OF CONVERSATION STARTERS AND QUESTIONS YOU CAN ASK THEM IF YOU RE HAVING TROUBLE FINDING A TOPIC)
+
+	;; A PERSON MAY ASK INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ASK_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (QUESTIONS ABOUT THEIR PET -LRB- S -RRB- COMMA TASTE IN MUSIC COMMA GOOD BOOKS THEY VE READ LATELY COMMA FAVORITE THING TO DO OUTDOORS COMMA WOULD YOU RATHER QUESTIONS COMMA ARE ALL GOOD IDEAS)
+
+	;; QUESTIONS CAN BE ABOUT A PET.
+
+		(and (question_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (PET_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A PET.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PET_27 ?x1))
+
+	;; TASTE CAN BE IN MUSIC.
+
+		(and (TASTE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MUSIC_27 ?x2))
+
+	;; BOOKS CAN BE GOOD.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A THING CAN BE FAVORITE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; IDEAS CAN BE GOOD.
+
+		(and (IDEAS_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (REMEMBER THESE AND READ THE FRONT PAGE OF THE NEWSPAPER COMMA TOO)
+
+	;; A NEWSPAPER MAY HAVE A PAGE.
+
+		(and (NEWSPAPER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PAGE_27 ?x1))
+
+;; (IF YOU RE NOT SURE WHAT HE OR SHE WILL LIKE COMMA ASK)
+
+	;; A MALE MAY LIKE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (YOU MAY WANT TO TAKE HIM OR HER OUT TO EAT SOMEPLACE OUT OF THE ORDINARY -LRB- DO N T GO OVERBOARD COMMA AS THIS CAN SET A BAD PRECEDENT -RRB-)
+
+	;; A THING MAY SET A PRECEDENT.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (SET_27 ?x1) (A_27 ?x1) (PRECEDENT_27 ?x1))
+
+	;; A PRECEDENT CAN BE BAD.
+
+		(and (PRECEDENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+;; (IF IT IS A FORMAL DATE COMMA GREET HIM OR HER WITH A SMALL GIFT)
+
+	;; A THING-REFERRED-TO CAN BE A DATE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DATE_27 ?x2))
+
+	;; A DATE CAN BE FORMAL.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FORMAL_27 ?x2))
+
+	;; A GIFT CAN BE SMALL.
+
+		(and (GIFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (FOR EXAMPLE COMMA A SMALL BOX OF CHOCOLATES OR A SINGLE ROSE)
+
+	;; A BOX OF CHOCOLATES MAY RISE.
+
+		(and (BOX_27 ?x1) (of_27 ?x1 ?x2) (CHOCOLATES_27 ?x2) (MAY_27 ?x2) (RISE_27 ?x2))
+
+	;; A BOX CAN BE CONSTITUTED_OF_OR_FILLED_WITH CHOCOLATES.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CHOCOLATES_27 ?x2))
+
+	;; A BOX CAN BE SMALL.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (THIS IS EVEN BETTER IF YOU KNOW WHAT TYPES OF FLOWERS OR CANDIES ARE YOUR DATE S FAVORITES)
+
+	;; A THING CAN BE BETTER.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; TYPES OF FLOWERS CAN BE FAVORITES.
+
+		(and (type_27 ?x1) (of_27 ?x1 ?x2) (flower_27 ?x2) (be_27 ?e1 ?x1 ?x3) (favorite_27 ?x3))
+
+	;; A DATE MAY HAVE FAVORITES.
+
+		(and (DATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FAVORITES_27 ?x1))
+
+	;; A PERSON MAY HAVE A DATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+;; (NEVER TRY THE SINGLE RED ROSE ON A CASUAL FIRST DATE COMMA YOU MAY COME ON WAY TOO STRONG COMMA AS THIS SIGNIFIES PASSIONATE LOVE)
+
+	;; A PERSON MAY COME ON WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (ON_27 ?x1) (WAY_27 ?x1))
+
+	;; A RED MAY RISE ON A DATE.
+
+		(and (red_27 ?x1) (MAY_27 ?x1) (RISE_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+	;; A RED CAN BE SINGLE.
+
+		(and (red_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SINGLE_27 ?x2))
+
+	;; A DATE CAN BE CASUAL.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CASUAL_27 ?x2))
+
+	;; WAY CAN BE STRONG.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+	;; A LOVE CAN BE SIGNIFIES.
+
+		(and (LOVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (signify_27 ?x2))
+
+	;; A LOVE CAN BE PASSIONATE.
+
+		(and (LOVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PASSIONATE_27 ?x2))
+
+;; (TRY BAKING A NICE TREAT COMMA GETTING A SMALL STUFFED ANIMAL COMMA OR SOMETHING ELSE THAT IS UNIQUE TO THEM)
+
+	;; A TREAT CAN BE NICE.
+
+		(and (treat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+	;; AN ANIMAL CAN BE SMALL.
+
+		(and (ANIMAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; AN ANIMAL CAN BE STUFFED.
+
+		(and (ANIMAL_27 ?x1) (be_27 ?e1 ?x1 ?e2) (stuff_27 ?e2 ?x1))
+
+;; (NEVER DO ANYTHING BIG ON THE FIRST DATE)
+
+	;; A NEVER[PERSON??] MAY DO ANYTHING.
+
+		(and (NEVER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DO_27 ?x1) (ANYTHING_27 ?x1))
+
+;; (THE BEST GIFT YOU CAN GIVE IS YOUR COMPANY)
+
+	;; A GIFT CAN BE A COMPANY.
+
+		(and (GIFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (company_27 ?x2))
+
+	;; A GIFT CAN BE BEST.
+
+		(and (GIFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A PERSON MAY GIVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1))
+
+	;; A PERSON MAY HAVE A COMPANY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (company_27 ?x1))
+
+;; (COMMUNICATE OPENLY AND HONESTLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TALK TO YOUR DATE DURING DINNER AND LISTEN TO WHAT HE OR SHE HAS TO SAY)
+
+	;; A PERSON MAY HAVE A DATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+;; (IF YOU ARE A GUY COMMA PAY FOR THE DATE COMMA IF YOU ARE A GIRL OFFER TO PAY FOR THE DATE COMMA IF YOUR OFFER IS DECLINED COMMA OFFER TO PAY FOR YOURSELF COMMA IF THIS DOES NOT FLY COMMA ACCEPT)
+
+	;; A PERSON CAN BE A GUY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (GUY_27 ?x2))
+
+	;; A PERSON CAN BE GIRL OFFER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GIRL_27 ?x2) (OFFER_27 ?x2))
+
+	;; AN OFFER MAY BE DECLINE -ED.
+
+		(and (OFFER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DECLINE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE AN OFFER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFER_27 ?x1))
+
+	;; A THING MAY DO.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THEY ARE TRYING TO BE NICE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU ARE A GAY/LESBIAN COUPLE COMMA JUST ASK THEM WHAT THEY PREFER TO DO AND EXPLAIN WHAT YOU PREFER TO DO AND THEN COMPROMISE)
+
+	;; A PERSON CAN BE GAY/LESBIAN COUPLE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GAY_2FLESBIAN_27 ?x2) (COUPLE_27 ?x2))
+
+;; (A LOT OF GAY/LESBIAN COUPLES RUN INTO THIS PROBLEM BECAUSE BOTH SIDES WANT TO PAY FOR THEMSELVES COMMA THE BEST BET IS TO EITHER TAKE TURNS PAYING OR PAY FOR YOURSELF)
+
+	;; A LOT OF GAY/LESBIAN COUPLES MAY RUN INTO A PROBLEM.
+
+		(and (LOT_27 ?x1) (of_27 ?x1 ?x2) (GAY_2FLESBIAN_27 ?x2) (COUPLES_27 ?x2) (MAY_27 ?x2) (RUN_27 ?x2) (INTO_27 ?x2) (A_27 ?x2) (PROBLEM_27 ?x2))
+
+	;; A BET CAN BE BEST.
+
+		(and (BET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; TURNS MAY PAY.
+
+		(and (TURNS_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+;; (ASK QUESTIONS ABOUT THE LIFE OF YOUR DATE)
+
+	;; A DATE MAY HAVE A LIFE.
+
+		(and (DATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+	;; A PERSON MAY HAVE A DATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+;; (DO A LOT OF LISTENING COMMA IT S IMPORTANT NOT TO OVER-CHAT THEM COMMA TRY TO LISTEN A LITTLE MORE THAN YOU TALK COMMA BUT DO N T LET THE CONVERSATION JUST DIE OUT)
+
+	;; A PERSON MAY TALK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TALK_27 ?x1))
+
+	;; A CONVERSATION MAY DIE_OUT.
+
+		(and (CONVERSATION_27 ?x1) (MAY_27 ?x1) (DIE_5FOUT_27 ?x1))
+
+;; (LOOK INTO YOUR DATE S EYES)
+
+	;; A DATE MAY HAVE EYES.
+
+		(and (DATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EYES_27 ?x1))
+
+	;; A PERSON MAY HAVE A DATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+;; (EYE CONTACT SHOWS INTEREST)
+
+	;; CONTACT MAY SHOW INTEREST.
+
+		(and (contact_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (INTEREST_27 ?x1))
+
+	;; AN EYE[PERSON??] MAY HAVE A CONTACT.
+
+		(and (EYE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (contact_27 ?x1))
+
+;; (IF YOU ARE CONFIDENT THAT YOU HAVE A SENSE OF HUMOR AND INTELLIGENCE COMMA MAKE THEM LAUGH)
+
+	;; A PERSON CAN BE CONFIDENT A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONFIDENT_27 ?x2) (A_27 ?x2) (PROPOSITION_27 ?x2))
+
+	;; A PERSON MAY HAVE A SENSE OF HUMOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SENSE_27 ?x1) (of_27 ?x1 ?x2) (HUMOR_27 ?x2))
+
+	;; A SENSE CAN BE CONSTITUTED_OF_OR_FILLED_WITH HUMOR.
+
+		(and (SENSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (HUMOR_27 ?x2))
+
+;; (BUT DO N T LECTURE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [26]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PAY YOUR DATE COMPLIMENTS COMMA COMPLIMENTS ARE YOUR BEST FRIEND WHEN DATING COMMA DO N T OVERDO IT OR OFFER ANYTHING INSINCERE COMMA TRY NOT TO BE TOO CHEESY)
+
+	;; A PERSON MAY HAVE DATE COMPLIMENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DATE_27 ?x1) (compliment_27 ?x1))
+
+	;; COMPLIMENTS CAN BE A FRIEND.
+
+		(and (compliment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (FRIEND_27 ?x2))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+	;; A FRIEND CAN BE BEST.
+
+		(and (FRIEND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (FIND ONE OR MORE QUALITIES IN WHICH TO SINCERELY COMPLIMENT THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [28]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO SOMETHING UNUSUAL AND CHEAP COMMA SOMETHING YOU HAD TO THINK ABOUT AND PUT TIME INTO)
+
+	;; SOMETHING CAN BE UNUSUAL.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNUSUAL_27 ?x2))
+
+;; (DO N T DO ANYTHING HUGE COMMA JUST GO FOR A STROLL IN YOUR NEIGHBORHOOD OR OFFER THEM COCOA COMMA SHOW THEM YOUR FAVORITE CONSTELLATION COMMA SOMETHING INTERESTING THAT YOU ALONE WILL BE REMEMBERED FOR)
+
+	;; A STROLL CAN BE IN A NEIGHBORHOOD.
+
+		(and (STROLL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (NEIGHBORHOOD_27 ?x2))
+
+	;; A PERSON MAY HAVE A NEIGHBORHOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEIGHBORHOOD_27 ?x1))
+
+	;; A PERSON MAY HAVE A CONSTELLATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONSTELLATION_27 ?x1))
+
+	;; A CONSTELLATION CAN BE FAVORITE.
+
+		(and (constellation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))

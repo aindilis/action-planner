@@ -1,0 +1,117 @@
+;; (PRIORITIZE YOUR TASKS AND ALLOW NECESSARY TIME TO COMPLETE EACH TASK)
+
+	;; A PERSON MAY HAVE TASKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TASKS_27 ?x1))
+
+;; (REMEMBER TO INCLUDE TRAVEL TIME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TRY TO COMPLETE YOUR TASK IN ORDER OF PRIORITY)
+
+	;; A PERSON MAY HAVE A TASK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TASK_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (CHOOSE A PRIORITY SYSTEM THAT FITS YOU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (STICK TO YOUR SCHEDULE AND MOVE FLEXIBLE ITEMS TO ANOTHER DAY SHOULD AN EMERGENCY ARISE)
+
+	;; A PERSON MAY HAVE A SCHEDULE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+	;; ITEMS CAN BE FLEXIBLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLEXIBLE_27 ?x2))
+
+	;; AN EMERGENCY MAY ARISE.
+
+		(and (EMERGENCY_27 ?x1) (MAY_27 ?x1) (ARISE_27 ?x1))
+
+;; (CHECK OFF TASKS THAT ARE COMPLETE WITH A CHECK MARK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CAN MAKE ANOTHER NOTATION NEXT TO ITEMS THAT MUST GET POSTPONED OR CAN WAIT FOR TOMORROW COMMA HAVE BEEN CANCELED OR THAT YOU VE
+ DELEGATED -LRB- WITH THE NAME OF WHO IS TAKING CARE OF IT -RRB-)
+
+	;; A PERSON MAY MAKE SOME_NUMBER_OF NOTATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (NOTATION_27 ?x1))
+
+;; (ALLOW SPACE AT THE BOTTOM OF YOUR SCHEDULE FOR LOW PRIORITY ITEMS OR THINGS COMING UP LATER IN THE WEEK)
+
+	;; A SCHEDULE MAY HAVE A BOTTOM.
+
+		(and (SCHEDULE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1))
+
+	;; A SCHEDULE CAN BE FOR PRIORITY ITEMS.
+
+		(and (SCHEDULE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PRIORITY_27 ?x2) (ITEMS_27 ?x2))
+
+	;; A PERSON MAY HAVE A SCHEDULE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+	;; PRIORITY ITEMS MAY COME IN A WEEK.
+
+		(and (PRIORITY_27 ?x1) (ITEMS_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (WEEK_27 ?x2))
+
+	;; PRIORITY ITEMS CAN BE LOW.
+
+		(and (PRIORITY_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (IF YOU HAVE TIME TODAY YOU CAN BEGIN WORKING ON THOSE ITEMS TO GET AHEAD)
+
+	;; A PERSON MAY BEGIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BEGIN_27 ?x1))
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (REMEMBER TO TRANSFER ITEMS NOT DONE TODAY TO TOMORROW S LIST)
+
+	;; TOMORROW MAY HAVE A LIST.
+
+		(and (TOMORROW_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))

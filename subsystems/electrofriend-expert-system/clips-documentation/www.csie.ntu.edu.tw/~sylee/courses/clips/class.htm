@@ -1,0 +1,179 @@
+<html>
+<head>
+   <title>Cool: Class and Inheritance
+   </title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+
+<h2>Class and Inheritance</h2>
+COOL -- CLIPS Object Oriented Language
+<h3>Defining Classes</h3>
+<pre>
+(<font color="#8000FF">defclass</font> CAR (<font color="#FF0000">is-a</font> USER)           <font color="#0040a0">; user-defined class</font>
+    (<font color="#FF0000">role concrete</font>)                 <font color="#0040a0">; instances can be made</font>
+    (<font color="#8000FF">slot</font> id)
+    (<font color="#8000FF">multislot</font> owner)
+    (<font color="#8000FF">slot</font> color)
+    (<font color="#8000FF">slot</font> value) )
+
+(<font color="#8000FF">defclass</font> JALOPY (<font color="#FF0000">is-a</font> CAR)
+    (<font color="#8000FF">slot</font> color (allowed-values grey rust blue))
+    (<font color="#8000FF">slot</font> value (range 0.0 1000.0)) )
+
+(<font color="#8000FF">defclass</font> LUXURY (<font color="#FF0000">is-a</font> CAR)
+    (<font color="#8000FF">slot</font> color (allowed-values grey red green))
+    (<font color="#8000FF">slot</font> value (range 0.0 100000.0)) )
+</pre>
+
+<h4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.16.1.html">Class Functions</A></h4>
+<pre>
+(list-defclasses)
+(browse-classes)        <font color="#0040a0">;shows classes' hierachy</font>
+(superclassp CAR LUXURY)
+(subclassp CAR LUXURY)
+(ppdefclass CAR)
+(undefclass CAR)
+(describe-class CAR)
+(class-abstractp CAR)
+</pre>
+
+<h3>Object Instances</h3>
+<h4>Instance Initiation</h4>
+definstances set up initial instances at reset.
+<pre>
+(<font color="#8000FF">definstances</font> Cars
+    (c1 of CAR (value 5000.0))
+    (c2 of LUXURY (color red) (value 15000.)))
+</pre>
+<h4><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.16.3.html">Definstances Functions</A></h4>
+<pre>
+(<font color="#8000FF">instances</font>)
+(<font color="#8000FF">list</font>-<font color="#8000FF">definstances</font>)
+(<font color="#8000FF">ppdefinstances</font> Cars)
+(<font color="#8000FF">undefinstances</font> Cars)
+</pre>
+<h4>Make/Unmake Instances</h4>
+<pre>
+(<font color="#8000FF">make-instance</font> c3 of CAR)
+(<font color="#8000FF">unmake-instance</font> c3 of CAR)
+</pre>
+<h4>Modifying Instances</h4>
+<pre>
+(<font color="#8000FF">modify-instance</font> c1 (value 5500.0))
+</pre>
+
+<h3>Object Pattern Matching</h3>
+<A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node9.3.2.html"><b>Class Specifiers</b></A>
+<ol>
+<li>abstract or concrete class
+<li>reactive or non-reactive class
+</ol>
+Objects of a reactive class can match object patterns in a rule.
+An abstract class cannot be reactive.
+<pre>
+(<font color="#8000FF">defclass</font> CAR (is-a USER)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#FF0000">pattern-match reactive</font>)
+    (<font color="#8000FF">slot</font> id )
+    (<font color="#8000FF">multislot</font> owner)
+    (<font color="#8000FF">slot</font> color)
+    (<font color="#8000FF">slot</font> value) )
+
+(<font color="#8000FF">defrule</font> mix-and-match
+    (<font color="#8000FF">object</font> (is-a CAR) (name ?id)
+            (color red|blue|green)
+            (value ?val) )
+    =&gt;
+    (<font color="#8000FF">printout</font> t crlf <font color="#008000">"car "</font> ?id <font color="#008000">" value = "</font> ?val) )
+</pre>
+
+<h3>Get and Put Slot Values</h3>
+<pre>
+(<font color="#8000FF">defclass</font> CAR (is-a USER)
+    (<font color="#8000FF">role</font> concrete)
+    (pattern-match reactive)
+    (<font color="#8000FF">slot</font> color
+          (<font color="#FF0000">create-accessor read-write</font>))     <font color="#0040a0">;to create message handlers automatically</font>
+    (<font color="#8000FF">slot</font> value
+          (<font color="#FF0000">create-accessor read-write</font>)) )
+
+(<font color="#8000FF">definstances</font> Cars
+    (c1 of CAR (value 5000.0))
+    (c2 of CAR (color red)))
+</pre>
+
+<p>Now both color and value slots have get- and put- message handlers to use.
+create-accessor can be also read or write only.
+</p>
+<pre>
+(<font color="#8000FF">send</font> [c1] <font color="#8000FF">put</font>-color (<font color="#8000FF">send</font> [c2] <font color="#8000FF">get</font>-color))     <font color="#0040a0">;c1 has set same color as c2</font>
+</pre>
+
+<p><b>Example</b>:&nbsp;cars.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/cgi-bin/WebCLIPS.EXE?fact=%28ScreenName+%28ScrnName+cars%29%29">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/cool/cars.clp">Source</a>
+</ul>
+</p>
+
+<p><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node9.3.3.html">Other Slot Facets</A>
+</p>
+
+<h3>Predefined Handlers</h3>
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> USER init primary () )
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> USER delete primary () )
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> USER print primary () )
+
+(<font color="#8000FF">send</font> [c1] print)
+(<font color="#8000FF">send</font> [c1] delete)
+</pre>
+
+<h3>Slot Default</h3>
+
+<pre>
+(<font color="#8000FF">defclass</font> CAR (is-a USER)
+    (<font color="#8000FF">role</font> concrete)
+    (pattern-match reactive)
+    (<font color="#8000FF">slot</font> id
+          (create-accessor read-write)
+          (<font color="#FF0000">default</font> (gensym*)))
+    (<font color="#8000FF">slot</font> color
+          (create-accessor read-write))
+    (<font color="#8000FF">slot</font> value
+          (create-accessor read-write)) )
+
+(<font color="#8000FF">definstances</font> Cars
+    (c1 of CAR (value 5000.0))
+    (c2 of CAR (color red)) )
+
+(<font color="#8000FF">send</font> [c1] print)
+(<font color="#8000FF">send</font> [c2] print)
+</pre>
+<p>Both [c1] and [c2] will have the same id, because the slot default facet is static.
+The default value is set when the class is defined and never changed.
+Change the default facet to dynamic-deault facet will solve this problem.
+</p>
+<pre>
+(<font color="#8000FF">defclass</font> CAR (is-a USER)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">slot</font> id
+          (create-accessor read-write)
+          (<font color="#FF0000">default-dynamic</font> (gensym*)))
+      ... )
+</pre>
+
+<p><b>Example</b>:&nbsp;cars-default.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/cgi-bin/WebCLIPS.EXE?fact=%28ScreenName+%28ScrnName+cars-default%29%29">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/cool/cars-default.clp">Source</a>
+</ul>
+</p>
+
+<br />Go to <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/coolsum.htm">COOL Summary</a>
+<p>Previous <a href="procedural.htm">Procedural Programming</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="message.htm">Message Handlers</a>
+</body>
+</html>

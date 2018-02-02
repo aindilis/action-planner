@@ -1,0 +1,455 @@
+;; (ASK HIM ABOUT VAMPIRISM COMMA AND OF COURSE SAY YOU WANT TO BE A VAMPIRE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HE WILL BITE YOU THE NEXT TIME YOU SLEEP IN THE SANCTUARY)
+
+	;; A MALE MAY BITE A PERSON A TIME.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (BITE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+	;; A PERSON MAY SLEEP IN A SANCTUARY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SLEEP_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SANCTUARY_27 ?x2))
+
+;; (THIS IS THE SAFEST AND MOST RELIABLE WAY TO BECOME A VAMPIRE)
+
+	;; A THING CAN BE A WAY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE SAFEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFEST_27 ?x2))
+
+;; (IF YOU DO N T WANT TO KILL SOMEONE TO JOIN THE DARK BROTHERHOOD COMMA THEN A GOOD WAY TO GET VAMPIRISM IS TO DO THE GRAY PRINCE S QUEST IN THE ARENA)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; AN EXEMPLAR_OF A BROTHERHOOD[PERSON??] CAN BE DARK.
+
+		(and    (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DARK_27 ?x1))
+
+	;; A WAY CAN BE GOOD.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A QUEST CAN BE IN AN ARENA.
+
+		(and (QUEST_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (ARENA_27 ?x2))
+
+	;; A GRAY_PRINCE[PERSON??] MAY HAVE A QUEST.
+
+		(and (GRAY_5FPRINCE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (QUEST_27 ?x1))
+
+;; (THERE ARE VAMPIRES IN IT COMMA AND IF YOU DO N T GET THE DISEASE - DO N T WORRY)
+
+	;; VAMPIRES CAN BE IN A THING-REFERRED-TO.
+
+		(and (vampire_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (COMPLETE THE QUEST COMMA AND THE GRAY PRINCE WILL BECOME DEPRESSED)
+
+	;; A GRAY_PRINCE[PERSON??] CAN BE DEPRESSED.
+
+		(and (GRAY_5FPRINCE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DEPRESSED_27 ?x1))
+
+;; (WHEN IT IS TIME TO FIGHT HIM IN THE ARENA COMMA HE WO N T FIGHT BACK)
+
+	;; A MALE MAY FIGHT.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (FIGHT_27 ?x1))
+
+;; (THIS WILL COUNT AS MURDER AND ALLOW YOU TO ENTER THE DARK BROTHERHOOD COMMA BUT WILL BE COMPLETELY LEGAL)
+
+	;; A THING MAY COUNT AS MURDER.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (COUNT_27 ?x1) (AS_27 ?x1) (MURDER_27 ?x1))
+
+	;; AN EXEMPLAR_OF A BROTHERHOOD[PERSON??] CAN BE DARK.
+
+		(and    (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DARK_27 ?x1))
+
+;; (ONCE YOU VE CONTRACTED VAMPIRISM YOU LL THEN NEED TO KNOW HOW TO DEAL WITH IT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [12]>
+
+;; (A LARGER HOUSE BUY A HOUSE)
+
+	;; A HOUSE MAY BUY A HOUSE.
+
+		(and (HOUSE_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A HOUSE CAN BE LARGER.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+;; (YOU CAN DEAL WITH VAMPIRISM SO MUCH MORE EASILY IF YOU CAN RETREAT INTO YOUR OWN HOUSE RATHER THAN HAVING TO FIND SOME RANDOM PLACE TO STAY IN WHILE THE SUN IS UP)
+
+	;; A PERSON MAY RETREAT INTO A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETREAT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE RANDOM.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; (YOU CAN DEAL WITH VAMPIRISM SO MUCH MORE EASILY IF YOU CAN RETREAT INTO YOUR OWN HOUSE RATHER THAN HAVING TO FIND SOME RANDOM PLACE TO STAY IN WHILE THE SUN IS UP)
+
+	;; A PERSON MAY RETREAT INTO A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETREAT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE RANDOM.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; (YOU CAN DEAL WITH VAMPIRISM SO MUCH MORE EASILY IF YOU CAN RETREAT INTO YOUR OWN HOUSE RATHER THAN HAVING TO FIND SOME RANDOM PLACE TO STAY IN WHILE THE SUN IS UP)
+
+	;; A PERSON MAY RETREAT INTO A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETREAT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE RANDOM.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; (YOU CAN DEAL WITH VAMPIRISM SO MUCH MORE EASILY IF YOU CAN RETREAT INTO YOUR OWN HOUSE RATHER THAN HAVING TO FIND SOME RANDOM PLACE TO STAY IN WHILE THE SUN IS UP)
+
+	;; A PERSON MAY RETREAT INTO A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETREAT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE RANDOM.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; (YOU CAN DEAL WITH VAMPIRISM SO MUCH MORE EASILY IF YOU CAN RETREAT INTO YOUR OWN HOUSE RATHER THAN HAVING TO FIND SOME RANDOM PLACE TO STAY IN WHILE THE SUN IS UP)
+
+	;; A PERSON MAY RETREAT INTO A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETREAT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE RANDOM.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; (YOU CAN DEAL WITH VAMPIRISM SO MUCH MORE EASILY IF YOU CAN RETREAT INTO YOUR OWN HOUSE RATHER THAN HAVING TO FIND SOME RANDOM PLACE TO STAY IN WHILE THE SUN IS UP)
+
+	;; A PERSON MAY RETREAT INTO A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RETREAT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE RANDOM.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [13]>
+
+;; (DRINK BLOOD)
+
+	;; BLOOD CAN BE DRINK.
+
+		(and (blood_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRINK_27 ?x2))
+
+;; (AS A VAMPIRE COMMA YOU NEED TO DRINK BLOOD TO KEEP ENERGIZED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (NO MATTER WHICH STAGE OF VAMPIRISM YOU ARE AT COMMA WHENEVER YOU BITE SOMEONE S NECK YOU WILL RESTART AT THE LOWEST LEVEL OF VAMPIRISM WHERE YOU DO NOT TAKE SUN DAMAGE)
+
+	;; A PERSON MAY BITE A NECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BITE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; SOMEONE MAY HAVE A NECK.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A PERSON MAY RESTART AT A LEVEL OF VAMPIRISM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RESTART_27 ?x1) (AT_27 ?x1) (A_27 ?x1) (LEVEL_27 ?x1) (of_27 ?x1 ?x2) (VAMPIRISM_27 ?x2))
+
+	;; A LEVEL CAN BE LOWEST.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOWEST_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (YOU CAN BITE SOMEONE S NECK BY GOING UP TO A SLEEPING PERSON AND PRESSING THE ACTION/ACTIVATE BUTTON)
+
+	;; SOMEONE MAY HAVE A NECK.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A PERSON CAN BE SLEEPING.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLEEPING_27 ?x2))
+
+	;; A BUTTON CAN BE ACTION/ACTIVATE.
+
+		(and (BUTTON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTION_2FACTIVATE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [14]>
+
+;; (THE EASIEST PREY ARE BEGGARS - THEY SLEEP IN THE OPEN COMMA ARE EASILY ACCESSIBLE COMMA ARE FOUND IN MOST CITIES AND ARE OFTEN NOT AROUND OTHER PEOPLE WHEN RESTING COMMA SO YOUR NECK BITING GOES UNNOTICED AND
+ THEREFORE COMMA DOES NOT INCUR A FINE)
+
+	;; A PREY CAN BE BEGGARS.
+
+		(and (PREY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (beggar_27 ?x2))
+
+	;; A PREY CAN BE EASIEST.
+
+		(and (PREY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIEST_27 ?x2))
+
+	;; INDIVIDUAL -S MAY SLEEP IN AN OPEN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SLEEP_27 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (OPEN_27 ?x2))
+
+	;; RESTING MAY DO.
+
+		(and (RESTING_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A NECK BITING MAY GO UNNOTICED.
+
+		(and (NECK_27 ?x1) (BITING_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (UNNOTICED_27 ?x1))
+
+	;; A PERSON MAY HAVE A NECK BITING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1) (BITING_27 ?x1))
+
+;; (FROM YOUR HOUSE IN THE IMPERIAL CITY WATERFRONT COMMA THE EASIEST BEGGAR TO FEED ON IS PUNY ANCUS COMMA WHO IS DIRECTLY BEHIND METHREDHEL S HOUSE -LRB- JUST UP THE ROAD FROM YOURS -RRB- AND RIGHT NEXT TO THE
+ GARDEN WHERE ARMAND CHRISTOPHE MEETS NEW THIEVES GUILD MEMBERS -LRB- BEHIND THE ABANDONED SHACK NEXT TO METHREDHEL S HOUSE -RRB-)
+
+	;; A BEGGAR CAN BE A PUNY_ANCUS[PERSON??].
+
+		(and (beggar_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PUNY_5FANCUS_27 ?x2) (PERSON_27 ?x3))
+
+	;; A HOUSE CAN BE IN AN IMPERIAL_CITY_WATERFRONT[PERSON??].
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (IMPERIAL_5FCITY_5FWATERFRONT_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A BEGGAR CAN BE EASIEST.
+
+		(and (beggar_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIEST_27 ?x2))
+
+	;; A ROAD CAN BE FROM YOURS.
+
+		(and (ROAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (YOURS_27 ?x2))
+
+	;; A MALE MAY MEET THIEVES.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (MEET_27 ?x1) (THIEVES_27 ?x1))
+
+	;; A SHACK CAN BE ABANDONED.
+
+		(and (SHACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABANDONED_27 ?x2))
+
+	;; A METHREDHEL[PERSON??] MAY HAVE A HOUSE.
+
+		(and (METHREDHEL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PUNY GOES TO SLEEP EVERY NIGHT AT 10PM -LRB- LIKE ALL BEGGARS -RRB- COMMA GIVING YOU ROUGHLY 2 HOURS BEFORE ARMAND CHRISTOPHE ENTERS THE AREA)
+
+	;; A MALE MAY ENTER AN AREA.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [15]>
+
+;; (THE SUN GOES DOWN AT 8PM IN THE EVENING COMMA SO BE SURE TO GET OUT AS SOON AS IT DOES TO START EXPLORING AND COMPLETING QUESTS)
+
+	;; THE SUN MAY GO.
+
+		(and (SUN_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; 8PM CAN BE IN AN EVENING.
+
+		(and (kbs2_kif_quote_38PM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (evening_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [17]>
+
+;; (THIS IS MOST HELPFUL AS YOU WILL NOT NEED TO BUY IT TO USE IT)
+
+	;; A THING CAN BE HELPFUL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [18]>
+
+;; (BE AWARE THAT SOME COSTS MAY APPLY OR ALTER FOR DOWNLOADING THIS CONTENT)
+
+	;; SOME_NUMBER_OF COSTS MAY APPLY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (COSTS_27 ?x1) (MAY_27 ?x1) (APPLY_27 ?x1))

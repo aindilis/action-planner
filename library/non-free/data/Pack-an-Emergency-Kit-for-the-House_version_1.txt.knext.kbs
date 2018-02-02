@@ -1,0 +1,605 @@
+;; (IF YOU HAVE THESE BASIC SUPPLIES YOU ARE BETTER PREPARED TO HELP YOUR LOVED ONES WHEN THEY ARE HURT)
+
+	;; A PERSON MAY HAVE SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPLIES_27 ?x1))
+
+	;; SUPPLIES CAN BE BASIC.
+
+		(and (supply_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+	;; A PERSON MAY HAVE ONES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ONES_27 ?x1))
+
+	;; ONES CAN BE LOVED.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOVED_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE HURT -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HURT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (DETERMINE WHAT HAZARDS EXIST IN YOUR LOCAL AREA)
+
+	;; HAZARDS MAY EXIST IN AN AREA.
+
+		(and (HAZARDS_27 ?x1) (MAY_27 ?x1) (EXIST_27 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (CONTACT YOUR LOCAL EMERGENCY MANAGER AND ASK)
+
+	;; A PERSON MAY HAVE AN EMERGENCY MANAGER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EMERGENCY_27 ?x1) (MANAGER_27 ?x1))
+
+;; (IF YOUR LOCALE DOES NOT HAVE AN EMERGENCY MANAGER COMMA CHECK WITH YOUR COUNTY OR STATE EMERGENCY MANAGEMENT OFFICIAL FOR ASSISTANCE)
+
+	;; A LOCALE MAY DO.
+
+		(and (LOCALE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOCALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCALE_27 ?x1))
+
+	;; A PERSON MAY HAVE A COUNTY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COUNTY_27 ?x1))
+
+;; (WRITE A PLAN BASED ON THE HAZARDS COMMA THEN BUILD A KIT TO SUPPORT THE PLAN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (IN THE EVENT OF A DISASTER COMMA POWER WILL BE OUT AND BATTERIES WILL BE UNAVAILABLE COMMA SOLD OUT)
+
+	;; A DISASTER MAY UNDERGO AN EVENT.
+
+		(and (DISASTER_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+	;; BATTERIES CAN BE UNAVAILABLE.
+
+		(and (battery_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNAVAILABLE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; (IT ALSO DOES N T HURT TO HAVE A SATELLITE PHONE WHICH CAN BE USED WITH OUT A CELL TOWER IT CONNECTS TO ORBITING SATELLITES)
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY CONNECT TO SATELLITES.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CONNECT_27 ?x1) (to_27 ?x1 ?x2) (SATELLITES_27 ?x2))
+
+	;; SATELLITES CAN BE ORBITING.
+
+		(and (satellite_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORBITING_27 ?x2))
+
+;; (PACK ACCORDING TO LOCATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DEPENDING ON WHERE YOU LIVE COMMA YOU MIGHT NEED DIFFERENT THINGS IN AN EMERGENCY SUCH AS FLOOD COMMA HURRICANE COMMA TORNADO)
+
+	;; A PERSON MAY NEED THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (THINGS_27 ?x1))
+
+	;; A PERSON MAY LIVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1))
+
+;; (OF COURSE THERE ARE A FEW THINGS THAT YOU SHOULD HAVE REGARDLESS OF LOCATION)
+
+	;; A PERSON MAY HAVE A REGARDLESS[PERSON??] OF LOCATION.
+
+		(and      (PERSON_27 ?x1))
+
+		(and (of_27 ?x1) (LOCATION_27 ?x1))
+
+;; (PACK A MAP IN YOUR KIT)
+
+	;; A MAP CAN BE IN A KIT.
+
+		(and (MAP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (KIT_27 ?x2))
+
+	;; A PERSON MAY HAVE A KIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KIT_27 ?x1))
+
+;; (THESE ARE ESPECIALLY HELPFUL IF YOU MUST EVACUATE AND EMERGENCY ROUTES MAY INVOLVE DETOURS)
+
+	;; A THING CAN BE HELPFUL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+	;; A PERSON MAY EVACUATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EVACUATE_27 ?x1))
+
+	;; EMERGENCY ROUTES MAY INVOLVE DETOURS.
+
+		(and (EMERGENCY_27 ?x1) (ROUTES_27 ?x1) (MAY_27 ?x1) (INVOLVE_27 ?x1) (DETOURS_27 ?x1))
+
+;; (GATHER TOGETHER THE ITEMS ON THE LIST THAT YOU ALREADY HAVE AT HOME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KEEP A RUNNING LIST)
+
+	;; A LIST CAN BE RUNNING.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RUNNING_27 ?x2))
+
+;; (IF YOU CA N T PICK UP EVERYTHING AT ONCE YOU SHOULD ADD AN ITEM OR TWO TO EACH SHOPPING TRIP)
+
+	;; A PERSON MAY ADD AN ITEM TO SOME_NUMBER_OF SHOPPING TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (AN_27 ?x1) (ITEM_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SHOPPING_27 ?x2) (TRIP_27 ?x2))
+
+	;; A PERSON MAY PICK_UP EVERYTHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PICK_5FUP_27 ?x1) (EVERYTHING_27 ?x1))
+
+;; (DESIGNATE A FIRST AID KIT FOR EMERGENCY OR DISASTER AND ONE FOR EVERYDAY USE)
+
+	;; AN AID KIT CAN BE FOR EMERGENCY.
+
+		(and (AID_27 ?x1) (KIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EMERGENCY_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR USE.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (USE_27 ?x2))
+
+	;; A USE CAN BE EVERYDAY.
+
+		(and (USE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVERYDAY_27 ?x2))
+
+;; (YOUR FIRST AID KIT SHOULD CONTAIN  A MINIMUM OF TWO PAIRS OF LATEX GLOVES FOR THE SMALLEST KIT)
+
+	;; AN AID KIT MAY CONTAIN.
+
+		(and (AID_27 ?x1) (KIT_27 ?x1) (MAY_27 ?x1) (CONTAIN_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AID KIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AID_27 ?x1) (KIT_27 ?x1))
+
+	;; GLOVES CAN BE FOR A KIT.
+
+		(and (glove_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (KIT_27 ?x2))
+
+	;; A LATEX[PERSON??] MAY HAVE GLOVES.
+
+		(and (LATEX_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (GLOVES_27 ?x1))
+
+	;; A KIT CAN BE SMALLEST.
+
+		(and (KIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLEST_27 ?x2))
+
+;; (REMEMBER COMMA IT MAY BE A STRANGER WHO NEEDS YOUR HELP AND HAVING A LATEX BARRIER WILL HELP PREVENT INFECTION)
+
+	;; A THING-REFERRED-TO CAN BE A STRANGER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STRANGER_27 ?x2))
+
+	;; A PERSON MAY HAVE A HELP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HELP_27 ?x1))
+
+	;; A BARRIER CAN BE LATEX.
+
+		(and (BARRIER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LATEX_27 ?x2))
+
+;; (USE VINYL GLOVES IF YOU OR A FAMILY MEMBER IS ALLERGIC TO LATEX)
+
+	;; A PERSON CAN BE ALLERGIC TO A LATEX[PERSON??].
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALLERGIC_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (LATEX_27 ?x3) (kbs2_kif_quote_5B_27 ?x3) (PERSON_27 ?x3))
+
+;; (LATEX ALLERGIES CAN BE SEVERE)
+
+	;; ALLERGIES CAN BE SEVERE.
+
+		(and (allergy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEVERE_27 ?x2))
+
+	;; A LATEX[PERSON??] MAY HAVE ALLERGIES.
+
+		(and (LATEX_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ALLERGIES_27 ?x1))
+
+;; (KEEP MORE PAIRS IN YOUR DISASTER KIT THAT WILL EVACUATE WITH YOU)
+
+	;; PAIRS CAN BE IN A DISASTER KIT.
+
+		(and (pair_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DISASTER_27 ?x2) (KIT_27 ?x2))
+
+	;; A PERSON MAY HAVE A DISASTER KIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DISASTER_27 ?x1) (KIT_27 ?x1))
+
+;; (YOU MAY GO THROUGH SEVERAL PAIRS IN ONE EMERGENCY)
+
+	;; A PERSON MAY GO THROUGH SOME_NUMBER_OF PAIRS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (PAIRS_27 ?x1))
+
+	;; SOME_NUMBER_OF PAIRS CAN BE IN AN EMERGENCY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PAIRS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (EMERGENCY_27 ?x2))
+
+;; (CHECK THE INTEGRITY OF THE GLOVES IF THEY VE BEEN STORED IN CHANGING TEMPERATURES)
+
+	;; GLOVES MAY HAVE AN INTEGRITY.
+
+		(and (GLOVES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INTEGRITY_27 ?x1))
+
+	;; TEMPERATURES CAN BE CHANGING.
+
+		(and (temperature_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHANGING_27 ?x2))
+
+;; (THEY MAY BECOME BRITTLE)
+
+	;; INDIVIDUAL -S CAN BE BRITTLE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRITTLE_27 ?x2))
+
+;; (SOMETIMES GLOVES DEEPER IN A BOX MAY STILL BE GOOD SO DO N T TOSS THE BOX BECAUSE THE FIRST FEW PAIRS ARE BAD)
+
+	;; GLOVES CAN BE GOOD.
+
+		(and (glove_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; GLOVES CAN BE IN A BOX.
+
+		(and (glove_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BOX_27 ?x2))
+
+	;; PAIRS CAN BE BAD.
+
+		(and (pair_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+;; (LOOK THROUGH THEM ALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STERILE DRESSINGS TO STOP BLEEDING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (-LRB- LOOK FOR BULKY DRESSINGS CALLED SURGI PADS IN HEALTH SUPPLY STORES -RRB- CLEANSING AGENT/SOAP AND ANTIBIOTIC TOWELETTES TO DISINFECT)
+
+	;; A LOOK[PERSON??] MAY CALL.
+
+		(and (LOOK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CALL_27 ?x1))
+
+	;; DRESSINGS CAN BE BULKY.
+
+		(and (dressing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BULKY_27 ?x2))
+
+	;; HEALTH SUPPLY STORES MAY CLEANSE AGENT/SOAP TO DISINFECT.
+
+		(and (HEALTH_27 ?x1) (SUPPLY_27 ?x1) (STORES_27 ?x1) (MAY_27 ?x1) (CLEANSE_27 ?x1) (AGENT_2FSOAP_27 ?x1) (to_27 ?x1 ?x2) (DISINFECT_27 ?x2))
+
+;; (ANTIBIOTIC OINTMENT TO PREVENT INFECTION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BURN OINTMENT TO RELIEVE PAIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ADHESIVE BANDAGES IN A VARIETY OF SIZES GAUZE PADS MICROPORE TAPE TWEEZERS SCISSORS EYE WASH SOLUTION TO FLUSH THE EYES OR STERILE SALINE AS GENERAL DECONTAMINATE)
+
+	;; BANDAGES MAY PAD.
+
+		(and (bandage_27 ?x1) (MAY_27 ?x1) (PAD_27 ?x1))
+
+	;; BANDAGES CAN BE IN VARIETY OF A SIZES_GAUZE[PERSON??].
+
+		(and (bandage_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (VARIETY_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (SIZES_5FGAUZE_27 ?x3) (kbs2_kif_quote_5B_27 ?x3) (PERSON_27 ?x3))
+
+	;; BANDAGES CAN BE ADHESIVE.
+
+		(and (bandage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADHESIVE_27 ?x2))
+
+	;; A SALINE CAN BE AS DECONTAMINATE.
+
+		(and (SALINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AS_27 ?x2) (DECONTAMINATE_27 ?x2))
+
+	;; A SALINE CAN BE EYES.
+
+		(and (SALINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (eye_27 ?x2))
+
+	;; A DECONTAMINATE CAN BE GENERAL.
+
+		(and (DECONTAMINATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENERAL_27 ?x2))
+
+;; (STERILE SALINE IS AVAILABLE IN LITER BOTTLES IN HEALTH SUPPLY STORES)
+
+	;; SALINE CAN BE AVAILABLE IN LITER BOTTLES.
+
+		(and (SALINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2) (in_27 ?e1 ?x3) (LITER_27 ?x3) (BOTTLES_27 ?x3))
+
+	;; A SALINE CAN BE STERILE.
+
+		(and (SALINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STERILE_27 ?x2))
+
+	;; LITER BOTTLES CAN BE IN HEALTH SUPPLY STORES.
+
+		(and (LITER_27 ?x1) (BOTTLES_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (HEALTH_27 ?x2) (SUPPLY_27 ?x2) (STORES_27 ?x2))
+
+;; (THERMOMETER PRESCRIPTION MEDICATIONS YOU TAKE EVERY DAY SUCH AS INSULIN COMMA HEART MEDICINE AND ASTHMA INHALERS)
+
+	;; A PERSON MAY TAKE SOME_NUMBER_OF DAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (DAY_27 ?x1))
+
+;; (YOU SHOULD PERIODICALLY ROTATE MEDICINES TO ACCOUNT FOR EXPIRATION DATES AND HAVE A PLAN FOR REFRIGERATED INSULIN)
+
+	;; A PLAN CAN BE FOR INSULIN.
+
+		(and (plan_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INSULIN_27 ?x2))
+
+	;; AN INSULIN CAN BE REFRIGERATED.
+
+		(and (INSULIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REFRIGERATED_27 ?x2))
+
+;; (OVER THE COUNTER PAIN MEDICINE -LRB- LIKE TYLENOL AND ADVIL -RRB- AND AN ANTIHISTAMINE -LRB- LIKE BENADRYL -RRB-)
+
+	;; A PAIN MEDICINE CAN BE COUNTER.
+
+		(and (PAIN_27 ?x1) (MEDICINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COUNTER_27 ?x2))
+
+;; (PRESCRIBED MEDICAL SUPPLIES SUCH AS GLUCOSE AND BLOOD PRESSURE MONITORING EQUIPMENT AND SUPPLIES)
+
+	;; SUPPLIES CAN BE PRESCRIBED.
+
+		(and (supply_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRESCRIBED_27 ?x2))
+
+	;; SUPPLIES CAN BE MEDICAL.
+
+		(and (supply_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDICAL_27 ?x2))
+
+;; (GO TO THE STORE TO BUY THE ITEMS YOU DO N T ALREADY HAVE)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (OBTAIN A WATERPROOF BOX)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS DOES NOT HAVE TO BE EXPENSIVE)
+
+	;; A THING MAY DO.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (JUST A LARGE WATERPROOF BOX WITH A LID)
+
+	;; A WATERPROOF BOX CAN BE WITH A LID.
+
+		(and (WATERPROOF_27 ?x1) (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (LID_27 ?x2))
+
+	;; A WATERPROOF BOX CAN BE LARGE.
+
+		(and (WATERPROOF_27 ?x1) (BOX_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (THESE ARE AVAILABLE IN THE STORAGE SECTIONS OF MOST DISCOUNT STORES)
+
+	;; A THING CAN BE AVAILABLE IN STORAGE SECTIONS OF DISCOUNT STORES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2) (in_27 ?e1 ?x3) (STORAGE_27 ?x3) (SECTIONS_27 ?x3) (of_27 ?x3 ?x4) (DISCOUNT_27 ?x4) (STORES_27 ?x4))
+
+;; (IT SHOULD BE SMALL ENOUGH SO THAT IN AN EMERGENCY COMMA YOU CAN ROLL IT INTO YOUR CAR COMMA YARD COMMA OR HOME IN JUST A FEW MINUTES)
+
+	;; A THING-REFERRED-TO CAN BE SMALL.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A PERSON MAY ROLL A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ROLL_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+;; (LOOK FOR SOMETHING WITH WHEELS AND/OR HANDLES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONSIDER PLACING KITS IN YOUR HOME COMMA CAR COMMA AND WORKPLACE)
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (YOU NEVER KNOW WHERE YOU LL BE WHEN AN EMERGENCY STRIKES)
+
+	;; AN EMERGENCY MAY STRIKE.
+
+		(and (EMERGENCY_27 ?x1) (MAY_27 ?x1) (STRIKE_27 ?x1))
+
+;; (USE BACKPACKS OR PLASTIC TOOL BOXES FOR JUMP AND RUN BAGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KEEPING WATER -LRB- IN CLEAN PLASTIC BOTTLES -RRB- IN YOUR HOME COMMA CAR TRUNK COMMA AND WORKPLACE WILL KEEP YOU HYDRATED WHEN YOU RE UNDER STRESS)
+
+	;; WATER CAN BE IN A HOME.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; BOTTLES CAN BE CLEAN.
+
+		(and (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; BOTTLES CAN BE PLASTIC.
+
+		(and (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (YOU MAY NEED MORE WATER FOR CHILDREN COMMA NURSING MOTHERS COMMA THE ELDERLY OR IF YOU LIVE IN A WARM CLIMATE)
+
+	;; A PERSON MAY NEED WATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (WATER_27 ?x1))
+
+	;; A PERSON MAY LIVE IN A CLIMATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CLIMATE_27 ?x2))
+
+	;; A CLIMATE CAN BE WARM.
+
+		(and (climate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+;; (YOU MAY NEED TO ADD ELECTROLYTE REPLACEMENT DRINKS -LRB- GATORADE OR POWERADE -RRB- TO REPLACE VALUABLE MINERALS IN WARM OR HUMID WEATHER OR IF YOU WILL BE VERY ACTIVE)
+
+	;; REPLACEMENT DRINKS CAN BE ELECTROLYTE.
+
+		(and (REPLACEMENT_27 ?x1) (DRINKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTROLYTE_27 ?x2))
+
+	;; MINERALS CAN BE VALUABLE.
+
+		(and (mineral_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VALUABLE_27 ?x2))
+
+	;; A PERSON CAN BE ACTIVE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTIVE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; (CONSIDER OTHER THINGS YOU MIGHT NEED -- ESPECIALLY THINGS SUCH AS MEDICATION COMMA BANDAGES COMMA FIREARMS COMMA OR OTHER THINGS ACCORDING TO AGE COMMA LOCATION COMMA OR HEALTH)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))

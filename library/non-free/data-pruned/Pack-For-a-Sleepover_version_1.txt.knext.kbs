@@ -1,0 +1,194 @@
+;; (RECOURSE.COM E PREPARED)
+
+	;; RECOURSE.COM E MAY PREPARE.
+
+		(and (RECOURSE_2ECOM_27 ?x1) (E_27 ?x1) (MAY_27 ?x1) (PREPARE_27 ?x1))
+
+;; (TAKE A SLEEPING BAG AND PILLOW IF YOU ARE N T GOING TO HAVE AN AVAILABLE BED TO SLEEP IN)
+
+	;; A BAG CAN BE SLEEPING.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLEEPING_27 ?x2))
+
+	;; A BED CAN BE AVAILABLE.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+;; (IF YOU DO N T HAVE A SLEEPING BAG COMMA YOU CAN JUST USE PILLOWS AND BLANKETS)
+
+	;; A PERSON MAY USE PILLOWS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (PILLOWS_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A BAG CAN BE SLEEPING.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLEEPING_27 ?x2))
+
+;; (AND MAKE SURE TO BRING ALL OF THE NECESSITIES COMMA LIKE YOUR TOOTHBRUSH COMMA PJ S COMMA HAIRBRUSH AND ANY OTHER MAJOR THINGS)
+
+	;; NECESSITIES MAY HAVE A THING.
+
+		(and (necessity_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE A TOOTHBRUSH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOOTHBRUSH_27 ?x1))
+
+;; (ASK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ASK THE HOST ABOUT THINGS YOU ARE UNSURE ABOUT BRINGING COMMA LIKE BEDDING COMMA GAMES OR FOOD)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) UNSURE.A (:P ABOUT.P (:F KA NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (UNSURE_2EA_27 ?x2) (P_27 ?x3) (ABOUT_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PACK SMARTLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; (DO N T CRAM YOUR STUFF INTO A SMALL BAG COMMA AS IT WILL LIKELY SPILL OUT)
+
+	;; A PERSON MAY HAVE STUFF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STUFF_27 ?x1))
+
+	;; A BAG CAN BE SMALL.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY SPILL_OUT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SPILL_5FOUT_27 ?x1))
+
+;; (AN OVERNIGHT BAG OR TOTE BAG WOULD BE PERFECT FOR A SLEEPOVER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE A SIMPLE LIST)
+
+	;; A LIST CAN BE SIMPLE.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (THIS WILL HELP YOU REMEMBER THE THINGS YOU NEED)
+
+	;; A PERSON MAY REMEMBER THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REMEMBER_27 ?x1) (THINGS_27 ?x1))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (HERE IS AN EXAMPLE OF A PACKING LIST  FACE CLEANSERS)
+
+	;; CLEANSERS CAN BE FACE.
+
+		(and (cleanser_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FACE_27 ?x2))
+
+;; (MAKE-UP REMOVER)
+
+	;; A MAKE-UP[PERSON??] MAY REMOVER.
+
+		(and (MAKE-UP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (REMOVER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [11]>
+
+;; (-LRB- YOU DO N T WANT TO STINK THE NEXT DAY -RRB- SLIPPERS OR SOCKS COMMA SO YOU WO N T HAVE TO WALK AROUND SOMEONE ELSE S HOUSE IN BARE FEET MEDICINE COMMA IF YOU HAVE ASTHMA OR A SERIOUS INFECTION COMMA TELL
+ THE PARENTS OR GUARDIAN OF THE HOST)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; SOMEONE MAY HAVE A HOUSE.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE ASTHMA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ASTHMA_27 ?x1))
+
+	;; AN INFECTION CAN BE SERIOUS.
+
+		(and (infection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERIOUS_27 ?x2))
+
+	;; A HOST MAY HAVE PARENTS.
+
+		(and (HOST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+;; (TAKE SOME MOVIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

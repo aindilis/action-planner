@@ -1,0 +1,467 @@
+;; (DECIDE IF A MINIMALIST GARDEN IS RIGHT FOR YOU)
+
+	;; A GARDEN CAN BE RIGHT FOR A PERSON.
+
+		(and (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGHT_27 ?x2) (for_27 ?e1 ?x3) (A_27 ?x3) (PERSON_27 ?x3))
+
+	;; A GARDEN CAN BE MINIMALIST.
+
+		(and (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+;; (A MINIMALIST GARDEN DESIGN SUITS A A PERSON WHO IS LOOKING FOR A CLEAN COMMA SMART COMMA LOW MAINTENANCE GARDEN)
+
+	;; A GARDEN DESIGN MAY SUIT A PERSON.
+
+		(and (GARDEN_27 ?x1) (DESIGN_27 ?x1) (MAY_27 ?x1) (SUIT_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A GARDEN DESIGN CAN BE MINIMALIST.
+
+		(and (GARDEN_27 ?x1) (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+	;; A MAINTENANCE GARDEN CAN BE CLEAN.
+
+		(and (MAINTENANCE_27 ?x1) (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (YOUNG URBAN PROFESSIONALS COMMA MINIMALIST HOUSE ENTHUSIASTS COMMA PEOPLE WHO TRAVEL FREQUENTLY COMMA THE WEEDING-PHOBIC ETC. ARE LIKELY
+ TO FIND THIS TYPE OF GARDEN IDEAL)
+
+	;; PROFESSIONALS CAN BE YOUNG.
+
+		(and (professional_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+	;; PROFESSIONALS CAN BE URBAN.
+
+		(and (professional_27 ?x1) (be_27 ?e1 ?x1 ?x2) (URBAN_27 ?x2))
+
+	;; HOUSE ENTHUSIASTS CAN BE MINIMALIST.
+
+		(and (HOUSE_27 ?x1) (ENTHUSIASTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+;; (IT SHOULD FEATURE SCULPTURES COMMA ARCHITECTURAL PLANTING COMMA AND GREAT VISTAS)
+
+	;; A THING-REFERRED-TO MAY FEATURE SCULPTURES.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FEATURE_27 ?x1) (SCULPTURES_27 ?x1))
+
+	;; A PLANTING CAN BE ARCHITECTURAL.
+
+		(and (planting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARCHITECTURAL_27 ?x2))
+
+	;; VISTAS CAN BE GREAT.
+
+		(and (vista_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (ALL THIS ADDS UP TO AN AREA YOU CAN BOTH ENTERTAIN AND RELAX IN)
+
+	;; A THING MAY ADD_UP TO AN AREA.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ADD_5FUP_27 ?x1) (to_27 ?x1 ?x2) (area_27 ?x2))
+
+;; (GAIN SPACE AND USE ARTIFICIAL HIGHLIGHTS)
+
+	;; GAIN SPACE MAY HIGHLIGHT.
+
+		(and (GAIN_27 ?x1) (SPACE_27 ?x1) (MAY_27 ?x1) (HIGHLIGHT_27 ?x1))
+
+;; (A WELL DESIGNED MINIMALIST GARDEN CAN EFFECTIVELY PROVIDE YOU WITH AN EXTRA ROOM)
+
+	;; A MINIMALIST GARDEN MAY PROVIDE A PERSON WITH A ROOM.
+
+		(and (MINIMALIST_27 ?x1) (GARDEN_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A MINIMALIST GARDEN CAN BE DESIGNED.
+
+		(and (MINIMALIST_27 ?x1) (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESIGNED_27 ?x2))
+
+	;; A ROOM CAN BE EXTRA.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (THE NEED FOR PLANTS IS MINIMAL AS YOU ARE AIMING TO CREATE A STRUCTURE AS MUCH AS A GARDEN COMMA SO USE ARTIFICIAL MATERIALS TO CREATE A
+ BOLD COMMA CRISP LANDSCAPE)
+
+	;; A NEED CAN BE MINIMAL.
+
+		(and (NEED_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMAL_27 ?x2))
+
+	;; A NEED CAN BE FOR PLANTS.
+
+		(and (NEED_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (plant_27 ?x2))
+
+	;; MATERIALS CAN BE ARTIFICIAL.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; (MAKE THE PLANTS A BOLD FEATURE BUT ALLOW THE HARD LANDSCAPE FEATURES TIE THE WHOLE DESIGN TOGETHER)
+
+	;; A FEATURE CAN BE BOLD.
+
+		(and (FEATURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOLD_27 ?x2))
+
+	;; LANDSCAPE FEATURES MAY TIE A DESIGN.
+
+		(and (LANDSCAPE_27 ?x1) (FEATURES_27 ?x1) (MAY_27 ?x1) (TIE_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+	;; LANDSCAPE FEATURES CAN BE HARD.
+
+		(and (LANDSCAPE_27 ?x1) (FEATURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+;; (PLANTS ARE INDEED KEY TO A MINIMALIST DESIGN COMMA BUT IT SHOULD BE THE HARD LANDSCAPE FEATURES WHICH TIE IT TOGETHER)
+
+	;; PLANTS CAN BE KEY TO A DESIGN.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEY_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (DESIGN_27 ?x3))
+
+	;; A DESIGN CAN BE MINIMALIST.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE LANDSCAPE FEATURES.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LANDSCAPE_27 ?x2) (FEATURES_27 ?x2))
+
+	;; LANDSCAPE FEATURES CAN BE HARD.
+
+		(and (LANDSCAPE_27 ?x1) (FEATURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE TOGETHER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOGETHER_27 ?x2))
+
+;; (USE SIMILAR MATERIALS IN SCULPTURE AND FURNITURE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALLOW THESE TO BE ECHOED IN THE PAVING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE LIGHTING TO GREAT EFFECT)
+
+	;; AN EFFECT CAN BE GREAT.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (PERHAPS SET LIGHTING INTO THE PATIO COMMA TO ALTER THE GARDEN S MOOD AS YOU ENTER THE TWILIGHT HOURS)
+
+	;; A GARDEN MAY HAVE A MOOD.
+
+		(and (GARDEN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOOD_27 ?x1))
+
+	;; A PERSON MAY ENTER HOURS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (HOURS_27 ?x1))
+
+	;; HOURS CAN BE TWILIGHT.
+
+		(and (hour_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TWILIGHT_27 ?x2))
+
+;; (THIS ENABLES THE GARDEN TO SERVE AS BOTH A DAY AND EVENING GARDEN)
+
+	;; A THING MAY ENABLE A GARDEN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ENABLE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (USE WATER TO CREATE SERENITY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (WATER CAN BE USED COMMA BUT IT SHOULD BE CALM AND SEDATE WHICH HELPS TO CREATE GREAT REFLECTIVE QUALITIES)
+
+	;; A WATER[PERSON??] MAY BE USE -ED.
+
+		(and (WATER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (USE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CALM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALM_27 ?x2))
+
+	;; QUALITIES CAN BE GREAT.
+
+		(and (quality_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [20]>
+
+;; (FOR EXAMPLE COMMA USE  WOOD FOR FUNCTIONALITY CORRUGATED IRON SWIRLS FOR DRAMA MIRRORED PANELS FOR AN EVER-CHANGING PLAY OF LIGHT AND
+ SPACE ENHANCEMENT IN THE GARDEN USE HORIZONTAL JUNIPER)
+
+	;; USE MAY MIRROR PANELS.
+
+		(and (USE_27 ?x1) (MAY_27 ?x1) (MIRROR_27 ?x1) (PANELS_27 ?x1))
+
+	;; A WOOD[PERSON??] CAN BE FOR IRON SWIRLS.
+
+		(and (WOOD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (IRON_27 ?x1) (SWIRLS_27 ?x1))
+
+	;; IRON SWIRLS CAN BE FOR DRAMA.
+
+		(and (IRON_27 ?x1) (SWIRLS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (DRAMA_27 ?x2))
+
+	;; IRON SWIRLS CAN BE FUNCTIONALITY.
+
+		(and (IRON_27 ?x1) (SWIRLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FUNCTIONALITY_27 ?x2))
+
+	;; IRON SWIRLS CAN BE CORRUGATED.
+
+		(and (IRON_27 ?x1) (SWIRLS_27 ?x1) (be_27 ?e1 ?x1 ?e2) (corrugate_27 ?e2 ?x1))
+
+	;; A PLAY CAN BE CONSTITUTED_OF_OR_FILLED_WITH LIGHT.
+
+		(and (PLAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (LIGHT_27 ?x2))
+
+	;; A PLAY CAN BE EVER-CHANGING.
+
+		(and (PLAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVER-CHANGING_27 ?x2))
+
+;; (A COARSE AND SHARP PLANT COMMA IT IS REALLY LOW-MAINTENANCE AND HAS A GREAT FRAGRANCE WHEN THE SUN HEATS IT)
+
+	;; A FRAGRANCE CAN BE GREAT.
+
+		(and (FRAGRANCE_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; THE SUN MAY HEAT A THING-REFERRED-TO.
+
+		(and (SUN_27 ?x1) (MAY_27 ?x1) (HEAT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (IT IS NOT ONLY A GREAT FEATURE BUSH IN A MINIMALIST GARDEN BUT IT ALSO ACTS AS A LIVING MULCH)
+
+	;; A THING-REFERRED-TO CAN BE FEATURE BUSH.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEATURE_27 ?x2) (BUSH_27 ?x2))
+
+	;; A FEATURE BUSH CAN BE IN A GARDEN.
+
+		(and (FEATURE_27 ?x1) (BUSH_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARDEN_27 ?x2))
+
+	;; A FEATURE BUSH CAN BE GREAT.
+
+		(and (FEATURE_27 ?x1) (BUSH_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; A GARDEN CAN BE MINIMALIST.
+
+		(and (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY ACT AS A MULCH.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (ACT_27 ?x1) (AS_27 ?x1) (A_27 ?x1) (MULCH_27 ?x1))
+
+	;; A MULCH CAN BE LIVING.
+
+		(and (MULCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVING_27 ?x2))
+
+;; (IT KEEPS THE WATER IN THE GROUND AND IT SUPPRESSES WEEDS)
+
+	;; A THING-REFERRED-TO MAY KEEP WATER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (WATER_27 ?x1))
+
+	;; WATER CAN BE IN THE GROUND.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (GROUND_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY SUPPRESS WEEDS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SUPPRESS_27 ?x1) (WEEDS_27 ?x1))
+
+;; (THIS MEANS THAT IT IS ACTING AS A BARRIER)
+
+	;; A THING MAY MEAN A PROPOSITION.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY ACT AS A BARRIER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (ACT_27 ?x1) (AS_27 ?x1) (A_27 ?x1) (BARRIER_27 ?x1))
+
+;; (IT MAKES A GOOD FOIL AGAINST A TREE COMMA SUCH AS A EUCALYPTUS TREE)
+
+	;; A THING-REFERRED-TO MAY MAKE A FOIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (FOIL_27 ?x1))
+
+	;; A FOIL CAN BE AGAINST A TREE.
+
+		(and (FOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AGAINST_27 ?x2) (A_27 ?x2) (TREE_27 ?x2))
+
+	;; A FOIL CAN BE GOOD.
+
+		(and (FOIL_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; AN EUCALYPTUS[PERSON??] MAY HAVE A TREE.
+
+		(and (EUCALYPTUS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (tree_27 ?x1))
+
+;; (IT MAKES A GOOD FOIL AGAINST A TREE COMMA SUCH AS A EUCALYPTUS TREE)
+
+	;; A THING-REFERRED-TO MAY MAKE A FOIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (FOIL_27 ?x1))
+
+	;; A FOIL CAN BE AGAINST A TREE.
+
+		(and (FOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AGAINST_27 ?x2) (A_27 ?x2) (TREE_27 ?x2))
+
+	;; A FOIL CAN BE GOOD.
+
+		(and (FOIL_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; AN EUCALYPTUS[PERSON??] MAY HAVE A TREE.
+
+		(and (EUCALYPTUS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (tree_27 ?x1))
+
+;; (IT MAKES A GOOD FOIL AGAINST A TREE COMMA SUCH AS A EUCALYPTUS TREE)
+
+	;; A THING-REFERRED-TO MAY MAKE A FOIL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (FOIL_27 ?x1))
+
+	;; A FOIL CAN BE AGAINST A TREE.
+
+		(and (FOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AGAINST_27 ?x2) (A_27 ?x2) (TREE_27 ?x2))
+
+	;; A FOIL CAN BE GOOD.
+
+		(and (FOIL_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; AN EUCALYPTUS[PERSON??] MAY HAVE A TREE.
+
+		(and (EUCALYPTUS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (tree_27 ?x1))

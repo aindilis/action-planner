@@ -1,0 +1,1452 @@
+;; (INFORMATIONGATHER ITEMS FOR SALE)
+
+	;; INFORMATIONGATHER ITEMS CAN BE FOR SALE.
+
+		(and (INFORMATIONGATHER_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SALE_27 ?x2))
+
+;; (GO THROUGH THOSE BOXES IN THE ATTIC COMMA SHED OR GARAGE AND SELECT ITEMS YOU CAN SELL)
+
+	;; A PERSON MAY SELL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1))
+
+	;; BOXES CAN BE IN AN ATTIC.
+
+		(and (box_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (ATTIC_27 ?x2))
+
+	;; ITEMS CAN BE SELECT.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SELECT_27 ?x2))
+
+;; (THEN WALK FROM ROOM TO ROOM IN YOUR HOME COMMA IDENTIFYING THINGS YOU NO LONGER NEED)
+
+	;; ROOM CAN BE IN A HOME.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (INVENTORY EACH ITEM ON A SHEET OF PAPER AS YOU IDENTIFY IT FOR SALE)
+
+	;; SOME_NUMBER_OF ITEM MAY IDENTIFY A THING-REFERRED-TO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (MAY_27 ?x1) (IDENTIFY_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; SOME_NUMBER_OF ITEM CAN BE ON A SHEET OF PAPER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SHEET_27 ?x2) (of_27 ?x2 ?x3) (PAPER_27 ?x3))
+
+	;; A SHEET CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAPER.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAPER_27 ?x2))
+
+	;; PAPER CAN BE AS A PERSON.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (A LOT OF PEOPLE SKIP THIS STEP COMMA BUT IT CAN MAKE YOUR SALE GO A LOT SMOOTHER)
+
+	;; A LOT OF PEOPLE MAY SKIP A STEP.
+
+		(and (LOT_27 ?x1) (of_27 ?x1 ?x2) (PEOPLE_27 ?x2) (MAY_27 ?x2) (SKIP_27 ?x2) (A_27 ?x2) (STEP_27 ?x2))
+
+	;; A PERSON MAY HAVE A SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1))
+
+;; (PRICE TAGS HAVE A STRANGE WAY OF GETTING LOST AT GARAGE SALES COMMA AND IT S HARD TO COME UP WITH A FAIR PRICE ON THE SPOT COMMA
+ ESPECIALLY IF YOU VE GOT OTHER PEOPLE ASKING YOU QUESTIONS OR IF YOU RE WORKING A MULTI-FAMILY SALE)
+
+	;; A PRICE[PERSON??] MAY HAVE TAGS.
+
+		(and (PRICE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (TAGS_27 ?x1))
+
+	;; A WAY CAN BE STRANGE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRANGE_27 ?x2))
+
+	;; A PRICE CAN BE ON A SPOT.
+
+		(and (PRICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SPOT_27 ?x2))
+
+	;; A PRICE CAN BE FAIR.
+
+		(and (PRICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAIR_27 ?x2))
+
+	;; A PERSON MAY VE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VE_27 ?x1))
+
+	;; PEOPLE MAY ASK A PERSON QUESTIONS.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (ASK_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (QUESTIONS_27 ?x1))
+
+	;; A PERSON MAY RE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RE_27 ?x1))
+
+	;; A SALE CAN BE MULTI-FAMILY.
+
+		(and (sale_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTI-FAMILY_27 ?x2))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; (AN INVENTORY LIST SOLVES THIS PROBLEM)
+
+	;; AN INVENTORY LIST MAY SOLVE A PROBLEM.
+
+		(and (INVENTORY_27 ?x1) (LIST_27 ?x1) (MAY_27 ?x1) (SOLVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (GARAGE SALE CUSTOMERS ARE MORE LIKELY TO BUY -LRB- AND TO BUY AT HIGHER PRICES -RRB- IF IT LOOKS LIKE THE MERCHANDISE CAME FROM A GOOD
+ HOME WITH OWNERS THAT CARE FOR THEIR THINGS)
+
+	;; SALE CUSTOMERS CAN BE GARAGE.
+
+		(and (sale_27 ?x1) (customer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GARAGE_27 ?x2))
+
+	;; PRICES CAN BE HIGHER.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY LOOK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1))
+
+	;; A MERCHANDISE MAY COME FROM A HOME.
+
+		(and (MERCHANDISE_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A HOME CAN BE GOOD.
+
+		(and (HOME_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE THINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THINGS_27 ?x1))
+
+;; (THEY RE ALSO MORE LIKELY TO FEEL COMFORTABLE STOPPING AND BROWSING IF YOUR SALE SPACE IS ATTRACTIVE AND CLEAN)
+
+	;; A SALE SPACE CAN BE ATTRACTIVE.
+
+		(and (SALE_27 ?x1) (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SALE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1) (SPACE_27 ?x1))
+
+;; (MAKE SIGNS A FEW DAYS BEFORE THE SALE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU ARE LUCKY COMMA YOUR NEWSPAPER MAY GIVE YOU A FEW SIGNS AS PART OF YOUR AD PURCHASE)
+
+	;; A NEWSPAPER MAY GIVE A PERSON SIGNS.
+
+		(and (NEWSPAPER_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (SIGNS_27 ?x1))
+
+	;; A PERSON CAN BE LUCKY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LUCKY_27 ?x2))
+
+	;; A PERSON MAY HAVE A NEWSPAPER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEWSPAPER_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AD PURCHASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AD_27 ?x1) (PURCHASE_27 ?x1))
+
+;; (BUT YOU CAN ALSO BUY SIGNS OR YOU CAN MAKE YOUR OWN OUT OF POSTERBOARD OR CARDBOARD)
+
+	;; A PERSON MAY BUY SIGNS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (SIGNS_27 ?x1))
+
+	;; A PERSON MAY MAKE AN OUT OF POSTERBOARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (AN_27 ?x1) (OUT_27 ?x1) (of_27 ?x1 ?x2) (POSTERBOARD_27 ?x2))
+
+	;; A PERSON MAY HAVE AN OUT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OUT_27 ?x1))
+
+;; (CHILDREN NEED A LOT OF GUIDANCE IF THEY WILL BE MAKING THE SIGNS)
+
+	;; A CHILDREN[PERSON??] MAY NEED A LOT OF GUIDANCE.
+
+		(and (CHILDREN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (LOT_27 ?x1) (of_27 ?x1 ?x2) (GUIDANCE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY MAKE SIGNS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SIGNS_27 ?x1))
+
+;; (PLAIN COMMA BOLD COLORS COMMA SIMPLE LETTERING COMMA AND STURDY POSTING HARDWARE ARE ESSENTIAL)
+
+	;; PLAIN CAN BE ESSENTIAL.
+
+		(and (PLAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESSENTIAL_27 ?x2))
+
+	;; COLORS CAN BE BOLD.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOLD_27 ?x2))
+
+	;; A LETTERING CAN BE SIMPLE.
+
+		(and (LETTERING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; HARDWARE CAN BE STURDY.
+
+		(and (HARDWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STURDY_27 ?x2))
+
+	;; HARDWARE CAN BE POSTING.
+
+		(and (HARDWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (posting_27 ?x2))
+
+;; (REMEMBER THAT THE SIGN SHOULD BE PERFECTLY LEGIBLE TO PEOPLE DRIVING BY COMMA AND MAY HAVE TO STAND UP TO WIND COMMA RAIN COMMA OR HEAT
+ IF YOU POST IT A FEW DAYS EARLY)
+
+	;; A SIGN CAN BE LEGIBLE TO PEOPLE.
+
+		(and (SIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEGIBLE_27 ?x2) (to_27 ?e1 ?x3) (PEOPLE_27 ?x3))
+
+	;; A PERSON MAY POST A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (POST_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (GIVE THE DATE AND TIME OF THE SALE COMMA THE LOCATION AND -- IF YOU HAVE ROOM -- LIST SOME ITEMS FOR SALE)
+
+	;; A SALE MAY HAVE A DATE.
+
+		(and (SALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+	;; A PERSON MAY HAVE ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROOM_27 ?x1))
+
+;; (HANG YOUR SIGNS A FEW DAYS BEFORE THE SALE IN PLACES WHERE THEY WILL BE NOTICED BY MANY A PASSERSBY)
+
+	;; A PERSON MAY HAVE SIGNS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SIGNS_27 ?x1))
+
+	;; A SALE CAN BE IN PLACES.
+
+		(and (sale_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (place_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE NOTICE -ED BY A PASSERSBY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NOTICE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (PASSERSBY_27 ?x2))
+
+;; (MAKE ALL YOUR SIGNAGE DISTINCTIVE IN SOME WAY COMMA AND MAKE THEM ALL THE SAME)
+
+	;; A PERSON MAY HAVE SIGNAGE DISTINCTIVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SIGNAGE_27 ?x1) (DISTINCTIVE_27 ?x1))
+
+;; (THIS WILL BE ESPECIALLY IMPORTANT IF THERE ARE A LOT OF OTHER SALES THAT PARTICULAR WEEKEND)
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; (IF YOU LIVE NEAR A MAJOR ROAD COMMA HANG THE SIGNS ON TELEPHONE POLES OR STREET SIGNS AT AN INTERSECTION ON THAT ROAD -LRB- INTERSECTIONS
+ WITH STOP SIGNS OR TRAFFIC SIGNALS ARE PARTICULARLY GOOD -RRB-)
+
+	;; A PERSON MAY LIVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1))
+
+	;; SIGNS CAN BE ON TELEPHONE POLES.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (TELEPHONE_27 ?x2) (POLES_27 ?x2))
+
+	;; AN INTERSECTION CAN BE ON A ROAD.
+
+		(and (intersection_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (ROAD_27 ?x2))
+
+	;; INTERSECTIONS CAN BE GOOD.
+
+		(and (intersection_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; INTERSECTIONS CAN BE WITH STOP SIGNS.
+
+		(and (intersection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (STOP_27 ?x2) (SIGNS_27 ?x2))
+
+;; (DRAW ARROWS ON THE SIGNS POINTING THE WAY TO YOUR SALE)
+
+	;; SIGNS MAY POINT A WAY TO A SALE.
+
+		(and (SIGNS_27 ?x1) (MAY_27 ?x1) (POINT_27 ?x1) (A_27 ?x1) (WAY_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (sale_27 ?x2))
+
+	;; A PERSON MAY HAVE A SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1))
+
+;; (IT S A GOOD IDEA TO FIRST CHECK YOUR MUNICIPALITY S OR HOMEOWNERS ASSOCIATION S RULES REGARDING SIGNS SO YOU DO N T RUN AFOUL OF THE
+ LOCAL AUTHORITIES)
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY HAVE A MUNICIPALITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MUNICIPALITY_27 ?x1))
+
+	;; ASSOCIATION MAY HAVE RULES.
+
+		(and (ASSOCIATION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RULES_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; AUTHORITIES MAY HAVE AFOUL.
+
+		(and (AUTHORITIES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AFOUL_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; (POST ONE SIGN AT EACH CORNER WHERE A SHOPPER SHOULD TURN)
+
+	;; ONE SIGN CAN BE AT SOME_NUMBER_OF CORNER.
+
+		(and (SIGN_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CORNER_27 ?x2))
+
+	;; A POST[PERSON??] MAY HAVE AN ONE SIGN.
+
+		(and (POST_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ONE_27 ?x1) (SIGN_27 ?x1))
+
+	;; A SHOPPER MAY TURN.
+
+		(and (SHOPPER_27 ?x1) (MAY_27 ?x1) (TURN_27 ?x1))
+
+;; (PEOPLE MIGHT NOT BE ABLE TO READ YOUR SIGN VERY WELL COMMA SO ONE MISSING SIGN COULD LOSE YOUR CUSTOMERS)
+
+	;; A PERSON MAY HAVE A SIGN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIGN_27 ?x1))
+
+	;; A SIGN MAY LOSE CUSTOMERS.
+
+		(and (SIGN_27 ?x1) (MAY_27 ?x1) (LOSE_27 ?x1) (CUSTOMERS_27 ?x1))
+
+	;; A SIGN CAN BE MISSING.
+
+		(and (SIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+	;; A PERSON MAY HAVE CUSTOMERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CUSTOMERS_27 ?x1))
+
+;; (MAKE SURE YOU HAVE ENOUGH TABLE SPACE)
+
+	;; A PERSON MAY HAVE TABLE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TABLE_27 ?x1) (SPACE_27 ?x1))
+
+	;; A TABLE SPACE CAN BE ENOUGH.
+
+		(and (TABLE_27 ?x1) (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (WHILE CUSTOMERS DO SEE AND BUY ITEMS THAT ARE ON THE GROUND COMMA IT S IMPORTANT TO HAVE ENOUGH TABLES TO DISPLAY SMALL ITEMS TO PROTECT
+ THEM AND TO ENSURE THAT PEOPLE CAN EASILY INSPECT THEM)
+
+	;; CUSTOMERS MAY DO.
+
+		(and (customer_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; TABLES CAN BE ENOUGH.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; ITEMS CAN BE SMALL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; PEOPLE MAY INSPECT INDIVIDUAL -S.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (INSPECT_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (YOU CAN USE TABLES AND BOOKSHELVES FROM YOUR HOUSE OR YOU CAN RENT FOLDING TABLES IF YOU DO N T HAVE ENOUGH)
+
+	;; A PERSON MAY USE TABLES FROM A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (TABLES_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY RENT TABLES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RENT_27 ?x1) (TABLES_27 ?x1))
+
+	;; TABLES CAN BE FOLDING.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (folding_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (GET PLENTY OF CHANGE AND PETTY CASH)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (UNLESS YOU VE GOT A LOT OF CHANGE AT HOME COMMA CHANCES ARE YOU LL NEED TO VISIT THE BANK THE DAY BEFORE THE SALE TO GET SOME ROLLS OF
+ QUARTERS AND PLENTY OF DOLLAR BILLS)
+
+	;; CHANCES CAN BE A PERSON.
+
+		(and (chance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY VE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VE_27 ?x1))
+
+	;; SOME_NUMBER_OF ROLLS CAN BE CONSTITUTED_OF_OR_FILLED_WITH QUARTERS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ROLLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (QUARTERS_27 ?x2))
+
+;; (YOU RE GOING TO BE MAKING CHANGE FOR A LOT OF CUSTOMERS COMMA SO BE SURE TO HAVE A FANNY PACK TO ORGANIZE YOUR MONEY)
+
+	;; A PERSON MAY RE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RE_27 ?x1))
+
+	;; A PERSON MAY HAVE MONEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; (SET UP THE MORNING OF THE SALE)
+
+	;; A SALE MAY HAVE A MORNING.
+
+		(and (SALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (morning_27 ?x1))
+
+;; (GET UP EARLY SO YOU LL HAVE PLENTY OF TIME TO ARRANGE YOUR VENDING AREA)
+
+	;; A PERSON MAY LL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; AN AREA CAN BE VENDING.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VENDING_27 ?x2))
+
+;; (SEASONED GARAGE SALE CUSTOMERS OFTEN ARRIVE BEFORE THE POSTED TIMES TO GET A FIRST CRACK AT THE PREMIUM MERCHANDISE COMMA AND THESE
+ CUSTOMERS COME READY TO BUY)
+
+	;; GARAGE SALE CUSTOMERS MAY ARRIVE.
+
+		(and (GARAGE_27 ?x1) (SALE_27 ?x1) (CUSTOMERS_27 ?x1) (MAY_27 ?x1) (ARRIVE_27 ?x1))
+
+	;; GARAGE SALE CUSTOMERS CAN BE SEASONED.
+
+		(and (GARAGE_27 ?x1) (SALE_27 ?x1) (CUSTOMERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEASONED_27 ?x2))
+
+;; (MAKE SURE YOU HAVE EVERYTHING READY AN HOUR OR TWO BEFORE YOUR ADVERTISED START TIME)
+
+	;; AN ADVERTISED MAY START.
+
+		(and (ADVERTISED_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ADVERTISED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ADVERTISED_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; (KEEP YOUR DISPLAY VISUALLY ATTRACTIVE)
+
+	;; A DISPLAY CAN BE ATTRACTIVE.
+
+		(and (DISPLAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2))
+
+	;; A PERSON MAY HAVE A DISPLAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DISPLAY_27 ?x1))
+
+;; (MANY POTENTIAL CUSTOMERS WILL DRIVE BY FIRST COMMA AND YOU WANT TO MAKE YOUR SALE LOOK INTRIGUING AND WELL-ORGANIZED SO THAT THEY STOP)
+
+	;; A SALE MAY LOOK INTRIGUING.
+
+		(and (SALE_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (INTRIGUING_27 ?x1))
+
+	;; A PERSON MAY HAVE A SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY STOP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (STOP_27 ?x1))
+
+;; (SO TAKE THINGS OUT OF THE BOXES YOU GATHERED THEM IN COMMA SO THAT PEOPLE DRIVING BY WILL SEE YOUR GOODS INSTEAD OF A BUNCH OF CARDBOARD
+ BOXES)
+
+	;; A PERSON MAY GATHER INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GATHER_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; PEOPLE MAY SEE GOODS.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (GOODS_27 ?x1))
+
+	;; A PERSON MAY HAVE GOODS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GOODS_27 ?x1))
+
+	;; A BUNCH CAN BE CONSTITUTED_OF_OR_FILLED_WITH CARDBOARD BOXES.
+
+		(and (BUNCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CARDBOARD_27 ?x2) (BOXES_27 ?x2))
+
+;; (PLACE PREMIUM ITEMS -LRB- NEARLY-NEW MERCHANDISE COMMA ANTIQUES COMMA LARGE TOOLS COMMA ETC. -RRB- CLOSE TO THE STREET)
+
+	;; PREMIUM ITEMS CAN BE PLACE.
+
+		(and (PREMIUM_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLACE_27 ?x2))
+
+	;; A MERCHANDISE CAN BE NEARLY-NEW.
+
+		(and (MERCHANDISE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEARLY-NEW_27 ?x2))
+
+	;; TOOLS CAN BE LARGE.
+
+		(and (tool_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (ARRANGE YOUR TABLES SO ITEMS ARE NEATLY DISPLAYED WITH ENOUGH ROOM BETWEEN ITEMS TO ALLOW PEOPLE TO COMFORTABLY INSPECT THEM)
+
+	;; A PERSON MAY HAVE TABLES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TABLES_27 ?x1))
+
+	;; ITEMS MAY BE DISPLAY -ED WITH ROOM.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPLAY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (ROOM_27 ?x2))
+
+	;; ROOM CAN BE BETWEEN ITEMS.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (ITEMS_27 ?x2))
+
+	;; A ROOM CAN BE ENOUGH.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (INSTEAD OF FOLDING CLOTHES ON TABLES COMMA HANG THEM FROM A CLOTHESLINE STRUNG FROM TREES OR FROM YOUR GARAGE CEILING NEAR THE DOOR)
+
+	;; CLOTHES CAN BE ON TABLES.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (TABLES_27 ?x2))
+
+	;; CLOTHES CAN BE FOLDING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (folding_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARAGE CEILING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARAGE_27 ?x1) (CEILING_27 ?x1))
+
+;; (HANGING CLOTHES ARE EASIER TO LOOK THROUGH COMMA AND YOU WON T HAVE TO WORRY ABOUT REFOLDING THEM ON THE TABLE)
+
+	;; CLOTHES CAN BE HANGING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANGING_27 ?x2))
+
+	;; A PERSON MAY WIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WIN_27 ?x1))
+
+;; (BE AN ACTIVE SELLER)
+
+	;; A SELLER CAN BE ACTIVE.
+
+		(and (SELLER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTIVE_27 ?x2))
+
+;; (RUNNING A GARAGE SALE IS A LOT LIKE WORKING AT A RETAIL ESTABLISHMENT COMMA SO BRING OUT THE SALESMAN -LRB- OR SALESWOMAN -RRB- IN YOU)
+
+	;; AN ESTABLISHMENT CAN BE RETAIL.
+
+		(and (ESTABLISHMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RETAIL_27 ?x2))
+
+;; (GREET YOUR CUSTOMERS WITH A FRIENDLY SMILE AS THEY ARRIVE)
+
+	;; CUSTOMERS MAY ARRIVE.
+
+		(and (customer_27 ?x1) (MAY_27 ?x1) (ARRIVE_27 ?x1))
+
+	;; CUSTOMERS CAN BE WITH A SMILE.
+
+		(and (customer_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (SMILE_27 ?x2))
+
+	;; A PERSON MAY HAVE CUSTOMERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CUSTOMERS_27 ?x1))
+
+	;; A SMILE CAN BE AS INDIVIDUAL -S.
+
+		(and (SMILE_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; A SMILE CAN BE FRIENDLY.
+
+		(and (SMILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRIENDLY_27 ?x2))
+
+;; (DON T JUST HOPE THINGS SELL THEMSELVES)
+
+	;; THINGS MAY SELL INDIVIDUAL -S.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (HAVE EXTRA HELP ON HAND)
+
+	;; HELP CAN BE ON HAND.
+
+		(and (HELP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (HAND_27 ?x2))
+
+	;; A HELP CAN BE EXTRA.
+
+		(and (HELP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (ALWAYS HAVE SEVERAL PEOPLE AT THE SALE - IT S IMPORTANT FOR PERSONAL SECURITY AND CONVENIENCE)
+
+	;; AN ALWAYS[PERSON??] MAY HAVE SOME_NUMBER_OF PEOPLE.
+
+		(and (ALWAYS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1))
+
+	;; A SECURITY CAN BE PERSONAL.
+
+		(and (SECURITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; (THIS WAY YOU CAN TAKE A BATHROOM BREAK WHEN YOU NEED ONE COMMA AND YOU CAN KEEP THINGS IN ORDER)
+
+	;; A PERSON MAY TAKE A BATHROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (BATHROOM_27 ?x1))
+
+	;; A PERSON MAY NEED SOME NUMBER_OR_PORTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A PERSON MAY KEEP THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (THINGS_27 ?x1))
+
+;; (AS YOUR SALE PROGRESSES COMMA THINGS WILL UNAVOIDABLY GET DISHEVELED AND DISORGANIZED -LRB- POSSIBLY EVEN BROKEN -RRB-)
+
+	;; THINGS MAY GET DISHEVELED.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (DISHEVELED_27 ?x1))
+
+	;; A SALE MAY PROGRESS.
+
+		(and (SALE_27 ?x1) (MAY_27 ?x1) (PROGRESS_27 ?x1))
+
+	;; A PERSON MAY HAVE A SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1))
+
+;; (IF YOU WANT TO SELL AS MUCH AS POSSIBLE COMMA YOU SHOULD TRY TO KEEP THINGS LOOKING NICE)
+
+	;; THINGS MAY LOOK NICE.
+
+		(and (thing_27 ?e1 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (NICE_27 ?x1))
+
+;; (KEEP ALL BOOKS WITH SPINES SHOWING)
+
+	;; SPINES MAY SHOW.
+
+		(and (SPINES_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1))
+
+;; (KEEP ALL CLOTHES ON HANGERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU MIGHT NEED TO REFOLD CLOTHES OR LINENS FREQUENTLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (KEEP ALL THE BRIGHTLY-COLORED COMMA NEWEST-LOOKING THINGS IN FRONT OF YOUR YARD COMMA AND ON THE TOPS OF ALL THE PILES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (NEGOTIATE WITH HAGGLERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (EVEN THOUGH YOUR PRICES ARE CLEARLY MARKED COMMA SOME PEOPLE WILL TRY TO HAGGLE)
+
+	;; PRICES MAY BE MARK -ED.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE PRICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRICES_27 ?x1))
+
+;; (EVEN THOUGH YOUR PRICES ARE CLEARLY MARKED COMMA SOME PEOPLE WILL TRY TO HAGGLE)
+
+	;; PRICES MAY BE MARK -ED.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE PRICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRICES_27 ?x1))
+
+;; (EVEN THOUGH YOUR PRICES ARE CLEARLY MARKED COMMA SOME PEOPLE WILL TRY TO HAGGLE)
+
+	;; PRICES MAY BE MARK -ED.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE PRICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRICES_27 ?x1))
+
+;; (EVEN THOUGH YOUR PRICES ARE CLEARLY MARKED COMMA SOME PEOPLE WILL TRY TO HAGGLE)
+
+	;; PRICES MAY BE MARK -ED.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE PRICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRICES_27 ?x1))
+
+;; (EVEN THOUGH YOUR PRICES ARE CLEARLY MARKED COMMA SOME PEOPLE WILL TRY TO HAGGLE)
+
+	;; PRICES MAY BE MARK -ED.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE PRICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRICES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [11]>
+
+;; (IF YOU VE DONE THE PREVIOUS STEPS COMMA YOU SHOULD HAVE PLENTY OF TRAFFIC THAT WILL PAY FULL PRICE)
+
+	;; A PRICE CAN BE FULL.
+
+		(and (PRICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+;; (OFFER LAST-MINUTE DEALS)
+
+	;; DEALS CAN BE LAST-MINUTE.
+
+		(and (deal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LAST-MINUTE_27 ?x2))
+
+;; (IF YOU VE STILL GOT THINGS LEFT OVER DURING THE FINAL SCHEDULED HOURS OF YOUR SALE COMMA GO AHEAD AND SLASH PRICES)
+
+	;; A PERSON MAY VE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VE_27 ?x1))
+
+	;; THINGS MAY LEAVE_OVER DURING HOURS OF A SALE.
+
+		(and (thing_27 ?e1 ?x1) (MAY_27 ?x1) (LEAVE_5FOVER_27 ?x1) (DURING_27 ?x1) (HOURS_27 ?x1) (of_27 ?x1 ?x2) (sale_27 ?x2))
+
+	;; HOURS CAN BE SCHEDULED.
+
+		(and (hour_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCHEDULED_27 ?x2))
+
+	;; A PERSON MAY HAVE A SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1))
+
+;; (OFFER BUY-ONE-GET-ONE DEALS OR BULK DISCOUNTS)
+
+	;; DEALS MAY DISCOUNT.
+
+		(and (deal_27 ?x1) (MAY_27 ?x1) (DISCOUNT_27 ?x1))
+
+	;; DEALS CAN BE OFFER.
+
+		(and (deal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFFER_27 ?x2))
+
+	;; DEALS CAN BE BUY-ONE-GET-ONE.
+
+		(and (deal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUY-ONE-GET-ONE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [12]>
+
+;; (DO EVERYTHING YOU CAN TO MAKE THE SALE COMMA ESPECIALLY IF YOU PLAN ON THROWING AWAY OR GIVING AWAY THE ITEMS ANYWAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CATCH THOSE LATECOMERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU WAIT UNTIL AFTER CLOSING TIME BEFORE YOU START TO PACK UP COMMA YOU MAY FIND THAT SOME STRAGGLERS WILL COME BY)
+
+	;; A PERSON MAY FIND A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [13]>
+
+;; (HOLD A FREE GARAGE SALE AFTER THE SALE)
+
+	;; A GARAGE SALE CAN BE FREE.
+
+		(and (GARAGE_27 ?x1) (SALE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+;; (ONCE YOU RE DONE SELLING COMMA PLACE AN AD ON WWW.CRAIGSLIST.ORG OR YOUR LOCAL FREECYCLE.ORG AND ADVERTISE THE REMAINING STUFF FOR FREE)
+
+	;; A PERSON MAY RE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RE_27 ?x1))
+
+	;; A PERSON MAY HAVE A FREECYCLE.ORG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FREECYCLE_2EORG_27 ?x1))
+
+	;; STUFF CAN BE REMAINING.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMAINING_27 ?x2))
+
+;; (YOU CAN LEAVE IT RIGHT OUT IN THE YARD AND STAY INSIDE COUNTING YOUR MONEY WHILE PEOPLE COME PICK STUFF UP)
+
+	;; A PERSON MAY LEAVE A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE MONEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+	;; PEOPLE MAY COME.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1))
+
+;; (DON T THROW POTENTIALLY USEFUL ITEMS AWAY COMMA AND DON T TAKE UNWANTED CLUTTER BACK INTO YOUR HOUSE JUST BECAUSE IT DIDN T SELL COMMA
+ UNLESS OF COURSE COMMA YOU THINK YOU WILL WANT TO HOLD ANOTHER SALE IN A FEW MONTHS)
+
+	;; A MALE MAY THROW_AWAY ITEMS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (THROW_5FAWAY_27 ?x1) (ITEMS_27 ?x1))
+
+	;; ITEMS CAN BE USEFUL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEFUL_27 ?x2))
+
+	;; T MAY TAKE CLUTTER.
+
+		(and (T_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (CLUTTER_27 ?x1))
+
+	;; A T CAN BE DON.
+
+		(and (T_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DON_27 ?x2))
+
+	;; A CLUTTER CAN BE UNWANTED.
+
+		(and (clutter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNWANTED_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; T MAY SELL.
+
+		(and (T_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1))
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; SOME_NUMBER_OF SALE CAN BE IN MONTHS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SALE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MONTHS_27 ?x2))
+
+;; (IN THAT CASE COMMA PACK YOUR ITEMS UP AND PUT THEM SOMEWHERE DRY AND OUT OF THE WAY COMMA WHERE YOU WILL BE ABLE TO GET THEM OUT EASILY
+ FOR YOUR NEXT YARD GARAGE SALE)
+
+	;; A PERSON MAY HAVE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; A PERSON MAY HAVE A YARD GARAGE SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (YARD_27 ?x1) (GARAGE_27 ?x1) (SALE_27 ?x1))
+
+;; (TAKE DOWN YOUR SIGNS AFTER THE SALE COMMA RIGHT AT CLOSING TIME)
+
+	;; A PERSON MAY HAVE SIGNS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SIGNS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [14]>
+
+;; (NOBODY LIKES TO SHOW UP AT A GARAGE SALE AFTER IT S ALREADY CLOSED COMMA AND NOBODY LIKES TO SEE OLD COMMA FADED COMMA SAGGING SIGNS
+ TAPED TO POLES COMMA EITHER)
+
+	;; SIGNS MAY TAPE TO POLES.
+
+		(and (SIGNS_27 ?x1) (MAY_27 ?x1) (TAPE_27 ?x1) (to_27 ?x1 ?x2) (POLES_27 ?x2))
+
+	;; SIGNS CAN BE SAGGING.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAGGING_27 ?x2))
+
+;; (ASK YOUR FRIENDS TO PARTICIPATE COMMA EVEN THOUGH YOU HAVE A LOT BY NOW COMMA CLOSE FRIENDS MAY BE WANTING TO SELL AT LEAST 2-3 LARGE
+ ITEMS AND/OR CLOTHING AT YOUR SALE)
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; FRIENDS CAN BE CLOSE.
+
+		(and (friend_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SALE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [15]>
+
+;; (MAKE SURE THEY HAVE DONE INVENTORY TO AVOID HASSLE LATER ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort main loop
+Break 12 [17]>
+
+;; (WATCH YOUR CASHBOX)
+
+	;; A PERSON MAY HAVE A CASHBOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CASHBOX_27 ?x1))
+
+;; (ANYBODY CAN COME UP TO IT AND STEAL THE MONEY YOU MADE COMMA SO MAKE SURE SOMEONE IS ATTENDING IT AT ALL TIMES)
+
+	;; ANYBODY MAY COME_UP TO A THING-REFERRED-TO.
+
+		(and (ANYBODY_27 ?x1) (MAY_27 ?x1) (COME_5FUP_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A PERSON MAY MAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A SOMEONE CAN BE SURE.
+
+		(and (SOMEONE_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (TRY NOT TO KEEP MORE THAN $ OR SO IN IT AT A TIME)
+
+	;; 
+
+	;; ((:I NIL IN.P (:Q DET THING-REFERRED-TO*.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (IN_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (THING-REFERRED-TO_2A_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 12 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THAT WAY COMMA IF SOMEBODY DOES STEAL IT COMMA THEY RE NOT GETTING TOO MUCH)
+
+	;; SOMEBODY MAY DO.
+
+		(and (SOMEBODY_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (BETTER YET COMMA DO N T USE A CASH BOX)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 12 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort main loop
+Break 13 [18]>
+
+;; (USE A FANNY PACK INSTEAD COMMA AND KEEP LARGE BILLS -LRB- 50 S AND 100 S -RRB- IN YOUR HOME IF POSSIBLE)
+
+	;; BILLS CAN BE IN A HOME.
+
+		(and (bill_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; BILLS CAN BE LARGE.
+
+		(and (bill_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (A GOOD FANNY PACK HAS TWO POCKETS COMMA AND YOU CAN KEEP THE BILLS IN THE LARGE COMPARTMENT COMMA AND THE COINS IN THE SMALLER
+ COMPARTMENT)
+
+	;; A FANNY PACK MAY HAVE SOME_NUMBER_OF POCKETS.
+
+		(and (FANNY_27 ?x1) (PACK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (POCKETS_27 ?x1))
+
+	;; A FANNY PACK CAN BE GOOD.
+
+		(and (FANNY_27 ?x1) (PACK_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY KEEP BILLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (BILLS_27 ?x1))
+
+	;; BILLS CAN BE IN A COMPARTMENT.
+
+		(and (bill_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (COMPARTMENT_27 ?x2))
+
+	;; A COMPARTMENT CAN BE LARGE.
+
+		(and (COMPARTMENT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; COINS CAN BE IN A COMPARTMENT.
+
+		(and (coin_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (COMPARTMENT_27 ?x2))
+
+	;; A COMPARTMENT CAN BE SMALLER.
+
+		(and (COMPARTMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (IF SOMEONE REALLY NEEDS TO GO TO THE BATHROOM COMMA DIRECT THEM TO THE NEAREST PUBLIC BUILDING COMMA OR MAKE SURE SOMEONE IN YOUR FAMILY
+ -LRB- OR YOU -RRB- TAKES THE PERSON THERE AND WAITS UNTIL THEY GET OUT SO THAT YOU DO N T END UP WITH PROBLEMS INSIDE)
+
+	;; A BUILDING CAN BE NEAREST.
+
+		(and (building_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEAREST_27 ?x2))
+
+	;; A BUILDING CAN BE PUBLIC.
+
+		(and (BUILDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUBLIC_27 ?x2))
+
+	;; SOMEONE CAN BE IN A FAMILY.
+
+		(and (someone_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FAMILY_27 ?x2))
+
+	;; A SOMEONE CAN BE SURE.
+
+		(and (SOMEONE_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY GET_OUT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_5FOUT_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (YOU ARE UNDER NO OBLIGATION TO LET ANYONE INTO YOUR HOUSE COMMA EVEN TO USE THE RESTROOM COMMA BUT YOU MIGHT CONSIDER MAKING EXCEPTIONS
+ FOR SMALL CHILDREN OR THE ELDERLY)
+
+	;; A PERSON CAN BE UNDER AN OBLIGATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (under_27 ?x1 ?x2) (AN_27 ?x2) (OBLIGATION_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY CONSIDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONSIDER_27 ?x1))
+
+	;; CHILDREN CAN BE SMALL.
+
+		(and (CHILDREN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))

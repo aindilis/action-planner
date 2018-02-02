@@ -1,0 +1,298 @@
+;; (LIFEMAKE A LIST OF YOUR CHORES)
+
+	;; CHORES MAY HAVE A LIST.
+
+		(and (CHORES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A PERSON MAY HAVE CHORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+;; (WRITE THEM DOWN COMMA AND KEEP THEM AT YOUR DESK OR IN YOUR ROOM)
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (MAKE SURE YOU KNOW WHAT YOU HAVE TO DO)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FEEL FREE TO ADD OR DEDUCT CHORES OVER TIME COMMA LIFE CHANGES COMMA SO SO SHOULD YOUR LIST)
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; (THE APPEARANCE OF YOUR LIST DOES N T MATTER)
+
+	;; AN APPEARANCE OF A LIST MAY DO.
+
+		(and (APPEARANCE_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (LIST_27 ?x2) (MAY_27 ?x2) (DO_27 ?x2))
+
+	;; A LIST MAY UNDERGO AN APPEARANCE.
+
+		(and (LIST_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (APPEARANCE_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; (YOUR LIST MAY BE TYPED UP IN FANCY PRINT ON FANCY PAPER COMMA OR IT COULD BE ON OLD NOTEBOOK PAPER IN YOUR WORST HANDWRITING)
+
+	;; A LIST MAY BE TYPE_UP -ED IN PRINT.
+
+		(and (LIST_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TYPE_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (PRINT_27 ?x3))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A PRINT CAN BE FANCY.
+
+		(and (PRINT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FANCY_27 ?x2))
+
+	;; A PAPER CAN BE FANCY.
+
+		(and (PAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FANCY_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE ON NOTEBOOK PAPER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (NOTEBOOK_27 ?x2) (PAPER_27 ?x2))
+
+	;; NOTEBOOK PAPER CAN BE IN A HANDWRITING.
+
+		(and (NOTEBOOK_27 ?x1) (PAPER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (HANDWRITING_27 ?x2))
+
+	;; A NOTEBOOK PAPER CAN BE OLD.
+
+		(and (NOTEBOOK_27 ?x1) (PAPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; A PERSON MAY HAVE A HANDWRITING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HANDWRITING_27 ?x1))
+
+	;; A HANDWRITING CAN BE WORST.
+
+		(and (handwriting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORST_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [10]>
+
+;; (MAKE A SCHEDULE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ORGANIZE YOUR TIME)
+
+	;; A PERSON MAY HAVE A TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+;; (WRITE THE AMOUNT OF TIME IT WILL TAKE FOR ALL OF YOUR CHORES COMMA AND ADD IT TO YOUR SCHEDULE)
+
+	;; A THING-REFERRED-TO MAY TAKE FOR SOME_NUMBER_OF THING OF CHORES.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (THING_27 ?x2) (of_27 ?x1 ?x3) (CHORES_27 ?x3))
+
+	;; CHORES MAY HAVE A THING.
+
+		(and (CHORES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE CHORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHEDULE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [11]>
+
+;; (DO SCHOOL WORK IMMEDIATELY WHEN YOU GET HOME COMMA AND THEN FOCUS ON YOUR CHORES)
+
+	;; A PERSON MAY GET HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY HAVE CHORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+;; (YOUR AFTER SCHOOL SCHEDULE MAY LOOK A LITTLE SOMETHING LIKE THIS  DO HOMEWORK)
+
+	;; A THING MAY LOOK A SOMETHING.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (A_27 ?x1) (something_27 ?x1))
+
+	;; A PERSON MAY HAVE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (-LRB- HOMEWORK SHOULD TAKE ABOUT TEN MINUTES PER GRADE LEVEL)
+
+	;; A HOMEWORK[PERSON??] MAY TAKE ABOUT TEN MINUTES.
+
+		(and (HOMEWORK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (take_27 ?e1 ?x1) (ABOUT_27 ?x1) (TEN_27 ?x1) (MINUTES_27 ?x1))
+
+;; (SO IF YOUR IN FIRST GRADE COMMA TEN MINUTES COMMA SIXTH COMMA AN HOUR)
+
+	;; A PERSON MAY HAVE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (MAKE SURE TO ADD THAT TO YOUR SCHEDULE -RRB-)
+
+	;; A PERSON MAY HAVE A SCHEDULE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+;; (MAKE MY BED)
+
+	;; A PERSON MAY HAVE A BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (bed_27 ?x1))
+
+;; (DUST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO THE DISHES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (VACUUM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE A COUPLE REST BREAKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A SIMPLE FIVE MINUTE TO TEN MINUTE BREAK WILL KEEP YOU AWAKE COMMA AND READY TO DO THINGS)
+
+	;; A MINUTE CAN BE TO TEN MINUTE BREAK.
+
+		(and (MINUTE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (TEN_27 ?x2) (MINUTE_27 ?x2) (BREAK_27 ?x2))
+
+	;; A MINUTE CAN BE SIMPLE.
+
+		(and (MINUTE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A PERSON CAN BE AWAKE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AWAKE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [7]>
+
+;; (TAKE A SHORT NAP COMMA SHOOT SOME HOOPS COMMA OR HAVE A HEALTHY SNACK)
+
+	;; A NAP CAN BE SHORT.
+
+		(and (NAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+	;; A SNACK CAN BE HEALTHY.
+
+		(and (SNACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+;; (DO N T EAT UNHEALTHY FOODS)
+
+	;; FOODS CAN BE UNHEALTHY.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNHEALTHY_27 ?x2))
+
+;; (THEY WILL MAKE YOU ENERGETIC FOR A LITTLE COMMA THEN WIPPED OUT WAY LATER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

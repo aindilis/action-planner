@@ -1,0 +1,248 @@
+;; (BROWSE THE NET TO FIND SOME GOOD BUDGET HOTEL IN SAN DIEGO FROM WHERE BALBOA PARK IS NEARBY SO THAT YOU CAN COMMUTE EASILY)
+
+	;; SOME_NUMBER_OF BUDGET HOTEL CAN BE IN A US-CITY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (BUDGET_27 ?x1) (HOTEL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (US-CITY_27 ?x2))
+
+	;; A BUDGET HOTEL CAN BE GOOD.
+
+		(and (BUDGET_27 ?x1) (HOTEL_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY COMMUTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COMMUTE_27 ?x1))
+
+;; (DURING THE FESTIVE SEASON COMMA HOTELS IN SAN DIEGO OFFER TEMPTING DISCOUNT OFFERS)
+
+	;; HOTELS MAY OFFER DISCOUNT OFFERS.
+
+		(and (HOTELS_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (DISCOUNT_27 ?x1) (OFFERS_27 ?x1))
+
+	;; A SEASON CAN BE FESTIVE.
+
+		(and (SEASON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FESTIVE_27 ?x2))
+
+	;; HOTELS CAN BE IN A US-CITY.
+
+		(and (hotel_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (US-CITY_27 ?x2))
+
+	;; DISCOUNT OFFERS CAN BE TEMPTING.
+
+		(and (discount_27 ?x1) (offer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TEMPTING_27 ?x2))
+
+;; (CHECK THE WEBSITE OF THE SAN DIEGO LODGING TO LOOK FOR CERTAIN DISCOUNTS OR SAN DIEGO VACATION DEALS AND PACKAGES)
+
+	;; 
+
+	;; (NIL (:I (:Q DET US-CITY*.N) LODGE.V NIL))
+
+		(and (NIL_27 ?x1) (I_27 ?x2) (Q_27 ?x3) (DET_27 ?x3) (US-CITY_2A_2EN_27 ?x3) (LODGE_2EV_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BUY YOUR TICKETS AT THE BALBOA PARK VISITORS CENTER)
+
+	;; A PERSON MAY HAVE TICKETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TICKETS_27 ?x1))
+
+;; (THE ADMISSION FOR KIDS OF 17 YEARS AND UNDER IS FREE)
+
+	;; AN ADMISSION CAN BE FREE.
+
+		(and (ADMISSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+	;; KIDS CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF YEARS.
+
+		(and (KIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (YEARS_27 ?x2))
+
+;; (ADULTS TOO CAN AVAIL DISCOUNT ON THEIR PASS IF YOU BUY A STAY-FOR-THE-DAY PASS)
+
+	;; ADULTS MAY AVAIL DISCOUNT.
+
+		(and (ADULTS_27 ?x1) (MAY_27 ?x1) (AVAIL_27 ?x1) (DISCOUNT_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A PASS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PASS_27 ?x1))
+
+	;; A PERSON MAY BUY A STAY-FOR-THE-DAY_PASS[PERSON??].
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (STAY-FOR-THE-DAY_5FPASS_27 ?x1) (PERSON_27 ?x1))
+
+;; (THIS PASS ENTITLES YOU TO ENTER FIVE MUSEUMS FOR MERELY $ 35)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (APART FROM THE TICKETS COMMA MAKE SURE TO TAKE THE OFFICIAL BALBOA PARK VISITORS MAP FROM THE VISITORS CENTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS MAP PROVIDES DETAILS OF THE MUSEUMS COMMA GARDENS COMMA AND OTHER ATTRACTIONS LOCATED IN THE PARK)
+
+	;; A MAP MAY PROVIDE DETAILS OF MUSEUMS.
+
+		(and (MAP_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (DETAILS_27 ?x1) (of_27 ?x1 ?x2) (MUSEUMS_27 ?x2))
+
+	;; MUSEUMS MAY HAVE DETAILS.
+
+		(and (MUSEUMS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DETAILS_27 ?x1))
+
+	;; ATTRACTIONS MAY BE LOCATE -ED IN A PARK[PERSON??].
+
+		(and (ATTRACTIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (PARK_27 ?x3) (PERSON_27 ?x4))
+
+;; (KIDS CAN ENTER FREE INTO MORE THAN A DOZEN MUSEUMS COMMA SO THE CHOICE IS UNLIMITED)
+
+	;; A KIDS[PERSON??] MAY ENTER FREE.
+
+		(and (KIDS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ENTER_27 ?x1) (FREE_27 ?x1))
+
+	;; A CHOICE CAN BE UNLIMITED.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNLIMITED_27 ?x2))
+
+;; (HALLOWEEN IS INCOMPLETE WITHOUT A COSTUME PARADE)
+
+	;; A HALLOWEEN[PERSON??] CAN BE INCOMPLETE WITHOUT A PARADE.
+
+		(and (HALLOWEEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (INCOMPLETE_27 ?x1) (WITHOUT_27 ?x1) (A_27 ?x1) (PARADE_27 ?x1))
+
+	;; A PARADE CAN BE COSTUME.
+
+		(and (PARADE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COSTUME_27 ?x2))
+
+;; (THEREFORE TAKE YOUR KIDS TO THE NATURAL HISTORY MUSEUM WHERE KIDDIE COSTUME PARADE WILL TAKE PLACE AND KIDS WILL BE AWARDED ATTRACTIVE FREEBIES TOO)
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+	;; PARADE MAY TAKE PLACE.
+
+		(and (PARADE_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (PLACE_27 ?x1))
+
+	;; A PARADE CAN BE KIDDIE.
+
+		(and (PARADE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KIDDIE_27 ?x2))
+
+	;; A PARADE CAN BE COSTUME.
+
+		(and (PARADE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COSTUME_27 ?x2))
+
+	;; FREEBIES CAN BE ATTRACTIVE.
+
+		(and (freeby_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2))
+
+;; (TRY OUT THE MILITARY UNIFORMS)
+
+	;; UNIFORMS CAN BE MILITARY.
+
+		(and (uniform_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MILITARY_27 ?x2))
+
+;; (THEN HEAD TO THE VETERAN S MUSEUM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (OR VISIT THE MINGEI INTERNATIONAL MUSEUM TO TAKE PART IN THE HALLOWEEN ART HUNT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [17]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TO PARTICIPATE IN THE THE HALLOWEEN MUSEUM SCAVENGER HUNT COMMA HEAD STRAIGHT TO THE SAN DIEGO MODEL RAILROAD MUSEUM WHERE YOU ALSO BUILD GLOW-IN-THE-DARK STEAM ENGINES)
+
+	;; A HALLOWEEN[PERSON??] MAY HAVE A MUSEUM.
+
+		(and (HALLOWEEN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MUSEUM_27 ?x1))
+
+	;; A PERSON MAY BUILD STEAM ENGINES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUILD_27 ?x1) (STEAM_27 ?x1) (ENGINES_27 ?x1))
+
+	;; STEAM ENGINES CAN BE GLOW-IN-THE-DARK.
+
+		(and (STEAM_27 ?x1) (ENGINES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GLOW-IN-THE-DARK_27 ?x2))
+
+;; (IF YOU WANT TO LEARN THE ART OF FACE PAINTING OR HAT MAKING COMMA THEN VISIT THE SAN DIEGO HISTORY CENTER)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AND DO N T FORGET TO CHECK OUT THE SAN DIEGO MUSEUM OF MAN WHERE YOU DECORATE SKULL MASKS AND SUGAR SKULLS AND BUILD MINIATURE ALTARS)
+
+	;; A PERSON MAY DECORATE SKULL MASKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DECORATE_27 ?x1) (SKULL_27 ?x1) (MASKS_27 ?x1))
+
+	;; ALTARS CAN BE MINIATURE.
+
+		(and (altar_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [21]>
+
+;; (THEN MAKE SURE TO PAY A VISIT TO THE SAN DIE ZOO WHERE FREEBIES WILL BE HANDED OUT TO EVERYONE)
+
+	;; FREEBIES MAY BE HAND_OUT -ED TO EVERYONE.
+
+		(and (freeby_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAND_5FOUT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (EVERYONE_27 ?x3))

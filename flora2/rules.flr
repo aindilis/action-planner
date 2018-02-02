@@ -1,0 +1,46 @@
+// if you don't have a job, then consider using the job-search rapid
+// response system to conduct a job search
+
+// if you are not exercising
+
+// if you are not showering
+
+// if you are not brushing your teeth
+
+?ADDRESS:address[
+name *-> string,
+firstname *-> string,
+middleInitial *-> string,
+lastname *-> string,
+address1 *-> string,
+address2 *-> string,
+city *-> city,
+county *-> county,
+state *-> state,
+zipCode *-> zipCode,
+country *-> country,
+].
+
+?DEBT:debt[
+debtor *-> entity,
+creditor *-> entity,
+amount *-> integer,
+type *-> {studentLoan, normal, medical},
+].
+
+@{Health} alive(?Person) :- naf dead(?Person:person).
+
+residesIn(?Person, illinois)
+unemployed(?Person)
+
+
+@{Planning}
+consider(?Person)(develop(plan(?Domain:lifePlanningDomain))) :-
+	naf exists(?Plan(?Domain:lifePlanningDomain))^(knows(?Person)(?Plan)).
+
+{financialPlanning,mealPlanning,lifePlanning,}::lifePlanningDomain.
+
+// digitize paperwork and receipts
+{documentManagement,receiptManagement}::paperwork.
+
+// don't connect to a public wifi.  source: https://decorrespondent.nl/1101/What-we-give-away-when-we-log-on-to-a-public-Wi-Fi-network/31040493-53737dba

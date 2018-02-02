@@ -1,0 +1,143 @@
+<html>
+<head>
+   <title>Jess Introduction</title>
+   <link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+
+   <!-- %@ taglib uri="/csajsp-taglib.tld" prefix="csajsp" %-->
+
+</head>
+<body bgcolor="#FBFFFF">
+
+<h2>Jess, Java Expert System Shell</h2>
+<ul>
+<li>Originally a core <a href="http://www.ghgcorp.com/clips/CLIPS.html">Clips</a> implementation in <A HREF="http://www.javasoft.com">Java</A>
+<li>Evolved into Java-influenced environment, details refer to <a href="http://herzberg.ca.sandia.gov/jess/">Jess</a>
+</ul>
+<h3>Extendable</h3>
+can be extended using Userfunction
+<ul>
+<li>
+<h4><u>Java program</u>:</h4>
+
+<csajsp:dcode code="java" >
+<pre>
+<font color="#8000FF"><b>import</b></font> jess.*;
+
+<font color="#8000FF"><b>public</b></font> <font color="#8000FF"><b>class</b></font> ExMyUpcase <font color="#8000FF"><b>implements</b></font> Userfunction
+{
+    <font color="#aa0000"><i>// The name method returns the name by which the function will appear in Jess code.</font></i>
+    <font color="#8000FF"><b>public</b></font> <font color="#D04040"><B>String</B></font> getName() { <font color="#8000FF"><b>return</b></font> <font color="#006666">"my-upcase"</font>; }
+
+    <font color="#8000FF"><b>public</b></font> Value call(ValueVector vv, Context context) <font color="#8000FF"><b>throws</b></font> JessException
+    {
+        <font color="#8000FF"><b>return</b></font> <font color="#8000FF"><b>new</b></font> Value(vv.get(1).stringValue(context).toUpperCase(), RU.STRING);
+    }
+}
+</pre>
+</csajsp:dcode>
+<p>
+Every datum in Jess is represented by an object of jess.Value.
+The jess.Context represents an execution context for the evaluation of function calls
+and the resolution of variables.
+The jess.ValueVector class is Jess's internal representation of a list, and is used
+to represent multifields.
+</p>
+<li>
+<h4><u>Jess commands</u>:</h4>
+<pre>
+Jess> (<font color="#8000FF">load-function</font> ExMyUpcase)
+Jess> (my-upcase foo)
+</pre>
+</ul>
+
+<h3>Embeddable</h3>
+can embeded in a Java program:
+<pre>
+    <font color="#8000FF"><b>import</b></font> jess.*;
+    <font color="#8000FF"><b>public</b></font> <font color="#8000FF"><b>class</b></font> ExPt
+    {
+        <font color="#8000FF"><b>public</b></font> <font color="#8000FF"><b>static</b></font> <font color="#8000FF"><b>void</b></font> main(<font color="#D04040"><B>String</B></font>[] unused) <font color="#8000FF"><b>throws</b></font> JessException
+        {
+            Rete r = <font color="#8000FF"><b>new</b></font> Rete();
+            r.executeCommand(<font color="#006666">"(batch jess/scriptlib.clp)"</font>);
+            r.executeCommand(<font color="#006666">"(deftemplate point \&quot;A 2D point\&quot; (slot x) (slot y))"</font>);
+            r.executeCommand(<font color="#006666">"(assert (point (x 37) (y 49)))"</font>);
+            r.executeCommand(<font color="#006666">"(facts)"</font>);
+        }
+    }
+</pre>
+
+<h3>Executing a Jess File</h3>
+
+<pre>
+    <font color="#8000FF"><b>import</b></font> jess.*;
+
+    <font color="#aa0000"><i>// ...</font></i>
+
+    <font color="#aa0000"><i>// Create a Jess engine</font></i>
+    Rete rete = <font color="#8000FF"><b>new</b></font> Rete();
+
+    <font color="#aa0000"><i>// Open the file test.clp</font></i>
+    <font color="#D04040"><B>FileReader</B></font> fr = <font color="#8000FF"><b>new</b></font> <font color="#D04040"><B>FileReader</B></font>(<font color="#006666">"test.clp"</font>);
+
+    <font color="#aa0000"><i>// Create a parser for the file, telling it where to take input</font></i>
+    <font color="#aa0000"><i>// from and which engine to send the results to</font></i>
+    Jesp j = <font color="#8000FF"><b>new</b></font> Jesp(fr, rete);
+    <font color="#8000FF"><b>try</b></font>
+    {
+        <font color="#aa0000"><i>// parse and execute one construct, without printing a prompt</font></i>
+        j.parse(<font color="#8000FF"><b>false</b></font>);
+    }
+    <font color="#8000FF"><b>catch</b></font> (ReteException re)
+    {
+        <font color="#aa0000"><i>// All Jess errors are reported as 'ReteException's.</font></i>
+        re.printStackTrace(rete.getErrStream());
+    }
+</pre>
+
+<h4>Example 1: fixed rule-base file name</h4>
+<UL>
+<LI>Java source: <a href="http://192.168.48.232/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/Test.java">Test.java</a>
+<LI>Jess source: <a href="http://192.168.48.232/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/Hello1.clp">Hello1.clp</a>
+</UL>
+
+<h4>Example 2:  user-specified rule-base file name</h4>
+<UL>
+<LI>Java source: <a href="http://192.168.48.232/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/Test2.java">Test2.java</a>
+<LI>Jess source: <a href="http://192.168.48.232/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/Hello.clp">Hello.clp</a>
+</UL>
+
+
+<h3>Object Support</h3>
+
+Create and manipulate Java objects directly from Jess,
+<pre>
+   (<font color="#8000FF">bind</font> ?ht (<font color="#8000FF">new</font> java.util.Hashtable))
+   (<font color="#8000FF">call</font> ?ht <font color="#8000FF">put</font> "key1" "element1")
+   (<font color="#8000FF">call</font> ?ht <font color="#8000FF">put</font> "key2" "element2")
+   (<font color="#8000FF">call</font> ?ht <font color="#8000FF">get</font> "key1")
+</pre>
+
+<h3>Run-time Environment</h3>
+<h4>1. Command Line</h4>
+<pre>
+    java jess.Main
+</pre>
+<h4>2. Graphics Console</h4>
+<pre>
+    java jess.Console
+</pre>
+<h4>3. <a href="http://192.168.48.232/sylee/courses/jess/examples/appletConsole.html">Applet Console</a></h4>
+<h4>4. <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/servletConsole.htm">Servlet Console</a></h4>
+<h3>Jess Examples</h3>
+<ul>
+<li><a href="../../jess/index.html">Demo Examples</a>
+</ul>
+
+<p>Previous <a href="../clips/message.htm">Message Handlers</a>
+&nbsp;&nbsp;Up <A href="../clips/toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="object.htm">Object Support</a>
+</p>
+
+</body>
+</html>

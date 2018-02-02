@@ -1,0 +1,513 @@
+;; (IF YOU ARE SURE YOU ARE N T RELATED TO A LAWYER COMMA THOUGH COMMA IT WOULD N T HURT TO ASK YOUR FAMILY ALL THE SAME)
+
+	;; A PERSON CAN BE SURE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON CAN BE RELATED TO A LAWYER.
+
+		(and (person_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELATED_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (LAWYER_27 ?x3))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+;; (CONNECTIONS NEVER HURT COMMA AND IT IS POSSIBLE THAT ONE OF YOUR RELATIVES KNOWS SOMEONE)
+
+	;; CONNECTIONS MAY BE HURT -ED.
+
+		(and (connection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HURT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE POSSIBLE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION OF RELATIVES MAY KNOW SOMEONE.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (RELATIVES_27 ?x2) (MAY_27 ?x2) (KNOW_27 ?x2) (SOMEONE_27 ?x2))
+
+	;; A PERSON MAY HAVE RELATIVES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RELATIVES_27 ?x1))
+
+;; (TALK TO YOUR FRIENDS)
+
+	;; TALK CAN BE TO FRIENDS.
+
+		(and (TALK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (FRIENDS_27 ?x2))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (FIND A VOLUNTEER LAWYER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST AREAS HAVE VOLUNTEER LAWYER ORGANIZATIONS OR LEGAL AID ASSOCIATIONS COMMA BUT KEEP IN MIND THAT THESE ORGANIZATIONS HAVE MANY ELIGIBILITY REQUIREMENTS FOR THEIR SERVICES)
+
+	;; AREAS MAY HAVE VOLUNTEER LAWYER ORGANIZATIONS.
+
+		(and (AREAS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (VOLUNTEER_27 ?x1) (LAWYER_27 ?x1) (ORGANIZATIONS_27 ?x1))
+
+	;; ORGANIZATIONS MAY HAVE SOME_NUMBER_OF ELIGIBILITY REQUIREMENTS.
+
+		(and (organization_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (ELIGIBILITY_27 ?x1) (REQUIREMENTS_27 ?x1))
+
+	;; SOME_NUMBER_OF ELIGIBILITY REQUIREMENTS CAN BE FOR SERVICES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ELIGIBILITY_27 ?x1) (REQUIREMENTS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SERVICES_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE SERVICES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SERVICES_27 ?x1))
+
+;; (ALSO COMMA THERE IS A HUGE DEMAND FOR A FINITE NUMBER OF ATTORNEYS)
+
+	;; A DEMAND CAN BE FOR A NUMBER OF ATTORNEYS.
+
+		(and (demand_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (NUMBER_27 ?x2) (of_27 ?x2 ?x3) (ATTORNEYS_27 ?x3))
+
+	;; A DEMAND CAN BE HUGE.
+
+		(and (demand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUGE_27 ?x2))
+
+	;; A NUMBER CAN BE FINITE.
+
+		(and (NUMBER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINITE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; (CHECK A LOCAL LAW SCHOOL TO SEE IF THEY HAVE A LAW CLINIC OR SIMILAR PROGRAM THAT ALLOWS LAW STUDENTS -LRB- UNDER SUPERVISION OF A LICENSED ATTORNEY -RRB- TO WORK ON BEHALF OF LOW INCOME CLIENTS)
+
+	;; INDIVIDUAL -S MAY HAVE A LAW CLINIC.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LAW_27 ?x1) (CLINIC_27 ?x1))
+
+	;; AN ATTORNEY MAY UNDERGO A SUPERVISION.
+
+		(and (ATTORNEY_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (SUPERVISION_27 ?x1))
+
+	;; AN ATTORNEY CAN BE LICENSED.
+
+		(and (ATTORNEY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LICENSED_27 ?x2))
+
+	;; INCOME CLIENTS CAN BE LOW.
+
+		(and (income_27 ?x1) (client_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (THIS IS ACTUALLY A VERY GOOD WAY TO SNAP UP VERY PROMISING LAW STUDENTS - WHILE THEY MAY NOT HAVE MUCH EXPERIENCE COMMA THE LAW STUDENTS THAT WOULD BE ALLOWED TO PARTICIPATE IN THIS TYPE OF PROGRAM ARE NORMALLY
+ ABOUT THE TOP OF THE CLASS)
+
+	;; A THING CAN BE A WAY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE GOOD.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; LAW STUDENTS CAN BE ABOUT A TOP OF A CLASS.
+
+		(and (law_27 ?x1) (student_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (TOP_27 ?x2) (of_27 ?x2 ?x3) (class_27 ?x3))
+
+	;; INDIVIDUAL -S MAY HAVE EXPERIENCE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXPERIENCE_27 ?x1))
+
+	;; A CLASS MAY HAVE A TOP.
+
+		(and (CLASS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOP_27 ?x1))
+
+;; (IT S A GOOD CHANCE COMMA SO IF YOU HAVE IT COMMA YOU SHOULD N T THROW IT OUT THE WINDOW IMMEDIATELY)
+
+	;; A CHANCE CAN BE GOOD.
+
+		(and (CHANCE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY THROW A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THROW_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; (EXPLAIN YOUR SITUATION TO THE LAWYER IN QUESTION COMMA GIVE HIM/HER YOUR FINANCIAL STATEMENT COMMA AND DISCUSS WHAT YOU NEED DONE)
+
+	;; A PERSON MAY HAVE A SITUATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SITUATION_27 ?x1))
+
+	;; A LAWYER CAN BE IN QUESTION.
+
+		(and (LAWYER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (QUESTION_27 ?x2))
+
+	;; A PERSON MAY HAVE A STATEMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STATEMENT_27 ?x1))
+
+	;; A STATEMENT CAN BE FINANCIAL.
+
+		(and (STATEMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINANCIAL_27 ?x2))
+
+	;; A PERSON MAY NEED DONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (DONE_27 ?x1))
+
+;; (IF THEY BELIEVE THEY CAN LOWER THEIR RATE COMMA OR MAKE IT SO YOU PAY A CERTAIN AMOUNT OVER A CERTAIN AMOUNT OF TIME COMMA YOU MAY BE IN LUCK)
+
+	;; A PERSON CAN BE IN LUCK.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (LUCK_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BELIEVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BELIEVE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY LOWER A RATE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LOWER_27 ?x1) (A_27 ?x1) (RATE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A RATE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (rate_27 ?x1))
+
+	;; A PERSON MAY PAY AN AMOUNT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (AN_27 ?x1) (AMOUNT_27 ?x1))
+
+	;; AN AMOUNT CAN BE OVER AN AMOUNT.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVER_27 ?x2) (AN_27 ?x2) (AMOUNT_27 ?x2))
+
+;; (GET A LOAN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS MAY BE THE ONLY THING YOU CAN DO IN SOME CASES COMMA ESPECIALLY IF YOUR LIFE LITERALLY RESTS UPON GETTING OFF THE CHARGE)
+
+	;; A THING CAN BE A THING.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY DO IN SOME_NUMBER_OF CASES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CASES_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (TRY AND ASK FAMILY MEMBERS FOR MONEY COMMA AND THEN BRANCH OFF FROM THERE - ONLY GO TO A PROFESSIONAL MONEY LENDER IF NO ONE HAS A CENT TO SPARE ANYWHERE AT ALL)
+
+	;; A MONEY LENDER CAN BE PROFESSIONAL.
+
+		(and (MONEY_27 ?x1) (LENDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFESSIONAL_27 ?x2))
+
+	;; AN ONE MAY HAVE A CENT.
+
+		(and (ONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENT_27 ?x1))
+
+;; (KEEP IN MIND THAT THIS MAY LEAD TO MORE LEGAL TROUBLES IF YOU HAVE BAD CREDIT AND KNOW YOU CAN NOT PAY THE LENDERS BACK ANY TIME SOON)
+
+	;; A THING MAY LEAD TO TROUBLES.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (LEAD_27 ?x1) (to_27 ?x1 ?x2) (TROUBLES_27 ?x2))
+
+	;; TROUBLES CAN BE LEGAL.
+
+		(and (trouble_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEGAL_27 ?x2))
+
+	;; A PERSON MAY HAVE CREDIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CREDIT_27 ?x1))
+
+	;; CREDIT CAN BE BAD.
+
+		(and (CREDIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+	;; A PERSON MAY PAY_BACK LENDERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_5FBACK_27 ?x1) (LENDERS_27 ?x1))
+
+;; (BE CLEAR AND UPFRONT COMMA AND HOPEFULLY YOU LL GET THE MONEY YOU NEED TO GET THE ATTORNEY YOU DESIRE)
+
+	;; A PERSON MAY DESIRE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DESIRE_27 ?x1))
+
+;; (HOLD A YARD SALE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (A SLIGHTLY OBVIOUS ONE COMMA SELLING OFF YOUR UNUSED FURNITURE AND JUNK MAY BE THE BEST WAY TO AFFORD A LAWYER)
+
+	;; AN ONE CAN BE A WAY.
+
+		(and (be_27 ?e1 ?x1) (way_27 ?x1))
+
+	;; AN ONE CAN BE OBVIOUS.
+
+		(and (be_27 ?e1 ?x1) (OBVIOUS_27 ?x1))
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+	;; FURNITURE CAN BE UNUSED.
+
+		(and (FURNITURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNUSED_27 ?x2))
+
+	;; A WAY CAN BE BEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [11]>
+
+;; (ASK A FRIEND IF THEY HAVE ANYTHING THAT YOU COULD SELL COMMA BUT BE CLEAR AS TO WHY YOU WANT THE ITEMS COMMA OTHERWISE THEY MAY GIVE YOU SOMETHING AS A GIFT COMMA NOT REALIZING YOU ARE GOING TO SELL IT OFF TO
+ WHOMEVER HAS TWENTY BUCKS UPFRONT)
+
+	;; INDIVIDUAL -S MAY HAVE ANYTHING.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANYTHING_27 ?x1))
+
+	;; A PERSON MAY SELL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+	;; ITEMS MAY GIVE A PERSON SOMETHING.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (something_27 ?x1))
+
+	;; SOMETHING CAN BE AS A GIFT.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (A_27 ?x2) (GIFT_27 ?x2))
+
+;; (OFFER A TRADE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [12]>
+
+;; (OFFER FREE FOOD OR SERVICE AT YOUR BUSINESS IN RETURN FOR HELPING YOU OUT WITH YOUR LEGAL PROBLEM)
+
+	;; OFFER MAY FREE FOOD.
+
+		(and (OFFER_27 ?x1) (MAY_27 ?x1) (FREE_27 ?x1) (FOOD_27 ?x1))
+
+	;; FOOD CAN BE AT A BUSINESS.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (BUSINESS_27 ?x2))
+
+	;; A BUSINESS CAN BE IN RETURN.
+
+		(and (BUSINESS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (RETURN_27 ?x2))
+
+	;; A PERSON MAY HAVE A BUSINESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUSINESS_27 ?x1))
+
+	;; A PERSON MAY HAVE A PROBLEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROBLEM_27 ?x1))
+
+	;; A PROBLEM CAN BE LEGAL.
+
+		(and (PROBLEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEGAL_27 ?x2))
+
+;; (WHILE MANY LAWYERS MAY BE OFFENDED BY SUCH AN OFFER COMMA OTHERS WILL DELIGHT IN THE IDEA)
+
+	;; OTHERS MAY DELIGHT IN AN IDEA.
+
+		(and (other_27 ?x1) (MAY_27 ?x1) (DELIGHT_27 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; SOME_NUMBER_OF LAWYERS MAY BE OFFEND -ED BY AN OFFER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (LAWYERS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFFEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (OFFER_27 ?x2))
+
+;; (IF YOU DO N T OWN THE BUSINESS IN WHICH YOU WORK COMMA ASK THE PERSON WHO DOES IF THIS PLAN COULD BE PERMITTED)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY WORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; A PLAN MAY BE PERMIT -ED.
+
+		(and (plan_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERMIT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IT MAY BE A STRETCH COMMA AND THE ATTORNEY MAY HAVE TO ALSO DO SOME EXTRA WORK FOR THE BUSINESS COMMA BUT IT IS A RATHER SIMPLE WAY TO GET A LAWYER FOR NO ACTUAL CASH)
+
+	;; A THING-REFERRED-TO CAN BE A STRETCH.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STRETCH_27 ?x2))
+
+	;; WORK CAN BE FOR A BUSINESS.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BUSINESS_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE A WAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE SIMPLE.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A LAWYER CAN BE FOR CASH.
+
+		(and (LAWYER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CASH_27 ?x2))
+
+;; (IT MAY BE A STRETCH COMMA AND THE ATTORNEY MAY HAVE TO ALSO DO SOME EXTRA WORK FOR THE BUSINESS COMMA BUT IT IS A RATHER SIMPLE WAY TO GET A LAWYER FOR NO ACTUAL CASH)
+
+	;; A THING-REFERRED-TO CAN BE A STRETCH.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STRETCH_27 ?x2))
+
+	;; WORK CAN BE FOR A BUSINESS.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BUSINESS_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE A WAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE SIMPLE.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A LAWYER CAN BE FOR CASH.
+
+		(and (LAWYER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CASH_27 ?x2))
+
+;; (IT MAY BE A STRETCH COMMA AND THE ATTORNEY MAY HAVE TO ALSO DO SOME EXTRA WORK FOR THE BUSINESS COMMA BUT IT IS A RATHER SIMPLE WAY TO GET A LAWYER FOR NO ACTUAL CASH)
+
+	;; A THING-REFERRED-TO CAN BE A STRETCH.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STRETCH_27 ?x2))
+
+	;; WORK CAN BE FOR A BUSINESS.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BUSINESS_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE A WAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE SIMPLE.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A LAWYER CAN BE FOR CASH.
+
+		(and (LAWYER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CASH_27 ?x2))

@@ -1,0 +1,186 @@
+<html>
+<head>
+   <title>Jess: Object Support
+   </title>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0" charset="big5" />
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+
+<h2>Object Support</h2>
+
+<h3>Access Existing Objects</h3>
+<pre>
+    <font color="#0040a0">;; Create the widgets</font>
+    (<font color="#8000FF">defglobal</font> ?*f* = (<font color="#8000FF">new</font> java.awt.Frame <font color="#008000">"Button Demo"</font>))
+    (<font color="#8000FF">defglobal</font> ?*b* = (<font color="#8000FF">new</font> java.awt.Button <font color="#008000">"Hello"</font>))
+
+    <font color="#0040a0">;; Define the deffunction</font>
+    (<font color="#8000FF">deffunction</font> say-hello <font color="#008000">"Unconditionally print a message"</font> (?evt)
+        (<font color="#8000FF">printout</font> t <font color="#008000">"Hello, World!"</font> crlf))
+
+    <font color="#0040a0">;; Connect the deffunction to the button</font>
+    (?*b* addActionListener
+        (<font color="#8000FF">new</font> jess.awt.ActionListener say-hello (engine)))
+
+    <font color="#0040a0">;; Assemble and display the GUI</font>
+    (?*f* add ?*b*)
+    (?*f* pack)
+    (<font color="#8000FF">set</font> ?*f* visible TRUE)
+
+</pre>
+
+<p><b>AWT Examples</b>
+<ol>
+<li><a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/hello.clp">hello.clp</a>
+<li><a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/draw.clp">draw.clp</a>
+<li><a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/frame.clp">frame.clp</a>
+<li><a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/swing.clp">swing.clp</a>
+</ol>
+</p>
+
+<p><b>Demos</b>
+<ol>
+<li><a href="http://210.70.83.101/servlets/Jess?source=/sylee/courses/jess/examples/Poker/deck.clp">deck.clp</a>
+(<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/Poker/deck.clp">clips source</a>)
+<li><a href="http://210.70.83.101/servlets/Jess?source=/sylee/courses/jess/examples/Poker/poker.clp">poker.clp</a>
+(<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/examples/Poker/poker.clp">clips source</a>)
+<p>Java files needed:<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/Card.java">Card.java</a>
+<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/Cards.java">Cards.java</a>
+</ol>
+</p>
+
+<h4>Access member variables of Java objects</h4>
+<pre>
+    (<font color="#8000FF">bind</font> ?pt (<font color="#8000FF">new</font> java.awt.Point))
+    (<font color="#8000FF">set-member</font> ?pt x 37)
+    (<font color="#8000FF">set-member</font> ?pt y 42)
+    (<font color="#8000FF">get-member</font> ?pt x)
+</pre>
+<h4>Access static members of Java classes</h4>
+
+<pre>
+    (<font color="#8000FF">get-member</font> System out)
+</pre>
+
+<h3>Defclass</h3>
+tell Jess to generate a deftemplate representing a category of Beans.
+<h3>Definstance</h3>
+put one specific Bean onto knowlege base.
+<p>
+the representation can be :
+</p>
+<ol>
+<li><b>static</b>   <br />updated only when reset command is issued
+<p><b>Example</b>
+<br /><br /><u>Java program</u>:
+<pre>
+    <font color="#8000FF"><B>public class</B></font> NameBean
+    {
+        <font color="#8000FF"><B>private</B></font> <font color="#D04040"><B>String</B></font> name = <font color="#008000">"Bob"</font><font color="#0040a0">;</font>
+        <font color="#8000FF"><B>public</B></font> <font color="#D04040"><B>String</B></font> getName() { <font color="#8000FF"><B>return</B></font> name<font color="#0040a0">; }</font>
+        <font color="#8000FF"><B>public void</B></font> setName(<font color="#D04040"><B>String</B></font> s) { name = s<font color="#0040a0">; }</font>
+    }
+</pre>
+<br />
+
+<u>Jess program</u>:
+
+<pre>
+    (<font color="#8000FF">defclass</font> simple NameBean)
+    (<font color="#8000FF">ppdeftemplate</font> simple)
+
+    (<font color="#8000FF">bind</font> ?sb (<font color="#8000FF">new</font> NameBean))
+    (<font color="#8000FF">definstance</font> simple ?sb static)
+    (<font color="#8000FF">facts</font>)
+    (<font color="#8000FF">call</font> ?sb setName <font color="#008000">"Fred"</font>)
+    (<font color="#8000FF">facts</font>)
+</pre>
+<br />
+Demo:&nbsp;<a href="http://210.70.83.101/servlets/JessConsole?src=jess/name.clp">name.clp</a>
+</p>
+
+<li><b>dynamic</b>
+<br />updated every time a property of Bean changes
+<p>Demo:&nbsp;<a href="http://210.70.83.101/servlets/JessConsole?src=jess/dname.clp">dname.clp</a>
+<br />java source:&nbsp;<a href="http://210.70.83.101/servlets/CSCodeViewer?type=url&source=/sylee/courses/jess/DynamicBean.java">DynamicBean.java</a>
+<br />jess source:&nbsp;<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/dname.clp">dname.clp</a>
+</p>
+</ol>
+
+<h4>Another Example</h4>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;Demo:&nbsp;<a href="http://210.70.83.101/servlets/JessConsole?src=jess/vector.clp">vector.clp</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;java source:&nbsp;<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/Vector.java">Vector.java</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;jess source:&nbsp;<a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/vector.clp">vector.clp</a>
+</p>
+
+<h3>Deftemplate Inheritance</h3>
+One deftemplate construct can be defined in terms of another using extends, for example,
+<pre>
+(<font color="#8000FF">deftemplate</font> automobile <font color="#008000">"A specific car."</font>
+    (<font color="#8000FF">slot</font> make)
+    (<font color="#8000FF">slot</font> model)
+    (<font color="#8000FF">slot</font> year (type INTEGER))
+    (<font color="#8000FF">slot</font> color (<font color="#8000FF">default</font> white)))
+
+(<font color="#8000FF">deftemplate</font> used-auto extends automobile
+    (<font color="#8000FF">slot</font> mileage)
+    (<font color="#8000FF">slot</font> blue-book-value)
+    (<font color="#8000FF">multislot</font> owners))
+</pre>
+
+<h3>I/O Routers</h3>
+
+By default, Jess's standard routers are connected to Java's standard streams.
+However, you can connect the t router to any Java java.io.Reader
+and java.io.Writer objects, or add routers of your own using
+<pre>
+    public void addInputRouter(String s, Reader is, boolean consoleLike)
+    public void addOutputRouter(String s, Writer os)
+</pre>
+<h4><a href="http://www.csie.ntu.edu.tw/~sylee/courses/deitel/jhtp/jhtp5_24.ppt">Introduction to Servlets</a></h4>
+Examples:
+<ol>
+<LI><a href="http://210.70.83.101/servlets/WelcomeServlet">WelcomeServlet</a>
+   ( <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/deitel/jhtp/ch24/WelcomeServlet.java">source</a> )
+<LI><a href="http://210.70.83.101/servlets/WelcomeServlet2?firstname=Larry">WelcomeServlet2</a>, using query string for input
+   ( <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/deitel/jhtp/ch24/WelcomeServlet2.java">source</a> )
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/deitel/jhtp/ch24/WelcomeServlet3.html">WelcomeServlet3</a>, using form input
+   ( <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/deitel/jhtp/ch24/WelcomeServlet3.java">source</a> )
+</ol>
+
+<h3>JESS Servlets</h3>
+<h4>Example 1: hard-wired file name</h4>
+<UL>
+<LI>Demo: <a href="http://210.70.83.101/servlets/JessTest">JessTest Servlet</a>
+<LI>Jess source: <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/Test.clp">Hello, Jess World!</a>
+<LI>Java source: <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/JessTest.java">Jess Servlet</a>
+</UL>
+<h4>Example 2: file name specified in query string</h4>
+<UL>
+<LI>Demo: <a href="http://210.70.83.101/servlets/JessTest2?source=/sylee/courses/jess/blocks.clp">JessTest2 Servlet</a>
+<LI>Jess source: <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/blocks.clp">Block World</a>
+<LI>Java source: <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/JessTest2.java">JessTest2 Servlet</a>
+</UL>
+<h4>Example 3: source URL specified in query string</h4>
+<UL>
+<LI>Demo: <a href="http://210.70.83.101/servlets/JessTest3?source=http://localhost/sylee/courses/jess/blocks.clp">JessTest3 Servlet</a>
+<LI>Jess source: <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/blocks.clp">Block World</a>
+<LI>Java source: <a href="http://210.70.83.101/servlets/CLPCodeViewer?source=/sylee/courses/jess/JessTest3.java">JessTest3 Servlet</a>
+</UL>
+<h4><A HREF="web.htm">Web Page Interface (建置網頁介面)</A></h4>
+<h4>Reference</h4>
+<UL>
+<LI>Sec. 4.4.6 I/O Routers in <a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/docs/library.html">4. Introduction to Programming with Jess in Java</a>
+<LI><a href="http://www.deitel.com/books/jHTP5/">Java How to Program, 5/e, by Deitel</a>
+</UL>
+
+
+<p>Previous <a href="intro.htm">Jess Introduction</a>
+&nbsp;&nbsp;Up <A href="../clips/toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="../clips/efficiency.htm">Efficiency in Rule-based Languages</a>
+</p>
+
+</body>
+</html>

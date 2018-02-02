@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+<meta charset="big5" />
+<title>台北市立動物園野外動物區資訊查詢系統</title>
+</HEAD>
+
+<h2>台北市立動物園野外動物區資訊查詢系統</h2>
+
+<FORM METHOD="POST" ACTION="http://www.csie.ntu.edu.tw/servlets/JessServlet">
+  <INPUT TYPE="hidden" NAME="fileRB" VALUE="zootpe">
+  <INPUT TYPE="hidden" NAME="titleRB" VALUE="台北市立動物園野外動物區資訊查詢系統">
+  <input type="hidden" name="fact_name" value="animal">
+
+<h3>哺乳綱</h3>
+&nbsp;&nbsp;偶蹄目<br>
+&nbsp;&nbsp;&nbsp;&nbsp;鹿科
+&nbsp;&nbsp;&nbsp;&nbsp;台灣小羌種<input type="radio" name="slot" value="Muntjac" checked>台灣山羌
+&nbsp;&nbsp;&nbsp;&nbsp;梅花鹿種<input type="radio" name="slot" value="Deer" >台灣梅花鹿
+<br>&nbsp;&nbsp;&nbsp;&nbsp;豬科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Suidae">台灣野豬
+<br>&nbsp;&nbsp;&nbsp;&nbsp;牛科
+&nbsp;&nbsp;<input type="radio" name="slot" value="Bovidae">長鬃山羊
+<br>&nbsp;&nbsp;翼手目
+&nbsp;&nbsp;&nbsp;&nbsp;大蝙蝠科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Pteropodidae">台灣狐蝠
+<br>&nbsp;&nbsp;靈長目
+&nbsp;&nbsp;&nbsp;&nbsp;獼猴科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Cercopithecidae">台灣獼猴
+<br>&nbsp;&nbsp;食肉目<br>
+&nbsp;&nbsp;&nbsp;&nbsp;靈貓科
+&nbsp;&nbsp;<input type="radio" name="slot" value="Viverridae">白鼻心
+<br>&nbsp;&nbsp;&nbsp;&nbsp;貓科
+&nbsp;&nbsp;<input type="radio" name="slot" value="leopard">雲豹
+&nbsp;&nbsp;<input type="radio" name="slot" value="Cat">石虎
+<br>&nbsp;&nbsp;&nbsp;&nbsp;熊科
+&nbsp;&nbsp;<input type="radio" name="slot" value="Ursidae">台灣黑熊
+<br>&nbsp;&nbsp;囓齒目
+&nbsp;&nbsp;&nbsp;&nbsp;松鼠科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Sciuridae">赤腹松鼠
+<br>&nbsp;&nbsp;麟甲目
+&nbsp;&nbsp;&nbsp;&nbsp;穿山甲科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Manidae">穿山甲
+
+<h3>鳥綱</h3>
+&nbsp;&nbsp;鷹形目
+&nbsp;&nbsp;&nbsp;&nbsp;鷲鷹科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Accipitridae">大冠鷲
+<br>&nbsp;&nbsp;雞形目
+&nbsp;&nbsp;&nbsp;&nbsp;雉科
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="colchicus">環頸雉
+&nbsp;&nbsp;<input type="radio" name="slot" value="swinhoii">藍腹鷳
+<br>&nbsp;&nbsp;鴞形目
+&nbsp;&nbsp;&nbsp;&nbsp;鴟鴞科
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="slot" value="Strigidae">領角鴞
+<p>
+<br>Reset? <INPUT TYPE="radio" NAME="reset" VALUE="no" checked>no
+<INPUT TYPE="radio" NAME="reset" VALUE="yes">yes
+<br>Debug? <INPUT TYPE="radio" NAME="debug" VALUE="no" checked>no
+<INPUT TYPE="radio" NAME="debug" VALUE="yes">yes
+<p>  <INPUT TYPE=submit VALUE="Start">
+</form>
+
+</BODY>
+
+</HTML>

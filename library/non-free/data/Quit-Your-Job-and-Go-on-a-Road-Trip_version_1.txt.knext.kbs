@@ -1,0 +1,790 @@
+;; (DOING MUCH OF YOUR PLANNING ON THE FRONT END WILL ALLOW YOUR ADVENTURE TO BE MUCH MORE STRESS-FREE AND ENJOYABLE)
+
+	;; A PERSON MAY HAVE PLANNING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PLANNING_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ADVENTURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ADVENTURE_27 ?x1))
+
+;; (ALLOW AT LEAST A HALF YEAR TO A YEAR TO PLAN AND SAVE THOSE DOLLARS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SET YOUR BUDGET AND PLAN THE LENGTH OF YOUR TRIP  THESE TWO GO HAND IT HAND)
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+	;; A TRIP MAY HAVE A LENGTH.
+
+		(and (TRIP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LENGTH_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+	;; SOME NUMBER_OR_PORTION MAY GO.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+;; (THE LONGER YOU ARE GONE COMMA THE MORE MONEY YOU LL NEED)
+
+	;; A PERSON MAY BE GO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF YOU ARE PLANNING TO QUIT YOUR JOB COMMA YOU LL PROBABLY WANT TO TRAVEL FOR AT LEAST 4 TO 6 MONTHS TO MAKE IT WORTHWHILE)
+
+	;; A PERSON MAY HAVE A JOB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JOB_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE WORTHWHILE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORTHWHILE_27 ?x2))
+
+;; (REALISTICALLY COMMA TRY TO DETERMINE HOW MUCH MONEY YOU LL NEED EACH MONTH WHILE TRAVELING)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V (:Q SOME-NUMBER-OF MONTH.N)))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (Q_27 ?x4) (SOME-NUMBER-OF_27 ?x4) (MONTH_2EN_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU NEED TO INCLUDE BASIC EXPENSES SUCH AS FOOD COMMA GAS COMMA AND NIGHTLY EXPENSES COMMA BUT ALSO OTHER EXPENSES SUCH AS HEALTH CARE
+ COMMA AUTO / RV INSURANCE COMMA STORAGE OF PERSONAL ITEMS BACK HOME COMMA CREDIT CARD PAYMENTS COMMA AN EMERGENCY FIX-IT FUND FOR THE RIG
+ COMMA MAYBE EVEN PLANE FARE SO YOU CAN TRAVEL HOME TO SEE LOVED ONES ONCE OR TWICE COMMA ESPECIALLY IN THE EVENT OF AN EMERGENCY COMMA A
+ NEW ARRIVAL COMMA OR A SPECIAL ANNIVERSARY OR BIRTHDAY)
+
+	;; EXPENSES CAN BE BASIC.
+
+		(and (expense_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+	;; EXPENSES CAN BE NIGHTLY.
+
+		(and (expense_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NIGHTLY_27 ?x2))
+
+	;; EXPENSES MAY FARE.
+
+		(and (expense_27 ?x1) (MAY_27 ?x1) (FARE_27 ?x1))
+
+	;; ITEMS CAN BE PERSONAL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+	;; AN EMERGENCY FIX-IT FUND CAN BE FOR A RIG.
+
+		(and (EMERGENCY_27 ?x1) (FIX-IT_27 ?x1) (FUND_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (RIG_27 ?x2))
+
+	;; ONES CAN BE LOVED.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOVED_27 ?x2))
+
+	;; AN EMERGENCY MAY UNDERGO AN EVENT.
+
+		(and (EMERGENCY_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+;; (IF CHILDREN ARE COMING WITH YOU COMMA YOU WILL NEED TO CONSIDER THEIR AGE NEEDS AND THEIR EDUCATIONAL NEEDS -LRB- IF RELEVANT -RRB-)
+
+	;; CHILDREN MAY COME WITH A PERSON.
+
+		(and (CHILDREN_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE AGE NEEDS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AGE_27 ?x1) (NEEDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE NEEDS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+	;; NEEDS CAN BE EDUCATIONAL.
+
+		(and (need_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EDUCATIONAL_27 ?x2))
+
+;; (YOU MIGHT NEED TO HOMESCHOOL AS YOU TRAVEL BE SURE TO CLEAR THE REQUIREMENTS WITH YOUR HOME STATE BEFORE LEAVING COMMA AS WELL AS
+ CHECKING WITH YOUR KIDS THAT THIS IS GOING TO WORK FOR THEM TOO)
+
+	;; A PERSON MAY TRAVEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOME STATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1) (STATE_27 ?x1))
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+;; (HAVE HEALTH CHECK-UPS BEFORE SETTING OFF)
+
+	;; 
+
+	;; ((:I (:F K (:F NN HEALTH.N (:F PLUR CHECK-UP.N))) BEFORE.P (:F KA NIL)))
+
+		(and (I_27 ?x4) (F_27 ?x1) (K_27 ?x1) (F_27 ?x2) (NN_27 ?x2) (HEALTH_2EN_27 ?x2) (F_27 ?x3) (PLUR_27 ?x3) (CHECK-UP_2EN_27 ?x3) (BEFORE_2EP_27 ?x4) (F_27 ?x5) (KA_27 ?x5) (NIL_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU NEED MEDICATIONS OR ONGOING CHECK-UPS COMMA BE SURE TO ASK YOUR DOCTOR HOW THIS MIGHT BE POSSIBLE AS YOU TRAVEL)
+
+	;; A PERSON MAY NEED MEDICATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (MEDICATIONS_27 ?x1))
+
+	;; CHECK-UPS CAN BE ONGOING.
+
+		(and (CHECK-UPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONGOING_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOCTOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOCTOR_27 ?x1))
+
+	;; A THING CAN BE POSSIBLE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+	;; A PERSON MAY TRAVEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; (DECIDE WHETHER YOUR PETS ARE GOING TO BE A PART OF YOUR EXPERIENCE)
+
+	;; A PERSON MAY HAVE PETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PETS_27 ?x1))
+
+	;; AN EXPERIENCE MAY HAVE A PART.
+
+		(and (EXPERIENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [15]>
+
+;; (NOT BEING OBLIGED TO BE AT ONE DESTINATION BY A CERTAIN TIME ALSO ALLOWS YOU TO RELAX A LOT MORE)
+
+	;; A DESTINATION CAN BE BY A TIME.
+
+		(and (destination_27 ?x1) (be_27 ?e1 ?x1) (by_27 ?x1 ?x2) (time_27 ?x2))
+
+;; (IF PLANNING TO CROSS OVER TO CANADA OR MEXICO COMMA BE SURE TO HAVE YOUR PASSPORT AND ALL VEHICLE REGISTRATION PAPERS WITH YOU)
+
+	;; A PERSON MAY HAVE A PASSPORT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PASSPORT_27 ?x1))
+
+;; (KNOW WHAT YOU CAN TAKE ACROSS THE BORDER BOTH WAYS ASK CUSTOMS OFFICIALS IF YOU RE NOT SURE)
+
+	;; A PERSON MAY TAKE ACROSS A BORDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (ACROSS_27 ?x1) (A_27 ?x1) (BORDER_27 ?x1))
+
+;; (IDEAS FOR PLACES TO VISIT ALONG THE WAY  ELWHA DAM COMMA WASHINGTON KAMLOOPS LAKE COMMA BRITISH COLUMBIA BIGFOOT TOURIST TRAP COMMA HWY
+ COMMA NORTHERN CA MOAB COMMA UTAH SPOKANE COMMA WASHINGTON CEDAR BREAKS NM COMMA UTAH CHOOSE YOUR VEHICLE)
+
+	;; IDEAS CAN BE FOR PLACES.
+
+		(and (IDEAS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (place_27 ?x2))
+
+	;; A PERSON MAY HAVE A VEHICLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VEHICLE_27 ?x1))
+
+;; (CAR TRAVEL IS AN OPTION COMMA USING CAMPING EQUIPMENT OR MOTELS AT NIGHT)
+
+	;; CAR TRAVEL CAN BE AN OPTION.
+
+		(and (car_27 ?x1) (travel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTION_27 ?x2))
+
+	;; EQUIPMENT CAN BE AT NIGHT.
+
+		(and (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_27 ?x2) (NIGHT_27 ?x2))
+
+	;; EQUIPMENT CAN BE CAMPING.
+
+		(and (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAMPING_27 ?x2))
+
+;; (WHILE THIS OPTION WILL LIKELY SAVE YOU A SIGNIFICANT AMOUNT OF MONEY ON GAS COMMA OTHER DAILY TASKS CAN PROVE TO BE MUCH MORE DIFFICULT)
+
+	;; AN OPTION MAY SAVE A PERSON AN AMOUNT OF MONEY.
+
+		(and (OPTION_27 ?x1) (MAY_27 ?x1) (SAVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (AN_27 ?x1) (AMOUNT_27 ?x1) (of_27 ?x1 ?x2) (MONEY_27 ?x2))
+
+	;; AN AMOUNT CAN BE SIGNIFICANT.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNIFICANT_27 ?x2))
+
+	;; TASKS CAN BE DAILY.
+
+		(and (task_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAILY_27 ?x2))
+
+;; (STORAGE COMMA ORGANIZATION COMMA COOKING COMMA KEEPING FOOD COLD COMMA EXPOSURE TO THE ELEMENTS COMMA GENERAL COMFORT LEVEL COMMA ETC.
+ COMMA MAY PROVE TO BE A HINDRANCE)
+
+	;; EXPOSURE CAN BE TO ELEMENTS.
+
+		(and (EXPOSURE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (element_27 ?x2))
+
+	;; A COMFORT LEVEL CAN BE GENERAL.
+
+		(and (COMFORT_27 ?x1) (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENERAL_27 ?x2))
+
+;; (FOR THE PURPOSES OF THIS ARTICLE COMMA WE WILL ASSUME YOU WILL BE CHOOSING A RECREATIONAL VEHICLE -LRB- RV -RRB-)
+
+	;; PERSON -S MAY ASSUME.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ASSUME_27 ?x1))
+
+	;; AN ARTICLE MAY HAVE PURPOSES.
+
+		(and (ARTICLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PURPOSES_27 ?x1))
+
+	;; A PERSON MAY CHOOSE A VEHICLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (A_27 ?x1) (VEHICLE_27 ?x1))
+
+	;; A VEHICLE CAN BE RECREATIONAL.
+
+		(and (VEHICLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECREATIONAL_27 ?x2))
+
+;; (THERE ARE SEVERAL TYPES OF RV S TO CHOOSE FROM COMMA AND YOUR CHOICE DEPENDS ON YOUR BUDGET COMMA COMFORT LEVEL REQUIREMENTS COMMA AND
+ PERSONAL INTERESTS)
+
+	;; A CHOICE MAY DEPEND ON A BUDGET.
+
+		(and (CHOICE_27 ?x1) (MAY_27 ?x1) (DEPEND_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+	;; INTERESTS CAN BE PERSONAL.
+
+		(and (interest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; (SOME OF THE OPTIONS INCLUDE  A VAN COMMA A MOTOR HOME COMMA A TRAILER COMMA OR A 5TH-WHEEL)
+
+	;; SOME_NUMBER_OF THING OF OPTIONS MAY INCLUDE A VAN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (OPTIONS_27 ?x2) (MAY_27 ?x2) (INCLUDE_27 ?x2) (A_27 ?x2) (VAN_27 ?x2))
+
+	;; OPTIONS MAY HAVE A THING.
+
+		(and (option_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+;; (CHOOSING OR BUYING AN RV CAN BE A GUIDE ALL BY ITSELF COMMA BUT SOME MAIN THINGS TO CONSIDER WHEN SELECTING AN RV INCLUDE  RESALE VALUE 
+ IF YOU LL BE BUYING A RIG JUST FOR THE TRIP COMMA CONSIDER THE RESALE VALUE AS A TOPMOST CONCERN)
+
+	;; A VALUE CAN BE RESALE.
+
+		(and (VALUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESALE_27 ?x2))
+
+	;; A CONCERN CAN BE TOPMOST.
+
+		(and (concern_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOPMOST_27 ?x2))
+
+;; (SOME RV MAKES TEND TO HOLD THEIR VALUES WELL COMMA OTHERS NOT SO MUCH)
+
+	;; SOME_NUMBER_OF RV MAY MAKE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (RV_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE VALUES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (VALUES_27 ?x1))
+
+	;; OTHERS CAN BE MUCH.
+
+		(and (other_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MUCH_27 ?x2))
+
+;; (DO YOUR RESEARCH WITH CARE AND ASK OTHER RV OWNERS WHAT THEIR PREFERRED CHOICES ARE)
+
+	;; A PERSON MAY HAVE RESEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESEARCH_27 ?x1))
+
+	;; CHOICES MAY BE.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CHOICES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHOICES_27 ?x1))
+
+	;; CHOICES CAN BE PREFERRED.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PREFERRED_27 ?x2))
+
+;; (IF YOU RE TAKING ALONG A LOT OF SPORTING COMMA EXPEDITION COMMA HOBBY COMMA OR CAMPING EQUIPMENT COMMA BEAR THIS IN MIND)
+
+	;; A THING CAN BE IN MIND.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MIND_27 ?x2))
+
+;; (SIZE  BIGGER IS NOT ALWAYS BETTER)
+
+	;; SIZE CAN BE BETTER.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+;; (GET SOMETHING PRACTICAL AND COMFORTABLE COMMA BUT AVOID BIGGER UNLESS IT S ABSOLUTELY ESSENTIAL)
+
+	;; SOMETHING CAN BE PRACTICAL.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRACTICAL_27 ?x2))
+
+;; (BIGGER CAN BE MORE EXPENSIVE TO MOVE AROUND AND YOU MAY BE LIMITED TO ONLY CERTAIN CAMPGROUNDS BY HAVING TOO LARGE AN RV)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F BE.PASV LIMIT.V) (:P TO.P NIL) (:P BY.P (:F KA NIL))))
+
+		(and (I_27 ?x4) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (BE_2EPASV_27 ?x2) (LIMIT_2EV_27 ?x2) (P_27 ?x3) (TO_2EP_27 ?x3) (NIL_27 ?x3) (P_27 ?x4) (BY_2EP_27 ?x4) (F_27 ?x5) (KA_27 ?x5) (NIL_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BIGGER CAN BE MORE EXPENSIVE TO MOVE AROUND AND YOU MAY BE LIMITED TO ONLY CERTAIN CAMPGROUNDS BY HAVING TOO LARGE AN RV)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F BE.PASV LIMIT.V) (:P TO.P NIL) (:P BY.P (:F KA NIL))))
+
+		(and (I_27 ?x4) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (BE_2EPASV_27 ?x2) (LIMIT_2EV_27 ?x2) (P_27 ?x3) (TO_2EP_27 ?x3) (NIL_27 ?x3) (P_27 ?x4) (BY_2EP_27 ?x4) (F_27 ?x5) (KA_27 ?x5) (NIL_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [16]>
+
+;; (TOWING  IF YOU GO WITH A MOTOR HOME COMMA YOU MAY WANT TO CONSIDER TOWING ANOTHER VEHICLE BEHIND YOU -LRB- TOAD -RRB-)
+
+	;; A PERSON MAY GO WITH A MOTOR HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (MOTOR_27 ?x1) (HOME_27 ?x1))
+
+;; (HAVING AN EVERYDAY DRIVER CAN BE GREAT COMMA BECAUSE YOU WO N T HAVE TO PACK UP THE ENTIRE RV JUST TO RUN TO THE GROCERY STORE OR
+ MANEUVER UP THOSE WINDY ROADS FOR A DAY HIKE)
+
+	;; A DRIVER CAN BE EVERYDAY.
+
+		(and (DRIVER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVERYDAY_27 ?x2))
+
+	;; ROADS CAN BE FOR A DAY HIKE.
+
+		(and (road_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DAY_27 ?x2) (HIKE_27 ?x2))
+
+	;; ROADS CAN BE WINDY.
+
+		(and (road_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WINDY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [17]>
+
+;; (ALLOW YOURSELF PLENTY OF TIME TO FIND THE RIGHT RV)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (START LOOKING NOW SO THAT YOU CAN FAMILIARIZE YOURSELF WITH MARKET TRENDS AND RELATIVE PRICES AND CONDITIONS OF RVS)
+
+	;; START MAY LOOK.
+
+		(and (START_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1))
+
+	;; A PERSON MAY FAMILIARIZE A PERSON WITH MARKET TRENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FAMILIARIZE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (WITH_27 ?x1) (MARKET_27 ?x1) (TRENDS_27 ?x1))
+
+	;; PRICES CAN BE CONSTITUTED_OF_OR_FILLED_WITH RVS.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RVS_27 ?x2))
+
+	;; PRICES CAN BE RELATIVE.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELATIVE_27 ?x2))
+
+;; (LEARN HOW TO INSPECT AN RV COMMA AND WHAT TYPES OF QUESTIONS TO ASK OF THE SELLER)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ARRANGE FINANCING WITH YOUR BANK COMMA AND EXPECT THAT YOU WILL ONLY BE ABLE TO FINANCE ABOUTPERCENT OF THE BLUE BOOK VALUE OF THE RV)
+
+	;; A PERSON MAY HAVE A BANK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BANK_27 ?x1))
+
+	;; A RV MAY HAVE A BOOK VALUE.
+
+		(and (RV_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOOK_27 ?x1) (VALUE_27 ?x1))
+
+	;; A BOOK VALUE CAN BE BLUE.
+
+		(and (BOOK_27 ?x1) (VALUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUE_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL LIKELY NEED TO COME UP WITH 20 PERCENT DOWN PAYMENT)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (NEED_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [18]>
+
+;; (FOR SOME COMMA IT MAY BE AS EASY AS ENDING THE LEASE ON AN APARTMENT COMMA OR BRAVELY SELLING YOUR HOME PRIOR TO THE TRIP)
+
+	;; A LEASE CAN BE ON AN APARTMENT.
+
+		(and (LEASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (AN_27 ?x2) (APARTMENT_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (HOWEVER COMMA IF YOU OWN A HOME AND PLAN ON KEEPING IT COMMA PLANNING HOW TO CARE FOR IT IN YOUR ABSENCE MAY BECOME MORE COMPLEX)
+
+	;; PLANNING CAN BE COMPLEX.
+
+		(and (planning_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPLEX_27 ?x2))
+
+	;; A PERSON MAY OWN A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (OWN_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ABSENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ABSENCE_27 ?x1))
+
+;; (IT S IMPORTANT TO HAVE YOUR HOME CARED FOR WHILE YOU ARE GONE)
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY BE GO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IT S IMPORTANT TO HAVE YOUR HOME CARED FOR WHILE YOU ARE GONE)
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY BE GO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IT S IMPORTANT TO HAVE YOUR HOME CARED FOR WHILE YOU ARE GONE)
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY BE GO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))

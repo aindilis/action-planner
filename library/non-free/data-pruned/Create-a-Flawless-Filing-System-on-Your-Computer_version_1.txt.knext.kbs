@@ -1,0 +1,593 @@
+;; (BROOMKNOW WHERE YOUR FILES ARE)
+
+	;; FILES MAY BE.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE FILES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FILES_27 ?x1))
+
+;; (KEEPING ALL OF YOUR FILES IN ONE PLACE IS THE BEST THING YOU CAN DO TO MAKE SURE NO DATA IS EVER LOST)
+
+	;; FILES MAY HAVE A THING.
+
+		(and (file_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE FILES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FILES_27 ?x1))
+
+	;; A THING CAN BE BEST.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; DATA MAY BE LOSE -ED.
+
+		(and (DATA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOSE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (THUS COMMA THE FIRST STEP OF CREATING A FILING SYSTEM IS TO CHOOSE A CENTRAL LOCATION TO KEEP ALL OF YOUR PERSONAL DATA)
+
+	;; DATA MAY HAVE A THING.
+
+		(and (DATA_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE DATA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DATA_27 ?x1))
+
+	;; DATA CAN BE PERSONAL.
+
+		(and (DATA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; (ON WINDOWS MACHINES COMMA THE MY DOCUMENTS FOLDER IS OFTEN A GOOD CHOICE COMMA ALTHOUGH THE OPERATING SYSTEM DOES ADD SOME EXTRA JUNK ALONG WITH YOUR DATA -LRB- LIKE MY PICTURES AND MY MUSIC FOLDERS -RRB-)
+
+	;; A WINDOWS[PERSON??] MAY HAVE MACHINES.
+
+		(and (WINDOWS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (MACHINES_27 ?x1))
+
+	;; A CHOICE CAN BE GOOD.
+
+		(and (CHOICE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A SYSTEM MAY DO.
+
+		(and (SYSTEM_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A SYSTEM CAN BE OPERATING.
+
+		(and (SYSTEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPERATING_27 ?x2))
+
+	;; A JUNK CAN BE EXTRA.
+
+		(and (junk_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY HAVE DATA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DATA_27 ?x1))
+
+	;; A PERSON MAY HAVE FOLDERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (folder_27 ?x1))
+
+	;; A PICTURES_AND_MY_MUSIC[PERSON??] MAY HAVE FOLDERS.
+
+		(and (PICTURES_5FAND_5FMY_5FMUSIC_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (folder_27 ?x1))
+
+;; (ANOTHER GOOD OPTION IS TO INSTALL A SEPARATE HARD DISK OR EXTERNAL DRIVE TO KEEP YOUR DATA ON)
+
+	;; AN OPTION CAN BE GOOD.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A DISK CAN BE SEPARATE.
+
+		(and (DISK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; A DISK CAN BE HARD.
+
+		(and (DISK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; A DRIVE CAN BE EXTERNAL.
+
+		(and (DRIVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTERNAL_27 ?x2))
+
+	;; A PERSON MAY HAVE DATA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DATA_27 ?x1))
+
+;; (RESIST THE TEMPTATION TO PUT EVERYTHING ON THE DESKTOP OF YOUR PC)
+
+	;; A PC MAY HAVE A DESKTOP.
+
+		(and (PC_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESKTOP_27 ?x1))
+
+	;; A PERSON MAY HAVE A PC.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (pc_27 ?x1))
+
+;; (THE FOLDER IS BURIED IN THE OPERATING SYSTEM COMMA MAKING BACKUPS DIFFICULT)
+
+	;; A FOLDER MAY BE BURY -ED IN A SYSTEM.
+
+		(and (FOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BURY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (SYSTEM_27 ?x3))
+
+	;; A SYSTEM CAN BE OPERATING.
+
+		(and (SYSTEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPERATING_27 ?x2))
+
+	;; BACKUPS CAN BE DIFFICULT.
+
+		(and (backup_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIFFICULT_27 ?x2))
+
+;; (NEVER SAVE FILES IN THE DIRECTORIES WHERE THEIR PROGRAMS RESIDE -LRB- I.E. NEVER SAVE A WORD DOCUMENT INTO THE C  PROGRAM FILES OFFICEXP WORD FOLDER -RRB-)
+
+	;; FILES CAN BE IN DIRECTORIES.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (directory_27 ?x2))
+
+	;; PROGRAMS MAY RESIDE.
+
+		(and (PROGRAMS_27 ?x1) (MAY_27 ?x1) (RESIDE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PROGRAMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PROGRAMS_27 ?x1))
+
+;; (THESE FOLDERS ARE OFTEN AUTOMATICALLY DELETED OR MOVED)
+
+	;; FOLDERS MAY BE DELETE -ED.
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DELETE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (SEPARATE USERS AND GROUPS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [12]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FIGURE OUT THE BEST WAY TO KEEP USER S DATA SEPARATE -LRB- AND COMMA IN SOME CASES COMMA PRIVATE -RRB-)
+
+	;; A WAY CAN BE BEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; USER MAY HAVE DATA.
+
+		(and (USER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DATA_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>
+
+;; (OTHER SUGGESTIONS ARE TO MAKE A FOLDER WITH A USER S NAME ON IT)
+
+	;; A NAME CAN BE ON A THING-REFERRED-TO.
+
+		(and (NAME_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A USER MAY HAVE A NAME.
+
+		(and (USER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+;; (IF YOU ARE ORGANIZING FILES IN A BUSINESS SETTING COMMA CREATING SEPARATE FOLDERS FOR GROUPS OR PROJECTS IS ALSO A GOOD IDEA)
+
+	;; A PERSON MAY ORGANIZE FILES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ORGANIZE_27 ?x1) (FILES_27 ?x1))
+
+	;; FILES CAN BE IN A BUSINESS SETTING.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BUSINESS_27 ?x2) (SETTING_27 ?x2))
+
+	;; FOLDERS CAN BE SEPARATE.
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (THE IMPORTANT THING IS THAT ONE USER SHOULD BE ABLE TO FIND ALL OF HIS OR HER DATA IN ONE SINGLE FOLDER COMMA MAKING BACKUPS MUCH EASIER)
+
+	;; A THING CAN BE A PROPOSITION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; SOME_NUMBER_OF THING CAN BE CONSTITUTED_OF_OR_FILLED_WITH DATA.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DATA_27 ?x2))
+
+	;; A FOLDER CAN BE SINGLE.
+
+		(and (FOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SINGLE_27 ?x2))
+
+	;; BACKUPS CAN BE EASIER.
+
+		(and (backup_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (KEEP WORK AND PERSONAL FILES SEPARATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KEEP WORK IN ONE FOLDER COMMA SCHOOLWORK IN ANOTHER COMMA PHOTOS AND PERSONAL FILES IN ANOTHER COMMA AND DOWNLOADS IN ANOTHER FOLDER)
+
+	;; WORK CAN BE IN A FOLDER.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FOLDER_27 ?x2))
+
+	;; SCHOOLWORK CAN BE IN SOME_NUMBER_OF THING.
+
+		(and (SCHOOLWORK_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (thing_27 ?x2))
+
+	;; FILES CAN BE PERSONAL.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+	;; DOWNLOADS CAN BE IN SOME_NUMBER_OF FOLDER.
+
+		(and (download_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (FOLDER_27 ?x2))
+
+;; (MUSIC SHOULD HAVE ITS OWN FOLDER COMMA TOO -LRB- OF COURSE -RRB-)
+
+	;; A MUSIC[PERSON??] MAY HAVE A FOLDER.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (A_27 ?x1) (folder_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A FOLDER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOLDER_27 ?x1))
+
+;; (THAT WAY COMMA YOU CAN EASILY KEEP YOUR PERSONAL AND PROFESSIONAL INFORMATION SEPARATE COMMA AND CAN EASILY JUMP INTO WHAT YOU NEED TO WORK ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [15]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [17]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [18]>
+
+;; (FILES THAT RELATE TO THE SAME THING ARE KEPT IN THE SAME PLACE)
+
+	;; FILES MAY BE KEEP -ED IN A PLACE.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (PLACE_27 ?x3))
+
+;; (ANOTHER METHOD SOME PEOPLE USE IS CHRONOLOGICAL SORTING)
+
+	;; SOME_NUMBER_OF METHOD CAN BE CHRONOLOGICAL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (METHOD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHRONOLOGICAL_27 ?x2))
+
+;; (WHILE THIS IS SOMETIMES USEFUL -LRB- KEEPING EACH SEMESTER OF SCHOOLWORK IN DIFFERENT FOLDERS -RRB- COMMA REMEMBER THAT THE FILE SYSTEM ON YOUR COMPUTER ALREADY KEEPS TRACK OF THE DATE THINGS WERE CREATED AND
+ MODIFIED COMMA SO IN SOME WAYS IT IS A WASTE OF TIME TO DO THIS OVER AGAIN)
+
+	;; THINGS MAY BE CREATE -ED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING CAN BE USEFUL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEFUL_27 ?x2))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FILE SYSTEM MAY KEEP TRACK OF A DATE.
+
+		(and (FILE_27 ?x1) (SYSTEM_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (TRACK_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (DATE_27 ?x2))
+
+	;; A FILE SYSTEM CAN BE ON A COMPUTER.
+
+		(and (FILE_27 ?x1) (SYSTEM_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (computer_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+	;; A DATE MAY HAVE TRACK.
+
+		(and (DATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TRACK_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A WASTE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (WASTE_27 ?x2))
+
+;; (ALSO COMMA THERE ARE SOME GREAT TOOLS SUCH AS GOOGLE DESKTOP OR COPERNIC DESKTOP SEARCH TO QUICKLY BRING UP FILES FROM A PARTICULAR SET OF DATES)
+
+	;; TOOLS CAN BE GREAT.
+
+		(and (tool_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; A COPERNIC_DESKTOP[PERSON??] MAY HAVE A SEARCH.
+
+		(and (COPERNIC_5FDESKTOP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SEARCH_27 ?x1))
+
+	;; FILES CAN BE FROM A SET OF DATES.
+
+		(and (file_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (SET_27 ?x2) (of_27 ?x2 ?x3) (DATES_27 ?x3))
+
+	;; A SET CAN BE CONSTITUTED_OF_OR_FILLED_WITH DATES.
+
+		(and (SET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DATES_27 ?x2))
+
+;; (USE LOTS OF SUB-FOLDERS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LAYERS ARE GOOD COMMA THEY HELP KEEP THINGS SPECIFIC)
+
+	;; LAYERS CAN BE GOOD.
+
+		(and (layer_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; THINGS CAN BE SPECIFIC.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECIFIC_27 ?x2))
+
+;; (UNDER WORK COMMA KEEP A SEPARATE FOLDER FOR TIMESHEETS COMMA AND ANOTHER FOR WEB PROJECTS)
+
+	;; A FOLDER CAN BE FOR TIMESHEETS.
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (timesheet_27 ?x2))
+
+	;; A FOLDER CAN BE SEPARATE.
+
+		(and (FOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; SOME_NUMBER_OF THING CAN BE FOR WEB PROJECTS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WEB_27 ?x2) (PROJECTS_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))
+
+;; (UNDER EACH SEMESTER OF SCHOOLWORK COMMA KEEP ONE FOLDER FOR MATH COMMA ONE FOR ENGLISH COMMA ONE FOR CHEMISTRY COMMA YOU GET THE IDEA)
+
+	;; A PERSON MAY GET AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; SOME_NUMBER_OF SEMESTER CAN BE CONSTITUTED_OF_OR_FILLED_WITH SCHOOLWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SEMESTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SCHOOLWORK_27 ?x2))
+
+	;; A FOLDER CAN BE FOR A MATH[PERSON??].
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR AN ENGLISH[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (ENGLISH_27 ?x2) )
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR A CHEMISTRY[PERSON??].
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?e1 ?x2) (A_27 ?x2) (CHEMISTRY_27 ?x2) (PERSON_27 ?x2))

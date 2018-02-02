@@ -1,0 +1,281 @@
+;; (GATHER MATERIALS TO HOLD THE BOXES TOGETHER)
+
+	;; A GATHER[PERSON??] MAY HAVE MATERIALS.
+
+		(and (GATHER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (material_27 ?x1))
+
+;; (IT IS IMPORTANT TO PICK APPROPRIATE MATERIALS FOR YOUR CAT)
+
+	;; MATERIALS CAN BE APPROPRIATE.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+	;; A PERSON MAY HAVE A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAT_27 ?x1))
+
+;; (FOR EXAMPLE COMMA IF YOUR CAT CHEWS CARDBOARD COMMA DO N T USE TAPE OR GLUE)
+
+	;; A CAT MAY CHEW CARDBOARD.
+
+		(and (CAT_27 ?x1) (MAY_27 ?x1) (CHEW_27 ?x1) (CARDBOARD_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAT_27 ?x1))
+
+;; (EXPERIMENT WITH DIFFERENT WAYS OF ARRANGING THE BOXES  PUT SOME BOXES INSIDE OF OTHERS)
+
+	;; 
+
+	;; ((:I (:F K EXPERIMENT.N) WITH.P (:A (:F K (:F PLUR WAY.N)) (:P OF.P (:F KA NIL)))) NIL)
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (EXPERIMENT_2EN_27 ?x1) (WITH_2EP_27 ?x2) (F_27 ?x3) (K_27 ?x3) (F_27 ?x4) (PLUR_27 ?x4) (WAY_2EN_27 ?x4) (P_27 ?x5) (OF_2EP_27 ?x5) (F_27 ?x6) (KA_27 ?x6) (NIL_27 ?x6) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONNECT TWO OR MORE GROUPS OF BOXES USING SINGLE COMMA LONG BOXES AS TUNNELS OR BRIDGES)
+
+	;; GROUPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH BOXES.
+
+		(and (GROUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BOXES_27 ?x2))
+
+;; (MAKE STEPS USING A SERIES OF SMALLER BOXES)
+
+	;; STEPS MAY USE A SERIES OF BOXES.
+
+		(and (STEPS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (series_27 ?x1) (of_27 ?x1 ?x2) (box_27 ?x2))
+
+	;; A SERIES CAN BE CONSTITUTED_OF_OR_FILLED_WITH BOXES.
+
+		(and (series_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BOXES_27 ?x2))
+
+	;; BOXES CAN BE SMALLER.
+
+		(and (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (EXPERIMENT WITH DIFFERENT SIZE WINDOWS COMMA DOORS COMMA AND TRAP DOORS)
+
+	;; EXPERIMENT CAN BE WITH SIZE WINDOWS.
+
+		(and (EXPERIMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SIZE_27 ?x2) (WINDOWS_27 ?x2))
+
+;; (TRY DRAWING WINDOWS COMMA DOORS COMMA OR TRAP DOORS FIRST BEFORE CUTTING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE CARDBOARD TUBES AS SUPPORT POSTS IN VERTICAL STRUCTURES)
+
+	;; SUPPORT POSTS CAN BE IN STRUCTURES.
+
+		(and (SUPPORT_27 ?x1) (POSTS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (STRUCTURES_27 ?x2))
+
+	;; STRUCTURES CAN BE VERTICAL.
+
+		(and (structure_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VERTICAL_27 ?x2))
+
+;; (FOR ADVANCED CAT HOUSE BUILDERS COMMA USE PIZZA BOXES TO CREATE BALCONIES SUPPORTED BY COLUMNS BELOW)
+
+	;; CAT HOUSE BUILDERS CAN BE ADVANCED.
+
+		(and (CAT_27 ?x1) (HOUSE_27 ?x1) (BUILDERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVANCED_27 ?x2))
+
+	;; BALCONIES MAY BE SUPPORT -ED BY COLUMNS.
+
+		(and (balcony_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUPPORT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (COLUMNS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [13]>
+
+;; (KITTENS ESPECIALLY WILL BE ENTERTAINED BY THE UNEXPECTED ROCKING AS THEY MOVE FROM ONE END TO ANOTHER)
+
+	;; KITTENS MAY BE ENTERTAIN -ED BY A ROCKING.
+
+		(and (KITTENS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENTERTAIN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (ROCKING_27 ?x2))
+
+	;; A ROCKING CAN BE UNEXPECTED.
+
+		(and (rocking_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNEXPECTED_27 ?x2))
+
+	;; INDIVIDUAL -S MAY MOVE FROM AN END.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MOVE_27 ?x1) (FROM_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+;; (CONNECT THE BOXES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IT IS EASIEST TO DO THIS IN THE ROOM WHERE THE PLAY EQUIPMENT WILL STAY)
+
+	;; A THING CAN BE IN A ROOM.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A PLAY EQUIPMENT MAY STAY.
+
+		(and (PLAY_27 ?x1) (EQUIPMENT_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1))
+
+;; (AFTER IT IS ASSEMBLED COMMA IT CAN BE DIFFICULT TO MANEUVER PLAY EQUIPMENT AROUND CORNERS COMMA UP OR DOWN STAIRS COMMA OR THROUGH DOORWAYS)
+
+	;; A THING-REFERRED-TO MAY BE ASSEMBLE -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ASSEMBLE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (MAKE THE PLAY EQUIPMENT COMFORTABLE FOR YOUR CAT)
+
+	;; A PLAY EQUIPMENT CAN BE COMFORTABLE FOR A CAT.
+
+		(and (PLAY_27 ?x1) (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2) (for_27 ?e1 ?x3) (A_27 ?x3) (CAT_27 ?x3))
+
+	;; A PERSON MAY HAVE A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAT_27 ?x1))
+
+;; (USE MATERIALS THAT CAN BE REMOVED FOR CLEANING -LRB- CHECK THE LIST BELOW -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CAT SIZE PILLOWS CAN BE MADE FROM OLD SOCKS COMMA POTHOLDER MITTS COMMA PILLOWCASES COMMA HAND TOWELS COMMA SHIRTS COMMA CURTAINS)
+
+	;; SIZE PILLOWS MAY BE MAKE -ED FROM SOCKS.
+
+		(and (SIZE_27 ?x1) (PILLOWS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (SOCKS_27 ?x2))
+
+	;; A CAT[PERSON??] MAY HAVE SIZE PILLOWS.
+
+		(and (CAT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SIZE_27 ?x1) (PILLOWS_27 ?x1))
+
+	;; SOCKS CAN BE OLD.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (DECORATE THE PLAY EQUIPMENT -LRB- OPTIONAL -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BE SURE TO AVOID MATERIALS THAT ARE CHOKING HAZARDS OR TOXIC)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [14]>
+
+;; (PERHAPS A SMALL COMMA STURDY MIRROR WOULD PROVIDE ENTERTAINMENT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (INTRODUCE YOUR CAT TO THE PLAY EQUIPMENT THE TRICK IS HOW YOU TRAIN THEM TO BE IT)
+
+	;; A PERSON MAY HAVE A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAT_27 ?x1))
+
+;; (CATNIP MIGHT ENTICE WARY KITTIES)
+
+	;; A CATNIP[PERSON??] MAY ENTICE KITTIES.
+
+		(and (CATNIP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ENTICE_27 ?x1) (KITTIES_27 ?x1))
+
+	;; KITTIES CAN BE WARY.
+
+		(and (kitty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [15]>
+
+;; (TRY TEMPORARILY PLACING YOUR CAT S FOOD DISH INSIDE THE CAT HOUSE)
+
+	;; A CAT MAY HAVE A FOOD DISH.
+
+		(and (CAT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOOD_27 ?x1) (DISH_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAT_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [16]>

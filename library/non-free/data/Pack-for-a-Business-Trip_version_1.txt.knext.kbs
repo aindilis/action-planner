@@ -1,0 +1,459 @@
+;; (ORGANIZE THE ITINERARY IN ORDER OF THE TRAVEL IN A FOLDER WITH ALL RESERVATIONS COMMA TICKETS COMMA AND DOCUMENTS)
+
+	;; TRAVEL MAY HAVE ORDER.
+
+		(and (TRAVEL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ORDER_27 ?x1))
+
+	;; TRAVEL CAN BE IN A FOLDER.
+
+		(and (travel_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FOLDER_27 ?x2))
+
+	;; A FOLDER CAN BE WITH SOME_NUMBER_OF RESERVATIONS.
+
+		(and (FOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (RESERVATIONS_27 ?x2))
+
+;; (CARRY THIS WITH YOU)
+
+	;; A THING CAN BE WITH A PERSON.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (RESEARCH LOCAL CUSTOMS THAT NEED TO BE OBSERVED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (OBTAIN PASSPORT AND TRAVEL DOCUMENTS COMMA IF NECESSARY)
+
+	;; AN OBTAIN[PERSON??] MAY PASSPORT.
+
+		(and (OBTAIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PASSPORT_27 ?x1))
+
+;; (OBTAIN AN AMOUNT OF TRAVEL CASH COMMA LESS THAN $ 0.0 USD)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AIRPORTS ARE HORRIBLE TO EXCHANGE MONIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PURCHASE TRAVEL-SIZE TOILETRIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHECK THE STANDARD POWER OUTLET CONFIGURATION)
+
+	;; A POWER OUTLET CONFIGURATION CAN BE STANDARD.
+
+		(and (POWER_27 ?x1) (OUTLET_27 ?x1) (CONFIGURATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARD_27 ?x2))
+
+;; (PURCHASE OUTLET POWER ADAPTERS COMMA IF NECESSARY)
+
+	;; A PURCHASE[PERSON??] MAY OUTLET POWER ADAPTERS.
+
+		(and (PURCHASE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (OUTLET_27 ?x1) (POWER_27 ?x1) (ADAPTERS_27 ?x1))
+
+;; (CHECK THE LOCAL PUBLIC AND RELIGIOUS HOLIDAY SCHEDULE FOR THE LOCATION AND TIME OF YEAR)
+
+	;; A PUBLIC CAN BE FOR A LOCATION.
+
+		(and (PUBLIC_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (LOCATION_27 ?x2))
+
+;; (CHECK THE WEATHER FOR THE LOCATION AND TIME OF YEAR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHOOSE LUGGAGE THAT IS ONE SIZE SMALLER THAN BELIEVED YOU NEED COMMA FOR CLOTHES)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (PACK ONE PAIR OF UNDERWEAR AND SOCKS FOR EACH TRAVEL DAY)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PACK AN EXTRA PAIR OF SHOES FOR NON-BUISNESS ACTIVITIES)
+
+	;; A PAIR CAN BE EXTRA.
+
+		(and (PAIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; SHOES CAN BE FOR ACTIVITIES.
+
+		(and (shoe_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (activity_27 ?x2))
+
+	;; ACTIVITIES CAN BE NON-BUISNESS.
+
+		(and (activity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NON-BUISNESS_27 ?x2))
+
+;; (PACK COORDINATED SHIRTS AND TROUSERS)
+
+	;; A PACK[PERSON??] MAY BE COORDINATE -ED.
+
+		(and (PACK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (COORDINATE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+;; (TAKE ONE LESS PAIR OF TROUSERS AND ONE LESS SHIRT THAN BELIEVED TO BE NEEDED)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALL CLOTHES SHOULD BE NEUTRAL IN COLOR TO MAXIMIZE MATCHING)
+
+	;; SOME_NUMBER_OF CLOTHES CAN BE NEUTRAL IN COLOR.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CLOTHES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEUTRAL_27 ?x2) (in_27 ?e1 ?x3) (COLOR_27 ?x3))
+
+;; (EVERY ITEM SHOULD MATCH EVERY OTHER ITEM -LRB- INCLUDING TIES -RRB-)
+
+	;; SOME_NUMBER_OF ITEM MAY MATCH SOME_NUMBER_OF ITEM.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (MAY_27 ?x1) (MATCH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1))
+
+;; (T-SHIRTS SHOULD BE NICE ENOUGH TO BE WORN WITH SPORT COATS)
+
+	;; T-SHIRTS CAN BE NICE.
+
+		(and (t-shirt_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+;; (PACK TRAVEL SIZE TOILETRIES)
+
+	;; A PACK[PERSON??] MAY TRAVEL SIZE TOILETRIES.
+
+		(and (PACK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (TRAVEL_27 ?x1) (SIZE_27 ?x1) (TOILETRIES_27 ?x1))
+
+;; (SKIP THE FANCY TOILETRY BAG AND USE A ZIP-LOCK PLASTIC BAG)
+
+	;; A TOILETRY BAG CAN BE FANCY.
+
+		(and (TOILETRY_27 ?x1) (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FANCY_27 ?x2))
+
+	;; A BAG CAN BE ZIP-LOCK.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-LOCK_27 ?x2))
+
+	;; A BAG CAN BE PLASTIC.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (PACK A WINTER COAT IN LUGGAGE COMMA IF NEEDED)
+
+	;; A WINTER COAT CAN BE IN LUGGAGE.
+
+		(and (WINTER_27 ?x1) (COAT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (LUGGAGE_27 ?x2))
+
+;; (THE COAT CAN BE RETRIEVED FROM THE LUGGAGE AT THE END OF FLIGHT)
+
+	;; A COAT MAY BE RETRIEVE -ED FROM A LUGGAGE.
+
+		(and (COAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RETRIEVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (A_27 ?x2) (LUGGAGE_27 ?x2))
+
+	;; A LUGGAGE CAN BE AT AN END OF FLIGHT.
+
+		(and (LUGGAGE_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (END_27 ?x2) (of_27 ?x2 ?x3) (FLIGHT_27 ?x3))
+
+;; (PACK A WATER-TIGHT PLASTIC BAG)
+
+	;; A BAG CAN BE WATER-TIGHT.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WATER-TIGHT_27 ?x2))
+
+	;; A BAG CAN BE PLASTIC.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (THESE ARE USEFUL FOR WET CLOTHES OR STORING MESSY ITEMS IN YOUR LUGGAGE)
+
+	;; A THING CAN BE USEFUL FOR CLOTHES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USEFUL_27 ?x2) (for_27 ?e1 ?x3) (clothe_27 ?x3))
+
+	;; CLOTHES CAN BE WET.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+	;; ITEMS CAN BE MESSY.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MESSY_27 ?x2))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+;; (EVALUATE IF A SMALLER LUGGAGE PIECE CAN BE USED)
+
+	;; A LUGGAGE PIECE MAY BE USE -ED.
+
+		(and (LUGGAGE_27 ?x1) (PIECE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A LUGGAGE PIECE CAN BE SMALLER.
+
+		(and (LUGGAGE_27 ?x1) (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (CHOOSE A BRIEFCASE OR TRAVEL BAG TO CARRY WORK MATERIAL AND ITINERARY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [29]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS BAG SHOULD REMAIN WITH YOU AT ALL TIMES)
+
+	;; A BAG MAY REMAIN WITH A PERSON.
+
+		(and (BAG_27 ?x1) (MAY_27 ?x1) (REMAIN_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (NEVER CHECK IT AT THE AIRPLANE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [31]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE ALL WORK MATERIAL IN THE BRIEFCASE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [32]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PACK A DIGITAL CAMERA IN BRIEFCASE)
+
+	;; A CAMERA CAN BE DIGITAL.
+
+		(and (CAMERA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIGITAL_27 ?x2))
+
+;; (PACK ANY MEDICATIONS IN BRIEFCASE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [34]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PACK A BOOK OR OTHER READING MATERIAL IN BRIEFCASE)
+
+	;; A BOOK CAN BE IN BRIEFCASE.
+
+		(and (BOOK_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (BRIEFCASE_27 ?x2))
+
+;; (WEAR A COMFORTABLE BUSINESS OUTFIT FOR TRAVEL TO REDUCE THE NUMBER OF PACKED ITEMS)
+
+	;; A BUSINESS OUTFIT CAN BE FOR TRAVEL.
+
+		(and (BUSINESS_27 ?x1) (OUTFIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TRAVEL_27 ?x2))
+
+	;; A BUSINESS OUTFIT CAN BE COMFORTABLE.
+
+		(and (BUSINESS_27 ?x1) (OUTFIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+	;; ITEMS CAN BE PACKED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?e2) (pack_27 ?e2 ?x1))
+
+;; (WEAR A SPORT COAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [37]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE SPORT COAT SERVES MULTIPLE PURPOSES)
+
+	;; A SPORT COAT MAY SERVE PURPOSES.
+
+		(and (SPORT_27 ?x1) (COAT_27 ?x1) (MAY_27 ?x1) (SERVE_27 ?x1) (PURPOSES_27 ?x1))
+
+	;; PURPOSES CAN BE MULTIPLE.
+
+		(and (purpose_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+;; (IT HAS MULTIPLE POCKETS TO STORE DOCUMENTS)
+
+	;; A THING-REFERRED-TO MAY HAVE POCKETS TO STORE DOCUMENTS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POCKETS_27 ?x1) (to_27 ?x1 ?e1) (store_27 ?e1 ?x1 ?x2) (document_27 ?x2))
+
+	;; POCKETS CAN BE MULTIPLE.
+
+		(and (pocket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+;; (THE SPORT COAT IS EXCELLENT FOR DIFFERENT TEMPERATURE VARIATIONS DURING TRAVEL)
+
+	;; A SPORT COAT CAN BE EXCELLENT FOR TEMPERATURE VARIATIONS.
+
+		(and (SPORT_27 ?x1) (COAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2) (for_27 ?e1 ?x3) (TEMPERATURE_27 ?x3) (VARIATIONS_27 ?x3))
+
+;; (THE SPORT COAT IS ACCEPTABLE IN A WIDE RANGE OF BUSINESS SITUATIONS)
+
+	;; A SPORT COAT CAN BE ACCEPTABLE IN A RANGE OF BUSINESS SITUATIONS.
+
+		(and (SPORT_27 ?x1) (COAT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCEPTABLE_27 ?x2) (in_27 ?e1 ?x3) (A_27 ?x3) (RANGE_27 ?x3) (of_27 ?x3 ?x4) (BUSINESS_27 ?x4) (SITUATIONS_27 ?x4))
+
+	;; A RANGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH BUSINESS SITUATIONS.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BUSINESS_27 ?x2) (SITUATIONS_27 ?x2))
+
+	;; A RANGE CAN BE WIDE.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WIDE_27 ?x2))
+
+;; (THE SPORT COAT SIGNALS TO AIRPORT AUTHORITIES THAT YOU ARE TRAVELING ON BUSINESS AND CAN ASSIST IN PASSING THROUGH AUTHORITIES)
+
+	;; A SPORT COAT MAY SIGNAL TO AIRPORT AUTHORITIES A PROPOSITION.
+
+		(and (SPORT_27 ?x1) (COAT_27 ?x1) (MAY_27 ?x1) (SIGNAL_27 ?x1) (to_27 ?x1 ?x2) (AIRPORT_27 ?x2) (AUTHORITIES_27 ?x2) (A_27 ?x2) (PROPOSITION_27 ?x2))
+
+	;; A PERSON MAY TRAVEL ON BUSINESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1) (ON_27 ?x1) (BUSINESS_27 ?x1))
+
+;; (WEAR A PAIR OF BUSINESS TROUSERS THAT ARE WRINKLE RESISTANT)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [43]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WEAR APPROPRIATE COMFORTABLE BUSINESS SHOES)
+
+	;; BUSINESS SHOES CAN BE APPROPRIATE.
+
+		(and (business_27 ?x1) (shoe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; (TRY TO WEAR SHOES THAT SLIP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [45]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS WILL SPEED TIME AT THE AIRPORT SECURITY CHECK)
+
+	;; A THING MAY SPEED.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (SPEED_27 ?x1))

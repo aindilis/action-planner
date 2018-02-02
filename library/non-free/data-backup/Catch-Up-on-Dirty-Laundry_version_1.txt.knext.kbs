@@ -1,0 +1,124 @@
+;; (THEN COME FAVORITE ITEMS THAT YOU WEAR FREQUENTLY)
+
+	;; ITEMS CAN BE FAVORITE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; A PERSON MAY WEAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WEAR_27 ?x1))
+
+;; (IF YOU DO N T HAVE CLEAN LINENS FOR BED AND BATH TO REPLACE THE DIRTY ONES COMMA GO AHEAD AND PRIORITIZE THEM TOO)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; LINENS CAN BE CLEAN.
+
+		(and (LINENS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; ONES CAN BE DIRTY.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+;; (DE-PRIORITIZE THE FOLLOWING INTO PILES  CLOTHES THAT DO N T FIT COMMA OFF-SEASON CLOTHES COMMA CLOTHES THAT NEED REPAIR COMMA CLOTHES YOU
+ WEAR ONLY WHEN NOTHING ELSE IS HANDY)
+
+	;; OFF-SEASON CLOTHES MAY CLOTHES.
+
+		(and (OFF-SEASON_27 ?x1) (CLOTHES_27 ?x1) (MAY_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; A PERSON MAY WEAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WEAR_27 ?x1))
+
+	;; NOTHING CAN BE HANDY.
+
+		(and (nothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2))
+
+;; (DO N T FORGET TO COME BACK TO THESE PILES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MEND AN ITEM IF IT S A FAVORITE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GET RID OF IT IF IT DOES N T FIT OR FLATTER)
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IF YOU HAVE A LOT OF THINGS IN THIS CATEGORY COMMA CHANCES ARE THAT THEY RE JUST GETTING IN YOUR WAY COMMA JAMMING UP YOUR DRAWERS AND
+ CLOSETS COMMA MAKING IT HARDER TO PUT AWAY AND FIND WHAT YOU DO WEAR)
+
+	;; CHANCES CAN BE A PROPOSITION.
+
+		(and (chance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; A PERSON MAY HAVE A LOT OF THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOT_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; THINGS CAN BE IN A CATEGORY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CATEGORY_27 ?x2))
+
+	;; A PERSON MAY HAVE A WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+	;; A PERSON MAY HAVE DRAWERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DRAWERS_27 ?x1))
+
+	;; A PERSON MAY DO WEAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (WEAR_27 ?x1))
+
+;; (THROW AWAY UNDERWEAR AND SOCKS IF THEY HAVE HOLES OR HOPELESS STAINS)
+
+	;; INDIVIDUAL -S MAY HAVE HOLES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HOLES_27 ?x1))
+
+	;; STAINS CAN BE HOPELESS.
+
+		(and (stain_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOPELESS_27 ?x2))
+
+;; (PLACE ALL THESE PILES INTO MANAGEABLE BAGS THAT EACH CONTAIN ONLY ENOUGH CLOTHES TO FILL A WASHING MACHINE)
+
+	;; BAGS CAN BE MANAGEABLE.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MANAGEABLE_27 ?x2))
+
+	;; A MACHINE CAN BE WASHING.
+
+		(and (MACHINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WASHING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [12]>

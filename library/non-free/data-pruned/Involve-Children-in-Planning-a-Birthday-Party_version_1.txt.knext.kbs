@@ -1,0 +1,231 @@
+;; (PLANCHOOSE A GOOD BIRTHDAY PARTY LOCATION NEAR OR AT YOUR HOUSE  THERE IS USUALLY NO BETTER PLACE TO HOLD YOUR CHILD S BIRTHDAY PARTY THAN YOUR OWN HOME)
+
+	;; A BIRTHDAY PARTY LOCATION CAN BE GOOD.
+
+		(and (BIRTHDAY_27 ?x1) (PARTY_27 ?x1) (LOCATION_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PLACE CAN BE BETTER.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; A CHILD MAY HAVE A BIRTHDAY PARTY.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIRTHDAY_27 ?x1) (PARTY_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (CHILDREN ARE USUALLY BETTER BEHAVED IN THE HOME ENVIRONMENT AND MUCH EASIER TO CONTROL)
+
+	;; A CHILDREN[PERSON??] CAN BE BETTER.
+
+		(and (CHILDREN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (BETTER_27 ?x1))
+
+;; (IT S ALWAYS WISE TO MAKE SURE ANY VALUABLE ITEMS ARE STORED AWAY IN CASE OF ACCIDENTS)
+
+	;; ITEMS MAY BE STORE_AWAY -ED IN CASE OF ACCIDENTS.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STORE_5FAWAY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (CASE_27 ?x3) (of_27 ?x2 ?x4) (accident_27 ?x4))
+
+	;; ITEMS CAN BE VALUABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VALUABLE_27 ?x2))
+
+;; (ALSO COMMA OUTDOOR PARTIES CAN BE A LOT OF FUN COMMA WHETHER IT S HELD IN ONE OF THE LOCAL PARKS OR SIMPLY IN YOUR OWN BACKYARD)
+
+	;; PARTIES CAN BE A LOT OF FUN.
+
+		(and (party_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LOT_27 ?x2) (of_27 ?x2 ?x3) (FUN_27 ?x3))
+
+	;; PARTIES CAN BE OUTDOOR.
+
+		(and (party_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+	;; A PERSON MAY HAVE A BACKYARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKYARD_27 ?x1))
+
+;; (IF YOU FEEL YOUR HOUSE IS TOO SMALL TO ACCOMMODATE THE NUMBER OF CHILDREN YOU ARE PLANNING TO INVITE COMMA THEN BOOKING A LOCAL HALL IS A SENSIBLE OPTION)
+
+	;; A PERSON MAY FEEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+	;; A HOUSE CAN BE SMALL.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; AN OPTION CAN BE SENSIBLE.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SENSIBLE_27 ?x2))
+
+;; (CHOOSE CAREFULLY AND TRY TO FIND ONE THAT HAS A CARPETED FLOOR)
+
+	;; A FLOOR CAN BE CARPETED.
+
+		(and (FLOOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CARPETED_27 ?x2))
+
+;; (ONE TO TWO HOURS IS MORE THAN ENOUGH TIME FOR A TODDLER OR PRE-SCHOOL PARTY)
+
+	;; SOME NUMBER_OR_PORTION CAN BE TO SOME_NUMBER_OF HOURS.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (HOURS_27 ?x2))
+
+	;; A PARTY CAN BE PRE-SCHOOL.
+
+		(and (party_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRE-SCHOOL_27 ?x2))
+
+;; (FOR OLDER CHILDREN TWO TO THREE HOURS IS RECOMMENDED)
+
+	;; CHILDREN CAN BE OLDER.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLDER_27 ?x2))
+
+;; (DECORATE THE LOCATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [13]>
+
+;; (TIED TO YOUR MAILBOX WILL HELP YOUR GUESTS AND THE ENTERTAINER FIND YOUR HOME)
+
+	;; A PERSON MAY HAVE A MAILBOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MAILBOX_27 ?x1))
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+	;; AN ENTERTAINER MAY FIND A HOME.
+
+		(and (ENTERTAINER_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (PROVIDE NAME TAGS FOR THE GUESTS AS THEY ARRIVE)
+
+	;; NAME TAGS CAN BE FOR GUESTS.
+
+		(and (NAME_27 ?x1) (TAGS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (GUESTS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY ARRIVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ARRIVE_27 ?x1))
+
+;; (IT IS A GOOD IDEA TO PROVIDE EACH CHILD WITH A STICKY LABEL BADGE BEARING HIS OR HER NAME)
+
+	;; A THING-REFERRED-TO CAN BE AN IDEA.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A LABEL BADGE MAY BEAR NAME.
+
+		(and (LABEL_27 ?x1) (BADGE_27 ?x1) (MAY_27 ?x1) (BEAR_27 ?x1) (NAME_27 ?x1))
+
+	;; A LABEL BADGE CAN BE STICKY.
+
+		(and (LABEL_27 ?x1) (BADGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STICKY_27 ?x2))
+
+;; (PEOPLE TEND TO RESPOND BETTER WHEN THEY ARE ADDRESSED BY NAME)
+
+	;; INDIVIDUAL -S MAY BE ADDRESS -ED BY NAME.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADDRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (NAME_27 ?x2))
+
+;; (HAVE A BOX OR BAG READY TO PUT ALL THE PRESENTS IN AS THE CHILDREN ARRIVE SO THEY CAN BE KEPT SAFE TO OPEN LATER)
+
+	;; CHILDREN MAY ARRIVE.
+
+		(and (CHILDREN_27 ?x1) (MAY_27 ?x1) (ARRIVE_27 ?x1))
+
+;; (IF THE BIRTHDAY CHILD IS OPENING PRESENTS DURING THE PARTY COMMA TRY TO MAKE SURE THEY ARE REMOVED TO A SAFE PLACE AFTERWARDS)
+
+	;; A BIRTHDAY CHILD MAY OPEN PRESENTS.
+
+		(and (BIRTHDAY_27 ?x1) (CHILD_27 ?x1) (MAY_27 ?x1) (OPEN_27 ?x1) (PRESENTS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE REMOVE -ED TO A PLACE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMOVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (PLACE_27 ?x3))
+
+	;; A PLACE CAN BE SAFE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (KEEP THE CHILDREN BUSY)
+
+	;; CHILDREN CAN BE BUSY.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [14]>
+
+;; (HAVE THE PARTY BAGS READY AND NAMED SO THEY CAN BE HANDED TO EACH CHILD AS THEY LEAVE)
+
+	;; INDIVIDUAL -S MAY BE HAND -ED TO SOME_NUMBER_OF CHILD.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?x2 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (CHILD_27 ?x3))
+
+	;; INDIVIDUAL -S MAY LEAVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1))
+
+;; (FOR DROP OFF PARTIES COMMA PARENTS USUALLY START ARRIVING ABOUT 15 MINUTES PRIOR TO THE SCHEDULED END)
+
+	;; PARENTS MAY START.
+
+		(and (parent_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; DROP CAN BE OFF PARTIES.
+
+		(and (DROP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFF_27 ?x2) (PARTIES_27 ?x2))
+
+	;; AN END CAN BE SCHEDULED.
+
+		(and (END_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCHEDULED_27 ?x2))

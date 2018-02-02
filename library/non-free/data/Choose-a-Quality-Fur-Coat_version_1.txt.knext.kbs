@@ -1,0 +1,106 @@
+;; (PAPERFREEZERPANSPOONCONSIDER WHY YOU WANT A FUR COAT)
+
+	;; A PERSON MAY WANT A FUR COAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (FUR_27 ?x1) (COAT_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (THIS REASON ALONE CAN ALREADY GIVE AN IDEA OF WHAT YOU ARE LOOKING FOR)
+
+	;; A REASON MAY GIVE AN IDEA.
+
+		(and (REASON_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+;; (SELECT THE FUR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ONCE YOU KNOW WHY YOU WANT THE COAT COMMA YOU CAN FIGURE OUT WHAT TYPE OF FUR WOULD WORK BEST)
+
+	;; A PERSON MAY WANT A COAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (COAT_27 ?x1))
+
+	;; TYPE OF FUR MAY WORK.
+
+		(and (type_27 ?e1) (of_27 ?e1 ?x1) (FUR_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+;; (RABBIT COMMA FOX COMMA SABLE COMMA AND CHINCHILLA ARE THE FURS TYPICALLY USED FOR FASHION COMMA WHILE FURS LIKE WOLF AND COYOTE ARE MORE
+ OFTEN USED WHEN A MORE DURABLE FUR IS NEEDED COMMA LIKE FOR HIKING IN COLD CLIMATES)
+
+	;; RABBIT MAY LIKE FOR HIKING.
+
+		(and (RABBIT_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (for_27 ?x1 ?x2) (HIKING_27 ?x2))
+
+	;; FURS MAY BE USE -ED FOR FASHION.
+
+		(and (fur_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?x2 ?x3) (FASHION_27 ?x3))
+
+	;; FURS MAY BE USE -ED.
+
+		(and (fur_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A FUR MAY BE NEED -ED.
+
+		(and (FUR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEED_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A FUR CAN BE DURABLE.
+
+		(and (FUR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DURABLE_27 ?x2))
+
+	;; HIKING CAN BE IN CLIMATES.
+
+		(and (hiking_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (climate_27 ?x2))
+
+	;; CLIMATES CAN BE COLD.
+
+		(and (climate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (MINK TENDS TO WORK WELL IN EITHER DIRECTION BECAUSE IT NATURALLY HAS A NICE STRIPED PATTERN BUT AT THE SAME TIME IS SEMI WATERPROOF)
+
+	;; A THING-REFERRED-TO MAY HAVE A PATTERN.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATTERN_27 ?x1))
+
+	;; A PATTERN CAN BE NICE.
+
+		(and (PATTERN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+	;; A PATTERN CAN BE STRIPED.
+
+		(and (PATTERN_27 ?x1) (be_27 ?e1 ?x1 ?e2) (stripe_27 ?e2 ?x1))
+
+;; (DECIDE WHAT STYLE OF COAT IS MOST PRACTICAL)
+
+	;; STYLE OF COAT CAN BE PRACTICAL.
+
+		(and (style_27 ?e1) (of_27 ?e1 ?x1) (COAT_27 ?x1) (be_27 ?e2 ?e1 ?x2) (PRACTICAL_27 ?x2))
+
+;; (WHILE A LONG COMMA ROBE-LIKE COAT MAY WORK FOR FORMAL OCCASIONS COMMA IT IS NOT PRACTICAL FOR PURPOSES LIKE MOUNTAIN CLIMBING COMMA WHICH
+ MAY CALL FOR A TIGHTER FITTING JACKET)
+
+	;; A THING-REFERRED-TO CAN BE PRACTICAL FOR PURPOSES.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRACTICAL_27 ?x2) (for_27 ?e1 ?x3) (PURPOSES_27 ?x3))
+
+	;; OCCASIONS CAN BE FORMAL.
+
+		(and (occasion_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FORMAL_27 ?x2))
+
+	;; A JACKET CAN BE FITTING.
+
+		(and (JACKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FITTING_27 ?x2))

@@ -1,0 +1,199 @@
+;; (SHOWER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU ARE THE MOM-TO-BE -LRB- MTB -RRB- COMMA OR THE DESIGNATED PARTY-PLANNER COMMA MAKE SURE DAD-TO-BE -LRB- DTB -RRB- CAN AND WILL ATTEND)
+
+	;; A PERSON CAN BE A MOM-TO-BE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (MOM-TO-BE_27 ?x2))
+
+	;; A PARTY-PLANNER CAN BE DESIGNATED.
+
+		(and (party-planner_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESIGNATED_27 ?x2))
+
+	;; A DAD-TO-BE CAN BE SURE.
+
+		(and (DAD-TO-BE_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (IF DTB S NOT INTERESTED -LRB- AND EXCITED -RRB- COMMA IT WILL BE VERY DIFFICULT COMMA IF NOT IMPOSSIBLE COMMA TO ENTICE THE OTHER GUYS TO SHOW UP)
+
+	;; A THING-REFERRED-TO CAN BE DIFFICULT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIFFICULT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (PREFERABLY COMMA CHOOSE SOMEONE WHO WILL BE EXCITED ABOUT THE PARTY COMMA WILL ACTIVELY PARTICIPATE IN PLANNING COMMA AND WHO YOU KNOW WILL REALLY ENCOURAGE MALE GUESTS TO SHOW UP AND HAVE A GREAT TIME)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; GUESTS CAN BE MALE.
+
+		(and (guest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MALE_27 ?x2))
+
+	;; A TIME CAN BE GREAT.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (TALK TO DTB ABOUT WHAT HE WOULD WANT/LIKE FOR THE SHOWER)
+
+	;; TALK CAN BE TO DTB.
+
+		(and (TALK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (DTB_27 ?x2))
+
+	;; A MALE MAY WANT/LIKE FOR A SHOWER.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (WANT_2FLIKE_27 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (SHOWER_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (ALSO COMMA WHAT HE WOULD DEFINITELY NOT LIKE)
+
+	;; A MALE MAY NOT.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1))
+
+;; (IF HE WO N T LIKE IT COMMA THE OTHER MEN PROBABLY WO N T EITHER)
+
+	;; A MALE MAY LIKE A THING-REFERRED-TO.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (IF IT S A SURPRISE SHOWER COMMA DEFINITELY GET DTB INVOLVED IN THE PLANNING AS MUCH AS POSSIBLE)
+
+	;; DTB CAN BE POSSIBLE.
+
+		(and (DTB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+	;; DTB MAY BE INVOLVE -ED IN PLANNING.
+
+		(and (DTB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INVOLVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (PLANNING_27 ?x3))
+
+;; (INVITATION WORDING  ADDRESS THE ENVELOPES TO BOTH THE MALE AND FEMALE GUESTS TO MAKE IT CLEAR WHO IS INVITED)
+
+	;; 
+
+	;; ((:I (:F K (:F NN INVITATION.N WORDING.N)) ADDRES.V (:Q THE (:F PLUR ENVELOPE.N)) (:P TO.P NIL)))
+
+		(and (I_27 ?x3) (F_27 ?x1) (K_27 ?x1) (F_27 ?x2) (NN_27 ?x2) (INVITATION_2EN_27 ?x2) (WORDING_2EN_27 ?x2) (ADDRES_2EV_27 ?x3) (Q_27 ?x4) (THE_27 ?x4) (F_27 ?x5) (PLUR_27 ?x5) (ENVELOPE_2EN_27 ?x5) (P_27 ?x6) (TO_2EP_27 ?x6) (NIL_27 ?x6))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ALSO COMMA INCLUDE WORDING IN THE INVITATION TO CLARIFY THE PARTY IS CO-ED COMMA AND THAT DTB WILL BE ATTENDING)
+
+	;; A DTB MAY ATTEND.
+
+		(and (DTB_27 ?x1) (MAY_27 ?x1) (ATTEND_27 ?x1))
+
+;; (INCLUDE MAN-FRIENDLY FOODS IN YOUR MENU)
+
+	;; FOODS CAN BE IN A MENU.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MENU_27 ?x2))
+
+	;; FOODS CAN BE INCLUDE.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCLUDE_27 ?x2))
+
+	;; FOODS CAN BE MAN-FRIENDLY.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAN-FRIENDLY_27 ?x2))
+
+	;; A PERSON MAY HAVE A MENU.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MENU_27 ?x1))
+
+;; (KEEP MOM-TO-BE S RESTRICTED DIET IN MIND COMMA BUT DO N T EXPECT THE GUYS TO BE HAPPY WITH FRESH FRUIT AND PUNCH)
+
+	;; A DIET CAN BE IN MIND.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MIND_27 ?x2))
+
+	;; A MOM-TO-BE[PERSON??] MAY HAVE A DIET.
+
+		(and (MOM-TO-BE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DIET_27 ?x1))
+
+	;; A DIET CAN BE RESTRICTED.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESTRICTED_27 ?x2))
+
+	;; A FRUIT CAN BE FRESH.
+
+		(and (FRUIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>

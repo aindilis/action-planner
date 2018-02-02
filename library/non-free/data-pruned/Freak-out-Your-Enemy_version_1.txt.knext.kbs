@@ -1,0 +1,217 @@
+;; (THE KEY IS TO FREAK OUT OR SCARE YOUR OPPONENT OFF WITH WORDS AND CREEPY FACIAL EXPRESSIONS)
+
+	;; A PERSON MAY HAVE AN OPPONENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OPPONENT_27 ?x1))
+
+	;; EXPRESSIONS CAN BE CREEPY.
+
+		(and (expression_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREEPY_27 ?x2))
+
+	;; EXPRESSIONS CAN BE FACIAL.
+
+		(and (expression_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FACIAL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (OKAY COMMA SO HERE S THE WAY YOU DO IT  FIRST COMMA KEEP A NEUTRAL FACE WHILE HE S THREATENING)
+
+	;; A PERSON MAY DO A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A FIRST[PERSON??] MAY KEEP A FACE.
+
+		(and (first_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (KEEP_27 ?x1) (A_27 ?x1) (FACE_27 ?x1))
+
+	;; A FACE CAN BE NEUTRAL.
+
+		(and (FACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEUTRAL_27 ?x2))
+
+;; (WHEN HE FINALLY SHUTS UP COMMA STARE HIM IN THE EYE COMMA AND GIVE THE FREAKIEST SMIRK OR SMILE YOU CAN GET)
+
+	;; A MALE MAY SHUT_UP.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (SHUT_5FUP_27 ?x1))
+
+	;; A PERSON MAY GET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+;; (YOU MIGHT WANNA PRACTICE THIS IN THE MIRROR FIRST COMMA THEN TRY IT OUT SOMETIME ON A FRIEND OR FAMILY MEMBER)
+
+	;; A PERSON MAY PRACTICE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PRACTICE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A THING CAN BE IN A MIRROR.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MIRROR_27 ?x2))
+
+;; (IF THEY LOOK DISTURBED COMMA THEN YOU KNOW IT S WORKING)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; INDIVIDUAL -S MAY LOOK DISTURBED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (DISTURBED_27 ?x1))
+
+;; (IF THEY LOOK AMUSED COMMA THEN YOU KNOW YOU NEED TO WORK ON IT)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; INDIVIDUAL -S MAY LOOK AMUSED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (AMUSED_27 ?x1))
+
+;; (ANYWAY COMMA MAKE SURE THEY LOOK A LITTLE SHOCKED OR SURPRISED COMMA THEN CONTINUE)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F LOOK.V NIL)))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (LOOK_2EV_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; (HE MAY LOOK MORE SHOCKED COMMA BUT THEN RETALIATE WITH ANOTHER THREAT COMMA OR EVEN MAKE FUN OF YOU AND YOUR THREAT)
+
+	;; A MALE MAY LOOK SHOCKED.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (SHOCKED_27 ?x1))
+
+	;; A PERSON MAY HAVE A THREAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (threat_27 ?x1))
+
+;; (REMEMBER COMMA DO N T SMILE WHEN HE S TALKING COMMA JUST LOOK BORED)
+
+	;; A REMEMBER[PERSON??] MAY LOOK BORED.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (LOOK_27 ?x1) (BORED_27 ?x1))
+
+;; (GRIN WHEN HE STOPS RAMBLING COMMA CAUSE HE S WAITING TO HEAR WHAT YOU SAY NEXT)
+
+	;; GRIN MAY CAUSE.
+
+		(and (GRIN_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1))
+
+	;; A MALE MAY STOP.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (STOP_27 ?x1))
+
+	;; A PERSON MAY SAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; (THEN WALK AWAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CHANCES ARE COMMA IF YOU RE IN SCHOOL COMMA HE WO N T HAVE THE FROZEN BALLS TO COME AFTER YOU COMMA BUT IF YOUR RE IN TOWN OR SOMETHING COMMA HE MAY GO AFTER YOU COMMA MAINLY TO SHOW OFF COMMA OR SAVE HIS
+ PRIDE)
+
+	;; CHANCES MAY BE.
+
+		(and (chance_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; BALLS CAN BE FROZEN.
+
+		(and (ball_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROZEN_27 ?x2))
+
+	;; A MALE MAY GO AFTER A PERSON.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (AFTER_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A MALE MAY HAVE PRIDE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRIDE_27 ?x1))
+
+;; (THEN COMMA YOU HAVE AN EXCUSE FOR SELF DEFENSE)
+
+	;; A PERSON MAY HAVE AN EXCUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXCUSE_27 ?x1))
+
+	;; AN EXCUSE CAN BE FOR SELF DEFENSE.
+
+		(and (EXCUSE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SELF_27 ?x2) (DEFENSE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [8]>
+
+;; (IF YOU MUST COMMA GO AHEAD AND RIP IT OUT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PREFERABLY COMMA JUST WAIT TILL HE GIVES IN)
+
+	;; A MALE MAY GIVE_IN.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (GIVE_5FIN_27 ?x1))

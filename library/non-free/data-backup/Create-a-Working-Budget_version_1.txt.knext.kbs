@@ -1,0 +1,359 @@
+;; (CALCULATE YOUR EXPENSES)
+
+	;; A PERSON MAY HAVE EXPENSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXPENSES_27 ?x1))
+
+;; (SAVE RECEIPTS FOR A COUPLE OF WEEKS OR A MONTH)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KNOWING YOUR MONTHLY EXPENDITURE ON GROCERIES OR GAS -LRB- FOR EXAMPLE -RRB- MAKES THE NEXT STEP MUCH EASIER)
+
+	;; A PERSON MAY HAVE AN EXPENDITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPENDITURE_27 ?x1))
+
+	;; AN EXPENDITURE CAN BE MONTHLY.
+
+		(and (EXPENDITURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MONTHLY_27 ?x2))
+
+	;; A STEP CAN BE EASIER.
+
+		(and (STEP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (IF YOU WANT TO START WRITING YOUR BUDGET TODAY COMMA AND DO N T HAVE RECEIPTS COMMA IT IS POSSIBLE COMMA JUST SLIGHTLY MORE DIFFICULT)
+
+	;; A THING-REFERRED-TO CAN BE POSSIBLE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+;; (SET YOUR GOAL)
+
+	;; A PERSON MAY HAVE A GOAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GOAL_27 ?x1))
+
+;; (DEFINING A GOAL MAKES IT EASIER TO STICK TO YOUR BUDGET COMMA AND GIVES YOU A WAY OF MEASURING YOUR SUCCESS OR FAILURE IN MEETING IT)
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+	;; A PERSON MAY HAVE A SUCCESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUCCESS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; (MAYBE YOU WANT TO START SAVING FOR COLLEGE COMMA OR MAYBE YOU WANT TO GET OUT OF DEBT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DIVIDE YOUR BUDGET INTO BASIC CATEGORIES)
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+	;; CATEGORIES CAN BE BASIC.
+
+		(and (category_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+;; (FOR EXAMPLE  HOUSING COMMA FOOD COMMA AUTO COMMA ENTERTAINMENT COMMA SAVINGS COMMA CLOTHING COMMA MEDICAL COMMA AND MISCELLANEOUS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU COULD ALSO ORGANIZE YOUR EXPENSES INTO NEEDS - SUCH AS YOUR LOAN AND ELECTRICITY - AND WANTS - SUCH AS CLOTHING AND ENTERTAINMENT)
+
+	;; A PERSON MAY ORGANIZE EXPENSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ORGANIZE_27 ?x1) (EXPENSES_27 ?x1))
+
+	;; A PERSON MAY HAVE EXPENSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXPENSES_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOAN_27 ?x1))
+
+;; (LIST ALL YOUR SPENDING FOR EACH CATEGORY)
+
+	;; A SPENDING CAN BE FOR SOME_NUMBER_OF CATEGORY.
+
+		(and (spending_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CATEGORY_27 ?x2))
+
+	;; A PERSON MAY HAVE A SPENDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (spending_27 ?x1))
+
+;; (LET S TAKE AUTO AS AN EXAMPLE  $ 300/MONTH CAR PAYMENT COMMA $ 100/MONTH INSURANCE COMMA $ 250/MONTH ON GAS COMMA $ 50/MONTH ON MAINTENANCE COMMA 10 $ / MONTH ON FEES SUCH AS REGISTRATION)
+
+	;; AUTO CAN BE AS AN EXAMPLE.
+
+		(and (AUTO_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (EXAMPLE_27 ?x2))
+
+	;; SOME_NUMBER_OF MONTH CAN BE ON FEES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MONTH_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (fee_27 ?x2))
+
+;; (SO COMMA YOUR TOTAL AUTO BUDGET FOR THE MONTH WOULD BE $ 710/MONTH)
+
+	;; AN AUTO BUDGET CAN BE FOR A MONTH.
+
+		(and (AUTO_27 ?x1) (BUDGET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MONTH_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AUTO BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AUTO_27 ?x1) (BUDGET_27 ?x1))
+
+;; (IF YOU DO N T KNOW THE EXACT AMOUNTS YOU SPEND COMMA MAKE GOOD ESTIMATES)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; AMOUNTS CAN BE EXACT.
+
+		(and (amount_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXACT_27 ?x2))
+
+	;; A PERSON MAY SPEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SPEND_27 ?x1))
+
+	;; ESTIMATES CAN BE GOOD.
+
+		(and (estimate_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (THE MORE ACCURATE YOU ARE COMMA THE MORE LIKELY YOU ARE TO KEEP TO YOUR BUDGET PLAN)
+
+	;; A PERSON MAY BE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A BUDGET PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1) (PLAN_27 ?x1))
+
+;; (ADD UP ALL YOUR SPENDING BY CATEGORIES)
+
+	;; A PERSON MAY HAVE A SPENDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (spending_27 ?x1))
+
+;; (THIS SHOULD SHOW YOUR TOTAL MONTHLY SPENDING)
+
+	;; A THING MAY SHOW A SPENDING.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (A_27 ?x1) (spending_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPENDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (spending_27 ?x1))
+
+	;; A SPENDING CAN BE MONTHLY.
+
+		(and (spending_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MONTHLY_27 ?x2))
+
+;; (COMPARE IT TO HOW MUCH YOU MAKE EACH MONTH AFTER TAXES)
+
+	;; A PERSON MAY MAKE SOME_NUMBER_OF MONTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (MONTH_27 ?x1))
+
+;; (DECIDE ON A METHOD TO KEEP TRACK OF YOUR BUDGET)
+
+	;; A BUDGET MAY HAVE TRACK.
+
+		(and (BUDGET_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TRACK_27 ?x1))
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+;; (YOU CAN USE A GOOD OLD-FASHIONED LEDGER BOOK COMMA AVAILABLE FROM A GENERAL SHOPPING CENTER FOR ABOUT $ 5)
+
+	;; A PERSON MAY USE A LEDGER BOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (LEDGER_27 ?x1) (BOOK_27 ?x1))
+
+	;; A LEDGER BOOK CAN BE GOOD.
+
+		(and (LEDGER_27 ?x1) (BOOK_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A LEDGER BOOK CAN BE OLD-FASHIONED.
+
+		(and (LEDGER_27 ?x1) (BOOK_27 ?x1) (be_27 ?e1 ?x1) (old-fashioned_27 ?x1))
+
+	;; A SHOPPING CENTER CAN BE GENERAL.
+
+		(and (SHOPPING_27 ?x1) (CENTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENERAL_27 ?x2))
+
+;; (SOME PEOPLE PREFER TO USE COMPUTER PROGRAMS LIKE QUICKEN OR MICROSOFT MONEY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SET UP YOUR LEDGER)
+
+	;; A PERSON MAY HAVE A LEDGER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LEDGER_27 ?x1))
+
+;; (LEAVE THE FIRST 5-ODD PAGES BLANK COMMA WE LL COME BACK TO THEM LATER)
+
+	;; PAGES CAN BE BLANK.
+
+		(and (page_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLANK_27 ?x2))
+
+	;; PAGES CAN BE 5-ODD.
+
+		(and (page_27 ?x1) (be_27 ?e1 ?x1) (kbs2_kif_quote_2DNUMBER--odd_27 ?x1))
+
+;; (DIVIDE THE REST OF THE LEDGER INTO AS MANY SECTIONS AS YOU HAVE MAIN CATEGORIES)
+
+	;; A LEDGER MAY HAVE A REST.
+
+		(and (LEDGER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+	;; A PERSON MAY HAVE CATEGORIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CATEGORIES_27 ?x1))
+
+;; (PUT EACH MAIN CATEGORY ON THE FIRST PAGE OF EACH SECTION)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS WILL GIVE YOU ROOM FOR LOTS OF ENTRIES IN EACH CATEGORY)
+
+	;; A THING MAY GIVE A PERSON ROOM.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (ROOM_27 ?x1))
+
+	;; ROOM CAN BE FOR LOTS OF ENTRIES.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (LOTS_27 ?x2) (of_27 ?x2 ?x3) (entry_27 ?x3))
+
+	;; ENTRIES CAN BE IN SOME_NUMBER_OF CATEGORY.
+
+		(and (entry_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CATEGORY_27 ?x2))
+
+;; (MULTIPLE TRANSACTION CATEGORIES COMMA LIKE FOOD COMMA ARE GOING TO NEED LOTS OF PAGES)
+
+	;; TRANSACTION CATEGORIES CAN BE MULTIPLE.
+
+		(and (transaction_27 ?x1) (category_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+;; (DECIDE HOW LONG YOUR BUDGET PLAN MUST LAST)
+
+	;; A BUDGET PLAN MAY LAST.
+
+		(and (BUDGET_27 ?x1) (PLAN_27 ?x1) (MAY_27 ?x1) (LAST_27 ?x1))
+
+	;; A PERSON MAY HAVE A BUDGET PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1) (PLAN_27 ?x1))
+
+;; (I FOUND MONTHLY TO BE THE MOST USEFUL FOR ME COMMA SINCE MOST BILLS ARE MONTHLY)
+
+	;; A PERSON MAY FIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1))
+
+;; (HOWEVER COMMA I DECIDED TO MAKE THE DEPOSITS TO MY BUDGET CATEGORIES TWICE A MONTH)
+
+	;; A PERSON MAY HAVE BUDGET CATEGORIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BUDGET_27 ?x1) (CATEGORIES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [10]>
+
+;; (SHOW A DEPOSIT IN EACH CATEGORY AT THE START OF EACH PERIOD COMMA THEN SHOW ALL THE EXPENDITURES FROM THAT CATEGORY THROUGHOUT THE PERIOD)
+
+	;; A DEPOSIT CAN BE IN SOME_NUMBER_OF CATEGORY.
+
+		(and (DEPOSIT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CATEGORY_27 ?x2))
+
+	;; A CATEGORY CAN BE THROUGHOUT A PERIOD.
+
+		(and (CATEGORY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THROUGHOUT_27 ?x2) (period_27 ?x2))
+
+;; (SO COMMA FOR AUTO COMMA YOU WOULD START OFF WITH $ 710 FOR THE MONTH COMMA THEN SHOW SEVERAL EXPENDITURES FOR GAS COMMA ONE EXPENDITURE FOR CAR PAYMENT COMMA MAYBE ONE EXPENDITURE FOR INSURANCE -LRB- DEPENDING
+ ON WHETHER YOU PAY INSURANCE MONTHLY OR NOT -RRB-)
+
+	;; SOME_NUMBER_OF EXPENDITURES CAN BE FOR GAS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (EXPENDITURES_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (GAS_27 ?x2))
+
+	;; AN EXPENDITURE CAN BE FOR CAR PAYMENT.
+
+		(and (EXPENDITURE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CAR_27 ?x2) (PAYMENT_27 ?x2))
+
+	;; AN EXPENDITURE CAN BE FOR INSURANCE.
+
+		(and (EXPENDITURE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INSURANCE_27 ?x2))
+
+	;; A PERSON MAY PAY INSURANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (INSURANCE_27 ?x1))

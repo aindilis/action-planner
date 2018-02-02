@@ -1,0 +1,426 @@
+;; (ETC. OFFER YOUR CONGRATULATIONS)
+
+	;; A PERSON MAY HAVE CONGRATULATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONGRATULATIONS_27 ?x1))
+
+;; (WHEN YOUR FRIEND FIRST ANNOUNCES HER OR HIS ENGAGEMENT COMMA SHE OR HE IS LIKELY TO BE VERY EXCITED)
+
+	;; A FRIEND MAY ANNOUNCE ENGAGEMENT.
+
+		(and (FRIEND_27 ?x1) (MAY_27 ?x1) (ANNOUNCE_27 ?x1) (ENGAGEMENT_27 ?x1))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (IT S A BIG MOMENT IN ANYONE S LIFE COMMA AND IT IS NORMALLY IMPORTANT TO THE NEWLY-BETROTHED THAT THEIR FRIENDS AND FAMILY SHARE IN THEIR JOY)
+
+	;; A MOMENT CAN BE IN A LIFE.
+
+		(and (MOMENT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LIFE_27 ?x2))
+
+	;; A MOMENT CAN BE BIG.
+
+		(and (MOMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; ANYONE MAY HAVE A LIFE.
+
+		(and (ANYONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE IMPORTANT TO A NEWLY-BETROTHED.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (NEWLY-BETROTHED_27 ?x3))
+
+	;; FRIENDS MAY SHARE IN A JOY.
+
+		(and (friend_27 ?x1) (SHARE_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (JOY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE FRIENDS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A JOY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JOY_27 ?x1))
+
+;; (WHEN YOUR FRIEND FIRST TELLS YOU HER OR HIS PLANS COMMA BE HAPPY FOR HER OR HIM AND OFFER YOUR CONGRATULATIONS)
+
+	;; A FRIEND MAY TELL A PERSON PLANS.
+
+		(and (FRIEND_27 ?x1) (MAY_27 ?x1) (TELL_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (PLANS_27 ?x1))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+	;; A PERSON MAY HAVE CONGRATULATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONGRATULATIONS_27 ?x1))
+
+;; (HUGS COMMA KISSES COMMA TEARS AND LAUGHTER ARE ALL APPROPRIATE)
+
+	;; HUGS CAN BE APPROPRIATE.
+
+		(and (HUGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (SEND A CARD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU CA N T BE WITH YOUR FRIEND IN PERSON COMMA SEND HER OR HIM A CARD TO LET YOUR FRIEND KNOW YOU ARE THINKING OF HER OR HIM)
+
+	;; A PERSON CAN BE WITH A FRIEND.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (FRIEND_27 ?x2))
+
+	;; A FRIEND CAN BE IN PERSON.
+
+		(and (FRIEND_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (PERSON_27 ?x2))
+
+	;; A FRIEND MAY KNOW.
+
+		(and (FRIEND_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+	;; A PERSON MAY THINK OF A FEMALE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (FEMALE_27 ?x2))
+
+;; (ADDRESS IT TO BOTH YOUR FRIEND AND HER OR HIS PARTNER COMMA AND WRITE A SHORT PERSONAL MESSAGE INSIDE)
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+	;; A MESSAGE CAN BE SHORT.
+
+		(and (MESSAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+	;; A MESSAGE CAN BE PERSONAL.
+
+		(and (MESSAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; (OBTAIN AN ENGAGEMENT PRESENT)
+
+	;; AN ENGAGEMENT MAY PRESENT.
+
+		(and (ENGAGEMENT_27 ?x1) (MAY_27 ?x1) (PRESENT_27 ?x1))
+
+;; (YOU MIGHT LIKE TO GIVE YOUR FRIEND A PRESENT TO HELP CELEBRATE HER OR HIS ENGAGEMENT)
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (CHAMPAGNE IS SOMETIMES A GOOD OPTION)
+
+	;; A CHAMPAGNE[PERSON??] CAN BE AN OPTION.
+
+		(and (CHAMPAGNE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (OPTION_27 ?x1))
+
+	;; AN OPTION CAN BE GOOD.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (ALTERNATIVELY YOU COULD CLUB TOGETHER WITH SOME FRIENDS TO TREAT THE COUPLE TO AN EXPERIENCE THEY CAN SHARE TOGETHER COMMA LIKE A WEEKEND AT A FANCY HOTEL COMMA BUT BE SURE TO RESPECT ANY RELIGIOUS BELIEFS THAT
+ YOUR FRIEND MAY HAVE ABOUT PROPER BOUNDARIES BEFORE THE MARRIAGE)
+
+	;; A PERSON MAY CLUB WITH SOME_NUMBER_OF FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CLUB_27 ?x1) (WITH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY SHARE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SHARE_27 ?x1))
+
+	;; A HOTEL CAN BE FANCY.
+
+		(and (HOTEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FANCY_27 ?x2))
+
+	;; BELIEFS CAN BE RELIGIOUS.
+
+		(and (belief_27 ?x1) (be_27 ?e1 ?x1 ?x2) (religiou_27 ?x2))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (GET TO KNOW YOUR FRIEND S PARTNER)
+
+	;; A FRIEND MAY HAVE A PARTNER.
+
+		(and (FRIEND_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (NOW THAT YOUR FRIEND HAS DECIDED TO MARRY COMMA IT WILL BE MORE IMPORTANT THAN EVER THAT HER OR HIS FRIENDS AND HER OR HIS PARTNER GET TO KNOW EACH OTHER)
+
+	;; A THING-REFERRED-TO CAN BE IMPORTANT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (IF YOU HAVE N T ALREADY DONE SO COMMA MAKE THE EFFORT TO GET TO KNOW YOUR FRIEND S NEW SPOUSE-TO-BE)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A FRIEND MAY HAVE A SPOUSE-TO-BE.
+
+		(and (FRIEND_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE-TO-BE_27 ?x1))
+
+	;; A PERSON MAY HAVE A FRIEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1))
+
+;; (TREAT THEM AS A UNIT BY INVITING THEM TO THINGS TOGETHER)
+
+	;; 
+
+	;; ((:I (:Q A{N} UNIT.N) BY.P (:F KA NIL)))
+
+		(and (I_27 ?x3) (Q_27 ?x2) (A_27 ?x2) (N_27 ?x1) (UNIT_2EN_27 ?x2) (BY_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF FOR SOME REASON YOU REALLY CA N T STAND THE NEW PARTNER COMMA THEN YOU NEED TO PUT IN A BIT OF EXTRA WORK)
+
+	;; A PERSON MAY STAND A PARTNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STAND_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH WORK.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WORK_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (IF FOR SOME REASON YOU REALLY CA N T STAND THE NEW PARTNER COMMA THEN YOU NEED TO PUT IN A BIT OF EXTRA WORK)
+
+	;; A PERSON MAY STAND A PARTNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STAND_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH WORK.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WORK_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (IF FOR SOME REASON YOU REALLY CA N T STAND THE NEW PARTNER COMMA THEN YOU NEED TO PUT IN A BIT OF EXTRA WORK)
+
+	;; A PERSON MAY STAND A PARTNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STAND_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH WORK.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WORK_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (GIVE IT TIME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; (ACCEPT THE WEDDING INVITATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AT SOME POINT DURING THE ENGAGEMENT YOU WILL -LRB- HOPEFULLY -RRB- RECEIVE AN OFFICIAL INVITATION TO THE WEDDING)
+
+	;; SOME_NUMBER_OF POINT CAN BE DURING AN ENGAGEMENT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (POINT_27 ?x1) (be_27 ?e1 ?x1) (during_27 ?x1 ?x2) (AN_27 ?x2) (ENGAGEMENT_27 ?x2))
+
+	;; AN INVITATION CAN BE OFFICIAL.
+
+		(and (INVITATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFFICIAL_27 ?x2))
+
+;; (THE WEDDING DAY IS TRADITIONALLY HOSTED BY THE PARENTS OF THE BRIDE COMMA AND SO THE INVITATION WILL OFTEN BE SENT ON THEIR BEHALF)
+
+	;; A WEDDING DAY CAN BE HOSTED BY PARENTS OF A BRIDE.
+
+		(and (wedding_27 ?e1) (DAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOSTED_27 ?x2) (by_27 ?e1 ?x3) (parent_27 ?x3) (of_27 ?x3 ?x4) (BRIDE_27 ?x4))
+
+	;; A BRIDE MAY HAVE PARENTS.
+
+		(and (BRIDE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+	;; AN INVITATION MAY BE SEND -ED ON A BEHALF.
+
+		(and (INVITATION_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (BEHALF_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A BEHALF.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEHALF_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; (THEY WILL OFTEN REQUEST AN RSVP BY A CERTAIN DATE)
+
+	;; INDIVIDUAL -S MAY REQUEST A RSVP BY A DATE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (REQUEST_27 ?x1) (A_27 ?x1) (RSVP_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+;; (THE INVITATION MAY INSTRUCT YOU ON HOW TO DO THIS COMMA BUT IF NOT YOU SHOULD REPLY BY WRITING A SHORT LETTER TO THE ADDRESS ON THE INVITATION)
+
+	;; AN INVITATION MAY INSTRUCT A PERSON.
+
+		(and (INVITATION_27 ?x1) (MAY_27 ?x1) (INSTRUCT_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A LETTER CAN BE SHORT.
+
+		(and (LETTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+	;; AN ADDRESS CAN BE ON AN INVITATION.
+
+		(and (ADDRESS_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (AN_27 ?x2) (INVITATION_27 ?x2))
+
+;; (HELP ORGANIZE THE STAG AND HEN NIGHTS OR BACHELOR/BACHELORETTE PARTIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [11]>
+
+;; (APART FROM THE LOGISTICS COMMA YOU ALSO HAVE THE RESPONSIBILITY OF LOOKING AFTER THE BRIDE OR GROOM ON THE BIG NIGHT)
+
+	;; A BRIDE CAN BE ON A NIGHT.
+
+		(and (BRIDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (NIGHT_27 ?x2))
+
+	;; A NIGHT CAN BE BIG.
+
+		(and (NIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (YOU NEED TO WALK A FINE LINE BETWEEN MAKING SURE THEY HAVE A PARTY THEY WILL NEVER FORGET COMMA AND STITCHING THEM UP COMPLETELY)
+
+	;; A LINE CAN BE FINE.
+
+		(and (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A PARTY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY FORGET.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FORGET_27 ?x1))
+
+;; (YOU SHOULD BEAR IN MIND THOUGH THAT THEIR PARTNER WILL HOLD YOU RESPONSIBLE FOR THEIR LOVED ONE S SAFETY AND WELL BEING COMMA AND WILL NOT APPRECIATE ANY LASTING DAMAGE OR PERMANENT TATTOOS)
+
+	;; A PERSON MAY BEAR IN MIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BEAR_27 ?x1) (in_27 ?x1 ?x2) (MIND_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A PARTNER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTNER_27 ?x1))
+
+	;; A PERSON CAN BE RESPONSIBLE FOR SAFETY.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESPONSIBLE_27 ?x2) (for_27 ?e1 ?x3) (SAFETY_27 ?x3))
+
+	;; AN ONE MAY HAVE SAFETY.
+
+		(and (ONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SAFETY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE AN ONE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1))
+
+	;; AN ONE CAN BE LOVED.
+
+		(and (be_27 ?e1 ?x1) (LOVED_27 ?x1))
+
+	;; DAMAGE CAN BE LASTING.
+
+		(and (DAMAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LASTING_27 ?x2))
+
+	;; TATTOOS CAN BE PERMANENT.
+
+		(and (tattoo_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERMANENT_27 ?x2))

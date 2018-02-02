@@ -1,0 +1,2525 @@
+(defmodule MAIN (export ?ALL)(export defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+(defglobal MAIN
+  ?*CR* = 0
+  ?*CS* = 0
+  ?*TS* = 0
+  ?*AA* = 0
+  ?*IW* = 0
+  ?*AB* = 0
+  ?*SA* = 0
+  ?*ADD* = 0
+  ?*H* = 0
+  ?*TPS* = 0
+  ?*BS* = 0)
+
+
+(defrule MAIN::start ;this rule defines the stack of modules. We'll have about 10 of them.
+	(declare (salience 100))
+=>
+	(focus MAIN CONFLICTS  ABUSE ADDICTION PROJECTION HURT ACCUSATIONS 
+           BODYSYMPTOM RECOMMENDATIONS))
+     ;(focus PROJECTION HURT ACCUSATIONS ))
+(deffunction MAIN::ask-question (?question ?allowed-values )
+ (printout t ?question)
+ (bind ?answer (read))
+ (if (lexemep ?answer) then (bind ?answer (lowcase ?answer)))
+ (while (not (member ?answer ?allowed-values)) do
+  (printout t ?question)
+  (bind ?answer (read))
+  (if (lexemep ?answer) then (bind ?answer (lowcase ?answer))))
+ ?answer)
+
+(defrule MAIN::IntroMessage
+ (declare (salience 90))
+=> 
+(printout t crlf "  Welcome to the Conflict Resolution Assistance system. This system is designed"crlf
+"  to provide guidance, suggestions and information about resolving conflicts"crlf
+"  in relationships with friends, partners, family members, and associates."crlf crlf
+"       If you are currently in the middle of a difficult conflict with "crlf
+"  someone who is important to you, you may find our system helpful. "crlf
+"       Start by answering a series of questions about yourself, your beliefs "crlf
+"  and habits relating to conflict resolution and the relationship you are "crlf
+"  currently having difficulty with. "crlf
+"       When you have completed the questions, we will identify one or more "crlf
+"  conflict resolution skills that you may need to develop or improve in" crlf 
+"  order to resolve your problem successfully. "crlf
+"  The system will then direct you to one or more Learning Sections, which "crlf
+"  will assist you in developing those skills."crlf crlf
+"  Would you like to use the system to learn more about a current conflict "crlf
+"  you have?" crlf)
+(assert (IntroMessage
+ (ask-question "(y,n):  "(create$ y n)))))
+
+(defrule MAIN::FirstQuest
+   ?f<-(IntroMessage y)
+=>
+ (printout t crlf "   First I need to ask you some basic questions about yourself and"crlf
+"   the person you are having the conflict with.  Are you ready to begin?" crlf)
+(assert (answer1
+ (ask-question "(y,n):  "(create$ y n)))))
+
+
+(defrule MAIN::needCounseling
+	 ?f<-(IntroMessage n)
+      
+=>
+	(printout t crlf "Goodbye!" crlf)
+      (retract ?f )
+	(loop-for-count 9 (pop-focus)))       ;this is a simple loop
+       	;to pop all the modules to exit program
+
+(defrule MAIN::not-ready
+	 ?f<-(answer1 n)      
+=>
+	(printout t crlf "GoodBye. Come back when you are ready!" crlf)
+      (retract ?f )
+	(loop-for-count 9 (pop-focus)))       ;this is a simple loop
+             
+(defrule MAIN::whoQuestion
+	?a <- (answer1 y)
+=>
+	(retract ?a)
+	(printout t crlf
+                    "Who do you have this problem with?" crlf
+		    "   a. A friend" crlf
+		    "   b. A spouse or intimate partner" crlf
+		    "   c. A close family member but not a spouse" crlf
+		    "   d. Someone who has an authority over you such as a boss or an" crlf
+		    "      employee, not a family member" crlf
+		    "   e. Someone else" crlf)
+	(assert (who (ask-question "(a,b,c,d,e,): "(create$ a b c d e))))
+	(assert (Q who)))
+
+(defrule MAIN::nameQuestion
+	(who ?who)
+	?q <- (Q who)
+=>
+	(retract ?q)
+	(printout t crlf "What is the person's name?" crlf
+	"(name):  ")
+	(assert (name (readline)))
+	(assert (Q name)))
+
+(defrule MAIN::genderQuestion
+	(name ?name)
+	?q <- (Q name)
+=>
+	(retract ?q)
+	(printout t crlf "Is the person male or female?" crlf)
+	(assert (gender (ask-question "(female, male): "(create$ female male))))
+	(assert (Q gender)))
+
+(defrule MAIN::ageQuestion
+	(gender ?gender)
+	?q <- (Q gender)
+=>
+	(retract ?q)
+	(printout t crlf "What is the person's age?" crlf
+		    "   a. under 18" crlf
+		    "   b. 18-25" crlf
+		    "   c. 26-35" crlf
+		    "   d. 36-45" crlf
+		    "   e. 46-55" crlf
+		    "   f. 56 and over" crlf)
+	(assert (age (ask-question "(a,b,c,d,e,f): "(create$ a b c d e f))))
+	(assert (Q age)))
+
+(defrule MAIN::ifMinor
+	(declare (salience 10))
+	(or (age a)(uage a))
+=>
+	(printout t crlf "  The system is designed for people over the age of 18. If you, or the" crlf
+"  person you are having a conflict with, are younger, you may wish to"crlf
+"  exit at this time.  If you decide to go ahead with the system, you may"crlf
+"  receive helpful information even though the main focus of the program is"crlf
+"  conflict among adults.  Would you like to exit?"crlf)
+ (assert (minor (ask-question "(y,n): "(create$ y n)))))       
+       
+(defrule MAIN::minor-exit
+	(declare (salience 10))
+	?f<-(minor y)
+=>
+	(retract ?f)
+	(printout t crlf "  Goodbye!" crlf)
+     (loop-for-count 9 (pop-focus)))       
+(defrule MAIN::unameQuestion1
+	(not (age a))
+	?q <- (Q age)
+=>
+	(retract ?q)
+	(printout t crlf "What is your name?" crlf
+                "(your name): ")
+	(assert (uname (readline)))
+	(assert (Q uname)))
+
+(defrule MAIN::unameQuestion2
+	(minor n)
+	?q <- (Q age)
+=>
+	(retract ?q)
+	(printout t crlf "What is your name?" crlf
+                "(your name): ")
+	(assert (uname (readline)))
+	(assert (Q uname)))
+
+
+(defrule MAIN::ugenderQuestion
+	(uname ?uname)
+	?q <- (Q uname)
+=>
+	(retract ?q)
+	(printout t crlf "Are you male or female?" crlf)
+	(assert (ugender (ask-question "(female, male): "(create$ female male))))
+	(assert (Q ugender)))
+
+(defrule MAIN::uageQuestion
+	(ugender ?ugender)
+	?q <- (Q ugender)
+=>
+	(retract ?q)
+	(printout t crlf "What is your age?" crlf
+
+        	                     "   a. under 18" crlf
+		    "   b. 18-25" crlf
+		    "   c. 26-35" crlf
+		    "   d. 36-45" crlf
+		    "   e. 46-55" crlf
+		    "   f. 56 and over" crlf)
+	(assert (uage (ask-question "(a,b,c,d,e,f): "(create$ a b c d e f)))))
+	
+;;****************************
+;; CONFLICTS
+;;****************************
+ 
+(defmodule CONFLICTS (import MAIN ?ALL) 
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+
+(defrule CONFLICTS::conintro
+   (declare (salience 10))
+=>
+(printout t crlf  "  Now that I have some basic information about you and the other person," crlf
+" I'd like to ask you some general questions about conflict resolution " crlf
+"  - what you think about it, and how you usually deal with it" crlf
+" Are you ready to continue?"crlf)
+   (assert (conintro (ask-question "(y,n): "(create$ y n)))))       
+
+(defrule CONFLICTS::quit-module
+   (conintro n)    
+=>
+ (printout t crlf "GoodBye!"crlf)
+   (loop-for-count 9 (pop-focus)))  
+     
+
+(defrule CONFLICTS::question29
+   (conintro y)
+=>
+   (printout t crlf "Which of the following statements mostly closely describe your beliefs" crlf
+      " and feelings about conflict between people:" crlf 
+      "   a. conflict is generally destructive to relationships and should be avoided" crlf        "    if possible" crlf
+      "   b. conflict is healthy and can make relationships stronger if you resolve" crlf
+      "    it well" crlf
+      "   c. people shouldn't blame one another because they need to accept other" crlf        "    people the way they are" crlf 
+      "   d. it's good to work out conflicts, but I don't do it well because they" crlf           "           frighten me" crlf)
+   (assert (question29 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+
+(defrule CONFLICTS::question29-scores
+   (question29 ?x)
+=>
+   (if (eq ?x a)
+   then
+      (bind ?*H* (+ ?*H* 2))
+      (bind ?*CS* (+ ?*CS* 2))
+      (bind ?*CR* (+ ?*CR* 3)))
+   else
+   (if (eq ?x c)
+   then
+      (bind ?*AA* (+ ?*AA* 3))
+      (bind ?*CR* (+ ?*CR* 3)))
+   else
+   (if (eq ?x d)
+   then
+      (bind ?*AB* (+ ?*AB* 2))))
+
+(defrule CONFLICTS::question2
+   (question29 ?)
+=>
+   (printout t crlf "When I have a problem or conflict with someone else, I usually" crlf 
+      "   a. try to solve the problem inside myself" crlf
+      "   b. try to solve the problem by talking to the other person" crlf
+      "   c. avoid dealing with the problem but continue to see the other person" crlf
+      "   d. avoid the other person" crlf
+      "   e. can't generalize" crlf )
+   (assert (question2 (ask-question "(a,b,c,d,e): "(create$ a b c d e)))))
+
+(defrule CONFLICTS::question2-scores
+   (question2 ?x)
+=>
+   (if (eq ?x a)
+   then
+      (bind ?*CR* (+ ?*CR* 1)))
+   else
+   (if (eq ?x b)
+   then
+      (bind ?*IW* (+ ?*IW* 1)))   
+   else
+   (if (eq ?x c)
+   then
+      (bind ?*CR* (+ ?*CR* 1)))
+   else
+   (if (eq ?x d)
+   then
+      (bind ?*CR* (+ ?*CR* 1))))
+
+(defrule CONFLICTS::question3
+   (question2 a)
+=>
+   (printout t crlf "When I try to solve the problem inside myself, I usually" crlf
+      "   a. tell myself it's not that important and I should forget about it" crlf
+      "   b. try to understand the other person's point of view better" crlf
+      "   c. reflect on the problem until I understand myself better" crlf )
+   (assert (question3 (ask-question "(a,b,c): "(create$ a b c)))))
+
+(defrule CONFLICTS::question3-scores
+   (question3 ?x)
+=>
+   (if (eq ?x a)
+   then
+      (bind ?*AA* (+ ?*AA* 1))
+      (bind ?*TS* (+ ?*TS* 1)))
+   else
+   (if (eq ?x b)
+   then
+      (bind ?*AA* (- ?*AA* 1))
+      (bind ?*TS* (+ ?*TS* 1))))
+
+(defrule CONFLICTS::question4
+   (question29 ?)
+=>
+   (printout t crlf "When I'm angry at someone, I usually" crlf
+      "   a. come right out with it" crlf
+      "   b. express it indirectly" crlf
+      "   c. wait for an appropriate time to talk about it directly" crlf
+      "   d. try to forget about it" crlf
+      "   e. try to forgive that person" crlf
+      "   f. lose my temper and explode" crlf
+      "   g. none of the above" crlf )
+   (assert (question4 (ask-question "(a,b,c,d,e,f,g): "(create$ a b c d e f g)))))
+
+(defrule CONFLICTS::question4-scores
+   (question4 ?x)
+=>
+   (if (eq ?x a)
+   then
+      (bind ?*SA* (+ ?*SA* 1))
+      (bind ?*IW* (+ ?*IW* 1)))
+   else
+   (if (eq ?x b)
+   then
+      (bind ?*CS* (+ ?*CS* 1))
+      (bind ?*CR* (+ ?*CR* 1))
+      (bind ?*TS* (+ ?*TS* 1)))
+   else
+   (if (eq ?x c)
+   then
+      (bind ?*SA* (- ?*SA* 1)))
+   else
+   (if (eq ?x d)
+   then
+      (bind ?*ADD* (+ ?*ADD* 1))
+      (bind ?*CR* (+ ?*CR* 1)))
+   else
+   (if (eq ?x e)
+   then
+      (bind ?*TS* (+ ?*TS* 1))
+      (bind ?*CR* (+ ?*CR* 1)))
+   else
+   (if (eq ?x f)
+   then
+      (bind ?*AB* (+ ?*AB* 2))))
+
+(defrule CONFLICTS::question21
+   (question29 ?)
+=>
+   (printout t crlf "In general, when I'm  involved in a conflict with somebody else" crlf
+      "   a. I go overboard trying to be understanding of the other person" crlf
+      "   b. I try to give the other person the benefit of the doubt" crlf
+      "   c. I have trouble understanding the other person's point of view" crlf
+      "   d. I focus mainly on getting what I want" crlf
+      "   e. None of the above" crlf )
+   (assert (question21 (ask-question "(a,b,c,d,e): "(create$ a b c d e)))))
+
+(defrule CONFLICTS::question21-scores
+   (question21 ?x)
+=>
+   (if (eq ?x a)
+   then
+      (bind ?*TS* (+ ?*TS* 2)))
+   else
+   (if (eq ?x c)
+   then
+      (bind ?*AA* (+ ?*AA* 1)))
+   else
+   (if (eq ?x d)
+   then
+      (bind ?*TS* (- ?*TS* 3))))
+
+(defrule CONFLICTS::question12
+   (question29 ?)
+=>
+   (printout t crlf "When I tell somebody about a problem or conflict I have with them, I usually" crlf
+      "   a. let them know indirectly I'm unhappy with them, but not why" crlf
+      "   b. let them know indirectly that I'm unhappy with them,  and why" crlf
+      "   c. tell them directly what I'm unhappy about" crlf )
+   (assert (question12 (ask-question "(a,b,c): "(create$ a b c)))))
+
+(defrule CONFLICTS::question12-scores
+   (question12 ?x)
+=>
+   (if (or (eq ?x a)(eq ?x b))
+   then
+      (bind ?*SA* (+ ?*SA* 1))))
+
+(defrule CONFLICTS::question13
+   (question12 c)
+=>
+   (printout t crlf "When I talk to somebody about a problem or conflict I have with them, I usually" crlf
+     "   a. do it at a time I choose which I feel is good for me" crlf
+     "   b. do it at a time I choose which I believe is good for them" crlf
+     "   c. ask the other person to choose a time which is good for them" crlf )
+   (assert (question13 (ask-question "(a,b,c,): "(create$ a b c)))))
+
+(defrule CONFLICTS::question13-scores
+   (question13 ?x)
+=>
+   (if (or (eq ?x a)(eq ?x b))
+   then
+      (bind ?*SA* (+ ?*SA* 1))))
+
+(defrule CONFLICTS::question17
+   (question29 ?)
+=>
+   (printout t crlf "When I have something critical to say to someone, I usually" crlf
+      "   a. avoid saying it because I'm afraid they will be hurt or angry" crlf
+      "   b. ask the other person if it's OK with them if I give them some criticism" crlf
+      "   c. say it if I think it's important, whether the other person wants to hear"crlf
+      "     it or not" crlf
+      "   d. none of the above" crlf )
+   (assert (question17 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+
+(defrule CONFLICTS::question17-scores
+   (question17 ?x)
+=>
+   (if (or (eq ?x a)(eq ?x c))
+   then
+      (bind ?*CS* (+ ?*CS* 1))))
+
+(defrule CONFLICTS::question18
+   (or (question17 b)
+       (question17 c))
+=>
+   (printout t crlf "When I give some criticism to another person, I usually" crlf
+      "   a. try to say it very carefully so they won't be hurt or angry" crlf
+      "   b. say it in a considerate way" crlf
+      "   c. say it too harshly so the other person often gets offended" crlf
+      "   d. ask the other person for suggestions about how to talk about it so they won't" crlf 
+      "   feel too hurt by the criticism" crlf )
+   (assert (question18 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+
+(defrule CONFLICTS::question18-scores
+   (question18 ?x)
+=>
+   (if (or (eq ?x a)(eq ?x c))
+   then
+      (bind ?*CS* (+ ?*CS* 2)))
+   (if (eq ?x b)
+   then
+      (bind ?*CS* (+ ?*CS* 1)))
+   (if (eq ?x d)
+   then
+      (bind ?*CS* (- ?*CS* 1))))
+
+;;****************************
+;; ABUSE
+;;****************************
+ 
+(defmodule ABUSE (import MAIN ?ALL) 
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+	
+(defrule ABUSE::init-message
+  (declare (salience 10))
+  (name ?name)
+=>
+  (printout t crlf "  The next series of questions can help me identify some things in your history"crlf
+"  or your current life that may be standing in the way of resolving"crlf
+"  your conflict with "?name".  Do you want to continue?"crlf)
+
+  (assert (intro (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ABUSE::quit-module
+ (intro n)
+=>
+(printout t crlf "GoodBye!"crlf)
+ (loop-for-count 9 (pop-focus)))  
+   
+(defrule ABUSE::question40
+ (intro y)
+=>
+ (printout t crlf "How often do you feel helpless in your relationships with other people?" crlf
+	" a. Often" crlf
+	" b. Sometimes" crlf
+	" c. Rarely" crlf
+ 	" d. Never" crlf)
+ (assert (question40 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+
+(defrule ABUSE::question40-scores
+ (or (question40 ?x)(question41 ?x))
+=>
+ (if (eq ?x a)
+  then
+  (bind ?*AB* (+ ?*AB* 3)))
+ else
+ (if (eq ?x b)
+  then
+ (bind ?*AB* (+ ?*AB* 1)))
+  else
+ (if (eq ?x d)
+ then
+ (bind ?*AB* (+ ?*AB* 2))))
+
+(defrule ABUSE::question41
+ (name ?name)
+=>
+ (printout t crlf "How often do you feel helpless in your relationship with " ?name "?"crlf
+        " a. Often" crlf
+	" b. Sometimes" crlf
+	" c. Rarely" crlf
+ 	" d. Never" crlf)
+ (assert (question41 (ask-question "(a,b,c,d):  "(create$ a b c d)))))
+
+(defrule ABUSE::question42
+ (question41 ?)
+=>
+ (printout t crlf "Have you been a victim of serious physical or sexual abuse, or violence?" crlf)
+ (assert (question42 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ABUSE::question42-score
+ (question42 y)
+=>
+ (bind ?*AB* (+ ?*AB* 6)))
+
+(defrule ABUSE::question43
+ (question42 ?)
+=>
+ (printout t crlf "Have you ever lost your temper and physically hurt another person?" crlf)
+ (assert (question43 (ask-question "(y,n): "(create$ y n)))))
+
+
+(defrule ABUSE::question43-score
+ (question43 y)
+=>
+ (bind ?*AB* (+ ?*AB* 3)))
+
+;;****************************
+;; Addiction
+;;****************************
+ 
+(defmodule ADDICTION (import MAIN ?ALL) 
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+ 
+      
+(defrule ADDICTION::question44
+   (declare (salience 10))
+=>
+   (printout t crlf "Do you use alcohol, drugs, or other addictive substances frequently? " crlf)
+   (assert (question44 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question45
+   (question44 y)
+=>
+   (printout t crlf "Do you use alcohol too much? " crlf)
+   (assert (question45 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::update45-score
+   (question45 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 5)))
+
+(defrule ADDICTION::question46
+   (question44 y)
+=>
+   (printout t crlf "Do you use recreational(illegal) drugs too much? " crlf)
+   (assert (question46 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::update46-score
+   (question46 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 5)))
+
+(defrule ADDICTION::question47
+   (question44 y)
+=>
+   (printout t crlf "Are you dependent on prescription tranquilizers? " crlf)
+   (assert (question47 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::update47-score
+   (question47 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 5)))
+
+(defrule ADDICTION::question48
+   (question44 y)
+=>
+   (printout t crlf "Do you smoke frequently?" crlf)
+   (assert (question48 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::update48-score
+   (question48 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))
+
+(defrule ADDICTION::no45-48
+   (question45 n)
+   (question46 n)
+   (question47 n)
+   (question48 n)
+=>
+   (assert (no45-48 y)))
+
+(defrule ADDICTION::question49
+   (not (quest49 fired))
+   (or (question44 n)
+       (no45-48 y)) 
+=>
+   (assert (quest49 fired))
+   (printout t crlf "Do other people tell you that you have a problem with alcohol or other drugs? " crlf)
+   (assert (question49 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question50
+   (question49 y)
+=>
+   (printout t crlf "Do other people tell you that you use alcohol too much? " crlf)
+   (assert (question50 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question50-score
+   (question50 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 5)))
+
+(defrule ADDICTION::question51
+   (question49 y)
+=>
+   (printout t crlf "Do other people tell you that you use recreational (illegal) drugs too much? " crlf)
+   (assert (question51 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question51-score
+   (question51 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 5)))
+
+(defrule ADDICTION::question52
+   (question49 y)
+=>
+   (printout t crlf "Do other people tell you that you are too dependent on prescription tranquilizers?" crlf)
+   (assert (question52 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question52-score
+   (question52 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 5)))
+
+(defrule ADDICTION::question53
+   (question49 y)
+=>
+   (printout t crlf "Do other people tell you that you smoke cigarettes too much?  " crlf)
+   (assert (question53 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question53-score
+   (question53 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))
+
+(defrule ADDICTION::question54
+  (not (quest54 fired))
+   (or (not (no45-48 y))(question49 n)
+       (question53 ?))
+=>
+   (assert (quest54 fired))
+   (printout t crlf "Are you too dependent on food, sex, or intimate relationships? " crlf)
+   (assert (question54 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question55
+   (question54 y)
+=>
+   (printout t crlf "Are you too dependent on sex? " crlf)
+   (assert (question55 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question55-score
+   (question55 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))
+
+(defrule ADDICTION::question56
+   (question54 y)
+=>
+   (printout t crlf "Do you have a problem with overeating?  " crlf)
+   (assert (question56 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question56-score
+   (question56 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))
+
+(defrule ADDICTION::question57
+   (question54 y)
+=>
+   (printout t crlf  "How do you feel when you are not in an intimate relationship?" crlf
+	       " a. Fine" crlf
+	       " b. A little lonely but basically OK" crlf
+	       " c. Very lonely and unhappy" crlf
+	       " d. Desperate or panicky" crlf
+               " e. It's been so long I can't remember" crlf)
+   (assert (question57 (ask-question "(a,b,c,d,e): "(create$ a b c d e)))))
+
+(defrule ADDICTION::question57-score
+   (question57 ?x)
+=>
+   (if (or (eq ?x c) (eq ?x d))
+      then
+      (bind ?*ADD* (+ ?*ADD* 3))
+      (bind ?*TS* (+ ?*TS* 2))))
+
+(defrule ADDICTION::question58
+   (not (quest58 fired))
+   (or (question54 n)
+       (question57 ?))
+=>
+   (assert (quest58 fired))
+   (printout t crlf "Do other people close to you complain that you work far too much?" crlf)
+   (assert (question58 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question58-score
+   (question58 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))
+
+(defrule ADDICTION::question59
+   (question58 ?)
+   (name ?name)
+=>
+   (printout t crlf "In your relationship with " ?name ", do you feel you are" crlf
+               " a. too trusting or forgiving" crlf
+               " b. not trusting or forgiving enough" crlf
+               " c. neither a nor b" crlf)
+   (assert (question59 (ask-question "(a,b,c): "(create$ a b c)))))
+
+(defrule ADDICTION::question59-score
+   (question59 ?x)
+=>
+   (if (eq ?x a)
+      then
+      (bind ?*ADD* (+ ?*ADD* 1))
+      (bind ?*AB* (+ ?*AB* 1)))
+   else
+   (if (eq ?x b)
+      then
+      (bind ?*IW* (+ ?*IW* 3))))
+
+(defrule ADDICTION::question10
+   (question58 ?)
+   (name ?name)
+=>
+   (printout t crlf "What do other people tell you about your problem with " ?name crlf
+               " a. I'm being oversensitive or "paranoid" about " ?name crlf
+               " b. I'm too nice or trusting towards " ?name crlf
+               " c. My feelings and reactions are normal" crlf
+	       " d. None of the above" crlf)
+   (assert (question10 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+
+(defrule ADDICTION::question10-score
+   (question10 ?x)
+=>
+   (if (eq ?x a)
+      then
+      (bind ?*IW* (+ ?*IW* 1)))
+   else
+   (if (eq ?x b)
+      then
+      (bind ?*ADD* (+ ?*ADD* 1))
+      (bind ?*TS* (+ ?*TS* 1))
+      (bind ?*AB* (+ ?*AB* 1)))
+   else
+   (if (eq ?x c)
+      then
+      (bind ?*AA* (- ?*AA* 1))))
+
+(defrule ADDICTION::question60
+  (not (question-60 fired))
+  (or (question10 b)
+       (question59 a))
+   (who b)
+   (name ?name)
+   (gender ?gender)
+=>
+  (assert(question-60 fired))
+   (printout t crlf "Do you feel that if you could love " ?name " enough all of your relationship problems" crlf 
+       "with ") 
+      (if (eq ?gender male) then (printout t "him ")) 
+      (if (eq ?gender female) then (printout t "her ")) 
+      (printout t "would be solved?" crlf)
+   (assert (question60 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question60-score
+   (question60 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))
+
+(defrule ADDICTION::question61
+   (question60 ?)
+   (name ?name)
+=>
+   (printout t crlf "Are you often surprised by " ?name "'s behavior?  " crlf)
+   (assert (question61 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question61-score
+   (question61 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 2)))
+
+(defrule ADDICTION::question62
+   (question61 ?)
+   (name ?name)
+   (gender ?gender)
+=>
+   (printout t crlf "Do other people tell you that you don't see " ?name " the way ")
+      (if (eq ?gender male) then (printout t "he ")) 
+      (if (eq ?gender female) then (printout t "she ")) 
+      (printout t "really is?" crlf) 
+   (assert (question62 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question62-score
+   (question62 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 2)))
+
+(defrule ADDICTION::question63
+   (question62 y)
+   (name ?name)
+=>
+   (printout t crlf "Do other people ever tell you that you are living in a dream world with " ?name  crlf)
+   (assert (question63 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question63-score
+   (question62 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 3)))  
+
+(defrule ADDICTION::question64
+   (question58 ?x)
+   ;(question59 ?y)
+   ;(question10 ?z)
+   (name ?name)
+=>
+   (printout t crlf "In your current problem with " ?name ", do you often feel confused or in a fog?  " crlf)
+   (assert (question64 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule ADDICTION::question64-score
+   (question64 y)
+=>
+   (bind ?*ADD* (+ ?*ADD* 2))
+   (bind ?*AB* (+ ?*AB* 3)))
+
+(defrule ADDICTION::question65
+   (question58 ?x)
+   ;(question59 ?y)
+   ;(question10 ?z)
+   (name ?name)
+=>
+   (printout t crlf "How hopeful do you feel about solving your relationship problem with " ?name "?" crlf
+               " a. Pretty hopeful" crlf
+               " b. A little hopeful" crlf
+               " c. Pretty hopeless" crlf
+               " d. Very hopeless" crlf
+               " e. I swing back and forth between feeling hopeful and feeling hopeless" crlf)
+   (assert (question65 (ask-question "(a,b,c,d,e): "(create$ a b c d e)))))
+
+(defrule ADDICTION::question65-score
+   (question65 ?x)
+=>
+   (if (or (eq ?x d) (eq ?x e))
+      then
+      (bind ?*ADD* (+ ?*ADD* 3)))
+   else
+   (if (eq ?x d)
+      then
+      (bind ?*AB* (+ ?*AB* 3)))
+   else
+   (if (eq ?x c)
+   then
+      (bind ?*ADD* (+ ?*ADD* 3))))
+;***************************************
+;       PROJECTION 
+;***************************************
+
+(defmodule PROJECTION (import MAIN ?ALL) (export ?ALL)
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+
+(defrule PROJECTION::conintro1
+   (declare (salience 10))
+   (name ?name)
+=>
+(printout t crlf  "  Now I’d like to ask you about the particular problem you are having with" crlf
+"  "?name". We’ll be covering a lot of ground in the next series of questions"crlf
+"  - what bothers you about "?name", how you’ve tried to solve the problem up"crlf
+"  to now, what you are feeling, and what complaints "?name" has about you.  "crlf
+"  Are you ready to continue?"crlf)
+   (assert (conintro (ask-question "(y,n): "(create$ y n)))))       
+
+(defrule PROJECTION::quit-module1
+   (conintro n)    
+=>
+ (printout t crlf "GoodBye!"crlf)
+   (loop-for-count 9 (pop-focus)))  
+     
+
+(defrule PROJECTION::question6
+	(conintro y)    
+	(name ?name)
+	=>
+	(printout t crlf "  Is there some quality or personal characteristic of " crlf
+		"  "?name " that really upsets you and is one of the main reasons" crlf
+		"  you are having a problem with " ?name " right now?" crlf)
+	(assert (question6 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule PROJECTION::question6-scores
+	(question6 y)
+	=>
+	(bind ?*IW* (+ ?*IW* 1)))
+	
+(defrule PROJECTION::question7
+      (question6 y)
+	(name ?name)
+	(gender ?sex)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  Please describe this quality by completing the sentence:" crlf
+		"  "?name " upsets me because he is so..." crlf "(Description): "))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  Please describe this quality by completing the sentence:" crlf
+		"  "?name " upsets me because she is so..." crlf "(Description): "))
+	(bind ?answer (read))
+	(assert (decrip ?answer)))
+	 
+
+(defrule PROJECTION::question8
+	(name ?name)
+	(decrip ?description)
+	=>
+	(printout t crlf "  Imagine yourself being as " ?description " as " ?name " is." crlf
+		"  How do you feel about that?" crlf
+		"  a. I would hate to be that way" crlf
+		"  b. I am that way sometimes but I don't like it about myself" crlf
+		"  c. I wish I could be more like that" crlf
+		"  d. I don't feel anything in particular" crlf)
+	(assert (question8 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+	 
+(defrule PROJECTION::question8-scores
+	(question8 ?x)
+	=>
+	(if (eq ?x a)
+	 	then
+	 	(bind ?*IW* (+ ?*IW* 2))
+		(bind ?*AB* (+ ?*AB* 1)))
+	(if (eq ?x (or b c))
+		then
+		(bind ?*IW* (+ ?*IW* 1)))
+	(if (eq ?x d)
+		then
+		(bind ?*IW* (- ?*IW* 1))))
+
+(defrule PROJECTION::question9
+	(name ?name)
+     ;(or (question6 n)(question8 ?))
+      (conintro y)    
+     	=>
+	(printout t crlf "  Who do you feel is mostly responsible for the problem "
+		"  you have with " ?name "?" crlf
+		"  a. Mostly " ?name crlf
+		"  b. Mostly me" crlf
+		"  c. Both of us about equally" crlf)
+     	(assert (question9 (ask-question "(a,b,c): "(create$ a b c)))))
+
+(defrule PROJECTION::question9-scores
+	(question9 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*IW* (+ ?*IW* 1))
+		(bind ?*AA* (+ ?*IW* 1)))
+	(if (eq ?x b)
+		then
+		(bind ?*AB* (+ ?*AB* 1))
+		(bind ?*TS* (+ ?*TS* 1))))
+	 
+
+(defrule PROJECTION::question11
+      ;(question9 ?)
+      (conintro y)    
+	(name ?name)
+	=>
+	(printout t crlf "  How have you tried to solve the problem with " crlf
+	"  "	?name " so far?" crlf
+		"  a. Thinking about it a lot and trying to change my feelings" crlf
+		"  b. Letting " ?name " know indirectly I'm upset." crlf
+		"  c. Telling " ?name " how I feel" crlf
+		"  d. None of the above" crlf)
+	(assert (question11 (ask-question "(a,b,c,d): "(create$ a b c d))))) 
+
+(defrule PROJECTION::question11-scores
+	(question11 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*CR* (+ ?*CR* 1))
+		(bind ?*TS* (+ ?*TS* 1))
+		(bind ?*AB* (+ ?*AB* 1))
+		(bind ?*ADD* (+ ?*ADD* 1)))
+	(if (eq ?x b)
+		then
+		(bind ?*CR* (+ ?*CR* 1))
+		(bind ?*CS* (+ ?*CS* 1))
+		(bind ?*TS* (+ ?*TS* 1))
+		(bind ?*SA* (+ ?*SA* 1)))
+	(if (eq ?x c)
+		then
+		(bind ?*IW* (+ ?*IW* 1))))
+	
+(defrule PROJECTION::question14
+	(question11 c)
+	(name ?name)
+	(gender ?sex)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  In my current problem with " ?name ", when " crlf
+		"  I told him what I'm upset about," crlf
+		"  a. I blurted it out suddenly" crlf
+		"  b. I prepared myself and then told him about it" crlf
+		"   without asking if he wanted to hear it" crlf
+		"  c. I asked " ?name " first if he was willing to discuss it" crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  In my current problem with " ?name ", when " crlf
+		"  I told her what I'm upset about," crlf
+		"  a. I blurted it out suddenly" crlf
+		"  b. I prepared myself and then told her about it" crlf
+		"   without asking if she wanted to hear it" crlf
+		"  c. I asked " ?name " first if she was willing to discuss it" crlf))
+	(assert (question14 (ask-question "(a,b,c): "(create$ a b c)))))
+
+(defrule PROJECTION::question14-scores
+	(question14 ?x)
+	=>
+	(if (eq ?x a)
+		then 
+		(bind ?*SA* (+ ?*SA* 1)))
+	(if (eq ?x b)
+		then 
+		(bind ?*SA* (+ ?*SA* 1))))	 
+	
+(defrule PROJECTION::question15
+	(name ?name)
+	(gender ?sex)
+	(question14 ?)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  In my current problem with " ?name ", when " crlf
+		"  I told him what I'm upset about," crlf
+		"  a. I did it at a time I chose, which I felt was good for me" crlf
+		"  b. I did it at a time I chose, which I believed was good for him" crlf
+		"  c. I asked " ?name " to choose a time to talk about it which was good" crlf
+		"   for him" crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  In my current problem with " ?name ", when " crlf
+		"  I told her what I'm upset about," crlf
+		"  a. I did it at a time I chose, which I felt was good for me" crlf
+		"  b. I did it at a time I chose, which I believed was good for her" crlf
+		"  c. I asked " ?name " to choose a time to talk about it which was good" crlf
+		"   for her" crlf))
+	(assert (question15 (ask-question "(a,b,c): "(create$ a b c)))))
+	 
+(defrule PROJECTION::question15-scores
+	(question15 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*SA* (+ ?*SA* 1)))
+	(if (eq ?x b)
+		then
+		(bind ?*SA* (+ ?*SA* 1))))
+	 
+
+(defrule PROJECTION::question16
+      (question15 ?)
+	(name ?name)
+	(gender ?sex)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  In my current problem with " ?name " when I" crlf
+		"  told him what I was upset about," crlf
+		"  a. I tried to say it very carefully so he wouldn't be" crlf
+		"   hurt or angry" crlf
+		"  b. I said it bluntly, but I felt " ?name " was OK with" crlf
+		"   the way I said it" crlf
+		"  c. I said it bluntly, and I think " ?name " felt offended" crlf
+		"   or angry by the way I said it" crlf
+		"  d. Before I said anything, I asked " ?name " for suggestions" crlf
+		"   about how to talk about it so that he wouldn't be" crlf
+		"   too hurt or offended" crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  In my current problem with " ?name " when I" crlf
+		"  told her what I was upset about," crlf
+		"  a. I tried to say it very carefully so she wouldn't be" crlf
+		"   hurt or angry" crlf
+		"  b. I said it bluntly, but I felt " ?name " was OK with" crlf
+		"   the way I said it" crlf
+		"  c. I said it bluntly, and I think " ?name " felt offended" crlf
+		"   or angry by the way I said it" crlf
+		"  d. Before I said anything, I asked " ?name " for suggestions" crlf
+		"   about how to talk about it so that she wouldn't be" crlf
+		"   too hurt or offended" crlf))
+	(assert (question16 (ask-question "(a,b,c,d): "(create$ a b c d)))))
+	 
+
+(defrule PROJECTION::question16-scores
+	(question16 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*CS* (+ ?*CS* 1)))
+	(if (eq ?x c)
+		then
+		(bind ?*CS* (+ ?*CS* 1)))
+	(if (eq ?x b)
+		then
+		(bind ?*CS* (+ ?*CS* 1)))
+	(if (eq ?x d)
+		then
+		(bind ?*CS* (- ?*CS* 1))))
+;***************************************
+;       HURT
+;***************************************
+
+(defmodule HURT (import MAIN ?ALL) 
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+(defrule HURT::question20
+	;(intro ok)
+	(name ?name)
+	=>
+	(printout t crlf "  When you think about your problem with " ?name ", do you" crlf
+		"  a. Feel you should be more sympathetic to " ?name "'s point of view" crlf
+		"   than you are" crlf
+		"  b. Feel you are sympathetic to " ?name "'s point of view" crlf
+		"   to about the right extent" crlf
+		"  c. Feel you don't understand " ?name "'s point of view" crlf
+		"  d. Feel you are overly sympathetic with " ?name "'s point of view" crlf)
+	(assert (question20 (ask-question "(a,b,c,d): " (create$ a b c d)))))
+
+(defrule HURT::question20-scores
+	(question20 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*TS* (+ ?*TS* 1)))
+	(if (eq ?x c)
+		then 
+		(bind ?*AA* (+ ?*AA* 1))
+		(bind ?*TS* (- ?*TS* 1)))
+	(if (eq ?x d)
+		then 
+		(bind ?*TS* (+ ?*TS* 2))))
+
+(defrule HURT::question23
+	;(intro ok)
+	(name ?name)
+	=>
+	(printout t crlf "  Which best describes the strongest feeling you " crlf
+		"  are having in your problem awith " ?name "?" crlf
+		"  a. Angry" crlf
+		"  b. Guilty" crlf
+		"  c. Hurt" crlf
+		"  d. Afraid" crlf
+		"  e. I'm not sure what I'm feeling" crlf
+		"  f. None of the above" crlf)
+	(assert (question23 (ask-question "(a,b,c,d,e,f): "(create$ a b c d e f)))))
+
+
+(defrule HURT::question23-scores
+	(question23 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*H* (+ ?*H* 1))
+		(assert (ask q24)))
+	(if (eq ?x b)
+		then
+		(bind ?*TS* (+ ?*TS* 1))
+		(bind ?*AB* (+ ?*AB* 1))
+		(assert (ask q27)))
+	(if (eq ?x c)
+		then 
+		(assert (ask q25)))
+	(if (eq ?x d)
+		then 
+		(bind ?*AB* (+ ?*AB* 1))
+		(assert (ask q27)))
+	(if (eq ?x e)
+		then 
+		(bind ?*AB* (+ ?*AB* 1))
+		(bind ?*TS* (+ ?*TS* 1))
+		(assert (ask q27)))
+	(if (eq ?x f)
+		then 
+		(assert (ask q27))))
+
+(defrule HURT::question24
+	?answered <- (ask q24)
+	(name ?name)
+	=>
+	(printout t crlf "  Have you told " ?name " you are angry?" crlf)
+	(assert (question24 (ask-question "(y, n): "(create$ y n ))))
+	(retract ?answered))
+
+(defrule HURT::question24-scores
+	(question24 ?x)
+	=>
+	(if (eq ?x n)
+		then
+		(bind ?*TS* (+ ?*TS* 1)))
+	(assert (ask q27)))
+
+(defrule HURT::question25
+	?answered <- (ask q25)
+	(name ?name)
+	=>
+	(printout t crlf "  Have you told " ?name " you are hurt? " crlf)
+	(assert (question25 (ask-question "(y, n): "(create$ y n))))
+	(retract ?answered))
+
+(defrule HURT::question25-scores
+	(question25 ?x)
+	=>
+	(if (eq ?x n) 		
+              then
+		(bind ?*H* (+ ?*H* 1))
+		(assert (ask q27)))
+	(if  (or (eq ?x y) (eq ?x y))
+		then
+		(assert (ask q26))))
+
+(defrule HURT::question26
+	(name ?name)
+	(question25 y)
+	?answered <- (ask q26)
+	(gender ?sex)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  How did " ?name " respond when you told him you were hurt?" crlf
+		"  a. He seemed sympathetic and tried to make things better" crlf
+		"  b. He was irritated and told me I am too sensitive" crlf
+		"  c. He seemed to feel guilty, but things continued to be tense" crlf
+		"   between us" crlf
+		"  d. He seemed to get more distant from me" crlf
+		"  e. He got angry" crlf))
+
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  How did " ?name " respond when you told her you were hurt?" crlf
+		"  a. She seemed sympathetic and tried to make things better" crlf
+		"  b. She was irritated and told me I am too sensitive" crlf
+		"  c. She seemed to feel guilty, but things continued to be tense" crlf
+		"   between us" crlf
+		"  d. She seemed to get more distant from me" crlf
+		"  e. She got angry" crlf))
+
+	(assert (question26 (ask-question "(a,b,c,d,e): "(create$ a b c d e))))
+	(retract ?answered))
+	
+(defrule HURT::question26-scores
+	(question26 ?x)
+	=>
+	(if (eq ?x a) 
+		then
+		(bind ?*H* (- ?*H* 2)))
+	(if (eq ?x b) 
+		then
+		(bind ?*H* (+ ?*H* 3)))
+	(if (eq ?x c) 
+		then
+		(bind ?*H* (+ ?*H* 1)))
+	(if (eq ?x d) 
+		then
+		(bind ?*H* (+ ?*H* 2)))
+	(if (eq ?x e) 
+		then
+		(bind ?*H* (+ ?*H* 3)))	
+	(assert (ask q27)))
+
+(defrule HURT::question27
+	(name ?name)
+       (not (quest27 fired))
+       (or (question25 n)(question26 ?)(question24 ?)(question23 b)(question23 d)
+	(question23 e)(question23 f))
+	?answered <- (ask q27)
+	(gender ?sex)
+	=>
+        (assert(quest27 fired))
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  In your relationship with " ?name ", how" crlf
+		"  have you handled it when you have felt hurt by him in the past?" crlf
+		"  a. I've hardly ever felt that way" crlf
+		"  b. I've gotten angry and let him know I'm mad" crlf
+		"  c. I've gotten angry, but I haven't let him know" crlf
+		"  d. I've told " ?name " I was hurt" crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  In your relationship with " ?name ", how" crlf
+		"  have you handled it when you have felt hurt by her in the past?" crlf
+		"  a. I've hardly ever felt that way" crlf
+		"  b. I've gotten angry and let her know I'm mad" crlf
+		"  c. I've gotten angry, but I haven't let her know" crlf
+		"  d. I've told " ?name " I was hurt" crlf))
+	(assert (question27 (ask-question "(a,b,c,d): "(create$ a b c d))))
+	(retract ?answered))
+
+(defrule HURT::question27-scores
+	(question27 ?x)
+	=>
+	(if (eq ?x a) 
+		then
+		(bind ?*H* (+ ?*H* 1)))
+	(if (eq ?x b) 
+		then
+		(bind ?*H* (+ ?*H* 2)))
+	(if (eq ?x c) 
+		then
+		(bind ?*H* (+ ?*H* 3)))
+	(if (eq ?x d) 
+		then
+		(assert (ask q28))))
+
+(defrule HURT::question28
+        (question27 d)
+	(name ?name)
+	?answered <- (ask q28)
+	(gender ?sex)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  When you've felt hurt by " ?name ", and told" crlf
+		"  him about it, how did he usually respond?" crlf
+		"  a. He seemed sympathetic and tried to make things better" crlf
+		"  b. He was irritated and told me I am too sensitive" crlf
+		"  c. He seemed to feel guilty, but things continued to be tense" crlf
+		"   between us" crlf
+		"  d. He seemed to get more distant from me" crlf
+		"  e. He got angry" crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  When you've felt hurt by " ?name ", and told" crlf
+		"  her about it, how did he usually respond?" crlf
+		"  a. She seemed sympathetic and tried to make things better" crlf
+		"  b. She was irritated and told me I am too sensitive" crlf
+		"  c. She seemed to feel guilty, but things continued to be tense" crlf
+		"   between us" crlf
+		"  d. She seemed to get more distant from me" crlf
+		"  e. She got angry" crlf))
+	(assert (question28 (ask-question "(a,b,c,d,e): "(create$ a b c d e))))
+	(retract ?answered))
+
+(defrule HURT::question28-scores
+	(question28 ?x)
+	=>
+	(if (eq ?x a) 
+		then
+		(bind ?*H* (- ?*H* 2)))
+	(if (eq ?x b) 
+		then
+		(bind ?*H* (+ ?*H* 3)))
+	(if (eq ?x c) 
+		then
+		(bind ?*H* (+ ?*H* 1)))
+	(if (eq ?x d) 
+		then
+		(bind ?*H* (+ ?*H* 2)))
+	(if (eq ?x e) 
+		then
+		(bind ?*H* (+ ?*H* 3))))
+
+
+;***************************************
+;       ACCUSATIONS
+;***************************************
+
+(defmodule ACCUSATIONS (import MAIN ?ALL) (import PROJECTION ?ALL)
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+(defrule ACCUSATIONS::question35
+      (question11 c)
+	(name ?name)
+	=>
+	(printout t crlf "  When I tried to talk about this problem with " ?name "," crlf
+		"  a. I felt satisfied by this conversation" crlf
+		"  b. I felt frustrated or unsatisfied by the conversation" crlf
+		"  c. I haven't tried to talk about it" crlf)
+	(assert (question35 (ask-question "(a,b,c): "(create$ a b c)))))
+
+(defrule ACCUSATIONS::question35-scores
+	(question35 ?x)
+	=>
+	(if (eq ?x c)
+		then
+		(bind ?*CR* (+ ?*CR* 3)))) ;exits the question chain
+	;(if (eq ?x b)
+	;	then
+	;	(assert (ask q35))))
+	;nothing if (eq ?x a), exit this question chain
+
+(defrule ACCUSATIONS::question36
+	;?answered <- (ask q35)
+      (question35 b)
+	=>
+	(printout t crlf "  One reason I felt unsatisfied by the conversation is that" crlf
+		"  I didn't really say what was on my mind. "  crlf
+		"  a. agree" crlf
+		"  b. disagree" crlf )
+	(assert (question36 (ask-question "(a,b): "(create$ a b)))))
+	;(retract ?answered))
+
+(defrule ACCUSATIONS::question36-scores
+	(question36 ?x)
+	=>
+	(if (eq ?x a) 
+		then
+		(bind ?*TS* (+ ?*TS* 2))))
+		;(assert (ask q31))) 
+	;(if(eq ?x b) 
+		;then
+		;(assert (ask q37))))
+
+(defrule ACCUSATIONS::question31
+	;?answered <- (ask q31)
+      (question36 a)
+	(name ?name)
+	=>
+	(printout t crlf "  I didn't really say what was on my mind with " ?name " because," crlf
+		"  a. I'd like to, but I don't know the best way to do it" crlf
+		"  b. I'm not sure I want to state my position strongly with " ?name crlf)
+	(assert (question31 (ask-question "(a,b): "(create$ a b)))))
+	;(retract ?answered))
+
+(defrule ACCUSATIONS::question31-scores
+	(question31 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*CS* (+ ?*CS* 1))
+		(bind ?*TS* (+ ?*TS* 1))))
+		;(assert (ask q37))) 
+	;(if (eq ?x b)
+	;	then
+	;	(assert (ask q32))))
+
+(defrule ACCUSATIONS::question32
+	;?answered <- (ask q32)
+      (question31 b)
+	(name ?name)
+	=>
+	(printout t crlf "  I'm not sure I want to state my position strongly with " ?name " because," crlf
+		"  a. I don't know if I have a right to feel the way I do" crlf
+		"  b. If I come on too strong, " ?name " won't be able to handle it" crlf
+		"  c. I'm afraid that " ?name " will punish me or take revenge in some way" crlf)
+	(assert (question32 (ask-question "(a,b,c): "(create$ a b c)))))
+	;(retract ?answered))
+
+(defrule ACCUSATIONS::question32-scores
+	(question32 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*AB* (+ ?*AB* 2))
+		(bind ?*TS* (+ ?*TS* 1)))
+
+	(if (eq ?x b)
+		then
+		(bind ?*TS* (+ ?*TS* 1))
+		(bind ?*TPS* (+ ?*TPS* 1)))
+	(if (eq ?x c)
+		then 
+		(bind ?*AB* (+ ?*AB* 3))))
+	;(assert (ask q37)))
+
+(defrule ACCUSATIONS::question37
+	;?answered <- (ask q37)
+      (not (quest37 fired))
+      (or (question31 a)(question36 b))
+	(name ?name)
+	(gender ?sex)
+	=>
+      (assert(quest37 fired))
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  One reason I felt unsatisfied by the conversation I had" crlf
+		"  with " ?name " is that he was defensive and couldn't hear what I was" crlf
+		"  saying to him." crlf
+		"  a. agree" crlf
+		"  b. disagree" crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  One reason I felt unsatisfied by the conversation I had" crlf
+		"  with " ?name " is that she was defensive and couldn't hear what I was" crlf
+		"  saying to her. " crlf
+		"  a. agree" crlf
+		"  b. disagree" crlf))
+	(assert (question37 (ask-question "(a, b): "(create$ a b)))))
+	;(retract ?answered))
+
+(defrule ACCUSATIONS::question37-scores
+	(question37 ?x)
+	=>
+        ;(assert (ask q38))
+	(if  (eq ?x a) 
+		then
+		(bind ?*CS* (+ ?*CS* 1))))
+
+(defrule ACCUSATIONS::question38
+	;?answered <- (ask q38)
+      (question37 ?)
+	(name ?name)
+	=>
+	(printout t crlf "  One reason I felt unsatisfied by the conversation is that" crlf
+	"  "	?name " blamed me for some things and I can't accept the blame " crlf
+        "  a. agree" crlf
+	"  b. disagree" crlf)
+	(assert (question38 (ask-question "(a, b): "(create$ a b)))))
+	;(retract ?answered))
+
+(defrule ACCUSATIONS::question38-scores
+	(question38 ?x)
+	=>
+	(if(eq ?x a)
+		then
+		(bind ?*AA* (+ ?*AA* 2))))
+		;(assert (ask q39))))
+
+(defrule ACCUSATIONS::question39
+	;?answered <- (ask q39)
+      (question38 a)
+	(name ?name)
+	(gender ?sex)
+	=>
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  I can't accept " ?name "'s blame because" crlf
+		"  a. What he said about me isn't accurate" crlf
+		"  b. What he said about me is accurate, but he used it to avoid" crlf
+		"   accepting some of the blame himself" crlf
+		"  c. What he said about me is accurate, but I was too defensive at the" crlf
+		"   time to admit it" crlf
+		"  d. I believe people shouldn't blame one another but need to accept other" crlf
+		"   people the way they are" crlf
+		"  e. None of the above" crlf))
+ 	(if (eq ?sex female)
+		then
+		(printout t crlf "  I can't accept " ?name "'s blame because" crlf
+		"  a. What she said about me isn't accurate" crlf
+		"  b. What she said about me is accurate, but she used it to avoid" crlf
+		"   accepting some of the blame herself" crlf
+		"  c. What she said about me is accurate, but I was too defensive at the" crlf
+		"   time to admit it" crlf
+		"  d. I believe people shouldn't blame one another but need to accept other" crlf
+		"   people the way they are" crlf
+		"  e. None of the above" crlf))
+	(assert (question39 (ask-question "(a,b,c,d,e): "(create$ a b c d e)))))
+	;(retract ?answered))
+
+(defrule ACCUSATIONS::question39-scores
+	(question39 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*AA* (+ ?*AA* 2)))
+	(if (eq ?x b)
+		then
+		(bind ?*TS* (+ ?*TS* 1)))
+	(if (eq ?x c)
+		then 
+		(bind ?*AA* (+ ?*AA* 1)))
+	(if (eq ?x d)
+		then 
+		(bind ?*AA* (+ ?*AA* 3))))
+
+(defrule ACCUSATIONS::question33
+        (or(question38 b)(question35 a)(question39 ?)(question11 ?))
+      (not  (question33 ?))
+	(name ?name)
+	(gender ?sex)
+	=>
+      (assert (quest33 fired))
+	(if (eq ?sex male)
+		then
+		(printout t crlf "  If I come on too strong about stating my position with " ?name "," crlf
+		"  he won't be able to handle it because he's not good at speaking up " crlf
+		"  for himself " crlf))
+	(if (eq ?sex female)
+		then
+		(printout t crlf "  If I come on too strong about stating my position with " ?name "," crlf
+		"  she won't be able to handle it because she's not good at speaking up " crlf
+		"  for herself " crlf))
+	(printout t "  a. agree" crlf
+		"  b. disagree" crlf)
+	(assert (question33 (ask-question "(a, b): "(create$ a b)))))
+
+(defrule ACCUSATIONS::question33-scores
+	(question33 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*TPS* (+ ?*TPS* 2))))
+		
+(defrule ACCUSATIONS::question34
+          (or(question38 b)(question35 a)(question39 ?)(question11 ?))
+      (not  (question34 ?))
+
+	(name ?name)
+	=>
+	(printout t crlf "  If I come on too strong about stating my position, " ?name crlf
+		"  will get angry or scared and just go away " crlf
+         "  a. agree" crlf
+	"  b. disagree" crlf)
+      (assert (question34 (ask-question "(a, b): "(create$ a  b)))))
+
+(defrule ACCUSATIONS::question34-scores
+	(question34 ?x)
+	=>
+	(if (eq ?x a)
+		then
+		(bind ?*TPS* (+ ?*TPS* 2))))
+
+;;****************************
+;;  BODYSYMPTOM
+;;****************************
+ 
+(defmodule BODYSYMPTOM (export ?ALL)(import MAIN ?ALL)  
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+
+(defrule BODYSYMPTOM::init-message
+  (declare (salience 10))
+ (name ?name)
+=>
+  (printout t crlf "  As you probably know, our minds and bodies are connected in mysterious ways."crlf
+"  If you are currently suffering from a medical problem that appeared"crlf
+"  recently, it may give us some important clues about ways to solve your"crlf
+"  problem with "?name".  Would you like to continue?" crlf)
+ (assert (intro (ask-question "(y,n): "(create$ y n)))))
+
+(defrule BODYSYMPTOM::quit
+(intro n)
+=>
+  (loop-for-count 9 (pop-focus)))  
+
+(defrule BODYSYMPTOM::go-on
+ (or (intro n)(question66 n)(question67 e)(question68 c)(question69-scores n))
+=>
+  (loop-for-count 1 (pop-focus)))  
+    
+   
+(defrule BODYSYMPTOM::question66
+   (intro y)
+=>
+  (printout t  crlf "  Do you have a medical condition or a body pain/problem that either" crlf
+           "  appeared recently or has gotten worse recently? " crlf)
+  (assert (question66 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule BODYSYMPTOM::question66-score
+ (declare (salience 10))
+ (question66 y)
+=>
+ (bind ?*BS* (+ ?*BS* 1)))
+
+(defrule BODYSYMPTOM::question67
+ (question66 y)
+=>
+ (printout t crlf "  Does this medical condition seem to get worse when you are stressed out" crlf
+           "  abut the relationship problem?" crlf
+    "  a. Yes" crlf
+    "  b. Maybe" crlf
+    "  c. I don't think so" crlf
+    "  d. No" crlf
+    "  e. I don't think that this medical condition is related to my " crlf
+    "  relationship problem in any way" crlf)
+  (assert (question67 (ask-question "(a,b,c,d,e):  "(create$ a b c d e )))))
+
+(defrule BODYSYMPTOM::question67/68-scores
+ (or (question67 ?x)(question68 ?x))
+=>
+ (if (eq ?x a)
+  then
+  (bind ?*BS* (+ ?*BS* 2)))
+ else
+ (if (eq ?x b)
+  then
+ (bind ?*BS* (+ ?*BS* 1))))
+ 
+(defrule BODYSYMPTOM::question68
+ (name ?name)
+ (or (question67 a)(question67 b)(question67 c)(question67 d))
+=>
+ (printout t crlf "  Would you like to explore a possible relationship between your medical" crlf
+         "  condition/body problem and the current conflict you are having with " ?name crlf
+    "  a. Yes" crlf
+    "  b. Maybe" crlf
+    "  c. No" crlf)   
+  (assert (question68 (ask-question "(a,b,c):  "(create$ a b c)))))
+
+(defrule BODYSYMPTOM::question69
+ (or (question68 a)(question68 b))
+=>
+ (printout t  crlf "  Does this problem cause you physical pain or discomfort? " crlf)
+  (assert (question69 (ask-question "(y,n): "(create$ y n)))))
+
+(defrule BODYSYMPTOM::question69-scores
+ (question69 ?x)
+=>
+ (if (eq ?x y)
+  then
+  (bind ?*BS* (+ ?*BS* 1)))
+ else
+ (if (eq ?x n)
+  then
+(pop-focus)) )      
+ 
+(defrule BODYSYMPTOM::question70-e
+ (question70 e)
+=>
+ (pop-focus))       
+ 
+(defrule BODYSYMPTOM::question70
+ (question69 y)
+=>
+ (printout t crlf"  Is this pain or discomfort best described as:" crlf
+ "  a. Sharp (like a knife)" crlf
+ "  b. Deep or penetrating" crlf
+ "  c. Pounding(like a hammer)" crlf
+ "  d. Insistent" crlf
+ "  e. None of the above" crlf)
+  (assert (question70 (ask-question "(a,b,c,d,e): "(create$ a b c d e)))))
+
+(defrule BODYSYMPTOM::question70/71
+  (name ?name)
+  (question70 ?x)
+  (not (question70 e))
+=>
+  (bind ?*BS* (+ ?*BS* 2))
+  (if (eq ?x a)
+   then 
+   (bind $?quality Sharp))
+   else
+  (if (eq ?x b)
+   then
+   (bind $?quality Deep or Penetrating))
+  else
+  (if (eq ?x c)
+   then
+   (bind $?quality Pounding))
+  else
+  (if (eq ?x d)
+    then
+   (bind $?quality Insistent))
+  (printout t crlf"  Do you think it would be useful to be more "$?quality crlf
+  " with " ?name crlf
+  "  a. Yes " crlf
+  "  b. Maybe - it's an interesting idea" crlf
+  "  c. No " crlf
+  "  d. I don't understand this question" crlf)
+  (assert (question71 (ask-question "(a,b,c,d):  "(create$ a b c d ))))
+  (assert (quality $?quality)))
+
+  
+(defrule BODYSYMPTOM::question71-scores
+ (question71 ?x)
+=>
+ (if (eq ?x a)
+   then 
+ (bind ?*BS* (+ ?*BS* 3)))
+  else
+ (if (eq ?x b)
+  then
+ (bind ?*BS* (+ ?*BS* 2)))
+  else
+ (if (or (eq ?x c)(eq ?x d))
+  then
+ (bind ?*BS* (- ?*BS* 3))))
+  
+(defrule BODYSYMPTOM::recommend
+ (name ?name)
+ (quality $?quality)
+ (or (question71 a)(question71 b))
+=>
+ (printout t crlf"  You should be more "$?quality " with " ?name))
+
+
+;;****************************
+;; 	RECOMMENDATIONS
+;;****************************
+ 
+(defmodule RECOMMENDATIONS (import MAIN ?ALL) (import BODYSYMPTOM ?ALL)
+    (import MAIN defglobal CR CS TS AA IW AB SA ADD H TPS BS))
+
+(defrule RECOMMENDATIONS::recom
+ (declare (salience 230))
+ (uname ?uname)
+ (name ?name)
+=>
+ (printout t crlf "  Congratulations "?uname"!  You’ve completed all the questions.  Based on the"crlf
+"  information you‘ve given, I can identify several skills that"crlf
+"  would be very useful for you to develop in order to solve your"crlf
+"  conflict with "?name"." crlf crlf
+"  Do you want me to continue and provide recommendations?" crlf)
+(assert (recom (ask-question "(y,n):  "(create$ y n )))))
+
+(defrule RECOMMENDATIONS::exit
+ (declare (salience 230))
+ (recom n)
+ (uname ?uname)
+ =>
+ (printout t crlf " Goodbye, "?uname"!"crlf)
+ (pop-focus))
+
+(defrule RECOMMENDATIONS::ask-again
+ (declare (salience 230))
+ ?p<-(ask again)
+ =>
+ (printout t crlf " Are you ready to continue?"crlf)
+ (retract ?p)
+ (assert (recom (ask-question "(y,n):  "(create$ y n )))))
+
+
+(defrule RECOMMENDATIONS::StrongAddiction
+ (declare (salience 220))
+ ?f<-(recom y)
+ (name ?name)
+(not (fired add ))
+
+=>
+ (if (> ?*ADD* 21)
+  then
+ (printout t crlf " I believe that you have wishes and dreams for your relationship with " ?name crlf
+" that are very deep and very important to you. You may not know consciously what "crlf
+" those dreams are, or how they are affecting your relationship with " ?name " I "crlf
+" strongly recommend that you go to the VISIONS section and follow the "crlf
+" instructions there, in order to learn more about your wishes and "  ?name crlf
+" dreams and how they impact your relationship with "?name" and with other " crlf
+" people who are important to you" crlf)
+(assert (fired add ))
+(assert (ask again))
+(retract ?f)))
+
+(defrule RECOMMENDATIONS::ModAddiction
+ (declare (salience 110))
+ (name ?name)
+ ?f<-(recom y)
+(not (fired add ))
+=>
+ (if ( and (> ?*ADD* 10)(< ?*ADD* 22))
+  then
+ (printout t crlf " I believe that you have wishes and dreams for your relationship with " ?name crlf
+" that are very deep and very important to you. You may not know consciously what " crlf
+" those dreams are, or how they are affecting your relationship with " ?name " You "   crlf
+" may find it helpful to go to the VISIONS section and follow the instructions there," crlf
+" in order to learn more about your wishes and dreams and how they impact your"crlf
+" relationship with  "  ?name " and with other people who are important to you" crlf)
+(assert (fired add ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::StrongAbuse
+ (declare (salience 210))
+ (name ?name)
+?f<-(recom y)
+(not(fired ab ))
+=>
+(if (> ?*AB* 16)
+then
+(printout t crlf " I believe that some experiences you have had in the past, in which you have" crlf
+" felt overpowered and victimized, are making it more difficult for you " crlf 
+" to resolve your current problems with " ?name ".  I strongly recommend" crlf 
+" that you go to the section on SELF-DEFENSE and follow the instructions there. " crlf 
+" You may also find it very helpful to work on your past experiences with a" crlf
+" qualified counselor or psychotherapist." crlf)
+(assert (fired ab ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+(defrule RECOMMENDATIONS::ModAbuse 
+ (declare (salience 100))
+ (name ?name)
+?f<-(recom y)
+(not (fired ab ))
+=>
+(if ( and (< ?*AB* 17)(> ?*AB* 8))
+then
+(printout t crlf " I believe that some experiences you have had in the past, in which you have" crlf
+" felt overpowered and victimized, are making it more difficult for you " crlf 
+" to resolve your current problems with " ?name ".  You may find it helpful " crlf 
+" to go to the section on SELF-DEFENSE and follow the instructions there. " crlf 
+" You may also find it very helpful to work on your past experiences with a" crlf
+" qualified counselor or psychotherapist." crlf)
+(assert (fired ab ))
+(assert (ask again))
+(retract ?f)))
+
+(defrule RECOMMENDATIONS::StrProjection-male
+ (declare (salience 200))
+ (name ?name)
+ (gender male)
+?f<-(recom y)
+(not (fired IW ))
+=>
+(if (> ?*IW* 6)
+then
+(printout t crlf " Sometimes it is most effective to talk to the other person in order to work " crlf
+" out a relationship conflict.  Other times it can be more useful to resolve" crlf
+" the problem, at least partially, inside yourself. I believe that a significant"  crlf
+" part of your current problem with " ?name " is due to the fact that he"crlf
+" reminds you of some aspects of yourself that you don’t like very much. " crlf
+" I strongly recommend that you go to the INNER WORK section and follow the " crlf
+" instructions there, in order to discover how " ?name " may be acting as "crlf
+" a mirror for you in this current situation. "crlf)
+(assert (fired IW ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+(defrule RECOMMENDATIONS::StrProjection-female
+ (declare (salience 200))
+ (name ?name)
+ (gender female)
+?f<-(recom y)
+(not (fired IW ))
+=>
+(if (> ?*IW* 6)
+then
+(printout t crlf " Sometimes it is most effective to talk to the other person in order to work " crlf
+" out a relationship conflict.  Other times it can be more useful to resolve" crlf
+" the problem, at least partially, inside yourself. I believe that a significant"  crlf
+" part of your current problem with " ?name " is due to the fact that she"crlf
+" reminds you of some aspects of yourself that you don’t like very much. " crlf
+" I strongly recommend that you go to the INNER WORK section and follow the " crlf
+" instructions there, in order to discover how " ?name " may be acting as "crlf
+" a mirror for you in this current situation. "crlf)
+(assert (fired IW ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+
+(defrule RECOMMENDATIONS::ModProjection-male
+ (declare (salience 90))
+ (name ?name)
+ (gender male)
+?f<-(recom y)
+(not (fired IW ))
+=>
+(if (and (> ?*IW* 2)(< ?*IW* 7))
+then
+(printout t crlf " Sometimes it is most effective to talk to the other person in order to work " crlf
+" out a relationship conflict.  Other times it can be more useful to resolve" crlf
+" the problem, at least partially, inside yourself. I believe that a significant"  crlf
+" part of your current problem with " ?name " is due to the fact that he" crlf
+" reminds you of some aspects of yourself that you don’t like very much. " crlf
+" you may find it useful to go to the INNER WORK section and follow the " crlf
+" instructions there, in order to discover how " ?name " may be acting as "crlf
+" a mirror for you in this current situation. "crlf)
+(assert (fired IW ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+(defrule RECOMMENDATIONS::ModProjection-female
+ (declare (salience 90))
+ (name ?name)
+ (gender female)
+?f<-(recom y)
+(not (fired IW ))
+=>
+(if (and (> ?*IW* 2)(< ?*IW* 7))
+then
+(printout t crlf " Sometimes it is most effective to talk to the other person in order to work " crlf
+" out a relationship conflict.  Other times it can be more useful to resolve" crlf
+" the problem, at least partially, inside yourself. I believe that a significant"  crlf
+" part of your current problem with " ?name " is due to the fact that she"crlf
+" reminds you of some aspects of yourself that you don’t like very much. " crlf
+" you may find it useful to go to the INNER WORK section and follow the " crlf
+" instructions there, in order to discover how " ?name " may be acting as "crlf
+" a mirror for you in this current situation. "crlf)
+(assert (fired IW ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+
+
+(defrule RECOMMENDATIONS::StrBodySymptom1
+ (declare (salience 190))
+(not (fired bs ))
+ (name ?name)
+?f<-(recom y)
+
+=>
+(if (> ?*BS* 6)   
+then
+(printout t crlf "  I believe your current medical condition or body problem may be related to" crlf 
+"  stress you feel because of your problems with " ?name". I also think that working "crlf
+"  with the body problem could provide you with some very interesting and useful  "crlf
+"  information that would help you resolve your problem with "?name".  This work "crlf
+"  would involve answering questions and doing some guided exercises involving "crlf
+"  visualization, movement or focussingon the physical sensations in your body.  "crlf
+"  I recognize that some people are not comfortabledoing this kind of work.  "crlf
+"  However, if you are willing to explore this kind of work with your body "crlf
+"  problem, I strongly recommend that you go to the BODYPROBLEMS section "crlf
+"  and follow the instructions there."crlf)
+(assert (fired bs ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::StrBodySymptom2
+ (declare (salience 190))
+(not (fired bs ))
+(question68 a)
+(question69 n)  
+ (name ?name)
+?f<-(recom y)
+ =>
+(printout t crlf "  I believe your current medical condition or body problem may be related to" crlf 
+"  stress you feel because of your problems with " ?name". I also think that working "crlf
+"  with the body problem could provide you with some very interesting and useful  "crlf
+"  information that would help you resolve your problem with "?name".  This work "crlf
+"  would involve answering questions and doing some guided exercises involving "crlf
+"  visualization, movement or focussingon the physical sensations in your body.  "crlf
+"  I recognize that some people are not comfortabledoing this kind of work.  "crlf
+"  However, if you are willing to explore this kind of work with your body "crlf
+"  problem, I strongly recommend that you go to the BODYPROBLEMS section "crlf
+"  and follow the instructions there."crlf)
+(assert (fired bs ))
+(assert (ask again))
+(retract ?f))
+
+(defrule RECOMMENDATIONS::StrBodySymptom3
+ (declare (salience 185))
+(or (question71 a)(question71 b))
+ (quality $?quality) 
+ (name ?name)
+?f<-(recom y)
+
+ =>
+(printout t crlf "  Based on your answers to the questions about your body problem, I strongly" crlf 
+"  recommend that you find a way to be more "$?quality" in your relationship "crlf
+"  with " ?name"! "crlf crlf
+"  If you are not sure what that means, or exactly how to do it, you may find it "crlf
+"  helpful to go to the BODY PROBLEMS section and follow the instructions there "crlf
+"  in order to work in greater depth on your body problem.  This work could "crlf
+"  involve visualization, movement or focussing on your physical sensations. "crlf
+"  After you have worked with the BODY PROBLEMS section  - or if you choose "crlf
+"  not to do that  --  I strongly recommend that you go to TAKING YOUR SIDE" crlf
+"  and follow the instructions there."crlf)
+(assert (fired bs ))
+(assert (ask again))
+(retract ?f))
+
+
+ 
+
+(defrule RECOMMENDATIONS::ModBodySymptom
+ (declare (salience 80))
+?f<-(recom y)
+(not(fired bs ))
+ (name ?name)
+=>
+(if (and(> ?*BS* 1)( < ?*BS* 7))
+then
+(printout t crlf "  I believe your current medical condition or body problem may be related to" crlf 
+"  stress you feel because of your problems with " ?name".  I also think that working with"crlf
+"  the body problem could provide you with some very interesting and useful information "crlf
+"  that would help you resolve your problem with "?name".  This work would involve answering "crlf
+"  questions and doing some guided exercises involving visualization, movement or focussing"crlf
+"  on the physical sensations in your body.  I recognize that some people are not comfortable"crlf
+"  doing this kind of work.  However, if you are willing to explore this kind of work with"crlf
+"  your body problem, you may find it very helpful to go to the BODYPROBLEMS section  and"crlf
+"  follow the instructions there."crlf)
+(assert (fired bs ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+
+(defrule RECOMMENDATIONS::StrConflRes
+ (declare (salience 180))
+ (name ?name)
+?f<-(recom y)
+(not (fired cr ))
+=>
+(if (> ?*CR* 2)   
+then
+(printout t crlf "  I think that some of your beliefs about conflict and conflict resolution are"crlf
+"  making it more difficult for you to resolve your current problems with " ?name"." crlf 
+"  I strongly recommend that you go to the CONFLICT RESOLUTION section and follow  " crlf
+"  the instructions there, in order to get acquainted with a new perspective on  "crlf
+"  conflict resolution."crlf )
+(assert (fired cr ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::ModConflRes
+ (declare (salience 70))
+ (name ?name)
+?f<-(recom y)
+(not (fired cr ))
+=>
+(if (and (> ?*CR* 0) (< ?*CR* 3))  
+then
+(printout t crlf "  I think that some of your beliefs about conflict and conflict resolution "crlf
+"  may be making it more difficult for you to resolve your current problems with " crlf 
+"  "?name". I think you will find it very helpful to go to the CONFLICT RESOLUTION   " crlf
+"  section and follow the instructions there, in order to get acquainted with "crlf
+"  a new perspective on conflict resolution."crlf )
+(assert (fired cr ))
+(assert (ask again))
+(retract ?f)))
+
+(defrule RECOMMENDATIONS::StrSetAgreem-male
+ (declare (salience 170))
+ (name ?name)
+ (gender male)
+?f<-(recom y)
+(not (fired sa ))
+=>
+(if (> ?*SA* 3)   
+then
+(printout t crlf "  I believe you will be more effective in working out your difficulty with"crlf
+"  "?name" if you are careful to obtain his agreement to talk with you about it, "crlf 
+"  and decide together about the time and place for the conversation.  I strongly "crlf 
+"  recommend you go to the FRAMEWORK section and follow the instructions there, "crlf
+"  in order to create an effective framework for discussing your problem with "crlf
+"  "?name"."crlf)
+(assert (fired sa ))
+(assert (ask again))
+(retract ?f)))
+
+(defrule RECOMMENDATIONS::StrSetAgreem-female
+ (declare (salience 170))
+ (name ?name)
+ (gender female)
+?f<-(recom y)
+(not (fired sa ))
+=>
+(if (> ?*SA* 3)   
+then
+(printout t crlf "  I believe you will be more effective in working out your difficulty with"crlf
+"  "?name" if you are careful to obtain her agreement to talk with you about it, "crlf 
+"  and decide together about the time and place for the conversation.  I strongly "crlf 
+"  recommend you go to the FRAMEWORK section and follow the instructions there, "crlf
+"  in order to create an effective framework for discussing your problem with "crlf
+"  "?name"."crlf)
+(assert (fired sa ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::ModSetAgreem-male
+ (declare (salience 60))
+ (name ?name)
+ (gender male)
+?f<-(recom y)
+(not (fired sa ))
+=>
+(if (and(> ?*SA* 1)(< ?*SA* 4)) 
+then
+(printout t crlf "  I believe you will be more effective in working out your difficulty with"crlf
+"  "?name" if you are careful to obtain his agreement to talk with you about it, "crlf 
+"  and decide together about the time and place for the conversation.  I  "crlf 
+"  suggest you go to the FRAMEWORK section and follow the instructions there, "crlf
+"  in order to create an effective framework for discussing your problem with "crlf
+"  "?name"."crlf)
+(assert (fired sa ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+(defrule RECOMMENDATIONS::ModSetAgreem-female
+ (declare (salience 60))
+ (name ?name)
+ (gender female)
+?f<-(recom y)
+(not (fired sa ))
+=>
+(if (and(> ?*SA* 1)(< ?*SA* 4)) 
+then
+(printout t crlf "  I believe you will be more effective in working out your difficulty with"crlf
+"  "?name" if you are careful to obtain her agreement to talk with you about it, "crlf 
+"  and decide together about the time and place for the conversation.  I  "crlf 
+"  suggest you go to the FRAMEWORK section and follow the instructions there, "crlf
+"  in order to create an effective framework for discussing your problem with "crlf
+"  "?name"."crlf)
+(assert (fired sa ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::StrHurt
+ (declare (salience 160))
+ (name ?name)
+?f<-(recom y)
+(not(fired H ))
+ =>
+(if (> ?*H* 6)   
+then
+(printout t crlf "  I believe you are having difficulty dealing with your hurt feelings in the" crlf
+"  current situation with "?name". Recognizing when I am hurt, and then finding " crlf
+"  effective ways to deal with it, are among the most challenging aspects of " crlf
+"  relationships.  I strongly recommend you go to the HURT AND VULNERABILITY " crlf
+"  section and follow the instructions there." crlf)
+(retract ?f)
+(assert (ask again))
+(assert(fired H ))))
+
+(defrule RECOMMENDATIONS::ModHurt
+ (declare (salience 50))
+ (name ?name)
+?f<-(recom y)
+(not(fired H ))
+ =>
+(if (and(> ?*H* 0) (< ?*H* 7))  
+then
+(printout t crlf "  I believe you are having difficulty dealing with your hurt feelings in the" crlf
+"  current situation with "?name". Recognizing when I am hurt, and then finding " crlf
+"  effective ways to deal with it, are among the most challenging aspects of " crlf
+"  relationships.  I think you may find it very helpful to go to the HURT AND  " crlf
+"  VULNERABILITY section and follow the instructions there." crlf)
+(retract ?f)
+(assert (ask again))
+(assert(fired H ))))
+
+
+(defrule RECOMMENDATIONS::ModTakingYS-male
+ (declare (salience 40))
+ (name ?name)
+(gender male)
+?f<-(recom y)
+(not(fired ts ))
+ =>
+(if (and(> ?*TS* 2) (< ?*TS* 10))  
+then
+(printout t crlf "  Strangely enough, the most common problem people have in resolving conflicts"crlf
+"  is that they are reluctant to express their feelings and stand up for their "crlf
+"  wishes strongly enough.   Sometimes this happens because they don’t feel they"crlf
+"  have a right to assert themselves; sometimes they may not even know clearly"crlf
+"  just what they are feeling. I believe that standing up for your position is"crlf
+"  difficult for you in your current conflict with "?name", and that you will "crlf
+"  find it easier to resolve your problem if you assert yourself more strongly "crlf
+"  with him.  I suggest that you go to the section on TAKING YOUR OWN SIDE and"crlf
+"  follow the instructions there, in order to gain some additional skills and "crlf
+"  new perspectives that will assist you."crlf)
+(assert (fired ts ))
+(assert (ask again))
+(retract ?f)))
+
+ 
+(defrule RECOMMENDATIONS::ModTakingYS-female
+ (declare (salience 40))
+ (name ?name)
+(gender female)
+?f<-(recom y)
+(not (fired ts ))
+ =>
+(if (and(> ?*TS* 2) (< ?*TS* 10))  
+then
+(printout t crlf "  Strangely enough, the most common problem people have in resolving conflicts"crlf
+"  is that they are reluctant to express their feelings and stand up for their "crlf
+"  wishes strongly enough.   Sometimes this happens because they don’t feel they"crlf
+"  have a right to assert themselves; sometimes they may not even know clearly"crlf
+"  just what they are feeling. I believe that standing up for your position is"crlf
+"  difficult for you in your current conflict with "?name", and that you will "crlf
+"  find it easier to resolve your problem if you assert yourself more strongly "crlf
+"  with her.  I suggest that you go to the section on TAKING YOUR OWN SIDE and"crlf
+"  follow the instructions there, in order to gain some additional skills and "crlf
+"  new perspectives that will assist you."crlf)
+(assert (fired ts ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::StrTakingYS-male
+ (declare (salience 150))
+ (name ?name)
+(gender male)
+?f<-(recom y)
+(not (fired ts ))
+ =>
+(if (> ?*TS* 9)  
+then
+(printout t crlf "  Strangely enough, the most common problem people have in resolving conflicts"crlf
+"  is that they are reluctant to express their feelings and stand up for their "crlf
+"  wishes strongly enough.   Sometimes this happens because they don’t feel they"crlf
+"  have a right to assert themselves; sometimes they may not even know clearly"crlf
+"  just what they are feeling. I believe that standing up for your position is"crlf
+"  difficult for you in your current conflict with "?name", and that you will "crlf
+"  find it easier to resolve your problem if you assert yourself more strongly "crlf
+"  with him.  I strongly recommend that you go to the section on TAKING YOUR "crlf
+"  OWN SIDE and follow the instructions there, in order to gain some additional "crlf
+"  skills and new perspectives that will assist you."crlf)
+(assert (fired ts ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::StrTakingYS-female
+ (declare (salience 150))
+ (name ?name)
+(gender female)
+?f<-(recom y)
+(not(fired ts ))
+ =>
+(if (> ?*TS* 9)  
+then
+(printout t crlf "  Strangely enough, the most common problem people have in resolving conflicts"crlf
+"  is that they are reluctant to express their feelings and stand up for their "crlf
+"  wishes strongly enough.   Sometimes this happens because they don’t feel they"crlf
+"  have a right to assert themselves; sometimes they may not even know clearly"crlf
+"  just what they are feeling. I believe that standing up for your position is"crlf
+"  difficult for you in your current conflict with "?name", and that you will "crlf
+"  find it easier to resolve your problem if you assert yourself more strongly "crlf
+"  with her.  I strongly recommend that you go to the section on TAKING YOUR "crlf
+"  OWN SIDE and follow the instructions there, in order to gain some additional "crlf
+"  skills and new perspectives that will assist you."crlf)
+(assert (fired ts ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+(defrule RECOMMENDATIONS::ModCrit
+ (declare (salience 30))
+ (name ?name)
+?f<-(recom y)
+(not (fired cs ))
+
+ =>
+(if (and(> ?*CS* 2) (< ?*CS* 7))  
+then
+(printout t crlf "  It takes a great deal of skill to present criticism and negative feedback to" crlf
+"  people in such a way that they can hear what you are saying without getting"crlf
+"  defensive or hurt.  I believe you will find it useful to develop your skills"crlf
+"  in this area, and suggest that you go to the section on  SENSITIVE FEEDBACK"crlf
+"  and follow the instructions there. "crlf)
+(assert (fired cs ))
+(assert (ask again))
+(retract ?f)))
+
+
+
+(defrule RECOMMENDATIONS::StrCrit
+ (declare (salience 140))
+ (name ?name)
+?f<-(recom y)
+(not (fired cs ))
+
+ =>
+(if (> ?*CS* 6)  
+then
+(printout t crlf "  It takes a great deal of skill to present criticism and negative feedback to" crlf
+"  people in such a way that they can hear what you are saying without getting"crlf
+"  defensive or hurt.  I believe you will find it useful to develop your skills"crlf
+"  in this area, and strongly recommend that you go to the section on  SENSITIVE"crlf
+"  FEEDBACK and follow the instructions there. "crlf)
+(assert (fired cs ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::ModTakingPS-male
+ (declare (salience 20))
+ (name ?name)
+ (gender male)
+?f<-(recom y)
+(not (fired tps ))
+
+ =>
+(if (= ?*TPS* 2)   
+then
+(printout t crlf "  Based on your answers to the questions, I believe you are having difficulty"crlf
+"  feeling satisfied in your current situation with "?name" because you know, "crlf
+"  or believe, that he won’t handle it well if you assert yourself strongly. "crlf
+"  I suggest you go to the section on TAKING YOUR OPPONENT'S SIDE and follow the "crlf
+"  instructions there. You will learn about some extremely valuable skills for"crlf
+"  resolving your conflict with "?name" and for dealing effectively with many  "crlf
+"  other difficult relationship situations."crlf)
+(assert (fired tps ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::ModTakingPS-female
+ (declare (salience 20))
+ (name ?name)
+ (gender female)
+(not (fired tps ))
+?f<-(recom y)
+ =>
+(if (= ?*TPS* 2)   
+then
+(printout t crlf "  Based on your answers to the questions, I believe you are having difficulty"crlf
+"  feeling satisfied in your current situation with "?name" because you know, "crlf
+"  or believe, that she won’t handle it well if you assert yourself strongly. "crlf
+"  I suggest you go to the section on TAKING YOUR OPPONENT'S SIDE and follow the "crlf
+"  instructions there. You will learn about some extremely valuable skills for"crlf
+"  resolving your conflict with "?name" and for dealing effectively with many  "crlf
+"  other difficult relationship situations."crlf)
+(assert (fired tps ))
+(assert (ask again))
+(retract ?f)))
+
+
+(defrule RECOMMENDATIONS::StrTakingPS-male
+ (declare (salience 130))
+ (name ?name)
+ (gender male)
+?f<-(recom y)
+(not(fired tps ))
+ =>
+(if (> ?*TPS* 3)   
+then
+(printout t crlf "  Based on your answers to the questions, I believe you are having difficulty"crlf
+"  feeling satisfied in your current situation with "?name" because you know, "crlf
+"  or believe, that he won’t handle it well if you assert yourself strongly. "crlf
+"  I strongly recommend you go to the section on TAKING YOUR OPPONENT'S SIDE "crlf
+"  and follow the instructions there. You will learn about some extremely "crlf
+"  valuable skills for resolving your conflict with "?name" and for"crlf
+"  dealing effectively with many other difficult relationship situations."crlf)
+(retract ?f)
+(assert (ask again))
+(assert(fired tps ))))
+
+
+(defrule RECOMMENDATIONS::StrTakingPS-female
+ (declare (salience 130))
+ (name ?name)
+ (gender female)
+?f<-(recom y)
+(not(fired tps ))
+ =>
+(if (> ?*TPS* 3)   
+then
+(printout t crlf "  Based on your answers to the questions, I believe you are having difficulty"crlf
+"  feeling satisfied in your current situation with "?name" because you know, "crlf
+"  or believe, that she won’t handle it well if you assert yourself strongly. "crlf
+"  I strongly recommend you go to the section on TAKING YOUR OPPONENT'S SIDE "crlf
+"  and follow the instructions there. You will learn about some extremely "crlf
+"  valuable skills for resolving your conflict with "?name" and for"crlf
+"  dealing effectively with many other difficult relationship situations."crlf)
+(retract ?f)
+(assert (ask again))
+(assert(fired tps ))))
+
+
+(defrule RECOMMENDATIONS::ModAdmitAc
+ (declare (salience 10))
+ (name ?name)
+?f<-(recom y)
+(not(fired aa ))
+ =>
+(if (and(> ?*AA* 2) (< ?*AA* 8))  
+then
+(printout t crlf "  One of the most painful aspects of relationship conflicts is the blame and"crlf
+"  accusations people express to one another. And yet the ability to respond"crlf
+"  gracefully and honestly to the accusations I receive is one of the most "crlf
+"  powerful skills I can develop, both for resolving difficult conflicts, for"crlf
+"  building stronger relationships, and for discovering hidden sides of our "crlf
+"  personalities.  I believe this skill could help you in your current problem"crlf
+"  with "?name", and suggest you may find it useful to go to the BLAME AND"crlf
+"  ACCUSATIONS section and follow the instructions there in order to develop "crlf
+"  your ability to respond effectively to "?name"’s complaints."crlf)
+(retract ?f)
+(assert (ask again))
+(assert(fired aa ))))
+
+
+(defrule RECOMMENDATIONS::ModAdmitAc
+ (declare (salience 120))
+ (name ?name)
+?f<-(recom y)
+(not(fired aa ))
+
+ =>
+(if (> ?*AA* 7)  
+then
+(printout t crlf "  One of the most painful aspects of relationship conflicts is the blame and"crlf
+"  accusations people express to one another. And yet the ability to respond"crlf
+"  gracefully and honestly to the accusations I receive is one of the most "crlf
+"  powerful skills I can develop, both for resolving difficult conflicts, for"crlf
+"  building stronger relationships, and for discovering hidden sides of our "crlf
+"  personalities.  I believe this skill could help you in your current problem"crlf
+"  with "?name", and strongly recommend that you go to the BLAME AND ACCUSATIONS"crlf
+"  section and follow the instructions there in order to develop your ability"crlf
+"  to respond effectively to "?name"’s complaints."crlf)
+(retract ?f)
+(assert (ask again))
+(assert(fired aa ))))
+
+
+(defrule RECOMMENDATIONS::closure
+ (name ?name)
+ (recom y)
+ (fired ?)
+ (not(closure))
+ =>
+(printout t crlf "  These are all the recommendations I have for you. Good luck in working out "crlf
+ "  your conflict with "?name" and learning from it."crlf)
+(assert(closure)))
+
+(defrule RECOMMENDATIONS::to-fall-on
+(declare (salience -9))
+ (uname ?uname)
+ (recom y)
+ (not (fired ?))
+ =>
+(printout t crlf "  "?uname":  our system wasn’t able to come up with any recommendations for you." crlf
+"  It means that you have very strong interpersonal skills and ability   " crlf
+"  to resolve conflicts yourself!"crlf))
+
+

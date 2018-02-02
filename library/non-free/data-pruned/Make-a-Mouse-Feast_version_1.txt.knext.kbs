@@ -1,0 +1,70 @@
+;; (BOARDLAY A BLANKET ON THE FLOOR OF ANY ROOM)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOUR BEDROOM COMMA BATHROOM COMMA DINING ROOM COMMA OR LIVING ROOM)
+
+	;; A PERSON MAY HAVE A BEDROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEDROOM_27 ?x1))
+
+	;; A ROOM CAN BE LIVING.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIVING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (TAKE A NAPKIN AND PUT IT WHERE YOUR MOUSE WILL BE SITTING OR STANDING)
+
+	;; A MOUSE MAY SIT.
+
+		(and (MOUSE_27 ?x1) (MAY_27 ?x1) (SIT_27 ?x1))
+
+	;; A PERSON MAY HAVE A MOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOUSE_27 ?x1))
+
+;; (THIS WILL BE A PLATE)
+
+	;; A THING CAN BE A PLATE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PLATE_27 ?x2))
+
+;; (SERVE VEGETABLES COMMA SUCH AS BEANS COMMA POTATOES COMMA TOMATOES COMMA AND BELL PEPPERS)
+
+	;; VEGETABLES MAY PEPPER.
+
+		(and (VEGETABLES_27 ?x1) (MAY_27 ?x1) (PEPPER_27 ?x1))
+
+	;; VEGETABLES CAN BE SERVE.
+
+		(and (vegetable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERVE_27 ?x2))
+
+;; (YOU CAN ALSO SERVE FRUIT COMMA BERRIES COMMA AND SEEDS)
+
+	;; A PERSON MAY SERVE FRUIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SERVE_27 ?x1) (FRUIT_27 ?x1))
+
+;; (GIVE YOUR MOUSE FRESH WATER TO DRINK)
+
+	;; A PERSON MAY HAVE A MOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOUSE_27 ?x1))
+
+	;; WATER CAN BE FRESH.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))

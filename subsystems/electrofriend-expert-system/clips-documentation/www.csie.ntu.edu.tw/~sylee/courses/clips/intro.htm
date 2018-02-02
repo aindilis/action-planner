@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Clips Introduction</TITLE>
+<META content="text/html; charset=big5" http-equiv=Content-Type><LINK
+href="../../stdtheme.css" rel=stylesheet type=text/css>
+<META content="MSHTML 5.00.2919.6307" name=GENERATOR></HEAD>
+<BODY bgColor=#fbffff>
+<H2><B>7 Introduction to CLIPS</B></H2>
+<H3>Notation</H3>
+<PRE>    (example)               <FONT color=#0040a0>;symbol</FONT>
+    (example [1])           <FONT color=#0040a0>;optional</FONT>
+    (example &lt;INTEGER&gt;)     <FONT color=#0040a0>;replacement</FONT>
+    &lt;INTEGER&gt;*              <FONT color=#0040a0>;zero or more</FONT>
+    &lt;INTEGER&gt;+              <FONT color=#0040a0>;one or more</FONT>
+    all | none | some       <FONT color=#0040a0>;or</FONT>
+</PRE>
+<H3>Fields</H3>
+<H4>float</H4>
+<PRE>
+    1.5
+    9.3e+7
+</PRE>
+<H4>integer</H4>
+<PRE>
+    5
+    -37
+</PRE>
+<H4>symbol</H4>
+<PRE>    starts with a printable ASCII character except ? and $?
+    ends with a delimiter,
+
+    delimiters:
+        non-printable(space, tab, carriage return, or line feed),
+        " ; &amp; | ~ &lt;
+
+    Examples:
+        Space-Station
+        high_end
+        !?#$^*
+        678
+</PRE>
+<H4>string</H4>
+<PRE>    "!?#$^*"
+    "John S. Liu"
+    "\"Note\""      ;""Note"", '\' as escape character
+    "\\Note\\"      ;"\Note\"
+</PRE>
+<H4>external address</H4>
+<H4>instance name </H4>
+<H4>instance address</H4>
+<H3>Entering and Exiting Clips</H3>
+<PRE>    C&gt;CLIPS
+
+    (<FONT color=#8000ff>exit</FONT>)
+
+</PRE>
+<H3>Facts</H3>
+<PRE>    ( &lt;relation-name&gt; &lt;field&gt;+ )
+
+    (person (name <FONT color=#008000>"John S. Liu"</FONT>)
+            (age 23)
+            (eye-color brown)
+            (hair-color black))
+</PRE>
+<H4>The Deftemplate Construct</H4>
+<PRE>    ( <FONT color=#8000ff>deftemplate</FONT> &lt;relation-name&gt; [&lt;optional-comment&gt;]
+        &lt;slot-definition&gt;* )
+    &lt;slot-definition&gt;
+        (<FONT color=#8000ff>slot</FONT> &lt;slot-name&gt;) | (<FONT color=#8000ff>multislot</FONT> &lt;slot-name&gt;)
+
+    (<FONT color=#8000ff>deftemplate</FONT> person
+        (<FONT color=#8000ff>slot</FONT> name)
+        (<FONT color=#8000ff>slot</FONT> age)
+        (<FONT color=#8000ff>slot</FONT> eye-color)
+        (<FONT color=#8000ff>slot</FONT> hair-color))
+</PRE>
+<H4>Multified Slots</H4>
+<PRE>    (<FONT color=#8000ff>deftemplate</FONT> person
+        (<FONT color=#8000ff>multislot</FONT> name)
+        (<FONT color=#8000ff>slot</FONT> age)
+        (<FONT color=#8000ff>slot</FONT> eye-color)
+        (<FONT color=#8000ff>slot</FONT> hair-color))
+
+    (person (name John S. Liu)      <FONT color=#0040a0>;multislot</FONT>
+            (age 23)
+            (eye-color brown)
+            (hair-color black))
+
+</PRE>
+<H4>Ordered Facts</H4>
+facts without a deftemplate
+<PRE>    (person John S. Liu     <FONT color=#0040a0>;name John</FONT>
+            23              <FONT color=#0040a0>;age</FONT>
+            brown           <FONT color=#0040a0>;eye-color</FONT>
+            black)          <FONT color=#0040a0>;hair-color</FONT>
+</PRE>
+<H3>Adding and Removing Facts</H3>
+<PRE>    (<FONT color=#8000ff>assert</FONT> &lt;fact&gt;+)
+
+    (<FONT color=#8000ff>assert</FONT> (person (name John S. Liu)
+                    (age 23)
+                    (eye-color brown)
+                    (hair-color black)))
+
+    (<FONT color=#8000ff>retract</FONT> &lt;fact-index&gt;+)
+
+    (<FONT color=#8000ff>facts</FONT>)
+    (<FONT color=#8000ff>retract</FONT> 0)
+</PRE>
+<H3>Modifying and Duplicating Facts</H3>
+<PRE>    (<FONT color=#8000ff>modify</FONT> &lt;fact-index&gt; &lt;slot-modifier&gt;+)
+
+    &lt;slot-modifier&gt;
+            (&lt;slot-name&gt; &lt;slot-value&gt;)
+
+    (<FONT color=#8000ff>modify</FONT> 0 (age 24) )
+    (<FONT color=#8000ff>facts</FONT>)
+
+    (<FONT color=#8000ff>duplicate</FONT> 2 (name <FONT color=#008000>"Jack P. Chen"</FONT>) )
+    (<FONT color=#8000ff>facts</FONT>)
+
+</PRE>
+<H3>The Watch Command</H3>
+<PRE>    (<FONT color=#8000ff>watch</FONT> &lt;watch-item&gt;)
+
+    &lt;watch-item&gt; : facts, rules, activations, statistics, compilations, focus, all
+
+    (<FONT color=#8000ff>watch</FONT> <FONT color=#8000ff>facts</FONT>)
+    (<FONT color=#8000ff>modify</FONT> 3 (age 25) )
+    (<FONT color=#8000ff>facts</FONT>)
+
+</PRE>
+<H3>The Deffacts Construct</H3>
+<PRE>    (<FONT color=#8000ff>deffacts</FONT> &lt;deffacts name&gt; [&lt;optional comment&gt;]
+              &lt;facts&gt;*)
+                <FONT color=#0040a0>; initially define a set of facts</FONT>
+
+    (<FONT color=#8000ff>reset</FONT>)
+
+        reset : 1. remove all activated rules from agenda
+                2. remove all facts from the fact-list
+                3. assert the facts from existing deffacts
+
+</PRE>
+<H3>The Components of A Rule</H3>
+<PRE>    (<FONT color=#8000ff>defrule</FONT> &lt;rule-name&gt; [&lt;optional comment&gt;]
+        &lt;patterns&gt;*           ;LHS
+        =&gt;
+        &lt;actions&gt;*            ;RHS
+        )
+
+    (<FONT color=#8000ff>defrule</FONT> fire-emergency <FONT color=#008000>"An example rule"</FONT>       <FONT color=#0040a0>;Rule header</FONT>
+        (emergency (type fire))                     <FONT color=#0040a0>;Patterns</FONT>
+        =&gt;
+        (<FONT color=#8000ff>assert</FONT> (response                           <FONT color=#0040a0>;Actions</FONT>
+                    (action activate-sprinkler-system)))
+        )
+
+</PRE>
+<H3>The Agenda and Execution</H3>
+To list the list of rules on the agenda, use
+<PRE>    (<FONT color=#8000ff>agenda</FONT>)
+
+</PRE>Rule and Refraction
+<PRE>    (<FONT color=#8000ff>run</FONT>)
+    (<FONT color=#8000ff>facts</FONT>)
+    (<FONT color=#8000ff>run</FONT>)
+    (<FONT color=#8000ff>facts</FONT>)
+
+</PRE>To make the rule to fire again, use
+<PRE>
+    (<FONT color=#8000ff>refresh</FONT> &lt;rule-name&gt;)
+
+    (<FONT color=#8000ff>agenda</FONT>)
+    (<FONT color=#8000ff>refresh</FONT> fire-emergency)
+    (<FONT color=#8000ff>agenda</FONT>)
+
+</PRE>Watching Activations, Rules, and Statistics
+<PRE>    (<FONT color=#8000ff>clear</FONT>)   <FONT color=#0040a0>; remove all facts, rules, and deffacts.</FONT>
+
+    (<FONT color=#8000ff>reset</FONT>)
+    (<FONT color=#8000ff>watch</FONT> activations)
+    (<FONT color=#8000ff>assert</FONT> (emergency (type fire)))
+    (<FONT color=#8000ff>agenda</FONT>)
+    (<FONT color=#8000ff>retract</FONT> 1)
+    (<FONT color=#8000ff>agenda</FONT>)
+
+    (<FONT color=#8000ff>reset</FONT>)
+    (<FONT color=#8000ff>watch</FONT> rules)
+    (<FONT color=#8000ff>assert</FONT> (emergency (type fire)))
+    (<FONT color=#8000ff>run</FONT>)
+    (<FONT color=#8000ff>agenda</FONT>)
+
+    (<FONT color=#8000ff>unwatch</FONT> all)
+    (<FONT color=#8000ff>watch</FONT> statistics)
+    (<FONT color=#8000ff>assert</FONT> (emergency (type fire)))
+    (<FONT color=#8000ff>run</FONT>)
+
+</PRE>
+<H3>Commands for Manipulating Constructs</H3>
+Displaying the List of Members of a Specified Construct
+<PRE>
+    (<FONT color=#8000ff>list-defrules</FONT>)
+
+    (<FONT color=#8000ff>list-deftemplates</FONT>)
+
+    (<FONT color=#8000ff>list-deffacts</FONT>)
+
+</PRE>
+Displaying the Text Representation of a Specified Construct Member
+<PRE>
+    (<FONT color=#8000ff>ppdefrule</FONT> &lt;defrule-name&gt;)
+
+    (<FONT color=#8000ff>ppdeftemplate</FONT> &lt;deftemplate-name&gt;)
+
+    (<FONT color=#8000ff>ppdeffacts</FONT> &lt;deffacts-name&gt;)
+
+</PRE>Deleting a Specified Construct Member
+<PRE>    (<FONT color=#8000ff>undefrule</FONT> &lt;defrule-name&gt;)
+
+    (<FONT color=#8000ff>undeftemplate</FONT> &lt;deftemplate-name&gt;)
+
+    (<FONT color=#8000ff>undeffacts</FONT> &lt;deffacts-name&gt;)
+
+</PRE>
+<H3>The Printout Command</H3>
+<PRE>    (<FONT color=#8000ff>printout</FONT> &lt;logical-name&gt; &lt;print-items&gt;*)
+
+    (<FONT color=#8000ff>defrule</FONT> fire-emergency
+        (emergency (type fire))
+        =&gt;
+        (<FONT color=#8000ff>printout</FONT> t <FONT color=#008000>"action activate-sprinkler-system"</FONT>
+                    <FONT color=#8000ff>crlf</FONT>))
+
+</PRE>
+<H3>Using Multiple Rules</H3>
+<p>Example:
+<OL>
+<LI><A href="http://www.csie.ntu.edu.tw/courses/clips/examples/emergency.clp">emergency.clp</A>
+(<A href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/clips/examples/emergency.clp">Demo</A>)
+<LI>A Simple Expert System: theater</A>
+<OL>
+<LI><A href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/theater.htm">pseudo code</A>
+<LI><A href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/clips/examples/theater.clp">theater.clp</A>
+(<A href="http://www.csie.ntu.edu.tw/servlets/Jess?source=/sylee/courses/clips/examples/theater.clp">Demo</A>)
+</OL>
+</OL>
+<H3>The set-break Command</H3>
+<PRE>
+    (set-break &lt;rule-name&gt;)
+
+    (show-breaks)
+
+    (remove-break &lt;rule-name&gt;)
+
+</PRE>
+<A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/123.clp">Example</A>
+
+<H3>Loading and Saving Construct</H3>
+Loading Constructs from a File
+<PRE>
+    (<FONT color=#8000ff>load</FONT> <FONT color=#008000>"xmp.clp"</FONT>)
+
+    (<FONT color=#8000ff>load</FONT> <FONT color=#008000>"c:\\clips\\xmp.clp"</FONT>)       <FONT color=#0040a0>;use \\ for backslash</FONT>
+
+</PRE>
+Watching Compilations
+<PRE>
+    (<FONT color=#8000ff>watch</FONT> compilations)
+    (<FONT color=#8000ff>load</FONT> <FONT color=#008000>"c:\\clips\\xmp.clp"</FONT>)
+
+</PRE>
+Saving Constructs to a File
+<PRE>
+    (<FONT color=#8000ff>save</FONT> <FONT color=#008000>"xmp.clp"</FONT>)
+
+</PRE>
+<H3>Commenting Construct</H3>
+<PRE>
+    <FONT color=#0040a0>; (emergency &lt; type &gt;)</FONT>
+
+</PRE>
+
+<br />Go to <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/clpsum.htm">Clips Summary</a>
+
+<P>Previous <A href="overview.htm">Clips Overview</A>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <A href="pattern.htm">Pattern Matching</A>
+
+</BODY></HTML>

@@ -1,0 +1,282 @@
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [4]>
+
+;; (AS MOST SCHOOL DISTRICTS START IN SEPTEMBER COMMA SCHOOLS TEND TO BE OPEN A MONTH BEFORE)
+
+	;; SCHOOL DISTRICTS MAY START.
+
+		(and (SCHOOL_27 ?x1) (DISTRICTS_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+;; (YOU CAN CALL THE SCHOOL DIRECTLY AND SPEAK WITH AN ADMINISTRATOR OR VISIT THE SCHOOL FOR INFORMATION)
+
+	;; A PERSON MAY CALL A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CALL_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+	;; A SCHOOL CAN BE FOR INFORMATION.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INFORMATION_27 ?x2))
+
+;; (GET YOUR CHILD INTO THE BACK-TO-SCHOOL ROUTINE - DURING THE SUMMER COMMA STAYING UP LATE AND SLEEPING IN ARE THE NORM)
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A ROUTINE CAN BE BACK-TO-SCHOOL.
+
+		(and (ROUTINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACK-TO-SCHOOL_27 ?x2))
+
+;; (BUT AS THE START OF SCHOOL DRAWS NEAR COMMA CHILDREN NEED TO GET BACK INTO A ROUTINE)
+
+	;; A START OF SCHOOL MAY DRAW NEAR.
+
+		(and (START_27 ?x1) (of_27 ?x1 ?x2) (SCHOOL_27 ?x2) (MAY_27 ?x2) (DRAW_27 ?x2) (NEAR_27 ?x2))
+
+;; (ABOUT THREE WEEKS BEFORE SCHOOL STARTS COMMA HAVE YOUR CHILD GO TO BED 15 MINUTES EARLIER AT NIGHT AND GET UP 15 MINUTES EARLIER IN THE MORNING)
+
+	;; SCHOOL MAY START.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; A CHILD MAY GO TO BED.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?e1) (bed_27 ?e1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (WHEN SCHOOL IS TWO WEEKS AWAY COMMA HAVE YOUR CHILD GO TO BED 30 MINUTES EARLIER AT NIGHT AND GET UP THIRTY MINUTES EARLIER IN THE MORNING)
+
+	;; A CHILD MAY GO TO BED.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?e1) (bed_27 ?e1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (WHEN YOUR CHILD IS ABOUT TO START SCHOOL IN A WEEK COMMA HAVE HIM GO TO BED AN HOUR EARLIER AT NIGHT AND GET UP AN HOUR EARLIER IN THE MORNING)
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A MALE MAY GO TO BED.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?e1) (bed_27 ?e1))
+
+;; (BY DEVELOPING A BEDTIME ROUTINE COMMA YOUR CHILD WILL BE LESS RESISTANT TO THE EARLY MORNING WAKE-UP CALLS TO GET READY FOR SCHOOL)
+
+	;; A CHILD CAN BE RESISTANT TO A MORNING WAKE-UP.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESISTANT_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (MORNING_27 ?x3) (WAKE-UP_27 ?x3))
+
+	;; A ROUTINE CAN BE BEDTIME.
+
+		(and (ROUTINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEDTIME_27 ?x2))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (IN ADDITION COMMA IF YOU RE NOT ALREADY DOING THIS COMMA HAVE YOUR CHILD LAY OUT HIS CLOTHES BEFORE HE GOES TO BED)
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A MALE MAY HAVE CLOTHES.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; A MALE MAY GO TO BED.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?e1) (bed_27 ?e1))
+
+;; (THAT WILL TEACH HIM TO GET ORGANIZED AND BE PREPARED IN CASE HE -LRB- OR YOU -RRB- ARE RUNNING LATE IN THE MORNING)
+
+	;; A MALE MAY RUN IN A MORNING.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (RUN_27 ?x1) (in_27 ?x1 ?x2) (morning_27 ?x2))
+
+;; (GO OVER THE THREE R S - REGARDLESS IF YOU RE A TEACHER OR NOT COMMA WE ALL HAVE KNOWLEDGE TO PASS ON TO OUR KIDS)
+
+	;; A GO[PERSON??] CAN BE OVER SOME_NUMBER_OF R.
+
+		(and (GO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (OVER_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (R_27 ?x1))
+
+	;; PERSON -S MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [5]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [6]>
+
+;; (WHATEVER YOUR FAVORITE SUBJECT COMMA USE WHAT YOU VE LEARNED IN SCHOOL AND IN LIFE TO GO OVER SOME OF THE BASICS WITH YOUR CHILD)
+
+	;; A PERSON MAY HAVE A SUBJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUBJECT_27 ?x1))
+
+	;; A SUBJECT CAN BE FAVORITE.
+
+		(and (SUBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; BASICS MAY HAVE A THING.
+
+		(and (BASICS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [7]>
+
+;; (IT SHOULD BE IN A ROOM WITHOUT DISTRACTIONS -LRB- I.E. NO TV OR VIDEO GAMES -RRB- AND GEARED TOWARDS LEARNING -LRB- I.E. DEN COMMA FAMILY LIBRARY OR HOME OFFICE -RRB-)
+
+	;; A THING-REFERRED-TO CAN BE IN A ROOM.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+;; (A RUN THROUGH OF THE BASICS SHOULD TAKE NO MORE THAN 30 MINUTES TO AN HOUR AND SHOULD BE DONE 2-3 TIMES A WEEK)
+
+	;; BASICS MAY HAVE A RUN.
+
+		(and (BASICS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RUN_27 ?x1))
+
+;; (THIS IS AN EXCELLENT OPPORTUNITY TO SEE WHERE YOUR CHILD NEEDS HELP AND TO PASS THAT INFORMATION ON TO HIS TEACHERS)
+
+	;; A THING CAN BE AN OPPORTUNITY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (OPPORTUNITY_27 ?x2))
+
+	;; AN OPPORTUNITY CAN BE EXCELLENT.
+
+		(and (OPPORTUNITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+	;; A CHILD MAY NEED.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; A MALE MAY HAVE TEACHERS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TEACHERS_27 ?x1))
+
+;; (PREPARE THE SUPPLIES - DEPENDING ON YOUR CHILD S GRADE LEVEL -LRB- K0-12 -RRB- COMMA THE TYPE OF SUPPLIES NEEDED WILL VARY)
+
+	;; A TYPE OF SUPPLIES MAY NEED.
+
+		(and (TYPE_27 ?x1) (of_27 ?x1 ?x2) (SUPPLIES_27 ?x2) (MAY_27 ?x2) (NEED_27 ?x2))
+
+	;; A CHILD MAY HAVE A GRADE LEVEL.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GRADE_27 ?x1) (LEVEL_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (SOME SCHOOLS SENDS A LIST OUT A COUPLE OF WEEKS BEFORE THE SCHOOL YEAR)
+
+	;; SOME_NUMBER_OF SCHOOLS MAY SEND A LIST.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SCHOOLS_27 ?x1) (MAY_27 ?x1) (SEND_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; WEEKS CAN BE BEFORE A SCHOOL YEAR.
+
+		(and (week_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (A_27 ?x2) (SCHOOL_27 ?x2) (year_27 ?x2))
+
+;; (IF NO SUCH LIST IS PROVIDED COMMA WHAT YOUR CHILD NEEDS FOR SCHOOL CAN BE DETERMINED BY A TRIP TO OFFICEMAX COMMA STAPLES OR WAL-MART)
+
+	;; A LIST MAY BE PROVIDE -ED.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROVIDE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A CHILD MAY NEED FOR SCHOOL.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (for_27 ?x1 ?x2) (SCHOOL_27 ?x2))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+;; (EVERY AUGUST COMMA THOSE STORES PROVIDE FREE SCHOOL SUPPLY LISTS FOR THEIR CUSTOMERS)
+
+	;; A MONTH MAY PROVIDE SCHOOL SUPPLY LISTS.
+
+		(and (MONTH_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (SCHOOL_27 ?x1) (SUPPLY_27 ?x1) (LISTS_27 ?x1))
+
+	;; SCHOOL SUPPLY LISTS CAN BE FOR CUSTOMERS.
+
+		(and (SCHOOL_27 ?x1) (SUPPLY_27 ?x1) (LISTS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (customer_27 ?x2))
+
+	;; SCHOOL SUPPLY LISTS CAN BE FREE.
+
+		(and (SCHOOL_27 ?x1) (SUPPLY_27 ?x1) (LISTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE CUSTOMERS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CUSTOMERS_27 ?x1))
+
+;; (THEY RE PRETTY CONCISE AND ARRANGED BY GRADE LEVEL)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F NIL CONCISE.A)))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (NIL_27 ?x3) (CONCISE_2EA_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CAN AGAIN CONTACT THE SCHOOL DIRECTLY TO SEE WHAT SUPPLIES YOUR CHILD WILL NEED)
+
+	;; A PERSON MAY CONTACT A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONTACT_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+	;; A CHILD MAY NEED.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))

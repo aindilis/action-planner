@@ -1,0 +1,553 @@
+;; (ENVIRONMENTCHECK YOUR IMMEDIATE SURROUNDINGS AND PLACES YOU WERE RECENTLY)
+
+	;; A PERSON MAY HAVE SURROUNDINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SURROUNDINGS_27 ?x1))
+
+;; (SURVEY THE ROOM OR ROOMS WHERE THE ITEM MIGHT BE)
+
+	;; SURVEY MAY OR ROOMS.
+
+		(and (SURVEY_27 ?x1) (MAY_27 ?x1) (OR_27 ?x1) (ROOMS_27 ?x1))
+
+	;; AN ITEM MAY BE.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (INSTEAD COMMA JUST LOOK AROUND TO SEE IF THE ITEM IS IN PLAIN SIGHT)
+
+	;; AN ITEM CAN BE IN SIGHT.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SIGHT_27 ?x2))
+
+	;; A SIGHT CAN BE PLAIN.
+
+		(and (SIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAIN_27 ?x2))
+
+;; (LOOK FOR THE MISSING OBJECT WHERE IT S SUPPOSED TO BE COMMA OR WHERE IT CAN USUALLY BE FOUND)
+
+	;; AN OBJECT CAN BE MISSING.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY BE FIND -ED.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF YOU LOST YOUR CHECK CARD COMMA THEN YOU SHOULD OBVIOUSLY CHECK YOUR WALLET)
+
+	;; A PERSON MAY CHECK A WALLET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHECK_27 ?x1) (A_27 ?x1) (WALLET_27 ?x1))
+
+	;; A PERSON MAY LOSE A CHECK CARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOSE_27 ?x1) (A_27 ?x1) (CHECK_27 ?x1) (CARD_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHECK CARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHECK_27 ?x1) (CARD_27 ?x1))
+
+	;; A PERSON MAY HAVE A WALLET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WALLET_27 ?x1))
+
+;; (IF YOUR KEYS ARE MISSING COMMA THEN LOOK IN YOUR DOOR AND CAR LOCKS TO MAKE SURE YOU DID N T SIMPLY FORGET THEM)
+
+	;; KEYS CAN BE MISSING.
+
+		(and (key_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+	;; A PERSON MAY HAVE KEYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KEYS_27 ?x1))
+
+	;; A PERSON MAY HAVE A DOOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOOR_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (SOMETIMES THINGS ARE JUST WHERE YOU LEFT THEM)
+
+	;; A PERSON MAY LEAVE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (CHECK ON YOURSELF)
+
+	;; 
+
+	;; ((:I NIL ON.P (:Q DET PERSON*.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (ON_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (PERSON_2A_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT SOUNDS SILLY COMMA BUT IT S POSSIBLE TO FORGET THAT YOUR GLASSES ARE ALREADY HANGING AROUND YOUR NECK COMMA PERCHED ON YOUR HEAD COMMA
+ OR EVEN RIGHT IN FRONT OF YOUR EYES)
+
+	;; A THING-REFERRED-TO MAY SOUND SILLY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SOUND_27 ?x1) (SILLY_27 ?x1))
+
+	;; GLASSES MAY HANG AROUND A NECK.
+
+		(and (GLASSES_27 ?x1) (MAY_27 ?x1) (HANG_27 ?x1) (AROUND_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A PERSON MAY HAVE GLASSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GLASSES_27 ?x1))
+
+	;; A PERSON MAY HAVE A NECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+	;; A PERSON MAY HAVE EYES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EYES_27 ?x1))
+
+;; (CHECK THESE OBVIOUS SPOTS ONCE MORE EVEN IF YOU RE SURE YOU ALREADY DID)
+
+	;; SPOTS CAN BE OBVIOUS.
+
+		(and (spot_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBVIOUS_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (DO N T FORGET TO CHECK YOUR POCKETS WHILE YOU RE AT IT COMMA EVEN IF YOU THINK YOU ALREADY DID)
+
+	;; A PERSON MAY HAVE POCKETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POCKETS_27 ?x1))
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [7]>
+
+;; (CHECK THE POCKETS OF ANY JACKETS OR COATS YOU VE WORN LATELY COMMA TOO)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU HAVE CARRIED A BACKPACK COMMA BAG COMMA OR PURSE LATELY COMMA MAKE SURE TO GET ALL THE WAY TO THE BOTTOM)
+
+	;; A PERSON MAY CARRY A BACKPACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CARRY_27 ?x1) (A_27 ?x1) (BACKPACK_27 ?x1))
+
+;; (SEARCH FOR THE MISSING OBJECT IN DEPTH)
+
+	;; AN OBJECT CAN BE IN DEPTH.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (DEPTH_27 ?x2))
+
+	;; AN OBJECT CAN BE MISSING.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+;; (NOW THAT YOU KNOW THE OBJECT IS NOT IN PLAIN VIEW COMMA LOOK IN MORE DETAIL AROUND YOUR HOME AND CAR)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; AN OBJECT CAN BE IN VIEW.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (VIEW_27 ?x2))
+
+	;; A VIEW CAN BE PLAIN.
+
+		(and (VIEW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAIN_27 ?x2))
+
+	;; DETAIL CAN BE AROUND A HOME.
+
+		(and (DETAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (IF YOU HAVE A MESSY RESIDENCE COMMA THIS MAY REQUIRE SOME TIME)
+
+	;; A THING MAY REQUIRE SOME_NUMBER_OF TIME.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (TIME_27 ?x1))
+
+	;; A PERSON MAY HAVE A RESIDENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RESIDENCE_27 ?x1))
+
+	;; A RESIDENCE CAN BE MESSY.
+
+		(and (RESIDENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MESSY_27 ?x2))
+
+;; (MAKE SURE TO BE THOROUGH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST PEOPLE HAVE THE SAME DAILY ROUTINE COMMA WHICH WILL NARROW THINGS DOWN A BIT)
+
+	;; PEOPLE MAY HAVE A ROUTINE.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROUTINE_27 ?x1))
+
+	;; A ROUTINE CAN BE DAILY.
+
+		(and (ROUTINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAILY_27 ?x2))
+
+;; (ELIMINATE PLACES THAT THE ITEM IS VERY UNLIKELY TO BE -LRB- SUCH AS KEYS IN THE OVEN -RRB- TO SAVE TIME)
+
+	;; AN ELIMINATE[PERSON??] MAY PLACE A PROPOSITION.
+
+		(and (ELIMINATE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PLACE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; AN ITEM CAN BE UNLIKELY.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNLIKELY_27 ?x2))
+
+	;; KEYS CAN BE IN AN OVEN.
+
+		(and (key_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (OVEN_27 ?x2))
+
+;; (YOU PROBABLY THOUGHT OF SEVERAL POSSIBLE PLACES COMMA GAVE A CURSORY CHECK OF THE FIRST FEW COMMA AND BY THE TIME YOU GOT TO THE END OF
+ YOUR LIST WERE GETTING WORRIED AND LOOKING MORE CAREFULLY)
+
+	;; A PERSON MAY THINK OF SOME_NUMBER_OF PLACES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1) (of_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (PLACES_27 ?x2))
+
+	;; A CHECK CAN BE CURSORY.
+
+		(and (CHECK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CURSORY_27 ?x2))
+
+	;; A PERSON MAY GET TO AN END OF A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (to_27 ?x1 ?x2) (end_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (LIST_27 ?x3))
+
+	;; A LIST MAY HAVE AN END.
+
+		(and (LIST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; (GO BACK AND LOOK CAREFULLY IN THOSE MORE LIKELY PLACES TOO)
+
+	;; PLACES CAN BE LIKELY.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIKELY_27 ?x2))
+
+;; (CREATE A LIST OF ROOMS COMMA THEN SEARCH EACH ROOM IN YOUR HOUSE FOR THE ITEM)
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH ROOMS.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ROOMS_27 ?x2))
+
+	;; A HOUSE CAN BE FOR AN ITEM.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (ITEM_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (CHECK OFF EACH ROOM UNTIL YOU REACH THE ONE WITH THE OBJECT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU CAN NOT FIND IT COMMA IT IS NOT IN THE HOUSE)
+
+	;; A THING-REFERRED-TO CAN BE IN A HOUSE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+	;; A PERSON MAY FIND A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [8]>
+
+;; (THINK BACK TO THE LAST TIME AND PLACE YOU USED THE MISSING OBJECT)
+
+	;; A PERSON MAY USE AN OBJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (AN_27 ?x1) (OBJECT_27 ?x1))
+
+	;; AN OBJECT CAN BE MISSING.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [9]>
+
+;; (MAYBE SOMEONE WAS CLEANING UP AND MOVED YOUR ITEM)
+
+	;; SOMEONE MAY CLEAN_UP.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (CLEAN_5FUP_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ITEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ITEM_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [10]>
+
+;; (PRETEND YOU ARE USING THE MISSING ITEM)
+
+	;; A PERSON MAY USE AN ITEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (AN_27 ?x1) (ITEM_27 ?x1))
+
+	;; AN ITEM CAN BE MISSING.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+;; (THINK LIKE YOU NEED TO PUT IT SOMEWHERE COMMA OR YOU JUST BROUGHT IT HOME)
+
+	;; A PERSON MAY BRING A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (GO TO THE FIRST PLACES THAT POP INTO YOUR HEAD)
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+;; (CALL THE PEOPLE AND PLACES YOU VE BEEN RECENTLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SEARCH SYSTEMATICALLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DEPENDING ON YOUR SURROUNDINGS COMMA TRY TO COME UP WITH A SYSTEM TO AVOID OVERLOOKING AN AREA)
+
+	;; A PERSON MAY HAVE SURROUNDINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SURROUNDINGS_27 ?x1))
+
+;; (FOR INSTANCE COMMA IF YOU THINK YOU MAY HAVE LOST YOUR LUCKY PENNY IN A GRASSY LAWN COMMA YOU MAY WANT TO CREATE A SEARCH PATTERN BY
+ YOURSELF OR WITH VOLUNTEERS TO AVOID OVERLOOKING AN AREA)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PERSON MAY LOSE A PENNY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOSE_27 ?x1) (A_27 ?x1) (PENNY_27 ?x1))
+
+	;; A PERSON MAY HAVE A PENNY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PENNY_27 ?x1))
+
+	;; A PENNY CAN BE LUCKY.
+
+		(and (PENNY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LUCKY_27 ?x2))
+
+	;; A LAWN CAN BE GRASSY.
+
+		(and (LAWN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRASSY_27 ?x2))
+
+;; (CONSIDER THE POSSIBILITY THAT THE ITEM MAY HAVE BEEN STOLEN)
+
+	;; AN ITEM MAY BE STEAL -ED.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STEAL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (DO NOT PANIC COMMA BUT CONSIDER HOW MUCH THE ITEM MIGHT BE WORTH -LRB- LIKE A PHONE COMMA IPOD COMMA COMPUTER COMMA MONEY COMMA OR ANY
+ ELECTRONIC ITEM -RRB- TO A STRANGER AND WHETHER ANYONE MIGHT WANT IT AS THEIR OWN)
+
+	;; AN ITEM CAN BE WORTH.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORTH_27 ?x2))
+
+	;; AN ITEM CAN BE ELECTRONIC.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRONIC_27 ?x2))
+
+	;; ANYONE MAY WANT A THING-REFERRED-TO.
+
+		(and (ANYONE_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (IF THE ITEM IS RELATIVELY VALUELESS COMMA OF COURSE COMMA IT S UNLIKELY TO BE AN OBJECT OF THEFT)
+
+	;; AN ITEM CAN BE VALUELESS.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VALUELESS_27 ?x2))
+
+	;; AN OBJECT CAN BE CONSTITUTED_OF_OR_FILLED_WITH THEFT.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (THEFT_27 ?x2))
+
+;; (HOWEVER COMMA YOU NEVER KNOW PEOPLE SOMETIMES STEAL THINGS FOR APPARENTLY NONSENSICAL REASONS)
+
+	;; PEOPLE MAY STEAL THINGS.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (STEAL_27 ?x1) (THINGS_27 ?x1))
+
+	;; THINGS CAN BE FOR REASONS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (reason_27 ?x2))
+
+	;; REASONS CAN BE NONSENSICAL.
+
+		(and (reason_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NONSENSICAL_27 ?x2))
+
+;; (GIVE IT TIME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SOMETIMES AN ITEM WILL SURFACE IN TIME)
+
+	;; AN ITEM MAY SURFACE.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (SURFACE_27 ?x1))
+
+;; (YOUR SISTER FINDS IT WHILE VACUUMING IN AN ODDBALL SPOT YOU NEVER WOULD THOUGHT OF COMMA FOR INSTANCE)
+
+	;; A SISTER MAY FIND A THING-REFERRED-TO.
+
+		(and (SISTER_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A SISTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SISTER_27 ?x1))
+
+	;; A SPOT CAN BE ODDBALL.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ODDBALL_27 ?x2))
+
+;; (UNLESS IT IS SOMETHING WHICH CAN CAUSE SERIOUS PROBLEMS -LRB- LIKE CREDIT CARDS COMMA CELL PHONES COMMA CHECKBOOKS COMMA I.D. -RRB- COMMA
+ SOMETIMES JUST WAITING PAYS OFF)
+
+	;; A THING-REFERRED-TO CAN BE A SOMETHING.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (something_27 ?x2))
+
+	;; PROBLEMS CAN BE SERIOUS.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERIOUS_27 ?x2))
+
+	;; CREDIT CARDS CAN BE LIKE.
+
+		(and (CREDIT_27 ?x1) (CARDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIKE_27 ?x2))

@@ -1,0 +1,121 @@
+On 18 March 2011 23:09, andrewdo <andrewdo@frdcsa.org> wrote:
+> > Hi,
+> >
+> > Build question for CAPE.
+> >
+> > If you want, I can roll Debian/RPM packages and maybe even a CPAN
+> > distribution for CAPE if we can get it to build on GNU+Linux AMD64.
+That would be excellent.
+
+> > First error looks like this
+> >
+> > make[1]: Entering directory
+> > `/s1/myfrdcsa/sandbox/cape-0.6.5/cape-0.6.5/Source/clips'
+> > gcc -c -Wall -Wpointer-arith -Wshadow -Wcast-qual \
+> > -Wcast-align -Wconversion -Wid-clash-32 -Winline \
+> > -Woverloaded-virtual -Wmissing-prototypes -Wconversion \
+> > -Wstrict-prototypes -Waggregate-return -Wno-implicit agenda.c
+> > cc1: error: unrecognized command line option "-Wid-clash-32"
+> > cc1: warning: command line option "-Woverloaded-virtual" is valid for
+> > C++/ObjC++ but not for C
+> > make[1]: *** [agenda.o] Error 1
+> > make[1]: Leaving directory
+> > `/s1/myfrdcsa/sandbox/cape-0.6.5/cape-0.6.5/Source/clips'
+> > make: *** [ClipsMake] Error 2
+> >
+> > So I remove the -Wid-clash-32 from the various Makefiles.
+Looking at gcc documentation, I'd say that this is due to a change
+in gcc.  That argument has gone away completely.  However, it
+(and -Woverloaded-virtual, which gave me a comparable error)
+was only related to enabling a WARNING.  So removing it
+should not actually change anything...
+
+> > Rerunning the make spits out a whole bunch of stuff, followed by this error:
+   :
+   :
+> > from: https://bugs.launchpad.net/ubuntu/+source/swig1.3/+bug/349149
+> >
+> > I can fix the problem by inesrting the following code at the very top of
+> > /usr/lib/perl/5.10.0/CORE/proto.h
+I'm alarmed that you're having to fix such a central Perl file!
+However, it does seem to be an ubuntu/Perl issue, and nothing to
+do with CAPE...
+
+   :
+   :
+> > then, there also are these errors
+> >
+> > CAPETopLevel.c:1114: error: conflicting types for ‘perl_interpret_string’
+> > CAPETopLevel.c:133: note: previous declaration of ‘perl_interpret_string’
+> > was here
+> > CAPETopLevel.c: In function ‘perl_interpret_string’:
+> > CAPETopLevel.c:1114: warning: traditional C rejects ISO C style function
+> > definitions
+Yes, I'm getting this sort of thing, too (on a rather aged FreeBSD,
+with Perl 5.8.9)
+
+It looks to me like something has changed in Perl XS stuff.
+
+XS is the mechanism you use to tell Perl about code you have written in C.
+It provides some header files that you include in your C code that
+define things, so that your C functions all "look" (i.e. take the
+right arguments,
+return the right kinds of data structures) the way Perl expects.
+
+It is looking like this has changed between Perl 5.6 and Perl 5.8.
+No surprise there!
+
+
+> > I'm stuck with these errors. These last three may be related to
+> > removing the -Wid-clash-32, I'm not sure.
+I doubt it: id-clash-32 was to do with issuing *warnings*
+
+> > Is there a particular version of gcc you recommend:
+Hmmmm.....
+
+Not sure.
+
+There seem to be two possibilities.
+
+I'm seeing lots of warning messages about "Traditional C" and/or ISO C.
+So one possibility is that gcc has got more fussy about how it
+handles different versions of C: the code in CAPE is some kind of
+hybrid that gcc from 10 years ago was happy to swallow, but
+gcc today is beign more strict.
+
+But the other possibility is that Perl has changed something about
+how it wants bits of C to be organised/declared.  SO doing things
+the way that worked 10 years ago no longer works....
+
+The "Conflicting types" messages concerns an incompatibility
+between something defined in Perl (i.e. XS(....) ), and something
+that it USED to be compatible with...
+
+CAPE is using "XS(.....) {   } " for its function definitions.  It is also
+using "newXS" to tell Perl about each function it has defined.
+
+But an initial look at the perl XS documentation finds no mention
+of "XS(....)" or "newXS" at all.  That makes me think that
+XS has changed, and the name of the game is to figure out
+what the new calls would look like.  I'd be pretty sure that
+they are all doing more-or-less the same thing that they used
+to do, so the actually C functions will probably still work,
+once you can find the syntax you're now supposed to use
+to tell the compiler about them.
+
+It might be worth asking on a Perl newsgroup or forum, since
+it is quite possible an experience XS hacker will just
+tell you.  Otherwise, I would guess that there are/were
+release notes or similar for some version of Perl or
+XS which explained the changes and spelled out what
+is/was required.   Otherwise, it will be a case of
+reading the documentation and learning for yourself
+what it is meant to look like, and then making
+the CAPE files look like that...
+
+It doesn't look like an enormous task, but I'm not going to
+get to it any time soon.
+
+Robert.
+
+-- Robert Inder                                     0131 229 1052 / 07808 492 213 Interactive Information Ltd,   3, Lauriston Gardens, Edinburgh EH3 9HH Registered in Scotland, Company no. SC 150689                                             Interactions speak louder than words 

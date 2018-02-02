@@ -1,0 +1,143 @@
+;; (ADDRESSKEEP ALL TOILETRIES COMMA DEODORANTS COMMA SHAMPOOS COMMA ETC. IN A PLASTIC CONTAINER)
+
+	;; A CONTAINER CAN BE PLASTIC.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (MAKE SURE THE CONTAINER IS SEALED WHEN NOT IN USE TO PREVENT ITEMS FROM SPILLING COMMA AND KEEP IT CLOSE TO THE BATHROOM SO IT S EASY TO FIND)
+
+	;; A CONTAINER MAY BE SEAL -ED.
+
+		(and (CONTAINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEAL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY CLOSE TO A BATHROOM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CLOSE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BATHROOM_27 ?x2))
+
+;; (STICK WITH PAPER AND PLASTIC KITCHEN UTENSILS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE PAPER PLATES AND NAPKINS TO EAT ON COMMA AS WELL AS PLASTIC COMMA DISPOSABLE CUTLERY TO EAT WITH)
+
+	;; USE PAPER MAY PLATE.
+
+		(and (USE_27 ?x1) (PAPER_27 ?x1) (MAY_27 ?x1) (PLATE_27 ?x1))
+
+;; (THIS WILL GREATLY DECREASE THE WORKLOAD OF USING DISHES AND SAVES A LOT OF SPACE)
+
+	;; 
+
+	;; ((:I (:Q THE THING-REFERRED-TO.N) DECREASE.V (:A (:Q THE WORKLOAD.N) (:P OF.P (:F KA NIL)))) NIL)
+
+		(and (I_27 ?x2) (Q_27 ?x1) (THE_27 ?x1) (THING-REFERRED-TO_2EN_27 ?x1) (DECREASE_2EV_27 ?x2) (Q_27 ?x3) (THE_27 ?x3) (WORKLOAD_2EN_27 ?x3) (P_27 ?x4) (OF_2EP_27 ?x4) (F_27 ?x5) (KA_27 ?x5) (NIL_27 ?x5) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALL BROOMS COMMA VACUUM CLEANERS COMMA MOPS COMMA AND OTHER LARGE CLEANING ITEMS SHOULD BE STORED UNDER THE COUCH)
+
+	;; SOME_NUMBER_OF BROOMS MAY MOP.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (BROOMS_27 ?x1) (MAY_27 ?x1) (MOP_27 ?x1))
+
+	;; CLEANING ITEMS MAY BE STORE -ED UNDER A COUCH.
+
+		(and (CLEANING_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STORE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (UNDER_27 ?x2) (A_27 ?x2) (COUCH_27 ?x2))
+
+	;; CLEANING ITEMS CAN BE LARGE.
+
+		(and (CLEANING_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (PET CAGES SHOULD BE KEPT CLEAN AND READY TO USE IF NECESSARY)
+
+	;; CAGES MAY BE KEEP -ED CLEAN.
+
+		(and (cage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (CLEAN_27 ?x2))
+
+	;; A PET[PERSON??] MAY HAVE CAGES.
+
+		(and (PET_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (CAGES_27 ?x1))
+
+;; (AS FOR WASHING PETS COMMA MOST CAN TOLERATE SINK WATER COMMA SO KEEP A WATER DISH BY THE SINK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DUST IS A HUGE CONCERN WHEN LIVING IN AN RV COMMA SO BE SURE TO DUST ALL ELECTRONICS AS OFTEN AS POSSIBLE)
+
+	;; A DUST[PERSON??] CAN BE A CONCERN.
+
+		(and (DUST_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (concern_27 ?x1))
+
+	;; A CONCERN CAN BE HUGE.
+
+		(and (concern_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUGE_27 ?x2))
+
+	;; LIVING CAN BE IN A RV.
+
+		(and (LIVING_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (RV_27 ?x2))
+
+;; (SPACE FOR CLOTHES IS LIMITED ON AN RV COMMA SO USE A LARGE PLASTIC CONTAINER COMMA AS YOU MAY NOT WANT TO USE A PUBLIC LAUNDRY PLACE)
+
+	;; A SPACE[PERSON??] MAY BE LIMIT -ED ON A RV.
+
+		(and (SPACE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (LIMIT_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (RV_27 ?x1))
+
+	;; A SPACE[PERSON??] CAN BE FOR CLOTHES.
+
+		(and (SPACE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (clothe_27 ?x1))
+
+	;; A CONTAINER CAN BE LARGE.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A CONTAINER CAN BE PLASTIC.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A LAUNDRY PLACE CAN BE PUBLIC.
+
+		(and (LAUNDRY_27 ?x1) (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUBLIC_27 ?x2))
+
+;; (BRING ONLY CLOTHES YOU CAN TOSS AND REPLACE ON THE ROAD)
+
+	;; A PERSON MAY TOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TOSS_27 ?x1))
+
+;; (IF YOUR TRAVELING ONLY TEMPORARILY ON AN RV COMMA DO N T TAKE YOUR ENTIRE WARDROBE)
+
+	;; A PERSON MAY HAVE A WARDROBE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WARDROBE_27 ?x1))

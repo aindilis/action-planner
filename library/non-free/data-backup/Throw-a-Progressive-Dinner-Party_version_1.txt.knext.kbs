@@ -1,0 +1,77 @@
+;; (WHILE SOME HOSTS MAY BE ABLE TO ACCOMMODATE 24 PEOPLE FOR A SIT-DOWN DINNER COMMA MOST CAN ONLY COMFORTABLY ACCOMMODATE 6 TO 12)
+
+	;; SOME_NUMBER_OF PEOPLE CAN BE FOR A DINNER.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DINNER_27 ?x2))
+
+	;; A DINNER CAN BE SIT-DOWN.
+
+		(and (DINNER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIT-DOWN_27 ?x2))
+
+;; (SEND OUT INVITATIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (INCLUDE THE TIMES AND ADDRESSES FOR EACH HOST S HOUSE COMMA AND INCLUDE A REQUEST TO RSVP)
+
+	;; TIMES CAN BE FOR A HOUSE.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+	;; SOME_NUMBER_OF HOST MAY HAVE A HOUSE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (HOST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (FOLLOW UP WITH GUESTS WHO DO N T RESPOND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU WANT AN ACCURATE COUNT OF GUESTS COMMA ESPECIALLY FOR THE HOST WHO S HANDLING THE MAIN COURSE)
+
+	;; A PERSON MAY WANT A COUNT OF GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (A_27 ?x1) (COUNT_27 ?x1) (of_27 ?x1 ?x2) (GUESTS_27 ?x2))
+
+	;; A COUNT CAN BE CONSTITUTED_OF_OR_FILLED_WITH GUESTS.
+
+		(and (COUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (GUESTS_27 ?x2))
+
+	;; A COUNT CAN BE ACCURATE.
+
+		(and (COUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCURATE_27 ?x2))
+
+;; (FOLLOW UP WITH EACH HOST A WEEK BEFORE THE SCHEDULED DATE)
+
+	;; A DATE CAN BE SCHEDULED.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCHEDULED_27 ?x2))
+
+;; (BE SURE EACH ONE KNOWS THE FINAL NUMBER OF GUESTS AND IS STILL PREPARED TO HOST HIS/HER/THEIR PART OF THE MEAL)
+
+	;; SOME_NUMBER_OF ONE MAY KNOW A NUMBER OF GUESTS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ONE_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (NUMBER_27 ?x1) (of_27 ?x1 ?x2) (GUESTS_27 ?x2))
+
+	;; A MEAL MAY HAVE HIS/HER/THEIR PART.
+
+		(and (MEAL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HIS_2FHER_2FTHEIR_27 ?x1) (PART_27 ?x1))

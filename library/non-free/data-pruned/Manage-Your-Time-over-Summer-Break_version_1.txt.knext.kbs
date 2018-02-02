@@ -1,0 +1,285 @@
+;; (EVEN IF THAT TIME IS 1 AM COMMA TRY TO STAY CONSISTENT)
+
+	;; A TIME CAN BE A NUMBER_OR_PORTION.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION MAY BE.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (SEE WHICH FRIENDS ARE AVAILABLE OVER THE SUMMER)
+
+	;; FRIENDS CAN BE AVAILABLE OVER A SUMMER.
+
+		(and (friend_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2) (OVER_27 ?x2) (A_27 ?x2) (SUMMER_27 ?x2))
+
+;; (IF NONE OF YOUR CLOSE FRIENDS ARE STICKING AROUND COMMA EITHER MAKE NEW ONES OR CALL FRIENDS OF FRIENDS THAT ARE STAYING)
+
+	;; NONE OF FRIENDS MAY STICK_AROUND.
+
+		(and (none_27 ?x1) (of_27 ?x1 ?x2) (FRIENDS_27 ?x2) (MAY_27 ?x2) (STICK_5FAROUND_27 ?x2))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; FRIENDS CAN BE CLOSE.
+
+		(and (friend_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLOSE_27 ?x2))
+
+	;; FRIENDS CAN BE CONSTITUTED_OF_OR_FILLED_WITH FRIENDS.
+
+		(and (friend_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FRIENDS_27 ?x2))
+
+;; (ASK IF THEY WANT TO GO SWIMMING COMMA CATCH THE LATEST MOVIE COMMA OR MAYBE JUST HANG AROUND YOUR HOUSE FOR YOUR FAVORITE TV SHOW MARATHON)
+
+	;; A HOUSE CAN BE FOR A TV SHOW MARATHON.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (tv_27 ?x2) (SHOW_27 ?x2) (MARATHON_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A TV SHOW MARATHON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TV_27 ?x1) (SHOW_27 ?x1) (MARATHON_27 ?x1))
+
+	;; A TV SHOW MARATHON CAN BE FAVORITE.
+
+		(and (tv_27 ?x1) (SHOW_27 ?x1) (MARATHON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (CHECK OUT YOUR FRIENDS ON FACEBOOK COMMA MYSPACE COMMA OR WHATEVER SOCIAL NETWORKING SITE THAT IS YOUR FAVORITE AND MAKE NEW FRIENDS ONLINE TOO)
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; A SITE CAN BE SOCIAL.
+
+		(and (SITE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOCIAL_27 ?x2))
+
+	;; A SITE CAN BE NETWORKING.
+
+		(and (SITE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NETWORKING_27 ?x2))
+
+	;; A PERSON MAY HAVE A FAVORITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAVORITE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (TALK TO KIDS FROM SCHOOL THAT YOU KNOW YOUR PARENTS WOULD APPROVE OF)
+
+	;; TALK CAN BE TO KIDS.
+
+		(and (TALK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (KIDS_27 ?x2))
+
+	;; KIDS CAN BE FROM SCHOOL.
+
+		(and (KIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (SCHOOL_27 ?x2))
+
+	;; A PERSON MAY KNOW PARENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (PARENTS_27 ?x1))
+
+	;; A PERSON MAY HAVE PARENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+;; (DO N T TALK TO RANDOM PEOPLE THAT LOOK YOUR AGE)
+
+	;; PEOPLE CAN BE RANDOM.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RANDOM_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AGE_27 ?x1))
+
+;; (IF YOU MAKE PLANS COMMA BE SURE TO TELL YOUR PARENTS)
+
+	;; A PERSON MAY MAKE PLANS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (PLANS_27 ?x1))
+
+	;; A PERSON MAY HAVE PARENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; (PLAN SOME DOWNTIME WITH YOURSELF)
+
+	;; SOME_NUMBER_OF DOWNTIME CAN BE WITH A PERSON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DOWNTIME_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (SUMMER TIME CAN BE A TIME TO HAVE FUN COMMA BUT IT IS ALSO A GREAT WAY TO RELAX FROM THE PRESSURES OF SCHOOL)
+
+	;; A THING-REFERRED-TO CAN BE A WAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE GREAT.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (EVERY DAY COMMA PLAN ABOUT 30 MINUTES FOR YOU TO JUST CHILL OUT)
+
+	;; SOME_NUMBER_OF DAY MAY PLAN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DAY_27 ?x1) (MAY_27 ?x1) (PLAN_27 ?x1))
+
+;; (YOU CAN GO OUTSIDE AND RIDE YOUR BIKE COMMA READ A BOOK COMMA OR JUST SIT IN YOUR FAVORITE CHAIR AND REFLECT ON YOUR THOUGHTS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE A BIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIKE_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHAIR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHAIR_27 ?x1))
+
+	;; A CHAIR CAN BE FAVORITE.
+
+		(and (CHAIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; A PERSON MAY HAVE THOUGHTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THOUGHTS_27 ?x1))
+
+;; (START A NEW HOBBY COMMA OR KEEP UP WITH YOUR OLD HOBBIES)
+
+	;; A PERSON MAY HAVE HOBBIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HOBBIES_27 ?x1))
+
+	;; HOBBIES CAN BE OLD.
+
+		(and (hobby_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (SEARCH AROUND AND FIND ONE THAT INTERESTS YOU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TRY JOINING A CLUB OR SPORT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MANY TEENS GET OUT OF SHAPE DURING THE SUMMER COMMA AND ITS IMPORTANT NOT TO JUST SIT AROUND ON THE COMPUTER COMMA VIDEO GAME CONSOLE COMMA OR TV ALL DAY)
+
+	;; SOME_NUMBER_OF TEENS MAY GET_OUT OF SHAPE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TEENS_27 ?x1) (MAY_27 ?x1) (GET_5FOUT_27 ?x1) (of_27 ?x1 ?x2) (SHAPE_27 ?x2))
+
+	;; SHAPE CAN BE DURING A SUMMER.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1) (during_27 ?x1 ?x2) (A_27 ?x2) (SUMMER_27 ?x2))
+
+;; (YOU MIGHT BE IN A DORM ROOM OR APARTMENT WHEN YOU GO TO COLLEGE COMMA AND KEEPING CLEAN AND TIDY IS ESSENTIAL)
+
+	;; A PERSON CAN BE IN A DORM ROOM.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DORM_27 ?x2) (ROOM_27 ?x2))
+
+	;; A PERSON MAY GO TO COLLEGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (COLLEGE_27 ?x2))
+
+;; (SO GET IN THAT HABIT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (JUST REMEMBER THAT IN AN AVERAGE HOUSEHOLD COMMA THESE THINGS NEED TO BE DONE DAILY  BEDROOMS SHOULD BE CLEAN COMMA WITH BEDS MADE COMMA LAUNDRY IN A BASKET COMMA TRASH IN A TRASH BAG)
+
+	;; A BEDROOMS[PERSON??] CAN BE CLEAN.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (CLEAN_27 ?x1))
+
+	;; BEDS MAY BE MAKE -ED.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; LAUNDRY CAN BE IN A BASKET.
+
+		(and (LAUNDRY_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BASKET_27 ?x2))
+
+	;; TRASH CAN BE IN A TRASH BAG.
+
+		(and (trash_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (TRASH_27 ?x2) (BAG_27 ?x2))
+
+;; (IT MIGHT BE DIRTY)
+
+	;; A THING-REFERRED-TO CAN BE DIRTY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+;; (MOW THE LAWN/PULL WEEDS/RAKE LEAVES COMMA ETC.)
+
+	;; WEEDS/RAKE LEAVES CAN BE LAWN/PULL.
+
+		(and (WEEDS_2FRAKE_27 ?x1) (LEAVES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LAWN_2FPULL_27 ?x2))

@@ -1,0 +1,10 @@
+date:date[year -> 2014, month -> 1, dayOfMonth -> 1].
+
+intend(?USER)(perform(?USER)(check(hasMotorOil(?VEHICLE)))) :- 
+	operates(?USER,?VEHICLE), dayOfWeek(?DATE:date,saturday).
+
+probably(operates(?USER,?VEHICLE) :- owns(?USER,?VEHICLE).
+
+intend(testFireAlarmBatteries) :- currentDate(?DATE:date), daylightSavingsTimeBegins(?DATE).
+% intend(testFireAlarmBatteries) :- currentDate(?DATE:date), daylightSavingsTimeEnds(?DATE).
+

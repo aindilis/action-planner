@@ -1,0 +1,71 @@
+;; (1 TAKE YOUR NEW CAT TO THE VET COMMA UNLESS HE IS FROM A SHELTER AND THE VETS THERE HAVE ALREADY EXAMINED HIM)
+
+	;; A PERSON MAY HAVE A CAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAT_27 ?x1))
+
+	;; A MALE CAN BE FROM A SHELTER.
+
+		(and (MALE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (SHELTER_27 ?x2))
+
+	;; VETS MAY EXAMINE A MALE.
+
+		(and (vet_27 ?x1) (MAY_27 ?x1) (EXAMINE_27 ?x1) (A_27 ?x1) (MALE_27 ?x1))
+
+;; (BE GENTLE AND PATIENT WHEN HANDLING THE CAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SPEAK TO HIM IN A CALM COMMA REASSURING VOICE)
+
+	;; A VOICE CAN BE REASSURING.
+
+		(and (VOICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REASSURING_27 ?x2))
+
+;; (GIVE HIM A QUIET PLACE TO REST UNDISTURBED IN YOUR HOME UNTIL HE GETS USED TO HIS NEW SURROUNDINGS)
+
+	;; A PLACE CAN BE QUIET.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUIET_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A MALE MAY GET.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A MALE MAY HAVE SURROUNDINGS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SURROUNDINGS_27 ?x1))
+
+;; (MAKE SURE THERE IS NOT A BIG CROWD AROUND HIM)
+
+	;; A CROWD CAN BE AROUND A MALE.
+
+		(and (CROWD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (MALE_27 ?x2))
+
+	;; A CROWD CAN BE BIG.
+
+		(and (CROWD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (MAKE SURE THERE IS NOT A BIG CROWD AROUND HIM)
+
+	;; A CROWD CAN BE AROUND A MALE.
+
+		(and (CROWD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (MALE_27 ?x2))
+
+	;; A CROWD CAN BE BIG.
+
+		(and (CROWD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))

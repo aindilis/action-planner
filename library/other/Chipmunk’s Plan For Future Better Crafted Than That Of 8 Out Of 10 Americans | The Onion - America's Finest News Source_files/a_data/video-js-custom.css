@@ -1,0 +1,114 @@
+@font-face{
+  font-family: 'vjs-circle-slider';
+  src: url('font/vjs-circle-slider.eot');
+  src: url('font/vjs-circle-slider.eot') format('embedded-opentype'),
+  url('font/vjs-circle-slider.woff') format('woff'),
+  url('font/vjs-circle-slider.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* this just makes it a 16x9 that fills parent container */
+div.vjs-custom-skin.video-js{
+  width: 100% !important;
+  padding-top: 56.25%;
+}
+.vjs-custom-skin.video-js.vjs-fullscreen{ padding-top: 0; }
+
+.vjs-custom-skin .vjs-control-bar.vjs-fade-in ~ .share{
+  visibility: visible;
+  opacity: 0.7;
+  display: block;
+  -webkit-transition: visibility 0.1s, opacity 0.1s;
+       -moz-transition: visibility 0.1s, opacity 0.1s;
+        -ms-transition: visibility 0.1s, opacity 0.1s;
+         -o-transition: visibility 0.1s, opacity 0.1s;
+            transition: visibility 0.1s, opacity 0.1s;
+}
+
+.vjs-custom-skin .vjs-fade-out, .vjs-custom-skin .vjs-control-bar.vjs-fade-out ~ .share {
+  visibility: hidden !important;
+  opacity: 0.0 !important;
+
+  -webkit-transition: visibility 0s ease 0.2s,opacity 0.2s ease;
+  -moz-transition: visibility 0s ease 0.2s,opacity 0.2s ease;
+  -ms-transition: visibility 0s ease 0.2s,opacity 0.2s ease;
+  -o-transition: visibility 0s ease 0.2s,opacity 0.2s ease;
+  transition: visibility 0s ease 0.2s,opacity 0.2s ease;
+}
+
+.vjs-custom-skin .vjs-control-bar.vjs-lock-showing ~ .share{
+  display: block;
+  opacity: 0.7 !important;
+  visibility: visible !important;
+}
+
+.vjs-custom-skin .vjs-lock-showing{
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.video-js.vjs-custom-skin{
+    font-size: 12px;
+}
+
+.vjs-custom-skin .vjs-play-progress,
+.vjs-custom-skin .vjs-volume-level{
+    background-color: #E8E8E8;
+    background-image: none;
+}
+
+.vjs-custom-skin.vjs-paused .vjs-control-bar{ display: block; }
+.vjs-custom-skin .vjs-control-bar{ background-color: rgba(0,0,0,0.7); }
+
+.vjs-custom-skin .vjs-control{ color: #E8E8E8; }
+
+.vjs-custom-skin .vjs-control:before,
+.vjs-custom-skin .vjs-control:focus:before{
+    text-shadow: none;
+}
+.vjs-custom-skin .vjs-control:hover:before{
+    text-shadow: 0em 0em 0.1em #FFF;
+}
+.vjs-custom-skin .vjs-slider-handle:before{
+    font-family: vjs-circle-slider;
+    content: "\F111";
+    text-shadow: 0em 0em 0.1em #333;
+}
+
+.vjs-custom-skin .vjs-seek-handle{ margin: -2px 0 0 6px; }
+.vjs-custom-skin .vjs-progress-control{
+    font-size: 12px;
+}
+.vjs-custom-skin:hover .vjs-progress-control{
+    font-size: 12px;
+    -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.vjs-custom-skin .vjs-time-divider{ color: #E8E8E8; }
+
+.vjs-custom-skin .vjs-poster{ top: 0px; }
+
+.vjs-custom-skin .vjs-big-play-button{
+  color: #E8E8E8;
+  border-color: #E8E8E8;
+  background-color: rgba(0,0,0,0.7);
+  font-size: 0.8em;
+}
+
+.vjs-custom-skin:hover .vjs-big-play-button,
+.vjs-custom-skin .vjs-big-play-button:focus{
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.vjs-custom-skin .vjs-big-play-button:before{
+  text-shadow: none;
+}
+
+.site_avclub .video-js{ margin-bottom: 5px; }

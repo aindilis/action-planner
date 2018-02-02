@@ -1,0 +1,1163 @@
+;; (IF NOBODY IS USING THE HOME DURING THE ENTIRE PERIOD OF WINTER COMMA MAKE SURE THAT THE WATER SUPPLY IS TURNED OFF COMPLETELY AT THE
+ MAINS)
+
+	;; NOBODY MAY USE A HOME.
+
+		(and (NOBODY_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A WATER SUPPLY MAY BE TURN_OFF -ED.
+
+		(and (WATER_27 ?x1) (SUPPLY_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TURN_5FOFF_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (DRAIN ALL WATER THAT CAN BE DRAINED)
+
+	;; A DRAIN[PERSON??] MAY BE DRAIN -ED.
+
+		(and (DRAIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DRAIN_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+;; (DRAIN SPAS COMMA SWIMMING POOLS AND PONDS OF WATER)
+
+	;; POOLS CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (pool_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+	;; POOLS CAN BE SWIMMING.
+
+		(and (pool_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SWIMMING_27 ?x2))
+
+;; (PROTECT THE GARDEN AND OUTDOOR PLANTS)
+
+	;; PLANTS CAN BE OUTDOOR.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+;; (COVER ANY PLANTS THAT ARE FROST INTOLERANT AND WOULD BENEFIT FROM COVERING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TRIM SHRUBBERY SO DOORS AND WINDOWS ARE NOT BLOCKED FROM VIEW -LRB- BETTER SECURITY -RRB-)
+
+	;; A TRIM[PERSON??] MAY SHRUBBERY.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SHRUBBERY_27 ?x1))
+
+	;; DOORS MAY BE BLOCK -ED FROM VIEW.
+
+		(and (door_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLOCK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (VIEW_27 ?x2))
+
+	;; A SECURITY CAN BE BETTER.
+
+		(and (SECURITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+;; (ARRANGE TO HAVE THE LAWN MOWED AND SHRUBBERY TRIMMED)
+
+	;; ARRANGE MAY TRIM.
+
+		(and (ARRANGE_27 ?x1) (MAY_27 ?x1) (TRIM_27 ?x1))
+
+	;; A LAWN CAN BE MOWED.
+
+		(and (LAWN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOWED_27 ?x2))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort main loop
+Break 1 [10]>
+
+;; (BRING IN OUTDOOR FURNITURE COMMA HAMMOCKS COMMA SEATS COMMA DELICATE GARDEN ORNAMENTATION COMMA HOSE PIPES ETC. - ANYTHING THAT YOU
+ CONSIDER WILL NOT WINTER WELL UNDER SNOW OR PROLONGED COLD SHOULD BE STORED INDOORS)
+
+	;; FURNITURE CAN BE OUTDOOR.
+
+		(and (FURNITURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+	;; A GARDEN ORNAMENTATION CAN BE DELICATE.
+
+		(and (GARDEN_27 ?x1) (ORNAMENTATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DELICATE_27 ?x2))
+
+	;; A PERSON MAY CONSIDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONSIDER_27 ?x1))
+
+;; (KEEP LADDERS INSIDE OR OTHERWISE SECURED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BLOCK UP ANY HOLES IN THE EAVES OR WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BLOCK UP ANY HOLES IN THE EAVES OR WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BLOCK UP ANY HOLES IN THE EAVES OR WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BLOCK UP ANY HOLES IN THE EAVES OR WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BLOCK UP ANY HOLES IN THE EAVES OR WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: objects printed as # in view of *PRINT-LEVEL* cannot be read back in
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [11]>
+
+;; (CLOSE FLUES AND DAMPERS)
+
+	;; A CLOSE[PERSON??] MAY FLUE.
+
+		(and (CLOSE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FLUE_27 ?x1))
+
+;; (LOCK AWAY ALL PLEASURE CRAFT SUCH AS BOATS COMMA ATVS COMMA BICYCLES COMMA CANOES)
+
+	;; AN ATVS[PERSON??] MAY CANOE.
+
+		(and (ATVS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CANOE_27 ?x1))
+
+;; (KAYAKS COMMA CARS ETC. IN THE GARAGE OR SHED AND ENSURE THAT THE LOCK IS STRONG)
+
+	;; CARS MAY ETC. IN A GARAGE.
+
+		(and (car_27 ?x1) (MAY_27 ?x1) (ETC_2E_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GARAGE_27 ?x2))
+
+	;; A LOCK CAN BE STRONG.
+
+		(and (LOCK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+;; (BLOCK WINDOW VIEWS INTO THIS STORAGE SPACE)
+
+	;; WINDOW MAY VIEW INTO A STORAGE SPACE.
+
+		(and (WINDOW_27 ?x1) (MAY_27 ?x1) (VIEW_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+	;; A BLOCK[PERSON??] MAY HAVE A WINDOW.
+
+		(and (BLOCK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WINDOW_27 ?x1))
+
+;; (LEAVE NOTHING OUTDOORS THAT CAN BE BLOWN ABOUT BY A STRONG WIND OR WASHED AWAY BY A LAKE OR RIVER OVERFLOWING ITS BANKS)
+
+	;; A WIND CAN BE STRONG.
+
+		(and (WIND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+	;; A LAKE MAY OVERFLOW BANKS.
+
+		(and (LAKE_27 ?x1) (MAY_27 ?x1) (OVERFLOW_27 ?x1) (BANKS_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE BANKS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BANKS_27 ?x1))
+
+;; (IF UNSURE IF ALL WATER HAS DRAINED FROM PIPES COMMA USE AN AIR COMPRESSOR TO BLOW OUT ALL WATER PIPES)
+
+	;; WATER MAY DRAIN FROM PIPES.
+
+		(and (WATER_27 ?x1) (MAY_27 ?x1) (DRAIN_27 ?x1) (FROM_27 ?x1) (PIPES_27 ?x1))
+
+;; (TURN DOWN THE HEAT COMMA BUT DO N T TURN IT OFF)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (KEEP IT AT ABOUT 58 F/14 C OR SO COMMA IN ORDER TO AVOID PROBLEMS WITH FREEZING PLASTER -LRB- WHICH WILL CRACK IN UNSIGHTLY WAYS -RRB-
+ AND PIPES)
+
+	;; WAYS CAN BE UNSIGHTLY.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNSIGHTLY_27 ?x2))
+
+;; (UNLESS YOU RE USING YOUR SUMMER VACATION HOME FOR WINTER SPORTS COMMA YOU MAY WANT TO CONSIDER NOT HEATING IT AT ALL IF FREEZING PROBLEMS
+ ARE NOT AN ISSUE)
+
+	;; A PERSON MAY HAVE A SUMMER VACATION HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUMMER_27 ?x1) (VACATION_27 ?x1) (HOME_27 ?x1))
+
+	;; FREEZING PROBLEMS CAN BE AN ISSUE.
+
+		(and (FREEZING_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ISSUE_27 ?x2))
+
+;; (DRAIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU-2 ADVCL LIVE-3 DET AN-5 PREP_IN AREA-6 ADVMOD WHERE-7 NN FREEZING-8 NSUBJ PIPES-9 AUX CAN-10 COP BE-11 DET A-12 ADVCL PROBLEM-13 DOBJ
+ TOILETS-16 NN WATER-18 APPOS HEATER-19 DEP TURN-21 PRT OFF-22 NN GAS-23 CONJ_OR ELECTRIC-25 NN ELECTRIC-25 DOBJ SUPPLY-26 ADVMOD FIRST-27
+ AMOD IF-30 DET A-32 NN WELL-33 CONJ_AND PUMP-35 NN PUMP-35 PREP_ON SYSTEM-36 DET THE-38 APPOS EXPANSION-39 DOBJ TANK-40 CONJ_AND TANK-40)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; (CLOSE THE SINK AND TUB DRAINS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 5 [14]>
+
+;; (READ HOW TO TURN OFF THE WATER SUPPLY TO A TOILET FOR MORE INFORMATION)
+
+	;; A TOILET CAN BE FOR INFORMATION.
+
+		(and (TOILET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INFORMATION_27 ?x2))
+
+;; (FOR DISHWASHERS COMMA REFRIGERATORS -LRB- WITH A WATER DISPENSER OR AN ICE MAKER -RRB- AND CLOTHES WASHERS COMMA FOLLOW THE MANUFACTURER
+ S DIRECTIONS)
+
+	;; REFRIGERATORS MAY FOLLOW.
+
+		(and (refrigerator_27 ?x1) (MAY_27 ?x1) (FOLLOW_27 ?x1))
+
+	;; A MANUFACTURER MAY BE DIRECTIONS.
+
+		(and (MANUFACTURER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRECTIONS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [15]>
+
+;; (REMOVE ANY WATER FILTER INSIDE REFRIGERATOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU FIND THE TASK DAUNTING COMMA GET A LOCAL PLUMBER TO DO IT FOR YOU)
+
+	;; A TASK CAN BE DAUNTING.
+
+		(and (TASK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAUNTING_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN OUT THE FRIDGE AND DO N T LEAVE ANYTHING IN THERE WHICH IS LIKELY TO GO BAD DURING THE TIME YOU ARE AWAY)
+
+	;; 
+
+	;; ((:I (:F K ANYTHING.N) IN.P NIL))
+
+		(and (I_27 ?x2) (F_27 ?x1) (K_27 ?x1) (ANYTHING_2EN_27 ?x1) (IN_2EP_27 ?x2) (NIL_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [16]>
+
+;; (CHECK THAT ALL YOUR WINDOWS AND DOORS ARE SHUT AND LOCKED)
+
+	;; A PERSON MAY HAVE WINDOWS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WINDOWS_27 ?x1))
+
+;; (THIS INCLUDES CHECKING THE SMALL ATTIC COMMA BATHROOM COMMA AND BASEMENT WINDOWS)
+
+	;; A THING MAY INCLUDE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1))
+
+	;; AN ATTIC CAN BE SMALL.
+
+		(and (ATTIC_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))
+
+;; (CLOSE SKYLIGHTS AND VENTILATION SHAFTS)
+
+	;; SKYLIGHTS MAY SHAFT.
+
+		(and (skylight_27 ?x1) (MAY_27 ?x1) (SHAFT_27 ?x1))

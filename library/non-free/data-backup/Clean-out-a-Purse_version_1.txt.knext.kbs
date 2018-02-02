@@ -1,0 +1,143 @@
+;; (INEXPENSIVE -RRB- EMPTY YOUR PURSE ON A FLAT SURFACE)
+
+	;; A PERSON MAY HAVE A PURSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURSE_27 ?x1))
+
+	;; A SURFACE CAN BE FLAT.
+
+		(and (SURFACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (TAKE ALL THE EMPTY CONTAINERS COMMA WRAPPERS COMMA OR OTHER TRASH AND THROW IT AWAY)
+
+	;; CONTAINERS CAN BE EMPTY.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+;; (CLEAN THE OUTSIDE OF YOUR PURSE WITH WARM WATER)
+
+	;; A PURSE MAY HAVE AN OUTSIDE.
+
+		(and (PURSE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OUTSIDE_27 ?x1))
+
+	;; A PURSE CAN BE WITH WATER.
+
+		(and (PURSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (WATER_27 ?x2))
+
+	;; A PERSON MAY HAVE A PURSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURSE_27 ?x1))
+
+	;; WATER CAN BE WARM.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+;; (USE SOAP IF IT WO N T DAMAGE THE PURSE)
+
+	;; A THING-REFERRED-TO MAY DAMAGE A PURSE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DAMAGE_27 ?x1) (A_27 ?x1) (PURSE_27 ?x1))
+
+;; (IF THE INSIDE IS FILLED WITH DUST OR MAKEUP BITS COMMA TURN THE PURSE UPSIDE-DOWN AND TAP OVER A SINK)
+
+	;; AN INSIDE MAY BE FILL -ED WITH DUST.
+
+		(and (INSIDE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (DUST_27 ?x2))
+
+;; (LEAVE THE PURSE TO DRY FOR A WHILE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IN THE MEANTIME COMMA THINK ABOUT WHAT YOU REALLY NEED IN YOUR PURSE)
+
+	;; A PERSON MAY NEED IN A PURSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PURSE_27 ?x2))
+
+	;; A PERSON MAY HAVE A PURSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURSE_27 ?x1))
+
+;; (WHEN YOUR PURSE IS DRY COMMA COME BACK AND LOOK THROUGH YOUR OBJECTS)
+
+	;; A PURSE CAN BE DRY.
+
+		(and (PURSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PURSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURSE_27 ?x1))
+
+	;; A PERSON MAY HAVE OBJECTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OBJECTS_27 ?x1))
+
+;; (DECIDE WHAT YOU REALLY NEED OR WANT)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (IF YOU HAVE YEAR OLD MASCARA COMMA YOU MAY WANT TO THROW THAT AWAY AND GET SOMETHING NEW)
+
+	;; A PERSON MAY HAVE MASCARA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MASCARA_27 ?x1))
+
+;; (THROW OUT ALL YOUR UNWANTED ITEMS OR KEEP THEM SOMEWHERE ELSE)
+
+	;; A PERSON MAY HAVE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; ITEMS CAN BE UNWANTED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNWANTED_27 ?x2))
+
+;; (IF YOU NEED NEW MASCARA COMMA BLUSH COMMA TAMPONS COMMA ETC COMMA GO AND GET IT)
+
+	;; BLUSH MAY GO.
+
+		(and (BLUSH_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY NEED MASCARA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (MASCARA_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [15]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [17]>
+
+;; (CLOSE YOUR PURSE AND PUT IT SOMEWHERE YOU WILL REMEMBER)
+
+	;; A PERSON MAY REMEMBER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REMEMBER_27 ?x1))
+
+	;; A PERSON MAY HAVE A PURSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURSE_27 ?x1))

@@ -1,0 +1,296 @@
+;; (ML -RRB- 1 PICK THE BEST TIME TO GO)
+
+	;; A TIME CAN BE BEST.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (THE BUSIEST TOURIST SEASON IS DECEMBER TO FEBRUARY WHEN MAINLANDERS WANT TO ESCAPE WINTER WEATHER)
+
+	;; A TOURIST SEASON CAN BE BUSIEST.
+
+		(and (TOURIST_27 ?x1) (SEASON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSIEST_27 ?x2))
+
+;; (SOME OF THE BEST WEATHER IS FOUND IN APRIL COMMA MAY COMMA SEPTEMBER AND OCTOBER)
+
+	;; SOME_NUMBER_OF THING OF THE WEATHER MAY BE FIND -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (WEATHER_27 ?x2) (be_27 ?e1 ?x1 ?x3) (FIND_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; THE WEATHER MAY HAVE A THING.
+
+		(and (WEATHER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A WEATHER CAN BE BEST.
+
+		(and (WEATHER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (THESE ARE ALSO THE MONTHS WHEN YOU CAN FIND SOME GOOD TRAVEL BARGAINS SINCE LODGING PRICES ARE LOWEST BETWEEN APRIL AND MID-DECEMBER)
+
+	;; A THING CAN BE MONTHS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MONTHS_27 ?x2))
+
+	;; A PERSON MAY FIND SOME_NUMBER_OF TRAVEL BARGAINS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (TRAVEL_27 ?x1) (BARGAINS_27 ?x1))
+
+	;; TRAVEL BARGAINS CAN BE GOOD.
+
+		(and (travel_27 ?x1) (bargain_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; PRICES CAN BE LODGING.
+
+		(and (price_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LODGING_27 ?x2))
+
+;; (SPEND SOME TIME ON THE BEACH COMMA HANALEI BAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DECIDE WHICH AREA TO STAY IN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; (SO SELECT YOUR HOME BASE CAREFULLY)
+
+	;; A PERSON MAY HAVE A HOME BASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1) (BASE_27 ?x1))
+
+;; (THE SOUTH SHORE HAS THE MOST SUNSHINE AND DRY DAYS WITH POIPU OFFERING MANY TYPES OF LODGING AND GREAT BEACHES)
+
+	;; A SHORE MAY HAVE A SUNSHINE.
+
+		(and (SHORE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUNSHINE_27 ?x1))
+
+	;; A SUNSHINE CAN BE WITH OFFERING MANY TYPES.
+
+		(and (SUNSHINE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (OFFERING_27 ?x2) (MANY_27 ?x2) (TYPES_27 ?x2))
+
+	;; A POIPU[PERSON??] MAY HAVE OFFERING MANY TYPES.
+
+		(and (POIPU_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (OFFERING_27 ?x1) (MANY_27 ?x1) (TYPES_27 ?x1))
+
+	;; BEACHES CAN BE LODGING.
+
+		(and (beach_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LODGING_27 ?x2))
+
+;; (THE EAST SHORE HAS SEVERAL LARGE RESORTS COMMA GREAT BEACHES COMMA THE MOST SHOPPING COMMA AND IS CLOSEST TO THE AIRPORT)
+
+	;; A SHORE MAY HAVE SOME_NUMBER_OF RESORTS.
+
+		(and (SHORE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (RESORTS_27 ?x1))
+
+	;; RESORTS CAN BE LARGE.
+
+		(and (resort_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; BEACHES CAN BE GREAT.
+
+		(and (beach_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (NORTH SHORE IS MORE QUIET AND PEACEFUL BUT TENDS TO GET MORE RAIN)
+
+	;; A NORTH_SHORE[PERSON??] CAN BE QUIET.
+
+		(and (NORTH_5FSHORE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (QUIET_27 ?x1))
+
+;; (SHOP FOR THE RIGHT ACCOMMODATIONS)
+
+	;; A SHOP[PERSON??] CAN BE FOR ACCOMMODATIONS.
+
+		(and (SHOP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (accommodation_27 ?x1))
+
+;; (HOTEL RESORTS ARE USUALLY RIGHT ON THE BEACH)
+
+	;; RESORTS CAN BE RIGHT ON A BEACH.
+
+		(and (resort_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGHT_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (BEACH_27 ?x2))
+
+	;; A HOTEL[PERSON??] MAY HAVE RESORTS.
+
+		(and (HOTEL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (RESORTS_27 ?x1))
+
+;; (THEIR PRICES VARY BUT WITHOUT A KITCHEN YOU LL PAY TO EAT OUT EVERY MEAL)
+
+	;; PRICES MAY VARY.
+
+		(and (PRICES_27 ?x1) (MAY_27 ?x1) (VARY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PRICES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRICES_27 ?x1))
+
+;; (CONDO RENTALS COME IN A GREAT VARIETY OF PRICES COMMA STYLES COMMA AND LOCATIONS)
+
+	;; RENTALS MAY COME IN VARIETY OF PRICES.
+
+		(and (rental_27 ?x1) (COME_27 ?x1) (in_27 ?x1 ?x2) (VARIETY_27 ?x2) (of_27 ?x2 ?x3) (PRICES_27 ?x3))
+
+	;; A CONDO[PERSON??] MAY HAVE RENTALS.
+
+		(and (CONDO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (rental_27 ?x1))
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH PRICES.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PRICES_27 ?x2))
+
+	;; VARIETY CAN BE GREAT.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (MORE SPACIOUS THAN A HOTEL ROOM COMMA THEY OFFER KITCHENS FOR INEXPENSIVE MEALS AND OFTEN HAVE A SMALL COMMA PRIVATE PATIO OR DECK)
+
+	;; INDIVIDUAL -S MAY OFFER KITCHENS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (KITCHENS_27 ?x1))
+
+	;; KITCHENS CAN BE FOR MEALS.
+
+		(and (kitchen_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (meal_27 ?x2))
+
+	;; MEALS CAN BE INEXPENSIVE.
+
+		(and (meal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INEXPENSIVE_27 ?x2))
+
+;; (FOR FAMILIES OR LARGER GROUPS CONSIDER EITHER A RENTAL HOME OR A COLLECTION OF CONDOS CLOSE BY ONE ANOTHER OR OPT FOR A HOUSE RENTAL)
+
+	;; A HOME CAN BE RENTAL.
+
+		(and (HOME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RENTAL_27 ?x2))
+
+	;; CONDOS MAY UNDERGO A COLLECTION.
+
+		(and (condo_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (collection_27 ?x1))
+
+;; (VBRO.COM IS A GREAT PLACE TO FIND PROPERTIES FOR RENT BY ISLAND OWNERS)
+
+	;; A VBRO.COM[PERSON??] CAN BE A PLACE.
+
+		(and (VBRO_2ECOM_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (PLACE_27 ?x1))
+
+	;; A PLACE CAN BE GREAT.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; PROPERTIES CAN BE FOR RENT.
+
+		(and (property_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (RENT_27 ?x2))
+
+;; (IF YOU ARE TRAVELING ALONE OR ON A VERY TIGHT BUDGET COMMA CONSIDER STAYING AT ONE OF THE ISLAND S BACKPACKER S HOSTELS)
+
+	;; A BUDGET CAN BE TIGHT.
+
+		(and (BUDGET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHT_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION OF A BACKPACKER MAY HAVE HOSTELS.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BACKPACKER_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (HOSTELS_27 ?x2))
+
+	;; AN ISLAND MAY HAVE A BACKPACKER.
+
+		(and (ISLAND_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKPACKER_27 ?x1))
+
+;; (THIS IS ALSO A GOOD WAY TO MEET OTHER TRAVELERS)
+
+	;; A THING CAN BE A WAY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE GOOD.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (SHOP FOR DEALS)
+
+	;; A SHOP[PERSON??] CAN BE FOR DEALS.
+
+		(and (SHOP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (deal_27 ?x1))
+
+;; *** - GET: 'I is not a symbol
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 2 [10]>
+
+;; (IF YOUR VACATION TIME FRAME IS FLEXIBLE COMMA YOU LL HAVE EVEN MORE CHOICES)
+
+	;; A VACATION TIME FRAME CAN BE FLEXIBLE.
+
+		(and (VACATION_27 ?x1) (TIME_27 ?x1) (FRAME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLEXIBLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A VACATION TIME FRAME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VACATION_27 ?x1) (TIME_27 ?x1) (FRAME_27 ?x1))
+
+;; (BALANCE YOUR WEEK BETWEEN LAZY DAYS AT THE BEACH OR AROUND THE POOL WITH SIGHTSEEING EXCURSION)
+
+	;; A PERSON MAY HAVE A WEEK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WEEK_27 ?x1))
+
+	;; DAYS CAN BE AT A BEACH.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (BEACH_27 ?x2))
+
+	;; DAYS CAN BE LAZY.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LAZY_27 ?x2))
+
+	;; A POOL CAN BE WITH SIGHTSEEING EXCURSION.
+
+		(and (POOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SIGHTSEEING_27 ?x2) (EXCURSION_27 ?x2))
+
+;; (SOME POPULAR ATTRACTIONS ARE  SNORKELING COMMA DRIVE TO WAIMEA CANYON COMMA BOAT TOUR OF NA PALI COAST COMMA HELICOPTER TOUR OF WHOLE ISLAND COMMA KAYAKING ONE OF THE MANY RIVERS COMMA AND ATTENDING A
+ TRADITIONAL LUAU)
+
+	;; ATTRACTIONS CAN BE POPULAR.
+
+		(and (attraction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; HELICOPTER TOUR CAN BE CONSTITUTED_OF_OR_FILLED_WITH ISLAND.
+
+		(and (HELICOPTER_27 ?x1) (TOUR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ISLAND_27 ?x2))
+
+	;; A LUAU CAN BE TRADITIONAL.
+
+		(and (LUAU_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRADITIONAL_27 ?x2))

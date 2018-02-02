@@ -1,0 +1,35 @@
+<HTML>
+<head>
+<SCRIPT language="JavaScript" src="http://www.csie.ntu.edu.tw/sylee/formCheck.js"></SCRIPT>
+</head>
+
+<body onLoad="initFocus()">
+
+<H3>上傳檔案</H3>
+
+<form name="uploadform" action="http://www.csie.ntu.edu.tw/servlet/parserupload" method=post enctype="multipart/form-data" onSubmit="return checkForm(this);">
+  課程 Expert Systems<INPUT TYPE="hidden" NAME="course" VALUE="expert"> <BR>
+  作業 
+       <input type="radio" name="works" value="mid" checked>期中報告
+       <input type="radio" name="works" value="hw1" >1
+       <input type="radio" name="works" value="hw2" >2
+       <input type="radio" name="works" value="hw3" >3
+       <input type="radio" name="works" value="fin" >學期報告
+ <BR>
+  姓名 <INPUT TYPE=TEXT NAME=submitter> <BR>
+  學號 <INPUT TYPE=TEXT NAME=id> <BR><BR>
+  <B>上傳檔案</B>:
+<uL>
+<LI>請先確定"<FONT COLOR=#FF0000>學號</FONT>"和"<FONT COLOR=#FF0000>姓名</FONT>"
+<LI>然後按下"瀏覽"按鈕, 選取檔案, 再按下"開啟"按鈕。
+<LI>再按下"上傳"按鈕即可上傳。
+<LI>上傳後請注意傳回的訊息, 假如檔案大小(在名稱後面)為 0, 表示上傳不成功, 必須重新上傳。
+</uL>
+  <OL>
+  <LI><INPUT TYPE=FILE NAME=file1 size=50>
+  <LI><INPUT TYPE=FILE NAME=file2 size=50>
+  </OL>
+  <INPUT TYPE=SUBMIT value="上傳"> <INPUT TYPE=reset>
+</FORM>
+
+</HTML>

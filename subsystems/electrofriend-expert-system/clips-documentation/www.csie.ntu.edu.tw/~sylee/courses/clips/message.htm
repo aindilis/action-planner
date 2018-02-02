@@ -1,0 +1,204 @@
+<html>
+<head>
+   <title>Cool: Message Handling</title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+
+<h2>Message Handling</h2>
+
+<h3>User-defined Handlers</h3>
+<pre>
+(<font color="#8000FF">send</font> 1 + 2)
+(describe-class INTEGER)
+
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> NUMBER + (?arg)
+    (+ ?self ?arg))
+
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> LEXEME + (?arg)
+    (sym-cat ?self ?arg))
+
+(<font color="#8000FF">send</font> sun + day)
+</pre>
+
+<h4>Primary Handler</h4>
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> USER what-am-i primary ()
+    (<font color="#8000FF">printout</font> t <font color="#008000">"I am a/an "</font> (class ?self) <font color="#008000">"."</font> crlf))
+
+(<font color="#8000FF">send</font> [c2] what-am-i)
+</pre>
+
+<h4>Messages Chaining</h4>
+
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> VECTOR * primary (?scalar)
+    (<font color="#8000FF">send</font> ?self <font color="#8000FF">put</font>-x (* ?self:x ?scalar))
+    (<font color="#8000FF">send</font> ?self <font color="#8000FF">put</font>-y (* ?self:y ?scalar))
+    (<font color="#8000FF">return</font> ?self) )
+
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> VECTOR = primary (?v)
+    (<font color="#8000FF">send</font> ?self <font color="#8000FF">put</font>-x (<font color="#8000FF">send</font> ?v <font color="#8000FF">get</font>-x))
+    (<font color="#8000FF">send</font> ?self <font color="#8000FF">put</font>-y (<font color="#8000FF">send</font> ?v <font color="#8000FF">get</font>-y))
+    (<font color="#8000FF">return</font> ?self) )
+
+(<font color="#8000FF">send</font> (<font color="#8000FF">send</font> [v1] = [I]) * 3)
+</pre>
+
+<h4>Around Handler</h4>
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> VENUS-FLY-TRAP
+    <font color="#8000FF">put</font>-mobility-rate around ($?any)
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Hey! I'm not allowed to move!"</font>
+            crlf))
+</pre>
+<h4>Before Handler</h4>
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> USER init before ()
+    (<font color="#8000FF">printout</font> t <font color="#008000">"*** Starting to make instance "</font>
+                (instance-name ?self) <font color="#008000">" ***"</font> crlf))
+</pre>
+<h4>After Handler</h4>
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> USER init after ()
+    (<font color="#8000FF">printout</font> t <font color="#008000">"*** Finished making instance "</font>
+                (instance-name ?self) <font color="#008000">" ***"</font> crlf))
+</pre>
+
+<p><b>Example</b>:&nbsp;vector.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+vector))">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/cool/vector.clp">Source</a>
+</ul>
+</p>
+
+<h3>Multiple Inheritance</h3>
+<pre>
+(<font color="#8000FF">defclass</font> ANIMAL (is-a USER)        <font color="#0040a0">; user-defined class</font>
+    (<font color="#8000FF">role</font> abstract)                 <font color="#0040a0">; no instance can be made</font>
+    (<font color="#8000FF">slot</font> mobility-rate))
+
+(<font color="#8000FF">defclass</font> PLANT (is-a USER)
+    (<font color="#8000FF">role</font> abstract)
+    (<font color="#8000FF">slot</font> CO2-comsumption-rate))
+
+(<font color="#8000FF">defclass</font> VENUS-FLY-TRAP (<font color="#FF0000">is-a PLANT ANIMAL</font>)    <font color="#0040a0">; Multiple Inheritance</font>
+    (<font color="#8000FF">role</font> concrete))
+</pre>
+<p>
+<b>Example</b>:&nbsp;life.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+life))">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/cool/life.clp">Source</a>
+</ul>
+</p>
+
+<h3>Inheritance by Specialization</h3>
+<pre>
+(<font color="#8000FF">defclass</font> POINT (is-a USER)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">multislot</font> point1))
+
+(<font color="#8000FF">defclass</font> LINE (is-a POINT)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">multislot</font> point2))
+
+(<font color="#8000FF">defclass</font> TRIANGLE (is-a LINE)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">multislot</font> point3))
+</pre>
+
+<h3>Inheritance by Generlization(Composition)</h3>
+<pre>
+(<font color="#8000FF">defclass</font> POINT (is-a USER)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">multislot</font> position
+         (create-accessor read-write)
+         (propagation no-inherit)))
+
+(<font color="#8000FF">defclass</font> LINE (is-a POINT)
+    (<font color="#8000FF">slot</font> point1
+         (create-accessor <font color="#8000FF">read</font>-write)
+         (<font color="#FF0000">default-dynamic</font> (<font color="#8000FF">make-instance</font> (gensym*) of POINT))
+         (propagation no-inherit))
+    (<font color="#8000FF">slot</font> point2
+         (create-accessor read-write)
+         (<font color="#FF0000">default-dynamic</font> (<font color="#8000FF">make-instance</font> (gensym*) of POINT))
+         (propagation no-inherit)))
+
+(<font color="#8000FF">defmessage-handler</font> LINE find-point (?point)
+    (<font color="#8000FF">send</font> (<font color="#8000FF">send</font> ?self (sym-cat "get-point" ?point)) get-position)
+    )
+
+(<font color="#8000FF">defmessage-handler</font> LINE print-points ()
+    (<font color="#8000FF">printout</font> t "point1 " (send ?self find-point 1) crlf
+                "point2 " (send ?self find-point 2) crlf)
+    )
+</pre>
+<p>
+<b>Example</b>:&nbsp;triangle.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+triangle))">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/cool/triangle.clp">Source</a>
+</ul>
+</p>
+
+<h3>Dynamic Get and Put</h3>
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> PERSON print-age primary ()
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Age = "</font> ?self:age crlf))
+
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> PERSON print-age primary ()
+    (<font color="#8000FF">printout</font> t <font color="#008000">"Age = "</font> (<font color="#FF0000">dynamic-get</font> age) crlf))
+</pre>
+
+<p><B>Example:</B><br />
+<PRE>
+(<font color="#8000FF">defclass</font> A (is-a USER)
+    (<font color="#8000FF">slot</font> foo (create-accessor read)))
+(<font color="#8000FF">defclass</font> B (is-a A)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">slot</font> foo))
+(<font color="#8000FF">make-instance</font> b of B)
+(<font color="#8000FF">send</font> [b] get-foo)     ; the direct slot access will fail, because the slot foo redefined in class B.
+                                ; See:<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node9.4.2.html">defmessage-handler Actions<a>
+
+(<font color="#8000FF">defmessage-handler</font> A get-foo ()
+    (<font color="#FF0000">dynamic-get</font> foo))
+(<font color="#8000FF">defclass</font> B (is-a A)
+    (<font color="#8000FF">role</font> concrete)
+    (<font color="#8000FF">slot</font> foo (<font color="#FF0000">visibility public</font>)))</PRE>
+
+<h3>Message Dispatch</h3>
+An around handler starts before any before handlers.  A before handler is executed
+before any primary handlers, which are followed by the after handlers.
+<pre>
+(<font color="#8000FF">defmessage</font>-<font color="#8000FF">handler</font> PERSON
+    lie-about-age around (?change)
+    (<font color="#8000FF">bind</font> ?old-age ?self:age)
+    (<font color="#8000FF">if</font> (<font color="#FF0000">next-handlerp</font>) <font color="#8000FF">then</font>
+                (<font color="#FF0000">call-next-handler</font>))
+    (<font color="#8000FF">bind</font> ?new-age ?self:age)
+    (<font color="#8000FF">if</font> (&lt;&gt; ?old-age ?new-age) <font color="#8000FF">then</font>
+        (<font color="#8000FF">printout</font> t
+            <font color="#008000">"He's really "</font> ?old-age <font color="#008000">"."</font> crlf)))
+</pre>
+
+<p><b>Example</b>:&nbsp;age.clp
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/cgi-bin/WebCLIPS.EXE?fact=(ScreenName+(ScrnName+age))">Demo</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/webclips/cool/age.clp">Source</a>
+</ul>
+</p>
+<p><b>Reference</b>:
+<ul>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/bpg/node12.16.2.html">defmessage-handler Functions<a></p>
+</ul>
+
+<br />Go to <a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/coolsum.htm">COOL Summary</a>
+<p>Previous <a href="class.htm">Class and Inheritance</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="design.htm">Design Examples</a>
+
+</body>
+</html>

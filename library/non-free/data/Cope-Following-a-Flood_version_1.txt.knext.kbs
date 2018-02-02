@@ -1,0 +1,468 @@
+;; (IT S IMPORTANT TO DEAL WITH HEALTH IMPACTS SUCH AS PROTECTING AGAINST WATERBORNE DISEASES COMMA STRESS COMMA AND FATIGUE)
+
+	;; DISEASES CAN BE WATERBORNE.
+
+		(and (disease_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WATERBORNE_27 ?x2))
+
+;; (TAKE CARE OF EMOTIONAL HEALTH)
+
+	;; HEALTH CAN BE EMOTIONAL.
+
+		(and (HEALTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMOTIONAL_27 ?x2))
+
+;; (DISCUSS WHAT IS HAPPENING COMMA TALK TOGETHER AND SHARE YOUR ANXIETIES)
+
+	;; DISCUSS MAY TALK.
+
+		(and (DISCUSS_27 ?x1) (MAY_27 ?x1) (TALK_27 ?x1))
+
+	;; A PERSON MAY HAVE ANXIETIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANXIETIES_27 ?x1))
+
+;; (LET OTHERS TALK TO YOU TO HELP RELEASE TENSION)
+
+	;; OTHERS MAY TALK TO A PERSON.
+
+		(and (other_27 ?x1) (TALK_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (ALLOW SPACE FOR RELEASING EMOTIONS  CRYING IS A NATURAL RESPONSE TO A DISASTER AND IT S ALSO A GREAT WAY TO RELEASE PENT-UP EMOTIONS)
+
+	;; SPACE CAN BE A RESPONSE TO A DISASTER.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (RESPONSE_27 ?x2) (to_27 ?x2 ?x3) (disaster_27 ?x3))
+
+	;; A SPACE CAN BE ALLOW.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALLOW_27 ?x2))
+
+	;; A RESPONSE CAN BE TO A DISASTER.
+
+		(and (RESPONSE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (disaster_27 ?x2))
+
+	;; A RESPONSE CAN BE NATURAL.
+
+		(and (RESPONSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATURAL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY BE A WAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE GREAT.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; EMOTIONS CAN BE PENT-UP.
+
+		(and (emotion_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PENT-UP_27 ?x2))
+
+;; (WATCH FOR SIGNS OF STRESS)
+
+	;; A WATCH[PERSON??] CAN BE FOR SIGNS.
+
+		(and (WATCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (SIGNS_27 ?x1))
+
+;; (ESTABLISH A SCHEDULE TO CLEAN UP AND REBUILD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SEE THE LATER SECTIONS OF THIS ARTICLE FOR MORE DETAILS)
+
+	;; AN ARTICLE MAY HAVE SECTIONS.
+
+		(and (ARTICLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SECTIONS_27 ?x1))
+
+	;; AN ARTICLE CAN BE FOR DETAILS.
+
+		(and (ARTICLE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (detail_27 ?x2))
+
+;; (AS PART OF YOUR PLANS COMMA BE SURE TO INCLUDE FLOOD-PROOFING)
+
+	;; A PERSON MAY HAVE PLANS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PLANS_27 ?x1))
+
+;; (IF YOU FIND ANY COMMA CUT OFF THE WATER SUPPLY BY TURNING OFF THE VALVE AT YOUR WATER METER)
+
+	;; A PERSON MAY FIND A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE A WATER METER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WATER_27 ?x1) (METER_27 ?x1))
+
+;; (IF THE WATER PIPES ARE N T LEAKING COMMA USE YOUR TAP WATER FOR HOSING AND CLEANING)
+
+	;; WATER PIPES MAY LEAK.
+
+		(and (WATER_27 ?x1) (PIPES_27 ?x1) (MAY_27 ?x1) (LEAK_27 ?x1))
+
+	;; A PERSON MAY HAVE WATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WATER_27 ?x1))
+
+	;; WATER CAN BE TAP.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAP_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>
+
+;; (THE SOONER YOU CAN TALK TO YOUR AGENT COMMA THE SOONER YOUR CLAIM WILL BE FILED AND AN ADJUSTER WILL BE ASSIGNED TO REVIEW YOUR DAMAGE)
+
+	;; A CLAIM MAY BE FILE -ED.
+
+		(and (CLAIM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY TALK TO AN AGENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TALK_27 ?x1) (to_27 ?x1 ?x2) (AN_27 ?x2) (AGENT_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AGENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AGENT_27 ?x1))
+
+	;; A PERSON MAY HAVE A CLAIM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLAIM_27 ?x1))
+
+	;; A PERSON MAY HAVE DAMAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DAMAGE_27 ?x1))
+
+;; (YOUR AGENT MAY ALSO BE ABLE TO GIVE YOU ADVICE ABOUT WHERE TO GET HELP WITH CLEANUP AND REPAIRS)
+
+	;; A PERSON MAY HAVE AN AGENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AGENT_27 ?x1))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 2 [15]>
+
+;; (VOLUNTARY AGENCIES COMMA BUSINESSES COMMA INSURANCE COMMA AND GOVERNMENT DISASTER PROGRAMS CAN HELP YOU THROUGH RECOVERY)
+
+	;; AGENCIES MAY HELP A PERSON.
+
+		(and (AGENCIES_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A VOLUNTARY[PERSON??] MAY HAVE AGENCIES.
+
+		(and (VOLUNTARY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AGENCIES_27 ?x1))
+
+;; (PRIVATE VOLUNTARY AGENCIES SUCH AS THE AMERICAN -LRB- OR OTHER COUNTRY -RRB- RED CROSS COMMA SALVATION ARMY COMMA NON-PROFIT
+ ORGANIZATIONS COMMA AND CHURCH OR CHARITY GROUPS ARE USUALLY ON THE SCENE DURING OR RIGHT AFTER A FLOOD)
+
+	;; AGENCIES CAN BE ON A SCENE.
+
+		(and (agency_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SCENE_27 ?x2))
+
+	;; AGENCIES CAN BE PRIVATE.
+
+		(and (agency_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIVATE_27 ?x2))
+
+	;; AGENCIES CAN BE VOLUNTARY.
+
+		(and (agency_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOLUNTARY_27 ?x2))
+
+	;; ORGANIZATIONS CAN BE NON-PROFIT.
+
+		(and (organization_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NON-PROFIT_27 ?x2))
+
+;; (THESE GROUPS PROVIDE FOR IMMEDIATE NEEDS SUCH AS CLOTHING COMMA GROCERIES COMMA SHELTER COMMA MEDICAL AID COMMA AND COUNSELING)
+
+	;; GROUPS MAY PROVIDE FOR NEEDS.
+
+		(and (GROUPS_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (for_27 ?x1 ?x2) (NEEDS_27 ?x2))
+
+	;; AID CAN BE MEDICAL.
+
+		(and (AID_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDICAL_27 ?x2))
+
+;; (THIS PROGRAM MAY PROVIDE A SAFE PLACE TO LIVE UNTIL REPAIRS TO DAMAGED HOMES ARE COMPLETED)
+
+	;; A PLACE CAN BE SAFE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+	;; REPAIRS TO HOMES MAY BE COMPLETE -ED.
+
+		(and (repair_27 ?x1) (to_27 ?x1 ?x2) (HOMES_27 ?x2) (be_27 ?e1 ?x1 ?x3) (COMPLETE_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; REPAIRS CAN BE TO HOMES.
+
+		(and (repair_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (HOMES_27 ?x2))
+
+	;; HOMES CAN BE DAMAGED.
+
+		(and (home_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAMAGED_27 ?x2))
+
+;; (HOME AND BUSINESS OWNERS COMMA FARMERS COMMA AND OTHERS WITH REAL OR PERSONAL PROPERTY LOSSES MAY BE ELIGIBLE FOR LOW INTEREST LOANS)
+
+	;; HOME CAN BE ELIGIBLE FOR INTEREST LOANS.
+
+		(and (HOME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELIGIBLE_27 ?x2) (for_27 ?e1 ?x3) (INTEREST_27 ?x3) (LOANS_27 ?x3))
+
+	;; INTEREST LOANS CAN BE LOW.
+
+		(and (interest_27 ?x1) (loan_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (THIS PROGRAM MAY PROVIDE FUNDS FOR NECESSARY EXPENSES AND SERIOUS NEEDS)
+
+	;; A PROGRAM MAY PROVIDE FUNDS.
+
+		(and (PROGRAM_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (FUNDS_27 ?x1))
+
+	;; EXPENSES CAN BE NECESSARY.
+
+		(and (expense_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+	;; NEEDS CAN BE SERIOUS.
+
+		(and (need_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERIOUS_27 ?x2))
+
+;; (HOW YOU DRAIN AND DRY YOUR CEILINGS AND WALLS DEPENDS ON WHAT THEY ARE MADE OF)
+
+	;; A PERSON MAY DRAIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRAIN_27 ?x1))
+
+	;; A PERSON MAY HAVE CEILINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CEILINGS_27 ?x1))
+
+;; (GYPSUM WALLBOARD BECOMES VERY SOFT WHEN WET)
+
+	;; A GYPSUM_WALLBOARD[PERSON??] CAN BE SOFT.
+
+		(and (GYPSUM_5FWALLBOARD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (SOFT_27 ?x1))
+
+;; (IT WILL BE FRAGILE COMMA AND WILL LOSE ANY SHAPE OR STRENGTH WHEN IT DRIES)
+
+	;; A THING-REFERRED-TO CAN BE FRAGILE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRAGILE_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DRY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DRY_27 ?x1))
+
+;; (FIBERGLASS BATTS SHOULD BE DISCARDED IF THEY RE MUDDY)
+
+	;; BATTS MAY BE DISCARD -ED.
+
+		(and (batt_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISCARD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; BATTS CAN BE FIBERGLASS.
+
+		(and (batt_27 ?x1) (be_27 ?e1 ?x1 ?x2) (fiberglass_27 ?x2))
+
+;; (CELLULOSE -LRB- LOOSE OR BLOWN-IN TREATED PAPER -RRB- INSULATION WILL HOLD WATER FOR A LONG TIME)
+
+	;; INSULATION MAY HOLD WATER.
+
+		(and (INSULATION_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1) (WATER_27 ?x1))
+
+	;; A TIME CAN BE LONG.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (IT CAN ALSO LOSE ITS ANTI-FUNGAL AND FIRE RETARDANT ABILITIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF IT GOT WET COMMA HAVE THE PUMP PROFESSIONALLY CHECKED AND CLEANED)
+
+	;; A THING-REFERRED-TO MAY GET WET.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (WET_27 ?x1))
+
+	;; A PUMP MAY BE CHECK -ED.
+
+		(and (PUMP_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHECK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AFTER YOU VE TURNED THE ELECTRICITY BACK ON COMMA OPEN THE MAIN VALVE AND TURN THE PUMP ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

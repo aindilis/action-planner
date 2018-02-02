@@ -1,0 +1,367 @@
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>
+
+;; (CHECK YOUR EMPTY SUITCASE FIRST CHECK YOUR LUGGAGE PRIOR TO PACKING TO ENSURE IT IS EMPTY -LRB- ESPECIALLY IF THE LUGGAGE IS NOT YOURS -RRB- AS YOU ARE RESPONSIBLE FOR ITS CONTENTS WHEN YOU PASS THROUGH
+ CUSTOMS)
+
+	;; A SUITCASE MAY CHECK A LUGGAGE.
+
+		(and (SUITCASE_27 ?x1) (MAY_27 ?x1) (CHECK_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SUITCASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUITCASE_27 ?x1))
+
+	;; A SUITCASE CAN BE EMPTY.
+
+		(and (SUITCASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+	;; A LUGGAGE CAN BE YOURS.
+
+		(and (LUGGAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (your_27 ?x2))
+
+	;; A PERSON CAN BE RESPONSIBLE FOR CONTENTS.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESPONSIBLE_27 ?x2) (for_27 ?e1 ?x3) (content_27 ?x3))
+
+	;; A THING-REFERRED-TO MAY HAVE CONTENTS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (content_27 ?x1))
+
+	;; A PERSON MAY PASS THROUGH CUSTOMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PASS_27 ?x1) (THROUGH_27 ?x1) (CUSTOMS_27 ?x1))
+
+;; (IT IS BETTER TO BE SAFE THAN SORRY)
+
+	;; A THING-REFERRED-TO CAN BE BETTER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+;; (ONCE YOU HAVE PACKED COMMA CONSIDER USING TAMPER EVIDENT PRODUCTS TO SEAL YOUR CASE COMMA SO YOU CAN CHECK IF YOUR LUGGAGE ARRIVES WITHOUT BEING BREACHED BEFORE YOU GO ON TO CLEAR CUSTOMS)
+
+	;; A PERSON MAY PACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1))
+
+	;; PRODUCTS CAN BE EVIDENT.
+
+		(and (product_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVIDENT_27 ?x2))
+
+	;; A PERSON MAY HAVE A CASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (case_27 ?x1))
+
+	;; A PERSON MAY CHECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHECK_27 ?x1))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+	;; CUSTOMS CAN BE CLEAR.
+
+		(and (custom_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [4]>
+
+;; (REVIEW YOUR CHECKLIST TO DETERMINE WHETHER THERE ARE ANY ITEMS YOU CAN REMOVE TO LIGHTEN YOUR LOAD)
+
+	;; A PERSON MAY HAVE A CHECKLIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHECKLIST_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOAD_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [5]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [6]>
+
+;; (CONSIDER THE WEATHER AND WHAT KINDS OF ACTIVITIES YOU WILL BE DOING)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (TRAVEL SIZED TOILETRIES BUY TRAVEL-SIZE CONTAINERS FOR YOUR TOILETRIES COMMA REGARDLESS OF THE LENGTH OF YOUR TRIP)
+
+	;; TRAVEL MAY SIZE CONTAINERS.
+
+		(and (TRAVEL_27 ?x1) (MAY_27 ?x1) (SIZE_27 ?x1) (CONTAINERS_27 ?x1))
+
+	;; CONTAINERS CAN BE TOILETRIES.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (toiletry_27 ?x2))
+
+	;; CONTAINERS CAN BE BUY.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUY_27 ?x2))
+
+	;; CONTAINERS CAN BE TRAVEL-SIZE.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRAVEL-SIZE_27 ?x2))
+
+	;; A PERSON MAY HAVE TOILETRIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOILETRIES_27 ?x1))
+
+	;; A TRIP MAY HAVE A LENGTH.
+
+		(and (TRIP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LENGTH_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+;; (UNLESS YOU WILL BE IN A REMOTE LOCATION FOR WEEKS COMMA YOU CAN ALWAYS DROP INTO A LOCAL SHOP TO RESTOCK YOUR SUPPLY OF SOAP AND TOOTHPASTE)
+
+	;; A PERSON MAY DROP INTO A SHOP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DROP_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (SHOP_27 ?x1))
+
+	;; A PERSON CAN BE IN A LOCATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LOCATION_27 ?x2))
+
+	;; A LOCATION CAN BE FOR WEEKS.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WEEKS_27 ?x2))
+
+	;; A LOCATION CAN BE REMOTE.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMOTE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SUPPLY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUPPLY_27 ?x1))
+
+;; (START PACKING BEGIN PACKING YOUR LUGGAGE COMMA CHECKING OFF EACH ITEM ON YOUR LIST AS YOU GO)
+
+	;; A START_PACKING_BEGIN[PERSON??] MAY PACK A LUGGAGE.
+
+		(and (START_5FPACKING_5FBEGIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PACK_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+	;; SOME_NUMBER_OF ITEM CAN BE ON A LIST.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (LIST_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [7]>
+
+;; (LAY TWO OR THREE ITEMS ON TOP OF ONE ANOTHER COMMA SMOOTH TO FLATTEN COMMA AND ROLL THEM UP LIKE YOU WOULD A SLEEPING BAG TO SAVE SPACE AND PREVENT WRINKLES)
+
+	;; A MALE MAY LIKE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+	;; SOME_NUMBER_OF ITEMS CAN BE ON_TOP_OF SOME NUMBER_OR_PORTION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_5FTOP_5FOF_27 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+;; (FOR ADDED WRINKLE INSURANCE COMMA PLACE A SHEET OF HEAVY TISSUE OR PACKING PAPER BETWEEN ITEMS OF CLOTHING BEFORE ROLLING)
+
+	;; A WRINKLE INSURANCE CAN BE ADDED.
+
+		(and (WRINKLE_27 ?x1) (INSURANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADDED_27 ?x2))
+
+	;; A SHEET CAN BE CONSTITUTED_OF_OR_FILLED_WITH TISSUE.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TISSUE_27 ?x2))
+
+	;; TISSUE CAN BE BETWEEN ITEMS OF CLOTHING.
+
+		(and (tissue_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (ITEMS_27 ?x2) (of_27 ?x2 ?x3) (CLOTHING_27 ?x3))
+
+	;; A TISSUE CAN BE HEAVY.
+
+		(and (TISSUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; ITEMS CAN BE CONSTITUTED_OF_OR_FILLED_WITH CLOTHING.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CLOTHING_27 ?x2))
+
+;; (PACK SWEATERS AND UNDERWEAR IN REUSABLE COMPRESSION BAGS COMMA WHICH CAN CREATE UP TO 75 % MORE SPACE IN YOUR LUGGAGE)
+
+	;; COMPRESSION BAGS CAN BE REUSABLE.
+
+		(and (compression_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REUSABLE_27 ?x2))
+
+	;; SPACE CAN BE IN A LUGGAGE.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LUGGAGE_27 ?x2))
+
+	;; A PERSON MAY HAVE A LUGGAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LUGGAGE_27 ?x1))
+
+;; (-LRB- THEY LOCK IN ODORS COMMA SO THEY ALSO WORK FOR STORING DIRTY LAUNDRY COMMA BUT MAKE SURE THEY ARE DRY)
+
+	;; INDIVIDUAL -S MAY LOCK IN ODORS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LOCK_27 ?x1) (in_27 ?x1 ?x2) (ODORS_27 ?x2))
+
+	;; A LAUNDRY CAN BE DIRTY.
+
+		(and (LAUNDRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE DRY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+;; (ENCLOSE TOILETRY CONTAINERS IN AIRTIGHT PLASTIC BAGS TO PREVENT CONTENTS FROM SPILLING INTO YOUR SUITCASE IN THE EVENT OF A LEAK)
+
+	;; TOILETRY CONTAINERS CAN BE IN BAGS.
+
+		(and (toiletry_27 ?x1) (container_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (BAGS_27 ?x2))
+
+	;; TOILETRY CONTAINERS CAN BE ENCLOSE.
+
+		(and (TOILETRY_27 ?x1) (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENCLOSE_27 ?x2))
+
+	;; BAGS CAN BE AIRTIGHT.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AIRTIGHT_27 ?x2))
+
+	;; BAGS CAN BE PLASTIC.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A SUITCASE CAN BE IN AN EVENT OF A LEAK.
+
+		(and (SUITCASE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (event_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (LEAK_27 ?x3))
+
+	;; A PERSON MAY HAVE A SUITCASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUITCASE_27 ?x1))
+
+	;; A LEAK MAY UNDERGO AN EVENT.
+
+		(and (LEAK_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+;; (WRAP SOCKS OR PAJAMAS AROUND BREAKABLE ITEMS TO CUSHION THEM)
+
+	;; SOCKS CAN BE WRAP.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRAP_27 ?x2))
+
+;; (PLAN TO BRING A SNACK ON THE PLANE IN CASE YOU GET VERY HUNGRY)
+
+	;; A PERSON MAY GET HUNGRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (HUNGRY_27 ?x1))
+
+	;; A PLANE CAN BE IN CASE.
+
+		(and (PLANE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (CASE_27 ?x2))
+
+;; (BRING A SNACK LIKE A BAG OF PRETZELS OR SOMETHING -LRB- AVOID PEANUTS AS THESE CAN CAUSE ALLERGIC REACTIONS IN OTHER PASSENGERS -RRB-)
+
+	;; A BAG CAN BE CONSTITUTED_OF_OR_FILLED_WITH PRETZELS.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PRETZELS_27 ?x2))
+
+	;; A THING MAY CAUSE REACTIONS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (REACTIONS_27 ?x1))
+
+	;; REACTIONS CAN BE ALLERGIC.
+
+		(and (reaction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALLERGIC_27 ?x2))
+
+;; (PACK IT IN YOUR SMALL SUITCASE)
+
+	;; A PERSON MAY HAVE A SUITCASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUITCASE_27 ?x1))
+
+	;; A SUITCASE CAN BE SMALL.
+
+		(and (SUITCASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (IN THE OTHER BIG SUITCASES PACK A DIARY AND A PEN YOU CAN WRITE IN DURING YOUR TRIP)
+
+	;; A PERSON MAY WRITE_IN DURING A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRITE_5FIN_27 ?x1) (DURING_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+;; (WHEN YOU COME BACK YOU WILL WANT TO SEE WHAT YOU DID ON YOUR TRIP)
+
+	;; A PERSON MAY COME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1))
+
+	;; A PERSON MAY DO ON A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+;; (DO NOT BRING ANY CIGARETTES BECAUSE THE AIRPORT SECURITY GUARDS WO N T LET YOU BRING IT ON THE AIRPLANE)
+
+	;; AN AIRPORT SECURITY MAY GUARD.
+
+		(and (AIRPORT_27 ?x1) (SECURITY_27 ?x1) (MAY_27 ?x1) (GUARD_27 ?x1))
+
+	;; A PERSON MAY BRING A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (INSIDE THE SUITCASE WITH THE DIARY AND PEN COMMA PACK ONE TRAVEL SIZE GAME IF YOU RE TRAVELING WITH SOMEONE ELSE)
+
+	;; PACK MAY TRAVEL SIZE GAME.
+
+		(and (PACK_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1) (SIZE_27 ?x1) (GAME_27 ?x1))
+
+	;; A SUITCASE CAN BE WITH A DIARY.
+
+		(and (SUITCASE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (DIARY_27 ?x2))

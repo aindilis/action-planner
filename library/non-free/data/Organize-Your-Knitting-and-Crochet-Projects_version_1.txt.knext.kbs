@@ -1,0 +1,693 @@
+;; (THIS WILL BE YOUR SORTING AREA)
+
+	;; A THING CAN BE AN AREA.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; AN AREA CAN BE SORTING.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SORTING_27 ?x2))
+
+;; (MAKE SURE IT IS CLEAN AND DRY)
+
+	;; A THING-REFERRED-TO CAN BE CLEAN.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (THE MORE PROJECTS THAT YOU HAVE COMMA THE MORE ROOM YOU WILL NEED)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (GOOD EXAMPLES OF PLACES INCLUDE A MADE BED COMMA A CLEAN DINNER TABLE COMMA OR A CLEAN COUCH)
+
+	;; EXAMPLES OF PLACES MAY INCLUDE A BED.
+
+		(and (example_27 ?x1) (of_27 ?x1 ?x2) (PLACES_27 ?x2) (MAY_27 ?x2) (INCLUDE_27 ?x2) (A_27 ?x2) (bed_27 ?x2))
+
+	;; EXAMPLES CAN BE GOOD.
+
+		(and (example_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A BED CAN BE MADE.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MADE_27 ?x2))
+
+	;; A DINNER TABLE CAN BE CLEAN.
+
+		(and (DINNER_27 ?x1) (TABLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; A COUCH CAN BE CLEAN.
+
+		(and (COUCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (A GOOD RULE OF THEM IS THIS  DO N T USE ANY SURFACE THAT YOU DO N T WANT YOUR YARN TOUCHING)
+
+	;; A RULE OF INDIVIDUAL -S CAN BE A THING.
+
+		(and (RULE_27 ?x1) (of_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2) (be_27 ?e1 ?x1 ?x3) (thing_27 ?x3))
+
+	;; A RULE CAN BE GOOD.
+
+		(and (RULE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A YARN TOUCHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (YARN_27 ?x1) (TOUCHING_27 ?x1))
+
+;; (IF THERE ARE NEEDLES IN YOUR PROJECT COMMA DO NOT REMOVE THEM WHEN PLACING THEM IN YOUR SORTING AREA)
+
+	;; NEEDLES CAN BE IN A PROJECT.
+
+		(and (needle_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (project_27 ?x2))
+
+	;; A PERSON MAY HAVE A PROJECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROJECT_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; AN AREA CAN BE SORTING.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SORTING_27 ?x2))
+
+;; (TAKE OUT ALL YOUR INCOMPLETE KNITTING AND CROCHET PROJECTS AND PLACE THEM IN YOUR SORTING AREA)
+
+	;; A PERSON MAY HAVE KNITTING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KNITTING_27 ?x1))
+
+	;; KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; AN AREA CAN BE SORTING.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SORTING_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; (GO THROUGH ALL YOUR BAGS COMMA CLOSETS COMMA AND BOXES FOR ALL THOSE INCOMPLETE KNITTING AND CROCHET PROJECTS)
+
+	;; A PERSON MAY HAVE A BAGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAGS_27 ?x1))
+
+	;; A KNITTING CAN BE INCOMPLETE.
+
+		(and (knitting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCOMPLETE_27 ?x2))
+
+	;; PROJECTS CAN BE CROCHET.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CROCHET_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (IF YOU HAVE N T SHOWN ANY INTEREST IN THE PROJECT FOR A YEAR COMMA IT S TIME TO LET THE PROJECT GO)
+
+	;; A PERSON MAY SHOW INTEREST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (INTEREST_27 ?x1))
+
+	;; A PROJECT CAN BE FOR A YEAR.
+
+		(and (project_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (year_27 ?x2))
+
+;; (THE YARN CAN BE USED TO MAKE A NEW PROJECT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SCRAP ALL OF THE PROJECTS THAT YOU DO NOT WANT TO COMPLETE)
+
+	;; PROJECTS MAY HAVE A THING.
+
+		(and (project_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (JUST REMOVE ANY NEEDLES OR HOOKS COMMA GRAB ON ONE OF THE LOOSE ENDS COMMA AND PULL)
+
+	;; ENDS CAN BE LOOSE.
+
+		(and (end_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (JUST REMOVE ANY NEEDLES OR HOOKS COMMA GRAB ON ONE OF THE LOOSE ENDS COMMA AND PULL)
+
+	;; ENDS CAN BE LOOSE.
+
+		(and (end_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (JUST REMOVE ANY NEEDLES OR HOOKS COMMA GRAB ON ONE OF THE LOOSE ENDS COMMA AND PULL)
+
+	;; ENDS CAN BE LOOSE.
+
+		(and (end_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (JUST REMOVE ANY NEEDLES OR HOOKS COMMA GRAB ON ONE OF THE LOOSE ENDS COMMA AND PULL)
+
+	;; ENDS CAN BE LOOSE.
+
+		(and (end_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [12]>
+
+;; (CHOOSE YARN FROM YOUR STASH THAT WILL FIT THE EACH PROJECT S NEEDS)
+
+	;; A PERSON MAY HAVE A STASH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STASH_27 ?x1))
+
+	;; SOME_NUMBER_OF PROJECT MAY HAVE A NEEDS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PROJECT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEEDS_27 ?x1))
+
+;; (ALWAYS ASSIGN A FEW EXTRA SKEINS OF YARN TO EACH PROJECT JUST IN CASE YOU NEED THAT EXTRA YARN)
+
+	;; AN ALWAYS[PERSON??] MAY ASSIGN SKEINS OF YARN TO SOME_NUMBER_OF PROJECT.
+
+		(and (ALWAYS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ASSIGN_27 ?x1) (SKEINS_27 ?x1) (of_27 ?x1 ?x2) (YARN_27 ?x2) (to_27 ?x1 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (PROJECT_27 ?x3))
+
+	;; SKEINS CAN BE CONSTITUTED_OF_OR_FILLED_WITH YARN.
+
+		(and (skein_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (YARN_27 ?x2))
+
+	;; SKEINS CAN BE EXTRA.
+
+		(and (skein_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY NEED A YARN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (YARN_27 ?x1))
+
+	;; A YARN CAN BE EXTRA.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE SURE TO CHECK THE DYE LOT NUMBERS OF ALL THE SKEINS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [13]>
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; (ALL OF THE YARN LEFT IN YOUR STORAGE SPACE SHOULD BE YARN THAT HAS N T BEEN ASSIGNED TO ANY PROJECT)
+
+	;; SOME_NUMBER_OF THING OF A YARN CAN BE A YARN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (YARN_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (YARN_27 ?x3))
+
+	;; A YARN MAY HAVE A THING.
+
+		(and (YARN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A YARN MAY BE LEAVE -ED IN A STORAGE SPACE.
+
+		(and (YARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (STORAGE_27 ?x3) (SPACE_27 ?x3))
+
+	;; A PERSON MAY HAVE A STORAGE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STORAGE_27 ?x1) (SPACE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [14]>
+
+;; (WRITE DOWN EVERYTHING YOU NEED THAT YOU DO N T HAVE SO THAT YOU WILL REMEMBER TO PICK UP THESE ITEMS THE NEXT TIME YOU GO TO THE CRAFT
+ STORE)
+
+	;; A PERSON MAY GO TO A CRAFT STORE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (CRAFT_27 ?x2) (STORE_27 ?x2))
+
+	;; A PERSON MAY NEED A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (REMEMBER THAT YOU MAY NEED TO USE A DIFFERENT SIZE HOOK OR NEEDLE TO GET THE GAUGE COMMA SO BE PREPARED TO HAVE DIFFERENT SIZES OF
+ NEEDLES AND HOOKS)
+
+	;; SIZES CAN BE CONSTITUTED_OF_OR_FILLED_WITH NEEDLES.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (NEEDLES_27 ?x2))

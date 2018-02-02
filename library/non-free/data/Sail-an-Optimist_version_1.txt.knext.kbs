@@ -1,0 +1,295 @@
+;; (ASSEMBLE THE SAIL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE SAIL TIES SHOULD ONLY BE LOOSE ENOUGH SO THAT YOU CAN PUT A FINGER BETWEEN THEM AND THE BOOM -LRB- ALSO ENSURE THAT THE SAIL CAN MOVE OVER THE BOOM WITHOUT BEING CAUGHT ON FITTINGS -RRB-)
+
+	;; TIES CAN BE ENOUGH.
+
+		(and (ty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; TIES CAN BE SAIL.
+
+		(and (ty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAIL_27 ?x2))
+
+	;; A PERSON MAY PUT A FINGER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (FINGER_27 ?x1))
+
+	;; A FINGER CAN BE BETWEEN INDIVIDUAL -S.
+
+		(and (FINGER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; A SAIL MAY MOVE_OVER A BOOM.
+
+		(and (SAIL_27 ?x1) (MAY_27 ?x1) (MOVE_5FOVER_27 ?x1) (A_27 ?x1) (BOOM_27 ?x1))
+
+;; (THE MAST TIES SHOULD BE TIGHTER THAN THIS -LRB- SO THAT THE EDGE OF THE SAIL IS UP AGAINST THE MAST -RRB-)
+
+	;; TIES CAN BE TIGHTER.
+
+		(and (ty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHTER_27 ?x2))
+
+	;; TIES CAN BE MAST.
+
+		(and (ty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAST_27 ?x2))
+
+	;; AN EDGE OF A SAIL CAN BE AGAINST A MAST.
+
+		(and (edge_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (SAIL_27 ?x2) (be_27 ?e1 ?x1 ?x3) (AGAINST_27 ?x3) (A_27 ?x3) (MAST_27 ?x3))
+
+	;; A SAIL MAY HAVE AN EDGE.
+
+		(and (SAIL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EDGE_27 ?x1))
+
+;; (PUT THE SAIL IN THE MAST STEP -LRB- THE METAL FITTING AT THE FRONT OF THE BOAT -RRB- BEFORE PUTTING UP THE SPRIT POLE)
+
+	;; A METAL FITTING CAN BE AT A FRONT OF A BOAT.
+
+		(and (METAL_27 ?x1) (FITTING_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (FRONT_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (BOAT_27 ?x3))
+
+	;; A BOAT MAY HAVE A FRONT.
+
+		(and (BOAT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRONT_27 ?x1))
+
+	;; A POLE CAN BE SPRIT.
+
+		(and (POLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPRIT_27 ?x2))
+
+;; (THE ADJUSTMENTS ON THE SAIL SHOULD BE TIGHTENED/LOOSENED SO THAT NO CREASES ARE VISIBLE)
+
+	;; ADJUSTMENTS MAY BE TIGHTENED/LOOSEN -ED.
+
+		(and (adjustment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHTENED_2FLOOSEN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; ADJUSTMENTS CAN BE ON A SAIL.
+
+		(and (adjustment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SAIL_27 ?x2))
+
+	;; CREASES CAN BE VISIBLE.
+
+		(and (crease_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISIBLE_27 ?x2))
+
+;; (GENERALLY COMMA HEAVIER WIND REQUIRES TIGHTER ADJUSTMENTS)
+
+	;; WIND MAY REQUIRE ADJUSTMENTS.
+
+		(and (WIND_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (ADJUSTMENTS_27 ?x1))
+
+	;; A WIND CAN BE HEAVIER.
+
+		(and (WIND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVIER_27 ?x2))
+
+	;; ADJUSTMENTS CAN BE TIGHTER.
+
+		(and (adjustment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHTER_27 ?x2))
+
+;; (LAUNCH THE BOAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SLIP IT INTO THE WATER AND POINT IT TOWARDS THE WIND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WHILE STANDING ON THE SEA FLOOR OR ON THE DOCK COMMA CLIP THE RUDDER IN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LINE UP THE BOTTOM PIN TO ITS HOLE FIRST -LRB- AS THIS ONE IS LONGER -RRB- COMMA MAKING SURE THE SAFETY CATCH WILL PREVENT THE RUDDER FROM COMING OUT OF THE TWO FITTINGS)
+
+	;; A PIN CAN BE BOTTOM.
+
+		(and (PIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOTTOM_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A HOLE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOLE_27 ?x1))
+
+	;; AN ONE CAN BE LONGER.
+
+		(and (be_27 ?e1 ?x1) (LONGER_27 ?x1))
+
+;; (PUT THE DAGGERBOARD INTO ITS TRUNK COMMA BUT DO NOT PUSH IT DOWN COMPLETELY YET)
+
+	;; A THING-REFERRED-TO MAY HAVE A TRUNK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRUNK_27 ?x1))
+
+;; (IN ONE MOVEMENT COMMA PUSH THE BOAT AWAY FROM THE BEACH OR DOCK AND CLIMB IN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE WIND MAY BE COMING FROM OFF-SHORE COMMA CROSS-SHORE COMMA OR ON-SHORE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IN EACH CASE THERE WILL BE DIRECTIONS AND PLACES THE BOAT CAN SAIL -LRB- GO ZONES -RRB- AND OTHERS IT CAN NOT OR SHOULD NOT SAIL -LRB- NO-GO ZONES -RRB-)
+
+	;; A BOAT MAY SAIL.
+
+		(and (BOAT_27 ?x1) (MAY_27 ?x1) (SAIL_27 ?x1))
+
+	;; ZONES CAN BE NO-GO.
+
+		(and (zone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NO-GO_27 ?x2))
+
+;; (SEE GO AND NO-GO SAILING ZONE DIAGRAM HERE)
+
+	;; A SEE_GO[PERSON??] MAY DIAGRAM.
+
+		(and (SEE_5FGO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DIAGRAM_27 ?x1))
+
+	;; A SAILING ZONE CAN BE NO-GO.
+
+		(and (SAILING_27 ?x1) (ZONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NO-GO_27 ?x2))
+
+;; (POSITION YOURSELF ON THE RAIL SO THAT YOU ARE FACING THE BOW -LRB- THE SMALLER END -RRB- OF THE BOAT)
+
+	;; A POSITION[PERSON??] MAY YOURSELF ON A RAIL.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (YOURSELF_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (RAIL_27 ?x1))
+
+	;; A PERSON MAY FACE A BOW OF A BOAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FACE_27 ?x1) (A_27 ?x1) (BOW_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BOAT_27 ?x2))
+
+	;; A BOAT MAY HAVE A BOW.
+
+		(and (BOAT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOW_27 ?x1))
+
+	;; AN END CAN BE SMALLER.
+
+		(and (END_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (YOUR FRONT FOOT SHOULD BE UP AGAINST THE BULKHEAD -LRB- THE FOOT HIGH SEPARATOR HALFWAY UP THE BOAT -RRB-)
+
+	;; A PERSON MAY HAVE A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT MAY HALFWAY_UP A BOAT.
+
+		(and (FOOT_27 ?x1) (MAY_27 ?x1) (HALFWAY_5FUP_27 ?x1) (A_27 ?x1) (BOAT_27 ?x1))
+
+;; (GET HOLD OF TILLER EXTENSION WITH THE HAND CLOSEST TO THE STERN -LRB- BACK -RRB- OF THE BOAT AND HOLD IT AS IF IT IS A MICROPHONE)
+
+	;; A BOAT MAY HAVE A STERN.
+
+		(and (BOAT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STERN_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A MICROPHONE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (MICROPHONE_27 ?x2))
+
+;; (HOLD THE MAIN SHEET WITH YOUR OTHER HAND)
+
+	;; A PERSON MAY HAVE A HAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HAND_27 ?x1))
+
+;; (MAKE SURE YOU DO NOT WRAP IT AROUND YOUR HAND BECAUSE YOU MAY NEED TO RELEASE IT QUICKLY TO STOP)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A HAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HAND_27 ?x1))
+
+;; (PULL IN THE MAIN SHEET UNTIL THE SAIL FILLS AND STOPS LUFFING -LRB- FLAPPING BACK AND FORTH -RRB-)
+
+	;; A PULL[PERSON??] MAY FILL.
+
+		(and (PULL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FILL_27 ?x1))
+
+	;; A PULL[PERSON??] CAN BE IN A SHEET.
+
+		(and (PULL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (in_27 ?x1) (A_27 ?x1) (SHEET_27 ?x1))
+
+	;; A SHEET CAN BE UNTIL A SAIL.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNTIL_27 ?x2) (A_27 ?x2) (SAIL_27 ?x2))
+
+;; (PUT DOWN THE DAGGER BOARD COMPLETELY WHEN YOU ARE IN DEEP ENOUGH WATER)
+
+	;; A PERSON CAN BE IN WATER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; WATER CAN BE DEEP.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEEP_27 ?x2))
+
+	;; WATER CAN BE ENOUGH.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))

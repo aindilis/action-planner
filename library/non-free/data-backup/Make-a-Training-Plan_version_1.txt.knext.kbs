@@ -1,0 +1,115 @@
+;; (E.G. IF YOU ARE GOING TO TRAIN OLD EMPLOYEES IN BETTER CUSTOMER SERVICE SKILLS THEN YOU NEED TO GET A TRAINING PROGRAM RELATED TO THE KIND OF CUSTOMER SERVICE YOU EXPECT)
+
+	;; A PERSON MAY EXPECT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EXPECT_27 ?x1))
+
+	;; EMPLOYEES CAN BE OLD.
+
+		(and (employee_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; CUSTOMER SERVICE SKILLS CAN BE BETTER.
+
+		(and (CUSTOMER_27 ?x1) (SERVICE_27 ?x1) (SKILLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; A TRAINING PROGRAM CAN BE RELATED TO A KIND OF CUSTOMER SERVICE.
+
+		(and (training_27 ?x1) (PROGRAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELATED_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (KIND_27 ?x3) (of_27 ?x3 ?x4) (CUSTOMER_27 ?x4) (SERVICE_27 ?x4))
+
+;; (IT S IMPORTANT TO PICK THE RIGHT KIND OF TRAINING PROGRAM AS THE SUCCESS OF YOUR TRAINING DEPENDS ON IT)
+
+	;; A SUCCESS OF A TRAINING MAY DEPEND ON A THING-REFERRED-TO.
+
+		(and (success_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (TRAINING_27 ?x2) (MAY_27 ?x2) (DEPEND_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A TRAINING MAY HAVE A SUCCESS.
+
+		(and (TRAINING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUCCESS_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRAINING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (training_27 ?x1))
+
+;; (YOU CAN EITHER MAKE YOUR OWN TRAINING PROGRAM OR BUY THE MATERIAL FOR YOUR COMPANY)
+
+	;; A PERSON MAY HAVE A TRAINING PROGRAM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRAINING_27 ?x1) (PROGRAM_27 ?x1))
+
+	;; A MATERIAL CAN BE FOR A COMPANY.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (company_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPANY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (company_27 ?x1))
+
+;; (FIX THE SCHEDULE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS IS THE NEXT MOST IMPORTANT PART OF A TRAINING PLAN AS IT COST BOTH TIME AND MONEY TO TRAIN PEOPLE)
+
+	;; A THING CAN BE A PART OF A TRAINING PLAN.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (part_27 ?x2) (of_27 ?x2 ?x3) (training_27 ?x3) (plan_27 ?x3))
+
+	;; A PART CAN BE IMPORTANT.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (YOU WOULD HAVE TO SEE IF PEOPLE CAN BE SPARED FROM THEIR REGULAR WORK TO BE TRAINED)
+
+	;; PEOPLE MAY BE SPARE -ED FROM WORK.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (WORK_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE WORK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORK_27 ?x1))
+
+	;; WORK CAN BE REGULAR.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REGULAR_27 ?x2))
+
+;; (IF THEY ARE NEW EMPLOYEES THEN YOU NEED TO CHECK HOW LONG IT IS GOING TO TAKE TO TRAIN THEM BEFORE THEY CAN START WORK)
+
+	;; INDIVIDUAL -S CAN BE EMPLOYEES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (employee_27 ?x2))
+
+	;; INDIVIDUAL -S MAY START WORK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (START_27 ?x1) (WORK_27 ?x1))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort main loop
+Break 1 [10]>
+
+;; (IF YOU WANT TO TRAIN EMPLOYEES BUT CAN NOT SPARE THEM FROM THEIR EVERYDAY WORK THEN YOU MAY NEED TO SCHEDULE THE TRAINING TIME AFTER OR BEFORE WORK HOURS)
+
+	;; INDIVIDUAL -S MAY HAVE WORK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORK_27 ?x1))
+
+	;; WORK CAN BE EVERYDAY.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EVERYDAY_27 ?x2))
+
+;; (OF COURSE THIS MAY NOT MAKE THE EMPLOYEES TOO HAPPY)
+
+	;; EMPLOYEES CAN BE HAPPY.
+
+		(and (employee_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAPPY_27 ?x2))

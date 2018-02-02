@@ -1,0 +1,331 @@
+;; (ALSO THINGS YOU NEEDED LAST TIME)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (WRITE DOWN THINGS YOU STILL NEED COMMA THIS WAY YOU GOT THREE MONTHS TO COLLECT OR SAVE FOR ANYTHING ELSE)
+
+	;; THINGS CAN BE DOWN.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOWN_27 ?x2))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (THINK ABOUT WHAT YOU HAVE TO BRING AND WHAT YOU WANT TO BRING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU COULD BRING SEVERAL BATHING SUITS COMMA SUMMER CLOTHING SUCH AS CAPRI S COMMA SHORTS COMMA T-SHIRTS COMMA TANK TOPS)
+
+	;; A PERSON MAY BRING SOME_NUMBER_OF BATHING SUITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (BATHING_27 ?x1) (SUITS_27 ?x1))
+
+;; (WEAR YOUR HEAVIEST OR BULKIEST ITEM THE DAY OF TO MAKE MORE SPACE IN YOUR SUITCASE)
+
+	;; A PERSON MAY HAVE A SUITCASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUITCASE_27 ?x1))
+
+;; (THINK ABOUT HOW MUCH LUGGAGE IS APPROPRIATE)
+
+	;; LUGGAGE CAN BE APPROPRIATE.
+
+		(and (LUGGAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+;; (IF YOU ARE USING A LITTLE CAR AND CARPOOLING WITH ABOUT 2 OR MORE OTHER PEOPLE COMMA DO N T TAKE UP THE WHOLE TRUNK OR CAR FOR THAT
+ MATTER)
+
+	;; A PERSON MAY USE A CAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+	;; A TRUNK CAN BE FOR A MATTER.
+
+		(and (trunk_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (MATTER_27 ?x2))
+
+;; (TAKE AT ABSOLUTE MOST 2 SUITCASES COMMA AND 3 BAGS E.G. HIKING BAGS COMMA BACK PACKS)
+
+	;; A TAKE[PERSON??] MAY PACK.
+
+		(and (TAKE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PACK_27 ?x1))
+
+	;; A TAKE[PERSON??] CAN BE AT SOME_NUMBER_OF SUITCASES.
+
+		(and (TAKE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (at_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (SUITCASES_27 ?x1))
+
+;; (MAYBE TRY PACKING ITEMS SUCH AS SOCKS IN YOUR SHOES)
+
+	;; SOCKS CAN BE IN SHOES.
+
+		(and (sock_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (shoe_27 ?x2))
+
+	;; A PERSON MAY HAVE SHOES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SHOES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [12]>
+
+;; (-LRB- SEE THINGS YOU LL NEED FOR A LIST OF SUGGESTIONS -RRB- MAKE SURE YOU TAKE ENOUGH THINGS BUT DO N T OVER DO IT AS YOU MAY BRING TOO
+ MUCH AND NOT FIND ANYTHING)
+
+	;; THINGS MAY MAKE SURE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+	;; A SEE[PERSON??] MAY HAVE THINGS.
+
+		(and (SEE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x1))
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH SUGGESTIONS.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SUGGESTIONS_27 ?x2))
+
+	;; A PERSON MAY TAKE THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (thing_27 ?x1))
+
+	;; THINGS CAN BE ENOUGH.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; A PERSON MAY BRING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BRING_27 ?x1))
+
+;; (OUTDOOR CAMPING SUPPLIES CAN BE BROKEN UP INTO 3 PARTS)
+
+	;; CAMPING SUPPLIES MAY BE BREAK_UP -ED INTO SOME_NUMBER_OF PARTS.
+
+		(and (camp_27 ?e1 ?x1) (SUPPLIES_27 ?x1) (be_27 ?e2 ?e1 ?x2) (BREAK_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (INTO_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (PARTS_27 ?x2))
+
+	;; CAMPING SUPPLIES CAN BE OUTDOOR.
+
+		(and (camp_27 ?e1 ?x1) (supply_27 ?x1) (be_27 ?e2 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+;; (PACKING SMART COMMA WEATHER GEAR COMMA AND TRAVEL GEAR)
+
+	;; A WEATHER[PERSON??] MAY GEAR.
+
+		(and (WEATHER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (GEAR_27 ?x1))
+
+	;; A TRAVEL[PERSON??] MAY GEAR.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (GEAR_27 ?x1))
+
+;; (THE MOST IMPORTANT THING TO REMEMBER ABOUT OUTDOOR CAMPING IS TO PACK SMART)
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A CAMPING CAN BE OUTDOOR.
+
+		(and (camping_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+;; (AN EXAMPLE WOULD BE PUTTING SOFT STUFF BY YOUR BACK SO IT S NOT POKING YOU THE WHOLE HIKE)
+
+	;; AN EXAMPLE MAY PUT STUFF BY A BACK.
+
+		(and (EXAMPLE_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (STUFF_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (BACK_27 ?x1))
+
+	;; STUFF CAN BE SOFT.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOFT_27 ?x2))
+
+	;; A PERSON MAY HAVE A BACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACK_27 ?x1))
+
+;; (YOU NEED TO BE PREPARED BUT YOU CA N T HAVE EVERYTHING)
+
+	;; A PERSON MAY HAVE EVERYTHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EVERYTHING_27 ?x1))
+
+;; (ANOTHER IDEA IS TO PUT STUFF IN GALLON BAGGIES TO PACK EASIER)
+
+	;; STUFF CAN BE IN BAGGIES.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (baggy_27 ?x2))
+
+	;; BAGGIES CAN BE GALLON.
+
+		(and (baggy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GALLON_27 ?x2))
+
+;; (YOU NEED TO KNOW WHAT WEATHER YOU WILL BE FACING)
+
+	;; A PERSON MAY FACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FACE_27 ?x1))
+
+;; (IF YOU ARE FACING REALLY COLD WEATHER -LRB- WINTER -RRB- YOU NEED TO HAVE THIS GEAR  COAT -LRB- WIND LAYER -RRB- OVERALLS COMMA HAT COMMA
+ BALACLAVA COMMA WICKING LAYER -LRB- UNDER ARMOR -RRB- THAT WOULD COVER FROM YOUR TOES TO YOUR NECK COMMA WARMTH LAYER -LRB- IN BETWEEN
+ THE WICKING LAYER AND WIND LAYER -RRB- COMMA TWO PAIR OF SOCKS WICKING LAYER AND WARMTH LAYER COMMA BOOTS COMMA AND -LRB- DAY YOU ARE
+ OUTSIDE -RRB- TIMES EXTRA BOOT LINER SAME WITH GLOVES)
+
+	;; A PERSON MAY FACE WEATHER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FACE_27 ?x1) (WEATHER_27 ?x1))
+
+	;; A WEATHER CAN BE COLD.
+
+		(and (WEATHER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+	;; A PERSON MAY HAVE TOES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOES_27 ?x1))
+
+	;; A PERSON MAY HAVE A NECK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NECK_27 ?x1))
+
+	;; A LAYER CAN BE WARMTH.
+
+		(and (LAYER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARMTH_27 ?x2))
+
+	;; A LAYER CAN BE WICKING.
+
+		(and (LAYER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WICKING_27 ?x2))
+
+	;; SOCKS MAY WICK LAYER.
+
+		(and (SOCKS_27 ?x1) (MAY_27 ?x1) (WICK_27 ?x1) (LAYER_27 ?x1))
+
+	;; A BOOT LINER CAN BE EXTRA.
+
+		(and (BOOT_27 ?x1) (LINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (FOR SUMMER CAMPING YOU NEED TO HAVE WATER PROOF SHOES COMMA BUG SPRAY COMMA SUNSCREEN COMMA AND A PONCHO)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WHILE CAMPING YOU FIND YOURSELF HIKING TO YOUR CAMP SITE)
+
+	;; A PERSON MAY HIKIN TO A CAMP SITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HIKIN_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (CAMP_27 ?x2) (SITE_27 ?x2))
+
+	;; A PERSON MAY HAVE A CAMP SITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAMP_27 ?x1) (SITE_27 ?x1))
+
+;; (THERE ARE THREE BACKPACK SIZES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE FIRST IS A DAY PACK COMMA THIS IS A SMALL PACK FOR SHORT HIKES)
+
+	;; A THING CAN BE A PACK.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PACK_27 ?x2))
+
+	;; A PACK CAN BE FOR HIKES.
+
+		(and (pack_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (HIKES_27 ?x2))
+
+	;; A PACK CAN BE SMALL.
+
+		(and (PACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; HIKES CAN BE SHORT.
+
+		(and (hike_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+;; (THE SECOND KIND IS A THREE DAY PACK COMMA THIS IS A PACK THAT IS MEDIUM SIZE)
+
+	;; A THING CAN BE A PACK.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PACK_27 ?x2))
+
+	;; A KIND CAN BE DAY PACK.
+
+		(and (KIND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAY_27 ?x2) (PACK_27 ?x2))
+
+;; (THE LARGEST PACK IS A PACK THAT IS FOR MORE THAN THREE DAYS)
+
+	;; A PACK CAN BE A PACK.
+
+		(and (pack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PACK_27 ?x2))
+
+	;; A PACK CAN BE LARGEST.
+
+		(and (PACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGEST_27 ?x2))
+
+;; (THERE ARE TWO KINDS OF PACKS)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE FIRST IS A INTERNAL FRAME COMMA AND THE SECOND IS AN EXTERNAL FRAME -LRB- DAY PACKS ARE USUALLY FRAMELESS -RRB-)
+
+	;; A FRAME CAN BE INTERNAL.
+
+		(and (FRAME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERNAL_27 ?x2))
+
+	;; A SECOND CAN BE A FRAME.
+
+		(and (SECOND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (FRAME_27 ?x2))
+
+	;; A FRAME CAN BE EXTERNAL.
+
+		(and (FRAME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTERNAL_27 ?x2))
+
+	;; DAY PACKS CAN BE FRAMELESS.
+
+		(and (day_27 ?x1) (pack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (frameless_27 ?x2))

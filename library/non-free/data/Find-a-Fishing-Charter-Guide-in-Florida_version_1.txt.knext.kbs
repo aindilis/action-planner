@@ -1,0 +1,154 @@
+;; (-LRB- ONLY PARTY BOATS CHARGE A FLAT FEE PER PERSON -RRB-)
+
+	;; A FEE CAN BE FLAT.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (-LRB- ONLY PARTY BOATS CHARGE A FLAT FEE PER PERSON -RRB-)
+
+	;; A FEE CAN BE FLAT.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (-LRB- ONLY PARTY BOATS CHARGE A FLAT FEE PER PERSON -RRB-)
+
+	;; A FEE CAN BE FLAT.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (-LRB- ONLY PARTY BOATS CHARGE A FLAT FEE PER PERSON -RRB-)
+
+	;; A FEE CAN BE FLAT.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (-LRB- ONLY PARTY BOATS CHARGE A FLAT FEE PER PERSON -RRB-)
+
+	;; A FEE CAN BE FLAT.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (ASK FRIENDS FOR RECOMMENDATIONS)
+
+	;; FRIENDS CAN BE FOR RECOMMENDATIONS.
+
+		(and (friend_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (recommendation_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (CHECK WITH LOCAL MARINAS COMMA BAIT SHOPS COMMA OR EVEN JUST GO DOWN TO THE DOCKS AND HANG OUT AWHILE COMMA TO OBSERVE CHARTERS IN ACTION AS THEY DEPART AND ARRIVE)
+
+	;; INDIVIDUAL -S MAY DEPART.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DEPART_27 ?x1))
+
+;; (IF YOU RE STILL IN THE PLANNING STAGE OF YOUR FISHING TRIP COMMA ASK YOUR TRAVEL AGENT TO RECOMMEND A HOTEL OR RESORT THAT OFFERS A FISHING CHARTER AS PART OF THEIR PACKAGE)
+
+	;; A FISHING TRIP MAY HAVE A STAGE.
+
+		(and (FISHING_27 ?x1) (TRIP_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STAGE_27 ?x1))
+
+	;; A STAGE CAN BE PLANNING.
+
+		(and (stage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLANNING_27 ?x2))
+
+	;; A PERSON MAY HAVE A FISHING TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FISHING_27 ?x1) (TRIP_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRAVEL AGENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRAVEL_27 ?x1) (AGENT_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A PACKAGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PACKAGE_27 ?x1))
+
+;; (MANY HOTELS AND SOME FISH CAMPS OFFER FISHING CHARTERS AS PART OF THEIR PACKAGES)
+
+	;; SOME_NUMBER_OF HOTELS MAY OFFER FISHING CHARTERS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (HOTELS_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (FISHING_27 ?x1) (CHARTERS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE PACKAGES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PACKAGES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; (INTERVIEW POTENTIAL FISHING CHARTER CAPTAINS)
+
+	;; SOME_NUMBER_OF FISHING CHARTER MAY CAPTAIN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FISHING_27 ?x1) (CHARTER_27 ?x1) (MAY_27 ?x1) (CAPTAIN_27 ?x1))
+
+;; (IT S CRUCIAL TO KNOW SPECIFIC INFORMATION BEFORE YOU COMMIT YOUR MONEY TO BOOK A FISHING CHARTER)
+
+	;; A PERSON MAY COMMIT MONEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COMMIT_27 ?x1) (MONEY_27 ?x1))
+
+	;; A PERSON MAY HAVE MONEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MONEY_27 ?x1))
+
+;; (THE INTERVIEW PROCESS IS WHERE THE SHADY CHARACTERS ARE USUALLY REVEALED)
+
+	;; CHARACTERS MAY BE REVEAL -ED.
+
+		(and (character_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REVEAL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; CHARACTERS CAN BE SHADY.
+
+		(and (character_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHADY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [8]>
+
+;; (BELOW ARE A FEW TIPS AND QUESTIONS TO ASK POTENTIAL FISHING CHARTER CAPTAINS COMMA AND THINGS TO CONSIDER AS YOU NARROW YOUR LIST OF CHARTER CANDIDATES DOWN TO THAT PERFECT CHARTER)
+
+	;; A PERSON MAY NARROW A LIST OF CHARTER CANDIDATES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NARROW_27 ?x1) (A_27 ?x1) (LIST_27 ?x1) (of_27 ?x1 ?x2) (CHARTER_27 ?x2) (CANDIDATES_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A CHARTER CAN BE PERFECT.
+
+		(and (CHARTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERFECT_27 ?x2))

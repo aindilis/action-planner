@@ -1,0 +1,530 @@
+;; (YOU CAN ALSO INCLUDE NUTRITION FACTS)
+
+	;; A PERSON MAY INCLUDE NUTRITION FACTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (NUTRITION_27 ?x1) (FACTS_27 ?x1))
+
+;; (YOU CAN ALSO HAVE THE POSTERS SAYING WHAT YOUR GOAL IS AND HOW MANY BOXES YOU WANT TO SELL EDUCATE YOUR TROOP)
+
+	;; POSTERS MAY SAY.
+
+		(and (poster_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1))
+
+	;; A GOAL MAY BE.
+
+		(and (GOAL_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A GOAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GOAL_27 ?x1))
+
+	;; A PERSON MAY HAVE A TROOP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TROOP_27 ?x1))
+
+;; (MAKE SURE EACH GIRL KNOWS WHICH COOKIES CONTAIN NUTS COMMA CHOCOLATE COMMA ETC COMMA AND WHICH COOKIES ARE HEALTHIER -LRB- USUALLY COMMA THERE IS AT LEAST ONE TYPE OF COOKIE THAT IS FAT FREE OR LOW FAT -RRB-)
+
+	;; SOME_NUMBER_OF GIRL MAY KNOW.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (GIRL_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; COOKIES MAY CONTAIN NUTS.
+
+		(and (cookie_27 ?x1) (MAY_27 ?x1) (CONTAIN_27 ?x1) (NUTS_27 ?x1))
+
+	;; COOKIES CAN BE HEALTHIER.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHIER_27 ?x2))
+
+;; (MAKE SURE YOUR GIRLS KNOW WHAT THIS GROUP IS AND WHY THEY CHOSE IT)
+
+	;; GIRLS MAY KNOW.
+
+		(and (GIRLS_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; A PERSON MAY HAVE GIRLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GIRLS_27 ?x1))
+
+	;; A GROUP MAY BE.
+
+		(and (GROUP_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; INDIVIDUAL -S MAY CHOOSE A THING-REFERRED-TO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (THIS WILL DEPEND ON YOUR COUNCIL)
+
+	;; A THING MAY DEPEND ON A COUNCIL.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (DEPEND_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (COUNCIL_27 ?x1))
+
+	;; A PERSON MAY HAVE A COUNCIL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COUNCIL_27 ?x1))
+
+;; (FIND OUT IF THERE IS SOMEONE CENTRALLY ARRANGING BOOTHS BEFORE YOU START CALLING AROUND AS THIS CAN LEAD TO DOUBLE-CALLING OF BUSINESSES WHICH IS BAD ETIQUETTE)
+
+	;; SOMEONE CENTRALLY MAY ARRANGE BOOTHS.
+
+		(and (SOMEONE_27 ?x1) (CENTRALLY_27 ?x1) (MAY_27 ?x1) (ARRANGE_27 ?x1) (BOOTHS_27 ?x1))
+
+	;; A PERSON MAY START.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; A THING MAY LEAD TO DOUBLE-CALLING OF BUSINESSES.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (LEAD_27 ?x1) (to_27 ?x1 ?x2) (DOUBLE-CALLING_27 ?x2) (of_27 ?x1 ?x3) (business_27 ?x3))
+
+	;; BUSINESSES MAY UNDERGO A DOUBLE-CALLING.
+
+		(and (business_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (DOUBLE-CALLING_27 ?x1))
+
+	;; AN ETIQUETTE CAN BE BAD.
+
+		(and (ETIQUETTE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; *** - EVAL: undefined function NNS
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead of (FDEFINITION 'NNS).
+RETRY          :R2      Retry
+STORE-VALUE    :R3      Input a new value for (FDEFINITION 'NNS).
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 2 [10]>
+
+;; (CALL AROUND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLACE PHONE CALLS TO LOCAL BUSINESSES THAT YOU MIGHT BE ABLE TO SELL IN FRONT OF THEM)
+
+	;; PHONE MAY CALL TO BUSINESSES A PROPOSITION.
+
+		(and (PHONE_27 ?x1) (MAY_27 ?x1) (CALL_27 ?x1) (to_27 ?x1 ?x2) (BUSINESSES_27 ?x2) (A_27 ?x2) (proposition_27 ?x2))
+
+	;; A PHONE CAN BE PLACE.
+
+		(and (PHONE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLACE_27 ?x2))
+
+;; (YOU MIGHT ASK OTHER LEADERS WHAT STORES THEY VE HAD LUCK WITH IN THE PAST)
+
+	;; A PERSON MAY ASK LEADERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ASK_27 ?x1) (LEADERS_27 ?x1))
+
+;; (ANOTHER TACTIC WOULD BE TO FIND A STORE THAT IS N T AS BIG OR COMMON AS THE ONES PREVIOUSLY MENTIONED COMMA BUT STILL GETS A LOT OF CUSTOMERS COMMA BECAUSE THE WAITING LIST FOR THESE STORES WO N T BE AS LONG)
+
+	;; ONES MAY MENTION.
+
+		(and (ONES_27 ?x1) (MAY_27 ?x1) (MENTION_27 ?x1))
+
+	;; A LIST CAN BE LONG.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; A LIST CAN BE FOR STORES.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (store_27 ?x2))
+
+	;; A LIST CAN BE WAITING.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WAITING_27 ?x2))
+
+;; (WHEN YOU FIND A LOCATION COMMA VISIT IT AND GET AN IDEA OF WHERE YOU CAN PUT YOUR BOOTH COMMA WHERE YOU LL KEEP YOUR EXTRA BOXES/COOKIES COMMA AND WHAT KIND OF BATHROOM AND FOOD FACILITIES WILL BE AVAILABLE)
+
+	;; A PERSON MAY FIND A LOCATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (LOCATION_27 ?x1))
+
+	;; A PERSON MAY PUT A BOOTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (BOOTH_27 ?x1))
+
+	;; A PERSON MAY HAVE A BOOTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOOTH_27 ?x1))
+
+	;; A PERSON MAY HAVE BOXES/COOKIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOXES_2FCOOKIES_27 ?x1))
+
+	;; BOXES/COOKIES CAN BE EXTRA.
+
+		(and (BOXES_2FCOOKIES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (SET UP THE TABLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SET SOME OF THE COOKIES -LRB- MAYBE 4-5 BOXES PER COOKIE -RRB- ON THE TABLE)
+
+	;; COOKIES MAY HAVE A THING.
+
+		(and (cookie_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x2))
+
+	;; COOKIES CAN BE ON A TABLE.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (table_27 ?x2))
+
+;; (-LRB- CUSTOMERS OFTEN PURCHASE IN EVEN NUMBERS)
+
+	;; CUSTOMERS MAY PURCHASE IN NUMBERS.
+
+		(and (customer_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1) (in_27 ?x1 ?x2) (NUMBERS_27 ?x2))
+
+	;; NUMBERS CAN BE EVEN.
+
+		(and (number_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (PLACING 5 BOXES OUT ENSURES THAT YOU LL STILL HAVE AT LEAST ONE BOX ON DISPLAY IF THE CUSTOMER PURCHASES UP TO FOUR)
+
+	;; PLACING MAY ENSURE A PROPOSITION.
+
+		(and (PLACING_27 ?x1) (MAY_27 ?x1) (ENSURE_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A CUSTOMER MAY PURCHASE_UP TO SOME NUMBER_OR_PORTION.
+
+		(and (CUSTOMER_27 ?x1) (MAY_27 ?x1) (PURCHASE_5FUP_27 ?x1) (to_27 ?x1 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+;; (ORGANIZE THE COOKIES ON THE TABLE IN ROWS OR PILES)
+
+	;; A TABLE CAN BE IN ROWS.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ROWS_27 ?x2))
+
+;; (YOU MAY WANT TO PUT THEM IN A SPECIFIC ORDER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (COLOR ORDER -LRB- RED TO PURPLE - IN THE ORDER OF COLORS ON A RAINBOW -RRB- AND COOKIE SHEET ORDER -LRB- THE ORDER IN WHICH THE COOKIES ARE LISTED ON THE ORDER FORM -RRB- ARE THE MOST COMMON)
+
+	;; COLORS CAN BE ON A RAINBOW.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (RAINBOW_27 ?x2))
+
+	;; A COOKIE_SHEET[PERSON??] MAY HAVE AN ORDER.
+
+		(and (COOKIE_5FSHEET_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (order_27 ?x1))
+
+	;; COOKIES MAY BE LIST -ED ON AN ORDER FORM.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIST_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (AN_27 ?x2) (ORDER_27 ?x2) (FORM_27 ?x2))
+
+;; (YOU MAY ALSO WANT TO PUT THE MOST POPULAR COOKIES -LRB- THIN MINTS AND SAMOAS -RRB- TO EITHER END SO CUSTOMERS MUST SCAN ALL THE BOXES LOOKING FOR THEIR FAVORITES)
+
+	;; COOKIES CAN BE POPULAR.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; CUSTOMERS MAY SCAN BOXES.
+
+		(and (customer_27 ?x1) (MAY_27 ?x1) (SCAN_27 ?x1) (BOXES_27 ?x1))
+
+	;; BOXES MAY LOOK FOR FAVORITES.
+
+		(and (box_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (FAVORITES_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE FAVORITES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FAVORITES_27 ?x1))
+
+;; (DECORATE AND SET THE SCENE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST GIRL SCOUT OFFICES SELL POSTERS COMMA CAR WINDOW FLAGS -LRB- THAT CAN ALSO BE ATTACHED TO SHOPPING CARTS OR TAPED TO WALLS -RRB- COMMA AND OTHER THINGS OF THE LIKE COMMA AND YOU MAY EVEN BE ABLE TO GET
+ COOKIE COSTUMES - YOU OR YOUR GIRLS CAN DRESS UP AS THEIR FAVORITE COOKIES AND ATTRACT ATTENTION)
+
+	;; OFFICES MAY SELL POSTERS.
+
+		(and (OFFICES_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1) (POSTERS_27 ?x1))
+
+	;; A GIRL_SCOUT[PERSON??] MAY HAVE OFFICES.
+
+		(and (GIRL_5FSCOUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (OFFICES_27 ?x1))
+
+	;; A PERSON MAY DRESS_UP AS COOKIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRESS_5FUP_27 ?x1) (AS_27 ?x1) (COOKIES_27 ?x1))
+
+	;; A PERSON MAY HAVE GIRLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GIRLS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE COOKIES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COOKIES_27 ?x1))
+
+	;; COOKIES CAN BE FAVORITE.
+
+		(and (cookie_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (STORE THE EXTRA INVENTORY)
+
+	;; AN INVENTORY CAN BE EXTRA.
+
+		(and (INVENTORY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (PUT THE REST OF THE COOKIES BEHIND OR UNDER THE TABLE WHERE THEY CAN EASILY BE REACHED)
+
+	;; COOKIES MAY HAVE A REST.
+
+		(and (cookie_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE REACH -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REACH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF YOU ARE AT A GROCERY STORE COMMA USE A COUPLE OF CARTS/BUGGIES TO HOLD YOUR COOKIES)
+
+	;; A PERSON CAN BE AT A GROCERY STORE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (GROCERY_27 ?x2) (STORE_27 ?x2))
+
+	;; A PERSON MAY HAVE COOKIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COOKIES_27 ?x1))
+
+;; (JUST KEEP THEM TOGETHER SO ITS EASY TO OPEN UP A NEW CASE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (STORE EMPTY CARTONS AND COATS UNDER THE CART/BUGGY)
+
+	;; A STORE[PERSON??] MAY EMPTY CARTONS.
+
+		(and (STORE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (EMPTY_27 ?x1) (CARTONS_27 ?x1))
+
+;; (GET YOUR CASH BOX READY)
+
+	;; A CASH BOX CAN BE READY.
+
+		(and (CASH_27 ?x1) (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+	;; A PERSON MAY HAVE A CASH BOX.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CASH_27 ?x1) (BOX_27 ?x1))
+
+;; (GET OUT A PENCIL BOX COMMA CAN COMMA OR OTHER SMALL CONTAINER WITH A LID COMMA A NOTEBOOK COMMA AND A PEN)
+
+	;; CONTAINER CAN BE WITH A LID.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (LID_27 ?x2))
+
+	;; A CONTAINER CAN BE SMALL.
+
+		(and (CONTAINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (THE CONTAINER WILL HOLD THE MONEY)
+
+	;; A CONTAINER MAY HOLD MONEY.
+
+		(and (CONTAINER_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1) (MONEY_27 ?x1))
+
+;; (SOME LEADERS USE A FANNY PACK OR A BANK MONEY BAG SO THE CASH CAN BE KEPT SAFE WITH THEM AT ALL TIMES)
+
+	;; SOME_NUMBER_OF LEADERS MAY USE A FANNY PACK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (LEADERS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (FANNY_27 ?x1) (PACK_27 ?x1))
+
+	;; CASH MAY BE KEEP -ED SAFE WITH INDIVIDUAL -S.
+
+		(and (CASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (SAFE_27 ?x2) (WITH_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; (KEEP TRACK OF SALES)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ON AN EMPTY SHEET IN A NOTEBOOK COMMA WRITE THE NAMES OF ALL THE COOKIES COMMA WITH AT LEAST ONE LINE PER TYPE)
+
+	;; A SHEET CAN BE IN A NOTEBOOK.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (NOTEBOOK_27 ?x2))
+
+	;; A SHEET CAN BE EMPTY.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+	;; COOKIES MAY HAVE NAMES.
+
+		(and (cookie_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NAMES_27 ?x1))
+
+;; (EVERY TIME SOMEONE BUYS A BOX COMMA MAKE A TALLY MARK NEXT TO THE KIND THEY BOUGHT TO KEEP UP WITH YOUR SALES)
+
+	;; SOME_NUMBER_OF TIME SOMEONE MAY BUY A BOX.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TIME_27 ?x1) (SOMEONE_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (BOX_27 ?x1))
+
+	;; A PERSON MAY HAVE SALES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SALES_27 ?x1))
+
+;; (YOU MIGHT USE A COPY OF A FOLLOW-ON ORDER FORM TO TRACK EACH BOOTH SALE)
+
+	;; AN ORDER FORM CAN BE FOLLOW-ON.
+
+		(and (ORDER_27 ?x1) (FORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOLLOW-ON_27 ?x2))
+
+;; (THIS IS N T ALWAYS NECESSARY)
+
+	;; A THING CAN BE NECESSARY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+;; (YOU CAN USE SIMPLE MATCH WITH YOUR BOOTH TALLY SHEET TO DETERMINE TOTAL SALES USING INVENTORY COUNTS BOTH BEFORE AND AFTER THE SALE)
+
+	;; A PERSON MAY USE MATCH WITH A BOOTH TALLY SHEET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (MATCH_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (BOOTH_27 ?x1) (TALLY_27 ?x1) (SHEET_27 ?x1))
+
+	;; A MATCH CAN BE SIMPLE.
+
+		(and (MATCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A BOOTH TALLY SHEET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOOTH_27 ?x1) (TALLY_27 ?x1) (SHEET_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [13]>
+
+;; (HAVE A NICE DAY)
+
+	;; A DAY CAN BE NICE.
+
+		(and (DAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+;; (IF THEY SAY YES HOWEVER COMMA GO ON TO THE NEXT STEP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (STAND NEARBY AS THEY EXAMINE THE COOKIES AND TRY TO MAKE UP THEIR MIND)
+
+	;; INDIVIDUAL -S MAY EXAMINE COOKIES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (EXAMINE_27 ?x1) (COOKIES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A MIND.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MIND_27 ?x1))
+
+;; (DO NOT HOVER OVER THEM COMMA BUT BE READY IN CASE THEY ASK WHICH COOKIES ARE THE BEST OR WHICH ARE HEALTHIEST)
+
+	;; INDIVIDUAL -S MAY ASK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ASK_27 ?x1))
+
+;; (ANSWER TRUTHFULLY COMMA AND HELP THEM MAKE THEIR SELECTION)
+
+	;; INDIVIDUAL -S MAY MAKE A SELECTION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (selection_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A SELECTION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SELECTION_27 ?x1))

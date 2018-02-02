@@ -1,0 +1,163 @@
+
+(has-health-insurance ?P ?I)
+;; (has-bank-account ?P ?B)
+
+;; probably want to quantify the size of the support network
+;; (has-support-network ?P)
+
+;; (has-automobile ?P ?A)
+
+;; (has-shelter ?P ?S)
+
+; (exists (?C)
+;  (and
+;   (has-computer ?P ?C)
+;   (can-run-get-help ?C)
+;   ))
+
+; (exists (?C)
+;  (and 
+;   (has-cell-phone ?P ?C)
+;   (can-run-get-help ?C)
+;  ))
+
+; (has-medical-condition ?P ?C)
+
+; (has-job ?P ?J)
+
+; (implies
+;  (not (exists (?C) (has-job ?P ?C)))
+;  (ought
+;   (or
+;    (has-foodstamps ?P)
+;    (has-unemployment-benefits ?P))))
+
+; (has-debt ?P ?D)
+
+; (has-student-loan-debt ?P ?D)
+; (owes-debt ?P ?E ?D)
+; (debt-amount ?D 1000.10)
+
+; (implies
+;  (and
+;   (has-medical-condition ?P ?C)
+;   (isa ?C (condition-fn mental-illness))
+;   (has-shelter ?P ?S)
+;   (located-in ?S (state-fn illinois))
+;   )
+;  (and
+;   (implies
+;    (not (exists (?J) (has-job ?P ?J)))
+;    (ought (use-service ?P illinois-department-of-human-services-job-placement-service)))
+;   ()
+;   ))
+
+; (has-romantic-relationship-with ?P1 ?P2)
+; (has-friendship-with ?P1 ?P2)
+
+; (has-sibling ?P1 ?P2)
+; (has-brother ?P1 ?P2)
+; (has-sister ?P1 ?P2)
+; (has-father ?P1 ?P2)
+; (has-mother ?P1 ?P2)
+
+;;; more items here
+
+(has-addiction ?P sugar-drinks)
+(has-addiction ?P marijuana)
+
+;; (is-tracking-finances ?P)
+;; (has-financial-records ?P ?R)
+
+(has-need ?P 'fulfill-all-responsibilities)
+(has-need ?P 'fulfill-all-promises)
+(has-need ?P 'meet-all-obligations)
+(has-need ?P 'pay-all-debts)
+
+;; (has-usability-encumbrance ?P)
+
+(is-legally-blind ?P)
+
+(track the following
+
+ (implies
+  (has-permanent-residence ?X UnitedStates)
+  (has-yearly-tasks taxes)))
+ 
+
+;; dependants
+
+; (implies
+;  (has-dependant ?P1 ?P2)
+;  (has-moral-obligation ?P1
+;   (ensure-well-being-of ?P1 ?P2)))
+
+;; psychological needs
+
+; (is-emotionally-secure ?P)		; dubious property
+(is-grieving ?P)
+
+
+;; philosophical needs
+
+(has-virtue-ethic ?P ?E)
+(has-deontontic-ethic ?P ?E)
+(has-consequentialist-ethic ?P ?E)
+
+(has-skill ?P ?S)
+(has-interest ?P ?I)
+(has-goal ?P ?I)
+
+(has-budget ?P ?B)
+
+(has-home ?P ?H)
+(has-home-office ?H ?O)
+
+(home-is-safe ?H)
+(home-has-all-carbon-monoxide-detectors ?H)
+
+(has-fitness-plan ?P ?F)
+
+(has-financial-plan ?P ?F)
+
+(has-last-will-and-testament ?P ?W)
+
+
+;; Mom's requirements for a good life
+;; (note that these are difficult to measure)
+
+(has-someone-to-love ?P ?P2)
+(is-loved-by-others ?P)
+(has-control-of-self ?P)
+(has-a-sense-of-gratitude ?P)
+(is-tolerant-or-considerate-of-other-entities ?P)
+(does-no-harm-knowingly ?P)		; culpable ignorance
+(has-enough ?P)
+
+(has-nest-egg ?P ?N)
+(has-emergency-fund ?P ?E)
+
+;; renting, if they plan on staying, renters insurance
+
+;; job, job-stability, etc
+
+;; family to help out if necessary and possible
+
+;; if has children, then plans for school, medical, etc
+
+;; deal with conflicting advice, different goals mutex, different
+;; people recommend different strategies, commentary system, etc.
+;; Deontics, etc.
+
+;; system has an agenda, weighs importance of say immediately
+;; necessary tasks like food and drink against things for more
+;; established people like setting up a will, etc.
+
+;; has data backup
+
+;; print will
+
+;; has-office
+;; has-filing-cabinet
+;; filing-cabinet-is-organized
+

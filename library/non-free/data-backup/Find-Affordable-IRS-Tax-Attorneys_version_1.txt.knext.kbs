@@ -1,0 +1,196 @@
+;; (THE RECEPTIONIST SHOULD VERIFY WHETHER HIS OR HER BOSS CAN HELP YOU AFTER YOU HAVE DETAILED YOUR SITUATION)
+
+	;; A RECEPTIONIST MAY VERIFY.
+
+		(and (RECEPTIONIST_27 ?x1) (MAY_27 ?x1) (VERIFY_27 ?x1))
+
+	;; BOSS MAY HELP A PERSON.
+
+		(and (BOSS_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY DETAIL A SITUATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DETAIL_27 ?x1) (A_27 ?x1) (SITUATION_27 ?x1))
+
+	;; A PERSON MAY HAVE A SITUATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SITUATION_27 ?x1))
+
+;; (HE OR SHE SHOULD ALSO EXPLAIN THE INITIAL CONSULTATION COMMA THE ATTORNEY S FEES AND THE PAYMENT STRUCTURE)
+
+	;; A MALE MAY EXPLAIN A CONSULTATION.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (EXPLAIN_27 ?x1) (A_27 ?x1) (CONSULTATION_27 ?x1))
+
+	;; AN ATTORNEY MAY HAVE FEES.
+
+		(and (ATTORNEY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (fee_27 ?x1))
+
+;; (THE INITIAL CONSULTATION IS YOUR TIME TO MEET THE ATTORNEY AND GIVE HIM OR HER DETAILS OF YOUR TAX ISSUE)
+
+	;; A CONSULTATION CAN BE A TIME.
+
+		(and (consultation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+	;; A PERSON MAY HAVE A TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+	;; A TAX ISSUE MAY HAVE DETAILS.
+
+		(and (TAX_27 ?x1) (ISSUE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DETAILS_27 ?x1))
+
+	;; A FEMALE MAY HAVE DETAILS.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DETAILS_27 ?x1))
+
+	;; A PERSON MAY HAVE A TAX ISSUE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TAX_27 ?x1) (ISSUE_27 ?x1))
+
+;; (THIS IS ALSO THE TIME FOR YOU TO DISCUSS THE FEES AND PAYMENT STRUCTURE IN DETAIL)
+
+	;; A THING CAN BE A TIME.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+	;; A TIME CAN BE FOR A PERSON.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; FEES CAN BE IN DETAIL.
+
+		(and (fee_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (DETAIL_27 ?x2))
+
+;; (CALL THE STATE BAR ASSOCIATION IN YOUR STATE AND REQUEST A LIST OF TAX ATTORNEYS)
+
+	;; A BAR-ASSOCIATION CAN BE IN A STATE.
+
+		(and (BAR-ASSOCIATION_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (state_27 ?x2))
+
+	;; A PERSON MAY HAVE A STATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (state_27 ?x1))
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH TAX ATTORNEYS.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TAX_27 ?x2) (ATTORNEYS_27 ?x2))
+
+;; (YOU MAY BE REQUIRED TO PROVIDE YOUR PERSONAL INFORMATION AND PAY A ONE-TIME FEE)
+
+	;; A PERSON MAY HAVE AN INFORMATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMATION_27 ?x1))
+
+	;; AN INFORMATION CAN BE PERSONAL.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+	;; A FEE CAN BE ONE-TIME.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONE-TIME_27 ?x2))
+
+;; (CALL EACH ATTORNEY ON THE LIST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ACCESS THE INTERNET AND GO TO HG.ORG/NORTHERN-BAR.HTML)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EACH STATE S BAR ASSOCIATION IS LISTED ON THIS WEBSITE)
+
+	;; A BAR ASSOCIATION MAY BE LIST -ED ON A WEBSITE.
+
+		(and (BAR_27 ?x1) (ASSOCIATION_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIST_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (WEBSITE_27 ?x2))
+
+	;; SOME_NUMBER_OF STATE MAY HAVE A BAR ASSOCIATION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (STATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAR_27 ?x1) (ASSOCIATION_27 ?x1))
+
+;; (YOU CAN FIND YOUR STATE ON THIS LIST AND CLICK ON A REFERRAL LINK)
+
+	;; A PERSON MAY FIND A STATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (state_27 ?x1))
+
+	;; A PERSON MAY HAVE A STATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (state_27 ?x1))
+
+	;; A LIST CAN BE ON A REFERRAL LINK.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (REFERRAL_27 ?x2) (LINK_27 ?x2))
+
+;; (THIS REFERRAL LINK LEADS YOU TO PHONE NUMBERS FOR ATTORNEY REFERRAL PROGRAMS)
+
+	;; A REFERRAL LINK MAY LEAD A PERSON TO PHONE NUMBERS.
+
+		(and (REFERRAL_27 ?x1) (LINK_27 ?x1) (MAY_27 ?x1) (LEAD_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (to_27 ?x1 ?x2) (PHONE_27 ?x2) (NUMBERS_27 ?x2))
+
+	;; PHONE NUMBERS CAN BE FOR ATTORNEY REFERRAL PROGRAMS.
+
+		(and (PHONE_27 ?x1) (number_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ATTORNEY_27 ?x2) (REFERRAL_27 ?x2) (PROGRAMS_27 ?x2))
+
+;; (BEGIN YOUR SEARCH FOR AFFORDABLE TAX ATTORNEYS ONLINE)
+
+	;; A SEARCH MAY ONLIN.
+
+		(and (SEARCH_27 ?x1) (MAY_27 ?x1) (ONLIN_27 ?x1))
+
+	;; A SEARCH CAN BE FOR TAX ATTORNEYS.
+
+		(and (SEARCH_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TAX_27 ?x2) (ATTORNEYS_27 ?x2))
+
+	;; A PERSON MAY HAVE A SEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SEARCH_27 ?x1))
+
+	;; TAX ATTORNEYS CAN BE AFFORDABLE.
+
+		(and (TAX_27 ?x1) (ATTORNEYS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFFORDABLE_27 ?x2))
+
+;; (FIND A TAX ATTORNEY WITH YOUR FAVORITE SEARCH ENGINE USING DIFFERENT INQUIRIES)
+
+	;; A SEARCH ENGINE MAY USE INQUIRIES.
+
+		(and (SEARCH_27 ?x1) (ENGINE_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (INQUIRIES_27 ?x1))
+
+	;; A PERSON MAY HAVE A SEARCH ENGINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SEARCH_27 ?x1) (ENGINE_27 ?x1))
+
+	;; A SEARCH ENGINE CAN BE FAVORITE.
+
+		(and (SEARCH_27 ?x1) (ENGINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [17]>

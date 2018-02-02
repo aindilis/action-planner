@@ -1,0 +1,432 @@
+;; (SERIES EE SAVINGS BONDS CAN BE PURCHASED DIRECTLY FROM THE TREASURY ONLINE OR FROM YOUR BANK)
+
+	;; A PERSON MAY HAVE A BANK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BANK_27 ?x1))
+
+;; (THEY PAY INTEREST AT A FIXED RATE -LRB- ANNOUNCED MAY 1ST AND NOVEMBER 1ST EACH YEAR -RRB-)
+
+	;; INDIVIDUAL -S MAY PAY INTEREST.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (INTEREST_27 ?x1))
+
+	;; A RATE CAN BE FIXED.
+
+		(and (rate_27 ?x1) (be_27 ?e1 ?x1 ?e2) (fix_27 ?e2 ?x1))
+
+;; (INTEREST ACCRUES MONTHLY AND COMPOUNDS SEMIANNUALLY -LRB- EVERY SIX MONTHS -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BONDS HELD LESS THAN FIVE YEARS ARE SUBJECT TO A THREE-MONTH INTEREST PENALTY)
+
+	;; BONDS MAY HOLD.
+
+		(and (bond_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1))
+
+	;; AN INTEREST PENALTY CAN BE THREE-MONTH.
+
+		(and (INTEREST_27 ?x1) (PENALTY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THREE-MONTH_27 ?x2))
+
+;; (THE MINIMUM PURCHASE IS $ 25 FOR A $ 50 EE BOND WHEN PURCHASING PAPER BOND CERTIFICATES)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:Q A{N} (:F NN EE.N BOND.N))))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (Q_27 ?x3) (A_27 ?x3) (N_27 ?x2) (F_27 ?x3) (NN_27 ?x3) (EE_2EN_27 ?x3) (BOND_2EN_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THEY ARE AVAILABLE IN DENOMINATIONS OF $ 50 COMMA $ 75 COMMA $ 100 COMMA $ 200 COMMA $ 500 COMMA $ 1COMMA000 COMMA $ 5COMMA000 COMMA AND $ 10COMMA000)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) AVAILABLE.A (:P IN.P (:A (:F K (:F PLUR DENOMINATION.N)) (:P OF.P NIL)))) NIL)
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (AVAILABLE_2EA_27 ?x3) (P_27 ?x4) (IN_2EP_27 ?x4) (F_27 ?x5) (K_27 ?x5) (F_27 ?x6) (PLUR_27 ?x6) (DENOMINATION_2EN_27 ?x6) (P_27 ?x7) (OF_2EP_27 ?x7) (NIL_27 ?x7) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AT THE END OF A YEAR COMMA A CHILD WHO SAVES $ 1.0 A WEEK FOR INVESTING CAN BUY A $ 100 BOND FOR $ 50)
+
+	;; A CHILD MAY BUY A BOND.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (BOND_27 ?x1))
+
+	;; A WEEK CAN BE FOR INVESTING.
+
+		(and (week_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INVESTING_27 ?x2))
+
+;; (AT 1.4 % INTEREST COMMA IT WILL BE WORTH $ 57 IN TEN YEARS COMMA BUT REGARDLESS OF THE INTEREST RATE COMMA IT IS GUARANTEED TO REACH $ 100 IN 20 YEARS COMMA EFFECTIVELY CREATING A RETURN OF 5 %)
+
+	;; A RETURN CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF %.
+
+		(and (RETURN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (kbs2_kif_quote_25_27 ?x2))
+
+;; (I BONDS CAN BE PURCHASED DIRECTLY FROM THE TREASURY ONLINE OR FROM YOUR BANK)
+
+	;; I BONDS MAY BE PURCHASE -ED.
+
+		(and (I_27 ?e1) (bonds_27 ?e1) (be_27 ?e2 ?e1 ?x1) (PURCHASE_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+	;; A PERSON MAY HAVE A BANK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BANK_27 ?x1))
+
+;; (THEY PAY AN ANNUAL INTEREST RATE THAT REFLECTS THE COMBINED EFFECTS OF A FIXED RATE AND A SEMIANNUAL INFLATION RATE)
+
+	;; INDIVIDUAL -S MAY PAY AN INTEREST RATE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (AN_27 ?x1) (INTEREST_27 ?x1) (RATE_27 ?x1))
+
+	;; AN INTEREST RATE CAN BE ANNUAL.
+
+		(and (INTEREST_27 ?x1) (RATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ANNUAL_27 ?x2))
+
+	;; EFFECTS CAN BE COMBINED.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1 ?e2) (combine_27 ?e2 ?x1))
+
+	;; A RATE CAN BE FIXED.
+
+		(and (rate_27 ?x1) (be_27 ?e1 ?x1 ?e2) (fix_27 ?e2 ?x1))
+
+	;; AN INFLATION RATE CAN BE SEMIANNUAL.
+
+		(and (INFLATION_27 ?x1) (RATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEMIANNUAL_27 ?x2))
+
+;; (INTEREST IS ADDED TO THE BOND MONTHLY AND IS PAID WHEN YOU CASH THE BOND)
+
+	;; INTEREST MAY BE ADD -ED TO A BOND.
+
+		(and (interest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (bond_27 ?x3))
+
+	;; A PERSON MAY CASH A BOND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CASH_27 ?x1) (A_27 ?x1) (BOND_27 ?x1))
+
+;; (BONDS HELD LESS THAN FIVE YEARS ARE SUBJECT TO A THREE-MONTH INTEREST PENALTY)
+
+	;; BONDS MAY HOLD.
+
+		(and (bond_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1))
+
+	;; AN INTEREST PENALTY CAN BE THREE-MONTH.
+
+		(and (INTEREST_27 ?x1) (PENALTY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THREE-MONTH_27 ?x2))
+
+;; (THE MINIMUM PURCHASE IS $ FOR A $ 50 I BOND WHEN PURCHASING PAPER BOND CERTIFICATES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THEY ARE AVAILABLE IN DENOMINATIONS OF $ 50 COMMA $ 75 COMMA $ 100 COMMA $ 200 COMMA $ 500 COMMA $ 1COMMA000 COMMA AND $ 5COMMA000 AT THE END OF A YEAR COMMA A CHILD WHO SAVES $ 1.0 A WEEK FROM FOR INVESTING
+ CAN BUY A $ 50 BOND FOR $ 50)
+
+	;; A CHILD MAY BUY A BOND.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (BOND_27 ?x1))
+
+;; (AT 4.84 % INTEREST COMMA IT WILL BE WORTH $ 74.26 IN TEN YEARS OR $ 99.21 IN TWENTY YEARS)
+
+	;; 
+
+	;; ((:I NIL IN.P (:F K (:F NN TEN.N (:F PLUR YEAR.N)))))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (IN_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (F_27 ?x3) (NN_27 ?x3) (TEN_2EN_27 ?x3) (F_27 ?x4) (PLUR_27 ?x4) (YEAR_2EN_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BUY SILVER COINS)
+
+	;; COINS CAN BE SILVER.
+
+		(and (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+;; (INVESTMENT OPPORTUNITIES FOR YOUNG PEOPLE ARE QUITE LIMITED)
+
+	;; INVESTMENT OPPORTUNITIES CAN BE LIMITED.
+
+		(and (INVESTMENT_27 ?x1) (OPPORTUNITIES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIMITED_27 ?x2))
+
+	;; INVESTMENT OPPORTUNITIES CAN BE FOR PEOPLE.
+
+		(and (INVESTMENT_27 ?x1) (OPPORTUNITIES_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (SILVER PROOF COINS ARE AN EASY WAY FOR YOUNG PEOPLE TO INVEST)
+
+	;; PROOF COINS CAN BE A WAY.
+
+		(and (proof_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; PROOF COINS CAN BE SILVER.
+
+		(and (PROOF_27 ?x1) (coin_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILVER_27 ?x2))
+
+	;; A WAY CAN BE FOR PEOPLE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A WAY CAN BE EASY.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; PEOPLE CAN BE YOUNG.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))

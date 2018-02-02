@@ -1,0 +1,361 @@
+;; (IF YOU DON T HAVE CHILDREN OR THEY ARE GROWN COMMA YOU WON T NEED TO BE AS CONCERNED ABOUT FINDING AN ATTORNEY SPECIALIZING IN FAMILY LAW)
+
+	;; A PERSON MAY WIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WIN_27 ?x1))
+
+	;; A PERSON MAY DON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DON_27 ?x1))
+
+	;; T MAY HAVE CHILDREN.
+
+		(and (T_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BE GROW -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROW_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; AN ATTORNEY MAY SPECIALIZE IN FAMILY LAW.
+
+		(and (ATTORNEY_27 ?x1) (MAY_27 ?x1) (SPECIALIZE_27 ?x1) (in_27 ?x1 ?x2) (FAMILY_27 ?x2) (LAW_27 ?x2))
+
+;; (CONSIDER YOUR FINANCIAL SITUATION -- SHARED BANK AND INVESTMENT ACCOUNTS COMMA PROPERTY OWNERSHIP AND OTHER JOINT ASSETS)
+
+	;; A PERSON MAY HAVE A SITUATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SITUATION_27 ?x1))
+
+	;; A SITUATION CAN BE FINANCIAL.
+
+		(and (SITUATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINANCIAL_27 ?x2))
+
+	;; A BANK CAN BE SHARED.
+
+		(and (BANK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHARED_27 ?x2))
+
+	;; ASSETS CAN BE JOINT.
+
+		(and (asset_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JOINT_27 ?x2))
+
+;; (IF YOU HAVE ANY FINANCIAL HOLDINGS COMMA YOU LL NEED TO FIND AN ATTORNEY WELL-VERSED IN LAWS GOVERNING FINANCE)
+
+	;; A PERSON MAY LL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1))
+
+	;; A PERSON MAY HAVE HOLDINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HOLDINGS_27 ?x1))
+
+	;; HOLDINGS CAN BE FINANCIAL.
+
+		(and (holding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINANCIAL_27 ?x2))
+
+;; (WHILE YOU RE LEARNING HOW TO FIND A GOOD DIVORCE ATTORNEY COMMA YOU MAY DECIDE YOU DON T EACH NEED SEPARATE ATTORNEYS)
+
+	;; A PERSON MAY RE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RE_27 ?x1))
+
+	;; A DIVORCE ATTORNEY CAN BE GOOD.
+
+		(and (DIVORCE_27 ?x1) (ATTORNEY_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; T MAY NEED ATTORNEYS.
+
+		(and (T_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (ATTORNEYS_27 ?x1))
+
+	;; ATTORNEYS CAN BE SEPARATE.
+
+		(and (attorney_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+;; (IF YOUR RELATIONSHIP IS AMICABLE AND YOU FORESEE COMFORTABLE AND FRIENDLY NEGOTIATIONS COMMA CONSIDER AN ATTORNEY SKILLED AT MEDIATION WHO WILL DRAW UP A DIVORCE DECREE IN BOTH OF YOUR INTERESTS)
+
+	;; A RELATIONSHIP CAN BE AMICABLE.
+
+		(and (RELATIONSHIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMICABLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A RELATIONSHIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RELATIONSHIP_27 ?x1))
+
+	;; A PERSON MAY FORESEE NEGOTIATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FORESEE_27 ?x1) (NEGOTIATIONS_27 ?x1))
+
+	;; NEGOTIATIONS CAN BE COMFORTABLE.
+
+		(and (negotiation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+	;; AN ATTORNEY CAN BE SKILLED AT MEDIATION.
+
+		(and (ATTORNEY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SKILLED_27 ?x2) (AT_27 ?x2) (MEDIATION_27 ?x2))
+
+	;; A DIVORCE DECREE CAN BE IN SOME_NUMBER_OF THING OF INTERESTS.
+
+		(and (DIVORCE_27 ?x1) (DECREE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (thing_27 ?x2) (of_27 ?x2 ?x3) (interest_27 ?x3))
+
+	;; INTERESTS MAY HAVE A THING.
+
+		(and (interest_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE INTERESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INTERESTS_27 ?x1))
+
+;; (IF YOU ARE SEEKING A DIVORCE FROM AN ABUSIVE SPOUSE - PHYSICAL OR VERBAL - YOU WILL WANT TO SEEK AN ATTORNEY WHO SPECIALIZES IN WOMEN S RIGHTS)
+
+	;; A PERSON MAY SEEK A DIVORCE FROM A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEEK_27 ?x1) (A_27 ?x1) (DIVORCE_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+	;; A SPOUSE CAN BE ABUSIVE.
+
+		(and (SPOUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABUSIVE_27 ?x2))
+
+	;; WOMEN MAY BE RIGHTS.
+
+		(and (WOMEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (right_27 ?x2))
+
+;; (TALK TO FRIENDS WHO HAVE BEEN WHERE YOU ARE TO LEARN ABOUT THEIR EXPERIENCES WITH THEIR ATTORNEYS)
+
+	;; TALK CAN BE TO FRIENDS.
+
+		(and (TALK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (FRIENDS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE EXPERIENCES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXPERIENCES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE ATTORNEYS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ATTORNEYS_27 ?x1))
+
+;; (MOST PEOPLE WHO HAVE GONE THROUGH A DIVORCE WON T SHY AWAY FROM RELATING THEIR STORIES)
+
+	;; PEOPLE MAY WIN.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (WIN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE STORIES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STORIES_27 ?x1))
+
+;; (SOME FRIENDS WILL OPENLY DISCUSS FINANCES -- THE CONSULTATION FEE THEY PAID AND WHAT THE ATTORNEY CHARGES PER HOUR)
+
+	;; SOME_NUMBER_OF FRIENDS MAY DISCUSS FINANCES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FRIENDS_27 ?x1) (MAY_27 ?x1) (DISCUSS_27 ?x1) (FINANCES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY PAY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+	;; AN ATTORNEY MAY CHARGE.
+
+		(and (ATTORNEY_27 ?x1) (MAY_27 ?x1) (CHARGE_27 ?x1))
+
+;; (ASK SPECIFIC QUESTIONS ABOUT YOUR FRIENDS EXPERIENCES COMMUNICATING WITH THE ATTORNEY)
+
+	;; QUESTIONS MAY EXPERIENCE.
+
+		(and (QUESTIONS_27 ?x1) (MAY_27 ?x1) (EXPERIENCE_27 ?x1))
+
+	;; QUESTIONS CAN BE ABOUT FRIENDS.
+
+		(and (question_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (FRIENDS_27 ?x2))
+
+	;; QUESTIONS CAN BE ASK.
+
+		(and (question_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ASK_27 ?x2))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [14]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [15]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [16]>
+
+;; (ASK YOUR FRIENDS IF THEY WOULD SELECT THIS SAME ATTORNEY IF THEY WERE IN THE SITUATION AGAIN)
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY SELECT AN ATTORNEY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (SELECT_27 ?x1) (AN_27 ?x1) (ATTORNEY_27 ?x1))
+
+	;; INDIVIDUAL -S CAN BE IN A SITUATION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SITUATION_27 ?x2))
+
+;; (CALL YOUR TOP 2 OR 3 CHOICES TO SET UP A CONSULTATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BE PREPARED TO PAY FOR THE CONSULTATION COMMA ALTHOUGH SOME DO OFFER A FREE INITIAL CONSULTATION)
+
+	;; SOME_NUMBER_OF THING MAY DO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A CONSULTATION CAN BE FREE.
+
+		(and (consultation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+;; (JOT DOWN BASIC NOTES ABOUT YOUR MARRIAGE BEFOREHAND)
+
+	;; NOTES CAN BE ABOUT A MARRIAGE.
+
+		(and (note_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (MARRIAGE_27 ?x2))
+
+	;; NOTES CAN BE BASIC.
+
+		(and (note_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+	;; A PERSON MAY HAVE A MARRIAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MARRIAGE_27 ?x1))
+
+;; (COMPILE A FOLDER OF LEGAL DOCUMENTS TO TAKE ALONG COMMA INCLUDING THE ORIGINAL MARRIAGE LICENSE COMMA YOUR DRIVER S LICENSE COMMA TAX RECORDS AND SUCH)
+
+	;; A DRIVER MAY BE LICENSE.
+
+		(and (DRIVER_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LICENSE_27 ?x2))
+
+	;; A FOLDER CAN BE CONSTITUTED_OF_OR_FILLED_WITH DOCUMENTS.
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DOCUMENTS_27 ?x2))
+
+	;; DOCUMENTS CAN BE LEGAL.
+
+		(and (document_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEGAL_27 ?x2))
+
+	;; A MARRIAGE LICENSE CAN BE ORIGINAL.
+
+		(and (MARRIAGE_27 ?x1) (LICENSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORIGINAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A DRIVER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRIVER_27 ?x1))
+
+;; (INCLUDE PROOF OF INFIDELITY IF THIS IS THE BASIS OF THE DIVORCE COMMA AND YOU HAVE THIS KIND OF DOCUMENTATION)
+
+	;; A PROOF CAN BE INCLUDE.
+
+		(and (PROOF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCLUDE_27 ?x2))
+
+	;; A THING CAN BE A BASIS OF A DIVORCE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (basi_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (DIVORCE_27 ?x3))
+
+	;; A DIVORCE MAY HAVE A BASIS.
+
+		(and (DIVORCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BASIS_27 ?x1))
+
+	;; A PERSON MAY HAVE A KIND OF DOCUMENTATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KIND_27 ?x1) (of_27 ?x1 ?x2) (DOCUMENTATION_27 ?x2))
+
+;; (GO ALONE TO THE INITIAL CONSULTATION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS MAY SEEM OBVIOUS BUT EVEN IF YOU ARE CONSIDERING USING THE ATTORNEY FOR MEDIATION COMMA THE INITIAL MEETING SHOULD BE DONE BY THE SPOUSE WHO PLANS TO GO ON RECORD AS THE PETITIONER FOR THE DIVORCE)
+
+	;; A THING CAN BE OBVIOUS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBVIOUS_27 ?x2))
+
+	;; A MEETING MAY BE DO -ED BY A SPOUSE.
+
+		(and (meeting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (SPOUSE_27 ?x2))
+
+	;; A PERSON MAY CONSIDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONSIDER_27 ?x1))
+
+	;; AN ATTORNEY CAN BE FOR MEDIATION.
+
+		(and (ATTORNEY_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (MEDIATION_27 ?x2))
+
+	;; A PETITIONER CAN BE FOR A DIVORCE.
+
+		(and (petitioner_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DIVORCE_27 ?x2))
+
+;; (MANY ATTORNEYS WILL CHARGE A SET FEE UP FRONT COMMA BASED ON INFORMATION THEY HAVE COLLECTED FROM YOU)
+
+	;; INDIVIDUAL -S MAY COLLECT FROM A PERSON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (COLLECT_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; SOME_NUMBER_OF ATTORNEYS MAY CHARGE A FEE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ATTORNEYS_27 ?x1) (MAY_27 ?x1) (CHARGE_27 ?x1) (A_27 ?x1) (FEE_27 ?x1))
+
+	;; A FEE CAN BE SET.
+
+		(and (FEE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SET_27 ?x2))
+
+;; (THIS IS OFTEN A SIGNIFICANT SUM OF MONEY THAT THEIR OFFICE HOURS ARE CHARGED AGAINST)
+
+	;; A THING CAN BE A SUM OF MONEY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SUM_27 ?x2) (of_27 ?x2 ?x3) (MONEY_27 ?x3))
+
+	;; A SUM CAN BE CONSTITUTED_OF_OR_FILLED_WITH MONEY.
+
+		(and (SUM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MONEY_27 ?x2))
+
+	;; A SUM CAN BE SIGNIFICANT.
+
+		(and (SUM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNIFICANT_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE OFFICE HOURS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OFFICE_27 ?x1) (HOURS_27 ?x1))

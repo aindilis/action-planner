@@ -1,0 +1,670 @@
+;; (DO N T SCHEDULE A PARENT MEETING TO OCCUR FIFTEEN MINUTES BEFORE THE STUDENTS COME BACK FROM LUNCH)
+
+	;; STUDENTS MAY BE COME_BACK -ED FROM LUNCH.
+
+		(and (student_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COME_5FBACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (LUNCH_27 ?x2))
+
+;; (BE ON TIME FOR ANY PARENT APPOINTMENTS YOU HAVE)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (IF OTHER TEACHERS ARE COMING AS WELL COMMA MAKE SURE THAT THEY REMEMBER THE TIME AND LOCATION THROUGH EMAIL REMINDER OR NOTE)
+
+	;; TEACHERS MAY COME.
+
+		(and (teacher_27 ?x1) (MAY_27 ?x1) (COME_27 ?x1))
+
+	;; INDIVIDUAL -S MAY REMEMBER A TIME.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (REMEMBER_27 ?x1) (A_27 ?x1) (TIME_27 ?x1))
+
+	;; A REMINDER CAN BE EMAIL.
+
+		(and (REMINDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMAIL_27 ?x2))
+
+;; (HAVE A PLAN TO QUICKLY LOCATE AND RETRIEVE THOSE STAFF MEMBERS IF THEY HAVE FORGOTTEN)
+
+	;; INDIVIDUAL -S MAY FORGET.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FORGET_27 ?x1))
+
+;; (DO NOT BRING ANYTHING TO THE MEETING THAT WOULD DISTRACT YOU FROM THE COMMUNICATION AT HAND)
+
+	;; A COMMUNICATION CAN BE AT HAND.
+
+		(and (communication_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_27 ?x2) (HAND_27 ?x2))
+
+;; (THAT INCLUDES PAPERS TO GRADE COMMA YOUR WATER BILL COMMA CELL PHONE COMMA OR LAPTOP -LRB- NO SURFING THE NET AT THIS TIME -RRB-)
+
+	;; A THING MAY INCLUDE PAPERS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (PAPERS_27 ?x1))
+
+	;; A PERSON MAY HAVE A WATER BILL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WATER_27 ?x1) (BILL_27 ?x1))
+
+;; (DO BRING TO THE MEETING ANYTHING RELEVANT TO THE STUDENT S INVOLVEMENT IN YOUR CLASS)
+
+	;; A DO[PERSON??] MAY BRING TO A MEETING ANYTHING.
+
+		(and (DO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (bring_27 ?e1) (to_27 ?e1 ?x1) (A_27 ?x1) (MEETING_27 ?x1) (ANYTHING_27 ?x1))
+
+	;; A MEETING ANYTHING CAN BE RELEVANT TO INVOLVEMENT.
+
+		(and (MEETING_27 ?x1) (ANYTHING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELEVANT_27 ?x2) (to_27 ?e1 ?x3) (INVOLVEMENT_27 ?x3))
+
+	;; INVOLVEMENT CAN BE IN A CLASS.
+
+		(and (INVOLVEMENT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (class_27 ?x2))
+
+	;; A STUDENT MAY HAVE INVOLVEMENT.
+
+		(and (STUDENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INVOLVEMENT_27 ?x1))
+
+	;; A PERSON MAY HAVE A CLASS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (class_27 ?x1))
+
+;; (THIS INCLUDES WORK SAMPLES COMMA BEHAVIOR LOG COMMA CURRENT REPORT CARD OR CLASS AVERAGE COMMA AND DETAILS OF MISSING ASSIGNMENTS IF YOU
+ PLAN TO ALLOW THE CHILD TO MAKE UP MISSING WORK)
+
+	;; A THING MAY INCLUDE WORK SAMPLES.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (WORK_27 ?x1) (SAMPLES_27 ?x1))
+
+	;; DETAILS CAN BE CONSTITUTED_OF_OR_FILLED_WITH ASSIGNMENTS.
+
+		(and (detail_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ASSIGNMENTS_27 ?x2))
+
+	;; ASSIGNMENTS CAN BE MISSING.
+
+		(and (assignment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+	;; WORK CAN BE MISSING.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISSING_27 ?x2))
+
+;; (TAKE NOTES DURING THE MEETING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MANY TIMES THERE IS SOMETHING DISCUSSED THAT REQUIRES ONE OF THE PEOPLE AT THE MEETING TO DO SOME FOLLOW-UP ACTIVITY)
+
+	;; SOME_NUMBER_OF TIMES CAN BE A SOMETHING.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TIMES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (something_27 ?x2))
+
+	;; SOMETHING MAY BE DISCUSS -ED.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISCUSS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; AN ACTIVITY CAN BE FOLLOW-UP.
+
+		(and (ACTIVITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOLLOW-UP_27 ?x2))
+
+;; (DO N T ASSUME YOU LL REMEMBER WHAT YOU DISCUSSED OR PROMISED TO DO LATER)
+
+	;; A PERSON MAY DISCUSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DISCUSS_27 ?x1))
+
+;; (WRITE IT DOWN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 8 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU MAY WANT TO PROVIDE A SMALL PAD OF PAPER AND PEN FOR PARENTS TOO COMMA AS MANY OF THEM DO N T BRING ANYTHING TO WRITE WITH)
+
+	;; A PAD CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAPER.
+
+		(and (PAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAPER_27 ?x2))
+
+	;; A PAD CAN BE SMALL.
+
+		(and (PAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION OF INDIVIDUAL -S MAY DO.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (of_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2) (MAY_27 ?x2) (DO_27 ?x2))
+
+;; (WHEN THE PARENTS ARRIVE COMMA WELCOME THEM WARMLY)
+
+	;; PARENTS MAY ARRIVE.
+
+		(and (parent_27 ?x1) (MAY_27 ?x1) (ARRIVE_27 ?x1))
+
+;; (TRY TO SEAT YOURSELF NEXT TO THEM RATHER THAN ACROSS FROM THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THERE ARE MULTIPLE STAFF MEMBERS ATTENDING COMMA MAKE SURE THAT YOU DO N T PHYSICALLY SEAT YOURSELVES TOGETHER APART FROM THE PARENT)
+
+	;; STAFF MEMBERS MAY ATTEND.
+
+		(and (STAFF_27 ?x1) (MEMBERS_27 ?x1) (MAY_27 ?x1) (ATTEND_27 ?x1))
+
+	;; STAFF MEMBERS CAN BE MULTIPLE.
+
+		(and (staff_27 ?x1) (member_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (TRY FOR MORE OF A CIRCULAR SEATING PATTERN THAN A PANEL STYLE ARRANGMENT)
+
+	;; A SEATING PATTERN CAN BE CIRCULAR.
+
+		(and (SEATING_27 ?x1) (PATTERN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CIRCULAR_27 ?x2))
+
+;; (PARENTS ARE ALREADY NERVOUS COMMA AND MANY FEEL INTIMIDATED WHEN THEY ARE ALONE IN A CHAIR FACING A LINE OF TEACHERS)
+
+	;; PARENTS CAN BE NERVOUS.
+
+		(and (parent_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NERVOUS_27 ?x2))
+
+	;; SOME_NUMBER_OF THING MAY FEEL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+	;; INDIVIDUAL -S MAY FACE A LINE OF TEACHERS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FACE_27 ?x1) (A_27 ?x1) (LINE_27 ?x1) (of_27 ?x1 ?x2) (teacher_27 ?x2))
+
+	;; A LINE CAN BE CONSTITUTED_OF_OR_FILLED_WITH TEACHERS.
+
+		(and (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TEACHERS_27 ?x2))
+
+;; (MAKE SURE YOU KNOW THE CHILD S NAME AND ARE SAYING IT CORRECTLY)
+
+	;; A PERSON MAY KNOW A NAME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; A CHILD MAY HAVE A NAME.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+;; (HOPEFULLY YOU HAVE N T GOTTEN THIS FAR INTO THE YEAR WITHOUT THAT KNOWLEDGE COMMA BUT BE SURE OF IT BEFORE YOU START)
+
+	;; A PERSON MAY START.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+;; (YOU LL ALSO WANT TO MAKE SURE YOU KNOW THE RELATIONSHIP OF THE VISITING ADULT TO THE CHILD IN QUESTION)
+
+	;; A PERSON MAY KNOW A RELATIONSHIP OF AN ADULT TO A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (RELATIONSHIP_27 ?x1) (of_27 ?x1 ?x2) (ADULT_27 ?x2) (to_27 ?x1 ?x3) (child_27 ?x3))
+
+	;; AN ADULT CAN BE TO A CHILD.
+
+		(and (ADULT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (child_27 ?x2))
+
+	;; AN ADULT CAN BE VISITING.
+
+		(and (ADULT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VISITING_27 ?x2))
+
+	;; A CHILD CAN BE IN QUESTION.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (QUESTION_27 ?x2))
+
+;; (DO N T ASSUME IT IS A MOM OR DAD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE VISITOR MIGHT ACTUALLY BE THE CHILD S AUNT COMMA GRANDFATHER COMMA OR EVEN A FOSTER PARENT)
+
+	;; A VISITOR CAN BE AN AUNT.
+
+		(and (VISITOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (AUNT_27 ?x2))
+
+	;; A CHILD MAY HAVE AN AUNT.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AUNT_27 ?x1))
+
+	;; A PARENT CAN BE FOSTER.
+
+		(and (parent_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FOSTER_27 ?x2))
+
+;; (FIND OUT WHO YOU ARE DEALING WITH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [25]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (INTRODUCE YOURSELF TO THE PARENT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [26]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THERE ARE MULTIPLE TEACHERS PRESENT COMMA INTRODUCE THE PARENT TO THEM)
+
+	;; TEACHERS CAN BE MULTIPLE.
+
+		(and (teacher_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MULTIPLE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [28]>
+
+;; (THIS IS MS. SMITH COMMA JIMMY SMITH S MOM)
+
+	;; A MALE MAY HAVE A MOM.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOM_27 ?x1))
+
+;; (SHE S HERE TODAY TO TALK WITH US ABOUT JIMMY S WORK IN OUR CLASSES)
+
+	;; WORK CAN BE IN CLASSES.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (class_27 ?x2))
+
+	;; A MALE MAY HAVE WORK.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORK_27 ?x1))
+
+	;; PERSON -S MAY HAVE CLASSES.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLASSES_27 ?x1))
+
+;; (AS EACH TEACHER GETS A TURN TO TALK TO THE PARENT COMMA HE OR SHE CAN INTRODUCE HERSELF AT THAT TIME)
+
+	;; A MALE MAY INTRODUCE A FEMALE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (INTRODUCE_27 ?x1) (A_27 ?x1) (FEMALE_27 ?x1))
+
+	;; SOME_NUMBER_OF TEACHER MAY GET A TURN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TEACHER_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (TURN_27 ?x1))
+
+;; (BEGIN YOUR SPIEL WITH SOMETHING POSITIVE)
+
+	;; A SPIEL CAN BE POSITIVE.
+
+		(and (SPIEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSITIVE_27 ?x2))
+
+	;; A SPIEL CAN BE WITH SOMETHING.
+
+		(and (SPIEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (something_27 ?x2))
+
+	;; A PERSON MAY HAVE A SPIEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPIEL_27 ?x1))
+
+;; (PARENTS LIKE TO HEAR WHAT THEIR CHILDREN ARE DOING WELL)
+
+	;; CHILDREN MAY DO.
+
+		(and (CHILDREN_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CHILDREN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+;; (IT SHOULD BE SPECIFIC AND GENUINE COMMA HOWEVER COMMA AS PARENTS ARE ALREADY WARY AND EXPECTANT OF BAD NEWS)
+
+	;; A THING-REFERRED-TO CAN BE SPECIFIC.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECIFIC_27 ?x2))
+
+	;; PARENTS CAN BE WARY.
+
+		(and (parent_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARY_27 ?x2))
+
+	;; A NEWS CAN BE BAD.
+
+		(and (NEWS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+;; (EVEN IF THE CHILD IS A HOLY TERROR COMMA THERE IS SOMETHING GOOD THAT CAN BE SAID OF THEM)
+
+	;; A CHILD CAN BE A TERROR.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TERROR_27 ?x2))
+
+	;; A TERROR CAN BE HOLY.
+
+		(and (TERROR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [29]>
+
+;; (WHEN YOU GET AROUND TO DELIVERING BAD NEWS COMMA BE TRUTHFUL)
+
+	;; A NEWS CAN BE BAD.
+
+		(and (NEWS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAD_27 ?x2))
+
+;; (FOR EXAMPLE COMMA IF THE CHILD IS N T KEEPING UP WITH WORKBOOK PAGES COMMA BRING A WORKBOOK TO SHOW THE PARENTS WHAT THE CHILD SHOULD BE
+ DOING)
+
+	;; A CHILD MAY KEEP_UP WITH WORKBOOK PAGES.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (KEEP_5FUP_27 ?x1) (WITH_27 ?x1) (WORKBOOK_27 ?x1) (PAGES_27 ?x1))
+
+	;; A CHILD MAY DO.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IF THE CHILD IS N T PASSING TESTS COMMA BRING THE STUDY GUIDE YOU USE TO SHOW PARENTS WHAT YOU ARE GIVING THE STUDENTS TO PREPARE THEM
+ FOR THE TESTS)
+
+	;; A CHILD MAY PASS TESTS.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (PASS_27 ?x1) (TESTS_27 ?x1))
+
+;; (TELL THE PARENTS BRIEFLY ABOUT HOW YOUR CLASS WORKS IN RESPECT TO THE AREA IN WHICH THE CHILD IS STRUGGLING  HOW OFTEN YOU GIVE HOMEWORK
+ COMMA WHAT YOU DO TO REVIEW FOR A TEST COMMA HOW STUDENTS ARE REQUIRED TO KEEP A NOTEBOOK COMMA OR HOW TESTS ALWAYS FALL ON FRIDAYS)
+
+	;; A CLASS MAY WORK IN RESPECT.
+
+		(and (CLASS_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1) (in_27 ?x1 ?x2) (RESPECT_27 ?x2))
+
+	;; A PERSON MAY HAVE A CLASS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (class_27 ?x1))
+
+	;; A CHILD MAY STRUGGLE.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (STRUGGLE_27 ?x1))
+
+	;; A PERSON MAY GIVE HOMEWORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (HOMEWORK_27 ?x1))
+
+;; (IF YOU PLAN TO ALLOW MAKEUP WORK COMMA SHOW IT TO THE PARENT AT THAT TIME)
+
+	;; A PARENT CAN BE AT A TIME.
+
+		(and (parent_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+;; (WRITE ANY IMPORTANT INFORMATION ON THE TOP OF IT COMMA SUCH AS DUE DATE COMMA OR CREDIT POSSIBLE -LRB- 50 % FOR LATE WORK -RRB-)
+
+	;; AN INFORMATION CAN BE IMPORTANT.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; SOME_NUMBER_OF % CAN BE FOR WORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (WORK_27 ?x2))
+
+;; (MAKE ANY NOTES ON THE WORK ABOUT WHAT RESOURCE THE STUDENT SHOULD USE -LRB- PAGES 3-9 OF THE SOCIAL STUDIES BOOK -RRB- COMMA BECAUSE IF
+ THE WORK IS ALREADY OVERDUE COMMA CHANCES ARE THE STUDENT WO N T REMEMBER HOW IT WAS SUPPOSED TO BE DONE)
+
+	;; NOTES CAN BE ON WORK.
+
+		(and (note_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (WORK_27 ?x2))
+
+	;; RESOURCE MAY USE.
+
+		(and (RESOURCE_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; CHANCES CAN BE A STUDENT.
+
+		(and (chance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STUDENT_27 ?x2))
+
+	;; WORK CAN BE OVERDUE.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OVERDUE_27 ?x2))
+
+;; (BE SURE AND ALLOW THE PARENTS TIME TO ASK QUESTIONS OR MAKE COMMENTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [29]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ENCOURAGE THEM TO EXPRESS THEIR CONCERNS)
+
+	;; INDIVIDUAL -S MAY HAVE CONCERNS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONCERNS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [30]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [31]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [32]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [33]>
+
+;; (EDUCATION COMMA LIKE ANY OTHER FIELD COMMA IS RIDDLED WITH ACRONYMS THAT ONLY MAKE SENSE TO OTHER EDUCATORS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [33]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE PLAIN WITH YOUR COMMUNICATION)
+
+	;; A PERSON MAY HAVE A COMMUNICATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMMUNICATION_27 ?x1))
+
+;; (IF YOU MUST USE AN ACRONYM COMMA BE SURE AND EXPLAIN IT TO THE PARENT -LRB- IEP COMMA SST COMMA EIP COMMA MO COMMA ELL COMMA LAB COMMA
+ ETC. -RRB- WHEN YOU ARE FINISHED WITH THE MEETING COMMA BE SURE AND SUMMARIZE ANY STEPS YOU AND THE PARENT HAVE AGREED TO TAKE)
+
+	;; A PERSON MAY USE AN ACRONYM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (AN_27 ?x1) (ACRONYM_27 ?x1))
+
+	;; A PERSON MAY BE FINISH -ED WITH A MEETING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINISH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (A_27 ?x2) (MEETING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [34]>
+
+;; (MR. ELLIS IS GOING TO BE SENDING SOME MAKEUP WORK HOME IN MATH COMMA AND MS. LEWIS HAS GIVEN YOU SOME MAKEUP WORK TODAY FOR SOCIAL
+ STUDIES THAT YOU WILL MAKE SURE JIMMY HAS BACK BY NEXT MONDAY)
+
+	;; SOME_NUMBER_OF MAKEUP WORK HOME CAN BE IN MATH.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MAKEUP_27 ?x1) (WORK_27 ?x1) (HOME_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (MATH_27 ?x2))
+
+	;; STUDIES CAN BE SOCIAL.
+
+		(and (study_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOCIAL_27 ?x2))
+
+	;; A PERSON MAY MAKE SURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [35]>
+
+;; (BE SURE AND ASK AT THAT POINT IF THE PARENT HAS ANY QUESTIONS FOR ANYONE)
+
+	;; A PARENT MAY HAVE QUESTIONS.
+
+		(and (PARENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (QUESTIONS_27 ?x1))
+
+	;; QUESTIONS CAN BE FOR ANYONE.
+
+		(and (question_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ANYONE_27 ?x2))
+
+;; (THANK THE PARENT FOR TAKING THE TIME TO MEET WITH YOU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 8 [35]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (EXPRESS YOUR KNOWLEDGE THAT THEY HAVE TAKEN TIME OUT OF THEIR BUSY SCHEDULE COMMA AND HOW YOU WISH THAT ALL OTHER PARENTS WERE AS
+ CONSCIENTOUS)
+
+	;; A PERSON MAY HAVE KNOWLEDGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KNOWLEDGE_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A SCHEDULE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+	;; A SCHEDULE CAN BE BUSY.
+
+		(and (SCHEDULE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUSY_27 ?x2))
+
+	;; A PERSON MAY WISH A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WISH_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; SOME_NUMBER_OF PARENTS CAN BE CONSCIENTOUS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (parent_27 ?x1) (be_27 ?e1 ?x1 ?x2) (conscientou_27 ?x2))
+
+;; (MAKE SURE THAT THE PARENT HAS KNOWLEDGE OF HOW TO CONTACT YOU COMMA AND THAT KNOW THEY ARE WELCOME TO DO SO AT ANY TIME)
+
+	;; A PARENT MAY HAVE KNOWLEDGE.
+
+		(and (PARENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KNOWLEDGE_27 ?x1))
+
+;; (SHAKE HANDS WITH THEM COMMA AND LEAD THEM TO THE DOOR)
+
+	;; A SHAKE[PERSON??] MAY HAND WITH INDIVIDUAL -S.
+
+		(and (SHAKE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAND_27 ?x1) (WITH_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [36]>

@@ -1,0 +1,594 @@
+;; (PRE-TREAT LAUNDRY STAINS)
+
+	;; A PRE-TREAT_LAUNDRY[PERSON??] MAY STAIN.
+
+		(and (PRE-TREAT_5FLAUNDRY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (STAIN_27 ?x1))
+
+;; (IF YOU HAVE N T ALREADY COMMA DO IT NOW)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (IF YOU DO N T HAVE A STAIN REMOVER COMMA PUT A DOLLOP OF LAUNDRY SOAP ON THE STAIN AND RUB IN)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A REMOVER CAN BE STAIN.
+
+		(and (REMOVER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STAIN_27 ?x2))
+
+	;; A DOLLOP CAN BE CONSTITUTED_OF_OR_FILLED_WITH LAUNDRY SOAP.
+
+		(and (DOLLOP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (LAUNDRY_27 ?x2) (SOAP_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (EMPTY ALL OF YOUR POCKETS IN YOUR CLOTHES)
+
+	;; POCKETS MAY HAVE A THING.
+
+		(and (pocket_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE POCKETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (POCKETS_27 ?x1))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+;; (A PEN OR LIPSTICK TUBE CAN EASILY RUIN ALL OF YOUR CLOTHES)
+
+	;; A PEN MAY RUIN SOME_NUMBER_OF THING OF CLOTHES.
+
+		(and (PEN_27 ?x1) (MAY_27 ?x1) (RUIN_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (clothe_27 ?x2))
+
+	;; CLOTHES MAY HAVE A THING.
+
+		(and (clothe_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; (THIS WILL ALSO INCLUDE YOUR TOWELS AND SHEETS)
+
+	;; A THING MAY INCLUDE TOWELS.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (TOWELS_27 ?x1))
+
+	;; A PERSON MAY HAVE TOWELS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TOWELS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; (BLUE JEANS SHOULD BE WASHED WITH THE DARKS)
+
+	;; JEANS MAY BE WASH -ED WITH DARKS.
+
+		(and (jean_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WASH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (DARKS_27 ?x2))
+
+	;; JEANS CAN BE BLUE.
+
+		(and (jean_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUE_27 ?x2))
+
+;; (WASH TOWELS AND BED SHEETS / BLANKETS SEPARATELY NOT WITH CLOTHES)
+
+	;; SHEETS MAY / BLANKETS.
+
+		(and (sheet_27 ?x1) (kbs2_kif_quote_2DSLASH-_27 ?e1 ?x1 ?x2) (blanket_27 ?x2))
+
+	;; A WASH_TOWELS_AND_BED[PERSON??] MAY HAVE SHEETS.
+
+		(and (WASH_5FTOWELS_5FAND_5FBED_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SHEETS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [11]>
+
+;; (THE-2 NSUBJ GARMENT-3 AMOD RECOMMENDED-6 PREP_FOR CARE-7)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RED AND PURPLE FABRICS IN PARTICULAR HAVE A NASTY HABIT OF RELEASING DYE INTO THE WASH AND TURNING WHITE ITEMS PINK)
+
+	;; A HABIT CAN BE NASTY.
+
+		(and (HABIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NASTY_27 ?x2))
+
+	;; ITEMS CAN BE PINK.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PINK_27 ?x2))
+
+	;; ITEMS CAN BE WHITE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WHITE_27 ?x2))
+
+;; (PUT THE REDS COMMA PINKS COMMA ORANGES COMMA ETC. IN A SEPARATE LOAD COMMA OR COMMA IF YOU ONLY HAVE REDS COMMA WASH THEM IN WITH THE DARKS)
+
+	;; A LOAD CAN BE SEPARATE.
+
+		(and (LOAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; A PERSON MAY RED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RED_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [12]>
+
+;; (TURN TOPS -- ESPECIALLY DELICATE CLOTHING COMMA SCREEN PRINTED TOPS COMMA AND SWEATSHIRTS INSIDE OUT AND SECURE THE DRAWSRINGS ON ITEMS LIKE HOODIES COMMA TRACK PANTS)
+
+	;; A DRAWSRINGS CAN BE ON ITEMS.
+
+		(and (DRAWSRINGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (ITEMS_27 ?x2))
+
+;; (READ THE DETERGENT LABEL S DIRECTIONS)
+
+	;; A DETERGENT_LABEL[PERSON??] MAY HAVE AN EXEMPLAR_OF A DIRECTIONS[PERSON??].
+
+		(and (DETERGENT_5FLABEL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXEMPLAR_5FOF_27 ?x1) (A_27 ?x1) (DIRECTIONS_27 ?x1) (PERSON_27 ?x1))
+
+;; (PUT THE RECOMMENDED AMOUNT OF DETERGENT IN THE MACHINE)
+
+	;; AN AMOUNT CAN BE RECOMMENDED.
+
+		(and (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMENDED_27 ?x2))
+
+	;; DETERGENT CAN BE IN A MACHINE.
+
+		(and (DETERGENT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MACHINE_27 ?x2))
+
+;; (DO N T PUT TOO MUCH COMMA AS IT WILL ACTUALLY HINDER CLEANING YOUR CLOTHES)
+
+	;; A THING-REFERRED-TO MAY HINDER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HINDER_27 ?x1))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+;; (START THE MACHINE AS DIRECTED)
+
+	;; A START[PERSON??] MAY DIRECT.
+
+		(and (START_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DIRECT_27 ?x1))
+
+;; (PUT CLOTHES IN MACHINE)
+
+	;; 
+
+	;; ((:I NIL IN.P (:F K MACHINE.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (IN_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (MACHINE_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [14]>
+
+;; (ALLOW ROOM FOR CLOTHES TO AGITATE DURING THE WASH CYCLE)
+
+	;; ROOM CAN BE FOR CLOTHES.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (clothe_27 ?x2))
+
+;; (DO NOT LEAVE CLOTHES UNATTENDED WAIT)
+
+	;; A DO_NOT_LEAVE_CLOTHES[PERSON??] MAY UNATTEND.
+
+		(and (DO_5FNOT_5FLEAVE_5FCLOTHES_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (UNATTEND_27 ?x1))
+
+;; (YOU WILL HAVE BETWEEN 35-45 MINUTES TO JUST HANG OUT AND MAKE SURE NO ONE TAKES YOUR LAUNDRY OUT OF THE MACHINE)
+
+	;; AN ONE MAY TAKE_OUT A LAUNDRY.
+
+		(and (ONE_27 ?x1) (MAY_27 ?x1) (TAKE_5FOUT_27 ?x1) (A_27 ?x1) (LAUNDRY_27 ?x1))
+
+	;; A PERSON MAY HAVE A LAUNDRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LAUNDRY_27 ?x1))
+
+;; (DO N T LEAVE YOUR LAUNDRY DEFENSELESS -- THIEVES STEAL FROM THE DORM ROUTINELY)
+
+	;; A LAUNDRY CAN BE DEFENSELESS.
+
+		(and (LAUNDRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (defenseless_27 ?x2))
+
+	;; A PERSON MAY HAVE A LAUNDRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LAUNDRY_27 ?x1))
+
+	;; THIEVES MAY STEAL FROM A DORM.
+
+		(and (thieve_27 ?e1 ?x1) (MAY_27 ?x1) (STEAL_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (DORM_27 ?x1))
+
+;; (DO YOUR HOMEWORK)
+
+	;; A PERSON MAY HAVE A HOMEWORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOMEWORK_27 ?x1))
+
+;; (FIND DRYERS WHEN YOUR CLOTHES ARE COMPLETELY DONE THAT WILL FIT ALL OF YOUR LAUNDRY)
+
+	;; CLOTHES CAN BE DONE.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DONE_27 ?x2))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; A LAUNDRY MAY HAVE A THING.
+
+		(and (LAUNDRY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE A LAUNDRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LAUNDRY_27 ?x1))
+
+;; (ONE LOAD WILL USUALLY EQUAL ONE DRYER LOAD)
+
+	;; A LOAD MAY EQUAL A DRYER LOAD.
+
+		(and (LOAD_27 ?x1) (MAY_27 ?x1) (EQUAL_27 ?x1) (A_27 ?x1) (DRYER_27 ?x1) (LOAD_27 ?x1))
+
+;; (DO NOT OVERFILL COMMA OR THE DRYING WILL TAKE FOREVER COMMA OR YOU MAY EVEN BREAK THE DRYER)
+
+	;; A DRYING MAY TAKE.
+
+		(and (DRYING_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+	;; A PERSON MAY BREAK A DRYER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BREAK_27 ?x1) (A_27 ?x1) (DRYER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [15]>
+
+;; (THEN HANG IT UP AND STRETCH/UNWRINKLE IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WHITES WILL USUALLY TAKE A NORMAL/HIGH SETTING COMMA SUCH AS COTTON T-SHIRTS COMMA SHEETS AND TOWELS)
+
+	;; WHITES MAY TAKE A SETTING.
+
+		(and (white_27 ?x1) (take_27 ?e1 ?x1 ?x2) (A_27 ?x2) (setting_27 ?x2))
+
+	;; A SETTING CAN BE NORMAL/HIGH.
+
+		(and (setting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_2FHIGH_27 ?x2))
+
+;; (HOWEVER COMMA YOU MAY BE AT RISK FOR SHRINKAGE OR SCORCHING COMMA SO YOU MAY WISH TO GO WITH A SLIGHTLY LOWER SETTING)
+
+	;; A PERSON CAN BE AT RISK.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (RISK_27 ?x2))
+
+	;; RISK CAN BE FOR SHRINKAGE.
+
+		(and (risk_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SHRINKAGE_27 ?x2))
+
+;; (DARKS WILL USUALLY BE ON A MEDIUM SETTING)
+
+	;; DARKS CAN BE ON A MEDIUM SETTING.
+
+		(and (dark_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (MEDIUM_27 ?x2) (SETTING_27 ?x2))
+
+;; (YOU CAN USE A HIGHER SETTING IF YOU RE WASHING LOTS OF DARK COTTONS)
+
+	;; A PERSON MAY USE A SETTING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (SETTING_27 ?x1))
+
+	;; A SETTING CAN BE HIGHER.
+
+		(and (setting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHER_27 ?x2))
+
+	;; COTTONS CAN BE DARK.
+
+		(and (cotton_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DARK_27 ?x2))
+
+;; (FINE WASHABLES SHOULD BE EITHER AIR-DRIED COMMA LINE-DRIED COMMA OR DRIED ON THE LOWEST SETTING AVAILABLE)
+
+	;; WASHABLES CAN BE AIR-DRIED.
+
+		(and (washable_27 ?x1) (be_27 ?e1 ?x1) (air-dried_27 ?x1))
+
+	;; WASHABLES CAN BE FINE.
+
+		(and (washable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINE_27 ?x2))
+
+;; (IF IN DOUBT COMMA DRY AT A LOWER SETTING COMMA AS SHRINKING OF CLOTHES USUALLY HAPPENS IN THE DRYER)
+
+	;; 
+
+	;; ((:I (:A NIL (:P OF.P (:F K (:F PLUR CLOTHE.N)))) HAPPEN.V (:P IN.P (:Q THE DRYER.N))) NIL)
+
+		(and (I_27 ?x5) (A_27 ?x1) (NIL_27 ?x1) (P_27 ?x2) (OF_2EP_27 ?x2) (F_27 ?x3) (K_27 ?x3) (F_27 ?x4) (PLUR_27 ?x4) (CLOTHE_2EN_27 ?x4) (HAPPEN_2EV_27 ?x5) (P_27 ?x6) (IN_2EP_27 ?x6) (Q_27 ?x7) (THE_27 ?x7) (DRYER_2EN_27 ?x7) (NIL_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CHECK THE LINT TRAP IF YOUR DRYER HAS ONE -LRB- MANY COMMERCIAL ONES DO NOT -RRB- COMMA SCOOP OUT ANY LINT PRESENT COMMA AND PUT THE LINT TRAP BACK IN PLACE)
+
+	;; A DRYER MAY HAVE SOME NUMBER_OR_PORTION.
+
+		(and (DRYER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A PERSON MAY HAVE A DRYER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRYER_27 ?x1))
+
+	;; SOME_NUMBER_OF ONES MAY DO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ONES_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; ONES CAN BE COMMERCIAL.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMERCIAL_27 ?x2))
+
+	;; A PRESENT CAN BE LINT.
+
+		(and (PRESENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LINT_27 ?x2))
+
+	;; A TRAP CAN BE LINT.
+
+		(and (TRAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LINT_27 ?x2))
+
+;; (THROW A DRYING SHEET IN THE DRYER BEFORE STARTING)
+
+	;; A SHEET CAN BE IN A DRYER.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DRYER_27 ?x2))
+
+	;; A SHEET CAN BE DRYING.
+
+		(and (SHEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRYING_27 ?x2))
+
+;; (IF YOU SO CHOOSE)
+
+	;; A PERSON MAY CHOOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1))
+
+;; (DEPOSIT COINS OR USE CARD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WAIT AGAIN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU MAY HAVE BETWEEN 30-60 MINUTES TO CHILL AND WAIT FOR YOUR CLOTHES)
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+;; (DO MORE HOMEWORK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WHEN DRYER CYCLE IS COMPLETE COMMA DO N T WRINKLE)
+
+	;; CYCLE CAN BE COMPLETE.
+
+		(and (CYCLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPLETE_27 ?x2))
+
+	;; A DRYER[PERSON??] MAY HAVE A CYCLE.
+
+		(and (DRYER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CYCLE_27 ?x1))
+
+;; (DEAL WITH WRINKLE-PRONE ARTICLES IMMEDIATELY COMMA SO THEY DO N T GET WRINKLED)
+
+	;; ARTICLES CAN BE WRINKLE-PRONE.
+
+		(and (article_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRINKLE-PRONE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THIS MAY MEAN EITHER PUTTING ON A HANGER OR FOLDING APPROPRIATELY)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+;; (FOLDING WILL REDUCE THE BULK YOU WILL HAVE TO CARRY BACK UP)
+
+	;; FOLDING MAY REDUCE A BULK.
+
+		(and (fold_27 ?e1 ?x1) (MAY_27 ?x1) (REDUCE_27 ?x1) (A_27 ?x1) (BULK_27 ?x1))
+
+;; (FOLD OR HANG JEANS AND SLACKS THE WAY YOU WOULD WANT THEM PRESSED -LRB- FLAT OR WITH A CREASE DOWN THE FRONT OF THE LEG -RRB- DIRECTLY OUT OF THE DRYER AND THE WILL BE VIRTUALLY WRINKLE FREE)
+
+	;; INDIVIDUAL -S MAY BE PRESS -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (DOUBLE-CHECK THE DRYER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MAKE SURE YOU DID N T FORGET ANY SOCKS COMMA LOOSE CHANGE COMMA OR OTHER SMALL ITEMS IN THE MACHINE)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A CHANGE CAN BE LOOSE.
+
+		(and (CHANGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+	;; ITEMS CAN BE IN A MACHINE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MACHINE_27 ?x2))
+
+	;; ITEMS CAN BE SMALL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))

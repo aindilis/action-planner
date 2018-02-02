@@ -1,0 +1,468 @@
+;; (IF YOU ARE HAVING MULTIPLES COMMA HOWEVER COMMA YOU MAY NEED TO SHOP EARLIER)
+
+	;; A PERSON MAY HAVE MULTIPLES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MULTIPLES_27 ?x1))
+
+;; (BUY AT LEAST A FEW MATERNITY PANTS OR SKIRTS BEFORE YOU NEED THEM COMMA HOWEVER)
+
+	;; PANTS CAN BE MATERNITY.
+
+		(and (pant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+	;; A PERSON MAY NEED INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (OFTEN COMMA THERE IS A SUDDEN GROWTH SPURT ABOUT THE SECOND TRIMESTER -LRB- FOR A SINGLE-BABY PREGNANCY -RRB- IN WHICH IN THE SPAN OF A FEW DAYS OR A WEEK COMMA YOUR USUAL PANTS WILL SUDDENLY NOT FIT)
+
+	;; A GROWTH SPURT CAN BE ABOUT A TRIMESTER.
+
+		(and (GROWTH_27 ?x1) (SPURT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (TRIMESTER_27 ?x2))
+
+	;; A GROWTH SPURT CAN BE SUDDEN.
+
+		(and (GROWTH_27 ?x1) (SPURT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUDDEN_27 ?x2))
+
+	;; A PREGNANCY CAN BE SINGLE-BABY.
+
+		(and (PREGNANCY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SINGLE-BABY_27 ?x2))
+
+	;; PANTS MAY FIT.
+
+		(and (pant_27 ?x1) (MAY_27 ?x1) (FIT_27 ?x1))
+
+	;; A PERSON MAY HAVE PANTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (pant_27 ?x1))
+
+	;; PANTS CAN BE USUAL.
+
+		(and (pant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USUAL_27 ?x2))
+
+;; (YOU WILL NEED TO HAVE ENOUGH CLOTHING TO AT LEAST GET BY UNTIL YOU CAN GO SHOPPING)
+
+	;; A CLOTHING CAN BE ENOUGH.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; A PERSON MAY GO SHOPPING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (SHOPPING_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [7]>
+
+;; (EVEN BEFORE YOU RUSH OUT TO BUY MATERNITY CLOTHES COMMA IT IS GOOD IDEA TO PURCHASE A BELLY BUTTON COMMA WHICH IS A SIMPLE DEVICE CONSISTING OF ELASTIC WITH BUTTONS)
+
+	;; A THING-REFERRED-TO CAN BE AN IDEA.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; CLOTHES CAN BE MATERNITY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A DEVICE CAN BE SIMPLE.
+
+		(and (DEVICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (IT ENABLES YOU TO WIDEN JEANS AND SKIRTS A LITTLE -LRB- OR A LOT LATER ON -RRB- AND THEN YOU CAN PULL THESE ON OVER THE GROWING BUMP)
+
+	;; A PERSON MAY PULL A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PULL_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A BUMP CAN BE GROWING.
+
+		(and (BUMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROWING_27 ?x2))
+
+;; (COVER WITH A LONG SHIRT COMMA TOP OR T-SHIRT AND NOBODY WILL BE ANY THE WISER)
+
+	;; A COVER[PERSON??] CAN BE WITH A SHIRT.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (with_27 ?x1) (A_27 ?x1) (SHIRT_27 ?x1))
+
+	;; A SHIRT CAN BE LONG.
+
+		(and (SHIRT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [8]>
+
+;; (SHOP AT MATERNITY CLOTHING STORES)
+
+	;; A SHOP[PERSON??] CAN BE AT CLOTHING STORES.
+
+		(and (SHOP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (at_27 ?x1) (CLOTHING_27 ?x1) (STORES_27 ?x1))
+
+	;; CLOTHING STORES CAN BE MATERNITY.
+
+		(and (clothe_27 ?e1 ?x1) (store_27 ?x1) (be_27 ?e2 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+;; (THESE STORES ARE MORE LIKELY TO HAVE KNOWLEDGEABLE STAFF COMMA QUALITY MATERNITY CLOTHING COMMA AND SO ON THAN OTHER RETAIL STORES)
+
+	;; A STAFF CAN BE KNOWLEDGEABLE.
+
+		(and (STAFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KNOWLEDGEABLE_27 ?x2))
+
+	;; STORES CAN BE RETAIL.
+
+		(and (store_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RETAIL_27 ?x2))
+
+;; (ALSO COMMA IF YOU RE A PETITE COMMA A PLUS-SIZE COMMA TALL COMMA OR OTHERWISE HARD TO FIT YOU LL BE MORE LIKELY TO FIND CLOTHES IN A MATERNITY CLOTHING STORE THAN AT A GENERAL CLOTHING RETAIL STORE)
+
+	;; CLOTHES CAN BE IN A CLOTHING STORE.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CLOTHING_27 ?x2) (STORE_27 ?x2))
+
+	;; A CLOTHING STORE CAN BE MATERNITY.
+
+		(and (CLOTHING_27 ?x1) (STORE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+	;; A CLOTHING CAN BE GENERAL.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENERAL_27 ?x2))
+
+;; (MOST SIZES ARE BASED ON YOUR PRE-PREGNANCY SIZE BUT BRANDS WILL VARY)
+
+	;; SIZES MAY BE BASE -ED ON A SIZE.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (SIZE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SIZE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIZE_27 ?x1))
+
+	;; A SIZE CAN BE PRE-PREGNANCY.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRE-PREGNANCY_27 ?x2))
+
+	;; BRANDS MAY VARY.
+
+		(and (brand_27 ?x1) (MAY_27 ?x1) (VARY_27 ?x1))
+
+;; (BE AWARE THAT GOOD QUALITY MATERNITY WEAR IS DESIGNED TO LAST THROUGH THE NINE MONTHS OF A PREGNANCY AND WILL STRETCH WITH YOU)
+
+	;; A QUALITY MATERNITY WEAR CAN BE GOOD.
+
+		(and (QUALITY_27 ?x1) (MATERNITY_27 ?x1) (WEAR_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (IT IS BETTER TO BUY TWO VERY GOOD ITEMS THAN A DOZEN CHEAP ONES TO ENSURE THIS LONG-LIVED DURABILITY AND QUALITY)
+
+	;; A THING-REFERRED-TO CAN BE BETTER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETTER_27 ?x2))
+
+	;; ITEMS CAN BE GOOD.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A DURABILITY CAN BE LONG-LIVED.
+
+		(and (DURABILITY_27 ?x1) (be_27 ?e1 ?x1) (long-lived_27 ?x1))
+
+;; (VISIT YOUR FAVORITE CLOTHING OR DEPARTMENT STORE WITH A MATERNITY LINE)
+
+	;; A CLOTHING CAN BE WITH A LINE.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (LINE_27 ?x2))
+
+	;; A PERSON MAY HAVE A CLOTHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOTHING_27 ?x1))
+
+	;; A CLOTHING CAN BE FAVORITE.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; A LINE CAN BE MATERNITY.
+
+		(and (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+;; (CHANCES ARE EXCELLENT THAT YOU WILL LIKE AND FIT THE MATERNITY LINES AS WELL)
+
+	;; CHANCES CAN BE EXCELLENT A PROPOSITION.
+
+		(and (chance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2) (A_27 ?x2) (PROPOSITION_27 ?x2))
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+	;; LINES CAN BE MATERNITY.
+
+		(and (line_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+;; (EXPERIMENT WITH CLOTHING STYLES)
+
+	;; EXPERIMENT CAN BE WITH CLOTHING STYLES.
+
+		(and (EXPERIMENT_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (CLOTHING_27 ?x2) (STYLES_27 ?x2))
+
+;; (YOUR BODY IS CHANGING AND SO IS WHAT YOU WILL LOOK GOOD WEARING)
+
+	;; A BODY MAY CHANGE.
+
+		(and (BODY_27 ?x1) (MAY_27 ?x1) (CHANGE_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+	;; A PERSON MAY LOOK WEARING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (WEARING_27 ?x1))
+
+	;; WEARING CAN BE GOOD.
+
+		(and (wearing_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (CHOOSE CLOTHES FOR THEIR STRETCH CAPACITY WITHOUT THE FABRIC APPEARING THAT IT IS STRETCHED)
+
+	;; CLOTHES CAN BE FOR A STRETCH CAPACITY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (STRETCH_27 ?x2) (CAPACITY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A STRETCH CAPACITY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STRETCH_27 ?x1) (CAPACITY_27 ?x1))
+
+	;; A FABRIC MAY APPEAR A PROPOSITION.
+
+		(and (FABRIC_27 ?x1) (MAY_27 ?x1) (APPEAR_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE STRETCH -ED.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRETCH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (WEAR MATERNITY CLOTHES THAT LOOK AND FEEL GOOD)
+
+	;; CLOTHES CAN BE MATERNITY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+;; (IF THAT SIZE DOES N T SEEM TO FIT COMMA TRUST YOUR JUDGMENT AND BUY A SIZE LARGER OR SMALLER)
+
+	;; A SIZE MAY DO.
+
+		(and (SIZE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A JUDGMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JUDGMENT_27 ?x1))
+
+	;; A SIZE CAN BE LARGER.
+
+		(and (size_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [9]>
+
+;; (SELECT SEVERAL DIFFERENT STYLES AND FITS TO TRY ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PANTS COMMA IN PARTICULAR COMMA COME WITH MANY DIFFERENT TYPES OF STRETCH PANELS COMMA AND WILL OFTEN FIT AND FEEL DIFFERENT)
+
+	;; PANTS MAY COME WITH SOME_NUMBER_OF TYPES OF STRETCH PANELS.
+
+		(and (pant_27 ?x1) (COME_27 ?x1) (WITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (TYPES_27 ?x2) (of_27 ?x2 ?x3) (STRETCH_27 ?x3) (PANELS_27 ?x3))
+
+;; (ALSO COMMA AS YOU PROGRESS IN YOUR PREGNANCY COMMA IT MAY NOT BE ONLY YOUR STOMACH THAT GROWS COMMA BUT ALSO YOUR POSTERIOR AND HIPS)
+
+	;; A THING-REFERRED-TO CAN BE A STOMACH.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (STOMACH_27 ?x2))
+
+	;; A PERSON MAY PROGRESS IN A PREGNANCY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PROGRESS_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PREGNANCY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PREGNANCY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PREGNANCY_27 ?x1))
+
+	;; A PERSON MAY HAVE A STOMACH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STOMACH_27 ?x1))
+
+	;; A PERSON MAY HAVE A POSTERIOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (POSTERIOR_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [10]>
+
+;; (THIS IS A PILLOW-LIKE OBJECT THAT YOU CAN WEAR UNDER THE MATERNITY CLOTHES TO CHECK THE FIT)
+
+	;; A THING CAN BE AN OBJECT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (OBJECT_27 ?x2))
+
+	;; AN OBJECT CAN BE PILLOW-LIKE.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PILLOW-LIKE_27 ?x2))
+
+	;; A PERSON MAY WEAR UNDER CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WEAR_27 ?x1) (UNDER_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; CLOTHES CAN BE MATERNITY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+;; (IT IS N T A PERFECT INDICATOR COMMA BUT WILL HELP YOU IN BUYING MATERNITY CLOTHES TO WEAR LATER ON)
+
+	;; A THING-REFERRED-TO CAN BE AN INDICATOR.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INDICATOR_27 ?x2))
+
+	;; AN INDICATOR CAN BE PERFECT.
+
+		(and (INDICATOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERFECT_27 ?x2))
+
+	;; CLOTHES CAN BE MATERNITY.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATERNITY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [11]>
+
+;; (BUY OR MAKE NURSING BRAS -LRB- A BRA THAT ALLOWS YOU TO UNCOVER ONE BREAST AT A TIME -RRB- AROUND THE LAST TRIMESTER IF YOU ARE PLANNING ON BREASTFEEDING)
+
+	;; A BREAST CAN BE AT A TIME.
+
+		(and (BREAST_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+;; (THEY ARE CONVENIENT AND EASY TO USE IN PUBLIC PLACES)
+
+	;; INDIVIDUAL -S CAN BE CONVENIENT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONVENIENT_27 ?x2))
+
+	;; PLACES CAN BE PUBLIC.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUBLIC_27 ?x2))
+
+;; (MAKE SURE WHEN PREGNANT TO GO TO A LINGERIE STORE AND GET MEASURED A COUPLE OF TIMES AS YOUR BRA SIZE WILL FLUNCTUATE DURING YOUR PREGNANCY COMMA THIS WILL GIVE YOU THE MOST COMFORTABLE MATERNITY BRA)
+
+	;; A THING MAY GIVE A PERSON A MATERNITY BRA.
+
+		(and (thing_27 ?x1) (GIVE_27 ?x1) (A_27 ?x2) (PERSON_27 ?x2) (A_27 ?x2) (MATERNITY_27 ?x2) (BRA_27 ?x2))
+
+	;; A BRA SIZE MAY FLUNCTUATE DURING A PREGNANCY.
+
+		(and (BRA_27 ?x1) (SIZE_27 ?x1) (MAY_27 ?x1) (FLUNCTUATE_27 ?x1) (DURING_27 ?x1) (A_27 ?x1) (PREGNANCY_27 ?x1))
+
+	;; A PERSON MAY HAVE A BRA SIZE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BRA_27 ?x1) (SIZE_27 ?x1))
+
+	;; A PERSON MAY HAVE A PREGNANCY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PREGNANCY_27 ?x1))
+
+	;; A MATERNITY BRA CAN BE COMFORTABLE.
+
+		(and (MATERNITY_27 ?x1) (BRA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMFORTABLE_27 ?x2))
+
+;; (CONSIDER NURSING CLOTHES FOR THE BREAST-FEEDING MOTHER-TO-BE)
+
+	;; A MOTHER-TO-BE CAN BE BREAST-FEEDING.
+
+		(and (MOTHER-TO-BE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (breast-feeding_27 ?x2))
+
+;; (THESE ITEMS -LRB- USUALLY SHIRTS COMMA BUT ALSO CAMISOLES AND DRESSES -RRB- HAVE OPENINGS THAT MAKE IT EASIER TO NURSE COMMA ESPECIALLY IN PUBLIC)
+
+	;; ITEMS MAY HAVE OPENINGS.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OPENINGS_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE EASIER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (NURSING SLEEPWEAR LIKEWISE MAKES FOR LESS DISROBING AT NIGHTTIME FEEDINGS)
+
+	;; SLEEPWEAR MAY MAKE FOR DISROBING.
+
+		(and (SLEEPWEAR_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (for_27 ?x1 ?x2) (disrobing_27 ?x2))
+
+	;; A NURSING[PERSON??] MAY HAVE A SLEEPWEAR.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SLEEPWEAR_27 ?x1))
+
+	;; DISROBING CAN BE AT FEEDINGS.
+
+		(and (disrobing_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (FEEDINGS_27 ?x2))
+
+	;; FEEDINGS CAN BE NIGHTTIME.
+
+		(and (feeding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NIGHTTIME_27 ?x2))
+
+;; (HOWEVER COMMA IT IS BEST TO SEE HOW YOUR EXISTING CLOTHES WORK BEFORE SPENDING TOO MUCH MONEY ON THESE SPECIALIZED ITEMS - MANY MODERN CLOTHES WORK WELL WITHOUT SPECIAL FEATURES)
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; CLOTHES CAN BE EXISTING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+	;; ITEMS CAN BE SPECIALIZED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECIALIZED_27 ?x2))
+
+	;; SOME_NUMBER_OF CLOTHES MAY WORK WITHOUT FEATURES.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CLOTHES_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1) (WITHOUT_27 ?x1) (FEATURES_27 ?x1))
+
+	;; CLOTHES CAN BE MODERN.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERN_27 ?x2))

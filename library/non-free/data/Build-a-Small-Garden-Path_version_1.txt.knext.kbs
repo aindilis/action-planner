@@ -1,0 +1,577 @@
+;; (DETERMINE HOW MUCH MATERIAL YOU WILL NEED)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (ONE WAY COMMA IF YOU USE FOUND MATERIALS LIKE ROCKS COMMA SIMPLY KEEP COLLECTING IT AND LAYING IT OUT ON THE PROPOSED PATH UNTIL YOU HAVE
+ ENOUGH)
+
+	;; A PERSON MAY USE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; A PATH CAN BE PROPOSED.
+
+		(and (PATH_27 ?x1) (be_27 ?e1 ?x1 ?e2) (propose_27 ?e2 ?x1))
+
+;; (IF YOU ARE BUYING PAVERS COMMA THE HOME AND GARDEN SHOP HAS CALCULATORS FOR FIGURING THE NUMBER YOU NEED)
+
+	;; A HOME MAY HAVE CALCULATORS.
+
+		(and (HOME_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CALCULATORS_27 ?x1))
+
+	;; A PERSON MAY BUY PAVERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (PAVERS_27 ?x1))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (ALWAYS FIGURE A MINIMUM OF 10 % WASTE WHEN ORDERING THE PAVERS)
+
+	;; AN ALWAYS[PERSON??] MAY FIGURE A MINIMUM OF WASTE.
+
+		(and (ALWAYS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FIGURE_27 ?x1) (A_27 ?x1) (MINIMUM_27 ?x1) (of_27 ?x1 ?x2) (WASTE_27 ?x2))
+
+	;; A MINIMUM CAN BE CONSTITUTED_OF_OR_FILLED_WITH WASTE.
+
+		(and (MINIMUM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WASTE_27 ?x2))
+
+;; (A BAG OF SAND FROM THE HOME IMPROVEMENT STORE CONTAINS 6-7 SQUARE FEET OF SAND 1-INCH THICK)
+
+	;; A BAG OF SAND MAY CONTAIN SOME_NUMBER_OF FEET OF SAND.
+
+		(and (BAG_27 ?x1) (OF_27 ?x1) (SAND_27 ?x1) (MAY_27 ?x1) (CONTAIN_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (FEET_27 ?x1) (of_27 ?x1 ?x2) (SAND_27 ?x2))
+
+	;; A BAG CAN BE CONSTITUTED_OF_OR_FILLED_WITH SAND.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SAND_27 ?x2))
+
+	;; SAND CAN BE FROM A HOME IMPROVEMENT STORE.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (HOME_27 ?x2) (IMPROVEMENT_27 ?x2) (STORE_27 ?x2))
+
+	;; SOME_NUMBER_OF FEET CAN BE CONSTITUTED_OF_OR_FILLED_WITH SAND.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SAND_27 ?x2))
+
+	;; FEET CAN BE SQUARE.
+
+		(and (FEET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+	;; SAND CAN BE 1-INCH.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_31-INCH_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (DIVIDE YOUR SQUARE FOOTAGE BY 6 OR 7 TO FIND THE NUMBER OF BAGS)
+
+	;; A PERSON MAY HAVE A FOOTAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOOTAGE_27 ?x1))
+
+	;; A FOOTAGE CAN BE SQUARE.
+
+		(and (footage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+;; (IF YOU NEED IT IN TONS COMMA ASK THE DISTRIBUTOR TO FIGURE IT FOR YOU COMMA KEEPING IN MIND THAT YOUR SAND BED IS 1 THICK BY THE SQUARE
+ FOOTAGE OF YOUR PATH)
+
+	;; A PERSON MAY NEED A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A SAND BED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SAND_27 ?x1) (BED_27 ?x1))
+
+	;; A PATH MAY HAVE A FOOTAGE.
+
+		(and (PATH_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOOTAGE_27 ?x1))
+
+	;; A FOOTAGE CAN BE SQUARE.
+
+		(and (footage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+	;; A PERSON MAY HAVE A PATH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATH_27 ?x1))
+
+;; (HOWEVER YOU BUY SAND COMMA ADD EXTRA FOR LEVELING THE PATH AND FILLING BETWEEN THE STONES)
+
+	;; A PERSON MAY BUY SAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (SAND_27 ?x1))
+
+;; (MORTAR SAND COMMA WHICH IS FINER GRAINED THAN ALL PURPOSE SAND COMMA IS GOOD FOR FILLING JOINTS COMMA ESPECIALLY TIGHT ONES)
+
+	;; SAND CAN BE MORTAR.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MORTAR_27 ?x2))
+
+	;; FINER MAY BE GRAIN -ED.
+
+		(and (FINER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRAIN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; ONES CAN BE TIGHT.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIGHT_27 ?x2))
+
+;; (BEFORE YOU START DIGGING THE PATH COMMA BE SURE THERE ARE NO UTILITIES OR IRRIGATION LINES IN THE AREA WHERE YOU ARE PUTTING YOUR PATH)
+
+	;; A PERSON MAY START.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; UTILITIES CAN BE IN AN AREA.
+
+		(and (utility_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY PUT A PATH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (PATH_27 ?x1))
+
+	;; A PERSON MAY HAVE A PATH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATH_27 ?x1))
+
+;; (BE SURE TO CALL THE CALL BEFORE YOU DIG NUMBER FROM YOUR LOCAL UTILITY COMPANY ESPECIALLY IF YOU ARE ADDING A COMPACTED BASE AND WILL BE
+ DIGGING QUITE A WAY INTO THE DIRT)
+
+	;; A PERSON MAY HAVE AN UTILITY COMPANY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (UTILITY_27 ?x1) (COMPANY_27 ?x1))
+
+	;; A PERSON MAY ADD A BASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (A_27 ?x1) (BASE_27 ?x1))
+
+	;; A BASE CAN BE COMPACTED.
+
+		(and (BASE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (compact_27 ?e2 ?x1))
+
+;; (YOU WILL HAVE TO LOCATE YOUR OWN IRRIGATION LINES)
+
+	;; A PERSON MAY HAVE IRRIGATION LINES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (IRRIGATION_27 ?x1) (LINES_27 ?x1))
+
+;; (REMOVE THE EXISTING SOD AND SOIL USING FLAT SHOVELS)
+
+	;; A SOD CAN BE EXISTING.
+
+		(and (SOD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+	;; SOIL MAY USE SHOVELS.
+
+		(and (SOIL_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (SHOVELS_27 ?x1))
+
+	;; SHOVELS CAN BE FLAT.
+
+		(and (shovel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (KEEP IN MIND THE THICKNESS OF THE PAVING MATERIAL YOU ARE USING WHEN DETERMINING THE DEPTH TO WHICH YOU HAVE TO DIG)
+
+	;; A MATERIAL CAN BE MANIFEST THICKNESS.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MANIFEST_27 ?x2) (THICKNESS_27 ?x2))
+
+	;; A MATERIAL CAN BE PAVING.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (paving_27 ?x2))
+
+;; (YOU WILL NEED 1-INCH FOR THE SAND BED PLUS THE THICKNESS OF THE PAVER)
+
+	;; A PERSON MAY NEED 1-INCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (kbs2_kif_quote_31-INCH_27 ?x1))
+
+	;; 1-INCH CAN BE FOR A SAND BED.
+
+		(and (kbs2_kif_quote_31-INCH_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (SAND_27 ?x2) (BED_27 ?x2))
+
+	;; A PAVER MAY MANIFEST THICKNESS.
+
+		(and (PAVER_27 ?x1) (MAY_27 ?x1) (MANIFEST_27 ?x1) (THICKNESS_27 ?x1))
+
+;; (IF YOU ARE USING A COMPACTED BASE COMMA DO N T FORGET TO ADD THAT IN)
+
+	;; A PERSON MAY USE A BASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (BASE_27 ?x1))
+
+	;; A BASE CAN BE COMPACTED.
+
+		(and (BASE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (compact_27 ?e2 ?x1))
+
+;; (YOU WILL NEED 1 IN)
+
+	;; A PERSON MAY NEED_IN SOME NUMBER_OR_PORTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_5FIN_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+;; (THICK SAND + ~ 2 3/8 IN)
+
+	;; SAND CAN BE THICK.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THICK_27 ?x2))
+
+;; (THICK PAVERS = ~ 3 IN)
+
+	;; PAVERS CAN BE THICK.
+
+		(and (paver_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THICK_27 ?x2))
+
+;; (DEPTH FOR EXCAVATION SINCE THERE WILL BE SLIGHT SETTLEMENT OF THE SAND WHEN THE PAVERS ARE COMPACTED INTO IT)
+
+	;; DEPTH CAN BE SETTLEMENT OF SAND.
+
+		(and (DEPTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SETTLEMENT_27 ?x2) (of_27 ?x2 ?x3) (SAND_27 ?x3))
+
+	;; DEPTH CAN BE FOR EXCAVATION.
+
+		(and (DEPTH_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EXCAVATION_27 ?x2))
+
+	;; SAND MAY UNDERGO A SETTLEMENT.
+
+		(and (SAND_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (SETTLEMENT_27 ?x1))
+
+	;; A SETTLEMENT CAN BE SLIGHT.
+
+		(and (SETTLEMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLIGHT_27 ?x2))
+
+	;; PAVERS MAY BE COMPACT -ED INTO A THING-REFERRED-TO.
+
+		(and (paver_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPACT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (INTO_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (BE SURE TO GET RID OF THE EXCAVATED SOIL ETC. SO THAT THE GROUND WILL DRAIN CORRECTLY)
+
+	;; A SOIL CAN BE EXCAVATED.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?e2) (excavate_27 ?e2 ?x1))
+
+	;; THE GROUND MAY DRAIN.
+
+		(and (GROUND_27 ?x1) (MAY_27 ?x1) (DRAIN_27 ?x1))
+
+;; (DO N T PILE IT UP AROUND THE PATH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONCE THE AREA IS EXCAVATED COMMA BE SURE THE SOIL BELOW IS SLIGHTLY DAMP AND COMPACT THE SOIL USING A HEAVY FLAT OBJECT OR THE PLATE
+ COMPACTOR)
+
+	;; AN AREA CAN BE EXCAVATED.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?e2) (excavate_27 ?e2 ?x1))
+
+	;; A SOIL CAN BE DAMP.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAMP_27 ?x2))
+
+	;; A SOIL MAY USE AN OBJECT.
+
+		(and (SOIL_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (AN_27 ?x1) (OBJECT_27 ?x1))
+
+	;; AN OBJECT CAN BE HEAVY.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; AN OBJECT CAN BE FLAT.
+
+		(and (OBJECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (CHECK THE SLOPE IF YOU ARE PUTTING YOUR PATH DIRECTLY AGAINST YOUR HOUSE TO BE SURE WATER WILL DRAIN AWAY FROM THE FOUNDATION)
+
+	;; WATER MAY DRAIN_AWAY FROM A FOUNDATION.
+
+		(and (WATER_27 ?x1) (MAY_27 ?x1) (DRAIN_5FAWAY_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (FOUNDATION_27 ?x1))
+
+	;; A PERSON MAY PUT A PATH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (PATH_27 ?x1))
+
+	;; A PERSON MAY HAVE A PATH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PATH_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (FOR EVERY FOOT COMMA THERE SHOULD BE A 1/4 IN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DROP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ADJUST SLOPE AS NEEDED)
+
+	;; SLOPE CAN BE NEEDED.
+
+		(and (SLOPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEEDED_27 ?x2))
+
+;; (PLACE AT LEAST TWO PIPES DIRECTLY ON THE COMPACTED SOIL)
+
+	;; A SOIL CAN BE COMPACTED.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?e2) (compact_27 ?e2 ?x1))
+
+;; (PLACE THEM APART AND PARALLEL TO EACH OTHER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SPREAD MOIST BUT NOT SATURATED SAND BETWEEN THE PIPES)
+
+	;; A SPREAD[PERSON??] MAY MOIST.
+
+		(and (SPREAD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (MOIST_27 ?x1))
+
+	;; SAND CAN BE BETWEEN PIPES.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (PIPES_27 ?x2))
+
+;; (USE A SHOVEL AND RAKE TO SMOOTH OUT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PULL THE STRAIGHT PIECE OF WOOD ACROSS THE PIPES SEVERAL TIMES UNTIL SAND IS PERFECTLY SMOOTH)
+
+	;; A PIECE CAN BE STRAIGHT.
+
+		(and (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRAIGHT_27 ?x2))
+
+;; (DO THIS FOR THE ENTIRE AREA)
+
+	;; A THING CAN BE FOR AN AREA.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (area_27 ?x2))
+
+;; (REMOVE THE PIPES AND FILL THE INDENTATIONS WITH SAND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LEVEL THESE AREAS WITH A SQUARE TROWEL)
+
+	;; AREAS CAN BE WITH A TROWEL.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (TROWEL_27 ?x2))
+
+	;; A TROWEL CAN BE SQUARE.
+
+		(and (TROWEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+;; (DO N T WALK ON OR DISTURB THE LEVELED SAND)
+
+	;; SAND CAN BE LEVELED.
+
+		(and (sand_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEVELED_27 ?x2))
+
+;; (PLACE A BORDER COURSE OF PAVERS AROUND THE ENTIRE EDGE COMMA THEN PLACE THE REST IN THE DESIRED PATTERN)
+
+	;; A BORDER COURSE CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAVERS.
+
+		(and (BORDER_27 ?x1) (COURSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAVERS_27 ?x2))
+
+	;; PAVERS CAN BE AROUND AN EDGE.
+
+		(and (paver_27 ?x1) (be_27 ?e1 ?x1) (around_27 ?x1 ?x2) (EDGE_27 ?x2))
+
+	;; A REST CAN BE IN A PATTERN.
+
+		(and (REST_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PATTERN_27 ?x2))
+
+	;; A PATTERN CAN BE DESIRED.
+
+		(and (PATTERN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESIRED_27 ?x2))
+
+;; (CONTINUE TO PLACE PAVERS ON THE SAND COMMA BUT DO N T DRAG THEM INTO THE SAND)
+
+	;; A CONTINUE[PERSON??] TO PLACE MAY PAVER ON SAND.
+
+		(and (CONTINUE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (to_27 ?x1) (PLACE_27 ?x1) (MAY_27 ?x1) (PAVER_27 ?x1) (ON_27 ?x1) (SAND_27 ?x1))
+
+	;; A CONTINUE[PERSON??] CAN BE TO PLACE.
+
+		(and (CONTINUE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (to_27 ?x1) (PLACE_27 ?x1))
+
+;; (USE THE OTHER PAVERS ON THE SAND AS MEANS TO LOCATE THE ONE YOU RE PLACING)
+
+	;; PAVERS CAN BE ON SAND.
+
+		(and (paver_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (SAND_27 ?x2))
+
+;; (CUT PAVERS AS NEEDED)
+
+	;; A CUT[PERSON??] MAY PAVER NEEDED.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PAVER_27 ?x1) (NEEDED_27 ?x1))
+
+;; (COMPACT THE PAVERS USING SOMETHING HEAVY AND FLAT)
+
+	;; A COMPACT_THE[PERSON??] MAY PAVER.
+
+		(and (COMPACT_5FTHE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PAVER_27 ?x1))
+
+	;; SOMETHING CAN BE HEAVY.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (-LRB- A PLATE COMPACTOR SHOULD DEFINITELY BE USED FOR LARGE SURFACES TO BE SURE THAT YOU DO N T END UP WITH TRIPPING HAZARDS)
+
+	;; A PLATE COMPACTOR MAY BE USE -ED FOR SURFACES.
+
+		(and (PLATE_27 ?x1) (COMPACTOR_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?e1 ?x3) (surface_27 ?x3))
+
+	;; SURFACES CAN BE LARGE.
+
+		(and (surface_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; HAZARDS CAN BE TRIPPING.
+
+		(and (hazard_27 ?x1) (be_27 ?e1 ?x1 ?x2) (tripping_27 ?x2))
+
+;; (JUMPING UP AND DOWN ON THE PAVERS UNTIL THEY ARE LEVEL WORKS FINE IN SMALL AREAS)
+
+	;; INDIVIDUAL -S CAN BE LEVEL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEVEL_27 ?x2))
+
+	;; AREAS CAN BE SMALL.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (MAKE AT LEAST FOUR PASSES OVER ALL THE PAVERS COMMA STARTING AT THE OUTSIDE OF THE PAVEMENT AND WORKING AROUND THE EDGES TOWARD THE
+ INSIDE)
+
+	;; A PAVEMENT MAY HAVE AN OUTSIDE.
+
+		(and (PAVEMENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OUTSIDE_27 ?x1))
+
+	;; EDGES CAN BE TOWARD AN INSIDE.
+
+		(and (edge_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOWARD_27 ?x2) (AN_27 ?x2) (INSIDE_27 ?x2))
+
+;; (THEN COMPACT BACK AND FORTH LIKE MOWING THE GRASS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU WANT TO COMMA YOU CAN REMOVE AND REPLACE ANY PAVERS THAT CRACK OR CHIP)
+
+	;; A PERSON MAY REMOVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1))
+
+;; (ADJUST JOINTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A LARGE SCREWDRIVER IS GOOD FOR ALIGNING PAVER JOINTS)
+
+	;; A SCREWDRIVER CAN BE LARGE.
+
+		(and (SCREWDRIVER_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))

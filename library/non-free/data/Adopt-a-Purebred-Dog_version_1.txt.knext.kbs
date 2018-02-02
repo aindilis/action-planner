@@ -1,0 +1,726 @@
+;; (READ BOOKS ON THE BREED COMMA PAYING SPECIAL ATTENTION TO HOW THEY WILL INTERACT WITH YOUR FAMILY AND HOUSEHOLD)
+
+	;; BOOKS CAN BE ON A BREED.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (BREED_27 ?x2))
+
+	;; A READ[PERSON??] MAY HAVE BOOKS.
+
+		(and (READ_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (BOOKS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY INTERACT WITH A FAMILY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (INTERACT_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+;; (TALK TO BREED RESCUE CENTERS)
+
+	;; TALK TO BREED RESCUE MAY CENTER.
+
+		(and (TALK_27 ?x1) (to_27 ?x1 ?x2) (BREED_27 ?x2) (RESCUE_27 ?x2) (MAY_27 ?x2) (CENTER_27 ?x2))
+
+	;; TALK CAN BE TO BREED RESCUE.
+
+		(and (TALK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (BREED_27 ?x2) (RESCUE_27 ?x2))
+
+;; (THEY WILL TELL YOU WHAT TO LOOK OUT FOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (NO ONE HAS MORE EXPERIENCE ON THE BREED THAN THE DEDICATED VOLUNTEERS AND PROFESSIONALS WHO RESCUE THE PUREBRED DOGS WHEN THEY ARE NO LONGER WANTED)
+
+	;; AN ONE MAY HAVE EXPERIENCE.
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (EXPERIENCE_27 ?x1))
+
+	;; EXPERIENCE CAN BE ON A BREED.
+
+		(and (EXPERIENCE_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (BREED_27 ?x2))
+
+	;; VOLUNTEERS CAN BE DEDICATED.
+
+		(and (volunteer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEDICATED_27 ?x2))
+
+	;; DOGS CAN BE PUREBRED.
+
+		(and (dog_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUREBRED_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE WANT -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WANT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (LEARN HOW A TYPICAL DOG OF YOUR CHOSEN BREED BEHAVES AND WHETHER THAT IS A FIT FOR YOUR LIFESTYLE)
+
+	;; A DOG OF A BREED MAY BEHAVE.
+
+		(and (DOG_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (BREED_27 ?x2) (MAY_27 ?x2) (BEHAVE_27 ?x2))
+
+	;; A BREED MAY HAVE A DOG.
+
+		(and (bre_27 ?e1 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+	;; A DOG CAN BE TYPICAL.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TYPICAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A BREED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BREED_27 ?x1))
+
+	;; A BREED CAN BE CHOSEN.
+
+		(and (bre_27 ?e1) (be_27 ?e2 ?e1 ?x1) (CHOSEN_27 ?x1))
+
+	;; A THING CAN BE A FIT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (FIT_27 ?x2))
+
+	;; A FIT CAN BE FOR A LIFESTYLE.
+
+		(and (FIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (LIFESTYLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIFESTYLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFESTYLE_27 ?x1))
+
+;; (KEEP IN MIND HOW MUCH ROOM YOUR DOG WILL HAVE COMMA HOW MUCH EXERCISE YOU PLAN ON PROVIDING DAILY COMMA GROOMING NEEDS COMMA THE DROOL AND HAIR FACTORS COMMA AND THE POOP-PICK-UP FACTOR)
+
+	;; ROOM MAY HAVE NEEDS.
+
+		(and (ROOM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+	;; NEEDS CAN BE GROOMING.
+
+		(and (need_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROOMING_27 ?x2))
+
+	;; A FACTOR CAN BE POOP-PICK-UP.
+
+		(and (FACTOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POOP-PICK-UP_27 ?x2))
+
+;; (ASK YOUR RESCUE ORGANIZATION FOR THE MOST COMMON REASON -LRB- S -RRB- THIS PARTICULAR BREED ENTERS THEIR RESCUE OPERATION)
+
+	;; A BREED MAY ENTER A RESCUE OPERATION.
+
+		(and (bre_27 ?e1 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1) (A_27 ?x1) (RESCUE_27 ?x1) (OPERATION_27 ?x1))
+
+	;; A PERSON MAY HAVE A RESCUE ORGANIZATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RESCUE_27 ?x1) (ORGANIZATION_27 ?x1))
+
+	;; A REASON CAN BE COMMON.
+
+		(and (REASON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A RESCUE OPERATION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RESCUE_27 ?x1) (OPERATION_27 ?x1))
+
+;; (MAKE SURE EVERYONE IN YOUR FAMILY IS COMMITTED TO INTERACTING WITH THE DOG DAILY BECAUSE THE QUALITY OF LIFE FOR YOUR DOG IS BASED ON HEALTHY AND CONSTANT SOCIAL INTERACTION)
+
+	;; EVERYONE CAN BE IN A FAMILY.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FAMILY_27 ?x2))
+
+	;; AN EVERYONE CAN BE SURE.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A QUALITY OF LIFE MAY BE BASE -ED ON INTERACTION.
+
+		(and (QUALITY_27 ?x2) (of_27 ?x2 ?x1) (LIFE_27 ?x1) (MAY_27 ?x2) (be_27 ?e1 ?x2 ?x3) (BASE_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3) (ON_27 ?x3) (INTERACTION_27 ?x3))
+
+	;; LIFE CAN BE FOR A DOG.
+
+		(and (LIFE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DOG_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+	;; AN INTERACTION CAN BE HEALTHY.
+
+		(and (interaction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+	;; AN INTERACTION CAN BE SOCIAL.
+
+		(and (interaction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOCIAL_27 ?x2))
+
+;; (IF YOUR FAMILY CAN NOT PROVIDE HUGE AMOUNTS OF TIME COMMA AND IF YOUR DOG IS GOING TO BE HOME ALONE DURING THE DAY COMMA CONSIDER GETTING TWO DOGS SO THAT THEY CAN KEEP EACH OTHER COMPANY)
+
+	;; A FAMILY MAY PROVIDE AMOUNTS.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (AMOUNTS_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; AMOUNTS CAN BE HUGE.
+
+		(and (amount_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUGE_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+	;; INDIVIDUAL -S MAY KEEP SOME_NUMBER_OF COMPANY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (COMPANY_27 ?x1))
+
+;; (MAKE SURE THAT YOU CAN GUARANTEE A LIFETIME OF DEDICATION TO THE DOG)
+
+	;; A PERSON MAY GUARANTEE A LIFETIME OF DEDICATION TO A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GUARANTEE_27 ?x1) (A_27 ?x1) (LIFETIME_27 ?x1) (of_27 ?x1 ?x2) (DEDICATION_27 ?x2) (to_27 ?x1 ?x3) (A_27 ?x3) (DOG_27 ?x3))
+
+	;; A LIFETIME CAN BE CONSTITUTED_OF_OR_FILLED_WITH DEDICATION.
+
+		(and (LIFETIME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DEDICATION_27 ?x2))
+
+;; (DO SOME RESEARCH ON THE VARIOUS KENNEL CLUBS THAT EXIST IN YOUR AREA)
+
+	;; RESEARCH CAN BE ON CLUBS.
+
+		(and (RESEARCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (CLUBS_27 ?x2))
+
+	;; CLUBS CAN BE KENNEL.
+
+		(and (club_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KENNEL_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (FIND OUT HOW THEY REGISTER DOGS AND SET GUIDELINES FOR DOG BREEDS)
+
+	;; INDIVIDUAL -S MAY REGISTER DOGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (REGISTER_27 ?x1) (DOGS_27 ?x1))
+
+;; (SOME KENNEL CLUBS COMMA SUCH AS THE AKC COMMA ARE CONTROVERSIAL FOR THEIR RIGID AND OVER-CONTROLLING RESTRICTIONS ON BOTH DOGS AND THEIR OWNERS COMMA SO REMEMBER TO SHOP AROUND TO FIND WHAT S RIGHT FOR YOU)
+
+	;; CLUBS CAN BE KENNEL.
+
+		(and (club_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KENNEL_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE OWNERS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OWNERS_27 ?x1))
+
+;; (START YOUR SEARCH BY CHECKING OUT THE POUNDS ONLINE)
+
+	;; A PERSON MAY HAVE A SEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SEARCH_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [17]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [18]>
+
+;; (TYPE IN YOUR AREA CODE AND LOOK AT THE PHOTOS OF DOGS IN THE SHELTERS IN YOUR NEIGHBORHOOD)
+
+	;; A PERSON MAY HAVE AN AREA CODE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1) (CODE_27 ?x1))
+
+	;; PHOTOS CAN BE SHOW DOGS.
+
+		(and (photo_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (DOGS_27 ?x2))
+
+	;; DOGS CAN BE IN SHELTERS.
+
+		(and (dog_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (shelter_27 ?x2))
+
+	;; SHELTERS CAN BE IN A NEIGHBORHOOD.
+
+		(and (shelter_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (NEIGHBORHOOD_27 ?x2))
+
+	;; A PERSON MAY HAVE A NEIGHBORHOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEIGHBORHOOD_27 ?x1))
+
+;; (GO TO THE SPECIAL BREED RESCUE CENTERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THEY FREQUENTLY RESCUE PUREBREDS FROM THE POUNDS BECAUSE OF THEIR LOVE AND DEVOTION TO THE BREED)
+
+	;; INDIVIDUAL -S MAY RESCUE PUREBREDS FROM POUNDS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (RESCUE_27 ?x1) (PUREBREDS_27 ?x1) (FROM_27 ?x1) (POUNDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A LOVE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOVE_27 ?x1))
+
+;; (THEY CAN PROVIDE VALUABLE ADVICE ABOUT YOUR DOG)
+
+	;; INDIVIDUAL -S MAY PROVIDE ADVICE ABOUT A DOG.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (ADVICE_27 ?x1) (ABOUT_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+	;; ADVICE CAN BE VALUABLE.
+
+		(and (ADVICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VALUABLE_27 ?x2))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+;; (IF YOU DO N T FIND A SPECIFIC BREED RESCUE CENTER COMMA CONSIDER WAITING)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [19]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [20]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [21]>
+
+;; (IF YOU CA N T FIND A PUREBRED PUPPY OR DOG IN NEED OF A HOME COMMA LOOK FOR A BREEDER)
+
+	;; A PERSON MAY FIND A PUPPY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (PUPPY_27 ?x1))
+
+	;; A PUPPY CAN BE IN NEED OF A HOME.
+
+		(and (PUPPY_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (NEED_27 ?x2) (of_27 ?x2 ?x3) (HOME_27 ?x3))
+
+	;; A PUPPY CAN BE PUREBRED.
+
+		(and (PUPPY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUREBRED_27 ?x2))
+
+;; (YOU WILL NEED TO FIND A REPUTABLE BREEDER IN ORDER TO HAVE THE BEST CHANCE OF A HEALTHY DOG WITH SOUND TEMPERAMENT)
+
+	;; A BREEDER CAN BE REPUTABLE.
+
+		(and (BREEDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPUTABLE_27 ?x2))
+
+	;; A DOG MAY UNDERGO A CHANCE.
+
+		(and (DOG_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; A CHANCE CAN BE BEST.
+
+		(and (CHANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A DOG CAN BE WITH TEMPERAMENT.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (TEMPERAMENT_27 ?x2))
+
+	;; A DOG CAN BE HEALTHY.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+	;; A TEMPERAMENT CAN BE SOUND.
+
+		(and (TEMPERAMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOUND_27 ?x2))
+
+;; (BE AWARE OF THE PROBLEMS OF IRRESPONSIBLE BREEDERS)
+
+	;; BREEDERS CAN BE IRRESPONSIBLE.
+
+		(and (breeder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IRRESPONSIBLE_27 ?x2))
+
+;; (MANY PUREBREDS ARE INBRED COMMA AND SUFFER ILLNESSES AND CONGENITAL DISEASES)
+
+	;; SOME_NUMBER_OF PUREBREDS MAY BE INBR -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PUREBREDS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INBR_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [22]>
+
+;; (VISIT THE BREEDER S FACILITIES AND MEET THE DOGS)
+
+	;; A BREEDER MAY HAVE FACILITIES.
+
+		(and (BREEDER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FACILITIES_27 ?x1))
+
+;; (FACILITIES SHOULD BE CLEAN AND THE DOGS SHOULD BEHAVE AS YOU WOULD WANT YOUR FUTURE DOG TO BEHAVE)
+
+	;; DOGS MAY BEHAVE.
+
+		(and (DOGS_27 ?x1) (MAY_27 ?x1) (BEHAVE_27 ?x1))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+;; (ALL DOGS SHOULD BE HEALTHY COMMA CLEAN COMMA AND FREE OF PARASITES)
+
+	;; SOME_NUMBER_OF DOGS CAN BE HEALTHY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DOGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEALTHY_27 ?x2))
+
+;; (A GOOD BREEDER WILL SCREEN BREEDING STOCK FOR COMMON HEALTH PROBLEMS BEFORE BREEDING AND WILL BE HAPPY TO SHARE THAT INFORMATION WITH YOU)
+
+	;; A BREEDER MAY SCREEN STOCK.
+
+		(and (BREEDER_27 ?x1) (MAY_27 ?x1) (SCREEN_27 ?x1) (STOCK_27 ?x1))
+
+	;; A BREEDER CAN BE GOOD.
+
+		(and (BREEDER_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; STOCK CAN BE FOR HEALTH PROBLEMS.
+
+		(and (stock_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (HEALTH_27 ?x2) (PROBLEMS_27 ?x2))
+
+	;; A STOCK CAN BE BREEDING.
+
+		(and (stock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (breeding_27 ?x2))
+
+	;; HEALTH PROBLEMS CAN BE BEFORE BREEDING.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (BREEDING_27 ?x2))
+
+	;; HEALTH PROBLEMS CAN BE COMMON.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+;; (DNA TESTS SHOULD HAVE BEEN DONE ON THE STUD AND THE BITCH)
+
+	;; DNA TESTS MAY BE DO -ED ON A STUD.
+
+		(and (DNA_27 ?x1) (TESTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (STUD_27 ?x2))
+
+;; (RESEARCH THE COMMON HEALTH PROBLEMS SPECIFIC TO THE BREED YOU RE INTERESTED IN AND ASK FOR PROOF THAT THESE SCREENING TESTS HAVE BEEN PERFORMED -LRB- E.G. COMMA OFA CERTIFICATES COMMA DEGENERATIVE MEYLOPATHY
+ GENE TESTING COMMA ETC. -RRB-)
+
+	;; HEALTH PROBLEMS CAN BE SPECIFIC TO A BREED.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECIFIC_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (BREED_27 ?x3))
+
+	;; HEALTH PROBLEMS CAN BE COMMON.
+
+		(and (HEALTH_27 ?x1) (PROBLEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMON_27 ?x2))
+
+	;; SCREENING TESTS MAY BE PERFORM -ED.
+
+		(and (screen_27 ?e1 ?x1) (test_27 ?x1) (be_27 ?e2 ?x1 ?x2) (PERFORM_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A GENE TESTING CAN BE DEGENERATIVE.
+
+		(and (GENE_27 ?x1) (TESTING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEGENERATIVE_27 ?x2))
+
+	;; A GENE TESTING CAN BE MEYLOPATHY.
+
+		(and (GENE_27 ?x1) (TESTING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEYLOPATHY_27 ?x2))
+
+;; (IF THE BREEDER CAN NOT PROVIDE PROOF OF SCREENING COMMA KEEP LOOKING)
+
+	;; A BREEDER MAY PROVIDE PROOF OF SCREENING.
+
+		(and (BREEDER_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (PROOF_27 ?x1) (of_27 ?x1 ?x2) (SCREENING_27 ?x2))
+
+;; (WHEN YOU FIND A BREEDER YOU WANT COMMA WAIT FOR A LITTER TO BECOME AVAILABLE)
+
+	;; A PERSON MAY FIND A BREEDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (BREEDER_27 ?x1))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (A GOOD BREEDER WILL REQUIRE A SALES AGREEMENT THAT CLEARLY SPELLS OUT THE OBLIGATIONS EXPECTED FROM ALL PARTIES WITH RESPECT TO THE DOG)
+
+	;; A BREEDER CAN BE GOOD.
+
+		(and (BREEDER_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; OBLIGATIONS MAY BE EXPECT -ED FROM SOME_NUMBER_OF PARTIES.
+
+		(and (obligation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (FROM_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (PARTIES_27 ?x2))
+
+	;; SOME_NUMBER_OF PARTIES CAN BE WITH RESPECT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PARTIES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (RESPECT_27 ?x2))
+
+;; (THE BREEDER SHOULD BE ABLE TO SUGGEST BOOKS COMMA GROOMING EQUIPMENT COMMA ETC. COMMA FOR THE CARE OF YOUR FUTURE PET)
+
+	;; EQUIPMENT CAN BE GROOMING.
+
+		(and (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROOMING_27 ?x2))
+
+	;; A PET MAY HAVE CARE.
+
+		(and (PET_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CARE_27 ?x1))
+
+	;; A PERSON MAY HAVE A PET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PET_27 ?x1))
+
+;; (IF YOU HAVE OBTAINED A PUPPY THEN THE IDEAL TIME TO BRING YOUR NEW FRIEND HOME IS AT -LRB- EIGHT WEEKS -RRB- OF AGE)
+
+	;; A PERSON MAY OBTAIN A PUPPY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (OBTAIN_27 ?x1) (A_27 ?x1) (PUPPY_27 ?x1))
+
+	;; A TIME CAN BE IDEAL.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDEAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A FRIEND HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRIEND_27 ?x1) (HOME_27 ?x1))
+
+;; (A PUPPY THAT IS PICKED-UP TOO EARLY WILL COMMA LIKELY COMMA TO BE FEARFUL OF OTHER DOGS FOR HIS/HER ENTIRE LIFE)
+
+	;; DOGS CAN BE FOR LIFE.
+
+		(and (dog_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (LIFE_27 ?x2))
+
+	;; A LIFE CAN BE HIS/HER.
+
+		(and (LIFE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIS_2FHER_27 ?x2))
+
+;; (GET A COMPLETE VETERINARY EXAM WITHIN 24 HOURS OF PICKING UP YOUR PUPPY)
+
+	;; AN EXAM CAN BE VETERINARY.
+
+		(and (EXAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VETERINARY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PUPPY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PUPPY_27 ?x1))
+
+;; (START HEART WORM AND TICK PREVENTION RIGHT AWAY)
+
+	;; HEART WORM MAY PREVENTIO.
+
+		(and (HEART_27 ?x1) (WORM_27 ?x1) (MAY_27 ?x1) (PREVENTIO_27 ?x1))
+
+	;; A HEART WORM CAN BE START.
+
+		(and (HEART_27 ?x1) (WORM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (START_27 ?x2))
+
+;; (ALSO COMMA FIND A QUALITY DOG FOOD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THERE ARE MANY GREAT QUALITY COMMERCIAL PRODUCTS -LRB- AKA DRY/CANNED -RRB- BUT MANY OWNERS PREFER A COMMERCIAL RAW DIET COMMA OR A HOMEMADE DIET)
+
+	;; A QUALITY CAN BE GREAT.
+
+		(and (QUALITY_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; AKA MAY BE DRY/CAN -ED.
+
+		(and (AKA_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_2FCAN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A DIET CAN BE COMMERCIAL.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMERCIAL_27 ?x2))
+
+	;; A DIET CAN BE RAW.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RAW_27 ?x2))
+
+	;; A DIET CAN BE HOMEMADE.
+
+		(and (DIET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOMEMADE_27 ?x2))
+
+;; (DEPENDING ON YOUR DOG S ACTIVITY LEVELS COMMA ENVIRONMENT COMMA AND BREED COMMA TALK WITH YOUR VETERINARIAN ON WHAT TYPE OF FOOD YOU SHOULD BE FEEDING)
+
+	;; ENVIRONMENT MAY TALK WITH A VETERINARIAN.
+
+		(and (ENVIRONMENT_27 ?x1) (MAY_27 ?x1) (TALK_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (VETERINARIAN_27 ?x1))
+
+	;; A DOG MAY HAVE ACTIVITY LEVELS.
+
+		(and (DOG_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ACTIVITY_27 ?x1) (LEVELS_27 ?x1))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+	;; A PERSON MAY HAVE A VETERINARIAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VETERINARIAN_27 ?x1))
+
+	;; A PERSON MAY FEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEED_27 ?x1))
+
+;; (TAKE YOUR PUPPY -LRB- OR YOUR DOG -RRB- TO OBEDIENCE CLASSES)
+
+	;; A PERSON MAY HAVE A PUPPY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PUPPY_27 ?x1))
+
+	;; A PERSON MAY HAVE A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DOG_27 ?x1))
+
+;; (ASK YOUR VET TO SUGGEST A FACILITY OR TRAINER)
+
+	;; A PERSON MAY HAVE A VET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VET_27 ?x1))
+
+;; (ESTABLISH THE SAME EXPECTATIONS FOR YOUR PUPPY THAT YOU WILL HAVE FOR AN ADULT DOG)
+
+	;; EXPECTATIONS CAN BE FOR A PUPPY.
+
+		(and (expectation_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PUPPY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PUPPY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PUPPY_27 ?x1))
+
+	;; A PERSON MAY HAVE FOR A DOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DOG_27 ?x2))
+
+	;; A DOG CAN BE ADULT.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADULT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [23]>
+
+;; (KIDS NEED TO LEARN TO BE AROUND A DOG JUST AS MUCH AS THE DOG NEEDS TO LEARN TO LISTEN TO COMMANDS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [23]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE VIGILANT WHEN FRIENDS AND VISITORS COME AROUND THE DOG)
+
+	;; FRIENDS MAY COME AROUND A DOG.
+
+		(and (friend_27 ?x1) (COME_27 ?x1) (AROUND_27 ?x2) (A_27 ?x2) (DOG_27 ?x2))
+
+;; (SMALL CHILDREN WILL RUN UP TO A DOG AND SCREECH IN DELIGHT COMMA HOWEVER COMMA TO A DOG THIS APPEARS TO BE AN ATTACK SO HE OR SHE MAY REACT IN SELF-DEFENSE)
+
+	;; CHILDREN MAY RUN_UP TO A DOG.
+
+		(and (CHILDREN_27 ?x1) (MAY_27 ?x1) (RUN_5FUP_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (DOG_27 ?x2))
+
+	;; CHILDREN CAN BE SMALL.
+
+		(and (CHILDREN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A MALE MAY REACT IN SELF-DEFENSE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (REACT_27 ?x1) (in_27 ?x1 ?x2) (SELF-DEFENSE_27 ?x2))
+
+;; (MAKE SURE YOUR FAMILY IS WILLING TO WALK COMMA FEED COMMA BRUSH COMMA AND PICK UP AFTER THE DOG ON A DAILY BASIS)
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A DOG CAN BE ON A BASIS.
+
+		(and (DOG_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (BASIS_27 ?x2))
+
+	;; A BASIS CAN BE DAILY.
+
+		(and (BASIS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAILY_27 ?x2))
+
+;; (NO ONE IN THE FAMILY SHOULD BE EXEMPT FROM THESE RESPONSIBILITIES)
+
+	;; AN ONE CAN BE EXEMPT FROM RESPONSIBILITIES.
+
+		(and (be_27 ?e1 ?x1) (EXEMPT_27 ?x1) (FROM_27 ?x1) (RESPONSIBILITIES_27 ?x1))
+
+	;; AN ONE CAN BE IN A FAMILY.
+
+		(and (be_27 ?e1) (in_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))

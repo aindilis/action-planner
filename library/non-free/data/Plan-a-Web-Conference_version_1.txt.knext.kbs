@@ -1,0 +1,260 @@
+;; (IF YOU RE USING ONE COMMA TO ARRANGE A DATE AND TIME FOR THE WEB CONFERENCE COMMA TO COVER BASIC DETAILS COMMA AND TO GET LINKS AND ACCESS CODES TO SEND TO PARTICIPANTS)
+
+	;; A DATE CAN BE FOR A WEB CONFERENCE.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (WEB_27 ?x2) (CONFERENCE_27 ?x2))
+
+	;; DETAILS CAN BE BASIC.
+
+		(and (detail_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BASIC_27 ?x2))
+
+;; (CONSIDER SCHEDULING AN EXTRA HALF HOUR IN CASE THE CONFERENCE RUNS LONG)
+
+	;; A CONFERENCE MAY RUN.
+
+		(and (CONFERENCE_27 ?x1) (MAY_27 ?x1) (RUN_27 ?x1))
+
+	;; A HALF HOUR CAN BE EXTRA.
+
+		(and (HALF_27 ?x1) (HOUR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (DECIDE WHO SHOULD ATTEND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE THE CONFERENCING SOFTWARE TO INVITE THEM)
+
+	;; SOFTWARE CAN BE CONFERENCING.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (conferencing_27 ?x2))
+
+;; (INCLUDE THE LINK AND ACCESS CODE THEY LL NEED TO PARTICIPATE)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F NIL (:P NEED.V NIL))))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (NIL_27 ?x3) (P_27 ?x4) (NEED_2EV_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CREATE A TIMED AGENDA)
+
+	;; AN AGENDA CAN BE TIMED.
+
+		(and (AGENDA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIMED_27 ?x2))
+
+;; (GATHER CONTENT FOR THE MEETING COMMA INCLUDING SPREADSHEETS COMMA PRESENTATIONS COMMA AND DOCUMENTS)
+
+	;; CONTENT CAN BE FOR A MEETING.
+
+		(and (content_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (meeting_27 ?x2))
+
+	;; A CONTENT CAN BE GATHER.
+
+		(and (CONTENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GATHER_27 ?x2))
+
+;; (CREATE OR ASSIGN SOMEONE TO PREPARE THE MATERIAL FOR USE BY THE CONFERENCING SOFTWARE AND THEN PRETEST THESE MATERIALS)
+
+	;; A MATERIAL CAN BE FOR USE.
+
+		(and (MATERIAL_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (USE_27 ?x2))
+
+	;; SOFTWARE CAN BE CONFERENCING.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (conferencing_27 ?x2))
+
+;; (MAKE IT INTERESTING)
+
+	;; A THING-REFERRED-TO CAN BE INTERESTING.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (interesting_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [13]>
+
+;; (USE THE TECHNOLOGY AVAILABLE TO VARY ACTIVITY WITH VIDEO OR SLIDES COMMA INTERACTIVE POLLING COMMA APPLICATION SHARING COMMA OR WHITEBOARD)
+
+	;; A POLLING CAN BE INTERACTIVE.
+
+		(and (polling_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERACTIVE_27 ?x2))
+
+;; (CREATE A SLIDE THAT WILL APPEAR WHEN PARTICIPANTS LOG IN)
+
+	;; PARTICIPANTS MAY LOG_IN.
+
+		(and (participant_27 ?x1) (MAY_27 ?x1) (LOG_5FIN_27 ?x1))
+
+;; (THIS WILL ALLOW THEM TO THEY RE AT THE RIGHT WEB CONFERENCE)
+
+	;; A THING MAY ALLOW INDIVIDUAL -S.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ALLOW_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [14]>
+
+;; (INFORM THEM ON HOW THEY SHOULD PREPARE)
+
+	;; INDIVIDUAL -S MAY PREPARE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PREPARE_27 ?x1))
+
+;; (SEND THEM ANY NEEDED MATERIALS IN ADVANCE)
+
+	;; MATERIALS CAN BE IN ADVANCE.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ADVANCE_27 ?x2))
+
+	;; MATERIALS CAN BE NEEDED.
+
+		(and (material_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEEDED_27 ?x2))
+
+;; (INCLUDE A REMINDER OF THE LINK AND ACCESS CODE)
+
+	;; A LINK MAY HAVE A REMINDER.
+
+		(and (LINK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REMINDER_27 ?x1))
+
+;; (PREPARE AN ONLINE SURVEY THAT YOU CAN HAVE PARTICIPANTS COMPLETE AFTER THE CONFERENCE TO GET FEEDBACK)
+
+	;; A SURVEY CAN BE ONLINE.
+
+		(and (SURVEY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONLINE_27 ?x2))
+
+	;; PARTICIPANTS CAN BE COMPLETE AFTER A CONFERENCE.
+
+		(and (participant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPLETE_27 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (CONFERENCE_27 ?x2))
+
+;; (PRACTICE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SO-3 DEP THAT-4 NSUBJ YOU-5 DEP KNOW-6 ADVMOD HOW-7 AUX TO-8 CCOMP USE-9 XCOMP USE-9 DET THE-10 NN MODERATOR-11 NSUBJ TOOLS-12 NSUBJ TOOLS-12 AUX TO-13 CCOMP RESPOND-14 PREP_TO QUESTIONS-16 AUX TO-18 CCOMP
+ LET-19 CONJ_OR LET-19 NSUBJ PARTICIPANTS-20 CCOMP SHOW-21 POSS THEIR-22 DOBJ MATERIAL-23 DET THE-25 PREP_TO GROUP-26)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RUN A DRESS REHEARSAL OF THE WEB CONFERENCE)
+
+	;; A WEB CONFERENCE MAY HAVE A DRESS REHEARSAL.
+
+		(and (WEB_27 ?x1) (CONFERENCE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRESS_27 ?x1) (REHEARSAL_27 ?x1))
+
+;; (MAKE SURE YOUR PRESENTATIONS ARE ALL WORKING PROPERLY)
+
+	;; PRESENTATIONS MAY WORK.
+
+		(and (PRESENTATIONS_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; A PERSON MAY HAVE PRESENTATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRESENTATIONS_27 ?x1))
+
+;; (DO THIS AT LEAST A WEEK IN ADVANCE AND MAKE CHANGES AS NEEDED)
+
+	;; CHANGES CAN BE NEEDED.
+
+		(and (change_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEEDED_27 ?x2))
+
+;; (HAVE SOMEONE ELSE IN YOUR COMPANY ACT AS ON-SITE TECH SUPPORT DURING THE WEB CONFERENCE SO THAT YOU CAN FOCUS ON HOSTING IT)
+
+	;; SOMEONE CAN BE IN A COMPANY ACT.
+
+		(and (someone_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (COMPANY_27 ?x2) (ACT_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPANY ACT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPANY_27 ?x1) (ACT_27 ?x1))
+
+	;; TECH MAY SUPPORT DURING A WEB CONFERENCE.
+
+		(and (TECH_27 ?x1) (MAY_27 ?x1) (SUPPORT_27 ?x1) (DURING_27 ?x1) (A_27 ?x1) (WEB_27 ?x1) (CONFERENCE_27 ?x1))
+
+	;; A TECH CAN BE ON-SITE.
+
+		(and (TECH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON-SITE_27 ?x2))
+
+;; (OPEN THE CONFERENCING SOFTWARE AT LEAST A HALF AN HOUR BEFORE THE MEETING STARTS)
+
+	;; SOFTWARE CAN BE CONFERENCING.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (conferencing_27 ?x2))
+
+	;; A MEETING MAY START.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+;; (MAKE SURE CONNECTIONS AND CONTENT ARE ALL WORKING PROPERLY)
+
+	;; CONNECTIONS MAY WORK.
+
+		(and (connection_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; CONNECTIONS CAN BE MAKE.
+
+		(and (connection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2))
+
+	;; CONNECTIONS CAN BE SURE.
+
+		(and (connection_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (RECORD THE CONFERENCE OR KEEP MINITES FOR THOSE WHO CAN NOT ATTEND THE WEB CONFERENCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

@@ -1,0 +1,349 @@
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>
+
+;; (PURCHASE A CRUISING GUIDE FOR YOUR AREA AND REFERENCE IT WITH YOUR FUEL USAGE AND THE AVERAGE ESTIMATED TRAVEL SPEEDS FOR THE WATERWAYS IN YOUR AREA)
+
+	;; A THING-REFERRED-TO MAY ESTIMATE TRAVEL SPEEDS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (ESTIMATE_27 ?x1) (TRAVEL_27 ?x1) (SPEEDS_27 ?x1))
+
+	;; A GUIDE CAN BE CRUISING.
+
+		(and (GUIDE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRUISING_27 ?x2))
+
+	;; A PERSON MAY HAVE A FUEL USAGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FUEL_27 ?x1) (USAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (FOR EXAMPLE COMMA THE INTRACOASTAL WATERWAY IN FORT LAUDERDALE IS LOADED WITH NO-WAKE ZONES AND DRAWBRIDGES)
+
+	;; AN INTRACOASTAL_WATERWAY[PERSON??] MAY BE LOAD -ED WITH ZONES.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (LOAD_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (WITH_27 ?x1) (ZONES_27 ?x1))
+
+	;; AN INTRACOASTAL_WATERWAY[PERSON??] CAN BE IN A US-CITY.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (in_27 ?x1) (A_27 ?x1) (US-CITY_27 ?x1))
+
+	;; ZONES CAN BE NO-WAKE.
+
+		(and (zone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NO-WAKE_27 ?x2))
+
+;; (THAT MEANS SLOWER TRAVELING)
+
+	;; 
+
+	;; ((:I NIL TRAVEL.V))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (TRAVEL_2EV_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [3]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CONFIRM THAT FOOD COMMA FUEL AND DOCKAGE ARE AVAILABLE)
+
+	;; FOOD CAN BE AVAILABLE.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+;; (IN MANY AREAS TRANSIENT SLIPS ARE LIMITED AND RESERVATIONS ARE A MUST)
+
+	;; SLIPS CAN BE LIMITED.
+
+		(and (slip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIMITED_27 ?x2))
+
+	;; SLIPS CAN BE TRANSIENT.
+
+		(and (slip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRANSIENT_27 ?x2))
+
+;; (BRUSH UP ON YOUR NAVIGATION BY TAKING A REFRESHER CLASS)
+
+	;; A PERSON MAY HAVE A NAVIGATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAVIGATION_27 ?x1))
+
+;; (HAVE YOUR VESSEL S MECHANICS AND ELECTRONICS INSPECTED TO GUARANTEE THAT YOUR BOAT WILL MAKE THE TRIP)
+
+	;; A PERSON MAY HAVE A VESSEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VESSEL_27 ?x1))
+
+	;; A BOAT MAY MAKE A TRIP.
+
+		(and (BOAT_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+	;; A PERSON MAY HAVE A BOAT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOAT_27 ?x1))
+
+;; (INSPECT YOUR FIRST-AID KIT COMMA PFDS ROPES COMMA GROUND TACKLE COMMA WASTE HOLDING TANK -LRB- IF SO EQUIPPED -RRB- COMMA AND FRESH WATER SUPPLY)
+
+	;; A PERSON MAY HAVE A KIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KIT_27 ?x1))
+
+	;; A KIT CAN BE FIRST-AID.
+
+		(and (KIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIRST-AID_27 ?x2))
+
+	;; A PFDS[PERSON??] MAY HAVE ROPES.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ROPES_27 ?x1))
+
+	;; A WATER SUPPLY CAN BE FRESH.
+
+		(and (WATER_27 ?x1) (SUPPLY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (RUN THROUGH ALL YOU BACKUP PROVISIONS -LRB- EMERGENCY FOOD AND WATER -RRB- AND SPARE MECHANICALS -LRB- ENGINE OIL COMMA COOLANT -RRB-)
+
+	;; A RUN[PERSON??] MAY *NULL-VERB* PROVISIONS.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (kbs2_kif_quote_2ANULL-VERB_2A_27 ?x1) (PROVISIONS_27 ?x1))
+
+	;; A RUN[PERSON??] CAN BE THROUGH SOME_NUMBER_OF YOU.
+
+		(and (RUN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGH_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (YOU_27 ?x1))
+
+	;; PROVISIONS CAN BE BACKUP.
+
+		(and (provision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BACKUP_27 ?x2))
+
+	;; MECHANICALS CAN BE SPARE.
+
+		(and (mechanical_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [4]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [5]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [7]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [10]>

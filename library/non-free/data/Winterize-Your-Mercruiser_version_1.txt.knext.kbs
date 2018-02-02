@@ -1,0 +1,235 @@
+;; (RUN YOUR ENGINE ON THE GARDEN HOSE WITH A GOOD FLUSHETTE TO FLUSH OUT ANY OLD SALT WATER THAT MIGHT BE SITTING IN THE BLOCK AND EXHAUST)
+
+	;; A PERSON MAY HAVE AN ENGINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ENGINE_27 ?x1))
+
+	;; A FLUSHETTE CAN BE GOOD.
+
+		(and (FLUSHETTE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A SALT WATER CAN BE OLD.
+
+		(and (SALT_27 ?x1) (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "50"
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (ADD FUEL STABILIZER TO YOUR FUEL TANK AND RUN THE ENGINE LONG ENOUGH TO ALLOW THE STABILIZER TO GET INTO THE ENGINE S FUEL SYSTEM)
+
+	;; A PERSON MAY HAVE A FUEL TANK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FUEL_27 ?x1) (TANK_27 ?x1))
+
+	;; AN ENGINE MAY HAVE A FUEL SYSTEM.
+
+		(and (ENGINE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FUEL_27 ?x1) (SYSTEM_27 ?x1))
+
+;; (FOLLOW THE DIRECTIONS FOR WINTERIZATION AND FUEL STABILIZATION IN YOUR ENGINE OWNER S MANUAL)
+
+	;; WINTERIZATION CAN BE IN A MANUAL.
+
+		(and (WINTERIZATION_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MANUAL_27 ?x2))
+
+	;; AN ENGINE OWNER MAY HAVE A MANUAL.
+
+		(and (ENGINE_27 ?x1) (OWNER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MANUAL_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ENGINE OWNER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ENGINE_27 ?x1) (OWNER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (WITH THE ENGINE RUNNING AT A HIGH IDLE -LRB- WITH A WATER HOSE HOOKED UP FOR COOLING OF COURSE -RRB- COMMA SLOWLY POUR A QUART OF MARVEL
+ MYSTERY OIL DOWN THE THROAT OF THE CARBURETOR)
+
+	;; A CARBURETOR MAY HAVE A THROAT.
+
+		(and (CARBURETOR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THROAT_27 ?x1))
+
+;; (THE ENGINE WILL TRY TO STALL SO REV THE ENGINE AS NOT TO LET IT STALL JUST UNTIL YOUR CAN OF MARVEL MYSTERY OIL IS EMPTY)
+
+	;; A THING-REFERRED-TO MAY STALL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (STALL_27 ?x1))
+
+	;; A CAN OF A MARVEL_MYSTERY_OIL[PERSON??] CAN BE EMPTY.
+
+		(and (of_27 ?x1) (A_27 ?x1) (MARVEL_5FMYSTERY_5FOIL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (EMPTY_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAN_27 ?x1))
+
+;; (DROP THE RPM WHILE YOU POUR THE LAST BIT IN FASTER COMMA SO AS TO CAUSE THE ENGINE TO STALL)
+
+	;; A PERSON MAY POUR A BIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (POUR_27 ?x1) (A_27 ?x1) (BIT_27 ?x1))
+
+;; (THIS WILL COAT THE INSIDE VALVES AND CYLINDER WALLS)
+
+	;; A THING MAY COAT VALVES.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (COAT_27 ?x1) (VALVES_27 ?x1))
+
+	;; VALVES CAN BE INSIDE.
+
+		(and (valve_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSIDE_27 ?x2))
+
+;; (LOCATE ALL YOUR ENGINE S WATER DRAIN PLUGS AND HOSES)
+
+	;; A PERSON MAY HAVE AN ENGINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ENGINE_27 ?x1))
+
+;; (FOR STERN DRIVE AND INBOARD ENGINES SUCH AS MERCRUISER MODELS THE DRAIN PLUGS ARE EITHER BRASS OR PLASTIC)
+
+	;; DRAIN PLUGS CAN BE A BRASS.
+
+		(and (DRAIN_27 ?x1) (PLUGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (brass_27 ?x2))
+
+	;; A DRIVE CAN BE STERN.
+
+		(and (DRIVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STERN_27 ?x2))
+
+	;; A MERCRUISER[PERSON??] MAY HAVE MODELS.
+
+		(and (MERCRUISER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (MODELS_27 ?x1))
+
+;; (REMOVE THE DRAIN PLUGS LOCATED ON EITHER SIDE OF THE ENGINE BLOCK)
+
+	;; A DRAIN MAY PLUG LOCATED ON SOME_NUMBER_OF SIDE OF AN ENGINE BLOCK.
+
+		(and (DRAIN_27 ?x1) (MAY_27 ?x1) (PLUG_27 ?x1) (LOCATED_27 ?x1) (ON_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (SIDE_27 ?x1) (of_27 ?x1 ?x2) (AN_27 ?x2) (ENGINE_27 ?x2) (BLOCK_27 ?x2))
+
+	;; AN ENGINE BLOCK MAY HAVE A SIDE.
+
+		(and (ENGINE_27 ?x1) (BLOCK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+;; (MAKE SURE THAT WHEN YOU REMOVE THE DRAIN PLUG THAT THE WATER DRAINS AND THAT THE PASSAGE IS NOT PLUGGED WITH RUST)
+
+	;; A PERSON MAY REMOVE A DRAIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REMOVE_27 ?x1) (A_27 ?x1) (DRAIN_27 ?x1))
+
+	;; WATER MAY DRAIN.
+
+		(and (WATER_27 ?x1) (MAY_27 ?x1) (DRAIN_27 ?x1))
+
+	;; A PASSAGE MAY BE PLUG -ED WITH RUST.
+
+		(and (PASSAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUG_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (RUST_27 ?x2))
+
+;; (REMOVE THE DRAIN PLUGS FROM THE BOTTOM OF EACH EXHAUST MANIFOLD AND MAKE SURE THE PASSAGES ARE NOT PLUGGED OR CLOGGED)
+
+	;; A MANIFOLD CAN BE EXHAUST.
+
+		(and (MANIFOLD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXHAUST_27 ?x2))
+
+	;; PASSAGES MAY BE PLUG -ED.
+
+		(and (passage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUG_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (SOME MODELS HAVE DRAIN PLUGS ON EITHER SIDE OF THE EXHAUST ELBOW)
+
+	;; SOME_NUMBER_OF MODELS MAY HAVE DRAIN PLUGS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MODELS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DRAIN_27 ?x1) (PLUGS_27 ?x1))
+
+	;; AN ELBOW MAY HAVE A SIDE.
+
+		(and (ELBOW_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1))
+
+	;; AN ELBOW CAN BE EXHAUST.
+
+		(and (ELBOW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXHAUST_27 ?x2))
+
+;; (REMOVE THE PLUGS AND MAKE SURE THE PASSAGES DRAIN)
+
+	;; A DRAIN CAN BE PASSAGES.
+
+		(and (DRAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (passage_27 ?x2))
+
+;; (SAVE ALL YOUR DRAIN PLUGS IN A SAFE PLACE FOR SPRING)
+
+	;; A PERSON MAY HAVE DRAIN PLUGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DRAIN_27 ?x1) (PLUGS_27 ?x1))
+
+	;; A PLACE CAN BE FOR SPRING.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SPRING_27 ?x2))
+
+	;; A PLACE CAN BE SAFE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (UNCLAMP AND REMOVE THE LARGE FAT WATER HOSE FROM THE FRONT OF YOUR MOTOR)
+
+	;; A WATER HOSE CAN BE LARGE.
+
+		(and (WATER_27 ?x1) (HOSE_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A WATER HOSE CAN BE FAT.
+
+		(and (WATER_27 ?x1) (HOSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAT_27 ?x2))
+
+	;; A MOTOR MAY HAVE A FRONT.
+
+		(and (MOTOR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FRONT_27 ?x1))
+
+	;; A PERSON MAY HAVE A MOTOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOTOR_27 ?x1))
+
+;; (THIS WILL ALLOW MORE OF THE BLOCKED PASSAGES TO DRAIN)
+
+	;; PASSAGES CAN BE BLOCKED.
+
+		(and (passage_27 ?x1) (be_27 ?e1 ?x1 ?e2) (block_27 ?e2 ?x1))
+
+;; (REMOVE ANY STANDING WATER FROM ALL HOSES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (REMOVE ANY WATER FROM ANY OIL COOLERS OR POWER STEERING COOLERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (REMOVE YOUR PROPELLER)
+
+	;; A PERSON MAY HAVE A PROPELLER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROPELLER_27 ?x1))

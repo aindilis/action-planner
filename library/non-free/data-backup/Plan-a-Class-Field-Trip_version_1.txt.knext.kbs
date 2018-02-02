@@ -1,0 +1,348 @@
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>
+
+;; (SELECT A LOCATION AND FIND OUT WHEN THEY ACCEPT SCHOOL GROUPS)
+
+	;; INDIVIDUAL -S MAY ACCEPT SCHOOL GROUPS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ACCEPT_27 ?x1) (SCHOOL_27 ?x1) (GROUPS_27 ?x1))
+
+;; (ALSO FIND OUT THE ADMISSION COSTS COMMA THE AVAILABILITY OF TRANSPORTATION COMMA THE COST OF CHARTERING BUSES)
+
+	;; BUSES CAN BE CHARTERING.
+
+		(and (bus_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHARTERING_27 ?x2))
+
+;; (MAKE SURE YOU HAVE THE LEGAL NUMBER VOLUNTEER ADULT SUPERVISORS FOR THE NUMBER OF STUDENTS GOING)
+
+	;; A PERSON MAY HAVE NUMBER VOLUNTEER ADULT SUPERVISORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NUMBER_27 ?x1) (VOLUNTEER_27 ?x1) (ADULT_27 ?x1) (SUPERVISORS_27 ?x1))
+
+	;; NUMBER VOLUNTEER ADULT SUPERVISORS CAN BE FOR A NUMBER OF STUDENTS.
+
+		(and (NUMBER_27 ?x1) (VOLUNTEER_27 ?x1) (ADULT_27 ?x1) (SUPERVISORS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (NUMBER_27 ?x2) (of_27 ?x2 ?x3) (student_27 ?x3))
+
+	;; NUMBER VOLUNTEER ADULT SUPERVISORS CAN BE LEGAL.
+
+		(and (NUMBER_27 ?x1) (VOLUNTEER_27 ?x1) (ADULT_27 ?x1) (SUPERVISORS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEGAL_27 ?x2))
+
+	;; STUDENTS MAY GO.
+
+		(and (student_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+;; (DO N T MENTION THE TRIP TO YOUR STUDENTS UNTIL YOU SORT OUT THESE DETAILS)
+
+	;; A PERSON MAY HAVE STUDENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (student_27 ?x1))
+
+	;; A PERSON MAY SORT_OUT DETAILS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SORT_5FOUT_27 ?x1) (DETAILS_27 ?x1))
+
+;; (OBTAIN YOUR SCHOOL BOARD S STANDARDIZED LETTERS FOR PARENTAL PERMISSION AS WELL AS THE STANDARD TRIP PLANNING PACKAGE)
+
+	;; A PERSON MAY HAVE A SCHOOL BOARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1) (BOARD_27 ?x1))
+
+	;; LETTERS CAN BE FOR PERMISSION.
+
+		(and (letter_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PERMISSION_27 ?x2))
+
+	;; LETTERS CAN BE STANDARDIZED.
+
+		(and (letter_27 ?x1) (be_27 ?e1 ?x1 ?e2) (standardize_27 ?e2 ?x1))
+
+	;; A PERMISSION CAN BE PARENTAL.
+
+		(and (permission_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PARENTAL_27 ?x2))
+
+	;; A TRIP PLANNING PACKAGE CAN BE STANDARD.
+
+		(and (TRIP_27 ?x1) (PLANNING_27 ?x1) (PACKAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARD_27 ?x2))
+
+;; (FILL OUT THE PLANNING PACKAGE TO GET PERMISSION FROM THE THE SUPERINTENDENT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [3]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TALK TO THE PRINCIPAL AND GET PERMISSION TO GO)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [3]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BE PREPARED TO MEET THEIR CRITERIA)
+
+	;; INDIVIDUAL -S MAY HAVE CRITERIA.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CRITERIA_27 ?x1))
+
+;; (EXPLAIN THE EDUCATIONAL VALUE AND THE RELATIONSHIP TO THE CURRICULUM OF THE GRADE LEVEL -LRB- S -RRB- THAT WILL ATTEND)
+
+	;; A VALUE CAN BE EDUCATIONAL.
+
+		(and (VALUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EDUCATIONAL_27 ?x2))
+
+	;; A GRADE LEVEL MAY HAVE A CURRICULUM.
+
+		(and (GRADE_27 ?x1) (LEVEL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CURRICULUM_27 ?x1))
+
+;; (CONTACT THE TRIP SITE AND MAKE OR FINALIZE YOUR RESERVATIONS FOR THE GROUP)
+
+	;; A PERSON MAY HAVE RESERVATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESERVATIONS_27 ?x1))
+
+;; (MAKE SURE TO CONFIRM YOUR ARRANGEMENTS SHORTLY BEFORE THE TRIP)
+
+	;; A PERSON MAY HAVE ARRANGEMENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ARRANGEMENTS_27 ?x1))
+
+;; (INTEGRATE THE TRIP INTO THE CLASSROOM PROGRAM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [3]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PLAN INSTRUCTION AND ACTIVITIES IN CLASS TO PREPARE FOR THE TRIP)
+
+	;; INSTRUCTION AND ACTIVITIES CAN BE IN CLASS.
+
+		(and (instruction_27 ?x1) (and_27 ?x2 ?x1 ?x3) (activity_27 ?x3) (be_27 ?e1 ?x1) (in_27 ?x1 ?x4) (class_27 ?x4))
+
+	;; A PLAN[PERSON??] MAY HAVE INSTRUCTION AND ACTIVITIES.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (INSTRUCTION_27 ?x1) (and_27 ?x2 ?x1 ?x3) (ACTIVITIES_27 ?x3))
+
+;; (DISCUSS WHAT WILL HAPPEN AT THE TRIP SITE COMMA AND YOUR EXPECTATIONS OF THEM)
+
+	;; A PERSON MAY HAVE EXPECTATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXPECTATIONS_27 ?x1))
+
+;; (REVIEW SAFETY AND BUS ETIQUETTE)
+
+	;; SAFETY AND BUS MAY ETIQUETT.
+
+		(and (SAFETY_27 ?x1) (and_27 ?x2 ?x1 ?x3) (BUS_27 ?x3) (MAY_27 ?x3) (ETIQUETT_27 ?x3))
+
+	;; A REVIEW[PERSON??] MAY HAVE A SAFETY AND BUS.
+
+		(and (REVIEW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SAFETY_27 ?x1) (and_27 ?x2 ?x1 ?x3) (BUS_27 ?x3))
+
+;; (ESTABLISH A BUDDY SYSTEM AND SEATING PLAN COMMA AND GROUPS WITH ADULT SUPERVISORS)
+
+	;; A PLAN CAN BE SEATING.
+
+		(and (plan_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEATING_27 ?x2))
+
+	;; GROUPS CAN BE WITH SUPERVISORS.
+
+		(and (GROUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SUPERVISORS_27 ?x2))
+
+	;; SUPERVISORS CAN BE ADULT.
+
+		(and (supervisor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADULT_27 ?x2))
+
+;; ( )
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+	;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+
+	;; The following restarts are available:
+
+		(and (following_27 ?x1) (restart_27 ?x1) (be_27 ?e1 ?x1) (available_27 ?x1))
+
+	;; ABORT          :R1      Abort main loop
+
+		(and (ABORT_27 ?x1) (R1_27 ?x2) (Abort_27 ?x2) (main_27 ?x2) (loop_27 ?x2))
+
+	;; Break 1 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))
+
+;; (KEEP CAREFUL RECORDS ACCORDING TO YOUR SCHOOL S REQUIREMENTS)
+
+	;; RECORDS CAN BE CAREFUL.
+
+		(and (record_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CAREFUL_27 ?x2))
+
+	;; A SCHOOL MAY HAVE REQUIREMENTS.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (requirement_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHOOL_27 ?x1))

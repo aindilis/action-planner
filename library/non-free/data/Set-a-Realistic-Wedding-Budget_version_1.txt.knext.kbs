@@ -1,0 +1,413 @@
+;; (ADDRESSSET ASIDE SOME TIME TO REVIEW YOUR OWN OPINION ON HOW YOU SHOULD SPLIT THE WEDDING EXPENSES - THEN DISCUSS THAT WITH YOUR FIANCEE)
+
+	;; A PERSON MAY HAVE AN OPINION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OPINION_27 ?x1))
+
+	;; A PERSON MAY SPLIT WEDDING EXPENSES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SPLIT_27 ?x1) (WEDDING_27 ?x1) (EXPENSES_27 ?x1))
+
+	;; A THING CAN BE WITH A FIANCEE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (FIANCEE_27 ?x2))
+
+	;; A PERSON MAY HAVE A FIANCEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FIANCEE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; (KEEP IN MIND THAT THE TRADITION OF HAVING THE BRIDE S FAMILY PAY FOR THE WEDDING WAS ESTABLISHED IN DAYS WHEN A FATHER WOULD EFFECTIVELY PAY A FAMILY TO TAKE HIS DAUGHTER OFF OF HIS HANDS COMMA AS SHE WAS N T
+ SEEN AS CONTRIBUTING TO THE FAMILY ECONOMY)
+
+	;; A FAMILY MAY PAY FOR A WEDDING.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (for_27 ?x1 ?x2) (wedding_27 ?x2))
+
+	;; A BRIDE MAY HAVE A FAMILY.
+
+		(and (BRIDE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A FATHER MAY PAY A FAMILY.
+
+		(and (FATHER_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A MALE MAY HAVE A DAUGHTER.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DAUGHTER_27 ?x1))
+
+	;; A MALE MAY HAVE HANDS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HANDS_27 ?x1))
+
+;; (CONSIDER WHETHER THAT S A TRADITION YOU WISH TO BE A PART OF)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SINCE TODAY IS NOT THE 1950S AND MOST BRIDES ARE WORKING FULL TIME AND PLAN TO CONTINUE WORKING FULL-TIME COMMA ADVISE ASKING YOUR FIANCEE TO SHARE THE EXPENSES OF THE WEDDING)
+
+	;; TODAY CAN BE 1950S.
+
+		(and (today_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_31950S_27 ?x2))
+
+	;; A TIME CAN BE FULL.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A PERSON MAY HAVE A FIANCEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FIANCEE_27 ?x1))
+
+	;; A WEDDING MAY HAVE EXPENSES.
+
+		(and (WEDDING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EXPENSES_27 ?x1))
+
+;; (TRADITIONALLY THE GROOM S FAMILY ONLY PAYS FOR THE REHEARSAL DINNER COMMA AND POSSIBLY PART OF THE HONEYMOON)
+
+	;; A FAMILY MAY PAY FOR A DINNER.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (DINNER_27 ?x2))
+
+	;; A GROOM MAY HAVE A FAMILY.
+
+		(and (GROOM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A DINNER CAN BE REHEARSAL.
+
+		(and (DINNER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REHEARSAL_27 ?x2))
+
+	;; A HONEYMOON MAY HAVE PART.
+
+		(and (HONEYMOON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PART_27 ?x1))
+
+;; (THE BULK OF THE EXPENSE IS REALLY THE WEDDING -LRB- THE FLOWERS COMMA THE CAKE COMMA THE GOWN COMMA THE FOOD COMMA THE MUSIC COMMA ETC. -RRB-)
+
+	;; A BULK OF AN EXPENSE CAN BE A WEDDING.
+
+		(and (BULK_27 ?x1) (of_27 ?x1 ?x2) (EXPENSE_27 ?x2) (be_27 ?e1 ?x1 ?x3) (wedding_27 ?x3))
+
+	;; AN EXPENSE MAY HAVE A BULK.
+
+		(and (EXPENSE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BULK_27 ?x1))
+
+;; (RESEARCH THE VENDORS AND GET PRICE QUOTES BEFORE SETTING THE BUDGET)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS IS REALLY CRITICAL)
+
+	;; A THING CAN BE CRITICAL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+;; (YOU MAY THINK FLOWERS WOULD COST $ 500 COMMA BUT REALLY THEY CAN COST $ 2COMMA400 EASILY)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+;; (MANY VENDORS HAVE MINIMUMS - GET THIS INFORMATION UP FRONT)
+
+	;; SOME_NUMBER_OF VENDORS MAY MINIMUM.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (VENDORS_27 ?x1) (MAY_27 ?x1) (MINIMUM_27 ?x1))
+
+;; (RESEARCH WEDDING DEALS ONLINE)
+
+	;; WEDDING DEALS MAY ONLIN.
+
+		(and (wedding_27 ?x1) (deal_27 ?e1 ?x1 ?x2) (MAY_27 ?x2) (ONLIN_27 ?x2))
+
+	;; A RESEARCH[PERSON??] MAY HAVE WEDDING DEALS.
+
+		(and (RESEARCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (wedding_27 ?x1) (deal_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; (WRITE A DETAILED LIST WITH VENDOR NAME AND PROJECTED COST AND TALLY EVERYTHING UP)
+
+	;; A LIST CAN BE DETAILED.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DETAILED_27 ?x2))
+
+;; (IT MAY BE GOOD TO USE SOFTWARE LIKE EXCEL TO EASILY UPDATE THIS AND MAKE COST COMPARISONS BETWEEN DIFFERENT VENDORS FOR THE SAME THING -LRB- LIKE DIFFERENT FLOWER SHOPS -RRB-)
+
+	;; VENDORS CAN BE FOR A THING.
+
+		(and (vendor_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (thing_27 ?x2))
+
+;; (ONCE YOU HAVE AN IDEA OF WHAT YOUR WEDDING MAY COST IN YOUR AREA -LRB- WITH VENDORS THAT YOU LIKE -RRB- COMMA DISCUSS THE FINANCES WITH YOUR FIANCEE)
+
+	;; A PERSON MAY HAVE AN IDEA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; A WEDDING MAY COST IN AN AREA.
+
+		(and (WEDDING_27 ?x1) (MAY_27 ?x1) (COST_27 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE A WEDDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (wedding_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+	;; A PERSON MAY HAVE A FIANCEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FIANCEE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [8]>
+
+;; (QUESTIONS-2 POSS HIS-4 PREP_ABOUT VIEWS-5 AUX WOULD-6 COP BE-7 DET A-8 AMOD GOOD-9 AUX TO-11 INFMOD START-12)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE-2 DOBJ LIST-3 AMOD POTENTIAL-5 PREP_OF COSTS-6 PREP_WITH HIM-8 AUX WOULD-9 COP BE-10)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [9]>
+
+;; (AT THIS STAGE COMMA START FORMULATING A GUEST LIST COMMA BECAUSE MANY BUDGET ITEMS ARE PROPORTIONAL TO THE SIZE OF THE WEDDING YOU HOST)
+
+	;; A LIST CAN BE GUEST.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GUEST_27 ?x2))
+
+	;; SOME_NUMBER_OF BUDGET ITEMS CAN BE PROPORTIONAL TO A SIZE OF A WEDDING YOU HOST.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (BUDGET_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROPORTIONAL_27 ?x2) (to_27 ?e1 ?x3) (size_27 ?x3) (of_27 ?x3 ?x4) (A_27 ?x4) (WEDDING_27 ?x4) (YOU_27 ?x4) (HOST_27 ?x4))
+
+	;; A WEDDING YOU HOST MAY HAVE A SIZE.
+
+		(and (WEDDING_27 ?x1) (YOU_27 ?x1) (HOST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIZE_27 ?x1))
+
+;; (KEEP IN MIND THAT IF YOUR FAMILIES ARE PAYING FOR ALL OR PART OF THE WEDDING THAT THEY MAY FEEL ENTITLED TO ADD TO THIS GUEST LIST)
+
+	;; FAMILIES MAY PAY A PROPOSITION.
+
+		(and (family_27 ?x1) (PAY_27 ?x1) (A_27 ?x2) (proposition_27 ?x2))
+
+	;; A PERSON MAY HAVE FAMILIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FAMILIES_27 ?x1))
+
+	;; A WEDDING MAY HAVE PART.
+
+		(and (WEDDING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PART_27 ?x1))
+
+;; (BE UP FRONT WITH THEM ABOUT THIS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (COME TO AGREEMENT WITH YOUR FIANCEE ABOUT HOW YOU WOULD LIKE TO PAY FOR THE WEDDING)
+
+	;; AGREEMENT CAN BE WITH A FIANCEE.
+
+		(and (AGREEMENT_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (FIANCEE_27 ?x2))
+
+	;; A PERSON MAY HAVE A FIANCEE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FIANCEE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [12]>
+
+;; (SPECIAL NOTE  MONEY FROM FAMILY HAS STRINGS ATTACHED COMMA SO BE CAREFUL ABOUT SETTING EXPECTATIONS THAT THIS IS YOUR WEDDING AND THAT YOU APPRECIATE THEIR FINANCIAL CONTRIBUTIONS)
+
+	;; MONEY MAY BE ATTACH -ED.
+
+		(and (money_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTACH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; MONEY CAN BE FROM FAMILY.
+
+		(and (money_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (FAMILY_27 ?x2))
+
+	;; A THING CAN BE A WEDDING.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (wedding_27 ?x2))
+
+	;; A WEDDING CAN BE YOUR.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUR_27 ?x2))
+
+	;; A PERSON MAY APPRECIATE CONTRIBUTIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (APPRECIATE_27 ?x1) (CONTRIBUTIONS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CONTRIBUTIONS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONTRIBUTIONS_27 ?x1))
+
+	;; CONTRIBUTIONS CAN BE FINANCIAL.
+
+		(and (contribution_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINANCIAL_27 ?x2))
+
+;; (CREATE A SPREADSHEET USING EXCEL OR OPENOFFICE TO WRITE DOWN AND TRACK YOUR BUDGET)
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+;; (THE TOP LINE SHOULD HAVE THE TOTAL AMOUNT YOU ARE WILLING TO SPEND AND THE END OF THE SHEET SHOULD HAVE A RUNNING TOTAL OF PROJECTED AND ACTUAL WEDDING RELATED EXPENSES)
+
+	;; A LINE MAY HAVE AN AMOUNT.
+
+		(and (LINE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AMOUNT_27 ?x1))
+
+	;; A LINE CAN BE TOP.
+
+		(and (LINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+	;; AN END OF A SHEET MAY HAVE A TOTAL OF EXPENSES.
+
+		(and (end_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (SHEET_27 ?x2) (MAY_27 ?x2) (HAVE_27 ?x2) (A_27 ?x2) (TOTAL_27 ?x2) (of_27 ?x1 ?x3) (expense_27 ?x3))
+
+	;; A SHEET MAY HAVE AN END.
+
+		(and (SHEET_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+	;; EXPENSES MAY UNDERGO A TOTAL.
+
+		(and (expense_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (TOTAL_27 ?x1))
+
+	;; A TOTAL CAN BE RUNNING.
+
+		(and (TOTAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RUNNING_27 ?x2))
+
+	;; EXPENSES CAN BE PROJECTED.
+
+		(and (expense_27 ?x1) (be_27 ?e1 ?x1 ?e2) (project_27 ?e2 ?x1))
+
+	;; EXPENSES CAN BE RELATED.
+
+		(and (expense_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELATED_27 ?x2))

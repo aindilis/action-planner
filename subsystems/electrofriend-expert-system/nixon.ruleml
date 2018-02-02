@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RuleML>
+    <Assert>
+        <Implies ruletype="defeasiblerule">
+                <oid><Ind>r1</Ind></oid>
+                <head>
+                    <Atom><Rel>pacifict</Rel><Var>X</Var></Atom>
+                </head>
+                <body>
+                     <Atom><Rel>quaker</Rel><Var>X</Var></Atom>
+                </body>
+        </Implies>
+        
+        
+        <Implies ruletype="defeasiblerule">
+                <oid><Ind>r2</Ind></oid>
+                <head>
+                    <Neg><Atom><Rel>pacifict</Rel><Var>X</Var></Atom></Neg>
+                </head>
+                <body>
+                     <Atom><Rel>republican</Rel><Var>X</Var></Atom>
+                </body>
+        </Implies>
+        
+        <Implies ruletype="defeasiblerule">
+                <oid><Ind>r3</Ind></oid>
+                <head>
+                    <Neg><Atom><Rel>hasGun</Rel><Var>X</Var></Atom></Neg>
+                </head>
+                <body>
+                     <Atom><Rel>pacifist</Rel><Var>X</Var></Atom>
+                </body>
+                <superior>
+                    <Ind>r4</Ind>
+                </superior>
+        </Implies>
+        
+        <Implies ruletype="defeasiblerule">
+                <oid><Ind>r4</Ind></oid>
+                <head>
+                    <Atom><Rel>hasGun</Rel><Var>X</Var></Atom>
+                </head>
+                <body>
+                     <Atom><Rel>livesInChicago</Rel><Var>X</Var></Atom>
+                </body>
+        </Implies>
+
+    </Assert>
+    
+    <Fact><Atom><Rel>quaker</Rel><Ind>nixon</Ind></Atom></Fact>
+    <Fact><Atom><Rel>republican</Rel><Ind>nixon</Ind></Atom></Fact>
+    <Fact><Atom><Rel>livesInChicago</Rel><Ind>nixon</Ind></Atom></Fact>
+   
+<Query querytype="defeasible">
+	<Atom><Rel>quaker</Rel><Ind>nixon</Ind></Atom>
+</Query>
+<Query querytype="defeasible">
+	<Atom><Rel>X</Rel></Atom>
+</Query>
+
+</RuleML>

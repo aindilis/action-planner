@@ -1,0 +1,410 @@
+;; (THROW SPARE STIRRUP LEATHERS AND SPURS IN BOXES)
+
+	;; STIRRUP LEATHERS CAN BE SPARE.
+
+		(and (STIRRUP_27 ?x1) (leather_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPARE_27 ?x2))
+
+;; (JUST MAKE SURE THE ROOM IS COMPLETELY EMPTY)
+
+	;; A ROOM CAN BE EMPTY.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+;; (HANG COMMA RUGS COMMA SADDLECLOTHS AND BOOTS OUT TO AIR IN A BREEZE IF POSSIBLE)
+
+	;; A HANG[PERSON??] MAY SADDLECLOTH.
+
+		(and (HANG_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SADDLECLOTH_27 ?x1))
+
+;; (TIP EVERYTHING OUT OF STORAGE BOXES MAKING SURE ANY DUST COMMA DIRT AND HAIR ALSO COMES OUT)
+
+	;; EVERYTHING MAY COME_OUT.
+
+		(and (EVERYTHING_27 ?x1) (MAY_27 ?x1) (COME_5FOUT_27 ?x1))
+
+	;; AN EVERYTHING CAN BE TIP.
+
+		(and (EVERYTHING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TIP_27 ?x2))
+
+;; (FILL PLASTIC STORAGE BOXES WITH WARM WATER AND SOME MILD SOAP)
+
+	;; STORAGE BOXES CAN BE WITH WATER.
+
+		(and (storage_27 ?x1) (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (WATER_27 ?x2))
+
+	;; STORAGE BOXES CAN BE FILL.
+
+		(and (storage_27 ?x1) (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILL_27 ?x2))
+
+	;; STORAGE BOXES CAN BE PLASTIC.
+
+		(and (storage_27 ?x1) (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; WATER CAN BE WARM.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+	;; A SOAP CAN BE MILD.
+
+		(and (SOAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MILD_27 ?x2))
+
+;; (SWEEP CARDBOARD BOXES OUT)
+
+	;; A SWEEP[PERSON??] MAY CARDBOAR_OUT BOXES.
+
+		(and (SWEEP_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CARDBOAR_5FOUT_27 ?x1) (BOXES_27 ?x1))
+
+;; (IF THERE IS ANY MOLD ON THEM COMMA REPLACE THEM)
+
+	;; A MOLD CAN BE ON INDIVIDUAL -S.
+
+		(and (MOLD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; (PUT ANY SUITABLE SMALL ITEMS IN THE WATER TO SOAK)
+
+	;; ITEMS CAN BE IN WATER.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; ITEMS CAN BE SUITABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUITABLE_27 ?x2))
+
+	;; ITEMS CAN BE SMALL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (THIS CAN INCLUDE GROOMING KITS COMMA STIRRUPS COMMA SPURS AND SMALL PIECES OF SYNTHETIC TACK)
+
+	;; A THING MAY INCLUDE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1))
+
+	;; A TACK CAN BE SYNTHETIC.
+
+		(and (TACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SYNTHETIC_27 ?x2))
+
+;; (SHAKE/WIPE THE EXCESS WATER OFF AND LEAVE EVERYTHING TO DRY IN THE SUN)
+
+	;; WATER CAN BE EXCESS.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+;; (SWEEP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THIS-1 AUX WILL-2 DET THE-4 DOBJ DIRT-5 DOBJ DIRT-5 DET THE-7 PREP_ON FLOOR-8 AUX WILL-10 CONJ_AND MAKE-11 NSUBJ IT-12 CCOMP LOOK-13
+ ADVMOD MUCH-14 ACOMP BETTER-15)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THE FLOOR IS REALLY GROSS COMMA USE A FLOOR CLEANER TO GET THE REMAINING GUNK OFF)
+
+	;; A GUNK CAN BE REMAINING.
+
+		(and (GUNK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMAINING_27 ?x2))
+
+;; (DUST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU-3 AUX HAVE-4 NEG NEVER-5 CCOMP DUSTED-6 ADVMOD BEFORE-7)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [17]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CLEAN SHELVES COMMA CORNERS COMMA SADDLE RACKS -- ANYTHING YOU CAN FIND)
+
+	;; SHELVES CAN BE CLEAN.
+
+		(and (shelf_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; A PERSON MAY FIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1))
+
+;; (HOOVER THE RAFTERS COMMA WALLS AND COBWEBS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WHEN YOU ARE DONE COMMA THE TACK ROOM WILL REALLY LOOK CLEAN)
+
+	;; A TACK ROOM MAY LOOK CLEAN.
+
+		(and (TACK_27 ?x1) (ROOM_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (CLEAN_27 ?x1))
+
+	;; A PERSON MAY BE DO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (NOW FOR THE BATHROOM -LRB- IF THE TACK ROOM HAS ONE -RRB-)
+
+	;; A TACK ROOM MAY HAVE SOME NUMBER_OR_PORTION.
+
+		(and (TACK_27 ?x1) (ROOM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+;; (CHANCES ARE COMMA THE TOILETS AND SINKS ARE FILTHY)
+
+	;; TOILETS CAN BE FILTHY.
+
+		(and (toilet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FILTHY_27 ?x2))
+
+	;; CHANCES MAY BE.
+
+		(and (chance_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (CLEAN THEM OUT WITH BATHROOM CLEANER COMMA AND MOP THE FLOOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (REPLACE OR FIX ANYTHING THAT IS BROKEN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THE TOILET SEAT IS CRACKED COMMA REPLACE IT)
+
+	;; A TOILET SEAT MAY BE CRACK -ED.
+
+		(and (TOILET_27 ?x1) (SEAT_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (MAKE SURE THE SADDLE RACKS ARE STURDY)
+
+	;; RACKS CAN BE STURDY.
+
+		(and (rack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STURDY_27 ?x2))
+
+	;; RACKS CAN BE SADDLE.
+
+		(and (rack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SADDLE_27 ?x2))
+
+;; (FIX OR REPLACE BROKEN SHELVES)
+
+	;; SHELVES CAN BE BROKEN.
+
+		(and (shelf_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BROKEN_27 ?x2))
+
+;; (RE-LABEL ANY RACKS OR SHELVES IF THE OLD TAGS AREN T CLEAR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [28]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RE-PACK THE STORAGE BOXES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [29]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RE-LABEL THINGS IF THEY AREN T CLEAR AND MAKE SURE THEY ARE DRY)
+
+	;; THINGS CAN BE DRY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+	;; THINGS CAN BE RE-LABEL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RE-LABEL_27 ?x2))
+
+	;; T CAN BE CLEAR.
+
+		(and (T_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+;; (TRY TO HAVE A BOX COMMA BAG OR BUCKET TO STORE ALL SMALL ITEMS COMMA WITH THE EXCEPTION OF GIRTHS COMMA REINS AND STIRRUP LEATHERS COMMA
+ WHICH ARE BEST HUNG UP)
+
+	;; ITEMS CAN BE SMALL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (MAKE SURE THAT BOTTLES ARE UPRIGHT)
+
+	;; BOTTLES CAN BE UPRIGHT.
+
+		(and (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UPRIGHT_27 ?x2))
+
+;; (BRING THE STORAGE BOXES BACK IN AND PUT THEM AWAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [33]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT THE MOST COMMONLY USED ITEMS COMMA LIKE GROOMING KITS COMMA WITHIN EASY REACH COMMA AND THE LESS FREQUENTLY USED ITEMS COMMA LIKE
+ CLIPPERS COMMA OUT OF THE WAY)
+
+	;; KITS CAN BE GROOMING.
+
+		(and (kit_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROOMING_27 ?x2))
+
+	;; A REACH CAN BE EASY.
+
+		(and (REACH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+;; (SET UP THE SADDLE RACKS)
+
+	;; RACKS CAN BE SADDLE.
+
+		(and (rack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SADDLE_27 ?x2))
+
+;; (IDEALLY COMMA THEY SHOULD BE IN A ROW ALONG THE WALL)
+
+	;; INDIVIDUAL -S CAN BE IN A ROW.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROW_27 ?x2))
+
+;; (IF YOU TEACH RIDING LESSONS AND HAVE LOTS OF SADDLES COMMA CONSIDER USING RACKS GOING UP THE WALL)
+
+	;; A PERSON MAY TEACH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TEACH_27 ?x1))
+
+	;; RACKS MAY GO_UP A WALL.
+
+		(and (RACKS_27 ?x1) (MAY_27 ?x1) (GO_5FUP_27 ?x1) (A_27 ?x1) (WALL_27 ?x1))
+
+;; (THE BRIDLES SHOULD CORRESPOND TO THE LOCATION OF THE SADDLE)
+
+	;; BRIDLES MAY CORRESPOND TO A LOCATION OF A SADDLE.
+
+		(and (bridle_27 ?x1) (CORRESPOND_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (LOCATION_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (SADDLE_27 ?x3))
+
+	;; A SADDLE MAY HAVE A LOCATION.
+
+		(and (SADDLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCATION_27 ?x1))
+
+;; (WIPE THE TACK WITH A DAMP CLOTH AND COVER SADDLE WITH A BREATHABLE COVER OR CLEAN SADDLECLOTH)
+
+	;; A CLOTH CAN BE DAMP.
+
+		(and (CLOTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAMP_27 ?x2))
+
+	;; A COVER CAN BE BREATHABLE.
+
+		(and (cover_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BREATHABLE_27 ?x2))
+
+;; (BRING IN THE TACK AND RUGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [40]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ORDER TACK BY THE HORSE IT S USED ON RATHER THAN TYPE AND KEEP THE GROOMING KIT NEAR TOO)
+
+	;; AN ORDER[PERSON??] MAY TAC BY A HORSE.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (TAC_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (HORSE_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A KIT CAN BE GROOMING.
+
+		(and (KIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GROOMING_27 ?x2))

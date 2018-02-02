@@ -1,0 +1,396 @@
+;; (USE YOUR PRODUCT / SERVICE)
+
+	;; A PERSON MAY HAVE A PRODUCT / SERVICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1) (kbs2_kif_quote_2F_27 ?x1) (SERVICE_27 ?x1))
+
+;; (SEARCH FOR AS MUCH INFORMATION ABOUT THEM AS POSSIBLE)
+
+	;; A SEARCH[PERSON??] CAN BE POSSIBLE.
+
+		(and (SEARCH_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (POSSIBLE_27 ?x1))
+
+;; (IF YOUR PRODUCT IS ALREADY IN THE MARKET YOU CAN OBTAIN THIS INFORMATION BY CONDUCTING CONSUMER SURVEYS COMMA TALKING TO THE SALES PEOPLE COMMA OR OBSERVING CONSUMER BEHAVIOR AT VARIOUS STORES)
+
+	;; A PRODUCT CAN BE IN A MARKET.
+
+		(and (product_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MARKET_27 ?x2))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (IF THE PRODUCT HAS NOT AS YET LAUNCHED COMMA USE BEST GUESS STRATEGY OR EXISTING MARKET INFORMATION)
+
+	;; USE MAY GUESS STRATEGY.
+
+		(and (USE_27 ?x1) (MAY_27 ?x1) (GUESS_27 ?x1) (STRATEGY_27 ?x1))
+
+	;; A PRODUCT MAY HAVE.
+
+		(and (PRODUCT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A MARKET INFORMATION CAN BE EXISTING.
+
+		(and (MARKET_27 ?x1) (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+;; (THUS YOU WILL BE ABLE TO DEFINE WHO YOUR BUYER OR USER IS - THIS IS YOUR TARGET AUDIENCE COMMA OR THE CONSUMER)
+
+	;; A BUYER MAY BE.
+
+		(and (BUYER_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A BUYER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUYER_27 ?x1))
+
+	;; A THING CAN BE A TARGET_AUDIENCE[PERSON??].
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TARGET_5FAUDIENCE_27 ?x2) (PERSON_27 ?x3))
+
+;; (IF YOU ARE SELLING A PENCIL COMMA YOUR TARGET AUDIENCE MAY BE KIDS COMMA STUDENTS COMMA WOMEN COMMA MEN OR TEACHERS)
+
+	;; A TARGET AUDIENCE CAN BE KIDS.
+
+		(and (TARGET_27 ?x1) (AUDIENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KIDS_27 ?x2))
+
+	;; A PERSON MAY SELL A PENCIL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1) (A_27 ?x1) (PENCIL_27 ?x1))
+
+	;; A PERSON MAY HAVE A TARGET AUDIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TARGET_27 ?x1) (AUDIENCE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [9]>
+
+;; (IN THE CASE OF PENCILS USERS MAY BE STUDENTS COMMA BUYERS ARE PARENTS AND INFLUENCERS ARE FRIENDS)
+
+	;; BUYERS CAN BE PARENTS.
+
+		(and (buyer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (parent_27 ?x2))
+
+	;; USERS CAN BE STUDENTS.
+
+		(and (user_27 ?x1) (be_27 ?e1 ?x1 ?x2) (student_27 ?x2))
+
+;; (FIND OUT WHAT IS SO SPECIAL ABOUT YOUR PRODUCT COMMA THE UNIQUE SELLING PROPOSITION)
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (MAKE SURE YOU FIND ONLY ONE COMPELLING REASON OTHERWISE YOU WILL CONFUSE YOUR READER)
+
+	;; A PERSON MAY FIND A REASON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (REASON_27 ?x1))
+
+	;; A REASON CAN BE COMPELLING.
+
+		(and (REASON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (compelling_27 ?x2))
+
+	;; A PERSON MAY CONFUSE A READER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONFUSE_27 ?x1) (A_27 ?x1) (READER_27 ?x1))
+
+	;; A PERSON MAY HAVE A READER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (READER_27 ?x1))
+
+;; (THIS IS ALSO SOMETIMES REFERRED TO AS THE BRAND POSITIONING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LOOK FOR SOMETHING THAT CURRENT COMPETITORS DO NOT OFFER OR DO NOT OVERTLY CLAIM TO OFFER)
+
+	;; COMPETITORS MAY DO.
+
+		(and (COMPETITORS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IDENTIFY A RELEVANT HIGHLIGHT THE PRODUCT BENEFIT UNIQUE PRODUCT OFFERING)
+
+	;; A HIGHLIGHT MAY BENEFIT PRODUCT OFFERING.
+
+		(and (HIGHLIGHT_27 ?x1) (MAY_27 ?x1) (BENEFIT_27 ?x1) (PRODUCT_27 ?x1) (OFFERING_27 ?x1))
+
+	;; A HIGHLIGHT CAN BE RELEVANT.
+
+		(and (HIGHLIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELEVANT_27 ?x2))
+
+;; (BY RELEVANT IT SHOULD BE SOMETHING THAT THE CONSUMER NEEDS OR LIKES COMMA AND NOT THAT S UNIQUE FOR THE SAKE OF IT)
+
+	;; A THING-REFERRED-TO CAN BE A SOMETHING.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (something_27 ?x2))
+
+	;; A CONSUMER MAY NEED.
+
+		(and (CONSUMER_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (AN EXAMPLE OF SOMETHING UNIQUE TO YOUR PRODUCT BUT NOT RELEVANT IS A COLOURFUL GARBAGE BAG)
+
+	;; AN EXAMPLE OF SOMETHING CAN BE GARBAGE BAG.
+
+		(and (EXAMPLE_27 ?x1) (of_27 ?x1 ?x2) (something_27 ?x2) (be_27 ?e1 ?x1 ?x3) (GARBAGE_27 ?x3) (BAG_27 ?x3))
+
+	;; SOMETHING CAN BE UNIQUE TO A PRODUCT.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNIQUE_27 ?x2) (to_27 ?e1 ?x3) (A_27 ?x3) (PRODUCT_27 ?x3))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+	;; A GARBAGE BAG CAN BE COLOURFUL.
+
+		(and (GARBAGE_27 ?x1) (BAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLOURFUL_27 ?x2))
+
+;; (FINDING THE ONE MOST RELEVANT REASON IS MORE CHALLENGING THAN IT SOUNDS)
+
+	;; AN ONE CAN BE RELEVANT.
+
+		(and (be_27 ?e1 ?x1) (RELEVANT_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY SOUND.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SOUND_27 ?x1))
+
+;; (MAKE A LIST OF YOUR PRODUCT BENEFITS AND THEN RANK THEM IN THE ORDER OF IMPORTANCE TO YOUR CONSUMER -LRB- NOT TO YOU -RRB-)
+
+	;; PRODUCT BENEFITS MAY HAVE A LIST.
+
+		(and (PRODUCT_27 ?x1) (benefit_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A PERSON MAY HAVE PRODUCT BENEFITS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRODUCT_27 ?x1) (benefit_27 ?x1))
+
+	;; A PERSON MAY HAVE A CONSUMER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONSUMER_27 ?x1))
+
+;; (CONCENTRATE ON THE TOP MOST BENEFITS)
+
+	;; BENEFITS CAN BE TOP.
+
+		(and (benefit_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [10]>
+
+;; (ASSESS THE NEED GAP THAT EXISTS FOR THE PRODUCT OR SERVICE THE PRODUCT CLAIM YOU MAKE SHOULD BE CREDIBLE AND TRUSTWORTHY - DO N T MAKE INCREDULOUS CLAIMS THAT YOUR PRODUCT CAN NOT DELIVER)
+
+	;; ASSESS MAY DO.
+
+		(and (ASSESS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A NEED GAP CAN BE CREDIBLE.
+
+		(and (NEED_27 ?x1) (GAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREDIBLE_27 ?x2))
+
+	;; A PRODUCT MAY CLAIM.
+
+		(and (PRODUCT_27 ?x1) (MAY_27 ?x1) (CLAIM_27 ?x1))
+
+	;; A PERSON MAY MAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; CLAIMS CAN BE INCREDULOUS.
+
+		(and (claim_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INCREDULOUS_27 ?x2))
+
+	;; A PRODUCT MAY DELIVER.
+
+		(and (PRODUCT_27 ?x1) (MAY_27 ?x1) (DELIVER_27 ?x1))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (TAKE FOR EXAMPLE THE PENCILS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO THEY NEED TO SHARPENED OR BE LEAD REPLACED)
+
+	;; LEAD MAY BE REPLACE -ED.
+
+		(and (LEAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPLACE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ARE THEY EASY TO GRIP COMMA SHOULD THEY BE SMOOTH AND STYLISH COMMA AND COME IN MANY ATTRACTIVE COLORS COMMA SO ON SO FORTH UNDERSTAND WHY WILL THEY BUY CONSUMERS HAVE MANY CHOICES OR HOW WILL THEY USE YOUR
+ PRODUCT)
+
+	;; INDIVIDUAL -S CAN BE EASY TO GRIP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2) (to_27 ?e1 ?x3) (GRIP_27 ?x3))
+
+	;; COLORS CAN BE ATTRACTIVE.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2))
+
+	;; CONSUMERS MAY HAVE SOME_NUMBER_OF CHOICES.
+
+		(and (consumer_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (CHOICES_27 ?x1))
+
+	;; A PERSON MAY HAVE A PRODUCT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1))
+
+;; (WHY CONSUMERS BUY THIS PRODUCT CATEGORY COMMA YOUR BRAND OR THE COMPETITOR S BRAND)
+
+	;; CONSUMERS MAY BUY A PRODUCT CATEGORY.
+
+		(and (consumer_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (PRODUCT_27 ?x1) (CATEGORY_27 ?x1))
+
+	;; A PERSON MAY HAVE A BRAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (brand_27 ?x1))
+
+;; (DECIDE HOW TO EFFECTIVELY CONVEY THE PRODUCT MESSAGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [11]>
+
+;; (NORMALLY THE PRODUCT BENEFIT OR YOUR USP IS HIGHLIGHTED IN THE AD BY USING CATCHY HEADLINES AND ATTENTION GRABBING VISUALS)
+
+	;; A PERSON MAY HAVE A USP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (USP_27 ?x1))
+
+	;; HEADLINES CAN BE CATCHY.
+
+		(and (headline_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CATCHY_27 ?x2))
+
+;; (FOR THE TONE AND STYLE OF THE AD YOU NEED TO KEEP YOUR TARGET AUDIENCE IN MIND)
+
+	;; AN AD MAY HAVE A TONE.
+
+		(and (AD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TONE_27 ?x1))
+
+;; (IT SHOULD GET THEIR ATTENTION COMMA BE EASY TO UNDERSTAND COMMA INFORMATIVE COMMA CORRECT IN TONE AND MANNER AND ABOVE ALL ENTERTAINING)
+
+	;; A THING-REFERRED-TO MAY GET ATTENTION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (ATTENTION_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE ATTENTION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ATTENTION_27 ?x1))
+
+;; (ENGAGE THE CONSUMER TO MAKE YOUR AD STAND OUT IN CLUTTER -LRB- A TERM USED TO DESCRIBE PLETHORA OF AD MESSAGES THAT AN AVERAGE CONSUMER IS EXPOSED TO -RRB- AND BE DIFFERENT FROM COMPETITORS)
+
+	;; A PERSON MAY HAVE AN AD STAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AD_27 ?x1) (STAND_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [12]>
+
+;; (FOR AN INSTANT RESPONSE COMMA ACTION WORDS SUCH AS CALL NOW COMMA HURRY COMMA RUSH COMMA WORK WELL)
+
+	;; ACTION WORDS MAY WORK.
+
+		(and (ACTION_27 ?x1) (WORDS_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; A RESPONSE CAN BE INSTANT.
+
+		(and (RESPONSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSTANT_27 ?x2))
+
+;; (DO N T FORGET TO INCLUDE ALL THE INFORMATION THAT IS REQUIRED BUT AT THE SAME TIME DO N T OVERLOAD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KEEP IT SIMPLE AND SHORT)
+
+	;; A THING-REFERRED-TO CAN BE SIMPLE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (THINK OF WHEN WILL THEY BUY COMMA HOW WILL THEY SHOP FOR IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THINK OF WHEN WILL THEY BUY COMMA HOW WILL THEY SHOP FOR IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

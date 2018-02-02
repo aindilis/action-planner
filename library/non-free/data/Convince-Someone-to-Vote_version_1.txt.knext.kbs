@@ -1,0 +1,501 @@
+;; (GOP.COM - REPUBLICAN PARTY VOTER REGISTRATION)
+
+	;; A REPUBLICAN_PARTY[PERSON??] MAY HAVE A VOTER REGISTRATION.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VOTER_27 ?x1) (REGISTRATION_27 ?x1))
+
+;; (VOTEFORCHANGE.COM - WEBSITE RUN BY THE OBAMA CAMPAIGN)
+
+	;; A WEBSITE[PERSON??] MAY BE RUN -ED BY A CAMPAIGN.
+
+		(and (WEBSITE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (RUN_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (CAMPAIGN_27 ?x1))
+
+	;; A US-PRESIDENT MAY HAVE A CAMPAIGN.
+
+		(and (US-PRESIDENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAMPAIGN_27 ?x1))
+
+;; (ALLOWS PEOPLE TO REGISTER TO VOTE COMMA OR REQUEST AN ABSENTEE BALLOT OR TO SEE IF THEY ALREADY ARE REGISTERED)
+
+	;; PEOPLE CAN BE ALLOWS.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALLOWS_27 ?x2))
+
+	;; A BALLOT CAN BE ABSENTEE.
+
+		(and (BALLOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABSENTEE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY BE REGISTER -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REGISTER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (PROBABILITY -LRB- P -RRB- - IN A LARGE ELECTION COMMA INDIVIDUAL VOTES RARELY MAKE A DIFFERENCE COMMA ESPECIALLY WHEN THERE S A VOTING SCHEME IN PLACE LIKE THE ELECTORAL COLLEGE -LRB- US -RRB-)
+
+	;; A PROBABILITY[PERSON??] MAY HAVE A -LRB- P.
+
+		(and (PROBABILITY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (P_27 ?x2))
+
+	;; VOTES MAY MAKE A DIFFERENCE.
+
+		(and (vote_27 ?x1) (make_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DIFFERENCE_27 ?x2))
+
+	;; AN ELECTION CAN BE LARGE.
+
+		(and (ELECTION_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A SCHEME CAN BE IN PLACE.
+
+		(and (SCHEME_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (PLACE_27 ?x2))
+
+	;; A SCHEME CAN BE VOTING.
+
+		(and (SCHEME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOTING_27 ?x2))
+
+;; (-LRB- 3 -RRB- AS A RESULT COMMA MANY PEOPLE DO N T FEEL LIKE IT S WORTH THE EFFORT)
+
+	;; SOME_NUMBER_OF PEOPLE MAY DO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (HERE ARE SOME WAYS TO INCREASE SOMEONE S PERCEPTION THAT THEIR VOTE CAN IMPACT THE ELECTION  GIVE THEM EXAMPLES IN WHICH A HANDFUL OF VOTES HAVE MADE A DIFFERENCE)
+
+	;; SOMEONE MAY HAVE A PERCEPTION.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (perception_27 ?x1))
+
+	;; A VOTE MAY IMPACT AN ELECTION.
+
+		(and (VOTE_27 ?x1) (MAY_27 ?x1) (IMPACT_27 ?x1) (AN_27 ?x1) (ELECTION_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A VOTE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VOTE_27 ?x1))
+
+	;; A HANDFUL OF VOTES MAY MAKE A DIFFERENCE.
+
+		(and (HANDFUL_27 ?x1) (of_27 ?x1 ?x2) (VOTES_27 ?x2) (MAY_27 ?x2) (MAKE_27 ?x2) (A_27 ?x2) (DIFFERENCE_27 ?x2))
+
+	;; A HANDFUL CAN BE CONSTITUTED_OF_OR_FILLED_WITH VOTES.
+
+		(and (HANDFUL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (VOTES_27 ?x2))
+
+;; (THESE SHOULD BE EXAMPLES FROM YOUR OWN NATION OR REGION S HISTORY COMMA PREFERABLY IN WHICH THE OUTCOME CHANGED THE DIRECTION OF THE NATION IN A SIGNIFICANT WAY)
+
+	;; A THING CAN BE EXAMPLES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (example_27 ?x2))
+
+	;; EXAMPLES CAN BE FROM A NATION.
+
+		(and (example_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (NATION_27 ?x2))
+
+	;; A PERSON MAY HAVE A NATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NATION_27 ?x1))
+
+	;; REGION MAY HAVE A HISTORY.
+
+		(and (REGION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HISTORY_27 ?x1))
+
+	;; AN OUTCOME MAY CHANGE A DIRECTION OF A NATION.
+
+		(and (OUTCOME_27 ?x1) (MAY_27 ?x1) (CHANGE_27 ?x1) (A_27 ?x1) (DIRECTION_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (NATION_27 ?x2))
+
+	;; A NATION MAY HAVE A DIRECTION.
+
+		(and (NATION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DIRECTION_27 ?x1))
+
+	;; A WAY CAN BE SIGNIFICANT.
+
+		(and (WAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNIFICANT_27 ?x2))
+
+;; (AN EXAMPLE OF THIS IN THE U.S. IS THAT IN 2000 COMMA ONE MORE VOTE PER PRECINCT IN FLORIDA WOULD HAVE ELECTED AL GORE)
+
+	;; AN EXAMPLE OF A THING CAN BE A PROPOSITION.
+
+		(and (EXAMPLE_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2) (be_27 ?e1 ?x1 ?x3) (proposition_27 ?x3))
+
+	;; A THING CAN BE IN A U.S.[PERSON??].
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?e1 ?x2) (A_27 ?x2) (U_2ES_2E_27 ?x2) (PERSON_27 ?x2))
+
+	;; A VOTE MAY ELECT A MALE.
+
+		(and (VOTE_27 ?x1) (MAY_27 ?x1) (ELECT_27 ?x1) (A_27 ?x1) (MALE_27 ?x1))
+
+	;; PRECINCT CAN BE IN A US-STATE.
+
+		(and (PRECINCT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (US-STATE_27 ?x2))
+
+;; (ENCOURAGE THEM TO VOTE LOCALLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE SMALLER THE ELECTION COMMA THE MORE AN INDIVIDUAL VOTE CAN COUNT COMMA AND THE MORE EMPOWERED THE VOTER WILL FEEL)
+
+	;; A VOTE MAY COUNT.
+
+		(and (VOTE_27 ?x1) (MAY_27 ?x1) (COUNT_27 ?x1))
+
+	;; A VOTER MAY FEEL.
+
+		(and (VOTER_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+;; (REMIND THE PERSON THAT CANDIDATES IN LARGE ELECTIONS OFTEN START OUT GETTING VOTED INTO POWER AT A LOWER LEVEL COMMA AND AN INDIVIDUAL PERSON CAN HAVE SIGNIFICANT INFLUENCE ON A LOCAL LEVEL)
+
+	;; CANDIDATES MAY START_OUT.
+
+		(and (CANDIDATES_27 ?x1) (MAY_27 ?x1) (START_5FOUT_27 ?x1))
+
+	;; CANDIDATES CAN BE IN ELECTIONS.
+
+		(and (candidate_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ELECTIONS_27 ?x2))
+
+	;; ELECTIONS CAN BE LARGE.
+
+		(and (election_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY HAVE INFLUENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INFLUENCE_27 ?x1))
+
+	;; INFLUENCE CAN BE ON A LEVEL.
+
+		(and (INFLUENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; AN INFLUENCE CAN BE SIGNIFICANT.
+
+		(and (INFLUENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNIFICANT_27 ?x2))
+
+;; (ONCE A PERSON REGISTERS TO VOTE COMMA THEY MIGHT VOTE IN A LARGE ELECTION COMMA TOO COMMA ESPECIALLY IF VOTING FOR BOTH TAKES PLACE ON THE SAME DAY AND IN THE SAME LOCATION)
+
+	;; INDIVIDUAL -S MAY VOTE IN AN ELECTION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (VOTE_27 ?x1) (in_27 ?x1 ?x2) (election_27 ?x2))
+
+	;; AN ELECTION CAN BE LARGE.
+
+		(and (ELECTION_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; VOTING MAY TAKE PLACE.
+
+		(and (VOTING_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (PLACE_27 ?x1))
+
+	;; VOTING CAN BE FOR SOME_NUMBER_OF THING.
+
+		(and (voting_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (thing_27 ?x2))
+
+;; (REMIND THEM THAT SOME ELECTIONS HAVE BEEN DECIDED BY ONE VOTE)
+
+	;; SOME_NUMBER_OF ELECTIONS MAY BE DECIDE -ED BY A VOTE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ELECTIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DECIDE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (VOTE_27 ?x2))
+
+;; (ED WATSON COMMA A STATE REPRESENTATIVE IN TEXAS LOST HIS REELECTION BID BY ONE VOTE)
+
+	;; A MALE MAY LOSE A REELECTION BID BY A VOTE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (LOSE_27 ?x1) (A_27 ?x1) (REELECTION_27 ?x1) (BID_27 ?x1) (BY_27 ?x1) (A_27 ?x1) (VOTE_27 ?x1))
+
+	;; A STATE REPRESENTATIVE CAN BE IN A US-STATE.
+
+		(and (STATE_27 ?x1) (REPRESENTATIVE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (US-STATE_27 ?x2))
+
+	;; A MALE MAY HAVE A REELECTION BID.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REELECTION_27 ?x1) (BID_27 ?x1))
+
+;; (POINT OUT THAT THE TURNOUT IS RARELY MORE THAN HALF OF THE REGISTERED VOTERS)
+
+	;; VOTERS CAN BE REGISTERED.
+
+		(and (voter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REGISTERED_27 ?x2))
+
+;; (A CANDIDATE WHO IS BEHIND IN THE POLLS % TO HIS OPPONENT S 60 % WILL WIN IF 80 % OF HIS SUPPORTERS VOTE AND ONLY 50 % OF HIS OPPONENT S SUPPORTERS VOTE)
+
+	;; A CANDIDATE MAY WIN.
+
+		(and (CANDIDATE_27 ?x1) (MAY_27 ?x1) (WIN_27 ?x1))
+
+	;; SOME_NUMBER_OF % CAN BE TO SOME_NUMBER_OF %.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (kbs2_kif_quote_25_27 ?x2))
+
+	;; AN OPPONENT MAY HAVE SUPPORTERS.
+
+		(and (OPPONENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPORTERS_27 ?x1))
+
+	;; A MALE MAY HAVE AN OPPONENT.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OPPONENT_27 ?x1))
+
+;; (-LRB- 80 % OF 40 % = 32 % FOR HIM COMMA 50 % OF 60 % = 30 % FOR HIS OPPONENT COMMA 38 % DO N T VOTE -RRB-)
+
+	;; SOME_NUMBER_OF % OF SOME_NUMBER_OF % MAY DO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (of_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (kbs2_kif_quote_25_27 ?x2) (MAY_27 ?x2) (DO_27 ?x2))
+
+	;; SOME_NUMBER_OF % CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF %.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (kbs2_kif_quote_25_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (kbs2_kif_quote_25_27 ?x2))
+
+	;; A MALE MAY HAVE AN OPPONENT.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OPPONENT_27 ?x1))
+
+;; (THIS MEANS THE LESS POPULAR CANDIDATE CAN STILL GET ELECTED IF HIS SUPPORTERS ARE BETTER MOTIVATED)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+	;; A CANDIDATE MAY GET.
+
+		(and (CANDIDATE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A CANDIDATE CAN BE POPULAR.
+
+		(and (CANDIDATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; SUPPORTERS CAN BE MOTIVATED.
+
+		(and (supporter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOTIVATED_27 ?x2))
+
+	;; A MALE MAY HAVE SUPPORTERS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPORTERS_27 ?x1))
+
+;; (THIS MEANS THE LESS POPULAR CANDIDATE CAN STILL GET ELECTED IF HIS SUPPORTERS ARE BETTER MOTIVATED)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+	;; A CANDIDATE MAY GET.
+
+		(and (CANDIDATE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A CANDIDATE CAN BE POPULAR.
+
+		(and (CANDIDATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; SUPPORTERS CAN BE MOTIVATED.
+
+		(and (supporter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOTIVATED_27 ?x2))
+
+	;; A MALE MAY HAVE SUPPORTERS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPORTERS_27 ?x1))
+
+;; (THIS MEANS THE LESS POPULAR CANDIDATE CAN STILL GET ELECTED IF HIS SUPPORTERS ARE BETTER MOTIVATED)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+	;; A CANDIDATE MAY GET.
+
+		(and (CANDIDATE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A CANDIDATE CAN BE POPULAR.
+
+		(and (CANDIDATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; SUPPORTERS CAN BE MOTIVATED.
+
+		(and (supporter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOTIVATED_27 ?x2))
+
+	;; A MALE MAY HAVE SUPPORTERS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPORTERS_27 ?x1))
+
+;; (THIS MEANS THE LESS POPULAR CANDIDATE CAN STILL GET ELECTED IF HIS SUPPORTERS ARE BETTER MOTIVATED)
+
+	;; A THING MAY MEAN.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+	;; A CANDIDATE MAY GET.
+
+		(and (CANDIDATE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A CANDIDATE CAN BE POPULAR.
+
+		(and (CANDIDATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+	;; SUPPORTERS CAN BE MOTIVATED.
+
+		(and (supporter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOTIVATED_27 ?x2))
+
+	;; A MALE MAY HAVE SUPPORTERS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPORTERS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [21]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [22]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [23]>
+
+;; (LEARN ABOUT THEIR FAMILY MEMBERS)
+
+	;; LEARN CAN BE ABOUT FAMILY MEMBERS.
+
+		(and (LEARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (FAMILY_27 ?x2) (MEMBERS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE FAMILY MEMBERS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FAMILY_27 ?x1) (MEMBERS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [24]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [25]>
+
+;; (TELL OR SHOW THEM HOW THE RIGHT TO VOTE -LRB- SUFFRAGE -RRB- WAS OBTAINED)
+
+	;; THE RIGHT TO VOTE MAY BE OBTAIN -ED.
+
+		(and (RIGHT_27 ?x1) (to_27 ?x1 ?x2) (VOTE_27 ?x2) (MAY_27 ?x2) (be_27 ?e1 ?x1 ?x3) (OBTAIN_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; THE RIGHT CAN BE TO VOTE.
+
+		(and (RIGHT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (VOTE_27 ?x2))
+
+;; (IN MANY NATION S HISTORIES COMMA INDIVIDUALS HAD TO FIGHT FOR THE RIGHT TO VOTE COMMA AND THEIR STRUGGLES CAN PUT THE ACT OF VOTING INTO A DIFFERENT PERSPECTIVE)
+
+	;; INDIVIDUAL -S MAY HAVE A STRUGGLES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STRUGGLES_27 ?x1))
+
+;; (TELL STORIES COMMA SHOW MOVIES OR DOCUMENTARIES COMMA AND SHOW PICTURES OF THE PEOPLE WHO FOUGHT AND SACRIFICED FOR THE ABILITY TO VOTE COMMA AND ILLUSTRATE WHAT YOUR PARTICULAR SOCIETY WAS LIKE BEFORE PEOPLE
+ COULD VOTE)
+
+	;; PICTURES MAY SHOW PEOPLE.
+
+		(and (PICTURES_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (PEOPLE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SOCIETY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SOCIETY_27 ?x1))
+
+	;; PEOPLE MAY VOTE.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (VOTE_27 ?x1))
+
+;; (REMIND THE PERSON HOW LUCKY THEY ARE TO BE ABLE TO VOTE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [25]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TALK ABOUT HOW DIFFERENT LIFE IS FOR THOSE WHO LIVE IN NATIONS WHERE THEY CAN NOT VOTE)
+
+	;; LIFE CAN BE FOR A THING.
+
+		(and (LIFE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; INDIVIDUAL -S MAY VOTE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (VOTE_27 ?x1))
+
+;; (EMPHASIZE THOSE DIFFERENCES THAT THE PERSON PROBABLY CA N T IMAGINE LIFE WITHOUT -LRB- AND THIS WILL DEPEND ON HOW MUCH YOU VE GOTTEN TO KNOW HIM OR HER FROM THE PREVIOUS STEP -RRB-)
+
+	;; A PERSON MAY IMAGINE LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (IMAGINE_27 ?x1) (LIFE_27 ?x1))
+
+;; (FOSTER ALLEGIANCE TO A PARTICULAR CANDIDATE)
+
+	;; A FOSTER[PERSON??] MAY ALLEGIANC TO A CANDIDATE.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ALLEGIANC_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (CANDIDATE_27 ?x2))
+
+;; (HELP THE PERSON RELATE TO THE CANDIDATE COMMA AND/OR SHOW HOW THE CANDIDATE HELPED THE POTENTIAL VOTER)
+
+	;; A PERSON MAY RELATE TO A CANDIDATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RELATE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (CANDIDATE_27 ?x2))
+
+	;; A CANDIDATE MAY HELP A VOTER.
+
+		(and (CANDIDATE_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (A_27 ?x1) (VOTER_27 ?x1))
+
+;; (IT S HUMAN NATURE TO WANT TO HELP PEOPLE WITH WHOM YOU CAN RELATE COMMA AND IT S ALSO NATURAL TO WANT TO HELP SOMEONE WHO HELPED YOU)
+
+	;; A NATURE CAN BE HUMAN.
+
+		(and (NATURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUMAN_27 ?x2))
+
+	;; A PERSON MAY RELATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RELATE_27 ?x1))
+
+;; (HELP WITH PAPERWORK -LRB- E.G. ANY REGISTRATION PROCEDURES -RRB- OFFER FREE TRANSPORTATION TO THE VOTING SITE CONTACT THE PERSON TO REMIND HIM/HER THAT ELECTION DAY IS COMING UP)
+
+	;; OFFER CAN BE TO A SITE CONTACT.
+
+		(and (offer_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (SITE_27 ?x2) (CONTACT_27 ?x2))
+
+	;; A SITE CONTACT CAN BE VOTING.
+
+		(and (SITE_27 ?x1) (CONTACT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VOTING_27 ?x2))

@@ -1,0 +1,138 @@
+;; (ON MOST FEDERAL LAND COMMA YOU MUST BE A CERTAIN DISTANCE FROM ROADS COMMA TRAILS COMMA STREAMS COMMA AND OTHER RECREATIONAL FEATURES)
+
+	;; A PERSON CAN BE A DISTANCE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DISTANCE_27 ?x2))
+
+	;; A LAND CAN BE FEDERAL.
+
+		(and (LAND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEDERAL_27 ?x2))
+
+	;; A DISTANCE CAN BE FROM ROADS.
+
+		(and (DISTANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (ROADS_27 ?x2))
+
+	;; FEATURES CAN BE RECREATIONAL.
+
+		(and (feature_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECREATIONAL_27 ?x2))
+
+;; (ARRANGE SLEEPING AND EATING AREAS SEPARATELY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (KEEP ANIMALS AWAY FROM YOUR TENT OR SLEEPING GEAR BY LOCATING IT FAR FROM THE TABLE COMMA STOVE COMMA AND FOOD STORAGE AND PREPARATION
+ AREAS)
+
+	;; A PERSON MAY HAVE A TENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TENT_27 ?x1))
+
+;; (CLEAN ANY EXISTING TABLES COMMA CABINETS COMMA FIRE RINGS OR STOVES)
+
+	;; TABLES CAN BE EXISTING.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (existing_27 ?x2))
+
+;; (USE A SMALL BROOM TO SWEEP TABLES AND CABINETS)
+
+	;; A BROOM CAN BE SMALL.
+
+		(and (BROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (SHOVEL OUT OLD ASHES AND DISPOSE IN THE BINS)
+
+	;; ASHES CAN BE OLD.
+
+		(and (ash_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (CLEAR OUT OLD TRASH AND DISPOSE IN BINS ALSO)
+
+	;; A TRASH CAN BE OLD.
+
+		(and (trash_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (STORE FOOD ACCORDING TO REGULATIONS)
+
+	;; A STORE[PERSON??] MAY HAVE FOOD.
+
+		(and (STORE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+;; (MANY PLACES REQUIRE BEAR-PROOF STORAGE IN PROVIDED METAL OR WOODEN BOXES)
+
+	;; SOME_NUMBER_OF PLACES MAY REQUIRE STORAGE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLACES_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (STORAGE_27 ?x1))
+
+	;; STORAGE CAN BE BEAR-PROOF.
+
+		(and (storage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEAR-PROOF_27 ?x2))
+
+	;; A METAL CAN BE PROVIDED.
+
+		(and (metal_27 ?x1) (be_27 ?e1 ?x1 ?e2) (provide_27 ?e2 ?x1))
+
+	;; BOXES CAN BE WOODEN.
+
+		(and (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WOODEN_27 ?x2))
+
+;; (KEEP FOODS COOL IN THE SHADE OR PARTY IMMERSED IN RUNNING WATER)
+
+	;; FOODS MAY COOL IN A SHADE.
+
+		(and (food_27 ?x1) (MAY_27 ?x1) (COOL_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SHADE_27 ?x2))
+
+	;; FOODS CAN BE KEEP.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2))
+
+;; (SET UP A TENT OR SLEEPING PAD ON A FLAT SPACE)
+
+	;; A TENT CAN BE ON A SPACE.
+
+		(and (TENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SPACE_27 ?x2))
+
+	;; A SPACE CAN BE FLAT.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (SURVEY IT FOR ANT HILLS COMMA RODENT HOLES COMMA SHARP ROCKS AND STICKS)
+
+	;; HOLES CAN BE RODENT.
+
+		(and (hole_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RODENT_27 ?x2))
+
+	;; ROCKS CAN BE SHARP.
+
+		(and (rock_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHARP_27 ?x2))
+
+;; (GATHER WOOD ONLY AS PRESCRIBED AND PLACE IT NEAR THE FIRE RING OR STOVE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SET A BUCKET OF WATER NEARBY)
+
+	;; A BUCKET CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (BUCKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))

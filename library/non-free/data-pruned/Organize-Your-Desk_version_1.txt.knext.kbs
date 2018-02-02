@@ -1,0 +1,155 @@
+;; (PENCILSTART WITH A CLEAN SLATE)
+
+	;; A SLATE CAN BE CLEAN.
+
+		(and (SLATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (MOVE EVERYTHING OFF OF THE DESK AND PLACE IT ON THE FLOOR OR TABLE NEXT TO YOU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THROW OUT THOSE THINGS THAT ARE NOT NEEDED COMMA LIKE OLD PAPERS COMMA OR TORN SCRAPS OF PAPER COMMA OR EVEN AN OUTDATED PICTURE)
+
+	;; PAPERS CAN BE OLD.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; SCRAPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAPER.
+
+		(and (scrap_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAPER_27 ?x2))
+
+	;; SCRAPS CAN BE TORN.
+
+		(and (SCRAPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TORN_27 ?x2))
+
+	;; A PICTURE CAN BE OUTDATED.
+
+		(and (PICTURE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (outdat_27 ?e2 ?x1))
+
+;; (PLACE THESE IN A DRAWER THAT IS WITHIN AN EASY REACH -LRB- OR COMMA IN THE CASE OF PENS AND PENCILS COMMA IN A CUP -RRB-)
+
+	;; A THING CAN BE IN A DRAWER.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DRAWER_27 ?x2))
+
+	;; A REACH CAN BE EASY.
+
+		(and (REACH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+;; (YOUR DESK TOP SHOULD NOT HAVE MUCH ON IT)
+
+	;; A PERSON MAY HAVE A DESK TOP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1) (TOP_27 ?x1))
+
+;; (IF YOU HAVE TOO MUCH STUFF ON YOUR DESK COMMA IT WILL LOOK CLUTTERED)
+
+	;; A THING-REFERRED-TO MAY LOOK CLUTTERED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (CLUTTERED_27 ?x1))
+
+	;; A PERSON MAY HAVE STUFF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STUFF_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+;; (YOU SHOULD KEEP ON YOUR DESK A IN/OUT TRAY COMMA CLOCK COMMA LAMP AND A CALENDAR)
+
+	;; A PERSON MAY KEEP A TRAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (A_27 ?x1) (TRAY_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+	;; A TRAY CAN BE IN/OUT.
+
+		(and (tray_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IN_2FOUT_27 ?x2))
+
+;; (YOU SHOULD NOT HAVE YOUR COMPUTER ON YOUR DESK -LRB- UNLESS IT IS A DESKTOP COMPUTER -RRB-)
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A COMPUTER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (computer_27 ?x2))
+
+	;; A COMPUTER CAN BE DESKTOP.
+
+		(and (computer_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESKTOP_27 ?x2))
+
+;; (IF YOU HAVE MORE THAN THOSE ITEMS ON YOUR DESK COMMA IT CAN LOOK CLUTTERED)
+
+	;; A THING-REFERRED-TO MAY LOOK CLUTTERED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (CLUTTERED_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+;; (PUT FREQUENTLY USED ITEMS IN A EASY TO REACH AREAS)
+
+	;; ITEMS CAN BE IN AREAS.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AREAS_27 ?x2))
+
+;; (LIKE A SHELF OR A DRAWER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE YOU DO NOT JUST THROW THE ITEMS ON A SHELF OR A DRAWER)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (IT WILL BE HARDER TO FIND YOUR ITEMS AND BE MESSY)
+
+	;; A THING-REFERRED-TO CAN BE HARDER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARDER_27 ?x2))
+
+	;; A PERSON MAY HAVE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+;; (ITEMS THAT ARE NOT USED FREQUENTLY DO NOT NEED TO BE IN AN EASY TO REACH AREA)
+
+	;; ITEMS MAY DO.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))

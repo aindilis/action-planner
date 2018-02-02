@@ -1,0 +1,99 @@
+Andrew Dougherty
+I'm trying to develop a free software artificial intelligence program to solve all common place problems that affect people in their lives - to develop an intelligent aid that looks over your shoulder and points out opportunities, missteps, fortifications, etc, and then helps you to capitalize, avoid, implement, etc said items.
+Friday at 10:35pm · Like · 
+Kate Dee, Haydée Franco and 2 others like this.
+Andrew Dougherty It seems to me silly that they have programs that can calculate good moves for chess, for go, and for other games, but for a person's LIFE there is nothing. Why is that? If you feel such a tool would be useful or would like to brainstorm, please drop me a line. I don't say much on facebook, and what I do say I tend to repeat, so sorry.
+Friday at 10:35pm · Like
+Andrew Dougherty ‎"But of course, that's what it's for, after all!"
+replied the inventor good-humoredly. He shook out on his
+palm a bunch of the granules, which glittered
+metallically, being made of rare metals, and continued:
+"Obviously you can't count on help in the physical
+sense, but we are not speaking of that, I think. Helpful
+hints, suggestions, cogent comments, sensible
+recommendations, good observations, admonitions,
+warnings, words of caution, as well as comfort, solace,
+encouragement, maxims to restore your faith in yourself,
+and deep insights that will enable you to cope with any
+situation, no matter how serious or even grave - this is
+only a small part of the repertoire of my
+electrofriends. They are wholly devoted, staunch, true,
+ever vigilant, because they never sleep; they are also
+unbelievably durable, esthetic, and you can see for 
+yourself how very handy! So then, you are taking only
+one?" -- Automatthew's Friend by Stanislaw Lem
+Friday at 10:44pm · Like
+James Fox Sounds interesting. Might a start be to convert some of the AI you've developed to this point into smart phone "apps?" If security issues could be dealt with, apps communicating with "knowledge bases" and other phones might work. Would definitely need David S's stuff involved to keep it all safe!
+Friday at 11:09pm · Like
+Andrew Dougherty Haha, yes that is how it has to work. Actually I have an unfinished smart phone app that communicates with the AI. Security is a concern, David S. would be expert. That application is for a temporal planning goaling system (http://frdcsa.org/~andrewdo/writings/icaps-2011-paper.pdf) However, temporal planning seems to need to occur after or as a reasoning module of a baseline system that can reason with the strengths of the goals themselves in choosing what to prioritize. Currently they are all input by the user but as more and more goals are added they compete with each other - not all can be completed - the selection of due-dates becomes arbitrary. I have a goal severity striation but that also suffers. Some analysis that takes into account the relative value of the goals would be good. I think you've helped me to make progress - that would be the first task - a valuation system that determines for each goals it's relative value. Okay, we need rule bases, checks on goals for features that indicate a particular rule is activated. So what are the rules in the rule-bases? How to codify the knowledge in a semweb format?
+
+Here are some samples to that end:
+
+(has-health-insurance ?P ?I)
+(has-bank-account ?P ?B)
+
+;; probably want to quantify the size of the support network 
+(has-support-network ?P)
+
+(has-automobile ?P ?A)
+
+(has-shelter ?P ?S)
+
+(exists (?C)
+(and
+(has-computer ?P ?C)
+(can-run-get-help ?C)
+))
+
+(exists (?C)
+(and
+(has-cell-phone ?P ?C)
+(can-run-get-help ?C)
+))
+
+(has-medical-condition ?P ?C)
+
+(has-job ?P ?J)
+
+(implies
+(not (exists (?C) (has-job ?P ?C)))
+(ought
+(or
+(has-foodstamps ?P)
+(has-unemployment-benefits ?P))))
+
+(has-debt ?P ?D)
+
+(has-student-loan-debt ?P ?D)
+(debt-amount ?D 1000.10)
+
+Here are two systems that remind me somewhat of what I am looking for:
+
+http://taeb-blog.sartak.org/
+
+http://www.gnu.org/software/gnugo/gnugo_4.html#SEC39
+Friday at 11:31pm · Like
+James Fox You're way ahead of me Andy. If I were doing this alone I would be forced to do it bottom up. My first app would probably be something like "retrieve the temperature for a given zip code!"
+Friday at 11:44pm · Like
+Andrew Dougherty Can I call you tomorrow to discuss your goals wrt mobile apps and ideas for this planning system? Oddly I don't have your phone number, could you email me at andrewdo at frdcsa.org ?
+Friday at 11:51pm · Like
+James Fox OK. Just sent you an email...
+Yesterday at 12:00am · Like
+Andrew Dougherty Thanks! TTYS
+Yesterday at 12:03am · Like
+Jan Wedekind I guess you mean something like time tracking (also see Sebastian Marshall's videos).
+http://www.wedesoft.demon.co.uk/timetracking.html
+Yesterday at 8:00am · Like
+Andrew Dougherty That looks handy!
+Yesterday at 3:25pm · Like
+Justin Coslor People all over the world have extensive blocks of free time and that is an untapped resource. There are Debian packages to be made.
+16 hours ago · Like
+Eugene Dougherty I'm assessing the current state of the art in a research field that would be a component of your "shoulder angel" software. Its generating 3-D geometry from 2-D images. The enhanced reality is super-imposing a 3-D model over the world that you see, and embedding additional information in the objects that you see. Seems this would be a key component of your application, as in order to make recommendations it would have to know what you're looking at. Let me know if you want any of those pointers/links/papers etc.
+6 hours ago · Like
+Andrew Dougherty That seems pretty cool, marking up images with computer vision recognition results and 3d information. The approach I'm envisioning is based on natural language story understanding - converting to a semantic model of the abstract facts of a persons life and then generating a candidate list of possible goals and evaluating these goals and plans for how well they deal with threats (such as not having health insurance), resources (financial, inventory, social, etc) and so on. I'm thinking that once the story understanding resources are in place and a good semantic model of the life-critical infrastructure is developed, that the value of the application will be in crowd-sourcing the candidate move generators and positional evaluation functions, so that a variety of solutions to common problems that may not have been obvious are brought to bear on a specific problem or situation. I'm planning on developing a library of stories in the semantic representation and doing regression tests to make sure that the evaluation and move generators generate good moves in each situation. Sorry for dweebing but I wanted to illustrate the idea and the difference. Computer Vision seems to me a very challenging field. I would absolutely love it if you could refer me to open source software for 3d geometry reconstruction or other cutting edge Computer Vision solutions, so that I could possibly roll Debian packages for them and then have system access to those capabilities. That has been the approach that I've taken with natural language processing software.
+5 hours ago · Like
+Justin Coslor Youtube videos on how to make debian packages.
+http://www.google.com/search?q=How+to+make+Debian+Packages&tbo=p&tbs=vid%3A1&source=vgc
+
+Google webpages on how to make debian packages.
+http://www.google.com/search?q=How+to+make+Debian+Packages&um=1&ie=UTF-8&sa=N&hl=en&tab=vw

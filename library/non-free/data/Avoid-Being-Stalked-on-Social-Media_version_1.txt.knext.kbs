@@ -1,0 +1,277 @@
+;; (IN FACEBOOK COMMA CHECK YOUR SETTINGS)
+
+	;; A PERSON MAY HAVE SETTINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SETTINGS_27 ?x1))
+
+;; (IF YOUR PRIMARY NETWORK IS THE CITY YOU LIVE IN COMMA AND PEOPLE IN YOUR NETWORK CAN SEE YOUR PROFILE COMMA THAT MEANS EVERYONE IN YOUR
+ CITY HAS ACCESS TO YOUR PROFILE)
+
+	;; A PERSON MAY LIVE_IN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_5FIN_27 ?x1))
+
+	;; A NETWORK CAN BE A CITY.
+
+		(and (NETWORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CITY_27 ?x2))
+
+	;; A NETWORK CAN BE PRIMARY.
+
+		(and (NETWORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIMARY_27 ?x2))
+
+	;; PEOPLE MAY SEE A PROFILE.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (A_27 ?x1) (PROFILE_27 ?x1))
+
+	;; PEOPLE CAN BE IN A NETWORK.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (NETWORK_27 ?x2))
+
+	;; A PERSON MAY HAVE A NETWORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NETWORK_27 ?x1))
+
+	;; EVERYONE MAY HAVE ACCESS TO A PROFILE.
+
+		(and (EVERYONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ACCESS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PROFILE_27 ?x2))
+
+	;; EVERYONE CAN BE IN A CITY.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CITY_27 ?x2))
+
+	;; A PERSON MAY HAVE A CITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CITY_27 ?x1))
+
+	;; ACCESS CAN BE TO A PROFILE.
+
+		(and (access_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PROFILE_27 ?x2))
+
+	;; A PERSON MAY HAVE A PROFILE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROFILE_27 ?x1))
+
+;; (PROTECT YOUR TWITTER UPDATES SO THAT NO ONE CAN READ THEM UNLESS YOU APPROVE)
+
+	;; A PERSON MAY HAVE UPDATES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (UPDATES_27 ?x1))
+
+	;; A TWITTER[PERSON??] MAY HAVE UPDATES.
+
+		(and (TWITTER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (UPDATES_27 ?x1))
+
+	;; AN ONE MAY READ INDIVIDUAL -S.
+
+		(and (ONE_27 ?x1) (MAY_27 ?x1) (READ_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; A PERSON MAY APPROVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (APPROVE_27 ?x1))
+
+;; (MAKE ANY ONLINE PHOTO ALBUMS PRIVATE COMMA TOO COMMA ESPECIALLY IF YOU EMBED PICTURES FROM THOSE ALBUMS ONTO YOUR SOCIAL MEDIA PROFILES)
+
+	;; PHOTO ALBUMS CAN BE ONLINE.
+
+		(and (PHOTO_27 ?x1) (ALBUMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONLINE_27 ?x2))
+
+	;; A PERSON MAY EMB PICTURES FROM ALBUMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EMB_27 ?x1) (PICTURES_27 ?x1) (FROM_27 ?x1) (ALBUMS_27 ?x1))
+
+;; (UPLOAD SMALL PICTURES)
+
+	;; PICTURES CAN BE SMALL.
+
+		(and (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (THERE ARE PEOPLE OUT THERE WHO WILL DOWNLOAD PICTURES OF YOU ONTO THEIR COMPUTER AND PORE OVER THEM)
+
+	;; PICTURES CAN BE SHOW A PERSON.
+
+		(and (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A COMPUTER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+;; (EVEN IF YOUR PROFILES ARE PRIVATE COMMA PEOPLE CAN FIND THE ORIGINAL VERSION OF YOUR PROFILE PICTURE OR AVATAR -LRB- THE HIGH RESOLUTION
+ ONE -RRB- AND DOWNLOAD IT)
+
+	;; PEOPLE MAY FIND A VERSION OF A PICTURE.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (VERSION_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PICTURE_27 ?x2))
+
+	;; PROFILES CAN BE PRIVATE.
+
+		(and (profile_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIVATE_27 ?x2))
+
+	;; A PERSON MAY HAVE PROFILES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PROFILES_27 ?x1))
+
+	;; A PICTURE MAY HAVE A VERSION.
+
+		(and (PICTURE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VERSION_27 ?x1))
+
+	;; A VERSION CAN BE ORIGINAL.
+
+		(and (VERSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORIGINAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A PICTURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PICTURE_27 ?x1))
+
+	;; A PICTURE CAN BE PROFILE.
+
+		(and (PICTURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROFILE_27 ?x2))
+
+	;; A RESOLUTION CAN BE HIGH.
+
+		(and (resolution_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (SO WHEN YOU UPLOAD PICTURES COMMA MAKE THEM A LOW ENOUGH RESOLUTION THAT IF A CREEP DOES GET THEIR HANDS ON THEM COMMA THEY CA N T ZOOM
+ IN)
+
+	;; A PERSON MAY UPLOAD PICTURES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (UPLOAD_27 ?x1) (PICTURES_27 ?x1))
+
+	;; A RESOLUTION CAN BE LOW.
+
+		(and (RESOLUTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+	;; A RESOLUTION CAN BE ENOUGH.
+
+		(and (RESOLUTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; INDIVIDUAL -S MAY ZOOM_IN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ZOOM_5FIN_27 ?x1))
+
+	;; A CREEP MAY DO.
+
+		(and (CREEP_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE HANDS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HANDS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (AVOID TAGGING IN PHOTOS)
+
+	;; TAGGING CAN BE IN PHOTOS.
+
+		(and (tagging_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (PHOTOS_27 ?x2))
+
+	;; TAGGING CAN BE AVOID.
+
+		(and (tagging_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVOID_27 ?x2))
+
+;; (DO N T TAG OTHERS COMMA AND DO N T ALLOW OTHERS TO TAG YOU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONCE YOU LINK TO SOMEONE ELSE S PROFILE THROUGH TAGGING COMMA BIG PRIVACY HOLES OPEN UP)
+
+	;; PRIVACY HOLES MAY OPEN_UP.
+
+		(and (PRIVACY_27 ?x1) (HOLES_27 ?x1) (MAY_27 ?x1) (OPEN_5FUP_27 ?x1))
+
+	;; A PERSON MAY LINK TO A PROFILE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LINK_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PROFILE_27 ?x2))
+
+	;; SOMEONE MAY HAVE A PROFILE.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PROFILE_27 ?x1))
+
+	;; PRIVACY HOLES CAN BE BIG.
+
+		(and (PRIVACY_27 ?x1) (HOLES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (FOR EXAMPLE COMMA IF YOU ARE TAGGED IN YOUR AUNT S FACEBOOK ALBUM COMMA AND HER FACEBOOK PAGE IS PRIVATE COMMA PEOPLE CAN STILL ACCESS
+ THAT ALBUM IF THEY HAVE THE RIGHT LINK COMMA UNLESS YOUR AUNT WENT OUT OF HER WAY TO MAKE THE ALBUM ITSELF PRIVATE)
+
+	;; PEOPLE MAY ACCESS AN ALBUM.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (ACCESS_27 ?x1) (AN_27 ?x1) (ALBUM_27 ?x1))
+
+	;; A PERSON MAY BE TAG -ED IN AN ALBUM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAG_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (AN_27 ?x3) (ALBUM_27 ?x3))
+
+	;; AN AUNT MAY HAVE AN ALBUM.
+
+		(and (AUNT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ALBUM_27 ?x1))
+
+	;; A FACEBOOK[PERSON??] MAY HAVE AN ALBUM.
+
+		(and (FACEBOOK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ALBUM_27 ?x1))
+
+	;; A PAGE CAN BE PRIVATE.
+
+		(and (page_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIVATE_27 ?x2))
+
+	;; A FEMALE MAY HAVE A PAGE.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PAGE_27 ?x1))
+
+	;; A FACEBOOK[PERSON??] MAY HAVE A PAGE.
+
+		(and (FACEBOOK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (A_27 ?x1) (page_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A LINK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LINK_27 ?x1))
+
+	;; AN AUNT MAY GO_OUT OF A WAY.
+
+		(and (AUNT_27 ?x1) (MAY_27 ?x1) (GO_5FOUT_27 ?x1) (of_27 ?x1 ?x2) (way_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AUNT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AUNT_27 ?x1))
+
+	;; A FEMALE MAY HAVE A WAY.
+
+		(and (FEMALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+;; (THEY LL SEE ANY OTHER PICTURES OF YOU OR YOUR FAMILY OR YOUR FRIENDS COMMA AND THEY LL ALSO SEE THE COMMENTS YOU LEFT -LRB- AND THE
+ COMMENTS PEOPLE LEFT ABOUT YOU -RRB-)
+
+	;; PICTURES MAY SHOW A PERSON.
+
+		(and (PICTURES_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; A PERSON MAY LEAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1))

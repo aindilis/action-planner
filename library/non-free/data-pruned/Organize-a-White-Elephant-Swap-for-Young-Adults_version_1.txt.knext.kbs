@@ -1,0 +1,115 @@
+;; (PLACE SEQUNTIALLY NUMBERED PAPERS ONE PER PLAYER IN A CONTAINER HAVE EACH PLAYER DRAW ONE AND SIT IN A CIRCLE ON THE FLOOR)
+
+	;; A PLACE[PERSON??] MAY NUMBER.
+
+		(and (PLACE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (NUMBER_27 ?x1))
+
+	;; PLAYER CAN BE IN A CONTAINER.
+
+		(and (PLAYER_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CONTAINER_27 ?x2))
+
+	;; SOME_NUMBER_OF PLAYER MAY DRAW SOME NUMBER_OR_PORTION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLAYER_27 ?x1) (MAY_27 ?x1) (DRAW_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A CIRCLE CAN BE ON A FLOOR.
+
+		(and (CIRCLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (FLOOR_27 ?x2))
+
+;; (USE A CANDY CANE AS MOVEMENT TOKEN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PRINT MESSAGES THAT GIVE AN ACTION FOR PLAYER TO TAKE GIFT FROM SOMEONE CUT INTO STRIPS)
+
+	;; MESSAGES MAY CUT INTO STRIPS.
+
+		(and (MESSAGES_27 ?x1) (MAY_27 ?x1) (CUT_27 ?x1) (INTO_27 ?x1) (STRIPS_27 ?x1))
+
+	;; MESSAGES CAN BE PRINT.
+
+		(and (message_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRINT_27 ?x2))
+
+	;; AN ACTION CAN BE FOR PLAYER.
+
+		(and (ACTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PLAYER_27 ?x2))
+
+;; (BUY PLASTIC EGGS 3 FOR EACH PLAYER PLACE 1 MESSAGE STRIP IN EACH EGG)
+
+	;; EGGS CAN BE BUY.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUY_27 ?x2))
+
+	;; EGGS CAN BE PLASTIC.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE FOR SOME_NUMBER_OF MESSAGE STRIP.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (MESSAGE_27 ?x2) (STRIP_27 ?x2))
+
+	;; SOME_NUMBER_OF MESSAGE STRIP CAN BE IN SOME_NUMBER_OF EGG.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MESSAGE_27 ?x1) (STRIP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (EGG_27 ?x2))
+
+;; (PROVIDE 1 HAT FOR IMMUNITY FROM THEFT)
+
+	;; SOME_NUMBER_OF HAT CAN BE FOR IMMUNITY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (HAT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (IMMUNITY_27 ?x2))
+
+;; (PURCHASE A STUFFED MONKEY OR ANIMAL THAT MAKES SOUNDS AND USE AS INDIAN GIVER)
+
+	;; A MONKEY MAY SOUND.
+
+		(and (MONKEY_27 ?x1) (MAY_27 ?x1) (SOUND_27 ?x1))
+
+	;; A MONKEY CAN BE STUFFED.
+
+		(and (MONKEY_27 ?x1) (be_27 ?e1 ?x1 ?e2) (stuff_27 ?e2 ?x1))
+
+;; (PLACE CANDY CANE MOVEMENT TOKEN IN FRONT OF PLAYER 1)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PULL ONE EGG FROM BASKET OPEN IT AND FOLLOW THE MESSAGE INSIDE)
+
+	;; ONE EGG MAY OPEN A THING-REFERRED-TO.
+
+		(and (EGG_27 ?x1) (MAY_27 ?x1) (OPEN_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; ONE EGG CAN BE FROM BASKET.
+
+		(and (EGG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (BASKET_27 ?x2))
+
+	;; AN ONE EGG CAN BE PULL.
+
+		(and (EGG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PULL_27 ?x2))
+
+;; (PASS CANDY CANE TO PLAYER 2 AND SO ON)
+
+	;; A CANDY CANE CAN BE PASS.
+
+		(and (CANDY_27 ?x1) (CANE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (pass_27 ?x2))

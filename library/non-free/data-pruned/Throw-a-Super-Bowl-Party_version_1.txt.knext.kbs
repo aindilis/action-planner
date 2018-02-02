@@ -1,0 +1,695 @@
+;; (ANOTHER IDEA IS TO USE SMALLER TVS IN SPACES THAT MIGHT BE TO AWKWARD TO SEE THE BIG SCREEN TV FROM)
+
+	;; TVS CAN BE SMALLER.
+
+		(and (TVS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; A SCREEN TV CAN BE BIG.
+
+		(and (SCREEN_27 ?x1) (tv_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (THIS WILL ENSURE THAT WHEREVER GUESTS END UP SPILLING INTO COMMA THEY CAN ALWAYS KEEP AN EYE ON THE GAME AS IT PROGRESSES)
+
+	;; A THING MAY ENSURE A PROPOSITION.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ENSURE_27 ?x1) (A_27 ?x1) (proposition_27 ?x1))
+
+	;; INDIVIDUAL -S MAY KEEP AN EYE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (AN_27 ?x1) (EYE_27 ?x1))
+
+	;; GUESTS MAY END_UP SPILLING.
+
+		(and (GUESTS_27 ?x1) (MAY_27 ?x1) (END_5FUP_27 ?x1) (SPILLING_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY PROGRESS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (PROGRESS_27 ?x1))
+
+;; (CREATE A BUDGET FOR YOUR PARTY)
+
+	;; A BUDGET CAN BE FOR A PARTY.
+
+		(and (BUDGET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PARTY_27 ?x2))
+
+	;; A PERSON MAY HAVE A PARTY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PARTY_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (GET THE WHOLE HOUSEHOLD INVOLVED IN CLEANING UP TO MAKE LIGHT WORK OF IT)
+
+	;; WORK CAN BE LIGHT.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIGHT_27 ?x2))
+
+;; (IF IT S REALLY AWFUL COMMA AT LEAST CLEAN THE TV ROOM COMMA KITCHEN COMMA AND BATHROOM COMMA AND SHUT THE DOORS TO ALL OTHER ROOMS)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL AWFUL.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (AWFUL_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (IF YOU RE LIVING IN AN AREA UNDER SNOW COMMA ENSURE THAT THERE IS PLENTY OF SPACE FOR BOOTS COMMA JACKETS COMMA AND COLD WEATHER ACCESSORIES TO BE PLACED NEAR THE FRONT DOOR)
+
+	;; AN AREA CAN BE UNDER SNOW.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNDER_27 ?x2) (SNOW_27 ?x2))
+
+	;; SPACE CAN BE FOR BOOTS.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (boot_27 ?x2))
+
+	;; WEATHER ACCESSORIES CAN BE COLD.
+
+		(and (WEATHER_27 ?x1) (ACCESSORIES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2))
+
+;; (CLEAR ICE AND SNOW FROM THE PATH TO YOUR HOUSE IF RELEVANT)
+
+	;; ICE AND SNOW CAN BE FROM A PATH TO A HOUSE.
+
+		(and (ICE_27 ?x1) (and_27 ?x2 ?x1 ?x3) (SNOW_27 ?x3) (be_27 ?e1 ?x1 ?x4) (FROM_27 ?x4) (A_27 ?x4) (PATH_27 ?x4) (to_27 ?x4 ?x5) (A_27 ?x5) (HOUSE_27 ?x5))
+
+	;; A CLEAR[PERSON??] MAY HAVE AN ICE AND SNOW.
+
+		(and (CLEAR_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ICE_27 ?x1) (and_27 ?x2 ?x1 ?x3) (SNOW_27 ?x3))
+
+	;; A PATH CAN BE TO A HOUSE.
+
+		(and (PATH_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (GUESTS WHO SLIP OVER WO N T BE IN A MERRY MOOD)
+
+	;; GUESTS CAN BE IN A MOOD.
+
+		(and (guest_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MOOD_27 ?x2))
+
+	;; A MOOD CAN BE MERRY.
+
+		(and (MOOD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MERRY_27 ?x2))
+
+;; (SET UP THE HOUSE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LAY OUT ANY TABLES YOU LL NEED COMMA BRING ALONG CHAIRS COMMA AND BRING OUT THE BARBECUE SET)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL NEED.V)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (NEED_2EV_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (COVER THE TABLES WITH TABLECLOTHS -LRB- CHOOSE ONES THAT ARE EASY TO REMOVE STAINS FROM -RRB- AND TUCK SEVERAL GARBAGE BAGS SOMEWHERE CLOSE TO THE TABLE FOR EASY ACCESS)
+
+	;; A TABLE CAN BE FOR ACCESS.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ACCESS_27 ?x2))
+
+	;; ACCESS CAN BE EASY.
+
+		(and (access_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+;; (WHEN CREATING DRINK AND FOOD SPACE COMMA BEAR IN MIND WHERE PEOPLE WILL STAND SO THAT YOU WO N T HAVE THEM BLOCKING THE TV VIEW)
+
+	;; PEOPLE MAY STAND.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (STAND_27 ?x1))
+
+	;; INDIVIDUAL -S MAY BLOCK A TV VIEW.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BLOCK_27 ?x1) (A_27 ?x1) (TV_27 ?x1) (VIEW_27 ?x1))
+
+;; (DECORATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT UP DECORATIONS OR TEAM NAMES AND COLORS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOUR HOMETOWN OR OTHER FAVORITE TEAM IS PLAYING COMMA GO ALL OUT AND DECORATE THE FRONT DOOR ENTRANCE WAY COMMA THE MAILBOX COMMA AND EVEN CONSIDER DRESSING UP IN YOUR TEAM COLORS)
+
+	;; A HOMETOWN MAY PLAY.
+
+		(and (HOMETOWN_27 ?x1) (MAY_27 ?x1) (PLAY_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOMETOWN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOMETOWN_27 ?x1))
+
+	;; A TEAM CAN BE FAVORITE.
+
+		(and (TEAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+	;; A PERSON MAY HAVE TEAM COLORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TEAM_27 ?x1) (COLORS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; (DECORATE EACH SIDE IN ONE TEAM S COLORS)
+
+	;; SOME_NUMBER_OF SIDE CAN BE IN COLORS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SIDE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (color_27 ?x2))
+
+	;; A TEAM MAY HAVE COLORS.
+
+		(and (TEAM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COLORS_27 ?x1))
+
+;; (IF YOU KNOW YOU RE GOING TO HAVE NON-FAN GUESTS COMMA CONSIDER SETTING ASIDE A QUIET AREA SOMEWHERE ELSE IN THE HOUSE WHERE THEY CAN CONGREGATE AND CHAT COMMA REST COMMA OR WATCH SOMETHING THEY D PREFER TO SEE)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; GUESTS CAN BE NON-FAN.
+
+		(and (guest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NON-FAN_27 ?x2))
+
+	;; AN AREA CAN BE QUIET.
+
+		(and (area_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUIET_27 ?x2))
+
+	;; INDIVIDUAL -S MAY CONGREGATE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (CONGREGATE_27 ?x1))
+
+;; (THIS MIGHT ALSO BE HELPFUL FOR VERY YOUNG CHILDREN AND THOSE CARING FOR THEM)
+
+	;; A THING CAN BE HELPFUL FOR CHILDREN.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2) (for_27 ?e1 ?x3) (CHILDREN_27 ?x3))
+
+	;; CHILDREN CAN BE YOUNG.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+	;; A CARING CAN BE FOR INDIVIDUAL -S.
+
+		(and (caring_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; (GO SHOPPING FOR FOOD AND BEVERAGES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU WISH COMMA YOU CAN ASK PEOPLE TO PITCH IN EITHER WITH MONEY OR TO BRING FOOD TO THE HOUSE)
+
+	;; A PERSON MAY WISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WISH_27 ?x1))
+
+	;; SOME_NUMBER_OF THING CAN BE WITH MONEY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (MONEY_27 ?x2))
+
+;; (FOOD CAN INCLUDE CHIPS AND DIP COMMA PICNIC OR BARBECUE ITEMS LIKE HAMBURGERS AND HOT DOGS COMMA OR ORDER FOOD IN ADVANCE COMMA LIKE PIZZA OR SUPER-LONG DELI SANDWICHES)
+
+	;; A FOOD[PERSON??] MAY INCLUDE CHIPS.
+
+		(and (food_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (INCLUDE_27 ?x1) (CHIPS_27 ?x1))
+
+	;; DOGS CAN BE HOT.
+
+		(and (dog_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; ORDER FOOD CAN BE IN ADVANCE.
+
+		(and (order_27 ?x1) (food_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ADVANCE_27 ?x2))
+
+;; (MAKE FOOD FOOTBALL THEMED WHERE POSSIBLE)
+
+	;; A FOOD FOOTBALL CAN BE MAKE.
+
+		(and (FOOD_27 ?x1) (FOOTBALL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2))
+
+;; (USE FOOTBALL DECORATIONS WITH THE FOOD)
+
+	;; USE FOOTBALL MAY DECORATION WITH FOOD.
+
+		(and (USE_27 ?x1) (FOOTBALL_27 ?x1) (MAY_27 ?x1) (DECORATION_27 ?x1) (WITH_27 ?x1) (FOOD_27 ?x1))
+
+;; (PLAN FOR SOME HOMEMADE BAKED OR DESSERT TREATS WITH FOOTBALL DECORATIONS)
+
+	;; A PLAN[PERSON??] MAY TREAT WITH FOOTBALL DECORATIONS.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (TREAT_27 ?x1) (WITH_27 ?x1) (FOOTBALL_27 ?x1) (DECORATIONS_27 ?x1))
+
+	;; A PLAN[PERSON??] CAN BE FOR SOME_NUMBER_OF BAKED.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (BAKED_27 ?x1))
+
+	;; A BAKED CAN BE HOMEMADE.
+
+		(and (BAKED_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOMEMADE_27 ?x2))
+
+;; (BEVERAGES INCLUDE SODA AND JUICE FOR KIDS AND NON-DRINKERS COMMA AND VARIOUS KINDS OF BEER FOR ADULTS)
+
+	;; BEVERAGES MAY INCLUDE SODA.
+
+		(and (beverage_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (SODA_27 ?x1))
+
+	;; SODA CAN BE FOR KIDS.
+
+		(and (SODA_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (KIDS_27 ?x2))
+
+	;; BEER CAN BE FOR ADULTS.
+
+		(and (beer_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (adult_27 ?x2))
+
+;; (USUALLY STORES WILL HAVE SUPER BOWL SPECIALS COMMA FOR EXAMPLE AFOR 1 DEAL OR DISCOUNTS OR SALES FOR THE WEEK COMMA SO TAKE ADVANTAGE OF THESE)
+
+	;; SPECIALS MAY TAKE ADVANTAGE OF A THING.
+
+		(and (special_27 ?x1) (take_27 ?e1 ?x1 ?x2) (ADVANTAGE_27 ?x2) (of_27 ?e1 ?x3) (thing_27 ?x3))
+
+	;; A SUPER_BOWL[PERSON??] MAY HAVE SPECIALS.
+
+		(and (SUPER_5FBOWL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SPECIALS_27 ?x1))
+
+	;; DISCOUNTS CAN BE FOR A WEEK.
+
+		(and (discount_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (WEEK_27 ?x2))
+
+	;; A THING MAY HAVE ADVANTAGE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ADVANTAGE_27 ?x1))
+
+;; (DO N T FORGET TO ACCOUNT FOR ANY SPECIAL DIETARY NEEDS OR PREFERENCES -LRB- FOR EXAMPLE COMMA SUGAR-FREE TREATS FOR DIABETICS AND MEAT-FREE CHOICES FOR VEGETARIANS -RRB-)
+
+	;; TREATS CAN BE FOR DIABETICS.
+
+		(and (treat_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (DIABETICS_27 ?x2))
+
+	;; TREATS CAN BE SUGAR-FREE.
+
+		(and (treat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUGAR-FREE_27 ?x2))
+
+	;; CHOICES CAN BE FOR VEGETARIANS.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (VEGETARIANS_27 ?x2))
+
+	;; CHOICES CAN BE MEAT-FREE.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEAT-FREE_27 ?x2))
+
+;; (ORGANIZE THE FOOD LAYOUT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE BEST ADVICE IS DO N T FUSS OVERLY MUCH)
+
+	;; ADVICE MAY DO.
+
+		(and (ADVICE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; ADVICE CAN BE BEST.
+
+		(and (ADVICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))
+
+;; (THIS IS A MATES AND FANS PARTY COMMA AND THE IDEA IS THAT EVERYONE IS FREE TO HELP THEMSELVES AND ENJOY THE INFORMALITY OF THE OCCASION)
+
+	;; A THING CAN BE MATES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MATES_27 ?x2))
+
+	;; AN IDEA CAN BE A PROPOSITION.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; AN OCCASION MAY HAVE AN INFORMALITY.
+
+		(and (OCCASION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMALITY_27 ?x1))

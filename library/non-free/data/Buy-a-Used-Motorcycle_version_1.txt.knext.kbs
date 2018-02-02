@@ -1,0 +1,865 @@
+;; (A 1000 CC SUPERBIKE MIGHT MAKE YOUR HEART SKIP A BEAT COMMA BUT THERE IS A VERY GOOD CHANCE THAT YOU WILL HATE IT ON THE COMMUTE COMMA AND THAT YOUR PILLION WILL BE UNCOMFORTABLE ON IT)
+
+	;; A HEART MAY SKIP A BEAT.
+
+		(and (HEART_27 ?x1) (MAY_27 ?x1) (SKIP_27 ?x1) (A_27 ?x1) (BEAT_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEART.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEART_27 ?x1))
+
+	;; A CHANCE CAN BE GOOD.
+
+		(and (CHANCE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY HATE A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HATE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PILLION CAN BE UNCOMFORTABLE ON A THING-REFERRED-TO.
+
+		(and (PILLION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNCOMFORTABLE_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+	;; A PERSON MAY HAVE A PILLION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PILLION_27 ?x1))
+
+;; (TRACK-DAYS ON A CRUISER MAY ALSO BE DISAPPOINTING)
+
+	;; TRACK-DAYS CAN BE DISAPPOINTING.
+
+		(and (track-days_27 ?x1) (be_27 ?e1 ?x1 ?x2) (disappointing_27 ?x2))
+
+	;; TRACK-DAYS CAN BE ON A CRUISER.
+
+		(and (track-days_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (CRUISER_27 ?x2))
+
+;; (BUY FROM A REPUTABLE DEALERSHIP IF POSSIBLE)
+
+	;; A DEALERSHIP CAN BE REPUTABLE.
+
+		(and (DEALERSHIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPUTABLE_27 ?x2))
+
+;; (PRIVATE SALES MAY BE LOWER PRICED COMMA BUT YOU WILL NOT HAVE ANY COMEBACK IF THE BIKE BREAKS DOWN OR BLOWS UP)
+
+	;; SALES MAY BE PRICE -ED.
+
+		(and (sale_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRICE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; SALES CAN BE PRIVATE.
+
+		(and (sale_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIVATE_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMEBACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMEBACK_27 ?x1))
+
+	;; A BIKE MAY BREAK.
+
+		(and (BIKE_27 ?x1) (MAY_27 ?x1) (BREAK_27 ?x1))
+
+;; (MOST DEALERSHIPS OFFER SOME TYPE OF WARRANTY COMMA OR AT THE VERY LEAST COMMA WILL WORK WITH YOU SHOULD ANYTHING GO WRONG IN THE FIRST FEW MONTHS OF BUYING)
+
+	;; DEALERSHIPS MAY OFFER.
+
+		(and (DEALERSHIPS_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1))
+
+	;; SOME_NUMBER_OF TYPE OF WARRANTY MAY WORK WITH A PERSON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TYPE_27 ?x1) (of_27 ?x1 ?x2) (WARRANTY_27 ?x2) (MAY_27 ?x2) (WORK_27 ?x2) (WITH_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; ANYTHING MAY GO WRONG.
+
+		(and (ANYTHING_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (WRONG_27 ?x1))
+
+;; (IF YOU MUST BUY FROM A PRIVATE PARTY COMMA INSIST THAT YOU BE ABLE TO TAKE THE BIKE TO A REPUTABLE DEALERSHIP TO BE ASSESSED AND INSPECTED)
+
+	;; A PERSON MAY BUY FROM A PARTY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (PARTY_27 ?x1))
+
+	;; A PARTY CAN BE PRIVATE.
+
+		(and (party_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIVATE_27 ?x2))
+
+	;; A DEALERSHIP CAN BE REPUTABLE.
+
+		(and (DEALERSHIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPUTABLE_27 ?x2))
+
+;; (A FEW DOLLARS SPENT NOW COULD SAVE YOU HEAPS OF MONEY AND TROUBLE IN THE FUTURE)
+
+	;; DOLLARS MAY SAVE A PERSON HEAPS OF MONEY.
+
+		(and (dollar_27 ?x1) (MAY_27 ?x1) (SAVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (HEAPS_27 ?x1) (of_27 ?x1 ?x2) (MONEY_27 ?x2))
+
+	;; DOLLARS MAY BE SPEND -ED.
+
+		(and (dollar_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; HEAPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH MONEY.
+
+		(and (heap_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MONEY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [10]>
+
+;; (CHECK THE BIKE OUT FOR YOURSELF)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:Q DET PERSON*.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (Q_27 ?x2) (DET_27 ?x2) (PERSON_2A_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE SOME SIMPLE HAND TOOLS WITH YOU COMMA INCLUDING A FLASHLIGHT AND COMMA IF POSSIBLE COMMA A MULTIMETER)
+
+	;; SOME_NUMBER_OF HAND TOOLS CAN BE WITH A PERSON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (HAND_27 ?x1) (TOOLS_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; HAND TOOLS CAN BE SIMPLE.
+
+		(and (HAND_27 ?x1) (TOOLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (CHECK THE CONDITION OF THE DRIVE CHAIN AND SPROCKET)
+
+	;; A DRIVE CHAIN MAY HAVE A CONDITION.
+
+		(and (DRIVE_27 ?x1) (CHAIN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONDITION_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [11]>
+
+;; (TRY TO WIGGLE THE CHAIN SIDE TO SIDE ON THE SPROCKET)
+
+	;; SIDE CAN BE ON A SPROCKET.
+
+		(and (side_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SPROCKET_27 ?x2))
+
+;; (THERE SHOULD N T BE MUCH MOVEMENT ON A GOOD SET)
+
+	;; MOVEMENT CAN BE ON A SET.
+
+		(and (MOVEMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (SET_27 ?x2))
+
+	;; A SET CAN BE GOOD.
+
+		(and (SET_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (HAVE SOMEONE SIT DOWN ON THE MOTORCYCLE AND CHECK TO MAKE SURE THE CHAIN IS SOMEWHAT SNUG COMMA WITH VERY LITTLE MOVEMENT UP AND DOWN)
+
+	;; SOMEONE MAY SIT_DOWN ON A MOTORCYCLE.
+
+		(and (SOMEONE_27 ?x1) (MAY_27 ?x1) (SIT_5FDOWN_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (MOTORCYCLE_27 ?x1))
+
+	;; A CHAIN CAN BE SNUG.
+
+		(and (CHAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SNUG_27 ?x2))
+
+;; (CHAINS WEAR OUT OVER TIME COMMA BUT SPROCKETS SHOULD LAST MUCH LONGER)
+
+	;; CHAINS MAY WEAR_OUT.
+
+		(and (CHAINS_27 ?x1) (MAY_27 ?x1) (WEAR_5FOUT_27 ?x1))
+
+	;; SPROCKETS MAY LAST.
+
+		(and (SPROCKETS_27 ?x1) (MAY_27 ?x1) (LAST_27 ?x1))
+
+;; (A SEVERELY WORN SPROCKET INDICATES EITHER AN OLD SPROCKET OR A POOR MAINTENANCE SCHEDULE)
+
+	;; A SPROCKET CAN BE WORN.
+
+		(and (SPROCKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORN_27 ?x2))
+
+	;; A SPROCKET CAN BE OLD.
+
+		(and (SPROCKET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; A MAINTENANCE SCHEDULE CAN BE POOR.
+
+		(and (MAINTENANCE_27 ?x1) (SCHEDULE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POOR_27 ?x2))
+
+;; (THE TIRES SHOULD HAVE GOOD TREAD ALL THE WAY ACROSS THE SURFACE WITH NO SIGNS OF UNEVEN WEAR OR DAMAGE)
+
+	;; A SURFACE CAN BE WITH SIGNS OF WEAR.
+
+		(and (SURFACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SIGNS_27 ?x2) (of_27 ?x2 ?x3) (WEAR_27 ?x3))
+
+	;; SIGNS CAN BE CONSTITUTED_OF_OR_FILLED_WITH WEAR.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WEAR_27 ?x2))
+
+	;; A WEAR CAN BE UNEVEN.
+
+		(and (WEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNEVEN_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [12]>
+
+;; (OTHERS WHO VE RACED THEIR MOTORCYCLE ON THE TRACK COMMA WILL HAVE TIRES THAT SHOW MORE WEAR AT THE EDGE OF THE TREAD)
+
+	;; OTHERS MAY HAVE TIRES.
+
+		(and (other_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TIRES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A MOTORCYCLE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOTORCYCLE_27 ?x1))
+
+	;; A TREAD MAY HAVE AN EDGE.
+
+		(and (TREAD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EDGE_27 ?x1))
+
+;; (SIT ON THE BIKE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LOOK AT THE CONDITION OF THE BRAKE AND CLUTCH LEVERS COMMA BAR-END WEIGHTS COMMA STRAIGHTNESS OF THE BARS AND INSTRUMENT CLUSTER)
+
+	;; A BRAKE MAY HAVE A CONDITION.
+
+		(and (BRAKE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONDITION_27 ?x1))
+
+	;; WEIGHTS CAN BE BAR-END.
+
+		(and (weight_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAR-END_27 ?x2))
+
+	;; BARS MAY HAVE STRAIGHTNESS.
+
+		(and (BARS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STRAIGHTNESS_27 ?x1))
+
+;; (THESE COULD BE SIGNS OF AN ACCIDENT OR DROP)
+
+	;; A THING CAN BE SIGNS OF AN ACCIDENT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNS_27 ?x2) (of_27 ?x2 ?x3) (ACCIDENT_27 ?x3))
+
+;; (OTHERS COULD BE SCRATCHED ENGINE CASES COMMA FOOT PEGS OR EXHAUST PIPES)
+
+	;; FOOT MAY PEG.
+
+		(and (FOOT_27 ?x1) (MAY_27 ?x1) (PEG_27 ?x1))
+
+	;; OTHERS CAN BE ENGINE CASES.
+
+		(and (other_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENGINE_27 ?x2) (CASES_27 ?x2))
+
+	;; ENGINE CASES CAN BE SCRATCHED.
+
+		(and (ENGINE_27 ?x1) (CASES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SCRATCHED_27 ?x2))
+
+;; (HOLD THE HANDBRAKE AND BOUNCE THE FRONT SUSPENSION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT SHOULD FEEL EVEN AND FIRM)
+
+	;; A THING-REFERRED-TO MAY FEEL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+;; (GET OFF THE BIKE AND CHECK THE FORK TUBES FOR SIGNS OF RUST COMMA PITTING AND OIL)
+
+	;; SIGNS CAN BE CONSTITUTED_OF_OR_FILLED_WITH RUST.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RUST_27 ?x2))
+
+;; (THESE ARE SIGNS OF WORN FORK SEALS COMMA OR POSSIBLE FUTURE EXPENSIVE PROBLEMS)
+
+	;; A THING CAN BE SIGNS OF FORK SEALS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNS_27 ?x2) (of_27 ?x2 ?x3) (FORK_27 ?x3) (SEALS_27 ?x3))
+
+	;; SIGNS CAN BE CONSTITUTED_OF_OR_FILLED_WITH FORK SEALS.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FORK_27 ?x2) (SEALS_27 ?x2))
+
+	;; FORK SEALS CAN BE WORN.
+
+		(and (fork_27 ?x1) (seal_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORN_27 ?x2))
+
+	;; PROBLEMS CAN BE EXPENSIVE.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+;; (WHILE CHECKING THE FORKS COMMA RUN A FINGERNAIL ACROSS THE BRAKE ROTORS COMMA FEELING FOR UNEVEN WEAR OR GROOVING)
+
+	;; A FINGERNAIL CAN BE ACROSS ROTORS.
+
+		(and (FINGERNAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACROSS_27 ?x2) (ROTORS_27 ?x2))
+
+	;; ROTORS CAN BE BRAKE.
+
+		(and (rotor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRAKE_27 ?x2))
+
+	;; A WEAR CAN BE UNEVEN.
+
+		(and (WEAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNEVEN_27 ?x2))
+
+;; (LOOK INTO THE BRAKE CALIPER TO SEE HOW MUCH OF THE PADS ARE LEFT)
+
+	;; A CALIPER CAN BE BRAKE.
+
+		(and (CALIPER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRAKE_27 ?x2))
+
+;; (IF THE BIKE HAS SPOKES COMMA CHECK THE OVERALL CONDITION OF THE INDIVIDUAL SPOKES)
+
+	;; A BIKE MAY HAVE SPOKES.
+
+		(and (BIKE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SPOKES_27 ?x1))
+
+	;; SPOKES MAY HAVE A CONDITION.
+
+		(and (SPOKES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (condition_27 ?x1))
+
+;; (IF THE BIKE HAS SPOKES COMMA CHECK THE OVERALL CONDITION OF THE INDIVIDUAL SPOKES)
+
+	;; A BIKE MAY HAVE SPOKES.
+
+		(and (BIKE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SPOKES_27 ?x1))
+
+	;; SPOKES MAY HAVE A CONDITION.
+
+		(and (SPOKES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (condition_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [14]>
+
+;; (CHECK THE LIGHTS AND INDICATORS AT THIS STAGE ALSO)
+
+	;; LIGHTS CAN BE AT A STAGE.
+
+		(and (light_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (stage_27 ?x2))
+
+;; (PULL A FUSE OR TWO OUT AND CHECK FOR CORROSION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO THIS WITH THE ENGINE OFF OF COURSE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ALSO COMMA CHECK THE BATTERY TERMINALS AND OVERALL APPEARANCE OF THE BATTERY)
+
+	;; A BATTERY MAY HAVE BATTERY TERMINALS.
+
+		(and (BATTERY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BATTERY_27 ?x1) (TERMINALS_27 ?x1))
+
+;; (REPLACE THE SEAT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (OPEN THE FUEL TANK AND CHECK FOR OBVIOUS SIGNS OF RUST OR CORROSION USING YOUR FLASHLIGHT -LRB- NOT A MATCH OR LIGHTER -RRB-)
+
+	;; SIGNS OF RUST MAY USE A FLASHLIGHT.
+
+		(and (sign_27 ?x1) (of_27 ?x1 ?x2) (RUST_27 ?x2) (MAY_27 ?x2) (USE_27 ?x2) (A_27 ?x2) (FLASHLIGHT_27 ?x2))
+
+	;; SIGNS CAN BE CONSTITUTED_OF_OR_FILLED_WITH RUST.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RUST_27 ?x2))
+
+	;; SIGNS CAN BE OBVIOUS.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBVIOUS_27 ?x2))
+
+	;; A PERSON MAY HAVE A FLASHLIGHT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FLASHLIGHT_27 ?x1))
+
+;; (INSPECT UNDER FAIRINGS -LRB- IF THE MOTORCYCLE HAS FAIRINGS -RRB-)
+
+	;; INSPECT CAN BE UNDER FAIRINGS.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1) (under_27 ?x1 ?x2) (FAIRINGS_27 ?x2))
+
+	;; A MOTORCYCLE MAY FAIRING.
+
+		(and (MOTORCYCLE_27 ?x1) (MAY_27 ?x1) (FAIRING_27 ?x1))
+
+;; (REMOVE THE SAME FAIRING THE OWNER REMOVES TO CHANGE SPARK PLUGS AND DO ROUTINE MAINTENANCE)
+
+	;; MAINTENANCE CAN BE ROUTINE.
+
+		(and (MAINTENANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROUTINE_27 ?x2))
+
+;; (CHECK THE FRAME FOR FATIGUE AT THE WELD POINTS)
+
+	;; A FRAME CAN BE FOR FATIGUE.
+
+		(and (FRAME_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (FATIGUE_27 ?x2))
+
+	;; POINTS CAN BE WELD.
+
+		(and (point_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WELD_27 ?x2))
+
+;; (INSPECT THE OVERALL CONDITION OF THE ENGINE BLOCK COMMA PLUGS COMMA AND RADIATOR)
+
+	;; AN ENGINE BLOCK MAY HAVE A CONDITION.
+
+		(and (ENGINE_27 ?x1) (BLOCK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONDITION_27 ?x1))
+
+;; (CHECK FOR LEAKS AROUND THE OIL FILTER AND OIL PAN BOLT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (LOOK AT THE BRAKE FLUID LEVEL)
+
+	;; A FLUID LEVEL CAN BE BRAKE.
+
+		(and (FLUID_27 ?x1) (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRAKE_27 ?x2))
+
+;; (THIS IS USUALLY ON TOP OF HANDLEBARS COMMA IN AN ENCLOSURE WITH A CLEAR WINDOW)
+
+	;; A THING CAN BE ON_TOP_OF HANDLEBARS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_5FTOP_5FOF_27 ?x2) (HANDLEBARS_27 ?x2))
+
+	;; AN ENCLOSURE CAN BE WITH A WINDOW.
+
+		(and (ENCLOSURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (WINDOW_27 ?x2))
+
+	;; A WINDOW CAN BE CLEAR.
+
+		(and (WINDOW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+;; (WITH THE ENGINE RUNNING COMMA PULL HARD ON THE FRONT BRAKES LEVEL AND RELEASE WHILE WATCHING THE FLUID LEVEL)
+
+	;; AN ENGINE MAY RUN.
+
+		(and (ENGINE_27 ?x1) (MAY_27 ?x1) (RUN_27 ?x1))
+
+	;; A LEVEL CAN BE FLUID.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLUID_27 ?x2))
+
+;; (IT SHOULD FALL AND RISE)
+
+	;; A THING-REFERRED-TO MAY FALL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FALL_27 ?x1))
+
+;; (IT SHOULD RISE QUICKLY ONCE THE BRAKE IS RELEASED)
+
+	;; A THING-REFERRED-TO MAY RISE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (RISE_27 ?x1))
+
+	;; A BRAKE MAY BE RELEASE -ED.
+
+		(and (BRAKE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELEASE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (TAKE A TEST DRIVE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (PICK A NICE DAY WITH DRY ROADS AND GOOD VISIBILITY IF POSSIBLE)
+
+	;; A DAY CAN BE WITH ROADS.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (ROADS_27 ?x2))
+
+	;; A DAY CAN BE NICE.
+
+		(and (DAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+	;; ROADS CAN BE DRY.
+
+		(and (road_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRY_27 ?x2))
+
+	;; A VISIBILITY CAN BE GOOD.
+
+		(and (VISIBILITY_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (BRING YOUR BIKE LICENSE AND PROPER GEAR IF YOU HAVE IT)
+
+	;; A PERSON MAY HAVE A BIKE LICENSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIKE_27 ?x1) (LICENSE_27 ?x1))
+
+	;; A PERSON MAY HAVE A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (MOST DEALERS WILL HAVE LOANER GEAR AVAILABLE FOR YOU TO USE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST DEALERS WILL HAVE LOANER GEAR AVAILABLE FOR YOU TO USE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST DEALERS WILL HAVE LOANER GEAR AVAILABLE FOR YOU TO USE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST DEALERS WILL HAVE LOANER GEAR AVAILABLE FOR YOU TO USE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MOST DEALERS WILL HAVE LOANER GEAR AVAILABLE FOR YOU TO USE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [15]>
+
+;; (THAT IS A SIGN OF WARPED DISKS)
+
+	;; A THING CAN BE A SIGN OF DISKS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SIGN_27 ?x2) (of_27 ?x2 ?x3) (DISKS_27 ?x3))
+
+	;; A SIGN CAN BE CONSTITUTED_OF_OR_FILLED_WITH DISKS.
+
+		(and (SIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DISKS_27 ?x2))
+
+	;; DISKS CAN BE WARPED.
+
+		(and (disk_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARPED_27 ?x2))
+
+;; (THEY SHOULD ENGAGE SMOOTHLY AND EVENLY AND NOT GRAB VIOLENTLY OR FEEL SPONGY)
+
+	;; INDIVIDUAL -S MAY ENGAGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ENGAGE_27 ?x1))
+
+;; (ACCELERATE THROUGH THE GEARS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [16]>
+
+;; (WHILE ON A STRAIGHT COMMA CLEAN PATCH OF ROAD COMMA WEAVE LEFT AND RIGHT SLIGHTLY TO SEE HOW THE BIKE RESPONDS)
+
+	;; WEAVE MAY LEAVE.
+
+		(and (WEAVE_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1))
+
+	;; A BIKE MAY RESPOND.
+
+		(and (BIKE_27 ?x1) (MAY_27 ?x1) (RESPOND_27 ?x1))
+
+;; (IT SHOULD FEEL STABLE AND EASY TO CORRECT)
+
+	;; A THING-REFERRED-TO MAY FEEL STABLE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (STABLE_27 ?x1))
+
+;; (LISTEN FOR ANY UNUSUAL ENGINE NOISES COMMA SUSPENSION CREAKING OR RATTLING AND ANY UNDUE VIBRATIONS)
+
+	;; ENGINE NOISES CAN BE UNUSUAL.
+
+		(and (ENGINE_27 ?x1) (NOISES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNUSUAL_27 ?x2))
+
+	;; VIBRATIONS CAN BE UNDUE.
+
+		(and (vibration_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNDUE_27 ?x2))
+
+;; (ASK QUESTIONS ABOUT ANYTHING YOU HAVE DOUBTS ABOUT)
+
+	;; A PERSON MAY DOUBT_ABOUT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DOUBT_5FABOUT_27 ?x1))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))
+
+;; (INSPECT THE BIKE AGAIN AFTER THE RIDE COMMA LOOKING FOR ANY LEAKS OR DRIPS)
+
+	;; INSPECT MAY LOOK FOR LEAKS.
+
+		(and (INSPECT_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (LEAKS_27 ?x2))
+
+	;; INSPECT CAN BE AFTER A RIDE.
+
+		(and (INSPECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFTER_27 ?x2) (A_27 ?x2) (RIDE_27 ?x2))

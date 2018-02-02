@@ -1,0 +1,328 @@
+<html>
+<head>
+<title>Clips: Modular Design</title>
+<link rel="stylesheet" type="text/css" href="../../stdtheme.css" />
+</head>
+<body bgcolor="#FBFFFF">
+<h2>11 Efficiency in Rule-Based Languages</h2>
+
+<h3>Pattern Network</h3>
+determine which patterns matched by facts
+
+<pre>
+(<font color="#8000FF">defrule</font> example-2
+    (x)
+    (y)
+    (z)
+    =>)
+
+(<font color="#8000FF">defrule</font> example-3
+    (x)
+    (y)
+    =>)
+</pre>
+<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/ch11/xyz.clp">Demo</a>
+<p>
+For Jess, the view command can be used to examine the rete network:
+<pre>
+    (load-package jess.ViewFunctions)
+    (view)
+</pre>
+<img src="http://www.csie.ntu.edu.tw/~sylee/courses/clips/NET.gif" align="top">
+<PRE>
+red:    Node1 nodes
+green:  Node2 nodes
+yellow: NodeNot2 nodes
+blue:   Defrule nodes
+</PRE>
+
+<h4>Reference</h4>
+<UL>
+<LI><a href="http://www.csie.ntu.edu.tw/~sylee/courses/jess/docs/rete.html">10. The Rete Algorithm</a> in Jess Manual.
+</UL>
+<h3>Join Network</h3>
+compare variable bindings across patterns
+<pre>
+(<font color="#8000FF">defrule</font> Sharing-1
+    (match ?x red)
+    (data ~green ?x)
+    (data ?x ?x)
+    (other ?z)
+  =>)
+
+(<font color="#8000FF">defrule</font> Sharing-2
+    (match ?y red)
+    (data ~green ?y)
+    (data ?y ?y)
+    (other ?y)
+  =>)
+
+(<font color="#8000FF">watch</font> activations)
+</pre>
+<p>
+<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/ch11/rules.clp">Demo</a>
+</p>
+
+<h3>Importance of Pattern Order</h3>
+
+<pre>
+(<font color="#8000FF">deffacts</font> information
+    (match a c e g)
+    (item a)
+    (item b)
+    (item c)
+    (item d)
+    (item e)
+    (item f)
+    (item g))
+
+(<font color="#8000FF">defrule</font> match-1
+    (match ?x ?y ?z ?w)
+    (item ?x)
+    (item ?y)
+    (item ?z)
+    (item ?w)
+  =>
+    (<font color="#8000FF">assert</font> (found-match ?x ?y ?z ?w)))
+
+(<font color="#8000FF">defrule</font> match-2
+    (item ?x)
+    (item ?y)
+    (item ?z)
+    (item ?w)
+    (match ?x ?y ?z ?w)
+  =>
+    (<font color="#8000FF">assert</font> (found-match ?x ?y ?z ?w)))
+
+</pre>
+match-1 has 5 partial matches, while match-2 has 2801 partial matches.
+<p><B>Demo</B>:
+<ol>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/ch11/match1.clp">match-1</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/ch11/match2.clp">match-2</a>
+</ol>
+<h4>Matches Command</h4>
+<pre>
+(<font color="#8000FF">defrule</font> match-3
+    (find-match ?x ?y)
+    (item ?x)
+    (item ?y)
+  =>
+    (<font color="#8000FF">assert</font> (found-match ?x ?y)))
+
+(<font color="#8000FF">assert</font>
+    (find-match a b)
+    (find-match c d)
+    (find-match e f)
+    (item a)
+    (item b)
+    (item c)
+    (item f) )
+
+(<font color="#8000FF">matches</font> match-3)
+</pre>
+<h4>Watching the Changing State</h4>
+
+<pre>
+(<font color="#8000FF">defrule</font> match-1-pm-1
+        "Partial matches for pattern 1"
+    (match ?x ?y ?z ?w)
+  =>)
+
+(<font color="#8000FF">defrule</font> match-1-pm-1-to-2
+        "Partial matches for patterns 1 to 2"
+    (match ?x ?y ?z ?w)
+    (item ?x)
+  =>)
+
+(<font color="#8000FF">defrule</font> match-1-pm-1-to-3
+        "Partial matches for patterns 1 to 3"
+    (match ?x ?y ?z ?w)
+    (item ?x)
+    (item ?y)
+  =>)
+
+(<font color="#8000FF">defrule</font> match-1-pm-1-to-4
+        "Partial matches for patterns 1 to 4"
+    (match ?x ?y ?z ?w)
+    (item ?x)
+    (item ?y)
+    (item ?z)
+  =>)
+
+(<font color="#8000FF">defrule</font> match-1
+        "Activations for the match rule"
+    (match ?x ?y ?z ?w)
+    (item ?x)
+    (item ?y)
+    (item ?z)
+    (item ?w)
+  =>
+    (<font color="#8000FF">assert</font> (found-match ?x ?y ?z ?w)))
+
+(<font color="#8000FF">watch</font> activations)
+(<font color="#8000FF">watch</font> <font color="#8000FF">facts</font>)
+</pre>
+<p><B>Demo</B>:
+<ol>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/JessConsole?src=clips/examples/ch11/match1s.clp">match-1</a>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/JessConsole?src=clips/examples/ch11/match2s.clp">match-2</a>
+</ol>
+<h3>Ordering Patterns for Efficiency</h3>
+<ul>
+<li>Most Specific Patterns Go First
+<li>Patterns Matching Volatile Facts Go Last
+<li>Patterns Matching the Fewest Facts Go First
+</ul>
+<h3>Multifield Variables and Efficiency</h3>
+
+<pre>
+(<font color="#8000FF">defrule</font> produce-twoplets   <font color="#0040a0">; useful but too expensive</font>
+    (list (items $?b $?m $?e))
+    =>
+    (<font color="#8000FF">assert</font> (front ?b))
+    (<font color="#8000FF">assert</font> (middle ?m))
+    (<font color="#8000FF">assert</font> (back ?e)) )
+
+(<font color="#8000FF">assert</font> (list (items a 4 z 2)))
+</pre>
+
+<h3>Test CE and Efficiency</h3>
+
+<pre>
+(<font color="#8000FF">defrule</font> three-distinct-points
+    ?point1 <- (point (x ?x1)(y ?y1))
+    ?point2 <- (point (x ?x2)(y ?y2))
+    (<font color="#8000FF">test</font> (<font color="#8000FF">neq</font> ?point1 ?point2))
+    ?point3 <- (point (x ?x3)(y ?y3))
+    (<font color="#8000FF">test</font> (<font color="#8000FF">and</font> (<font color="#8000FF">neq</font> ?point2 ?point3))
+               (<font color="#8000FF">neq</font> ?point1 ?point3)))
+    =>
+    (<font color="#8000FF">assert</font> (distinct-points (x1 ?x1)(y1 ?y1)
+                             (x2 ?x2)(y2 ?y2)
+                             (x3 ?x3)(y3 ?y3))))
+
+(<font color="#8000FF">defrule</font> points-share-common-x-or-y-value
+    (point (x ?x1)(y ?y1))
+    (point (x ?x2)(y ?y2&:(<font color="#8000FF">or</font> (= ?x1 ?x2)
+                              (= ?y1 ?y2))))
+    =>
+    (<font color="#8000FF">assert</font> (common-x-or-y-value (x1 ?x1)(y1 ?y1)
+                                 (x2 ?x2)(y2 ?y2))))
+</pre>
+
+<h3>Built-In Pattern-Matching Constraints</h3>
+<pre>
+
+(<font color="#8000FF">defrule</font> primary-color
+    (color ?x&red|green|blue)
+    =>
+    (<font color="#8000FF">assert</font> (primary-color ?x)))
+
+</pre>
+
+
+<h3>General Rules vs Specific Rules</h3>
+
+<pre>
+(<font color="#8000FF">deftemplate</font> direction
+    (<font color="#8000FF">slot</font> which-way)
+    (<font color="#8000FF">slot</font> delta-x)
+    (<font color="#8000FF">slot</font> delta-y))
+
+(<font color="#8000FF">deffacts</font> direction-information
+    (direction  (which-way north)
+                (delta-x 0) (delta-y 1))
+    (direction  (which-way south)
+                (delta-x 0) (delta-y -1))
+    (direction  (which-way east)
+                (delta-x 1) (delta-y 0))
+    (direction  (which-way west)
+                (delta-x -1) (delta-y 0)))
+
+(<font color="#8000FF">defrule</font> move-direction
+    (move ?dir)
+    (direction  (which-way ?dir)
+                (delta-x ?dx) (delta-y ?dy))
+    ?old-location <- (location (x ?old-x) (y ?old-y))
+    =>
+    (<font color="#8000FF">modify</font> ?old-location (x (+ ?old-x ?dx))
+                          (y (+ ?old-y ?dy))))
+
+</pre>
+
+<h3>Simple Rules vs Complex Rules</h3>
+
+A simple rule to find the largest number:
+<pre>
+(<font color="#8000FF">defrule</font> largest-number
+    (number ?number1)
+    (<font color="#8000FF">not</font> (number ?number2&:(> ?number2 ?number1)))
+    =>
+    (<font color="#8000FF">printout</font> t "Largest number is " ?number1 <font color="#8000FF">crlf</font>))
+</pre>
+<p>
+Let N be the number of facts with the number relation.  The time to get the
+largest number is propotional to the square of N.
+</p>
+
+<h4>Example</h4>
+<ol>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/largest-1.clp">largest-1.clp</a>
+   (<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/largest-1.clp">Demo</a>)
+</ol>
+
+<p>
+A set of rules to reduce the number of comparisons by keeping track of the
+largest number:
+</p>
+<pre>
+(<font color="#8000FF">defrule</font> try-number
+    (number ?n)
+    =>
+    (<font color="#8000FF">assert</font> (try-number ?n)))
+
+(<font color="#8000FF">defrule</font> largest-unknown
+    ?attempt <- (try-number ?n)
+    (<font color="#8000FF">not</font> (largest ?))
+    =>
+    (<font color="#8000FF">retract</font> ?attempt)
+    (<font color="#8000FF">assert</font> (largest ?n)))
+
+(<font color="#8000FF">defrule</font> largest-smaller
+    ?old-largest <- (largest ?n1)
+    ?attempt <- (try-number ?n2&:(> ?n2 ?n1))
+    =>
+    (<font color="#8000FF">retract</font> ?old-largest ?attempt)
+    (<font color="#8000FF">assert</font> (largest ?n2)))
+
+(<font color="#8000FF">defrule</font> largest-bigger
+    (largest ?n1)
+    ?attempt <- (try-number ?n2&:(<= ?n2 ?n1))
+    =>
+    (<font color="#8000FF">retract</font> ?attempt))
+
+(<font color="#8000FF">defrule</font> print-largest
+    (<font color="#8000FF">declare</font> (<font color="#8000FF">salience</font> -1))
+    (largest ?n)
+    =>
+    (<font color="#8000FF">printout</font> t "Largest number is " ?n <font color="#8000FF">crlf</font>))
+</pre>
+
+<p>
+The time to get the
+largest number using this set of rules is propotional to N.
+</p>
+
+<h4>Complete examples</h4>
+<ol>
+<li><a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/examples/largest-2.clp">largest-2.clp</a>
+   (<a href="http://www.csie.ntu.edu.tw/~sylee/courses/clips/servlets/Jess?source=/sylee/courses/clips/examples/largest-2.clp">Demo</a>)
+</ol>
+
+<p>Previous <a href="module.htm">Modular Design and Execution Control</a>
+&nbsp;&nbsp;Up <A href="toc.htm">TOC</A>
+&nbsp;&nbsp;Next <a href="procedural.htm">Procedural Programming</a>
+</p>
+
+</body></html>

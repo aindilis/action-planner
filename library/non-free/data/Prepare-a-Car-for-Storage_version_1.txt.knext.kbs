@@ -1,0 +1,251 @@
+;; (COVERWASH AND WAX EXTERIOR OF YOUR CAR)
+
+	;; A CAR MAY HAVE COVERWASH.
+
+		(and (CAR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COVERWASH_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+;; (IF YOU DO N T CLEAN AND PROTECT THE PAINT COMMA ANY DIRT OR CONTAMINANTS LEFT ON THE CAR WILL CORRODE THE PAINT COMMA AND TURN INTO RUST)
+
+	;; DIRT MAY CORRODE A PAINT.
+
+		(and (DIRT_27 ?x1) (MAY_27 ?x1) (CORRODE_27 ?x1) (A_27 ?x1) (PAINT_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; DIRT MAY BE LEAVE -ED ON A CAR.
+
+		(and (DIRT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LEAVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (on_27 ?e1 ?x3) (car_27 ?x3))
+
+;; (CLEAN AND VACUUM INTERIOR)
+
+	;; A CLEAN[PERSON??] MAY INTERIO.
+
+		(and (CLEAN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (INTERIO_27 ?x1))
+
+;; (AGAIN COMMA DIRT AND DEBRIS CAN CAUSE DAMAGE IF LEFT TO SIT FOR AN EXTENDED PERIOD OF TIME)
+
+	;; DIRT MAY CAUSE DAMAGE.
+
+		(and (DIRT_27 ?x1) (MAY_27 ?x1) (CAUSE_27 ?x1) (DAMAGE_27 ?x1))
+
+	;; A PERIOD CAN BE EXTENDED.
+
+		(and (period_27 ?x1) (be_27 ?e1 ?x1 ?e2) (extend_27 ?e2 ?x1))
+
+;; (TOP OFF FLUIDS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A FULL FLUID RESERVOIR WILL LEAVE NO SPACE FOR CONDENSATION TO OCCUR)
+
+	;; A FLUID RESERVOIR CAN BE FULL.
+
+		(and (FLUID_27 ?x1) (RESERVOIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; A SPACE CAN BE FOR CONDENSATION.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CONDENSATION_27 ?x2))
+
+;; (CHANGE OIL AND FILTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (OLD OIL WILL BECOME ACIDIC AND EAT AWAY AT THE INSIDE OF YOUR ENGINE)
+
+	;; OIL CAN BE ACIDIC.
+
+		(and (OIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACIDIC_27 ?x2))
+
+	;; OIL CAN BE OLD.
+
+		(and (OIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+	;; AN ENGINE MAY HAVE AN INSIDE.
+
+		(and (ENGINE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSIDE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ENGINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ENGINE_27 ?x1))
+
+;; (HOWEVER COMMA FRESH OIL WILL TAKE MUCH LONGER TO BREAK DOWN)
+
+	;; OIL MAY TAKE.
+
+		(and (OIL_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+	;; OIL CAN BE FRESH.
+
+		(and (OIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+;; (SO COMMA YOUR ENGINE SEALS SHOULD REMAIN IN GOOD CONDITION THROUGHOUT THE STORAGE)
+
+	;; ENGINE SEALS MAY REMAIN IN CONDITION.
+
+		(and (ENGINE_27 ?x1) (SEALS_27 ?x1) (MAY_27 ?x1) (REMAIN_27 ?x1) (in_27 ?x1 ?x2) (CONDITION_27 ?x2))
+
+	;; A PERSON MAY HAVE ENGINE SEALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ENGINE_27 ?x1) (SEALS_27 ?x1))
+
+	;; A CONDITION CAN BE GOOD.
+
+		(and (condition_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (GREASE STEERING AND SUSPENSION COMPONENTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A FULL GREASE SERVICE WILL KEEP THE SEALS COMMA AND RUBBER BUSHINGS IN YOUR SUSPENSION FROM DRYING OUT WHILE THE CAR S IN STORAGE)
+
+	;; A GREASE SERVICE MAY KEEP SEALS.
+
+		(and (GREASE_27 ?x1) (SERVICE_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (SEALS_27 ?x1))
+
+	;; A GREASE SERVICE CAN BE FULL.
+
+		(and (GREASE_27 ?x1) (SERVICE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; BUSHINGS CAN BE IN A SUSPENSION.
+
+		(and (bushing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (SUSPENSION_27 ?x2))
+
+	;; A PERSON MAY HAVE A SUSPENSION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUSPENSION_27 ?x1))
+
+;; (DISCONNECT BATTERY -LRB- FOR OLDER VEHICLES -RRB-)
+
+	;; A BATTERY CAN BE DISCONNECT.
+
+		(and (BATTERY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISCONNECT_27 ?x2))
+
+	;; VEHICLES CAN BE OLDER.
+
+		(and (vehicle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLDER_27 ?x2))
+
+;; (IF YOUR BATTERY IS LEFT CONNECTED COMMA ITS CHARGE WILL COMPLETELY DEPLETE COMMA CAUSING ONE OR MORE OF THE INNER CELLS TO GO BAD)
+
+	;; A CHARGE MAY DEPLETE.
+
+		(and (CHARGE_27 ?x1) (MAY_27 ?x1) (DEPLETE_27 ?x1))
+
+	;; A PERSON MAY HAVE A BATTERY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BATTERY_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A CHARGE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHARGE_27 ?x1))
+
+	;; CELLS CAN BE INNER.
+
+		(and (cell_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INNER_27 ?x2))
+
+;; (PLACE BATTERY ON A TRICKLE CHARGER -LRB- NEWER VEHICLES THAT REQUIRE A CONSTANT SOURCE OF POWER -RRB-)
+
+	;; BATTERY CAN BE ON A TRICKLE CHARGER.
+
+		(and (BATTERY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (TRICKLE_27 ?x2) (CHARGER_27 ?x2))
+
+	;; VEHICLES CAN BE NEWER.
+
+		(and (vehicle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEWER_27 ?x2))
+
+	;; A SOURCE CAN BE CONSTITUTED_OF_OR_FILLED_WITH POWER.
+
+		(and (SOURCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (POWER_27 ?x2))
+
+;; (MOST NEWER VEHICLES ARE EQUIPPED WITH ADVANCED COMPUTER SYSTEMS COMMA WHICH REQUIRE CONSTANT POWER)
+
+	;; VEHICLES CAN BE EQUIPPED WITH COMPUTER SYSTEMS.
+
+		(and (vehicle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EQUIPPED_27 ?x2) (WITH_27 ?x2) (COMPUTER_27 ?x2) (SYSTEMS_27 ?x2))
+
+	;; VEHICLES CAN BE NEWER.
+
+		(and (vehicle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEWER_27 ?x2))
+
+	;; COMPUTER SYSTEMS CAN BE ADVANCED.
+
+		(and (COMPUTER_27 ?x1) (SYSTEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVANCED_27 ?x2))
+
+;; (OTHERWISE COMMA THEY LL HAVE TO BE COMPLETELY REPROGRAMMED)
+
+	;; 
+
+	;; ((:I (:Q DET (:F PLUR INDIVIDUAL*.N)) (:F NIL (:P HAVE.V NIL))))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (DET_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (INDIVIDUAL_2A_2EN_27 ?x2) (F_27 ?x3) (NIL_27 ?x3) (P_27 ?x4) (HAVE_2EV_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TOP OFF FUEL TANK AND ADD FUEL STABILIZER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [20]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A FULL TANK MEANS THAT THERE S LESS ROOM FOR CONDENSATION COMMA AND A STABILIZER WILL KEEP THE GAS FROM BREAKING DOWN AND EVAPORATING)
+
+	;; A TANK MAY MEAN A PROPOSITION.
+
+		(and (TANK_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A TANK CAN BE FULL.
+
+		(and (TANK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2))
+
+	;; ROOM CAN BE FOR CONDENSATION.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CONDENSATION_27 ?x2))

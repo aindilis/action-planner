@@ -1,0 +1,346 @@
+;; (FOSTER CHILD S CONSISTENCY)
+
+	;; A FOSTER[PERSON??] MAY HAVE A CHILD.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (child_27 ?x1))
+
+;; (HAVE A SCHEDULE FOR HOMEWORK COMMA PLAYTIME COMMA MEALS COMMA BATH COMMA BEDTIME AND ENTERTAINMENT)
+
+	;; A SCHEDULE CAN BE FOR HOMEWORK.
+
+		(and (SCHEDULE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (HOMEWORK_27 ?x2))
+
+;; (KEEP TO THE SCHEDULE SO YOUR KIDS KNOW WHAT TO EXPECT AND BE READY ON TIME)
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+;; (WITH A CONSISTENT NIGHTTIME SCHEDULE COMMA IT WILL BE EASIER TO HAVE A CONSISTENT MORNING SCHEDULE)
+
+	;; A THING-REFERRED-TO CAN BE EASIER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+	;; A NIGHTTIME SCHEDULE CAN BE CONSISTENT.
+
+		(and (NIGHTTIME_27 ?x1) (SCHEDULE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSISTENT_27 ?x2))
+
+	;; A SCHEDULE CAN BE CONSISTENT.
+
+		(and (SCHEDULE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSISTENT_27 ?x2))
+
+;; (BATHE THE CHILD AT NIGHT BEFORE SCHOOL COMMA AND RIGHT BEFORE BEDTIME)
+
+	;; A CHILD CAN BE AT NIGHT.
+
+		(and (child_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_27 ?x2) (NIGHT_27 ?x2))
+
+;; (HAVING THEM BATHE BETWEEN DINNER AND BEDTIME PROMOTES A SLEEPY FEELING FOR THEM TOO)
+
+	;; INDIVIDUAL -S MAY BATHE BETWEEN DINNER.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BATHE_27 ?x1) (BETWEEN_27 ?x1) (DINNER_27 ?x1))
+
+	;; A FEELING CAN BE FOR INDIVIDUAL -S.
+
+		(and (FEELING_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; A FEELING CAN BE SLEEPY.
+
+		(and (FEELING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLEEPY_27 ?x2))
+
+;; (IF SCHOOL STARTS AROUND 8AM COMMA A BEDTIME AT 8PM OR SHORTLY THEREAFTER ALSO PROMOTE A GOOD NIGHT S REST)
+
+	;; A BEDTIME MAY PROMOTE A REST.
+
+		(and (BEDTIME_27 ?x1) (MAY_27 ?x1) (PROMOTE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+	;; SCHOOL MAY START AROUND 8AM.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (START_27 ?x1) (AROUND_27 ?x1) (kbs2_kif_quote_38AM_27 ?x1))
+
+	;; A NIGHT MAY HAVE A REST.
+
+		(and (NIGHT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+	;; A NIGHT CAN BE GOOD.
+
+		(and (NIGHT_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (THIS IS IMPORTANT BECAUSE YOU RE GOING TO WANT TO WAKE THEM AROUND 6AM)
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (-LRB- IF YOUR CHILD GOES TO BED AND CONSTANTLY WAKES YOU BEFORE 5AM COMMA ON THEIR OWN COMMA AND WITHOUT BEING AWAKEN BY OTHERS COMMA THEN TRY BUMPING THEIR BEDTIME BACK 1/2 HOUR TO ONE HOUR -RRB-)
+
+	;; A CHILD MAY GO TO BED.
+
+		(and (CHILD_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?e1) (bed_27 ?e1))
+
+	;; A PERSON MAY HAVE A CHILD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (child_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A BEDTIME.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BEDTIME_27 ?x1))
+
+;; (FINISH YOUR PARENTAL DUTIES)
+
+	;; A PERSON MAY HAVE DUTIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DUTIES_27 ?x1))
+
+	;; DUTIES CAN BE PARENTAL.
+
+		(and (duty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PARENTAL_27 ?x2))
+
+;; (THIS IS ONE OF THE MOST IMPORTANT STEPS COMMA IF NOT THE MOST IMPORTANT)
+
+	;; 
+
+	;; ((:I (:Q THE THING-REFERRED-TO.N) (:A (:Q SOME NUMBER-OR-PORTION.N) (:P OF.P NIL))) NIL)
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (THING-REFERRED-TO_2EN_27 ?x1) (Q_27 ?x2) (SOME_27 ?x2) (NUMBER-OR-PORTION_2EN_27 ?x2) (P_27 ?x3) (OF_2EP_27 ?x3) (NIL_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO YOUR BEST TO COMPLETE YOUR PARENTAL DUTIES LIKE  MAKE DINNER)
+
+	;; A PERSON MAY HAVE DUTIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DUTIES_27 ?x1))
+
+	;; DUTIES CAN BE PARENTAL.
+
+		(and (duty_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PARENTAL_27 ?x2))
+
+;; (MAKE SURE THEY GET THE DAY S HOMEWORK DONE -LRB- OR MORE -RRB-)
+
+	;; INDIVIDUAL -S MAY GET A HOMEWORK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (HOMEWORK_27 ?x1))
+
+	;; A HOMEWORK MAY BE DO -ED.
+
+		(and (HOMEWORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A DAY MAY HAVE A HOMEWORK.
+
+		(and (DAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOMEWORK_27 ?x1))
+
+;; (URGE GOOD HYGIENE)
+
+	;; A HYGIENE CAN BE GOOD.
+
+		(and (HYGIENE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (GET THE KIDS SET FOR THE NEXT DAY)
+
+	;; KIDS MAY BE SET -ED FOR A DAY.
+
+		(and (KIDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SET_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?e1 ?x3) (DAY_27 ?x3))
+
+;; (FINISH ANY PERTINENT PERSONAL BUISNESS COMMA YOUR CHORES COMMA AND WHATEVER ELSE YOU NEED TO GET DONE FOR THE DAY)
+
+	;; BUISNESS CAN BE PERTINENT.
+
+		(and (buisness_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERTINENT_27 ?x2))
+
+	;; BUISNESS CAN BE PERSONAL.
+
+		(and (buisness_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+	;; A PERSON MAY HAVE CHORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [19]>
+
+;; (BEDTIME FOR MOM AND DAD)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ABOVE ALL ELSE COMMA GIVE YOURSELF TIME TO REST WELL FOR THE DAY -LRB- S -RRB- TO COME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AVOID OVER INDULGENCE IN ALCOHOL IF YOU DRINK)
+
+	;; A PERSON MAY DRINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRINK_27 ?x1))
+
+;; (TRY NOT TO STAY UP PAST 11 AT THE LATEST BECAUSE IF YOU TAKE YOUR KIDS TO SCHOOL IN THE MORNING AT 8 YOU LL NEED ENERGY AND A CLEAR HEAD TO KEEP UP WITH YOUR KIDS IN THE MORNING)
+
+	;; A PERSON MAY TAKE KIDS TO SCHOOL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (KIDS_27 ?x1) (to_27 ?x1 ?x2) (SCHOOL_27 ?x2))
+
+	;; SCHOOL CAN BE IN A MORNING.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (morning_27 ?x2))
+
+	;; A MORNING CAN BE AT SOME NUMBER_OR_PORTION.
+
+		(and (morning_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+	;; A HEAD CAN BE CLEAR.
+
+		(and (HEAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+	;; KIDS CAN BE IN A MORNING.
+
+		(and (KIDS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (morning_27 ?x2))
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+;; (WAKE UP CALL)
+
+	;; A WAKE[PERSON??] MAY CALL.
+
+		(and (WAKE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CALL_27 ?x1))
+
+;; (TRY TO GET UP AT 6AM COMMA EVEN IF IT S VERY HARD)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL HARD.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (HARD_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU HAVE TROUBLE COMMA GO TO BED EARLIER AND WAKE UP EARLIER)
+
+	;; A PERSON MAY HAVE TROUBLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (trouble_27 ?x1))
+
+;; (IF YOU NEED TO COMMA SHOWER THE NIGHT BEFORE TO GET AN EXTRA JUMP COMMA BUT IF YOU STAY ON TOP OF IT AND WAKE UP AT 6 YOU SHOULD HAVE TIME TO SHOWER IN THE MORNING IF YOU D LIKE)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A JUMP CAN BE EXTRA.
+
+		(and (JUMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY STAY ON_TOP_OF A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1) (ON_5FTOP_5FOF_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (GO OUT OF YOUR ROOM AND WAKE UP YOUR KID -LRB- S -RRB-)
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE A KID.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KID_27 ?x1))
+
+;; (ONCE THEY RE AWAKE HAVE THEM EAT BREAKFAST)
+
+	;; INDIVIDUAL -S MAY EAT BREAKFAST.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1) (BREAKFAST_27 ?x1))
+
+;; (CEREAL AND MILK IS EASY COMMA BUT THERE ARE OTHER QUICK ALTERNATIVES)
+
+	;; CEREAL CAN BE EASY.
+
+		(and (CEREAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; ALTERNATIVES CAN BE QUICK.
+
+		(and (alternative_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUICK_27 ?x2))
+
+;; (GET YOURSELF DRESSED)
+
+	;; A PERSON MAY BE DRESS -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (WHEN THE KIDS FINISH EATING COMMA HAVE THEM GET DRESSED)
+
+	;; KIDS MAY FINISH.
+
+		(and (KIDS_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+	;; INDIVIDUAL -S MAY GET.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+;; (HAVE THEM GET THEIR OWN THINGS TOGETHER FOR SCHOOL COMMA BUT STILL DOUBLE CHECK THEIR COMPLETION COMMA TO TEACH RESPONSIBILITY)
+
+	;; INDIVIDUAL -S MAY GET THINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (THINGS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE THINGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THINGS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A COMPLETION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPLETION_27 ?x1))
+
+;; (THIS IS THINGS LIKE GETTING THEIR SHOES ON COMMA BACKPACKS AND LUNCHES PACKED COMMA TEETH AND HAIR BRUSHED COMMA GET A JACKET COMMA ETC.)
+
+	;; A THING CAN BE THINGS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE SHOES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SHOES_27 ?x1))
+
+	;; BACKPACKS MAY PACK.
+
+		(and (BACKPACKS_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1))
+
+	;; TEETH MAY BRUSH.
+
+		(and (TEETH_27 ?x1) (MAY_27 ?x1) (BRUSH_27 ?x1))

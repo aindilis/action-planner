@@ -1,0 +1,322 @@
+;; (DON T WAIT UNTIL THE LAST MINUTE TO PREPARE YOUR TAX RETURNS)
+
+	;; A MALE MAY WAIT.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (WAIT_27 ?x1))
+
+	;; A PERSON MAY HAVE TAX RETURNS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TAX_27 ?x1) (RETURNS_27 ?x1))
+
+;; (PROCRASTINATE COULD BE A KILLER)
+
+	;; A PROCRASTINATE[PERSON??] CAN BE A KILLER.
+
+		(and (PROCRASTINATE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (KILLER_27 ?x1))
+
+;; (IF YOU WAIT COMMA YOU MAY GET IN A RUSH AND MAKE SOME MISTAKES YOU WOULDN T NORMALLY MAKE)
+
+	;; A PERSON MAY GET IN A RUSH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (RUSH_27 ?x2))
+
+	;; A PERSON MAY WAIT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WAIT_27 ?x1))
+
+;; (THIS ALSO AVOIDS APPLYING FOR AN EXTENSION)
+
+	;; A THING MAY AVOID.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (AVOID_27 ?x1))
+
+;; (IF YOU THINK YOUR RETURN IS GOING TO BE COMPLICATED COMMA GET HELP ALONG THE WAY)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A PERSON MAY HAVE A RETURN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RETURN_27 ?x1))
+
+;; (USE WWW.IRS.GOV TO DOWNLOAD TAX FORMS COMMA INSTRUCTIONS COMMA TAX LAW INFORMATION AND ANSWERS TO FREQUENTLY ASKED QUESTIONS)
+
+	;; A USE_WWW.IRS.GOV[PERSON??] MAY ASK QUESTIONS.
+
+		(and (USE_5FWWW_2EIRS_2EGOV_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ASK_27 ?x1) (QUESTIONS_27 ?x1))
+
+	;; TAX FORMS CAN BE DOWNLOAD.
+
+		(and (tax_27 ?x1) (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOWNLOAD_27 ?x2))
+
+;; (YOU CAN ALSO USE THE IRS WITHHOLDING CALCULATOR TO ENSURE YOU DON T HAVE TOO MUCH OR TOO LITTLE INCOME TAX WITHHELD FROM YOUR PAY)
+
+	;; A PERSON MAY DON HAVE BE WITHHELD -ED FROM PAY INCOME TAX T.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DON_27 ?x1) (HAVE_27 ?x1) (BE_27 ?x1) (WITHHELD_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1) (FROM_27 ?x1) (PAY_27 ?x1) (INCOME_27 ?x1) (TAX_27 ?x1) (T_27 ?x1))
+
+	;; A PERSON MAY HAVE PAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PAY_27 ?x1))
+
+;; (TAKE ADVANTAGE OF FREE TAX ASSISTANCE)
+
+	;; A TAX ASSISTANCE CAN BE FREE.
+
+		(and (TAX_27 ?x1) (ASSISTANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+;; (THE IRS OFFERS RECORDED MESSAGES ON HUNDREDS OF TAX TOPICS THROUGH ITS TELETAX SERVICE AT 1-800-829-4477)
+
+	;; OFFERS MAY RECORD MESSAGES.
+
+		(and (offer_27 ?x1) (MAY_27 ?x1) (RECORD_27 ?x1) (MESSAGES_27 ?x1))
+
+	;; A GOVERNMENT-AGENCY MAY HAVE OFFERS.
+
+		(and (GOVERNMENT-AGENCY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OFFERS_27 ?x1))
+
+	;; HUNDREDS CAN BE CONSTITUTED_OF_OR_FILLED_WITH TAX TOPICS.
+
+		(and (hundred_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TAX_27 ?x2) (TOPICS_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A SERVICE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SERVICE_27 ?x1))
+
+	;; A TELETAX[PERSON??] MAY HAVE A SERVICE.
+
+		(and (TELETAX_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SERVICE_27 ?x1))
+
+;; (IT ALSO OFFERS FEDERAL TAX FORMS AND PUBLICATIONS AT 1-800-TAX-FORM -LRB- 1-800-829-3676 -RRB-)
+
+	;; A THING-REFERRED-TO MAY OFFER TAX FORMS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (TAX_27 ?x1) (FORMS_27 ?x1))
+
+	;; TAX FORMS CAN BE AT SOME NUMBER_OR_PORTION.
+
+		(and (tax_27 ?x1) (form_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+	;; TAX FORMS CAN BE FEDERAL.
+
+		(and (tax_27 ?x1) (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FEDERAL_27 ?x2))
+
+;; (MANY POST OFFICES AND LIBRARIES CARRY THE MOST WIDELY REQUESTED FORMS AND INSTRUCTIONS)
+
+	;; SOME_NUMBER_OF POST OFFICES MAY CARRY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (POST_27 ?x1) (OFFICES_27 ?x1) (MAY_27 ?x1) (CARRY_27 ?x1))
+
+;; (THE IRS ALSO STAFFS A TAX HELP LINE FOR INDIVIDUALS AT 1-800-829-1040)
+
+	;; A GOVERNMENT-AGENCY MAY STAFF A TAX_HELP_LINE[PERSON??].
+
+		(and (GOVERNMENT-AGENCY_27 ?x1) (MAY_27 ?x1) (STAFF_27 ?x1) (A_27 ?x1) (TAX_5FHELP_5FLINE_27 ?x1) (PERSON_27 ?x1))
+
+	;; A TAX_HELP_LINE[PERSON??] CAN BE FOR INDIVIDUALS.
+
+		(and (TAX_5FHELP_5FLINE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (individual_27 ?x1))
+
+	;; INDIVIDUALS CAN BE AT SOME NUMBER_OR_PORTION.
+
+		(and (individual_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (SOME_27 ?x2) (NUMBER_5FOR_5FPORTION_27 ?x2))
+
+;; (USE IRS TAXPAYER ASSISTANCE CENTERS AND VOLUNTEER PROGRAMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE IRS HAS MORE THAN 400 TAXPAYER ASSISTANCE CENTERS NATIONWIDE TO ASSIST TAXPAYERS FACE-TO-FACE WITH ISSUES OR QUESTIONS THAT CAN NOT BE HANDLED ONLINE OR OVER THE PHONE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [16]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GO TO WWW.IRS.GOV/LOCALCONTACTS/ TO FIND THE LOCAL OFFICE NEAREST TO YOU)
+
+	;; AN OFFICE CAN BE TO A PERSON.
+
+		(and (OFFICE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (USE ELECTRONIC REFUND OPTIONS)
+
+	;; REFUND OPTIONS CAN BE ELECTRONIC.
+
+		(and (REFUND_27 ?x1) (OPTIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRONIC_27 ?x2))
+
+;; (YOU CAN SPEED UP THE REFUND PROCESS BY HAVING YOUR REFUND DEPOSITED DIRECTLY INTO YOUR BANK ACCOUNT BY THE IRS)
+
+	;; A REFUND MAY DEPOSIT INTO A BANK ACCOUNT.
+
+		(and (REFUND_27 ?x1) (MAY_27 ?x1) (DEPOSIT_27 ?x1) (INTO_27 ?x1) (A_27 ?x1) (BANK_27 ?x1) (ACCOUNT_27 ?x1))
+
+	;; A PERSON MAY HAVE A REFUND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REFUND_27 ?x1))
+
+	;; A PERSON MAY HAVE A BANK ACCOUNT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BANK_27 ?x1) (ACCOUNT_27 ?x1))
+
+;; (THIS ALSO REDUCES THE CHANCE OF YOUR REFUND BEING LOST IN THE MAIL OR EVEN STOLEN)
+
+	;; A THING MAY REDUCE A CHANCE OF A REFUND.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REDUCE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (REFUND_27 ?x2))
+
+	;; A REFUND MAY UNDERGO A CHANCE.
+
+		(and (REFUND_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+	;; A REFUND MAY BE LOSE -ED IN MAIL.
+
+		(and (REFUND_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOSE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (MAIL_27 ?x3))
+
+	;; A PERSON MAY HAVE A REFUND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REFUND_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [21]>
+
+;; (LINK ON THE HOME PAGE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FILE ELECTRONICALLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ACCORDING TO THE IRS COMMA THE IRS E-FILE IS THE FASTEST AND MOST ACCURATE WAY TO FILE A TAX RETURN)
+
+	;; AN E-FILE CAN BE A WAY.
+
+		(and (E-FILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A GOVERNMENT-AGENCY MAY HAVE AN E-FILE.
+
+		(and (GOVERNMENT-AGENCY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (E-FILE_27 ?x1))
+
+	;; A WAY CAN BE FASTEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FASTEST_27 ?x2))
+
+;; (IT IS ALSO THE FASTEST WAY TO RECEIVE A REFUND)
+
+	;; A THING-REFERRED-TO CAN BE A WAY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; A WAY CAN BE FASTEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FASTEST_27 ?x2))
+
+;; (DOUBLE-CHECK MATH AND DATA ENTRIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (REVIEW YOUR RETURN FOR POSSIBLE MATH ERRORS AND MAKE SURE THE NAMES AND SOCIAL SECURITY OR OTHER IDENTIFICATION NUMBERS ARE CORRECT AND LEGIBLE)
+
+	;; A PERSON MAY HAVE A RETURN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RETURN_27 ?x1))
+
+	;; NAMES CAN BE CORRECT.
+
+		(and (name_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORRECT_27 ?x2))
+
+;; (DON T PANIC IF IMMEDIATE PAYMENT IS NOT AN OPTION)
+
+	;; A MALE MAY T PANIC.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (T_27 ?x1) (PANIC_27 ?x1))
+
+	;; PAYMENT CAN BE AN OPTION.
+
+		(and (payment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTION_27 ?x2))
+
+;; (IF YOU OWE THE IRS AND YOU CAN NOT PAY THE AMOUNT IN FULL COMMA YOU CAN APPLY FOR AN INSTALLMENT AGREEMENT AND SUGGEST YOUR OWN MONTHLY PAYMENT AMOUNT AND DUE DATE)
+
+	;; A PERSON MAY APPLY FOR AN INSTALLMENT_AGREEMENT[PERSON??].
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (APPLY_27 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (INSTALLMENT_5FAGREEMENT_27 ?x2) (PERSON_27 ?x1))
+
+	;; A PERSON MAY OWE A GOVERNMENT-AGENCY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (OWE_27 ?x1) (A_27 ?x1) (GOVERNMENT-AGENCY_27 ?x1))
+
+	;; A PERSON MAY PAY AN AMOUNT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1) (AN_27 ?x1) (AMOUNT_27 ?x1))
+
+	;; A PERSON MAY HAVE A PAYMENT AMOUNT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PAYMENT_27 ?x1) (AMOUNT_27 ?x1))
+
+	;; A PAYMENT AMOUNT CAN BE MONTHLY.
+
+		(and (PAYMENT_27 ?x1) (AMOUNT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MONTHLY_27 ?x2))
+
+;; (YOU ALSO HAVE VARIOUS OPTIONS FOR PAYING THE IRS WITH A CREDIT CARD)
+
+	;; A PERSON MAY HAVE OPTIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OPTIONS_27 ?x1))

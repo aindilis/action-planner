@@ -1,0 +1,715 @@
+;; (USE SCISSORS TO CUT THE WIRE AND FORM A LOOP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THREAD THE EGGS ONTO THE WIRE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ADORN WITH SILK FLOWERS OR CREPE PAPER AS DESIRED)
+
+	;; ADORN MAY DESIRE.
+
+		(and (ADORN_27 ?x1) (MAY_27 ?x1) (DESIRE_27 ?x1))
+
+	;; ADORN CAN BE WITH SILK FLOWERS.
+
+		(and (ADORN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SILK_27 ?x2) (FLOWERS_27 ?x2))
+
+	;; A PAPER CAN BE CREPE.
+
+		(and (paper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CREPE_27 ?x2))
+
+;; (FASTEN TO THE DOOR WITH A LOOPED PIECE OF WIRE)
+
+	;; FASTEN CAN BE TO A DOOR.
+
+		(and (FASTEN_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+	;; A PIECE CAN BE CONSTITUTED_OF_OR_FILLED_WITH WIRE.
+
+		(and (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WIRE_27 ?x2))
+
+	;; A PIECE CAN BE LOOPED.
+
+		(and (PIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOPED_27 ?x2))
+
+;; (CREATE A SIMPLE EGGSHELL GARLAND BY THREADING HOLLOWED-OUT EGGS ONTO A RIBBON)
+
+	;; AN EGGSHELL CAN BE SIMPLE.
+
+		(and (EGGSHELL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; EGGS CAN BE HOLLOWED-OUT.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLLOWED-OUT_27 ?x2))
+
+;; (TAPE ONE END OF THE RIBBON ONTO A SKEWER COMMA THEN STRING THE EGGS COMMA REMOVE THE SKEWER AND TIE A KNOT TO HOLD EGGS IN PLACE)
+
+	;; A RIBBON MAY HAVE AN END.
+
+		(and (RIBBON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+;; (PAINTED EGGS PAINT SOME EGGS AND USE THEM AS DECORATIONS AROUND THE HOUSE)
+
+	;; EGGS MAY PAINT SOME_NUMBER_OF EGGS.
+
+		(and (EGGS_27 ?x1) (MAY_27 ?x1) (PAINT_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (EGGS_27 ?x1))
+
+	;; EGGS CAN BE PAINTED.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?e2) (paint_27 ?e2 ?x1))
+
+	;; DECORATIONS CAN BE AROUND A HOUSE.
+
+		(and (decoration_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+;; (IF YOU HAVE CHILDREN COMMA ASK THEM TO HELP YOU WITH DOING THIS AS THEY LL LOVE BEING INVOLVED IN BOTH PAINTING AND PLACING THE EGGS)
+
+	;; A PERSON MAY HAVE CHILDREN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+;; (IT CAN GET MESSY COMMA SO MAKE SURE TO TAKE AMPLE PRECAUTIONS COMMA ESPECIALLY IF YOU RE WORKING WITH TODDLERS)
+
+	;; A THING-REFERRED-TO MAY GET.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; PRECAUTIONS CAN BE AMPLE.
+
+		(and (precaution_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMPLE_27 ?x2))
+
+;; (MAKE SURE TO PUT THEM WHERE YOU CAN SEE THEM COMMA SO THEY CAN BE ADMIRED)
+
+	;; A PERSON MAY SEE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; INDIVIDUAL -S CAN BE ADMIRED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADMIRED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [13]>
+
+;; (HANG MINIATURE EGGS COMMA WHICH CAN BE FOUND IN CRAFT OR RETAIL STORES COMMA ONTO MINIATURE TREES OR ALONG PUSSY WILLOW BRANCHES)
+
+	;; A HANG[PERSON??] MAY MINIATUR EGGS.
+
+		(and (HANG_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (MINIATUR_27 ?x1) (EGGS_27 ?x1))
+
+	;; TREES CAN BE MINIATURE.
+
+		(and (tree_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; WILLOW BRANCHES CAN BE PUSSY.
+
+		(and (WILLOW_27 ?x1) (BRANCHES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PUSSY_27 ?x2))
+
+;; (SEE HOW TO DYE EGGS FOR EASTER FOR MORE IDEAS)
+
+	;; EGGS CAN BE FOR A RELIGIOUS-HOLIDAY.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (RELIGIOUS-HOLIDAY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [14]>
+
+;; (POSITION BUNNIES IN EYE-CATCHING PLACES AROUND THE HOUSE)
+
+	;; A POSITION[PERSON??] MAY BUNNY IN PLACES.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (BUNNY_27 ?x1) (in_27 ?x1 ?x2) (PLACES_27 ?x2))
+
+	;; PLACES CAN BE AROUND A HOUSE.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+	;; PLACES CAN BE EYE-CATCHING.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EYE-CATCHING_27 ?x2))
+
+;; (WHETHER THEY RE STATUES OR PLUSH TOYS COMMA THE BUNNY THEME WILL WORK BEAUTIFULLY AT EASTER TIME)
+
+	;; A BUNNY THEME MAY WORK.
+
+		(and (BUNNY_27 ?x1) (THEME_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; TOYS CAN BE PLUSH.
+
+		(and (toy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUSH_27 ?x2))
+
+;; (BORROW PLUSH TOYS FROM YOUR CHILDREN IF YOU NEED TO COMMA OR ASK THEM TO ARRANGE THEIR BUNNY TOYS)
+
+	;; TOYS CAN BE PLUSH.
+
+		(and (toy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUSH_27 ?x2))
+
+	;; A PERSON MAY HAVE CHILDREN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE BUNNY TOYS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BUNNY_27 ?x1) (TOYS_27 ?x1))
+
+;; (YOU CAN ALSO DRAW RABBIT SHAPES ON PAPER AND CUT THEM OUT COMMA OR FIND PICTURES OF THEM ONLINE AND PRINT THEM OFF)
+
+	;; A PERSON MAY DRAW RABBIT SHAPES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DRAW_27 ?x1) (RABBIT_27 ?x1) (SHAPES_27 ?x1))
+
+	;; PICTURES CAN BE SHOW INDIVIDUAL -S.
+
+		(and (PICTURES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [15]>
+
+;; (GRASS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE-2 NSUBJ BUNNIES-3 AUX WOULD-4 COP BE-5 DET A-6 AMOD GOOD-7 AUX TO-9 INFMOD PUT-10 DET SOME-11 DOBJ EGGS-12)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU RE GOING FOR A MORE PLAYFUL LOOK COMMA OR DECORATING FOR CHILDREN COMMA PLUSHIE BUNNIES WORK WELL COMMA WITH BASKETS AND BRIGHTLY
+ COLORED EGGS)
+
+	;; BUNNIES MAY WORK.
+
+		(and (bunny_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; A LOOK CAN BE PLAYFUL.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAYFUL_27 ?x2))
+
+	;; BUNNIES CAN BE PLUSHIE.
+
+		(and (bunny_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUSHIE_27 ?x2))
+
+	;; EGGS CAN BE BRIGHTLY.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIGHTLY_27 ?x2))
+
+	;; EGGS CAN BE COLORED.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?e2) (color_27 ?e2 ?x1))
+
+;; (SEE HOW TO MAKE A MOVING RABBIT FOR ANOTHER BUNNY DECORATION IDEA THE KIDS CAN MAKE)
+
+	;; KIDS MAY MAKE.
+
+		(and (KIDS_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+	;; A RABBIT CAN BE FOR SOME_NUMBER_OF BUNNY DECORATION IDEA.
+
+		(and (RABBIT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (BUNNY_27 ?x2) (DECORATION_27 ?x2) (IDEA_27 ?x2))
+
+	;; A RABBIT CAN BE MOVING.
+
+		(and (RABBIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOVING_27 ?x2))
+
+;; (TRY BABY FARM ANIMALS AROUND YOUR HOUSE SUCH AS LAMBS OR CHICKS COMMA BUT BUNNIES AND RABBITS ARE THE MAIN ANIMAL)
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [16]>
+
+;; (MAKE STREAMERS OUT OF COLORS SUCH AS YELLOW COMMA ORANGE COMMA GREEN COMMA AND SO FORTH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HANG THE STREAMERS IN WINDOWS OR IN DOORWAYS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU WANT A MORE STREAMER-LIKE APPEARANCE THAT CURLS COMMA USE TISSUE PAPER COMMA IN ONE OF THE AFOREMENTIONED COLORS)
+
+	;; A PERSON MAY WANT AN APPEARANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (AN_27 ?x1) (APPEARANCE_27 ?x1))
+
+	;; AN APPEARANCE CAN BE STREAMER-LIKE.
+
+		(and (APPEARANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STREAMER-LIKE_27 ?x2))
+
+	;; COLORS CAN BE AFOREMENTIONED.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AFOREMENTIONED_27 ?x2))
+
+;; (IF YOU DO N T MIND FLAT STRIPS COMMA OR WANT TO MAKE A CURTAIN OF LONG STRIPS COMMA CONSTRUCTION PAPER WORKS WELL COMMA AS IT DOES N T
+ RIP EASILY)
+
+	;; CONSTRUCTION PAPER MAY WORK.
+
+		(and (construction_27 ?x1) (PAPER_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; STRIPS CAN BE FLAT.
+
+		(and (strip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+	;; A CURTAIN CAN BE CONSTITUTED_OF_OR_FILLED_WITH STRIPS.
+
+		(and (CURTAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (STRIPS_27 ?x2))
+
+	;; STRIPS CAN BE LONG.
+
+		(and (strip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (YOU CAN ALSO MAKE PAPER CHAINS)
+
+	;; A PERSON MAY MAKE PAPER CHAINS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (PAPER_27 ?x1) (CHAINS_27 ?x1))
+
+;; (SEE HOW TO MAKE A PAPER CHAIN FOR DETAILS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CREATE A WHIMSICAL FESTIVE TABLE)
+
+	;; A TABLE CAN BE WHIMSICAL.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WHIMSICAL_27 ?x2))
+
+	;; A TABLE CAN BE FESTIVE.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FESTIVE_27 ?x2))
+
+;; (MIX AND MATCH YOUR FINE CHINA OR STONEWARE AND ADD COLORFUL LINENS)
+
+	;; A PERSON MAY HAVE A CHINA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHINA_27 ?x1))
+
+	;; A CHINA CAN BE FINE.
+
+		(and (CHINA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINE_27 ?x2))
+
+	;; LINENS CAN BE COLORFUL.
+
+		(and (LINENS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLORFUL_27 ?x2))
+
+;; (ADD A PLAYFUL TOUCH BY FILLING MARTINI GLASSES WITH MINIATURE CANDY EGGS AND CENTERING ON PLATES)
+
+	;; A TOUCH CAN BE PLAYFUL.
+
+		(and (TOUCH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAYFUL_27 ?x2))
+
+	;; CANDY EGGS CAN BE MINIATURE.
+
+		(and (candy_27 ?x1) (EGGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+;; (OR COMMA PLACE NAME CARDS ATOP MARTINI GLASSES OR INSIDE EGG CUPS FOR INSTANT EASTER CHEER)
+
+	;; EGG CUPS CAN BE FOR CHEER.
+
+		(and (EGG_27 ?x1) (CUPS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CHEER_27 ?x2))
+
+	;; EGG CUPS CAN BE INSIDE.
+
+		(and (EGG_27 ?x1) (CUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSIDE_27 ?x2))
+
+	;; A CHEER CAN BE INSTANT.
+
+		(and (CHEER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INSTANT_27 ?x2))
+
+	;; A RELIGIOUS-HOLIDAY MAY HAVE A CHEER.
+
+		(and (RELIGIOUS-HOLIDAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHEER_27 ?x1))
+
+;; (ADD MODERN FLAIR)
+
+	;; A FLAIR CAN BE MODERN.
+
+		(and (FLAIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERN_27 ?x2))
+
+;; (PLACE EASTER EGGS OF THE SAME COLOR COMMA BUT WITH VARYING TEXTURES AND FINISHES COMMA INTO A SIMILARLY-COLORED BASKET FOR A TRADITIONAL
+ CENTERPIECE WITH A MODERN TWIST)
+
+	;; A RELIGIOUS-HOLIDAY MAY HAVE EGGS.
+
+		(and (RELIGIOUS-HOLIDAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EGGS_27 ?x1))
+
+	;; TEXTURES CAN BE VARYING.
+
+		(and (texture_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VARYING_27 ?x2))
+
+	;; A BASKET CAN BE FOR A CENTERPIECE.
+
+		(and (BASKET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (CENTERPIECE_27 ?x2))
+
+	;; A BASKET CAN BE SIMILARLY-COLORED.
+
+		(and (BASKET_27 ?x1) (be_27 ?e1 ?x1) (similarly-colored_27 ?x1))
+
+	;; A CENTERPIECE CAN BE WITH A TWIST.
+
+		(and (CENTERPIECE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (TWIST_27 ?x2))
+
+	;; A CENTERPIECE CAN BE TRADITIONAL.
+
+		(and (CENTERPIECE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRADITIONAL_27 ?x2))
+
+	;; A TWIST CAN BE MODERN.
+
+		(and (TWIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MODERN_27 ?x2))
+
+;; (THEN ADD SOME EMBELLISHMENTS WITH GRASSES OR FLOWERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EXTEND THE MONOCHROMATIC LOOK WITH LINENS AND DINNERWARE AND ADD CRYSTAL GLASSES FOR A SHIMMERY COMMA DREAMY TABLESCAPE)
+
+	;; A LOOK CAN BE MONOCHROMATIC.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MONOCHROMATIC_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [17]>
+
+;; (HIDE EASTER EGGS AROUND THE HOUSE)
+
+	;; EGGS CAN BE AROUND A HOUSE.
+
+		(and (egg_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+	;; A HIDE_EASTER[PERSON??] MAY HAVE EGGS.
+
+		(and (HIDE_5FEASTER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (EGGS_27 ?x1))
+
+;; (GUESTS WILL GET A NICE SURPRISE WHEN THEY FIND EASTER EGGS IN DIFFERENT PLACES)
+
+	;; GUESTS MAY GET A SURPRISE.
+
+		(and (GUESTS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (SURPRISE_27 ?x1))
+
+	;; A SURPRISE CAN BE NICE.
+
+		(and (SURPRISE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY FIND EGGS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (EGGS_27 ?x1))
+
+	;; A RELIGIOUS-HOLIDAY MAY HAVE EGGS.
+
+		(and (RELIGIOUS-HOLIDAY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EGGS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [18]>
+
+;; (BUT YOU CAN USE CHOCOLATE EASTER EGGS SO LONG AS YOU REMEMBER WHERE YOU HID THEM IF NOBODY FINDS THEM)
+
+	;; A PERSON MAY USE CHOCOLATE EASTER EGGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (CHOCOLATE_27 ?x1) (EASTER_27 ?x1) (EGGS_27 ?x1))
+
+	;; A PERSON MAY HID INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HID_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; NOBODY MAY FIND INDIVIDUAL -S.
+
+		(and (NOBODY_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (SEE HOW TO MAKE CHOCOLATE EASTER EGGS OR HOW TO MAKE SUGAR EASTER EGGS FOR MORE IDEAS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BUT COMMA IF YOU ARE A BEGINNER SEWER COMMA IT S BEST TO JUST GET A NICE COMMA SIMPLE PASTEL OR EASTER FABRIC COMMA AND SEW IT IN A
+ SQUARE SHAPE COMMA THEN STUFF IT)
+
+	;; A PERSON CAN BE BEGINNER SEWER.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEGINNER_27 ?x2) (SEWER_27 ?x2))
+
+	;; A SHAPE CAN BE SQUARE.
+
+		(and (SHAPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+;; (TRY DIFFERENT SHAPES SUCH AS BUNNIES OR EGGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MAYBE TRY A QUILT IF YOU RE CLEVER ENOUGH)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) (:F NIL CLEVER.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (CLEVER_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CAN ALSO TRY PLUSH TOYS)
+
+	;; A PERSON MAY TRY TOYS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRY_27 ?x1) (TOYS_27 ?x1))
+
+	;; TOYS CAN BE PLUSH.
+
+		(and (toy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLUSH_27 ?x2))
+
+;; (MAYBE TRY SOME DAFFODILS PUT SOME FLOWERS AROUND THE HOUSE)
+
+	;; SOME_NUMBER_OF DAFFODILS MAY PUT SOME_NUMBER_OF FLOWERS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DAFFODILS_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (FLOWERS_27 ?x1))
+
+;; (TULIPS COMMA ROSES COMMA DAFFODILS COMMA AND DAISIES ARE ALL GOOD IDEAS COMMA BUT THERE ARE OTHER GOOD FLOWERS THAT YOU CAN ALSO CHOOSE
+ COMMA DEPENDING ON WHERE YOU LIVE AND THE SEASON -LRB- IT S AUTUMN IN THE SOUTHERN HEMISPHERE COMMA SPRING IN THE NORTHERN HEMISPHERE
+ -RRB-)
+
+	;; TULIPS CAN BE IDEAS.
+
+		(and (tulip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDEAS_27 ?x2))
+
+	;; IDEAS CAN BE GOOD.
+
+		(and (IDEAS_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; FLOWERS CAN BE GOOD.
+
+		(and (flower_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY CHOOSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1))
+
+	;; A PERSON MAY LIVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1))
+
+	;; AUTUMN CAN BE IN A HEMISPHERE.
+
+		(and (AUTUMN_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HEMISPHERE_27 ?x2))
+
+;; (THESE WILL PROVIDE BURSTS OF COLOR IN THE HOUSE)
+
+	;; A THING MAY PROVIDE BURSTS OF COLOR.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (BURSTS_27 ?x1) (of_27 ?x1 ?x2) (COLOR_27 ?x2))
+
+	;; BURSTS CAN BE CONSTITUTED_OF_OR_FILLED_WITH COLOR.
+
+		(and (burst_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (COLOR_27 ?x2))
+
+;; (AS WELL AS MAKING YOUR HOUSE LOOK NICE THERE WILL ALSO BE A WONDERFUL SCENT)
+
+	;; A HOUSE MAY LOOK NICE.
+
+		(and (HOUSE_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (NICE_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A SCENT CAN BE WONDERFUL.
+
+		(and (SCENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WONDERFUL_27 ?x2))
+
+;; (YOU CAN ALWAYS USE FAKE FLOWERS IF YOU DO N T HAVE THE ONES YOU D LIKE TO PUT ON DISPLAY)
+
+	;; A PERSON MAY USE FLOWERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (FLOWERS_27 ?x1))
+
+	;; FLOWERS CAN BE FAKE.
+
+		(and (flower_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAKE_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (CUT BRANCHES OF PUSSY WILLOWS AND ARRANGE THE STEMS IN A PASTEL OR EASTER-THEMED VASE)
+
+	;; BRANCHES OF PUSSY MAY WILLOW.
+
+		(and (branch_27 ?x1) (of_27 ?x1 ?x2) (PUSSY_27 ?x2) (MAY_27 ?x2) (WILLOW_27 ?x2))
+
+	;; BRANCHES CAN BE CONSTITUTED_OF_OR_FILLED_WITH PUSSY.
+
+		(and (branch_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PUSSY_27 ?x2))
+
+	;; A CUT[PERSON??] MAY HAVE BRANCHES.
+
+		(and (CUT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (branch_27 ?x1))
+
+	;; A STEMS CAN BE IN A VASE.
+
+		(and (STEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (VASE_27 ?x2))
+
+	;; A VASE CAN BE PASTEL.
+
+		(and (VASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PASTEL_27 ?x2))
+
+;; (PLACE CUT DAFFODILS COMMA ROSES COMMA -LRB- OR ANY SPRING OR AUTUMN FLOWER -RRB- AND PLACE THEM INTO FLORAL FOAM IN BASKETS TO HELP THEM
+ STAY NEAT)
+
+	;; FOAM CAN BE IN BASKETS.
+
+		(and (FOAM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (basket_27 ?x2))
+
+	;; A FOAM CAN BE FLORAL.
+
+		(and (FOAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLORAL_27 ?x2))
+
+	;; INDIVIDUAL -S MAY STAY NEAT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1) (NEAT_27 ?x1))

@@ -1,0 +1,578 @@
+;; (COMMUNITYFIND THE RABBI - HALACHA COMMA OR JEWISH LAW COMMA BANS INTERFAITH MARRIAGE COMMA AND DOES NOT RECOGNIZE SUCH MARRIAGES AS
+ VALID)
+
+	;; BANS MAY INTERFAITH MARRIAGE.
+
+		(and (ban_27 ?x1) (MAY_27 ?x1) (INTERFAITH_27 ?x1) (MARRIAGE_27 ?x1))
+
+	;; A LAW CAN BE JEWISH.
+
+		(and (law_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JEWISH_27 ?x2))
+
+	;; MARRIAGES CAN BE VALID.
+
+		(and (marriage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VALID_27 ?x2))
+
+;; (THEREFORE COMMA ALL ORTHODOX AND CONSERVATIVE RABBIS WHO RECOGNIZE THE BINDING AUTHORITY OF HALACHA REFRAIN FROM OFFICIATING AT
+ INTERFAITH WEDDINGS)
+
+	;; AN ORTHODOX_AND_CONSERVATIVE[PERSON??] MAY HAVE RABBIS.
+
+		(and (ORTHODOX_5FAND_5FCONSERVATIVE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (rabbi_27 ?x1))
+
+	;; AUTHORITY CAN BE BINDING.
+
+		(and (AUTHORITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BINDING_27 ?x2))
+
+	;; WEDDINGS CAN BE INTERFAITH.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERFAITH_27 ?x2))
+
+;; (EVEN THOUGH THEIR MOVEMENTS DO NOT ALWAYS RECOGNIZE THE BINDING AUTHORITY OF HALACHA COMMA MOST REFORM AND RECONSTRUCTIONIST RABBIS TEND
+ TO DEFER TO IT ON THIS ISSUE)
+
+	;; MOVEMENTS MAY DO.
+
+		(and (movement_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE MOVEMENTS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MOVEMENTS_27 ?x1))
+
+	;; AUTHORITY CAN BE BINDING.
+
+		(and (AUTHORITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BINDING_27 ?x2))
+
+;; (SOME REFORM AND RECONSTRUCTIONIST RABBIS WILL OFFICIATE AT INTERFAITH WEDDINGS COMMA BUT IN AGREEING TO DO SO COMMA THEY MAY ATTACH
+ VARIOUS CONDITIONS TO THEIR WILLINGNESS TO OFFICIATE)
+
+	;; SOME_NUMBER_OF RABBIS MAY OFFICIATE AT WEDDINGS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (RABBIS_27 ?x1) (MAY_27 ?x1) (OFFICIATE_27 ?x1) (AT_27 ?x1) (WEDDINGS_27 ?x1))
+
+	;; A REFORM_AND_RECONSTRUCTIONIST[PERSON??] MAY HAVE RABBIS.
+
+		(and (REFORM_5FAND_5FRECONSTRUCTIONIST_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (rabbi_27 ?x1))
+
+	;; WEDDINGS CAN BE INTERFAITH.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERFAITH_27 ?x2))
+
+	;; INDIVIDUAL -S MAY ATTACH CONDITIONS TO A WILLINGNESS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ATTACH_27 ?x1) (CONDITIONS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (WILLINGNESS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A WILLINGNESS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WILLINGNESS_27 ?x1))
+
+;; (FOR EXAMPLE COMMA THEY MAY AGREE TO MARRY AN INTERFAITH COUPLE COMMA BUT THEY WILL NOT OFFICIATE ON THE SABBATH)
+
+	;; A COUPLE CAN BE INTERFAITH.
+
+		(and (COUPLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERFAITH_27 ?x2))
+
+	;; INDIVIDUAL -S MAY OFFICIATE ON A SABBATH[PERSON??].
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (OFFICIATE_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (SABBATH_27 ?x1) (PERSON_27 ?x1))
+
+;; (THEY MAY REFUSE TO CO-OFFICIATE WITH NON-JEWISH CLERGY COMMA OR REQUIRE THE COUPLE TO AGREE TO RAISE THEIR CHILDREN WITHIN THE JEWISH
+ FAITH)
+
+	;; CLERGY CAN BE NON-JEWISH.
+
+		(and (clergy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NON-JEWISH_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE CHILDREN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+	;; A FAITH CAN BE JEWISH.
+
+		(and (FAITH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (JEWISH_27 ?x2))
+
+;; (THE RABBIS MAY ALSO ASK THE COUPLE TO JOIN THEIR CONGREGATION COMMA PARTICIPATE IN COURSES ON JUDAISM AND/OR ATTEND PRE-MARITAL
+ COUNSELING SESSIONS)
+
+	;; INDIVIDUAL -S MAY HAVE A CONGREGATION.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONGREGATION_27 ?x1))
+
+	;; COURSES CAN BE ON A JUDAISM[PERSON??].
+
+		(and (course_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x3) (JUDAISM_27 ?x3) (PERSON_27 ?x3))
+
+	;; COUNSELING SESSIONS CAN BE PRE-MARITAL.
+
+		(and (counsel_27 ?e1 ?x1) (session_27 ?x1) (be_27 ?e2 ?x1 ?x2) (PRE-MARITAL_27 ?x2))
+
+;; (ALMOST ALL RABBIS WHO WILL OFFICIATE AT INTERFAITH WEDDINGS WILL NOT OFFICIATE IN A CHURCH COMMA OR ALLOW ANY MENTION OF JESUS IN THE
+ CEREMONY)
+
+	;; SOME_NUMBER_OF RABBIS MAY OFFICIATE IN A CHURCH.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (RABBIS_27 ?x1) (MAY_27 ?x1) (OFFICIATE_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CHURCH_27 ?x2))
+
+	;; WEDDINGS CAN BE INTERFAITH.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERFAITH_27 ?x2))
+
+	;; A DEITY MAY UNDERGO A MENTION.
+
+		(and (DEITY_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (MENTION_27 ?x1))
+
+;; (FOR SOME COUPLES COMMA THESE CONDITIONS PRESENT NO PROBLEMS COMMA BUT OTHER COUPLES MAY BE LESS READY TO AGREE TO THEM COMMA AND FOR THE
+ LATTER GROUP COMMA IT CAN BE VERY DIFFICULT TO FIND A RABBI WHO WILL MARRY THEM)
+
+	;; CONDITIONS MAY PRESENT PROBLEMS.
+
+		(and (condition_27 ?x1) (MAY_27 ?x1) (PRESENT_27 ?x1) (PROBLEMS_27 ?x1))
+
+	;; A GROUP CAN BE LATTER.
+
+		(and (GROUP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LATTER_27 ?x2))
+
+;; (STILL COMMA THERE ARE A SMALL NUMBER OF RABBIS OUT THERE WHO WILL OFFICIATE FOR YOU)
+
+	;; A NUMBER CAN BE SMALL.
+
+		(and (NUMBER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (SOME ARE BONA FIDE RABBIS)
+
+	;; SOME_NUMBER_OF THING CAN BE RABBIS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (rabbi_27 ?x2))
+
+	;; RABBIS CAN BE BONA.
+
+		(and (rabbi_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BONA_27 ?x2))
+
+;; (BUT THERE ARE ALSO INDIVIDUALS IN THE MARKET PLACE WHO CALL THEMSELVES RABBIS AND WHO OFFICIATE AT INTERFAITH WEDDINGS COMMA EVEN THOUGH
+ THEY HAVE NOT UNDERGONE ANY TYPE OF SERIOUS TRAINING COMMA AND INDEED HAVE VERY LITTLE KNOWLEDGE)
+
+	;; INDIVIDUALS CAN BE IN A MARKET PLACE.
+
+		(and (individual_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (MARKET_27 ?x2) (PLACE_27 ?x2))
+
+	;; INDIVIDUAL -S MAY RABBI.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (RABBI_27 ?x1))
+
+	;; WEDDINGS CAN BE INTERFAITH.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERFAITH_27 ?x2))
+
+	;; INDIVIDUAL -S MAY UNDERGO A TYPE OF TRAINING.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (TYPE_27 ?x1) (of_27 ?x1 ?x2) (training_27 ?x2))
+
+	;; A TRAINING CAN BE SERIOUS.
+
+		(and (training_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERIOUS_27 ?x2))
+
+;; (THEY HAVE OBTAINED CREDENTIALS FROM UNACCREDITED INSTITUTIONS COMMA AND USUALLY SPEND VERY LITTLE TIME STUDYING MUCH OF ANYTHING)
+
+	;; INDIVIDUAL -S MAY BE OBTAIN -ED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBTAIN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; INSTITUTIONS CAN BE UNACCREDITED.
+
+		(and (institution_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNACCREDITED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [16]>
+
+;; (IT IS NOT HARD TO DISTINGUISH BETWEEN THE BONA FIDE RABBIS AND THOSE WHO ARE NOT)
+
+	;; RABBIS CAN BE BONA.
+
+		(and (rabbi_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BONA_27 ?x2))
+
+;; (IF A PERSON S RABBINIC ORDINATION WAS OBTAINED AFTER A RIGOROUS COURSE OF STUDY LASTING AT LEAST FIVE YEARS COMMA HIS OR HER ORDINATION
+ IS MOST LIKELY ACCEPTABLE)
+
+	;; A PERSON MAY BE ORDINATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORDINATION_27 ?x2))
+
+	;; AN ORDINATION CAN BE RABBINIC.
+
+		(and (ORDINATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RABBINIC_27 ?x2))
+
+	;; A COURSE CAN BE CONSTITUTED_OF_OR_FILLED_WITH STUDY.
+
+		(and (COURSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (STUDY_27 ?x2))
+
+	;; A COURSE CAN BE RIGOROUS.
+
+		(and (COURSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGOROUS_27 ?x2))
+
+;; (IF A PERSON S ORDINATION FOLLOWED SOMETHING LESS RIGOROUS - THERE ARE ACTUAL CASES OF PEOPLE BECOMING ORDAINED AFTER STUDYING FOR JUST A
+ FEW WEEKS COMMA OR TAKING SOME TYPE OF TAKE HOME TEST BUYER BEWARE)
+
+	;; A PERSON CAN BE ORDINATION.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORDINATION_27 ?x2))
+
+	;; SOMETHING CAN BE RIGOROUS.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGOROUS_27 ?x2))
+
+	;; CASES CAN BE CONSTITUTED_OF_OR_FILLED_WITH PEOPLE.
+
+		(and (case_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PEOPLE_27 ?x2))
+
+;; (CONFIRM THE RABBI MATCHES YOUR NEEDS)
+
+	;; RABBI MAY MATCH NEEDS.
+
+		(and (RABBI_27 ?x1) (MAY_27 ?x1) (MATCH_27 ?x1) (NEEDS_27 ?x1))
+
+	;; A PERSON MAY HAVE NEEDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+;; (ONCE YOU FIND A RABBI COMMA YOU WANT TO MAKE SURE THAT THAT RABBI IS THE RABBI FOR YOU)
+
+	;; A PERSON MAY FIND RABBI.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (RABBI_27 ?x1))
+
+	;; RABBI CAN BE RABBI.
+
+		(and (RABBI_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RABBI_27 ?x2))
+
+	;; RABBI CAN BE FOR A PERSON.
+
+		(and (RABBI_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (ONCE YOU FIND A RABBI COMMA YOU WANT TO MAKE SURE THAT THAT RABBI IS THE RABBI FOR YOU)
+
+	;; A PERSON MAY FIND RABBI.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (RABBI_27 ?x1))
+
+	;; RABBI CAN BE RABBI.
+
+		(and (RABBI_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RABBI_27 ?x2))
+
+	;; RABBI CAN BE FOR A PERSON.
+
+		(and (RABBI_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (ONCE YOU FIND A RABBI COMMA YOU WANT TO MAKE SURE THAT THAT RABBI IS THE RABBI FOR YOU)
+
+	;; A PERSON MAY FIND RABBI.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (RABBI_27 ?x1))
+
+	;; RABBI CAN BE RABBI.
+
+		(and (RABBI_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RABBI_27 ?x2))
+
+	;; RABBI CAN BE FOR A PERSON.
+
+		(and (RABBI_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [17]>
+
+;; (THE MOST IMPORTANT THING IS TO MAKE SURE THAT YOU FIND A RABBI WHO IS TRULY INTERESTED IN YOU AS A COUPLE COMMA AND MAKES IT CLEAR IN
+ WORD AND ACTION THAT THE WEDDING IS ABOUT YOU AND THE CELEBRATION OF YOUR LOVE FOR EACH OTHER)
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY FIND RABBI.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (RABBI_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE CLEAR IN WORD.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2) (in_27 ?e1 ?x3) (WORD_27 ?x3))
+
+	;; A WEDDING CAN BE ABOUT A PERSON.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A LOVE MAY UNDERGO A CELEBRATION.
+
+		(and (LOVE_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CELEBRATION_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOVE_27 ?x1))
+
+;; (HE OR SHE SHOULD TAKE TIME TO GET TO KNOW YOU COMMA AS INDIVIDUALS AND AS A COUPLE)
+
+	;; A MALE MAY TAKE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [19]>
+
+;; (IT IS REALLY HELPFUL IF THE RABBI CAN SUPPLY YOU WITH A SUMMARY OF THE MEETING THAT HIGHLIGHTS THOSE ITEMS YOU WANTED TO THINK ABOUT)
+
+	;; A THING-REFERRED-TO CAN BE HELPFUL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+	;; RABBI MAY SUPPLY A PERSON WITH A SUMMARY OF A MEETING.
+
+		(and (RABBI_27 ?x1) (MAY_27 ?x1) (SUPPLY_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (SUMMARY_27 ?x1) (of_27 ?x1 ?x2) (meeting_27 ?x2))
+
+	;; A MEETING MAY HAVE A SUMMARY.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUMMARY_27 ?x1))
+
+;; (THE RABBI SHOULD ALSO SUGGEST A BOOK OR TWO THAT CAN HELP YOU LEARN MORE ABOUT INTERFAITH CEREMONIES COMMA TO ASSIST YOU IN DEVELOPING
+ YOUR CEREMONY TOGETHER WITH YOUR RABBI)
+
+	;; RABBI MAY SUGGEST A BOOK.
+
+		(and (RABBI_27 ?x1) (MAY_27 ?x1) (SUGGEST_27 ?x1) (A_27 ?x1) (BOOK_27 ?x1))
+
+	;; A PERSON MAY LEARN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEARN_27 ?x1))
+
+	;; CEREMONIES CAN BE INTERFAITH.
+
+		(and (ceremony_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERFAITH_27 ?x2))
+
+	;; A PERSON MAY HAVE A CEREMONY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CEREMONY_27 ?x1))
+
+	;; A PERSON MAY HAVE RABBI.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RABBI_27 ?x1))
+
+;; (DURING THE MEETINGS THAT FOLLOW COMMA AS YOU WORK TOGETHER WITH THE RABBI COMMA WITH HIS OR HER GUIDANCE COMMA THINGS SHOULD GRADUALLY
+ GEL AND FALL INTO PLACE)
+
+	;; THINGS MAY GEL.
+
+		(and (thing_27 ?e1 ?x1) (MAY_27 ?x1) (GEL_27 ?x1))
+
+	;; A PERSON MAY WORK WITH RABBI.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1) (WITH_27 ?x1) (RABBI_27 ?x1))
+
+;; (IN THE FINAL MEETING YOU SHOULD BE ABLE TO TOGETHER REVIEW THE ENTIRE CEREMONY COMMA WITH A WRITTEN COPY COMMA BASED ON YOUR DISCUSSIONS
+ COMMA IN FRONT OF YOU)
+
+	;; A COPY CAN BE IN_FRONT_OF A PERSON.
+
+		(and (COPY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IN_5FFRONT_5FOF_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A COPY CAN BE WRITTEN.
+
+		(and (COPY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WRITTEN_27 ?x2))
+
+	;; A PERSON MAY HAVE DISCUSSIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DISCUSSIONS_27 ?x1))
+
+;; (-LRB- ONE RABBI TRIES TO EMAIL A DRAFT TO COUPLES A FEW WEEKS BEFORE THE FINAL MEETING COMMA SO THEY CAN ACTUALLY BEGIN THIS DISCUSSION
+ BY EMAIL IN ADVANCE OF THE FINAL MEETING)
+
+	;; INDIVIDUAL -S MAY BEGIN A DISCUSSION BY EMAIL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (BEGIN_27 ?x1) (A_27 ?x1) (DISCUSSION_27 ?x1) (BY_27 ?x1) (EMAIL_27 ?x1))
+
+	;; EMAIL CAN BE IN ADVANCE OF A MEETING.
+
+		(and (EMAIL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ADVANCE_27 ?x2) (of_27 ?x2 ?x3) (meeting_27 ?x3))
+
+	;; A MEETING MAY UNDERGO AN ADVANCE.
+
+		(and (MEETING_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (ADVANCE_27 ?x1))
+
+;; (YOU SHOULD FEEL COMFORTABLE TO MAKE ANY CHANGES COMMA ADDITIONS OR DELETIONS THAT YOU FEEL ARE NEEDED)
+
+	;; A PERSON MAY FEEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+;; (THE RABBI SHOULD ALSO DISCUSS TECHNICAL DETAILS AND POINTERS COMMA SO THERE ARE NO SURPRISES COMMA AND YOUR CEREMONY GOES SMOOTHLY AND
+ SEAMLESSLY)
+
+	;; RABBI MAY DISCUSS DETAILS.
+
+		(and (RABBI_27 ?x1) (MAY_27 ?x1) (DISCUSS_27 ?x1) (DETAILS_27 ?x1))
+
+	;; DETAILS CAN BE TECHNICAL.
+
+		(and (detail_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TECHNICAL_27 ?x2))
+
+	;; A CEREMONY MAY GO.
+
+		(and (CEREMONY_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE A CEREMONY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CEREMONY_27 ?x1))
+
+;; (IF YOU CHOOSE TO HAVE A CO-OFFICIANT COMMA YOU WILL OF COURSE WANT TO MEET WITH HIM OR HER AS WELL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [19]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE RABBI SHOULD ALSO MAKE SURE THAT THE CO-OFFICIANT IS PART AND PARCEL OF THE CEREMONY PLANNING PROCESS)
+
+	;; RABBI MAY MAKE SURE.
+
+		(and (RABBI_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+	;; A CO-OFFICIANT CAN BE PART OF A CEREMONY.
+
+		(and (co-officiant_27 ?x1) (be_27 ?e1 ?x1 ?x2) (part_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (CEREMONY_27 ?x3))
+
+	;; A CEREMONY MAY HAVE PART.
+
+		(and (CEREMONY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PART_27 ?x1))
+
+;; (-LRB- SOME CO-OFFICIANTS HAVE NEVER CO-OFFICIATED WITH A RABBI BEFORE)
+
+	;; SOME_NUMBER_OF CO-OFFICIANTS MAY CO-OFFICIATE WITH RABBI.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CO-OFFICIANTS_27 ?x1) (MAY_27 ?x1) (CO-OFFICIATE_27 ?x1) (WITH_27 ?x1) (RABBI_27 ?x1))
+
+;; (YOU MAY EVEN WANT TO HAVE ONE MEETING WITH BOTH CO-OFFICIANTS TOGETHER)
+
+	;; A MEETING CAN BE WITH SOME_NUMBER_OF CO-OFFICIANTS.
+
+		(and (meeting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CO-OFFICIANTS_27 ?x2))

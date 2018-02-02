@@ -1,0 +1,668 @@
+;; (USE IT TO INSPIRE YOU TO SIMPLIFY THE NEXT ROOM COMMA AND THE NEXT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (START WITH FURNITURE)
+
+	;; START CAN BE WITH FURNITURE.
+
+		(and (START_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (FURNITURE_27 ?x2))
+
+;; (THE BIGGEST THINGS IN ANY ROOM ARE THE FURNITURE COMMA SO IT IS ALWAYS BEST TO BEGIN SIMPLIFYING A ROOM BY LOOKING AT THE FURNITURE)
+
+	;; THINGS CAN BE FURNITURE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FURNITURE_27 ?x2))
+
+	;; THINGS CAN BE IN A ROOM.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; THINGS CAN BE BIGGEST.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIGGEST_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (THE FEWER PIECES OF FURNITURE COMMA THE BETTER -LRB- WITHIN REASON COMMA OF COURSE -RRB-)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THINK OF WHICH FURNITURE CAN BE ELIMINATED WITHOUT SACRIFICING COMFORT AND LIVABILITY)
+
+	;; 
+
+	;; ((:I (:F K FURNITURE.N) (:F BE.PASV ELIMINATE.V) (:P WITHOUT.P (:F KA NIL))))
+
+		(and (I_27 ?x3) (F_27 ?x1) (K_27 ?x1) (FURNITURE_2EN_27 ?x1) (F_27 ?x2) (BE_2EPASV_27 ?x2) (ELIMINATE_2EV_27 ?x2) (P_27 ?x3) (WITHOUT_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (GO FOR A FEW PIECES OF PLAIN COMMA SIMPLE FURNITURE -LRB- EXAMPLE OF A MINIMALIST COFFEE TABLE -RRB- WITH SOLID COMMA SUBDUED COLORS)
+
+	;; PIECES CAN BE CONSTITUTED_OF_OR_FILLED_WITH FURNITURE.
+
+		(and (piece_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FURNITURE_27 ?x2))
+
+	;; FURNITURE CAN BE PLAIN.
+
+		(and (FURNITURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAIN_27 ?x2))
+
+	;; A COFFEE TABLE CAN BE MINIMALIST.
+
+		(and (COFFEE_27 ?x1) (TABLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+	;; COLORS CAN BE SOLID.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID_27 ?x2))
+
+;; (KEEP ONLY THE ESSENTIALS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WHETHER LOOKING AT YOUR FURNITURE OR ANYTHING ELSE IN THE ROOM COMMA ASK YOURSELF IF THE ITEM IS TRULY ESSENTIAL)
+
+	;; FURNITURE CAN BE IN A ROOM.
+
+		(and (FURNITURE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+	;; AN ITEM CAN BE ESSENTIAL.
+
+		(and (ITEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESSENTIAL_27 ?x2))
+
+;; (IF YOU CAN LIVE WITHOUT IT COMMA GET IT OUT)
+
+	;; A PERSON MAY LIVE WITHOUT A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIVE_27 ?x1) (WITHOUT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE OUT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUT_27 ?x2))
+
+;; (TRY TO STRIP THE ROOM DOWN TO ITS ESSENTIALS YOU CAN ALWAYS ADD A FEW CHOICE ITEMS BEYOND THE ESSENTIALS LATER)
+
+	;; A PERSON MAY ADD CHOICE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (CHOICE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE ESSENTIALS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ESSENTIALS_27 ?x1))
+
+;; (KEEP THE WHOLE DESIGN -LRB- HOUSE -RRB- ON PAPER SIMPLE AS YOU CAN INITIALLY WITH REQUIRED COMPONENTS AND THEN SLOWLY ADD DECOR AS
+ DESIRED)
+
+	;; A DESIGN CAN BE SIMPLE.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A DESIGN CAN BE ON PAPER.
+
+		(and (DESIGN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (PAPER_27 ?x2))
+
+	;; A PERSON MAY ADD DECOR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (DECOR_27 ?x1))
+
+	;; COMPONENTS CAN BE REQUIRED.
+
+		(and (component_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REQUIRED_27 ?x2))
+
+;; (CLEAR FLOORS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (EXCEPT FOR THE FURNITURE COMMA YOUR FLOORS SHOULD BE COMPLETELY CLEAR)
+
+	;; FLOORS CAN BE CLEAR.
+
+		(and (floor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+	;; A PERSON MAY HAVE FLOORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FLOORS_27 ?x1))
+
+;; (NOTHING SHOULD CLUTTER THE FLOOR COMMA NOTHING SHOULD BE STACKED COMMA NOTHING SHOULD BE STORED ON THE FLOOR)
+
+	;; NOTHING MAY CLUTTER A FLOOR.
+
+		(and (NOTHING_27 ?x1) (MAY_27 ?x1) (CLUTTER_27 ?x1) (A_27 ?x1) (FLOOR_27 ?x1))
+
+	;; NOTHING MAY BE STACK -ED.
+
+		(and (nothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; NOTHING MAY BE STORE -ED ON A FLOOR.
+
+		(and (nothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STORE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (FLOOR_27 ?x2))
+
+;; (ONCE YOU VE GOTTEN YOUR FURNITURE DOWN TO THE BARE ESSENTIALS COMMA CLEAR EVERYTHING ELSE ON THE FLOOR EITHER DONATE IT COMMA TRASH IT
+ COMMA OR FIND A PLACE FOR IT OUT OF SIGHT)
+
+	;; A PERSON MAY VE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VE_27 ?x1))
+
+	;; A PERSON MAY HAVE FURNITURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FURNITURE_27 ?x1))
+
+	;; ESSENTIALS CAN BE BARE.
+
+		(and (essential_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BARE_27 ?x2))
+
+	;; EVERYTHING CAN BE ON A FLOOR.
+
+		(and (everything_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (FLOOR_27 ?x2))
+
+	;; A PLACE CAN BE FOR A THING-REFERRED-TO.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (CLEAR SURFACES)
+
+	;; A CLEAR[PERSON??] MAY SURFACE.
+
+		(and (CLEAR_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SURFACE_27 ?x1))
+
+;; (SAME THING WITH ALL FLAT SURFACES)
+
+	;; THING CAN BE WITH SOME_NUMBER_OF SURFACES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SURFACES_27 ?x2))
+
+	;; SURFACES CAN BE FLAT.
+
+		(and (surface_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLAT_27 ?x2))
+
+;; (DON T HAVE ANYTHING ON THEM COMMA EXCEPT ONE OR TWO SIMPLE DECORATIONS -LRB- SEE BELOW -RRB-)
+
+	;; A MALE MAY HAVE ANYTHING.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ANYTHING_27 ?x1))
+
+	;; ANYTHING CAN BE ON INDIVIDUAL -S.
+
+		(and (anything_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; (DONATE COMMA TRASH OR FIND AN OUT-OF-SIGHT STORAGE SPOT FOR EVERYTHING ELSE)
+
+	;; A STORAGE SPOT CAN BE OUT-OF-SIGHT.
+
+		(and (STORAGE_27 ?x1) (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUT-OF-SIGHT_27 ?x2))
+
+;; (IT WILL MAKE EVERYTHING MUCH COMMA MUCH MORE MINIMAL-LOOKING)
+
+	;; A THING-REFERRED-TO MAY MAKE EVERYTHING.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (EVERYTHING_27 ?x1))
+
+;; (CLEAR WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SOME PEOPLE HANG ALL KINDS OF STUFF ON THEIR WALLS)
+
+	;; SOME_NUMBER_OF PEOPLE MAY HANG SOME_NUMBER_OF KINDS OF STUFF.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (HANG_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (KINDS_27 ?x1) (of_27 ?x1 ?x2) (STUFF_27 ?x2))
+
+	;; STUFF CAN BE ON WALLS.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (WALLS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE WALLS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+;; (NO-CAN-DO IN A MINIMALIST HOME)
+
+	;; NO-CAN-DO CAN BE IN A HOME.
+
+		(and (NO-CAN-DO_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A HOME CAN BE MINIMALIST.
+
+		(and (HOME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+;; (CLEAR YOUR WALLS EXCEPT FOR ONE OR TWO SIMPLE PIECES OF NICE ARTWORK -LRB- SEE BELOW -RRB-)
+
+	;; A PERSON MAY HAVE WALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+	;; SOME_NUMBER_OF PIECES CAN BE CONSTITUTED_OF_OR_FILLED_WITH ARTWORK.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PIECES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ARTWORK_27 ?x2))
+
+	;; PIECES CAN BE SIMPLE.
+
+		(and (piece_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; AN ARTWORK CAN BE NICE.
+
+		(and (ARTWORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+;; (STORE STUFF OUT OF SIGHT)
+
+	;; A STORE[PERSON??] MAY STUFF_OUT OF SIGHT.
+
+		(and (STORE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (STUFF_5FOUT_27 ?x1) (of_27 ?x1 ?x2) (SIGHT_27 ?x2))
+
+;; (THIS HAS BEEN MENTIONED IN THE ABOVE TIPS COMMA BUT YOU SHOULD STORE EVERYTHING YOU NEED OUT OF SIGHT COMMA IN DRAWERS AND CABINETS)
+
+	;; A THING MAY BE MENTION -ED IN TIPS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MENTION_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (TIPS_27 ?x3))
+
+	;; TIPS CAN BE ABOVE.
+
+		(and (TIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOVE_27 ?x2))
+
+	;; A PERSON MAY STORE EVERYTHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (STORE_27 ?x1) (EVERYTHING_27 ?x1))
+
+	;; A PERSON MAY NEED_OUT OF SIGHT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_5FOUT_27 ?x1) (of_27 ?x1 ?x2) (SIGHT_27 ?x2))
+
+;; (BOOKSHELVES CAN BE USED TO STORE BOOKS OR DVDS OR CDS COMMA BUT SHOULDN T HAVE MUCH ELSE EXCEPT A FEW SIMPLE DECORATIONS -LRB- NOT WHOLE
+ COLLECTIONS OF THINGS -RRB-)
+
+	;; BOOKSHELVES MAY BE USE -ED TO STORE BOOKS.
+
+		(and (bookshelve_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?x2 ?x3) (STORE_27 ?x3) (BOOKS_27 ?x3))
+
+	;; DECORATIONS CAN BE SIMPLE.
+
+		(and (decoration_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (DECLUTTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU-2 NSUBJ YOU-2 AUX ARE-3 ADVCL CLEARING-4 AMOD FLAT-5 DOBJ SURFACES-6 DET THE-8 DOBJ FLOOR-9 CONJ_AND FLOOR-9 CONJ_AND STORING-12
+ ADVCL STORING-12 DOBJ STUFF-13 PREP_IN CABINETS-15 PREP_IN DRAWERS-17 CONJ_AND DRAWERS-17 NSUBJ YOU-19 XSUBJ YOU-19 ADVMOD PROBABLY-21
+ DEP WANT-22 AUX TO-23 XCOMP DECLUTTER-24 POSS YOUR-25 NN STORAGE-26 DOBJ AREAS-27 ADVMOD TOO-28)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CAN DO THIS IN A LATER STAGE IF YOU WANT)
+
+	;; A PERSON MAY DO A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A THING CAN BE IN A STAGE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (stage_27 ?x2))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (USE SIMPLE ARTWORK)
+
+	;; AN ARTWORK CAN BE SIMPLE.
+
+		(and (ARTWORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (TO KEEP A ROOM FROM BEING BORING COMMA YOU CAN PUT A SIMPLE PAINTING COMMA DRAWING OR PHOTO COMMA FRAMED WITH A SUBDUED COMMA SOLID COLOR
+ COMMA ON EACH WALL IF YOU WANT)
+
+	;; A PERSON MAY PUT A PAINTING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (painting_27 ?x1))
+
+	;; A PAINTING CAN BE SIMPLE.
+
+		(and (painting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+;; (LEAVE SOME WALLS BARE IF POSSIBLE)
+
+	;; SOME_NUMBER_OF WALLS CAN BE BARE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WALLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BARE_27 ?x2))
+
+;; (USE SIMPLE DECORATIONS)
+
+	;; DECORATIONS CAN BE SIMPLE.
+
+		(and (decoration_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (AS MENTIONED IN THE ABOVE TIPS COMMA ONE OR TWO SIMPLE DECORATIONS CAN SERVE AS ACCENTS FOR A MINIMALIST ROOM)
+
+	;; SOME NUMBER_OR_PORTION MAY SERVE AS ACCENTS.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (SERVE_27 ?x1) (AS_27 ?x1) (ACCENTS_27 ?x1))
+
+	;; TIPS CAN BE ABOVE.
+
+		(and (TIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOVE_27 ?x2))
+
+	;; DECORATIONS CAN BE SIMPLE.
+
+		(and (decoration_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; ACCENTS CAN BE FOR A ROOM.
+
+		(and (accent_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+	;; A ROOM CAN BE MINIMALIST.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+;; (A VASE OF FLOWERS OR A SMALL POTTED PLANT ARE TWO CLASSIC EXAMPLES)
+
+	;; A VASE OF FLOWERS CAN BE EXAMPLES.
+
+		(and (VASE_27 ?x1) (of_27 ?x1 ?x2) (flower_27 ?x2) (be_27 ?e1 ?x1 ?x3) (example_27 ?x3))
+
+	;; A VASE CAN BE CONSTITUTED_OF_OR_FILLED_WITH FLOWERS.
+
+		(and (VASE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FLOWERS_27 ?x2))
+
+	;; A PLANT CAN BE SMALL.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A PLANT CAN BE POTTED.
+
+		(and (PLANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POTTED_27 ?x2))
+
+	;; EXAMPLES CAN BE CLASSIC.
+
+		(and (example_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLASSIC_27 ?x2))
+
+;; (IF THE REST OF YOUR ROOM HAS SUBDUED COLORS COMMA YOUR ACCENTS COULD USE A BRIGHT COLOR -LRB- SUCH AS RED COMMA OR YELLOW -RRB- TO DRAW
+ THE EYE AND GIVE A PLAIN ROOM A SPLASH OF ENERGY)
+
+	;; ACCENTS MAY USE A COLOR.
+
+		(and (accent_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (COLOR_27 ?x1))
+
+	;; A REST OF A ROOM MAY SUBDUE COLORS.
+
+		(and (rest_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2) (MAY_27 ?x2) (SUBDUE_27 ?x2) (COLORS_27 ?x2))
+
+	;; A ROOM MAY HAVE A REST.
+
+		(and (ROOM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REST_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE ACCENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ACCENTS_27 ?x1))
+
+	;; A COLOR CAN BE BRIGHT.
+
+		(and (color_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIGHT_27 ?x2))
+
+	;; A ROOM CAN BE PLAIN.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAIN_27 ?x2))
+
+	;; A SPLASH CAN BE CONSTITUTED_OF_OR_FILLED_WITH ENERGY.
+
+		(and (SPLASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ENERGY_27 ?x2))
+
+;; (PREFER PLAIN WINDOW TREATMENTS)
+
+	;; WINDOW TREATMENTS CAN BE PLAIN.
+
+		(and (WINDOW_27 ?x1) (TREATMENTS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAIN_27 ?x2))
+
+;; (BARE WINDOWS COMMA OR SIMPLE COMMA SOLID COLORED CURTAINS COMMA OR SIMPLE COMMA WOODEN BLINDS ARE GOOD)
+
+	;; WINDOWS CAN BE GOOD.
+
+		(and (window_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; WINDOWS CAN BE BARE.
+
+		(and (window_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BARE_27 ?x2))
+
+	;; BLINDS CAN BE SIMPLE.
+
+		(and (blind_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+;; (TOO MUCH ORNATE STUFF AROUND THE WINDOWS IS CLUTTER)
+
+	;; STUFF CAN BE A CLUTTER.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLUTTER_27 ?x2))
+
+	;; STUFF CAN BE AROUND WINDOWS.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (WINDOWS_27 ?x2))
+
+	;; STUFF CAN BE ORNATE.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORNATE_27 ?x2))
+
+;; (ADOPT PLAIN PATTERNS)
+
+	;; PATTERNS CAN BE PLAIN.
+
+		(and (pattern_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLAIN_27 ?x2))
+
+;; (EDIT AND ELIMINATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WHEN YOU VE SIMPLIFIED A ROOM COMMA YOU CAN PROBABLY DO MORE)
+
+	;; A PERSON MAY VE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VE_27 ?x1))
+
+;; (GIVE IT A COUPLE OF DAYS COMMA THEN LOOK AT EVERYTHING WITH A FRESH EYE)
+
+	;; AN EYE CAN BE FRESH.
+
+		(and (EYE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRESH_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; (YOU CAN COME BACK TO EACH ROOM EVERY FEW MONTHS COMMA AND SOMETIMES YOU LL DISCOVER THINGS YOU CAN SIMPLIFY EVEN MORE)
+
+	;; A PERSON MAY COME_BACK SOME_NUMBER_OF MONTHS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (COME_5FBACK_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (MONTHS_27 ?x1))
+
+	;; A PERSON MAY LL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LL_27 ?x1))
+
+;; (HAVE A PLACE FOR EVERYTHING)
+
+	;; A PLACE CAN BE FOR EVERYTHING.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EVERYTHING_27 ?x2))
+
+;; (IN A MINIMALIST HOUSE COMMA IT S IMPORTANT THAT YOU FIND A PLACE FOR EVERYTHING COMMA AND REMEMBER WHERE THOSE PLACES ARE)
+
+	;; A THING-REFERRED-TO CAN BE IMPORTANT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A HOUSE CAN BE MINIMALIST.
+
+		(and (HOUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIMALIST_27 ?x2))
+
+	;; A PERSON MAY FIND A PLACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (PLACE_27 ?x1))
+
+	;; A PLACE CAN BE FOR EVERYTHING.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EVERYTHING_27 ?x2))
+
+	;; PLACES MAY BE.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [8]>
+
+;; (GIVE IT A SPOT COMMA AND STICK WITH IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AIM FOR LOGICAL SPOTS THAT ARE CLOSE TO WHERE THE THING IS USED COMMA TO MAKE THINGS MORE EFFICIENT COMMA BUT THE KEY IS TO DESIGNATE A
+ SPOT)
+
+	;; SPOTS CAN BE LOGICAL.
+
+		(and (spot_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOGICAL_27 ?x2))
+
+	;; A THING MAY BE USE -ED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; THINGS CAN BE EFFICIENT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EFFICIENT_27 ?x2))

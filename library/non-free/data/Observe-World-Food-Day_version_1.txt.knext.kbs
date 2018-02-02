@@ -1,0 +1,439 @@
+;; (SHEETTHIS MAP SHOWS THE PERCENTAGES OF UNDERNOURISHED PEOPLE PER COUNTRY LEARN ABOUT WORLD FOOD DAY AND HUNGER ISSUES)
+
+	;; MAP MAY SHOW PERCENTAGES OF PEOPLE ABOUT A WORLD_FOOD_DAY[PERSON??].
+
+		(and (MAP_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (PERCENTAGES_27 ?x1) (of_27 ?x1 ?x2) (PEOPLE_27 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (WORLD_5FFOOD_5FDAY_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; A MAP CAN BE SHEETTHIS.
+
+		(and (MAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHEETTHIS_27 ?x2))
+
+	;; PEOPLE CAN BE UNDERNOURISHED.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNDERNOURISHED_27 ?x2))
+
+;; (WORLD FOOD DAY ITSELF IS A WORLDWIDE EVENT AIMED AT INCREASING EVERYONE S AWARENESS ABOUT THE ISSUES SURROUNDING FOOD COMMA ITS DISTRIBUTION COMMA AND HUNGER)
+
+	;; A WORLD_FOOD_DAY[PERSON??] CAN BE AN EVENT.
+
+		(and (WORLD_5FFOOD_5FDAY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (event_27 ?x1))
+
+	;; AN EVENT CAN BE WORLDWIDE.
+
+		(and (EVENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORLDWIDE_27 ?x2))
+
+	;; EVERYONE MAY HAVE AWARENESS.
+
+		(and (EVERYONE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AWARENESS_27 ?x1))
+
+	;; ISSUES MAY SURROUND FOOD.
+
+		(and (ISSUES_27 ?x1) (MAY_27 ?x1) (SURROUND_27 ?x1) (FOOD_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A DISTRIBUTION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DISTRIBUTION_27 ?x1))
+
+;; (IT HAS BEEN HELD SINCE 1979 AND HAS A DIFFERENT THEME EVERY YEAR)
+
+	;; A THING-REFERRED-TO MAY BE HOLD -ED.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (READ ABOUT THE HISTORY OF WORLD FOOD DAY AND THE OTHER THINGS PEOPLE ARE DOING IN THE WORLD TO SUPPORT FOOD PROJECTS)
+
+	;; A READ[PERSON??] MAY DO IN THE WORLD.
+
+		(and (READ_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (do_27 ?e1) (in_27 ?e1 ?x1) (world_27 ?x1))
+
+	;; A READ[PERSON??] CAN BE ABOUT A HISTORY OF A WORLD_FOOD_DAY[PERSON??].
+
+		(and (READ_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (ABOUT_27 ?x1) (A_27 ?x1) (HISTORY_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (WORLD_5FFOOD_5FDAY_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; (FIND OUT WHO HAS WON THE WORLD FOOD PRIZE FOR THE YEAR COMMA AND THE REASON WHY)
+
+	;; A WORLD_FOOD_PRIZE[PERSON??] CAN BE FOR A YEAR.
+
+		(and (WORLD_5FFOOD_5FPRIZE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (year_27 ?x1))
+
+;; (LEARN ABOUT THE DIFFERENT CALORIC INTAKES OF EACH COUNTRY)
+
+	;; LEARN CAN BE ABOUT INTAKES.
+
+		(and (LEARN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (INTAKES_27 ?x2))
+
+	;; INTAKES CAN BE CALORIC.
+
+		(and (intake_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALORIC_27 ?x2))
+
+;; (REFLECT ON THE ISSUES INVOLVED IN A WORLD WHERE OBESITY EPIDEMICS CO-EXIST WITH HUNGER)
+
+	;; REFLECT MAY INVOLVE IN A WORLD.
+
+		(and (REFLECT_27 ?x1) (MAY_27 ?x1) (INVOLVE_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (WORLD_27 ?x2))
+
+	;; REFLECT CAN BE ON ISSUES.
+
+		(and (REFLECT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (ISSUES_27 ?x2))
+
+	;; EPIDEMICS MAY CO-EXIST WITH HUNGER.
+
+		(and (EPIDEMICS_27 ?x1) (MAY_27 ?x1) (CO-EXIST_27 ?x1) (WITH_27 ?x1) (HUNGER_27 ?x1))
+
+	;; EPIDEMICS CAN BE OBESITY.
+
+		(and (epidemic_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OBESITY_27 ?x2))
+
+;; (TAKE THE HUNGER QUIZ)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; (USE THE SOCIAL MEDIA NETWORK TO SPREAD THE WORD ABOUT HUNGER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BECOME A FAN OF THE WORLD FOOD PROGRAMME ON FACEBOOK)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SUGGEST THAT YOUR FRIENDS LIKE THE PAGE TOO)
+
+	;; FRIENDS MAY LIKE A PAGE.
+
+		(and (friend_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1) (A_27 ?x1) (PAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (USE YOUR TWITTER ACCOUNT TO TWEET ABOUT UNITING AGAINST HUNGER AND THE WORLD FOOD PROGRAMME -LRB- WFP -RRB-)
+
+	;; A PERSON MAY HAVE AN ACCOUNT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ACCOUNT_27 ?x1))
+
+	;; A TWITTER[PERSON??] MAY HAVE AN ACCOUNT.
+
+		(and (TWITTER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ACCOUNT_27 ?x1))
+
+;; (SHARE FACTS ABOUT HUNGER COMMA PREVENTING HUNGER COMMA AND ENCOURAGE YOUR FOLLOWERS TO SUPPORT EFFORTS TO PREVENT HUNGER)
+
+	;; SHARE FACTS CAN BE ABOUT HUNGER.
+
+		(and (share_27 ?x1) (fact_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (HUNGER_27 ?x2))
+
+	;; A PERSON MAY HAVE FOLLOWERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (follower_27 ?x1))
+
+;; (FOLLOW THE FAO COMMA THE WORLD FOOD PRIZE COMMA AND THE WORLD FOOD PROGRAMME ON TWITTER)
+
+	;; A WORLD_FOOD_PROGRAMME[PERSON??] CAN BE ON A TWITTER[PERSON??].
+
+		(and (WORLD_5FFOOD_5FPROGRAMME_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (ON_27 ?x1) (A_27 ?x1) (TWITTER_27 ?x1) (PERSON_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [11]>
+
+;; (MAKE YOUR OWN VIDEO AND ENTER THE HUNGERBYTES COMPETITION)
+
+	;; A PERSON MAY HAVE A VIDEO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VIDEO_27 ?x1))
+
+	;; A HUNGERBYTES[PERSON??] MAY HAVE A COMPETITION.
+
+		(and (HUNGERBYTES_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (A_27 ?x1) (competition_27 ?x1))
+
+;; (FIND EVENTS IN YOUR AREA THAT ARE OBSERVING WORLD FOOD DAY)
+
+	;; EVENTS CAN BE IN AN AREA.
+
+		(and (event_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (CHECK ONLINE AND IN YOUR LOCAL PAPER FOR FUNDRAISING EVENTS SUCH AS CONCERTS AND TALKS THAT YOU CAN ATTEND)
+
+	;; A PERSON MAY HAVE A PAPER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PAPER_27 ?x1))
+
+	;; A PERSON MAY ATTEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ATTEND_27 ?x1))
+
+;; (THE FAO KEEPS TRACK OF A NUMBER OF EVENTS)
+
+	;; A FAO MAY KEEP TRACK OF A NUMBER OF EVENTS.
+
+		(and (FAO_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (TRACK_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (NUMBER_27 ?x2) (of_27 ?x1 ?x3) (event_27 ?x3))
+
+;; (-LRB- 7 -RRB- CONSIDER ENTERING ANY SPORTING EVENTS THAT ARE BEING HELD TO RAISE FUNDS FOR HUNGER)
+
+	;; FUNDS CAN BE FOR HUNGER.
+
+		(and (fund_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (HUNGER_27 ?x2))
+
+;; (LOOK EXHIBITIONS COMMA CONFERENCES COMMA AND DISPLAYS FROM GOVERNMENT COMMA NGOS COMMA RESEARCH INSTITUTIONS COMMA ETC. -LRB- -RRB- MANY UNIVERSITY CAMPUSES HOLD PROJECTS TO BECOME INVOLVED IN ON WORLD FOOD
+ DAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CHECK YOUR UNIVERSITY S WEBSITE)
+
+	;; A PERSON MAY HAVE AN UNIVERSITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (UNIVERSITY_27 ?x1))
+
+;; (IN THE USA COMMA SOME UNIVERSITIES USE THIS DAY TO COLLECT CANNED FOOD TO DONATE TO LOCAL FOOD BANKS)
+
+	;; FOOD CAN BE CANNED.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANNED_27 ?x2))
+
+;; (JOIN AN ORGANIZATION THAT IS PREPARING FOOD PACKAGES)
+
+	;; A JOIN[PERSON??] MAY PREPARE FOOD PACKAGES.
+
+		(and (JOIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (PREPARE_27 ?x1) (FOOD_27 ?x1) (PACKAGES_27 ?x1))
+
+;; (VOLUNTEER YOUR TIME TO HELP PREPARE THE PACKAGES)
+
+	;; A PERSON MAY HAVE A TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+;; (PLAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SEVERAL ONLINE GAMES CAN TEACH YOU MORE ABOUT HUNGER ISSUES OR EVEN PROVIDE DONATIONS OF FOOD)
+
+	;; GAMES CAN BE ONLINE.
+
+		(and (game_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONLINE_27 ?x2))
+
+	;; FOOD MAY UNDERGO DONATIONS.
+
+		(and (FOOD_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (DONATIONS_27 ?x1))
+
+;; (SOME INCLUDE  FREERICE)
+
+	;; SOME_NUMBER_OF THING MAY INCLUDE A FREERICE[PERSON??].
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (FREERICE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+;; (YOU PLAY COMMA SPONSORS PAY)
+
+	;; SPONSORS MAY PAY.
+
+		(and (SPONSORS_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+	;; A PERSON MAY PLAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PLAY_27 ?x1))
+
+;; (ALL YOU HAVE TO DO IS GUESS THE CORRECT SYNONYM OF A WORD)
+
+	;; SOME_NUMBER_OF THING MAY GUESS A SYNONYM OF A WORD.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (GUESS_27 ?x1) (A_27 ?x1) (SYNONYM_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (WORD_27 ?x2))
+
+	;; A SYNONYM CAN BE CORRECT.
+
+		(and (SYNONYM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORRECT_27 ?x2))
+
+;; (FOR EVERY CORRECT ANSWER COMMA 10 GRAINS OF RICE ARE DONATED)
+
+	;; SOME_NUMBER_OF GRAINS OF RICE MAY BE DONATE -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (GRAINS_27 ?x1) (of_27 ?x1 ?x2) (RICE_27 ?x2) (be_27 ?e1 ?x1 ?x3) (DONATE_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; AN ANSWER CAN BE CORRECT.
+
+		(and (ANSWER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CORRECT_27 ?x2))
+
+	;; SOME_NUMBER_OF GRAINS CAN BE CONSTITUTED_OF_OR_FILLED_WITH RICE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (GRAINS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RICE_27 ?x2))
+
+;; (FOOD FORCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DOWNLOAD AND TAKE PART IN A SIMULATION OF HOW THE WFP WORKS)
+
+	;; A WFP MAY WORK.
+
+		(and (WFP_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+;; (READ FRUGAL COOKING RECIPES FOR IDEAS ON MAKING THE MOST OF WHAT S ALREADY IN YOUR PANTRY)
+
+	;; COOKING RECIPES CAN BE FRUGAL.
+
+		(and (cook_27 ?e1 ?x1) (recipe_27 ?x1) (be_27 ?e2 ?x1 ?x2) (FRUGAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A PANTRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PANTRY_27 ?x1))
+
+;; (READ FRUGAL COOKING RECIPES FOR IDEAS ON MAKING THE MOST OF WHAT S ALREADY IN YOUR PANTRY)
+
+	;; COOKING RECIPES CAN BE FRUGAL.
+
+		(and (cook_27 ?e1 ?x1) (recipe_27 ?x1) (be_27 ?e2 ?x1 ?x2) (FRUGAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A PANTRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PANTRY_27 ?x1))
+
+;; (READ FRUGAL COOKING RECIPES FOR IDEAS ON MAKING THE MOST OF WHAT S ALREADY IN YOUR PANTRY)
+
+	;; COOKING RECIPES CAN BE FRUGAL.
+
+		(and (cook_27 ?e1 ?x1) (recipe_27 ?x1) (be_27 ?e2 ?x1 ?x2) (FRUGAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A PANTRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PANTRY_27 ?x1))
+
+;; (READ FRUGAL COOKING RECIPES FOR IDEAS ON MAKING THE MOST OF WHAT S ALREADY IN YOUR PANTRY)
+
+	;; COOKING RECIPES CAN BE FRUGAL.
+
+		(and (cook_27 ?e1 ?x1) (recipe_27 ?x1) (be_27 ?e2 ?x1 ?x2) (FRUGAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A PANTRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PANTRY_27 ?x1))
+
+;; (READ FRUGAL COOKING RECIPES FOR IDEAS ON MAKING THE MOST OF WHAT S ALREADY IN YOUR PANTRY)
+
+	;; COOKING RECIPES CAN BE FRUGAL.
+
+		(and (cook_27 ?e1 ?x1) (recipe_27 ?x1) (be_27 ?e2 ?x1 ?x2) (FRUGAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A PANTRY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PANTRY_27 ?x1))

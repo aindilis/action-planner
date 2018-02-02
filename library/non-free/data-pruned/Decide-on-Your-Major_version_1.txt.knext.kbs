@@ -1,0 +1,505 @@
+;; (OLDER -RRB- EXAMINE YOUR DREAM JOB)
+
+	;; A PERSON MAY HAVE A DREAM JOB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DREAM_27 ?x1) (JOB_27 ?x1))
+
+;; (WHETHER YOU VE ALWAYS WANTED TO BE A POET OR A SECRET AGENT COMMA COLLEGE IS A GOOD TIME TO ASSESS YOUR DREAM JOBS AND DECIDE IF YOU
+ REALLY WANT TO LIVE THOSE DREAMS)
+
+	;; COLLEGE CAN BE A TIME.
+
+		(and (college_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+	;; AN AGENT CAN BE SECRET.
+
+		(and (AGENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SECRET_27 ?x2))
+
+	;; A TIME CAN BE GOOD.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A PERSON MAY HAVE DREAM JOBS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DREAM_27 ?x1) (JOBS_27 ?x1))
+
+;; (LOOK UP YOUR SELECTED OCCUPATIONS IN THE DEPARTMENT OF LABOR S OCCUPATIONAL OUTLOOK HANDBOOK -LRB- SEE THE LINKS SECTION FOR THE WEB
+ VERSION -RRB-)
+
+	;; OCCUPATIONS CAN BE IN A DEPARTMENT[PERSON??] OF AN OCCUPATIONAL_OUTLOOK_HANDBOOK[PERSON??].
+
+		(and (occupation_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DEPARTMENT_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+		(and (of_27 ?x1) (OCCUPATIONAL_5FOUTLOOK_5FHANDBOOK_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE OCCUPATIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OCCUPATIONS_27 ?x1))
+
+	;; OCCUPATIONS CAN BE SELECTED.
+
+		(and (occupation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SELECTED_27 ?x2))
+
+;; (THIS RESOURCE PROVIDES UP-TO-DATE INFORMATION ON SALARIES COMMA WORK ENVIRONMENTS AND EMPLOYMENT OUTLOOK FOR HUNDREDS OF JOBS)
+
+	;; A RESOURCE MAY PROVIDE INFORMATION.
+
+		(and (RESOURCE_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (INFORMATION_27 ?x1))
+
+	;; INFORMATION CAN BE ON SALARIES.
+
+		(and (information_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (SALARIES_27 ?x2))
+
+	;; AN INFORMATION CAN BE UP-TO-DATE.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UP-TO-DATE_27 ?x2))
+
+	;; HUNDREDS CAN BE CONSTITUTED_OF_OR_FILLED_WITH JOBS.
+
+		(and (hundred_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (JOBS_27 ?x2))
+
+;; (IF COMMA AFTER YOUR RESEARCH COMMA YOU STILL WANT TO PURSUE YOUR DREAM JOB COMMA THE HANDBOOK ALSO DETAILS WHAT SORT OF TRAINING YOU WILL
+ NEED -- YOU CAN JUST PICK YOUR MAJOR BASED ON THAT)
+
+	;; A PERSON MAY HAVE RESEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESEARCH_27 ?x1))
+
+	;; A PERSON MAY HAVE A DREAM JOB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DREAM_27 ?x1) (JOB_27 ?x1))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (TAKE STOCK OF YOUR INTERESTS)
+
+	;; INTERESTS MAY HAVE STOCK.
+
+		(and (INTERESTS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (stock_27 ?x1))
+
+	;; A PERSON MAY HAVE INTERESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INTERESTS_27 ?x1))
+
+;; (MAYBE YOUR DREAM JOB IS N T AS INTERESTING AS YOU THOUGHT)
+
+	;; A DREAM JOB CAN BE INTERESTING.
+
+		(and (DREAM_27 ?x1) (JOB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (interesting_27 ?x2))
+
+	;; A PERSON MAY HAVE A DREAM JOB.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DREAM_27 ?x1) (JOB_27 ?x1))
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [11]>
+
+;; (YOU CAN ASSESS YOUR INTERESTS YOURSELF OR TAKE AN INTEREST ASSESSMENT -- AVAILABLE ONLINE OR FROM YOUR COLLEGE S ADVISING DEPARTMENT --
+ TO HELP YOU IDENTIFY WHAT SORT OF WORK YOU MIGHT LIKE)
+
+	;; A PERSON MAY HAVE INTERESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INTERESTS_27 ?x1))
+
+	;; A COLLEGE MAY HAVE A DEPARTMENT.
+
+		(and (COLLEGE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DEPARTMENT_27 ?x1))
+
+	;; A DEPARTMENT CAN BE ADVISING.
+
+		(and (DEPARTMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVISING_27 ?x2))
+
+	;; A PERSON MAY HAVE A COLLEGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COLLEGE_27 ?x1))
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (ONCE YOU HAVE A CLEAR IDEA OF THE SORT OF WORK YOU D LIKE TO DO COMMA YOU CAN CHOOSE A MAJOR ACCORDINGLY)
+
+	;; A PERSON MAY HAVE AN IDEA OF A SORT OF WORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (SORT_27 ?x2) (of_27 ?x1 ?x3) (WORK_27 ?x3))
+
+	;; AN IDEA CAN BE CLEAR.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+;; (IF YOUR INTEREST IS SOMETHING THAT REQUIRES A GRADUATE SCHOOL DEGREE COMMA PARTICULARLY ONE THAT EMPHASIZES THE GRADUATE SCHOOL S
+ PRESTIGE COMMA THINK OF COLLEGE AS LARGELY A LONG-TERM ENTRANCE EXAM)
+
+	;; INTEREST CAN BE A SOMETHING.
+
+		(and (interest_27 ?x1) (be_27 ?e1 ?x1 ?x2) (something_27 ?x2))
+
+	;; A PERSON MAY HAVE INTEREST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (INTEREST_27 ?x1))
+
+	;; A SCHOOL DEGREE CAN BE GRADUATE.
+
+		(and (SCHOOL_27 ?x1) (DEGREE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRADUATE_27 ?x2))
+
+	;; A SCHOOL MAY HAVE A PRESTIGE.
+
+		(and (SCHOOL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PRESTIGE_27 ?x1))
+
+	;; A SCHOOL CAN BE GRADUATE.
+
+		(and (SCHOOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRADUATE_27 ?x2))
+
+	;; AN ENTRANCE EXAM CAN BE LONG-TERM.
+
+		(and (ENTRANCE_27 ?x1) (EXAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG-TERM_27 ?x2))
+
+;; (CHOOSE A MAJOR THAT WILL LEAD TO AN ACCEPTABLE JOB IF YOU DO N T GET INTO THE GRADUATE PROGRAM YOU WANT COMMA THAT MEETS ANY ADMISSION
+ REQUIREMENTS OF RELEVANT GRADUATE PROGRAMS COMMA THAT SOUNDS -LRB- AND INVOLVES COURSES WHOSE TITLES SOUND -RRB- INTELLECTUAL COMMA AND
+ THAT WILL PRODUCE FAVORABLE GRADES -LRB- HARD-SCIENCE AND ENGINEERING COURSES TEND NOT TO IN THE UNITED STATES AT LEAST COMMA AND THE
+ COMPETITION IS STIFFER -RRB-)
+
+	;; A JOB CAN BE ACCEPTABLE.
+
+		(and (JOB_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCEPTABLE_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PROGRAM CAN BE GRADUATE.
+
+		(and (PROGRAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRADUATE_27 ?x2))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+	;; PROGRAMS MAY UNDERGO ADMISSION REQUIREMENTS.
+
+		(and (PROGRAMS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (ADMISSION_27 ?x1) (REQUIREMENTS_27 ?x1))
+
+	;; PROGRAMS CAN BE RELEVANT.
+
+		(and (program_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELEVANT_27 ?x2))
+
+	;; PROGRAMS CAN BE GRADUATE.
+
+		(and (program_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GRADUATE_27 ?x2))
+
+	;; TITLES MAY SOUND.
+
+		(and (TITLES_27 ?x1) (MAY_27 ?x1) (SOUND_27 ?x1))
+
+	;; GRADES CAN BE FAVORABLE.
+
+		(and (grade_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORABLE_27 ?x2))
+
+;; (IN THIS CASE COMMA DO N T TAKE A MAJOR THAT REQUIRES BUILDING ON KNOWLEDGE YOU DO N T HAVE AND CA N T PICK UP QUICKLY COMMA SUCH AS
+ ADVANCED MATHEMATICS COMMA PARTICULARLY IF YOUR COMPETITORS WILL BE BETTER PREPARED)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; MATHEMATICS CAN BE ADVANCED.
+
+		(and (mathematic_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVANCED_27 ?x2))
+
+	;; COMPETITORS CAN BE PREPARED.
+
+		(and (competitor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PREPARED_27 ?x2))
+
+	;; A PERSON MAY HAVE COMPETITORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COMPETITORS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [13]>
+
+;; (DEFINE YOUR GOALS)
+
+	;; A PERSON MAY HAVE GOALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GOALS_27 ?x1))
+
+;; (IT S GOOD TO THINK ABOUT WHAT S REALLY IMPORTANT TO YOU)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL (:P GOOD.A NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (GOOD_2EA_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [14]>
+
+;; (IF YOU WANT TO UNLOCK THE MEANING OF LIFE COMMA PHILOSOPHY MAY BE THE PERFECT MAJOR)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF COMMA HOWEVER COMMA YOU REALLY JUST WANT TO MAKE A LOT OF MONEY COMMA NIETZSCHE MAY NOT BE YOUR NICHE)
+
+	;; A PHILOSOPHER CAN BE A NICHE.
+
+		(and (PHILOSOPHER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (NICHE_27 ?x2))
+
+	;; A PERSON MAY HAVE A NICHE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NICHE_27 ?x1))
+
+;; (EXPLORE YOUR OPTIONS)
+
+	;; A PERSON MAY HAVE OPTIONS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OPTIONS_27 ?x1))
+
+;; (TRY READING THE MAJOR REQUIREMENTS AND COURSE DESCRIPTIONS IN COLLEGE CATALOGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [15]>
+
+;; (YOU VE GOT HUNDREDS OF DIFFERENT CLASSES AT YOUR FINGERTIPS COMMA SO GO AHEAD AND TRY WHATEVER SOUNDS INTERESTING)
+
+	;; HUNDREDS CAN BE CONSTITUTED_OF_OR_FILLED_WITH CLASSES.
+
+		(and (hundred_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CLASSES_27 ?x2))
+
+	;; CLASSES CAN BE AT FINGERTIPS.
+
+		(and (class_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (FINGERTIPS_27 ?x2))
+
+	;; A PERSON MAY HAVE FINGERTIPS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FINGERTIPS_27 ?x1))
+
+;; (MOST LIBERAL ARTS CURRICULUM ENCOURAGE OR EVEN REQUIRE YOU TO SAMPLE A VARIETY OF DISCIPLINES)
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH DISCIPLINES.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DISCIPLINES_27 ?x2))
+
+;; (IN SO DOING COMMA YOU MAY FIND A CLASS THAT WILL SPARK A PASSION YOU DID N T EVEN KNOW YOU HAD)
+
+	;; A PERSON MAY FIND A CLASS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (CLASS_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (GET HELP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOUR COLLEGE S ACADEMIC ADVISING AND CAREER COUNSELING OFFICES OFFER A TREASURE TROVE OF RESOURCES -- FROM BOOKS AND ASSESSMENT TESTS TO
+ THE ADVISORS THEMSELVES -- THAT MANY STUDENTS NEVER EVEN USE)
+
+	;; AN ADVISING MAY OFFER A TREASURE TROVE OF RESOURCES.
+
+		(and (ADVISING_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (A_27 ?x1) (TREASURE_27 ?x1) (TROVE_27 ?x1) (of_27 ?x1 ?x2) (resource_27 ?x2))
+
+	;; A COLLEGE MAY HAVE AN ADVISING.
+
+		(and (COLLEGE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ADVISING_27 ?x1))
+
+	;; AN ADVISING CAN BE ACADEMIC.
+
+		(and (ADVISING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACADEMIC_27 ?x2))
+
+	;; A PERSON MAY HAVE A COLLEGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COLLEGE_27 ?x1))
+
+	;; A TREASURE TROVE CAN BE CONSTITUTED_OF_OR_FILLED_WITH RESOURCES.
+
+		(and (TREASURE_27 ?x1) (TROVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (RESOURCES_27 ?x2))
+
+	;; SOME_NUMBER_OF STUDENTS MAY USE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (STUDENTS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+;; (IF YOU RE HAVING TROUBLE CHOOSING A MAJOR COMMA DROP IN OR SCHEDULE AN APPOINTMENT WITH AN ADVISOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AND REMEMBER COMMA IF YOU DO N T LIKE THE ADVICE YOU GET COMMA YOU DO N T HAVE TO TAKE IT)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY GET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+;; (GET SEVERAL PERSPECTIVES BY TALKING WITH OTHERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SOME OF THE BEST PEOPLE TO TALK TO ARE - NOT SURPRISINGLY - UPPERCLASSMEN WHO HAVE ALMOST COMPLETED THEIR MAJOR)
+
+	;; PEOPLE MAY HAVE A THING.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (thing_27 ?x1))
+
+	;; PEOPLE CAN BE BEST.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+;; (HEDGE YOUR BETS)
+
+	;; A PERSON MAY HAVE BETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (bet_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [16]>
+
+;; (MOST COLLEGES ALLOW YOU TO DOUBLE - OR EVEN TRIPLE-MAJOR COMMA AND YOU CAN ALSO MINOR IN ONE OR MORE SUBJECTS RELATIVELY EASILY)
+
+	;; 
+
+	;; ((:I (:Q DET PERSON*.N) MINOR.V (:P IN.P NIL)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (PERSON_2A_2EN_27 ?x1) (MINOR_2EV_27 ?x2) (P_27 ?x3) (IN_2EP_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (WHILE TAKING ON ANOTHER MAJOR OR MINOR MAY EXTEND THE TIME YOU RE IN SCHOOL COMMA IT CAN UNLOCK A WORLD OF OPPORTUNITY)
+
+	;; A THING-REFERRED-TO MAY UNLOCK A WORLD OF OPPORTUNITY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (UNLOCK_27 ?x1) (A_27 ?x1) (WORLD_27 ?x1) (of_27 ?x1 ?x2) (OPPORTUNITY_27 ?x2))
+
+	;; A WORLD CAN BE CONSTITUTED_OF_OR_FILLED_WITH OPPORTUNITY.
+
+		(and (WORLD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (OPPORTUNITY_27 ?x2))
+
+;; (THERE S A LOT TO LEARN OUT THERE COMMA AFTER ALL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [16]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

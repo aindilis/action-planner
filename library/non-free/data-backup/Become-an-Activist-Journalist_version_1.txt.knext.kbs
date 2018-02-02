@@ -1,0 +1,541 @@
+;; (IF ACTIVISM IS YOUR PRIMARY GOAL COMMA AND JOURNALISM ONLY THE MEANS COMMA YOU MAY BECOME FRUSTRATED BY WORKING WITHIN MAINSTREAM NEWSPAPERS COMMA TV COMMA OR RADIO)
+
+	;; A PERSON MAY BECOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BECOME_27 ?x1))
+
+	;; ACTIVISM CAN BE A GOAL.
+
+		(and (ACTIVISM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (GOAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A GOAL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GOAL_27 ?x1))
+
+	;; A GOAL CAN BE PRIMARY.
+
+		(and (GOAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIMARY_27 ?x2))
+
+;; (ALTERNATIVE NEWSPAPERS OR ONLINE JOURNALISM MAY BE MORE APPROPRIATE FOR YOU COMMA ALTHOUGH YOU RISK EARNING A LOT LESS COMMA SO BE PREPARED TO EITHER FIND OTHER SOURCES OF INCOME OR FUNDING)
+
+	;; NEWSPAPERS CAN BE APPROPRIATE.
+
+		(and (newspaper_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+	;; AN ALTERNATIVE[PERSON??] MAY HAVE NEWSPAPERS.
+
+		(and (ALTERNATIVE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (NEWSPAPERS_27 ?x1))
+
+	;; A JOURNALISM CAN BE ONLINE.
+
+		(and (JOURNALISM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ONLINE_27 ?x2))
+
+	;; SOURCES CAN BE CONSTITUTED_OF_OR_FILLED_WITH INCOME.
+
+		(and (source_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (INCOME_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [7]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [8]>
+
+;; (YOUR TECHNICAL TALENTS MAY LEAD YOU FOR EXAMPLE TO BLOGGING OR PHOTOJOURNALISM)
+
+	;; TALENTS MAY LEAD A PERSON.
+
+		(and (talent_27 ?x1) (MAY_27 ?x1) (LEAD_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE TALENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TALENTS_27 ?x1))
+
+	;; TALENTS CAN BE TECHNICAL.
+
+		(and (talent_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TECHNICAL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [10]>
+
+;; (AGAIN COMMA JOURNALISM IS NOT USUALLY A LUCRATIVE CAREER COMMA AND YOU MAY NEED TO MIX ACTIVIST BLOGGING COMMA FOR EXAMPLE COMMA WITH MORE NEUTRAL WORK THAT BRINGS IN MORE MONEY)
+
+	;; JOURNALISM CAN BE A CAREER.
+
+		(and (JOURNALISM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CAREER_27 ?x2))
+
+	;; A CAREER CAN BE LUCRATIVE.
+
+		(and (CAREER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LUCRATIVE_27 ?x2))
+
+	;; WORK CAN BE NEUTRAL.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEUTRAL_27 ?x2))
+
+;; (VIDEOBLOGS ARE GREAT FOR BUDDING DOCUMENTARY FILM MAKERS HONE YOUR SKILLS)
+
+	;; VIDEOBLOGS CAN BE GREAT FOR FILM MAKERS.
+
+		(and (videoblog_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1) (for_27 ?e1 ?x2) (FILM_27 ?x2) (MAKERS_27 ?x2))
+
+	;; FILM MAKERS MAY HONE SKILLS.
+
+		(and (FILM_27 ?x1) (MAKERS_27 ?x1) (MAY_27 ?x1) (HONE_27 ?x1) (SKILLS_27 ?x1))
+
+	;; FILM MAKERS CAN BE BUDDING.
+
+		(and (FILM_27 ?x1) (MAKERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BUDDING_27 ?x2))
+
+	;; FILM MAKERS CAN BE DOCUMENTARY.
+
+		(and (FILM_27 ?x1) (MAKERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DOCUMENTARY_27 ?x2))
+
+	;; A PERSON MAY HAVE SKILLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SKILLS_27 ?x1))
+
+;; (ONCE YOU HAVE YOUR GOALS IN MIND COMMA PRACTICE WRITING COMMA SPEAKING IN FRONT OF A CAMERA OR INTO A MICROPHONE COMMA INTERVIEWING COMMA BLOGGING COMMA OR WHATEVER YOU PLAN TO DO)
+
+	;; A PERSON MAY HAVE GOALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GOALS_27 ?x1))
+
+	;; A PERSON MAY HAVE GOALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GOALS_27 ?x1))
+
+;; (YOU CAN ALWAYS USE A PERSONAL BLOG COMMA VIDEOBLOG COMMA OR PODCAST AS PRACTICE AND A RESUME BUILDER)
+
+	;; A PERSON MAY USE A BLOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (BLOG_27 ?x1))
+
+	;; A BLOG CAN BE PERSONAL.
+
+		(and (BLOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; (TAKE CLASSES WHERE APPROPRIATE AND LEARN THE STYLE USED BY JOURNALISTS IN YOUR AREA)
+
+	;; A STYLE MAY BE USE -ED BY JOURNALISTS.
+
+		(and (STYLE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (JOURNALISTS_27 ?x2))
+
+	;; JOURNALISTS CAN BE IN AN AREA.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (area_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (THINK ABOUT THE STYLE OF WRITING YOU D LIKE TO ADOPT)
+
+	;; 
+
+	;; (NIL (:I (:Q DET PERSON*.N) (:F NIL (:P LIKE.V NIL))))
+
+		(and (NIL_27 ?x1) (I_27 ?x2) (Q_27 ?x3) (DET_27 ?x3) (PERSON_2A_2EN_27 ?x3) (F_27 ?x4) (NIL_27 ?x4) (P_27 ?x5) (LIKE_2EV_27 ?x5) (NIL_27 ?x5))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [10]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [11]>
+
+;; (BE PREPARED TO RECLAIM LANGUAGE THAT HAS BEEN ALTERED OR TAKEN OVER BY AGENDAS THAT ARE NOT INCLUSIVE OR COMPASSIONATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RETHINKING THE WAY THAT LANGUAGE IS USED IN MAINSTREAM MEDIA OR BY LOBBY GROUPS IS AN IMPORTANT SKILL WHEN YOU RE AN ACTIVIST JOURNALIST)
+
+	;; A SKILL CAN BE IMPORTANT.
+
+		(and (SKILL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A JOURNALIST CAN BE ACTIVIST.
+
+		(and (JOURNALIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTIVIST_27 ?x2))
+
+;; (READ WIDELY AND QUESTION WIDELY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 7 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IT S IMPORTANT THAT YOU HAVE A BROAD UNDERSTANDING OF DIFFERING PERSPECTIVES IN ANY ISSUE THAT YOU RE GOING TO COVER)
+
+	;; A PERSON MAY HAVE AN UNDERSTANDING OF PERSPECTIVES A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (UNDERSTANDING_27 ?x1) (of_27 ?x1 ?x2) (PERSPECTIVES_27 ?x2) (A_27 ?x2) (proposition_27 ?x2))
+
+	;; PERSPECTIVES MAY UNDERGO AN UNDERSTANDING.
+
+		(and (PERSPECTIVES_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (AN_27 ?x1) (UNDERSTANDING_27 ?x1))
+
+	;; AN UNDERSTANDING CAN BE BROAD.
+
+		(and (UNDERSTANDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BROAD_27 ?x2))
+
+	;; PERSPECTIVES CAN BE IN AN ISSUE.
+
+		(and (perspective_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (ISSUE_27 ?x2))
+
+	;; PERSPECTIVES CAN BE DIFFERING.
+
+		(and (perspective_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIFFERING_27 ?x2))
+
+;; (THIS GIVES YOUR WORK GREATER RELIABILITY AND MAKES IT HARDER TO SET ASIDE AS UNINFORMED)
+
+	;; A THING MAY GIVE WORK RELIABILITY.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (WORK_27 ?x1) (RELIABILITY_27 ?x1))
+
+	;; A PERSON MAY HAVE WORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORK_27 ?x1))
+
+	;; A RELIABILITY CAN BE GREATER.
+
+		(and (RELIABILITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREATER_27 ?x2))
+
+;; (NETWORK AND USE YOUR RESOURCES)
+
+	;; A PERSON MAY HAVE RESOURCES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (RESOURCES_27 ?x1))
+
+;; (NETWORKING IS AN EXTREMELY POWERFUL TOOL IN JOURNALISM COMMA AND ESPECIALLY IN ACTIVIST CIRCLES)
+
+	;; NETWORKING CAN BE A TOOL.
+
+		(and (networking_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (TOOL_27 ?x2))
+
+	;; A TOOL CAN BE POWERFUL.
+
+		(and (TOOL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POWERFUL_27 ?x2))
+
+;; (FOR EXAMPLE COMMA IF YOU WANT TO GET HIRED BY A BIG PROGRESSIVE BLOG COMMA YOU CAN START BY GETTING ACTIVE WITH SOCIAL MEDIA AND YOUR OWN BLOG COMMA LEAVING FRIENDLY COMMENTS FOR PEOPLE WHO WRITE THERE)
+
+	;; A BLOG CAN BE BIG.
+
+		(and (BLOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; A BLOG CAN BE PROGRESSIVE.
+
+		(and (BLOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; MEDIA CAN BE SOCIAL.
+
+		(and (MEDIA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOCIAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A BLOG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BLOG_27 ?x1))
+
+	;; COMMENTS CAN BE FRIENDLY.
+
+		(and (comment_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRIENDLY_27 ?x2))
+
+;; (ASK AROUND TO SEE IF ANY OF YOUR CONTACTS KNOW ANYONE WHO MIGHT BE USEFUL IN YOUR JOB SEARCH)
+
+	;; A THING OF CONTACTS MAY KNOW ANYONE.
+
+		(and (thing_27 ?x1) (of_27 ?x1 ?x2) (CONTACTS_27 ?x2) (MAY_27 ?x2) (KNOW_27 ?x2) (ANYONE_27 ?x2))
+
+	;; CONTACTS MAY HAVE A THING.
+
+		(and (contact_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE CONTACTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONTACTS_27 ?x1))
+
+	;; A PERSON MAY HAVE A JOB SEARCH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JOB_27 ?x1) (SEARCH_27 ?x1))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))
+
+;; (RESOURCES LIKE THE WOMEN S MEDIA CENTER SUPPORT PROGRESSIVE JOURNALISTS AND MIGHT BE ABLE TO HELP YOU GET A FOOT IN THE DOOR)
+
+	;; A RESOURCES[PERSON??] MAY SUPPORT JOURNALISTS.
+
+		(and (resource_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (SUPPORT_27 ?x1) (JOURNALISTS_27 ?x1))
+
+	;; JOURNALISTS CAN BE PROGRESSIVE.
+
+		(and (journalist_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROGRESSIVE_27 ?x2))
+
+	;; A PERSON MAY GET A FOOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (FOOT_27 ?x1))
+
+	;; A FOOT CAN BE IN A DOOR.
+
+		(and (FOOT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DOOR_27 ?x2))

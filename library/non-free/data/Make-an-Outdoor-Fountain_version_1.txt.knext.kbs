@@ -1,0 +1,302 @@
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [4]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [5]>
+
+;; (YOU WILL NEED A CONTAINER THAT WILL HOLD YOUR PUMP AND SEVERAL GALLONS OF WATER -LRB- IT WILL VARY BASED ON THE PUMP AND THE SIZE OF YOUR
+ FOUNTAIN -RRB-)
+
+	;; A PERSON MAY NEED A CONTAINER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (CONTAINER_27 ?x1))
+
+	;; A PERSON MAY HAVE A PUMP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PUMP_27 ?x1))
+
+	;; A FOUNTAIN MAY HAVE A SIZE.
+
+		(and (FOUNTAIN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SIZE_27 ?x1))
+
+	;; A PERSON MAY HAVE A FOUNTAIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOUNTAIN_27 ?x1))
+
+;; (PUMP AND TUBING - YOU WILL NEED A PUMP WITH ENOUGH POWER TO PUSH THE WATER UP TO THE FOUNTAIN HEAD -LRB- THIS IS MEASURED IN GALLONS PER
+ SECOND -RRB-)
+
+	;; A PUMP CAN BE WITH POWER.
+
+		(and (PUMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (POWER_27 ?x2))
+
+	;; POWER CAN BE ENOUGH.
+
+		(and (power_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; A THING MAY BE MEASURE -ED IN GALLONS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEASURE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (GALLONS_27 ?x3))
+
+;; (SINCE THIS WILL VARY BASED ON YOUR DESIGN COMMA IT IS BEST TO CONSULT WITH A SPECIALTY A LANDSCAPING SUPPLY STORE BEFORE PURCHASING)
+
+	;; A THING-REFERRED-TO CAN BE BEST.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; A PERSON MAY HAVE A DESIGN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+	;; A LANDSCAPING SUPPLY STORE CAN BE BEFORE PURCHASING.
+
+		(and (LANDSCAPING_27 ?x1) (SUPPLY_27 ?x1) (STORE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (PURCHASING_27 ?x2))
+
+;; (THE TUBING CARRIES WATER FROM THE PUMP TO THE FOUNTAIN HEAD)
+
+	;; A TUBING MAY CARRY WATER FROM A PUMP TO A FOUNTAIN HEAD.
+
+		(and (TUBING_27 ?x1) (MAY_27 ?x1) (CARRY_27 ?x1) (WATER_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (PUMP_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (FOUNTAIN_27 ?x2) (HEAD_27 ?x2))
+
+	;; A PUMP CAN BE TO A FOUNTAIN HEAD.
+
+		(and (PUMP_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (FOUNTAIN_27 ?x2) (HEAD_27 ?x2))
+
+;; (TUBING CAN BE RUBBER COMMA PLASTIC COMMA COPPER COMMA IT ALL DEPENDS UPON YOUR DESIGN)
+
+	;; A THING-REFERRED-TO MAY DEPEND UPON A DESIGN.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DEPEND_27 ?x1) (UPON_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+	;; TUBING CAN BE A RUBBER.
+
+		(and (tubing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (RUBBER_27 ?x2))
+
+	;; A PERSON MAY HAVE A DESIGN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+;; (RUBBER IS THE MOST VERSATILE AND FAR EASIER FOR INEXPERIENCED HANDS TO WORK WITH)
+
+	;; HANDS CAN BE INEXPERIENCED.
+
+		(and (hand_27 ?x1) (be_27 ?e1 ?x1 ?e2) (inexperienc_27 ?e2 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [6]>
+
+;; (IT MIGHT BE THE END OF THE TUBING COMMA A STORE BOUGHT FOUNTAIN HEAD COMMA A SCULPTURE WITH A HOLE FOR THE TUBING TO BE INSERTED COMMA A
+ LENGTH OF COPPER PIPE WITH HOLES DRILLED INTO IT COMMA OR ANY NUMBER OF THINGS)
+
+	;; A STORE MAY BUY FOUNTAIN HEAD.
+
+		(and (STORE_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (FOUNTAIN_27 ?x1) (HEAD_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE AN END OF A TUBING.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (end_27 ?x2) (of_27 ?x2 ?x3) (TUBING_27 ?x3))
+
+	;; A TUBING MAY HAVE AN END.
+
+		(and (TUBING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+	;; A SCULPTURE CAN BE WITH A HOLE.
+
+		(and (SCULPTURE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HOLE_27 ?x2))
+
+	;; A HOLE CAN BE FOR A TUBING.
+
+		(and (HOLE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (TUBING_27 ?x2))
+
+	;; A LENGTH CAN BE CONSTITUTED_OF_OR_FILLED_WITH COPPER PIPE.
+
+		(and (LENGTH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (COPPER_27 ?x2) (PIPE_27 ?x2))
+
+	;; COPPER PIPE CAN BE WITH HOLES.
+
+		(and (COPPER_27 ?x1) (PIPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (HOLES_27 ?x2))
+
+	;; HOLES MAY BE DRILL -ED INTO A THING-REFERRED-TO.
+
+		(and (hole_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRILL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (INTO_27 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (YOUR FOUNTAIN HEAD MUST ALLOW FOR THE WATER TO RUN BACK INTO THE RESERVOIR)
+
+	;; A FOUNTAIN HEAD MAY ALLOW FOR WATER.
+
+		(and (FOUNTAIN_27 ?x1) (HEAD_27 ?x1) (MAY_27 ?x1) (ALLOW_27 ?x1) (for_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; A PERSON MAY HAVE A FOUNTAIN HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FOUNTAIN_27 ?x1) (HEAD_27 ?x1))
+
+;; (GATHER YOUR SUPPLIES)
+
+	;; A PERSON MAY HAVE SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SUPPLIES_27 ?x1))
+
+;; (YOU WILL NEED A PUMP COMMA A CONTAINER FOR A RESERVOIR -LRB- SEE TIPS FOR IDEAS -RRB- COMMA TUBING COMMA AND ANY OTHER ELEMENTS THAT ARE
+ CUSTOM TO YOUR DESIGN)
+
+	;; A PERSON MAY NEED A PUMP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (PUMP_27 ?x1))
+
+	;; A CONTAINER CAN BE FOR A RESERVOIR.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (RESERVOIR_27 ?x2))
+
+	;; A TIPS[PERSON??] CAN BE FOR IDEAS.
+
+		(and (TIPS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (IDEAS_27 ?x1))
+
+	;; CUSTOM CAN BE TO A DESIGN.
+
+		(and (CUSTOM_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (DESIGN_27 ?x2))
+
+	;; A PERSON MAY HAVE A DESIGN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESIGN_27 ?x1))
+
+;; (OTHER ITEMS THAT MIGHT COME IN HANDY ARE SMALL STONES AND LOOSE DIRT FOR LEVELING THE RESERVOIR COMMA A SHOVEL COMMA WATER PROOF CAULKING
+ COMMA SAND)
+
+	;; ITEMS CAN BE STONES.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (stone_27 ?x2))
+
+	;; STONES CAN BE SMALL.
+
+		(and (stone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; DIRT CAN BE LOOSE.
+
+		(and (DIRT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+;; (THIS COULD BE AS SIMPLE AS A PILE OF ROCKS INSIDE A LARGE BUCKET COMMA OR AS COMPLICATED AS A WELDED COPPER FRAMEWORK)
+
+	;; A THING CAN BE SIMPLE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A PILE CAN BE CONSTITUTED_OF_OR_FILLED_WITH ROCKS.
+
+		(and (PILE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ROCKS_27 ?x2))
+
+	;; A BUCKET CAN BE LARGE.
+
+		(and (BUCKET_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A COPPER FRAMEWORK CAN BE WELDED.
+
+		(and (COPPER_27 ?x1) (FRAMEWORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WELDED_27 ?x2))
+
+;; (THE ONLY THING THAT MATTERS IS THAT THE FOUNTAIN HEAD POURS THE WATER BACK INTO THE RESERVOIR)
+
+	;; A THING CAN BE A PROPOSITION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (proposition_27 ?x2))
+
+	;; A FOUNTAIN HEAD MAY POUR_BACK WATER.
+
+		(and (FOUNTAIN_27 ?x1) (HEAD_27 ?x1) (MAY_27 ?x1) (POUR_5FBACK_27 ?x1) (WATER_27 ?x1))
+
+;; (PLACE THE PUMP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CONNECT ALL OF THE TUBING AND MAKE SURE THE PUMP IS SET TO A MEDIUM HIGH SETTING)
+
+	;; A TUBING MAY HAVE A THING.
+
+		(and (TUBING_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PUMP MAY BE SET -ED TO A SETTING.
+
+		(and (PUMP_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SET_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (setting_27 ?x3))
+
+;; (MAKE SURE THAT YOU CAN ACCESS IT EASILY AND THAT IT CAN BE REMOVED FOR WINTER WEATHER OR IF IT SHOULD STOP WORKING)
+
+	;; A PERSON MAY ACCESS A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ACCESS_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE REMOVE -ED FOR WINTER WEATHER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMOVE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?x2 ?x3) (WINTER_27 ?x3) (WEATHER_27 ?x3))
+
+	;; A THING-REFERRED-TO MAY STOP.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (STOP_27 ?x1))
+
+;; (FILL THE RESERVOIR WITH CLEAN WATER)
+
+	;; WATER CAN BE CLEAN.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (ADJUST THE PUMP SPEED UNTIL THE WATER COMES OUT OF THE FOUNTAIN HEAD WITHOUT SPRAYING OUTSIDE OF THE BOUNDS OF THE RESERVOIR)
+
+	;; WATER MAY COME_OUT OF A FOUNTAIN HEAD.
+
+		(and (WATER_27 ?x1) (MAY_27 ?x1) (COME_5FOUT_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (FOUNTAIN_27 ?x2) (HEAD_27 ?x2))
+
+	;; A RESERVOIR MAY HAVE BOUNDS.
+
+		(and (RESERVOIR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BOUNDS_27 ?x1))
+
+;; (HIDE THE CORD AND ADD FINISHING TOUCHES)
+
+	;; TOUCHES CAN BE FINISHING.
+
+		(and (touch_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINISHING_27 ?x2))
+
+;; (PLANT PLANTS COMMA ADD DECORATIVE BRICKS COMMA AND HIDE UNATTRACTIVE EDGES)
+
+	;; PLANTS MAY ADD BRICKS.
+
+		(and (plant_27 ?x1) (MAY_27 ?x1) (ADD_27 ?x1) (BRICKS_27 ?x1))
+
+	;; A PLANT[PERSON??] MAY HAVE PLANTS.
+
+		(and (PLANT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (HAVE_27 ?x1) (plant_27 ?x1))
+
+	;; BRICKS CAN BE DECORATIVE.
+
+		(and (brick_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DECORATIVE_27 ?x2))
+
+	;; EDGES CAN BE UNATTRACTIVE.
+
+		(and (edge_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNATTRACTIVE_27 ?x2))

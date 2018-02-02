@@ -1,0 +1,446 @@
+;; (STUFF LIKE PICKING UP WRAPPERS AND ALL THE BASICS)
+
+	;; A STUFF[PERSON??] MAY LIKE.
+
+		(and (STUFF_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (WHEN YOU GET THIS DONE COMMA PAT YOURSELF ON THE BACK)
+
+	;; A THING MAY BE DO -ED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (THIS IS THE HARDEST PART OF YOUR CLEANING PLAN)
+
+	;; A THING CAN BE A PART OF A CLEANING PLAN.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (part_27 ?x2) (of_27 ?x2 ?x3) (CLEANING_27 ?x3) (PLAN_27 ?x3))
+
+	;; A CLEANING PLAN MAY HAVE A PART.
+
+		(and (CLEANING_27 ?x1) (PLAN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PART CAN BE HARDEST.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARDEST_27 ?x2))
+
+	;; A PERSON MAY HAVE A CLEANING PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLEANING_27 ?x1) (PLAN_27 ?x1))
+
+;; (MAKE CHARTS FOR EACH FAMILY MEMBER AND HAVE THEM KEEP THEM IN THEIR ROOM)
+
+	;; CHARTS CAN BE FOR SOME_NUMBER_OF FAMILY MEMBER.
+
+		(and (chart_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (FAMILY_27 ?x2) (MEMBER_27 ?x2))
+
+	;; INDIVIDUAL -S MAY KEEP INDIVIDUAL -S.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A ROOM.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+;; (THIS SHOULD CLEARLY TELL THEM THEIR CHORES)
+
+	;; A THING MAY TELL INDIVIDUAL -S CHORES.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (TELL_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (CHORES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CHORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+;; (IF THEY MAKE A MESS IN A ROOM COMMA THEY SHOULD ALWAYS PICK IT UP)
+
+	;; INDIVIDUAL -S MAY PICK_UP A THING-REFERRED-TO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (PICK_5FUP_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY MAKE A MESS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (MESS_27 ?x1))
+
+	;; A MESS CAN BE IN A ROOM.
+
+		(and (MESS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (ROOM_27 ?x2))
+
+;; (IF NOT COMMA TAKE A STICKER OFF THEIR CHART)
+
+	;; INDIVIDUAL -S MAY HAVE A CHART.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHART_27 ?x1))
+
+;; (NOW THAT THE KIDS KNOW THEIR CHORES COMMA LET S FOCUS ON YOU)
+
+	;; KIDS MAY KNOW CHORES.
+
+		(and (KIDS_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (CHORES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CHORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+;; (YOU COULD KEEP A JOURNAL OF THE THINGS YOU NEED TO DO)
+
+	;; A PERSON MAY KEEP A JOURNAL OF THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (A_27 ?x1) (JOURNAL_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; THINGS MAY UNDERGO A JOURNAL.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (JOURNAL_27 ?x1))
+
+;; (YOU SHOULD ONLY SPEND ABOUT 30 MINUTES CLEANING A DAY COMMA OR LESS)
+
+	;; A PERSON MAY SPEND SOME_NUMBER_OF MINUTES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SPEND_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (MINUTES_27 ?x1))
+
+;; (YOUR LIST WOULD BE THINGS LIKE SWEEP THE FLOOR COMMA DO THE DISHES COMMA JUST TO KEEP YOUR HOUSE LOOKING NEAT)
+
+	;; A LIST CAN BE THINGS.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A HOUSE MAY LOOK NEAT.
+
+		(and (HOUSE_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (NEAT_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (IF YOU WANT YOU CAN CHOOSE A DAY TO DO ALL OF THE LAUNDRY COMMA OR DO IT EVERYDAY)
+
+	;; A PERSON MAY CHOOSE A DAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (A_27 ?x1) (DAY_27 ?x1))
+
+	;; A PERSON MAY WANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1))
+
+	;; A LAUNDRY MAY HAVE A THING.
+
+		(and (LAUNDRY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (YOU COULD ALSO PICK ONE DEEP CLEANING DAY COMMA AND ONE OFF DAY)
+
+	;; A PERSON MAY PICK A CLEANING DAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PICK_27 ?x1) (A_27 ?x1) (CLEANING_27 ?x1) (DAY_27 ?x1))
+
+	;; A CLEANING DAY CAN BE DEEP.
+
+		(and (CLEANING_27 ?x1) (DAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DEEP_27 ?x2))
+
+;; (PUT YOUR OWN PERSONAL SPIN ON HOW YOU WANT TO CLEAN)
+
+	;; A PERSON MAY HAVE A SPIN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPIN_27 ?x1))
+
+	;; A SPIN CAN BE PERSONAL.
+
+		(and (SPIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [17]>
+
+;; (THIS GIVES THEM TIME TO DO THEIR CHORES COMMA AND THEY STILL FEEL LIKE THEY HAVE FREEDOM)
+
+	;; A THING MAY GIVE INDIVIDUAL -S.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CHORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY FEEL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE FREEDOM.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FREEDOM_27 ?x1))
+
+;; (MAKE YOUR DEADLINE FOR CHORES CLEAR)
+
+	;; A DEADLINE CAN BE CLEAR.
+
+		(and (DEADLINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAR_27 ?x2))
+
+	;; A DEADLINE CAN BE FOR CHORES.
+
+		(and (DEADLINE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CHORES_27 ?x2))
+
+	;; A PERSON MAY HAVE A DEADLINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DEADLINE_27 ?x1))
+
+;; (IF NOT DONE COMMA YOU COULD MAKE THEM GO TO BED RIGHT THEN COMMA OR A PUNISHMENT OF YOUR CHOICE)
+
+	;; INDIVIDUAL -S MAY GO TO BED RIGHT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (to_27 ?x1 ?x2) (BED_27 ?x2) (RIGHT_27 ?x2))
+
+	;; A CHOICE MAY UNDERGO A PUNISHMENT.
+
+		(and (CHOICE_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (PUNISHMENT_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHOICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHOICE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "7"
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [19]>
+
+;; (AT THE END OF THE WEEK COMMA GIVE YOUR CHILDREN A DOLLAR FOR EVERY STICK THEY HAVE EARNED)
+
+	;; A WEEK MAY HAVE AN END.
+
+		(and (WEEK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+	;; A PERSON MAY HAVE CHILDREN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHILDREN_27 ?x1))
+
+	;; INDIVIDUAL -S MAY EARN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (EARN_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [20]>
+
+;; (MOTIVATE AND TRY NOT TO MAKE CLEANING SOMETHING NEGATIVE FOR YOUR KIDS)
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+;; (DO NOT YELL AT THEM TO CLEAN COMMA OR ELSE THEY WILL ASSOCIATE YELLING AND CLEANING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PRAISE THEM ONCE THEY DO THEIR CHORES)
+
+	;; INDIVIDUAL -S MAY DO CHORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (CHORES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE CHORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHORES_27 ?x1))
+
+;; (TRY TO MAKE THEIR MCP FUN FOR THEM BY DECORATING THE BOARDS)
+
+	;; INDIVIDUAL -S MAY HAVE A MCP FUN.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MCP_27 ?x1) (FUN_27 ?x1))
+
+;; (REMEMBER COMMA YOU WANT YOUR KIDS TO LIKE TO CLEAN SO THAT WHEN THEY GROW UP COMMA THEY WILL KEEP THIS HABIT)
+
+	;; A PERSON MAY HAVE KIDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KIDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY KEEP A HABIT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (A_27 ?x1) (HABIT_27 ?x1))
+
+	;; INDIVIDUAL -S MAY GROW_UP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GROW_5FUP_27 ?x1))
+
+;; (IF YOU ASSOCIATE CLEANING AND PRAISING AT A YOUNG AGE COMMA THEY WILL THINK OF CLEANING A LOT DIFFERENTLY THAN MANY PEOPLE)
+
+	;; A PERSON MAY ASSOCIATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ASSOCIATE_27 ?x1))
+
+	;; AN AGE CAN BE YOUNG.
+
+		(and (AGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; (IF YOU ASSOCIATE CLEANING AND PRAISING AT A YOUNG AGE COMMA THEY WILL THINK OF CLEANING A LOT DIFFERENTLY THAN MANY PEOPLE)
+
+	;; A PERSON MAY ASSOCIATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ASSOCIATE_27 ?x1))
+
+	;; AN AGE CAN BE YOUNG.
+
+		(and (AGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNG_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [21]>
+
+;; (TRY TO REMIND THEM ONCE THROUGHOUT THE DAY TO DO THEIR ROOM CHORES COMMA BUT UNDERSTAND IT IS THEIR RESPONSIBILITY AND YOU CAN NOT MAKE
+ THEM BECAUSE YOU WANT THEM TO DO THIS INDEPENDENTLY)
+
+	;; INDIVIDUAL -S MAY HAVE ROOM CHORES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROOM_27 ?x1) (CHORES_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A RESPONSIBILITY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (RESPONSIBILITY_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A RESPONSIBILITY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RESPONSIBILITY_27 ?x1))
+
+	;; A PERSON MAY MAKE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: objects printed as # in view of *PRINT-LEVEL* cannot be read back in
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [22]>
+
+;; (ON YOUR MCP YOU COULD HAVE ROOMS LISTED AND MAYBE TWO TO THREE THINGS UNDER EACH ROOM)
+
+	;; A PERSON MAY HAVE ROOMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROOMS_27 ?x1))
+
+	;; A PERSON MAY HAVE A MCP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MCP_27 ?x1))
+
+;; (IF IT WAS THE KITCHEN YOU WOULD WRITE UNDER IT 1)
+
+	;; A PERSON MAY WRITE SOME NUMBER_OR_PORTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WRITE_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A KITCHEN.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (KITCHEN_27 ?x2))
+
+;; (SWEEP FLOOR 2)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO DISHES 3)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLEAN COUNTER TOPS)
+
+	;; A CLEAN[PERSON??] MAY COUNTER TOPS.
+
+		(and (CLEAN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (COUNTER_27 ?x1) (TOPS_27 ?x1))
+
+;; (WORK ON THE CLUTTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (EVERY DAY OR EVERY OTHER DAY COMMA MAKE A SIDE NOTE TO YOURSELF TO GO THROUGH 10 MINUTES OF CLUTTER)
+
+	;; SOME_NUMBER_OF DAY MAY MAKE A SIDE NOTE TO A PERSON.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DAY_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (SIDE_27 ?x1) (NOTE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [23]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [24]>

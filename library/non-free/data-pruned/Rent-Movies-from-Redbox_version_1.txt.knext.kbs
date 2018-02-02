@@ -1,0 +1,170 @@
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: there is no package with name "HTTP"
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [3]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [4]>
+
+;; (THIS WILL TAKE YOU TO A SCREEN OF SOME OF THE MOVIES THE BOX HAS)
+
+	;; A BOX MAY HAVE.
+
+		(and (BOX_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+	;; A THING MAY TAKE A PERSON TO A SCREEN OF SOME_NUMBER_OF THING OF MOVIES.
+
+		(and (thing_27 ?x1) (take_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2) (to_27 ?x2 ?x3) (A_27 ?x3) (SCREEN_27 ?x3) (of_27 ?x2 ?x4) (SOME_5FNUMBER_5FOF_27 ?x4) (thing_27 ?x4) (of_27 ?x4 ?x5) (movy_27 ?x5))
+
+	;; MOVIES MAY HAVE A THING.
+
+		(and (movy_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [5]>
+
+;; (WHEN YOU SEE THE DVD YOU WANT TO RENT COMMA PRESS IT)
+
+	;; A PERSON MAY SEE A DVD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (A_27 ?x1) (DVD_27 ?x1))
+
+;; (IT WILL TAKE YOU TO ANOTHER SCREEN WITH THE DVD INFORMATION)
+
+	;; A THING-REFERRED-TO MAY TAKE A PERSON TO SOME_NUMBER_OF SCREEN.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SCREEN_27 ?x2))
+
+	;; SOME_NUMBER_OF SCREEN CAN BE WITH AN INFORMATION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SCREEN_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (AN_27 ?x2) (INFORMATION_27 ?x2))
+
+	;; A DVD[PERSON??] MAY HAVE AN INFORMATION.
+
+		(and (DVD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INFORMATION_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [6]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [7]>
+
+;; (IT WILL ASK YOU TO SWIPE YOUR CREDIT CARD ON THE CARD SWIPE NEXT TO THE SCREEN)
+
+	;; A PERSON MAY HAVE A CREDIT CARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CREDIT_27 ?x1) (CARD_27 ?x1))
+
+;; (ENTER YOUR ZIP CODE)
+
+	;; A PERSON MAY HAVE A ZIP CODE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ZIP_27 ?x1) (CODE_27 ?x1))
+
+;; (ENTER YOUR E-MAIL ADDRESS)
+
+	;; A PERSON MAY HAVE ADDRESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ADDRESS_27 ?x1))
+
+	;; ADDRESS CAN BE E-MAIL.
+
+		(and (address_27 ?x1) (be_27 ?e1 ?x1 ?x2) (E-MAIL_27 ?x2))
+
+;; (THE E-MAIL IS YOUR RECEIPT)
+
+	;; AN E-MAIL CAN BE A RECEIPT.
+
+		(and (E-MAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (RECEIPT_27 ?x2))
+
+	;; A PERSON MAY HAVE A RECEIPT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RECEIPT_27 ?x1))
+
+;; (IF THIS IS YOUR FIRST TIME USING REDBOX COMMA IT WILL BE BLANK)
+
+	;; A THING-REFERRED-TO CAN BE BLANK.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLANK_27 ?x2))
+
+	;; A THING CAN BE A TIME.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (time_27 ?x2))
+
+	;; A TIME MAY USE A REDBOX[PERSON??].
+
+		(and (TIME_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (REDBOX_27 ?x1) (PERSON_27 ?x1))
+
+	;; A PERSON MAY HAVE A TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (time_27 ?x1))
+
+;; (BUT IF YOU RENT A DVD NEXT TIME COMMA IT WILL REMEMBER YOUR ADDRESS)
+
+	;; A THING-REFERRED-TO MAY REMEMBER AN ADDRESS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (REMEMBER_27 ?x1) (AN_27 ?x1) (ADDRESS_27 ?x1))
+
+	;; A PERSON MAY RENT A NEXT TIME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RENT_27 ?x1) (A_27 ?x1) (NEXT_27 ?x1) (TIME_27 ?x1))
+
+	;; A DVD[PERSON??] MAY HAVE A NEXT TIME.
+
+		(and (DVD_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NEXT_27 ?x1) (TIME_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ADDRESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ADDRESS_27 ?x1))
+
+;; (WHEN YOU RE DONE COMMA PRESS ENTER)
+
+	;; PRESS MAY ENTER.
+
+		(and (PRESS_27 ?x1) (MAY_27 ?x1) (ENTER_27 ?x1))
+
+;; (THE DVD -LRB- S -RRB- WILL THEN COME OUT OF A SLOT ON THE SIDE OF THE REDBOX)
+
+	;; A DVD MAY COME_OUT OF A SLOT.
+
+		(and (DVD_27 ?x1) (MAY_27 ?x1) (COME_5FOUT_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (SLOT_27 ?x2))
+
+	;; A SLOT CAN BE ON A SIDE OF A REDBOX[PERSON??].
+
+		(and (SLOT_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (side_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (REDBOX_27 ?x3) (kbs2_kif_quote_5B_27 ?x3) (PERSON_27 ?x3))
+
+;; (THE DVD -LRB- S -RRB- WILL BE IN -LRB- A -RRB- SMALL REDBOX CASE -LRB- S -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))

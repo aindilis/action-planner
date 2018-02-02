@@ -1,0 +1,513 @@
+;; (THE DRAFT SHOULD INCLUDE THE TENTATIVE DATE COMMA TIME COMMA VENUE -LRB- PLACE -RRB- COMMA CHIEF GUEST COMMA NAME OF THE EVENT COMMA AND A THEME OR TAG-LINE FOR THE EVENT)
+
+	;; A DRAFT MAY INCLUDE A DATE.
+
+		(and (DRAFT_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+	;; A DATE CAN BE TENTATIVE.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TENTATIVE_27 ?x2))
+
+	;; AN EVENT MAY HAVE NAME.
+
+		(and (EVENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NAME_27 ?x1))
+
+	;; A THEME CAN BE FOR AN EVENT.
+
+		(and (theme_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (event_27 ?x2))
+
+;; (PREPARE A DRAFT SCHEDULE OF THE ACTIVITIES IN THE EVENT)
+
+	;; ACTIVITIES MAY HAVE A DRAFT SCHEDULE.
+
+		(and (ACTIVITIES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRAFT_27 ?x1) (SCHEDULE_27 ?x1))
+
+	;; ACTIVITIES CAN BE IN AN EVENT.
+
+		(and (activity_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (event_27 ?x2))
+
+;; (PREPARE A TIME LINE -LRB- WITH DEADLINES -RRB- FOR EACH ACTIVITY)
+
+	;; A TIME LINE CAN BE FOR SOME_NUMBER_OF ACTIVITY.
+
+		(and (TIME_27 ?x1) (LINE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (ACTIVITY_27 ?x2))
+
+;; (GET APPROVAL FOR YOUR BUDGET COMMA SCHEDULE COMMA AND ETC. FROM TEAM MEMBERS AS WELL AS SUPERVISORS)
+
+	;; APPROVAL CAN BE FOR A BUDGET.
+
+		(and (APPROVAL_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (BUDGET_27 ?x2))
+
+	;; A PERSON MAY HAVE A BUDGET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BUDGET_27 ?x1))
+
+;; (MAKE SURE TO UPDATE ANY WEBSITES CONNECTED TO THE EVENT)
+
+	;; WEBSITES MAY BE CONNECT -ED TO AN EVENT.
+
+		(and (website_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONNECT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (EVENT_27 ?x3))
+
+;; (COLLECT SPONSORS AND OTHER SOURCES OF MONEY FROM DELEGATES)
+
+	;; A COLLECT[PERSON??] MAY SPONSOR.
+
+		(and (COLLECT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (SPONSOR_27 ?x1))
+
+	;; SOURCES CAN BE CONSTITUTED_OF_OR_FILLED_WITH MONEY.
+
+		(and (source_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MONEY_27 ?x2))
+
+;; (MARKET THE EVENT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PREPARE BROCHURE COMMA RELEASE ADVERTISEMENT COMMA INFORM THE MEDIA COMMA SEND MAILINGS COMMA MAKE PHONE CALLS COMMA SEND MESSAGES TO E-GROUPS COMMA AND VISIT POTENTIAL PARTICIPANTS OR SPONSORS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IT IS IMPORTANT TO MAKE SURE ADMINISTRATIVE ACTIONS ARE BEING TAKEN CARE OF AS WELL)
+
+	;; ACTIONS MAY BE TAKE -ED.
+
+		(and (action_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAKE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; ACTIONS CAN BE ADMINISTRATIVE.
+
+		(and (action_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADMINISTRATIVE_27 ?x2))
+
+;; (THINGS LIKE POOR ACCOUNTING COMMA AND LACK OF CORRESPONDENCE CAN CREATE PROBLEMS FOR ANY EVENT)
+
+	;; THINGS MAY CREATE PROBLEMS.
+
+		(and (thing_27 ?e1 ?x1) (MAY_27 ?x1) (CREATE_27 ?x1) (PROBLEMS_27 ?x1))
+
+	;; AN ACCOUNTING CAN BE POOR.
+
+		(and (accounting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POOR_27 ?x2))
+
+	;; PROBLEMS CAN BE FOR AN EVENT.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (event_27 ?x2))
+
+;; (GATHER ITEMS NEEDED FOR THE EVENT)
+
+	;; ITEMS MAY NEED FOR AN EVENT.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (for_27 ?x1 ?x2) (event_27 ?x2))
+
+	;; A GATHER[PERSON??] MAY HAVE ITEMS.
+
+		(and (GATHER_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+;; (THESE ITEMS MIGHT INCLUDE MEDALS COMMA GAMES COMMA MEMENTOS COMMA PRIZES COMMA OR CERTIFICATES)
+
+	;; ITEMS MAY INCLUDE MEDALS.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (MEDALS_27 ?x1))
+
+;; (ALSO COMMA MAKE A SIMILAR CONTACT LIST FOR VIP COMMA AND SUPPLIER OF ANY GOODS OR SERVICES)
+
+	;; A CONTACT LIST CAN BE FOR A VIP[PERSON??].
+
+		(and (CONTACT_27 ?x1) (LIST_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (VIP_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+;; (VISIT THE VENUE WITH YOUR TEAM MEMBERS COMMA LOOK AROUND THE PLACE INCLUDING PARKING COMMA TOILETS COMMA GREEN ROOMS COMMA CONTACT PERSON COMMA ARRANGEMENTS COMMA VARIOUS ENTRANCES AND EXITS)
+
+	;; A VENUE MAY LOOK AROUND A PLACE.
+
+		(and (VENUE_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (AROUND_27 ?x1) (A_27 ?x1) (PLACE_27 ?x1))
+
+	;; A VENUE CAN BE WITH TEAM MEMBERS.
+
+		(and (VENUE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (TEAM_27 ?x2) (MEMBERS_27 ?x2))
+
+	;; A PERSON MAY HAVE TEAM MEMBERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TEAM_27 ?x1) (MEMBERS_27 ?x1))
+
+	;; ROOMS CAN BE GREEN.
+
+		(and (ROOMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+;; (LOOK FOR NEARBY PLACES WHERE YOU CAN TAKE PHOTOCOPY COMMA MAKE PHONE CALLS COMMA BUY ANY THINGS IN CASE OF EMERGENCY)
+
+	;; PLACES CAN BE NEARBY.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NEARBY_27 ?x2))
+
+	;; A PERSON MAY TAKE PHOTOCOPY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (PHOTOCOPY_27 ?x1))
+
+;; (GIVE PROPER INSTRUCTIONS TO THE TEAM MEMBERS ON HOW TO HANDLE EVERY SITUATION)
+
+	;; INSTRUCTIONS CAN BE PROPER.
+
+		(and (instruction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROPER_27 ?x2))
+
+;; (CHECK WHETHER ALL INVITATIONS HAVE BEEN SENT AND RESPONDED TO)
+
+	;; SOME_NUMBER_OF INVITATIONS MAY BE SEND -ED.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (INVITATIONS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (CREATE A LIST OF INVITEES)
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH INVITEES.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (INVITEES_27 ?x2))
+
+;; (REMIND VIPS ABOUT THE EVENTS)
+
+	;; A REMIND_VIPS[PERSON??] CAN BE ABOUT EVENTS.
+
+		(and (REMIND_5FVIPS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (ABOUT_27 ?x1) (EVENTS_27 ?x1))
+
+;; (CHECK WHETHER ALL ACTIVITIES ARE GOING ON SCHEDULE)
+
+	;; SOME_NUMBER_OF ACTIVITIES MAY GO ON SCHEDULE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ACTIVITIES_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1) (ON_27 ?x1) (SCHEDULE_27 ?x1))
+
+;; (CHECK TRAVEL ARRANGEMENTS/MAPS/DIRECTIONS FOR PARTICIPANTS)
+
+	;; ARRANGEMENTS/MAPS/DIRECTIONS CAN BE FOR PARTICIPANTS.
+
+		(and (ARRANGEMENTS_2FMAPS_2FDIRECTIONS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (participant_27 ?x2))
+
+;; (GO TO THE VENUE AND CHECK WHETHER ALL THINGS ARE READY)
+
+	;; SOME_NUMBER_OF THINGS CAN BE READY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THINGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+;; (COLLECT ENOUGH MONEY/CASH FOR THE EVENT EXPENSES FROM CONCERNED PERSONS)
+
+	;; MONEY/CASH CAN BE FOR EVENT EXPENSES.
+
+		(and (MONEY_2FCASH_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EVENT_27 ?x2) (EXPENSES_27 ?x2))
+
+	;; A MONEY/CASH CAN BE COLLECT.
+
+		(and (MONEY_2FCASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLLECT_27 ?x2))
+
+	;; A MONEY/CASH CAN BE ENOUGH.
+
+		(and (MONEY_2FCASH_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+	;; PERSONS CAN BE CONCERNED.
+
+		(and (person_27 ?x1) (be_27 ?e1 ?x1 ?e2) (concern_27 ?e2 ?x1))
+
+;; (CHECK WHETHER PARTICIPANTS KIT IS READY)
+
+	;; PARTICIPANTS MAY KI.
+
+		(and (participant_27 ?x1) (MAY_27 ?x1) (KI_27 ?x1))
+
+;; (THIS KIT MIGHT INCLUDE A BOTTLE OF WATER COMMA SNACK BAR COMMA NOTE PAPER COMMA PEN COMMA BROCHURE AND ANY INFORMATION THEY MAY NEED)
+
+	;; INDIVIDUAL -S MAY NEED.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; A KIT MAY INCLUDE A BOTTLE OF WATER.
+
+		(and (KIT_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (A_27 ?x1) (BOTTLE_27 ?x1) (of_27 ?x1 ?x2) (WATER_27 ?x2))
+
+	;; A BOTTLE CAN BE CONSTITUTED_OF_OR_FILLED_WITH WATER.
+
+		(and (BOTTLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (WATER_27 ?x2))
+
+;; (IT IS ALSO A GOOD IDEA TO INCLUDE SMALL MEMENTOS)
+
+	;; A THING-REFERRED-TO CAN BE AN IDEA.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AN_27 ?x2) (IDEA_27 ?x2))
+
+	;; AN IDEA CAN BE GOOD.
+
+		(and (IDEA_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; MEMENTOS CAN BE SMALL.
+
+		(and (memento_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (PREPARE MINUTE TO MINUTE AGENDA FOR IMPORTANT ACTIVITIES)
+
+	;; ACTIVITIES CAN BE IMPORTANT.
+
+		(and (activity_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (MAKE A CHECKLIST OF THE THINGS TO BE TAKEN TO THE VENUE)
+
+	;; THINGS MAY HAVE A CHECKLIST.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHECKLIST_27 ?x1))
+
+;; (ARRIVE EARLY TO THE VENUE WITH YOUR TEAM MEMBERS AND VOLUNTEERS)
+
+	;; A PERSON MAY HAVE TEAM MEMBERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TEAM_27 ?x1) (MEMBERS_27 ?x1))
+
+;; (CHECK FOR THE ELECTRIC READING AND THAT ALL ELECTRONIC EQUIPMENT IS IN WORKING ORDER)
+
+	;; READING CAN BE ELECTRIC.
+
+		(and (reading_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRIC_27 ?x2))
+
+	;; EQUIPMENT CAN BE ELECTRONIC.
+
+		(and (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ELECTRONIC_27 ?x2))
+
+;; (MAKE SURE THE ORGANISERS ARE WEARING A DISTINCT BADGE OR SOME OTHER NOTICEABLE IMPLEMENT SO THAT PARTICIPANTS CAN FIND HELP IF NEEDED)
+
+	;; ORGANISERS MAY WEAR A BADGE.
+
+		(and (organiser_27 ?x1) (MAY_27 ?x1) (WEAR_27 ?x1) (A_27 ?x1) (BADGE_27 ?x1))
+
+	;; A BADGE CAN BE DISTINCT.
+
+		(and (BADGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISTINCT_27 ?x2))
+
+	;; AN IMPLEMENT CAN BE NOTICEABLE.
+
+		(and (IMPLEMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NOTICEABLE_27 ?x2))
+
+	;; PARTICIPANTS MAY FIND HELP.
+
+		(and (participant_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (HELP_27 ?x1))
+
+;; (PUT THE WELCOME BANNERS AND OTHER INFO IN FRONT OF THE BUILDING)
+
+	;; AN AND OTHER INFO CAN BE WELCOME.
+
+		(and (and_27 ?x1 ?x2) (other_27 ?x2) (INFO_27 ?x2) (be_27 ?e1 ?x2 ?x3) (WELCOME_27 ?x3))
+
+	;; A BANNERS[PERSON??] MAY HAVE AN AND OTHER INFO.
+
+		(and (banner_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (PERSON_27 ?x2))
+
+		(and (have_27 ?e1 ?x2) (and_27 ?x1 ?x2) (other_27 ?x2) (INFO_27 ?x2))
+
+;; (MAKE A RECEPTION AND REGISTRATION COUNTER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [35]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (INFORM THE SPONSORS ON WHERE TO PUT THE STALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [36]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (-LRB- MAKE ALLOCATION OF SPACE EARLIER -RRB-)
+
+	;; A MAKE[PERSON??] MAY ALLOCATIO OF SPACE.
+
+		(and (MAKE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (ALLOCATIO_27 ?x1) (of_27 ?x1 ?x2) (SPACE_27 ?x2))
+
+;; (KEEP THE MICROPHONES COMMA AND SPEAKERS READY)
+
+	;; MICROPHONES CAN BE READY.
+
+		(and (microphone_27 ?x1) (be_27 ?e1 ?x1 ?x2) (READY_27 ?x2))
+
+;; (PUT ON MUSIC FOR AN INFORMAL EVENT)
+
+	;; AN EVENT CAN BE INFORMAL.
+
+		(and (EVENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INFORMAL_27 ?x2))
+
+;; (MAKE SURE THE HOST SPEAKER HAS THE SCHEDULE AND RESUME OF THE CHIEF GUEST READY)
+
+	;; A HOST SPEAKER MAY HAVE A SCHEDULE.
+
+		(and (HOST_27 ?x1) (SPEAKER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+;; (HE/SHE SHOULD BE WELL PREPARED)
+
+	;; A HE/SHE[PERSON??] CAN BE PREPARED.
+
+		(and (HE_2FSHE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (PREPARED_27 ?x1))
+
+;; (MAKE SURE THE HOST/ANCHOR/MASTER OF CEREMONY IS AWARE OF THE PURPOSE OF THE EVENT AS WELL AS THE PEOPLE WHO ARE ORGANISING IT)
+
+	;; A HOST/ANCHOR/MASTER OF A CEREMONY[PERSON??] CAN BE AWARE OF A PURPOSE OF AN EVENT.
+
+		(and (HOST_2FANCHOR_2FMASTER_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (CEREMONY_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1 ?x1) (AWARE_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PURPOSE_27 ?x2) (of_27 ?x1 ?x3) (event_27 ?x3))
+
+	;; AN EVENT MAY HAVE A PURPOSE.
+
+		(and (EVENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PURPOSE_27 ?x1))
+
+;; (MAKE SURE THAT SPEAKERS ARE AWARE OF ANY TIME CONSTRAINTS)
+
+	;; SPEAKERS CAN BE AWARE OF TIME CONSTRAINTS.
+
+		(and (speaker_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AWARE_27 ?x2) (of_27 ?e1 ?x3) (time_27 ?x3) (constraint_27 ?x3))
+
+;; (WELCOME THE DELEGATES AND OTHERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [44]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE CARE OF ANY SPECIAL REQUESTS COMMA ESPECIALLY THOSE OF THE OUTSTATIONS AND CHIEF GUEST)
+
+	;; OUTSTATIONS MAY HAVE A THING.
+
+		(and (outstation_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+;; (HAVE A SEPARATE PERSON TO LOOK AFTER THE NEEDS OF GENERAL DELEGATES -LRB- NON-VIPS -RRB- AND FOR PR -LRB- PUBLIC RELATIONS -RRB-)
+
+	;; A PERSON CAN BE SEPARATE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+;; (GIVE DIRECTIONS TO THOSE WHO NEED THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [47]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THANK THE ALL TEAM MEMBERS COMMA ESPECIALLY SPONSORS AND VOLUNTEERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [48]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FINALIZE AND SETTLE THE ACCOUNTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [49]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HAVE A THANK YOU PARTY FOR THOSE WHO HELPED)
+
+	;; A PARTY CAN BE FOR A THING.
+
+		(and (party_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PARTY CAN BE THANK.
+
+		(and (party_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THANK_27 ?x2))
+
+;; (DISTRIBUTE ANY SOUVENIRS OR OTHER PUBLICATIONS TO RELEVANT PEOPLE)
+
+	;; PEOPLE CAN BE RELEVANT.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELEVANT_27 ?x2))
+
+;; (DELIVER THE RECEIPTS TO SPONSORS AND OTHERS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [52]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DISTRIBUTE THE PHOTOS TO THOSE WHO REQUIRE IT -LRB- AFTER DEVELOPING THE PHOTOS -RRB- AND POST THE PHOTOS IN YOUR EVENT WEBSITE)
+
+	;; A PERSON MAY HAVE AN EVENT WEBSITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1) (WEBSITE_27 ?x1))
+
+;; (EVALUATE THE FEEDBACK FORMS -LRB- OR FEEDBACK FROM YOUR WEBSITE -RRB-)
+
+	;; FEEDBACK CAN BE FROM A WEBSITE.
+
+		(and (FEEDBACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (WEBSITE_27 ?x2))
+
+	;; A PERSON MAY HAVE A WEBSITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WEBSITE_27 ?x1))

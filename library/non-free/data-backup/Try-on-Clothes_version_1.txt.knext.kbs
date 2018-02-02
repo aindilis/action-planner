@@ -1,0 +1,290 @@
+;; (VACUUMHAMPERTAKE YOUR CLOTHES OUT OF THE CLOSET AND MAKE A PILE OF THEM ON THE FLOOR)
+
+	;; A PERSON MAY HAVE CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CLOTHES_27 ?x1))
+
+;; (THIS WILL MAKE IT EASIER TO TAKE THE CLOTHES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (NOW YOU CAN JUST GRAB THE CLOTHES AND TRY THEM INSTEAD OF PULLING THEM OUT OF THE CLOSET)
+
+	;; A PERSON MAY GRAB CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GRAB_27 ?x1) (CLOTHES_27 ?x1))
+
+;; (TRY ON THE PANTS FIRST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF SOMETHING IS TOO BIG OR TOO LOOSE COMMA SEE IF IT IS ADJUSTABLE)
+
+	;; SOMETHING CAN BE BIG.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (IF IT IS N T COMMA YOU GOT THREE CHOICES)
+
+	;; A PERSON MAY GET SOME_NUMBER_OF CHOICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (CHOICES_27 ?x1))
+
+;; (GIVE YOUR YOUNGER BROTHER OR SISTER NEW HAND-ME-DOWNS COMMA DONATE TO CHARITY COMMA OR JUST THROW THEM OUT)
+
+	;; A PERSON MAY HAVE A BROTHER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BROTHER_27 ?x1))
+
+	;; A BROTHER CAN BE YOUNGER.
+
+		(and (brother_27 ?x1) (be_27 ?e1 ?x1 ?x2) (YOUNGER_27 ?x2))
+
+	;; HAND-ME-DOWNS CAN BE SISTER.
+
+		(and (HAND-ME-DOWNS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SISTER_27 ?x2))
+
+;; (TRY ON THE SHIRTS NEXT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DO THE SAME THINGS YOU DID WITH THE PANTS EXCEPT YOU DO N T NEED TO CHECK FOR IF IT S ADJUSTABLE)
+
+	;; A PERSON MAY DO WITH PANTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (with_27 ?x1 ?x2) (pant_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (MOST SHIRTS DO N T HAVE THAT FEATURE)
+
+	;; SHIRTS MAY DO.
+
+		(and (shirt_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (NOW COMMA TRY ON HAIR STUFF)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAYBE HEADBANDS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF THEY HURT YOUR HEAD COMMA GET RID OF THEM)
+
+	;; INDIVIDUAL -S MAY HURT A HEAD.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HURT_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+;; (IF THEY KEEP FALLING OFF COMMA GET RID OF THEM TOO)
+
+	;; INDIVIDUAL -S MAY KEEP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [17]>
+
+;; (CHECK ON PERSONALS)
+
+	;; 
+
+	;; ((:I NIL ON.P (:F K (:F PLUR PERSONAL.N))))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (ON_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (F_27 ?x3) (PLUR_27 ?x3) (PERSONAL_2EN_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU ALL KNOW WHAT WE MEAN)
+
+	;; PERSON -S MAY MEAN.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1))
+
+;; (BRAS COMMA UNDERWEAR COMMA THAT KIND OF STUFF)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (AGAIN COMMA IF THEY DO N T FIT COMMA JUST GET RID OF THEM)
+
+	;; INDIVIDUAL -S MAY DO.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (DO N T WORRY ABOUT THE WAY THEY LOOK)
+
+	;; INDIVIDUAL -S MAY LOOK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1))
+
+;; (NO ONE S GOING TO SEE THEM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT ANY SEASONAL STUFF BACK IN YOUR CLOSET COMMA AS CLEAN-UP)
+
+	;; STUFF CAN BE SEASONAL.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEASONAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A CLOSET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSET_27 ?x1))
+
+;; (THIS IS SO WHENEVER YOU NEED TO GET SOMETHING COMMA YOU WILL ALWAYS SEE SOMETHING GOOD IN YOUR CLOSET)
+
+	;; A PERSON MAY SEE SOMETHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (SOMETHING_27 ?x1))
+
+	;; A PERSON MAY HAVE A CLOSET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSET_27 ?x1))
+
+;; (WEAR SHOES THAT YOU WILL LIKELY WEAR WITH WHATEVER YOU RE TRYING ON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [17]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU TRY ON PANTS WITH ATHLETIC SHOES ON BUT INTEND TO WEAR THEM WITH HEELS COMMA YOU MIGHT FIND THAT THEY ARE TOO SHORT LATER ON)
+
+	;; A PERSON MAY FIND A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PERSON MAY TRY ON PANTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRY_27 ?x1) (ON_27 ?x1) (pant_27 ?x1))
+
+	;; PANTS CAN BE WITH SHOES.
+
+		(and (pant_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (shoe_27 ?x2))
+
+	;; SHOES CAN BE ATHLETIC.
+
+		(and (shoe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATHLETIC_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE SHORT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+;; (THINK ABOUT HOW THE CLOTHING CAN BE TAILORED)
+
+	;; A CLOTHING MAY BE TAILOR -ED.
+
+		(and (clothing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TAILOR_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF SOMETHING DOES N T FIT QUITE RIGHT COMMA A TAILOR MIGHT BE ABLE TO FIX THAT FOR JUST A FEW DOLLARS)
+
+	;; SOMETHING MAY DO.
+
+		(and (SOMETHING_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (PRACTICE GOOD HYGIENE)
+
+	;; A HYGIENE CAN BE GOOD.
+
+		(and (HYGIENE_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (IF TRYING ON ANY KIND OF UNDERWEAR OR BATHING SUITS COMMA KEEP YOUR OWN UNDERWEAR ON UNDERNEATH)
+
+	;; A PERSON MAY HAVE AN UNDERWEAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (UNDERWEAR_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [18]>

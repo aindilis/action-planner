@@ -1,0 +1,348 @@
+;; (THERESNACKSMAKE SURE TO PACK EVERYTHING THAT BELONGS IN A PARTICULAR ROOM TOGETHER IN A ROOM LABELED BOX)
+
+	;; A ROOM MAY BE LABEL -ED.
+
+		(and (ROOM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LABEL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IT ALSO MAKES UNPACKING EASIER ONCE YOU GET WHERE YOU RE GOING)
+
+	;; A THING-REFERRED-TO MAY MAKE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1))
+
+;; (START PACKING ONE ROOM AT A TIME COMMA PACKING SMALLER ITEMS FIRST TO GET THEM OUT OF THE WAY)
+
+	;; START MAY PACK A ROOM.
+
+		(and (START_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A ROOM CAN BE AT A TIME.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+	;; ITEMS CAN BE SMALLER.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+;; (ALSO COMMA TOSS IN A SUGARY TREAT SUCH AS LIFE SAVERS OR HARD CANDIES IN CASE ANYONE GETS REALLY HUNGRY OR LOW BLOOD SUGAR ON MOVE-IN DAY)
+
+	;; A TOSS[PERSON??] CAN BE IN A TREAT.
+
+		(and (TOSS_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (in_27 ?x1) (treat_27 ?x1))
+
+	;; A TREAT CAN BE SUGARY.
+
+		(and (treat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUGARY_27 ?x2))
+
+	;; CANDIES CAN BE IN CASE ANYONE.
+
+		(and (candy_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (CASE_27 ?x2) (ANYONE_27 ?x2))
+
+	;; CANDIES CAN BE HARD.
+
+		(and (candy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; A BLOOD SUGAR CAN BE HUNGRY.
+
+		(and (BLOOD_27 ?x1) (SUGAR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUNGRY_27 ?x2))
+
+;; (PACK A SUITCASE OR BOX FOR EACH MEMBER OF THE FAMILY SEVERAL DAYS IN ADVANCE)
+
+	;; A SUITCASE CAN BE FOR SOME_NUMBER_OF MEMBER OF A FAMILY.
+
+		(and (SUITCASE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (MEMBER_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (FAMILY_27 ?x3))
+
+	;; A FAMILY MAY HAVE A MEMBER.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MEMBER_27 ?x1))
+
+	;; A FAMILY CAN BE IN ADVANCE.
+
+		(and (FAMILY_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ADVANCE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (KEEP THESE BOXES OR SUITCASES IN A SAFE PLACE WHERE THEY WO N T GET MIXED IN WITH EVERYTHING ELSE COMMA PERHAPS IN THE CAR OR EVEN FARTHER AWAY -LRB- WORK OR A NEIGHBOR S HOUSE -RRB-)
+
+	;; BOXES CAN BE IN A PLACE.
+
+		(and (box_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PLACE_27 ?x2))
+
+	;; A PLACE CAN BE SAFE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (BRING THEM WITH YOU IN THE CAR OR HOWEVER YOU ARE TRAVELING)
+
+	;; A PERSON MAY TRAVEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; (INCLUDE IN IT  MOVING TRUCK RESERVATION COMMA MOVING HELPER PAYMENT CODES -LRB- IF APPLICABLE -RRB- COMMA PET VETERINARIAN RECORDS COMMA CASH FOR MOVERS TIPS COMMA HOTEL RESERVATION COMMA CONTACT INFORMATION
+ FOR IMPORTANT PEOPLE -LRB- REALTOR OR LANDLORD -RRB- COMMA AND ANY REALLY IMPORTANT DOCUMENTS YOU COULD NEED BEFORE YOU HAVE THE CHANCE TO UNPACK)
+
+	;; AN INCLUDE[PERSON??] CAN BE IN A THING-REFERRED-TO.
+
+		(and (INCLUDE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (in_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; HELPER PAYMENT CODES CAN BE MOVING.
+
+		(and (HELPER_27 ?x1) (PAYMENT_27 ?x1) (CODES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MOVING_27 ?x2))
+
+	;; VETERINARIAN RECORDS CAN BE PET.
+
+		(and (VETERINARIAN_27 ?x1) (RECORDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PET_27 ?x2))
+
+	;; CASH CAN BE FOR TIPS.
+
+		(and (cash_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TIPS_27 ?x2))
+
+	;; TIPS CAN BE MOVERS.
+
+		(and (tip_27 ?x1) (be_27 ?e1 ?x1 ?x2) (mover_27 ?x2))
+
+	;; CONTACT INFORMATION CAN BE FOR PEOPLE.
+
+		(and (CONTACT_27 ?x1) (INFORMATION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; PEOPLE CAN BE IMPORTANT.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; DOCUMENTS CAN BE IMPORTANT.
+
+		(and (document_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; A PERSON MAY HAVE A CHANCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+;; (KEEP THIS FILE IN A SAFE PLACE COMMA SUCH AS IN YOUR SUITCASE COMMA WHERE YOU WO N T ACCIDENTALLY PACK IT IN A BOX)
+
+	;; A FILE CAN BE IN A PLACE.
+
+		(and (FILE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PLACE_27 ?x2))
+
+	;; A PLACE CAN BE SAFE.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+	;; A PERSON MAY HAVE A SUITCASE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SUITCASE_27 ?x1))
+
+	;; A PERSON MAY PACK A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PACK_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (CLEAN OUT THE KITCHEN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TOSS AWAY JUNK AND ONLY BOX THINGS THAT YOU USE)
+
+	;; A PERSON MAY USE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+;; (USE YOUR KITCHEN FOOD STORAGE CONTAINERS FOR ALL LOOSE THINGS YOU FIND AS YOU EMPTY DRAWERS FROM THE KITCHEN COMMA DESKS COMMA OR TABLE DRAWERS)
+
+	;; A PERSON MAY FIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1))
+
+	;; A PERSON MAY HAVE KITCHEN FOOD STORAGE CONTAINERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KITCHEN_27 ?x1) (FOOD_27 ?x1) (STORAGE_27 ?x1) (CONTAINERS_27 ?x1))
+
+	;; THINGS CAN BE LOOSE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+	;; A PERSON MAY EMPTY DRAWERS FROM A KITCHEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EMPTY_27 ?x1) (DRAWERS_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (KITCHEN_27 ?x1))
+
+;; (DO N T FORGET TO LOOK INSIDE THE DISHWASHER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LABEL BOXES ACCORDING TO CONTENTS AND ROOMS THEY BELONG IN THEN SECURELY CLOSE OR TAPE THEM)
+
+	;; BOXES MAY CLOSE.
+
+		(and (box_27 ?x1) (MAY_27 ?x1) (CLOSE_27 ?x1))
+
+	;; BOXES CAN BE LABEL.
+
+		(and (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LABEL_27 ?x2))
+
+;; (USE VARIOUS SIZED BAGS FOR THE SAME PURPOSE)
+
+	;; BAGS CAN BE SIZED.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIZED_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; (MAKE SURE YOU KEEP THE BOX OF HARDWARE AND TOOLS IN A CENTRAL PLACE WHERE EVERYONE CAN FIND IT)
+
+	;; A PERSON MAY KEEP A BOX OF HARDWARE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (A_27 ?x1) (BOX_27 ?x1) (of_27 ?x1 ?x2) (HARDWARE_27 ?x2))
+
+	;; EVERYONE MAY FIND A THING-REFERRED-TO.
+
+		(and (EVERYONE_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (THIS WILL MAKE RE-ASSEMBLING MUCH EASIER)
+
+	;; A THING MAY MAKE RE-ASSEMBLING.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (RE-ASSEMBLING_27 ?x1))
+
+	;; RE-ASSEMBLING CAN BE EASIER.
+
+		(and (re-assembling_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (PLACE IN IT THE SMALL THINGS LIKE VIDEO EAR PLUGS COMMA REMOTE CONTROLS COMMA BOXES OF NAILS AND THINGS YOU WILL NEED IMMEDIATELY AFTER MOVING IN)
+
+	;; THINGS CAN BE SMALL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; EAR PLUGS CAN BE VIDEO.
+
+		(and (EAR_27 ?x1) (PLUGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VIDEO_27 ?x2))
+
+	;; BOXES CAN BE CONSTITUTED_OF_OR_FILLED_WITH NAILS.
+
+		(and (box_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (NAILS_27 ?x2))
+
+;; (STACK THE BOXES AS YOU ARE FINISHED FILLING COMMA TAPING COMMA AND LABELING THEM)
+
+	;; A PERSON MAY BE FINISH -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FINISH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))
+
+;; (TRY TO KEEP THEM STACKED IN THE ROOMS THAT YOU HAVE FINISHED PACKING)
+
+	;; INDIVIDUAL -S MAY BE STACK -ED IN ROOMS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STACK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (ROOMS_27 ?x3))
+
+	;; A PERSON MAY FINISH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FINISH_27 ?x1))

@@ -1,0 +1,75 @@
+;; (ORGANIZE WHATEVER IS LEFT ON THE TABLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT THE BAKING ITEMS TOGETHER)
+
+	;; ITEMS CAN BE BAKING.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BAKING_27 ?x2))
+
+;; (SPICES AND OILS AND UTENSILS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THESE WILL GO ON A SHELF NEXT TO EACH OTHER)
+
+	;; A THING MAY GO ON A SHELF.
+
+		(and (thing_27 ?x1) (GO_27 ?x1) (ON_27 ?x1) (A_27 ?x2) (SHELF_27 ?x2))
+
+;; (PLACE CANNED SOUPS TOGETHER COMMA PLACING THE SAME ONES NEXT TO OR ON TOP OF EACH OTHER)
+
+	;; SOUPS CAN BE CANNED.
+
+		(and (soup_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANNED_27 ?x2))
+
+;; (PLACE PACKAGED SOUPS NEARBY)
+
+	;; SOUPS CAN BE PACKAGED.
+
+		(and (soup_27 ?x1) (be_27 ?e1 ?x1 ?e2) (package_27 ?e2 ?x1))
+
+;; (ON THE SAME SHELF PLACE CANNED VEGGIES COMMA CANNED TUNA COMMA MEATS COMMA PEANUT BUTTER COMMA JELLIES COMMA AND ITEMS USED OFTEN AND FOR MEALS OR SNACKS)
+
+	;; VEGGIES CAN BE CANNED.
+
+		(and (veggy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANNED_27 ?x2))
+
+	;; A TUNA CAN BE CANNED.
+
+		(and (TUNA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CANNED_27 ?x2))
+
+;; (PLACE BAGS OF CHIPS COMMA CRACKERS COMMA CEREALS ON THE SAME SHELVE IF THERE IS ROOM COMMA OR THE SHELF OR SHELVES ABOVE OR UNDERNEATH BUT IN THE SAME AREA)
+
+	;; BAGS OF CHIPS MAY CEREALS ON A SHELVE.
+
+		(and (bag_27 ?x1) (of_27 ?x1 ?x2) (CHIPS_27 ?x2) (MAY_27 ?x2) (CEREALS_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (SHELVE_27 ?x2))
+
+	;; BAGS CAN BE CONSTITUTED_OF_OR_FILLED_WITH CHIPS.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CHIPS_27 ?x2))
+
+	;; BAGS CAN BE PLACE.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLACE_27 ?x2))

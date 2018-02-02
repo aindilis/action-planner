@@ -1,0 +1,675 @@
+;; (MAKE A LIST TO INCLUDE EVERYTHING THAT YOU WILL POSSIBLY NEED ON YOUR TRIP)
+
+	;; A PERSON MAY NEED ON A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+	;; A PERSON MAY HAVE A TRIP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TRIP_27 ?x1))
+
+;; (DO N T LEAVE THINGS OUT AND THINK YOU WILL REMEMBER WHAT YOU NEEDED)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (INCLUDE EVERYTHING THAT YOU WILL NEED COMMA AS WELL AS WHAT YOU MIGHT NEED)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (FOLLOW THE RULE FOR BACKPACKING COMMA WHICH IS IF YOU CAN NOT DECIDE IF YOU NEED IT COMMA YOU PROBABLY WILL NOT NEED IT)
+
+	;; A RULE CAN BE FOR BACKPACKING.
+
+		(and (RULE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (BACKPACKING_27 ?x2))
+
+	;; A PERSON MAY DECIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DECIDE_27 ?x1))
+
+	;; A PERSON MAY NEED A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (INSTEAD OF BRINGING AN EXTRA HEAVY DUTY FLASHLIGHT COMMA BRING A SECOND SET OF BATTERIES)
+
+	;; A DUTY FLASHLIGHT CAN BE EXTRA.
+
+		(and (DUTY_27 ?x1) (FLASHLIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A DUTY FLASHLIGHT CAN BE HEAVY.
+
+		(and (DUTY_27 ?x1) (FLASHLIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; A SET CAN BE CONSTITUTED_OF_OR_FILLED_WITH BATTERIES.
+
+		(and (SET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (BATTERIES_27 ?x2))
+
+;; (BRING A BACKPACK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (WHETHER YOU BUY ONE OR BORROW ONE COMMA ADJUST IT FOR YOUR BODY)
+
+	;; A PERSON MAY BUY SOME NUMBER_OR_PORTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BUY_27 ?x1) (SOME_27 ?x1) (NUMBER_5FOR_5FPORTION_27 ?x1))
+
+	;; A PERSON MAY HAVE A BODY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BODY_27 ?x1))
+
+;; (FULLY LOADED COMMA NEARLY ALL OF THE WEIGHT SHOULD BE ON YOUR HIPS AND SACRUM)
+
+	;; A PERSON MAY HAVE HIPS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HIPS_27 ?x1))
+
+;; (THE SHOULDER STRAPS ARE MOSTLY THERE TO KEEP THE PACK VERTICAL AND CLOSE TO YOU)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (REDUCE FOOD WEIGHT AND VOLUME BY PACKING PRIMARILY DEHYDRATED MEALS)
+
+	;; FOOD WEIGHT MAY DEHYDRATE MEALS.
+
+		(and (FOOD_27 ?x1) (WEIGHT_27 ?x1) (MAY_27 ?x1) (DEHYDRATE_27 ?x1) (MEALS_27 ?x1))
+
+	;; FOOD WEIGHT CAN BE BY PACKING.
+
+		(and (FOOD_27 ?x1) (WEIGHT_27 ?x1) (be_27 ?e1 ?x1) (by_27 ?x1 ?x2) (PACKING_27 ?x2))
+
+	;; A FOOD WEIGHT CAN BE REDUCE.
+
+		(and (FOOD_27 ?x1) (WEIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REDUCE_27 ?x2))
+
+;; (AVOID EXCESS RAW MEATS COMMA ESPECIALLY ON LONG TRIPS)
+
+	;; MEATS CAN BE EXCESS.
+
+		(and (meat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (excess_27 ?x2))
+
+	;; MEATS CAN BE RAW.
+
+		(and (meat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RAW_27 ?x2))
+
+	;; TRIPS CAN BE LONG.
+
+		(and (TRIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+;; (PACK CALORIE DENSE FOOD COMMA BUT TRY TO EAT FROM A VARIETY OF FOOD GROUPS)
+
+	;; A PACK[PERSON??] MAY CALORIE FOOD.
+
+		(and (PACK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (CALORIE_27 ?x1) (FOOD_27 ?x1))
+
+	;; FOOD CAN BE DENSE.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DENSE_27 ?x2))
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH FOOD GROUPS.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (FOOD_27 ?x2) (GROUPS_27 ?x2))
+
+;; (EAT A LOT OF CARBOHYDRATES AND PROTEIN)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SINCE YOU LL SWEAT A LOT COMMA MAKE SURE YOU GET SUFFICIENT SALT)
+
+	;; A PERSON MAY GET SALT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (SALT_27 ?x1))
+
+	;; SALT CAN BE SUFFICIENT.
+
+		(and (SALT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUFFICIENT_27 ?x2))
+
+;; (MOST FOOD PACKAGING IS BULKIER THAN NECESSARY AND LESS WATERPROOF THAN YOU LL PREFER)
+
+	;; FOOD PACKAGING CAN BE BULKIER.
+
+		(and (food_27 ?x1) (packaging_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BULKIER_27 ?x2))
+
+	;; A WATERPROOF CAN BE NECESSARY.
+
+		(and (WATERPROOF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))
+
+;; (BEFORE YOU GO COMMA DIVIDE UP YOUR FOOD AND REPACKAGE IT INTO ZIP-TOP BAGS)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; A PERSON MAY HAVE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; BAGS CAN BE ZIP-TOP.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIP-TOP_27 ?x2))

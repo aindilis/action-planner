@@ -1,0 +1,327 @@
+;; (ENVIRONMENTFIND LOCAL CAR SHOWS)
+
+	;; CAR MAY SHOW.
+
+		(and (CAR_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1))
+
+	;; A CAR CAN BE ENVIRONMENTFIND.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENVIRONMENTFIND_27 ?x2))
+
+;; (IF YOU DO N T HAVE THE TIME OR MONEY FOR A CAR SHOW COMMA LOOK FOR LOCAL CAR SHOWS AROUND YOUR CITY AND SEE IF THEY WILL TAKE YOUR CAR FOR THE SHOW)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A TIME CAN BE FOR A CAR SHOW.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (CAR_27 ?x2) (SHOW_27 ?x2))
+
+	;; A PERSON MAY HAVE A CITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CITY_27 ?x1))
+
+	;; INDIVIDUAL -S MAY TAKE A CAR.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (take_27 ?e1 ?x1 ?x2) (car_27 ?x2))
+
+	;; A PERSON MAY HAVE A CAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+;; (WEBSITES OF SHOWS USUALLY TELL YOU HOW TO ENTER)
+
+	;; WEBSITES OF SHOWS MAY TELL A PERSON.
+
+		(and (website_27 ?x1) (of_27 ?x1 ?x2) (SHOWS_27 ?x2) (MAY_27 ?x2) (TELL_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; WEBSITES CAN BE CONSTITUTED_OF_OR_FILLED_WITH SHOWS.
+
+		(and (website_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SHOWS_27 ?x2))
+
+;; (LOOK AT YOUR DRIVEWAY)
+
+	;; A PERSON MAY HAVE A DRIVEWAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRIVEWAY_27 ?x1))
+
+;; (BUT IF YOU DO HAVE THE TIME AND MONEY COMMA CHECK IF YOUR DRIVEWAY IS BIG ENOUGH)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A DRIVEWAY CAN BE BIG.
+
+		(and (DRIVEWAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; A PERSON MAY HAVE A DRIVEWAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRIVEWAY_27 ?x1))
+
+;; (MOST DRIVEWAYS ARE BIG ENOUGH FOR 2-3 CARS)
+
+	;; DRIVEWAYS CAN BE BIG.
+
+		(and (driveway_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (IF IT IS N T THOUGH COMMA YOU MIGHT WANT TO STICK TO STEP ONE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [9]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU COULD USE YOUR FRONT YARD TOO)
+
+	;; A PERSON MAY USE A YARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (YARD_27 ?x1))
+
+	;; A PERSON MAY HAVE A YARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (YARD_27 ?x1))
+
+;; (DECIDE ON A DATE FOR YOUR SHOW)
+
+	;; A DATE CAN BE FOR A SHOW.
+
+		(and (DATE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (SHOW_27 ?x2))
+
+	;; A PERSON MAY HAVE A SHOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SHOW_27 ?x1))
+
+;; (SATURDAYS AND SUNDAYS ARE GREAT DAYS)
+
+	;; A SATURDAYS_AND_SUNDAYS[PERSON??] CAN BE DAYS.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (day_27 ?x1))
+
+	;; DAYS CAN BE GREAT.
+
+		(and (day_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (GIVE YOURSELF AT LEAST A FEW MONTHS FOR PLANNING)
+
+	;; 
+
+	;; ((:I NIL FOR.P (:F K PLANNING.N)))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (FOR_2EP_27 ?x1) (F_27 ?x2) (K_27 ?x2) (PLANNING_2EN_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHOOSE CARS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [14]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU ALREADY OWN A CLASSIC VEHICLE COMMA YOU ARE IN LUCK)
+
+	;; A PERSON CAN BE IN LUCK.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (LUCK_27 ?x2))
+
+	;; A PERSON MAY OWN A VEHICLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (OWN_27 ?x1) (A_27 ?x1) (VEHICLE_27 ?x1))
+
+	;; A VEHICLE CAN BE CLASSIC.
+
+		(and (VEHICLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLASSIC_27 ?x2))
+
+;; (IF YOU DO N T COMMA YOU COULD OFFER OR ASK ONE OF YOUR FRIENDS OR NEIGHBORS TO DISPLAY THEIR CLASSIC CAR)
+
+	;; A PERSON MAY OFFER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A CAR.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+	;; A CAR CAN BE CLASSIC.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLASSIC_27 ?x2))
+
+;; (TUNE AND CLEAN THE CARS UP A BIT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [17]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ONCE THE DAY OF THE SHOW COMES COMMA WAKE UP SUPER EARLY AND SET UP YOUR CARS)
+
+	;; WAKE MAY SUPE.
+
+		(and (WAKE_27 ?x1) (MAY_27 ?x1) (SUPE_27 ?x1))
+
+	;; A DAY OF A SHOW MAY COME.
+
+		(and (day_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (SHOW_27 ?x2) (MAY_27 ?x2) (COME_27 ?x2))
+
+	;; A PERSON MAY HAVE CARS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CARS_27 ?x1))
+
+;; (ORGANIZE THEM BY MAKER COMMA KIND COMMA COLOR COMMA OR RANDOM)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (POST SIGNS AROUND THE NEIGHBORHOOD)
+
+	;; SIGNS CAN BE AROUND A NEIGHBORHOOD.
+
+		(and (sign_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (NEIGHBORHOOD_27 ?x2))
+
+	;; A POST[PERSON??] MAY HAVE SIGNS.
+
+		(and (POST_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SIGNS_27 ?x1))
+
+;; (SET UP A DONATION BOX)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MOST NICE PEOPLE WILL GIVE DONATIONS)
+
+	;; PEOPLE MAY GIVE DONATIONS.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (DONATIONS_27 ?x1))
+
+	;; PEOPLE CAN BE NICE.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NICE_27 ?x2))
+
+;; (HOLD THE SHOW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GREET PEOPLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BE COOL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [25]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HAVE AN AUCTION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [26]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU WANT TO COMMA HOLD AN AUCTION AT THE END OF THE SHOW)
+
+	;; A SHOW MAY HAVE AN END.
+
+		(and (SHOW_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+;; (MAKE SURE THOUGH THE MINIMUM PRICE IS WHAT YOU THINK THE CAR IS WORTH)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A CAR CAN BE WORTH.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORTH_27 ?x2))

@@ -1,0 +1,76 @@
+;; (SO AFTER THE FIGHT CALMS DOWN COMMA MAKE SURE YOU TALK TO THE PERSON BEFORE ITS TOO LATE)
+
+	;; A FIGHT MAY CALM_DOWN.
+
+		(and (FIGHT_27 ?x1) (MAY_27 ?x1) (CALM_5FDOWN_27 ?x1))
+
+	;; A PERSON MAY TALK TO A PERSON.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TALK_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (AFTER YOU DO THAT COMMA SIT DOWN AND SAY YOU RE SORRY IF YOU ARE THE ONE WHO CAUSED THE FIGHT)
+
+	;; A PERSON MAY DO A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON CAN BE AN ONE.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (TAKE TIME TO RECONSIDER IF THIS PERSON IS REALLY A FRIEND IF YOU RE CONSTANTLY IN FIGHTS AND ALWAYS MAKING UP FIRST)
+
+	;; A PERSON CAN BE A FRIEND.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (FRIEND_27 ?x2))
+
+;; (REFLECT ON WHAT YOU MAY HAVE DONE)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (READ PAST EMAILS COMMA CHATS ECT)
+
+	;; CHATS MAY ECT.
+
+		(and (CHATS_27 ?x1) (MAY_27 ?x1) (ECT_27 ?x1))
+
+;; (THIS WILL HELP YOU UNDERSTAND THEIR POINT OF VIEW)
+
+	;; A PERSON MAY UNDERSTAND A POINT OF VIEW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (UNDERSTAND_27 ?x1) (A_27 ?x1) (POINT_27 ?x1) (of_27 ?x1 ?x2) (VIEW_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE A POINT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (POINT_27 ?x1))
+
+;; (GIVE IN AND APOLOGIZE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE OTHER PERSON PROBABLY WANTS TO DO IT TOO COMMA BUT IT SHOWS THAT YOU RE A COURAGEOUS AND DEDICATED FRIEND)
+
+	;; A THING-REFERRED-TO MAY SHOW A PROPOSITION.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A FRIEND CAN BE COURAGEOUS.
+
+		(and (FRIEND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (courageou_27 ?x2))

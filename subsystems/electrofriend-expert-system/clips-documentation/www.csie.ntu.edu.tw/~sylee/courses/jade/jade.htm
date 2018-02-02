@@ -1,0 +1,203 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="big5">
+<LINK REL=stylesheet type="text/css" href="http://www.csie.ntu.edu.tw/~sylee/courses/jade/style.css">
+  <title>JADE -- Java Agent Development Framework</title>
+  <link rel="stylesheet" type="text/css" href="../../stdtheme.css">
+</head>
+
+<body bgcolor="#FBFFFF">
+<script language="JavaScript">
+<!--
+document.write("<h1><a id='top' name='top'></a>" + document.title + "</h1>");
+//-->
+</script>
+
+<h2>Introduction</h2>
+JADE 是一個 FIPA(Foundation for Intelligent Physical Agents) 規格相容的多代理人(multi-agent)開發系統。
+<H3>容器與平台</H3>
+每一個在運轉中的JADE環境稱為容器(container), 可容納數個代理人。 一組活動的容器稱為平台(platform)。
+平台必須先有一個<B>主容器</B>, 其他容器一經啟動就要向其登記。 例如,
+<p /><img src="http://www.csie.ntu.edu.tw/~sylee/courses/jade/images/AP.png">
+
+<p /><b>Reference</b>:
+
+<a href="http://jade.cselt.it/doc/JADEProgramming-tutorial-for-beginners.pdf">JADE Programming tutorial for beginners.pdf</a>
+
+<h2>Running JADE</h2>
+<ul>
+  <li>從 <a href="http://jade.cselt.it/">JADE Home</a> 下載
+  <li>解壓縮
+  <li>假設安裝在目錄 c:\jade，則將 <a href="http://jade.cselt.it/doc/tutorials/JADEAdmin/runjade.bat">
+    runjade.bat</a> 拷到 c:\jade。
+  <li>啟動 jade 用
+    <pre class="terminal">
+runjade -gui
+</pre>
+<p />
+  <li><a href="http://jade.cselt.it/doc/tutorials/JADEAdmin/startJade.html">Getting Started with JADE</a></li>
+(<a href="http://www.csie.ntu.edu.tw/~sylee/courses/jade/startJade.html">local</a>)
+</ul>
+
+<h2>JADE Management</h2>
+The Agent Management Services (AMS) (specification XC00023)
+
+<P>當使用 java jade.Boot -gui 啟動 JADE 的主container 時, 顯示 RMA (Remote Monitoring Agent) 視窗。
+RMA 是管理 JADE 的主要工具。
+<p /><img src="http://www.csie.ntu.edu.tw/~sylee/courses/jade/images/rma.jpg">
+<p />平台中有 host 機器 3406-1:1099/JADE, 3406-1 是 PC 的 id, 1099 是 port,  JADE 是平台名稱。
+此 host 含有一預設的 Main-container, 其中有 df, ams, RMA 三個預設的代理人。
+<P>RMA 包括 Directory Facilitator (DF) 和 Agent Management System (AMS) 兩個代理人:
+
+<OL>
+<LI>DF 提供代理人的目錄服務。
+<LI>AMS 負責管理 AP 的運作, 如創造/刪除代理人, 決定代理人是否可以隨時向 AP 登記, 以及代理人的遷移。
+</OL>
+jade 提供一簡單的代理人 DummyAgent, 可用以查看在代理人間交談的信文。
+
+<p />從在地端跑遠端 RMA 和 DummyAgent 這兩個代理人時, 需限要使用全名
+
+<pre>
+    java.tools.DummyAgent.DummyAgent
+    java.tools.rma.rma
+</pre>
+
+<p />因此啟動遠端機器(210.70.83.101)的 JADE container 時, 用
+
+<pre class="terminal">
+runjade -host 210.70.83.101 -container dummy0:jade.tools.DummyAgent.DummyAgent RMA1:jade.tools.rma.rma
+</pre>
+<p />命令列中的選項(option)意義如下:
+<ul compact type="circle">
+    <li><b>-container</b>: 表示 container 是 'secondary', 應使用 Main-Container 的服務.     </li>
+
+    <li><b>-host <host address></b>:  表示 Main-Container 所在的機器</li>
+</ul>
+
+<p /><b>Reference</b>:
+  <a href="http://jade.cselt.it/doc/tutorials/JADEAdmin/startJade.html">Getting Started with JADE</a>
+(<a href="http://www.csie.ntu.edu.tw/~sylee/courses/jade/startJade.html">local</a>)
+
+<h2>通信行為</h2>
+兩個代理人通信時, 使用信文(message), 每一信文封裝在一 jade.lang.acl.ACLMessage 物件中。
+
+<h3>JADE 的信文結構</a></h3>
+
+<p>JADE 的 ACL信文所有屬性如下, 常用的用粗体字:
+
+<ul compact>
+    <li><b>Performative</b> - FIPA 的信文類型 (INFORM, QUERY, PROPOSE, ...)</li>
+    <li>Addressing</li>
+        <ul><li><b>Receiver</b></li>
+        <li><b>Sender</b> (initialized automatically)</li>
+        </ul>
+    <li><b>Content</b> - This is the main content of the message</li>
+    <li><b>ConversationID</b> - Used to link messages in same conversation</li>
+    <BR>
+    <li>Language - Specifies which language is used in the content</li>
+    <li>Ontology - Specifies which ontology is used in the content</li>
+    <BR>
+    <li>Protocol - Specifies the protocol</li>
+    <li>ReplyWith - Another field to help distinguish answers </li>
+    <li>InReplyTo - Sender uses to help distinguish answers</li>
+    <li>ReplyBy - Used to set a time limit on an answer</li>
+</ul>
+
+<p>撰寫信文時, 必須先用 ACL 標示其 <i>performative</i> 類型, 再設定內容, 如:
+
+<pre>
+    ACLMessage msg = new ACLMessage( ACLMessage.INFORM );
+    msg.setContent("I sell seashells at $10/kg" );
+</pre>
+
+<p>此信文使用最常用的 <i>performative</i> INFORM, 提供資訊. 其他如: QUERY 用以提問題, REQUEST 用以要求做工作, 而 PROPOSE 用以啟動磋商.
+答覆的 <i>performative</i> 用 AGREE 或 REFUSE.
+
+<p /><b>Reference</b>:
+<a href="http://www.iro.umontreal.ca/~vaucher/Agents/Jade/primer4.html">Agent Communcation</a>
+
+<h3>FIPA 的信文類型</a></h3>
+
+JADE 在 jade.lang.acl.ACLMessage 類別中, 為每一個 ACL 信文通信行為, 界定
+一個靜態 int 常數, 如
+<ul>
+<li>ACLMessage.INFORM
+<li>ACLMessage.REQUEST
+<li>ACLMessage.QUERY_REF
+<li>ACLMessage.CFP
+</ul>
+<p /><b>Reference</b>:
+<a href="http://www.ryerson.ca/~dgrimsha/courses/cps720_02/JADE/jadeCommActs.html">Communcative
+Acts</a>(<a href="http://www.csie.ntu.edu.tw/~sylee/courses/jade/jadeCommActs.html">local</a>)
+
+
+<h2>交談通信協定</h2>
+
+交談過程涉及兩種角色: Initiator 和 Responder。
+就大多數的 FIPA 交談通信協定(IP), JADE 的 jade.proto 套件中為這兩種角色提供了一些行為類別:
+
+<UL>
+<LI>AchieveREInitiator/Responder 適用於 FIPA-Request, FIPA-query, FIPA-propose, IPA-Request-When, FIPA-recruiting, FIPA-brokering, ... 等等協定。
+<LI>SimpleAchieveREInitiator/Responder
+<LI>ContractNetInitiator/Responder
+</UL>
+
+<H3>結構</H3>
+
+
+<p /><img src="http://www.csie.ntu.edu.tw/~sylee/courses/jade/images/ip.jpg">
+<H3>FIPA-Contract-Net</H3>
+這個協定使 Initiator 可以送「徵求草案」(Call for Proposal) 給一組 Responder,
+接到這些草案後, 加以評量, 決定選取那一個(甚至全部都不要)
+<p /><img src="http://www.csie.ntu.edu.tw/~sylee/courses/jade/images/contractNet.jpg">
+
+<p /><b>Reference</b>:
+<a href="http://www.ryerson.ca/~dgrimsha/courses/cps720_02/protocols/slide_protocols2.html">Interaction
+Protocols</a>(<a href="http://www.csie.ntu.edu.tw/~sylee/courses/jade/slide_protocols2.html">local</a>)
+
+<h2>content language</h2>
+
+<h2>ontology</h2>
+
+
+<h2>代理人行為</h2>
+<p />Agent 必須就不同的外界事件, 實行 concurrent 工作。 這些工作可以用 Behaviour 物件實作。
+使用類別 Agent 的 addBehaviour() 方法, 即可在代理人加入這適當的行為。 每一延伸 Behaviour
+的類別必須實作 action() 方法, 以界定實際要實行的工作, 而用 done() 方法規定某一行為是否己經完成。
+
+<p />Jade 提供多種 Behaviour 的抽象類別:
+<OL>
+<LI>SimpleBehaviour : 單一而不可中斷的行為
+<uL>
+<LI>OneShotBehaviour
+<LI>CyclicBehaviour
+</uL>
+<LI>CompositeBehaviour : 由許多分項工作組成
+
+<UL>
+<LI>FSMBehaviour
+<LI>SequentialBehaviour
+<LI>ParallelBehaviour
+</UL>
+</OL>
+<p />這些行為類別的繼承關係階層如下圖:
+<p /><img src="http://www.csie.ntu.edu.tw/~sylee/courses/jade/images/behaviour.jpg">
+<p /><b>範例</b>:
+<a href="http://www.cs.bath.ac.uk/~occ/agents_ecommerce/jade/behaviours.shtml">Making your agent do stuff:Agent Behaviors</a>
+
+<p /><A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/jade/jessAgent.htm"><b>智慧型代理人</b></A> :
+<P>採用 <A HREF="http://www.csie.ntu.edu.tw/~sylee/courses/jade/BasicJessBehaviour.htm">BasicJessBehaviour</A> 行為 (繼承 CyclicBehaviour 行為)的代理人,
+BasicJessBehaviour 內有一推理引擎, 其行為由引擎中的規則庫規範
+<h2>References</h2>
+<ol>
+  <li><a href="http://jade.cselt.it/">JADE -- Java Agent DEvelopment Framework</a></li>
+  <li><a href="http://jade.cselt.it/doc/">JADE documentation</a></li>
+  <li><a href="http://www.iro.umontreal.ca/~vaucher/Agents/Jade/JadePrimer.html">JADE Primer</a></li>
+  <li><a href="http://www.cs.bath.ac.uk/~occ/agents_ecommerce/jade/">JADE tutorial</a></li>
+  <li><a href="http://www.fipa.org/index.html">FIPA -- Foundation for Intelligent Physical Agents</a></li>
+  <li><a href="http://www.ryerson.ca/~dgrimsha/courses/cps720_02/index.html">Artificial Agents</a></li>
+</ol>
+&nbsp;&nbsp;Up <A href="../clips/toc.htm">TOC</A>
+</body>
+</html>
+

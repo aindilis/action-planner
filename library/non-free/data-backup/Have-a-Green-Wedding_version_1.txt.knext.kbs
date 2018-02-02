@@ -1,0 +1,853 @@
+;; (THIS EMPLOYS SOMEONE LOCALLY AND THE EFFECT IS STUNNING)
+
+	;; A THING MAY EMPLOY SOMEONE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (EMPLOY_27 ?x1) (SOMEONE_27 ?x1))
+
+	;; AN EFFECT CAN BE STUNNING.
+
+		(and (effect_27 ?x1) (be_27 ?e1 ?x1 ?x2) (stunning_27 ?x2))
+
+;; (USE A GREEN BRIDAL REGISTRY)
+
+	;; A REGISTRY CAN BE GREEN.
+
+		(and (REGISTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+	;; A REGISTRY CAN BE BRIDAL.
+
+		(and (REGISTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIDAL_27 ?x2))
+
+;; (SOME BRIDAL REGISTRIES HAVE GONE GREEN - LOOK FOR THEM ONLINE)
+
+	;; REGISTRIES CAN BE BRIDAL.
+
+		(and (registry_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIDAL_27 ?x2))
+
+	;; LOOK CAN BE FOR INDIVIDUAL -S.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+;; (ALTERNATELY COMMA WHEN YOU CHOOSE THE ITEMS FOR A BRIDAL REGISTRY COMMA CHOOSE ONLY ECO-FRIENDLY ITEMS)
+
+	;; A PERSON MAY CHOOSE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; ITEMS CAN BE FOR A REGISTRY.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (REGISTRY_27 ?x2))
+
+	;; A REGISTRY CAN BE BRIDAL.
+
+		(and (REGISTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIDAL_27 ?x2))
+
+;; (IF THERE IS A STORE THAT SELLS A LOT OF ECO-FRIENDLY ITEMS BUT IT DOES N T HAVE A BRIDAL REGISTRY COMMA ASK IF THEY WOULD MIND SETTING ONE UP FOR YOU)
+
+	;; ITEMS CAN BE ECO-FRIENDLY.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ECO-FRIENDLY_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A REGISTRY CAN BE BRIDAL.
+
+		(and (REGISTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BRIDAL_27 ?x2))
+
+	;; INDIVIDUAL -S MAY MIND.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (MIND_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [8]>
+
+;; (OR COMMA IF YOU WANT THE REGISTRY TO BE LESS FOCUSED ON GIVING GIFTS TO YOURSELF AND YOUR NEW SPOUSE COMMA AND MORE FOCUSED ON DIRECTING RESOURCES TOWARD THOSE IN GREATER NEED COMMA YOU CAN CONSIDER HAVING THE
+ REGISTRY BE A LIST OF DONATIONS TO CHARITABLE CAUSES)
+
+	;; A PERSON MAY CONSIDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONSIDER_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPOUSE_27 ?x1))
+
+	;; A THING CAN BE IN NEED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (NEED_27 ?x2))
+
+	;; A NEED CAN BE GREATER.
+
+		(and (NEED_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREATER_27 ?x2))
+
+	;; A REGISTRY CAN BE A LIST OF DONATIONS.
+
+		(and (REGISTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LIST_27 ?x2) (of_27 ?x2 ?x3) (DONATIONS_27 ?x3))
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH DONATIONS.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DONATIONS_27 ?x2))
+
+	;; CAUSES CAN BE CHARITABLE.
+
+		(and (cause_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHARITABLE_27 ?x2))
+
+;; (TELL YOUR GUESTS THAT COMMA INSTEAD OF GIVING YOU GIFTS COMMA THEY SHOULD DONATE THAT MONEY TO A CHARITY THAT PROTECTS THE ENVIRONMENT)
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+	;; INDIVIDUAL -S MAY DONATE MONEY TO A CHARITY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DONATE_27 ?x1) (MONEY_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (CHARITY_27 ?x2))
+
+;; (THERE ARE MANY OPTIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THEY COULD DONATE TO THE WWF COMMA A WATER RESERVATION ORGANIZATION COMMA OR BUY A FEW ACRES OF RAINFOREST LAND IN YOUR NAME)
+
+	;; INDIVIDUAL -S MAY DONATE TO A WWF.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (DONATE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (WWF_27 ?x2))
+
+	;; A LAND CAN BE RAINFOREST.
+
+		(and (LAND_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RAINFOREST_27 ?x2))
+
+	;; A PERSON MAY HAVE A NAME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+;; (RECYCLE OR RENT YOUR WEDDING CLOTHES)
+
+	;; A PERSON MAY HAVE WEDDING CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WEDDING_27 ?x1) (CLOTHES_27 ?x1))
+
+;; (YOU WILL WEAR THESE CLOTHES ONCE COMMA SO THERE ARE SEVERAL POSSIBILITIES THAT MIGHT SUIT YOUR NEEDS)
+
+	;; A PERSON MAY WEAR CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WEAR_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; A PERSON MAY HAVE NEEDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+;; (RENTING A DRESS OR SUIT IS ONE RESPONSE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RECYCLING A FRIEND S OR FAMILY MEMBER S WEDDING CLOTHING IS ANOTHER OPTION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [8]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [9]>
+
+;; (OR COMMA YOU COULD SEARCH THE SHELVES OF CONSIGNMENT STORES OR THRIFT STORES AND HAVE THE ITEM ALTERED)
+
+	;; A PERSON MAY SEARCH SHELVES OF CONSIGNMENT STORES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEARCH_27 ?x1) (SHELVES_27 ?x1) (of_27 ?x1 ?x2) (CONSIGNMENT_27 ?x2) (STORES_27 ?x2))
+
+	;; AN ITEM MAY BE ALTER -ED.
+
+		(and (ITEM_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTER_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (SOME PEOPLE FIND A PERFECT SOLUTION IN FINDING A DRESS OR SUIT THAT CAN BE USED AGAIN WITH A LITTLE ALTERING)
+
+	;; SOME_NUMBER_OF PEOPLE MAY FIND A SOLUTION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (SOLUTION_27 ?x1))
+
+	;; A SOLUTION CAN BE PERFECT.
+
+		(and (SOLUTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERFECT_27 ?x2))
+
+;; (IF THIS IS THE CASE FOR YOU COMMA GO FOR IT AND BE HAPPY THAT THE CLOTHING WILL CONTINUE TO BE USEFUL FOR YEARS TO COME)
+
+	;; A THING CAN BE A CASE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (case_27 ?x2))
+
+	;; A CASE CAN BE FOR A PERSON.
+
+		(and (case_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (ANOTHER OPTION IS TO MAKE YOUR OWN WEDDING CLOTHES OUT OF GREEN FRIENDLY FABRICS)
+
+	;; A PERSON MAY HAVE WEDDING CLOTHES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WEDDING_27 ?x1) (CLOTHES_27 ?x1))
+
+	;; FABRICS CAN BE GREEN.
+
+		(and (fabric_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GREEN_27 ?x2))
+
+	;; FABRICS CAN BE FRIENDLY.
+
+		(and (fabric_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRIENDLY_27 ?x2))
+
+;; (ENCOURAGE OTHERS TO FOLLOW YOUR RECYCLE COMMA RENT COMMA OR REUSE CLOTHING DECISIONS)
+
+	;; A PERSON MAY HAVE A RECYCLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RECYCLE_27 ?x1))
+
+;; (TALK TO THE BRIDESMAIDS COMMA MATRON OF HONOR COMMA BEST MAN COMMA AND ANYONE ELSE WITH SIGNIFICANT ROLES IN THE WEDDING COMMA AND HAVE THEM DO THE SAME)
+
+	;; TALK CAN BE TO BRIDESMAIDS.
+
+		(and (TALK_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (BRIDESMAIDS_27 ?x2))
+
+	;; A MAN CAN BE BEST.
+
+		(and (MAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; ROLES CAN BE IN A WEDDING.
+
+		(and (role_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (wedding_27 ?x2))
+
+	;; ROLES CAN BE SIGNIFICANT.
+
+		(and (role_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIGNIFICANT_27 ?x2))
+
+;; (GET THEM TO WEAR SIMPLE CLOTHES AND ONLY CHOOSE A PRECISE COLOR THEME IF THIS ENSURES SIMPLICITY)
+
+	;; CLOTHES CAN BE SIMPLE.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SIMPLE_27 ?x2))
+
+	;; A COLOR THEME CAN BE PRECISE.
+
+		(and (COLOR_27 ?x1) (THEME_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRECISE_27 ?x2))
+
+	;; A THING MAY ENSURE SIMPLICITY.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (ENSURE_27 ?x1) (SIMPLICITY_27 ?x1))
+
+;; (IF NOT COMMA BE A LITTLE FLEXIBLE AND ALLOW A RANGE OF COLORS THAT FIT WITHIN A THEME)
+
+	;; A RANGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH COLORS.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (COLORS_27 ?x2))
+
+;; (BRIDES CAN ALWAYS CHECK OUT THE BRIDESMAID S CHOICES IN ADVANCE TO ENSURE THAT CONTINUITY IS MAINTAINED)
+
+	;; BRIDES MAY CHECK_OUT CHOICES.
+
+		(and (bride_27 ?x1) (MAY_27 ?x1) (CHECK_5FOUT_27 ?x1) (CHOICES_27 ?x1))
+
+	;; A BRIDESMAID MAY HAVE CHOICES.
+
+		(and (BRIDESMAID_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHOICES_27 ?x1))
+
+	;; CONTINUITY MAY BE MAINTAIN -ED.
+
+		(and (CONTINUITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAINTAIN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (THIS IS NOT ONLY A GREAT METHOD FOR RECYCLING BUT IT IS ALSO A WONDERFUL CONNECTION WITH THE PAST AND THE LOVES AND LIVES OF THOSE WHO HAVE GONE BEFORE US)
+
+	;; A THING CAN BE A METHOD.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (METHOD_27 ?x2))
+
+	;; A METHOD CAN BE FOR RECYCLING.
+
+		(and (METHOD_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (RECYCLING_27 ?x2))
+
+	;; A METHOD CAN BE GREAT.
+
+		(and (METHOD_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A CONNECTION.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (connection_27 ?x2))
+
+	;; A CONNECTION CAN BE WITH A PAST.
+
+		(and (connection_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PAST_27 ?x2))
+
+	;; A CONNECTION CAN BE WONDERFUL.
+
+		(and (connection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WONDERFUL_27 ?x2))
+
+	;; A THING MAY HAVE LOVES.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (LOVES_27 ?x1))
+
+;; (OR INSTEAD OF GOLD COMMA CONSIDER A WEDDING RING TATTOO)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SELECT A WEDDING VENUE CLOSE TO HOME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE CLOSER THE VENUE COMMA THE LESS DISTANCES REQUIRED TO TRAVEL AND THE LESS ENERGY CONSUMED)
+
+	;; ENERGY MAY BE CONSUME -ED.
+
+		(and (ENERGY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSUME_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (ALSO CONSIDER A VENUE THAT HAS NATURAL SUNLIGHT STREAMING IN COMMA SO THAT YOU CAN TAKE ADVANTAGE OF THE SUN S HIGHLIGHTS AND NOT HAVE TO RELY ON INTERNAL LIGHTING)
+
+	;; SUNLIGHT MAY STREAM_IN.
+
+		(and (SUNLIGHT_27 ?x1) (MAY_27 ?x1) (STREAM_5FIN_27 ?x1))
+
+	;; A SUNLIGHT CAN BE NATURAL.
+
+		(and (SUNLIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATURAL_27 ?x2))
+
+	;; A PERSON MAY TAKE ADVANTAGE OF A HIGHLIGHTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (ADVANTAGE_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (HIGHLIGHTS_27 ?x2))
+
+	;; A HIGHLIGHTS MAY HAVE ADVANTAGE.
+
+		(and (HIGHLIGHTS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ADVANTAGE_27 ?x1))
+
+	;; THE SUN MAY HAVE A HIGHLIGHTS.
+
+		(and (SUN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HIGHLIGHTS_27 ?x1))
+
+	;; A LIGHTING CAN BE INTERNAL.
+
+		(and (LIGHTING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERNAL_27 ?x2))
+
+;; (OTHER CONSIDERATIONS INCLUDE THE ABILITY OF YOUR VENUE TO WITHSTAND HOT OR COLD TEMPERATURES WITHOUT HAVING TO TURN UP THE HEATING OR AIR-CONDITIONING TOO HIGH)
+
+	;; CONSIDERATIONS MAY INCLUDE AN ABILITY OF A VENUE.
+
+		(and (consideration_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (AN_27 ?x1) (ABILITY_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (VENUE_27 ?x2))
+
+	;; A VENUE MAY HAVE AN ABILITY.
+
+		(and (VENUE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ABILITY_27 ?x1))
+
+	;; A PERSON MAY HAVE A VENUE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VENUE_27 ?x1))
+
+	;; A HEATING CAN BE HIGH.
+
+		(and (heating_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (CHOOSE YOUR TRANSPORTATION CAREFULLY)
+
+	;; A PERSON MAY HAVE A TRANSPORTATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (transportation_27 ?x1))
+
+;; (THE TRADITIONAL HORSE AND CART IS EFFICIENT COMMA ROMANTIC AND IT DOES N T BURN GAS)
+
+	;; A HORSE CAN BE EFFICIENT.
+
+		(and (HORSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EFFICIENT_27 ?x2))
+
+	;; A HORSE CAN BE TRADITIONAL.
+
+		(and (HORSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRADITIONAL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY DO.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THINK OF INNOVATIVE FORMS OF TRANSPORTATION)
+
+	;; FORMS CAN BE CONSTITUTED_OF_OR_FILLED_WITH TRANSPORTATION.
+
+		(and (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TRANSPORTATION_27 ?x2))
+
+	;; FORMS CAN BE INNOVATIVE.
+
+		(and (form_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INNOVATIVE_27 ?x2))
+
+;; (ARRANGE FOR CARPOOLS AMONG THE WEDDING PARTY AND ENCOURAGE GUESTS TO DO THE SAME)
+
+	;; CARPOOLS CAN BE AMONG A WEDDING PARTY.
+
+		(and (carpool_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AMONG_27 ?x2) (A_27 ?x2) (WEDDING_27 ?x2) (PARTY_27 ?x2))
+
+;; (USE A CARBON CALCULATOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [10]>
+
+;; (INCLUDE A REQUEST IN THE INVITATION FOR THEM TO OFFSET THEIR TRAVEL BY CALCULATING THEIR CARBON IMPACT FROM TRAVEL AND PURCHASING AN OFFSET)
+
+	;; A REQUEST CAN BE IN AN INVITATION.
+
+		(and (REQUEST_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (INVITATION_27 ?x2))
+
+	;; AN INVITATION CAN BE FOR INDIVIDUAL -S.
+
+		(and (INVITATION_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; INDIVIDUAL -S MAY HAVE TRAVEL.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TRAVEL_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A CARBON IMPACT.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CARBON_27 ?x1) (IMPACT_27 ?x1))
+
+;; (KEEP THE WEDDING SMALL)
+
+	;; A WEDDING CAN BE SMALL.
+
+		(and (wedding_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (MORE GUESTS EQUALS MORE IMPACT FROM TRAVEL COMMA COSTS AND QUANTITY REQUIREMENTS FROM THE VENUE SIZE TO THE AMOUNT OF FOOD TO BE PREPARED)
+
+	;; GUESTS MAY EQUAL IMPACT FROM TRAVEL.
+
+		(and (GUESTS_27 ?x1) (MAY_27 ?x1) (EQUAL_27 ?x1) (IMPACT_27 ?x1) (FROM_27 ?x1) (TRAVEL_27 ?x1))
+
+	;; TRAVEL CAN BE FROM A VENUE SIZE TO AN AMOUNT OF FOOD.
+
+		(and (travel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (VENUE_27 ?x2) (SIZE_27 ?x2) (to_27 ?e1 ?x3) (AMOUNT_27 ?x3) (of_27 ?x3 ?x4) (food_27 ?x4))
+
+	;; A VENUE SIZE CAN BE TO AN AMOUNT OF FOOD.
+
+		(and (VENUE_27 ?x1) (SIZE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (AN_27 ?x2) (AMOUNT_27 ?x2) (of_27 ?x2 ?x3) (food_27 ?x3))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [11]>
+
+;; (IT IS HIGHLY UNLIKELY)
+
+	;; A THING-REFERRED-TO CAN BE UNLIKELY.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNLIKELY_27 ?x2))
+
+;; (GO FOR THE MORE INTIMATE AFFAIR AND TREAT ALL OF YOUR FAMILY AND FRIENDS WITH YOUR ATTENTIVENESS)
+
+	;; AN AFFAIR CAN BE INTIMATE.
+
+		(and (AFFAIR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTIMATE_27 ?x2))
+
+	;; A FAMILY MAY HAVE A THING.
+
+		(and (FAMILY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE A FAMILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (FAMILY_27 ?x1))
+
+	;; A PERSON MAY HAVE ATTENTIVENESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ATTENTIVENESS_27 ?x1))
+
+;; (IF YOU WANT SPECIAL FLORAL ARRANGEMENTS THAT REQUIRE ROAMING FURTHER AFIELD COMMA CONSIDER FAIR TRADE FLOWERS)
+
+	;; A PERSON MAY WANT ARRANGEMENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WANT_27 ?x1) (ARRANGEMENTS_27 ?x1))
+
+	;; ARRANGEMENTS CAN BE FLORAL.
+
+		(and (arrangement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLORAL_27 ?x2))
+
+	;; TRADE FLOWERS CAN BE FAIR.
+
+		(and (trade_27 ?x1) (flower_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAIR_27 ?x2))
+
+;; (THE FLORAL INDUSTRY IS CURRENTLY UNDER SCRUTINY FOR ITS POOR WORKING CONDITIONS AND FAIR TRADE FLOWERS HELP TO ENSURE THAT CONSIDERATION OF THE WORKER S CONDITIONS IS TAKEN INTO ACCOUNT)
+
+	;; AN INDUSTRY CAN BE UNDER SCRUTINY.
+
+		(and (INDUSTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNDER_27 ?x2) (SCRUTINY_27 ?x2))
+
+	;; AN INDUSTRY CAN BE FLORAL.
+
+		(and (INDUSTRY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLORAL_27 ?x2))
+
+	;; SCRUTINY CAN BE FOR CONDITIONS.
+
+		(and (SCRUTINY_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (condition_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE CONDITIONS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONDITIONS_27 ?x1))
+
+	;; CONDITIONS CAN BE POOR.
+
+		(and (condition_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POOR_27 ?x2))
+
+	;; CONDITIONS CAN BE WORKING.
+
+		(and (condition_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WORKING_27 ?x2))
+
+	;; TRADE FLOWERS CAN BE FAIR.
+
+		(and (trade_27 ?x1) (flower_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAIR_27 ?x2))
+
+	;; CONSIDERATION OF CONDITIONS MAY BE TAKE -ED INTO ACCOUNT.
+
+		(and (consideration_27 ?x1) (of_27 ?x1 ?x2) (condition_27 ?x2) (be_27 ?e1 ?x1 ?x3) (TAKE_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3) (INTO_27 ?x3) (ACCOUNT_27 ?x3))
+
+	;; CONDITIONS MAY UNDERGO A CONSIDERATION.
+
+		(and (condition_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (CONSIDERATION_27 ?x1))
+
+	;; A WORKER MAY HAVE CONDITIONS.
+
+		(and (WORKER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONDITIONS_27 ?x1))
+
+;; (REUSE THE FLORAL ARRANGEMENTS)
+
+	;; ARRANGEMENTS CAN BE FLORAL.
+
+		(and (arrangement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLORAL_27 ?x2))
+
+;; (ARRANGE FOR SOMEONE TO TAKE THE FLORAL ARRANGEMENTS FROM THE WEDDING VENUE TO THE RECEPTION VENUE)
+
+	;; ARRANGEMENTS CAN BE FLORAL.
+
+		(and (arrangement_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FLORAL_27 ?x2))
+
+;; (IT IS A LOGICAL SOLUTION TO OTHERWISE WASTING THE FLOWERS AND IT REDUCES YOUR COSTS)
+
+	;; A THING-REFERRED-TO CAN BE A SOLUTION.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (SOLUTION_27 ?x2))
+
+	;; A SOLUTION CAN BE LOGICAL.
+
+		(and (SOLUTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOGICAL_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY REDUCE COSTS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (REDUCE_27 ?x1) (COSTS_27 ?x1))
+
+	;; A PERSON MAY HAVE COSTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (COSTS_27 ?x1))
+
+;; (SELECT ORGANIC AND LOCALLY GROWN PRODUCE FOR THE RECEPTION FOOD)
+
+	;; A SELECT_ORGANIC[PERSON??] MAY PRODUCE FOR A RECEPTION FOOD.
+
+		(and (SELECT_5FORGANIC_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (produce_27 ?e1) (for_27 ?e1 ?x1) (A_27 ?x1) (RECEPTION_27 ?x1) (FOOD_27 ?x1))
+
+;; (SUPPORTING LOCAL GROWERS IS A GREAT WAY TO CUT DOWN ON COSTS AND TRAVEL DISTANCES)
+
+	;; GROWERS CAN BE A WAY.
+
+		(and (grower_27 ?x1) (be_27 ?e1 ?x1 ?x2) (way_27 ?x2))
+
+	;; GROWERS CAN BE SUPPORTING.
+
+		(and (grower_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUPPORTING_27 ?x2))
+
+	;; A WAY CAN BE GREAT.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (great_27 ?x1))
+
+;; (IT CAN ALSO PROVIDE YOU WITH AN OPPORTUNITY TO SHOWCASE LOCAL SPECIALTIES THAT MANY OF YOUR GUESTS MAY NOT BE AWARE OF OR HAD NOT REALIZED THE EXTENT OF AVAILABILITY)
+
+	;; A THING-REFERRED-TO MAY PROVIDE A PERSON WITH AN OPPORTUNITY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (PROVIDE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (WITH_27 ?x1) (AN_27 ?x1) (OPPORTUNITY_27 ?x1))
+
+	;; A PERSON MAY HAVE GUESTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (GUESTS_27 ?x1))
+
+;; (ORGANIC FOOD IS SYMBOLIC OF AN INTENTION TO START MARRIED LIFE TOGETHER WITH A FOCUS ON CREATING A HEALTH-CONSCIOUS AND INFORMED WAY OF LIVING)
+
+	;; AN ORGANIC[PERSON??] MAY HAVE FOOD.
+
+		(and (ORGANIC_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (FOOD_27 ?x1))
+
+	;; A LIFE CAN BE MARRIED.
+
+		(and (LIFE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MARRIED_27 ?x2))
+
+;; (ASK YOUR CATERER TO SHOP AT FARMERS MARKETS AND ORDER AS MUCH OF THE FOOD AS POSSIBLE DIRECTLY FROM LOCAL FARMS)
+
+	;; A PERSON MAY HAVE A CATERER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CATERER_27 ?x1))
+
+;; (DO NOT OVER-CATER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 4 [11]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A LOT OF FOOD GETS WASTED AT LARGE EVENTS AND WEDDINGS ARE NO DIFFERENT)
+
+	;; A LOT OF FOOD MAY GET.
+
+		(and (LOT_27 ?x1) (of_27 ?x1 ?x2) (FOOD_27 ?x2) (MAY_27 ?x2) (GET_27 ?x2))
+
+	;; EVENTS CAN BE LARGE.
+
+		(and (event_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (CALCULATE THE FOOD NEEDS CAREFULLY)
+
+	;; FOOD MAY NEED.
+
+		(and (FOOD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (CALCULATE THE FOOD NEEDS CAREFULLY)
+
+	;; FOOD MAY NEED.
+
+		(and (FOOD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (CALCULATE THE FOOD NEEDS CAREFULLY)
+
+	;; FOOD MAY NEED.
+
+		(and (FOOD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (CALCULATE THE FOOD NEEDS CAREFULLY)
+
+	;; FOOD MAY NEED.
+
+		(and (FOOD_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [13]>
+
+;; (USE UTENSILS AND PLATES THAT CAN BE WASHED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 6 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (AVOID DISPOSABLE ITEMS)
+
+	;; ITEMS CAN BE DISPOSABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPOSABLE_27 ?x2))
+
+;; (SERVIETTES SHOULD BE CLOTH)
+
+	;; SERVIETTES CAN BE A CLOTH.
+
+		(and (serviette_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (CLOTH_27 ?x2))
+
+;; (USE GLASSES AND CUPS IN PLACE OF DISPOSABLE ITEMS)
+
+	;; ITEMS CAN BE DISPOSABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPOSABLE_27 ?x2))
+
+;; (IF YOU ARE USING A CATERER COMMA MAKE YOUR NEEDS CLEARLY KNOWN TO THEM ON THIS COUNT)
+
+	;; A PERSON MAY USE A CATERER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (A_27 ?x1) (CATERER_27 ?x1))
+
+	;; NEEDS MAY BE KNOWN -ED TO INDIVIDUAL -S.
+
+		(and (NEEDS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KNOWN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (INDIVIDUAL_27 ?x3) (kbs2_kif_quote_2DS_27 ?x3))
+
+	;; A PERSON MAY HAVE NEEDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+;; (AND DO N T FORGET TO INCLUDE THE SERVING PLATTERS AND UTENSILS TO ENSURE THAT THESE ARE ALSO REUSABLE ITEMS)
+
+	;; PLATTERS CAN BE SERVING.
+
+		(and (platter_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SERVING_27 ?x2))
+
+	;; A THING CAN BE ITEMS.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ITEMS_27 ?x2))
+
+	;; ITEMS CAN BE REUSABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REUSABLE_27 ?x2))
+
+;; (TAKE AN ECO-CONSIDERATE HONEYMOON)
+
+	;; A HONEYMOON CAN BE ECO-CONSIDERATE.
+
+		(and (HONEYMOON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ECO-CONSIDERATE_27 ?x2))
+
+;; (CONSIDER ECO-TOURISM FOR YOUR HONEYMOON DESTINATION)
+
+	;; A PERSON MAY HAVE A HONEYMOON DESTINATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HONEYMOON_27 ?x1) (DESTINATION_27 ?x1))
+
+;; (OR TRAVEL CLOSE TO HOME AND HAVE A LOCAL HONEYMOON WHILE DISCOVERING MORE ABOUT YOUR OWN BACKYARD)
+
+	;; A PERSON MAY HAVE A BACKYARD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKYARD_27 ?x1))
+
+;; (CONSIDER A LOW-MEAT OR MEAT-FREE RECEPTION MENU)
+
+	;; A RECEPTION MENU CAN BE LOW-MEAT.
+
+		(and (RECEPTION_27 ?x1) (MENU_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW-MEAT_27 ?x2))
+
+;; (MEAT PRODUCTION HAS A HIGH ENVIRONMENTAL COST COMMA AND HIGHLIGHTING SOME DELICIOUS VEGETARIAN CHOICES AT YOUR WEDDING COULD GIVE GUESTS NEW IDEAS FOR DIFFERENT FOODS TO TRY)
+
+	;; MEAT PRODUCTION MAY HAVE A COST.
+
+		(and (MEAT_27 ?x1) (production_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COST_27 ?x1))
+
+	;; A COST CAN BE HIGH.
+
+		(and (cost_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; A COST CAN BE ENVIRONMENTAL.
+
+		(and (cost_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENVIRONMENTAL_27 ?x2))
+
+	;; SOME_NUMBER_OF CHOICES CAN BE AT A WEDDING.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (CHOICES_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (wedding_27 ?x2))
+
+	;; CHOICES CAN BE DELICIOUS.
+
+		(and (choice_27 ?x1) (be_27 ?e1 ?x1 ?x2) (deliciou_27 ?x2))
+
+	;; A PERSON MAY HAVE A WEDDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (wedding_27 ?x1))
+
+	;; IDEAS CAN BE FOR FOODS.
+
+		(and (IDEAS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (food_27 ?x2))
+
+;; (CONSIDER LOTS OF VEGAN APPETIZER STATIONS MADE WITH FOODS THAT EVEN MEAT EATERS CONSUME ON A DAILY BASIS)
+
+	;; VEGAN APPETIZER STATIONS MAY BE MAKE -ED WITH FOODS.
+
+		(and (VEGAN_27 ?x1) (APPETIZER_27 ?x1) (STATIONS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (FOODS_27 ?x2))
+
+	;; MEAT EATERS MAY CONSUME ON A BASIS.
+
+		(and (MEAT_27 ?x1) (EATERS_27 ?x1) (MAY_27 ?x1) (CONSUME_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (BASIS_27 ?x1))
+
+	;; A BASIS CAN BE DAILY.
+
+		(and (BASIS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DAILY_27 ?x2))

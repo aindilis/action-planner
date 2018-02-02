@@ -1,0 +1,248 @@
+;; (ETC. CHOOSE YOUR THEME ACCORDING TO YOUR NEEDS COMMA THEME COMMA ENVIRONMENT AND CLIMATE)
+
+	;; A PERSON MAY HAVE A THEME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THEME_27 ?x1))
+
+	;; A PERSON MAY HAVE NEEDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEEDS_27 ?x1))
+
+;; (NEEDS - SUCH AS TIME - A HIGH MAINTENANCE GARDEN IS PROBABLY NOT IDEAL UNLESS YOU CAN AFFORD A GARDENER TO MAINTAIN IT)
+
+	;; A MAINTENANCE GARDEN CAN BE HIGH.
+
+		(and (MAINTENANCE_27 ?x1) (GARDEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+	;; A PERSON MAY AFFORD A GARDENER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (AFFORD_27 ?x1) (A_27 ?x1) (GARDENER_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (YOU MIGHT HAVE LOCAL ONES IN YOUR AREA OPEN FOR DISPLAY THAT MAY INSPIRE YOU WITH IDEAS)
+
+	;; A PERSON MAY HAVE ONES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ONES_27 ?x1))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (PLANT YOUR PLANTS IN GROUPS OF TYPES)
+
+	;; PLANTS CAN BE IN GROUPS OF TYPES.
+
+		(and (plant_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (GROUPS_27 ?x2) (of_27 ?x2 ?x3) (TYPES_27 ?x3))
+
+	;; A PERSON MAY HAVE PLANTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PLANTS_27 ?x1))
+
+	;; GROUPS CAN BE CONSTITUTED_OF_OR_FILLED_WITH TYPES.
+
+		(and (GROUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (TYPES_27 ?x2))
+
+;; (FORMAL GARDENING IS OFTEN EXPRESSED THROUGH THE USE OF MASS PLANTING WHETHER AS AN EDGE OR A BED)
+
+	;; GARDENING MAY BE EXPRESS -ED THROUGH A USE OF PLANTING.
+
+		(and (GARDENING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPRESS_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (THROUGH_27 ?x2) (A_27 ?x2) (USE_27 ?x2) (of_27 ?x2 ?x3) (planting_27 ?x3))
+
+	;; A GARDENING CAN BE FORMAL.
+
+		(and (GARDENING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FORMAL_27 ?x2))
+
+	;; PLANTING CAN BE AS AN EDGE.
+
+		(and (planting_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (EDGE_27 ?x2))
+
+	;; A PLANTING CAN BE MASS.
+
+		(and (planting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MASS_27 ?x2))
+
+;; (THIS CAN BE AN ADVANTAGE AS YOU GET A MASS IMPACT AND ALSO YOU CAN SOMETIMES NEGOTIATE CHEAPER RATES FOR BUYING PLANTS IN BULK)
+
+	;; A THING CAN BE AN ADVANTAGE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVANTAGE_27 ?x2))
+
+	;; A PERSON MAY GET AN IMPACT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (AN_27 ?x1) (IMPACT_27 ?x1))
+
+	;; AN IMPACT CAN BE MASS.
+
+		(and (IMPACT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MASS_27 ?x2))
+
+	;; A PERSON MAY NEGOTIATE RATES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEGOTIATE_27 ?x1) (RATES_27 ?x1))
+
+	;; RATES CAN BE CHEAPER.
+
+		(and (rate_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAPER_27 ?x2))
+
+;; (MASS PLANTING REDUCES RANDOMNESS BUT CAN ALSO LOOK VERY SIMILAR COMMA SO ITS BETTER TO HAVE SEVERAL SMALL BEDS RATHER THAN ONE LARGE ONE
+ COMMA UNLESS YOU HAVE SPACE FOR MANY LARGE ONES)
+
+	;; A MASS_PLANTING[PERSON??] MAY REDUCE RANDOMNESS.
+
+		(and (MASS_5FPLANTING_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (REDUCE_27 ?x1) (RANDOMNESS_27 ?x1))
+
+	;; BEDS CAN BE SMALL.
+
+		(and (bed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; AN ONE CAN BE LARGE.
+
+		( (be_27 ?e1))
+
+	;; A PERSON MAY HAVE SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SPACE_27 ?x1))
+
+	;; SPACE CAN BE FOR SOME_NUMBER_OF ONES.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (ONES_27 ?x2))
+
+	;; ONES CAN BE LARGE.
+
+		(and (one_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; (TAKE A SOIL SAMPLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS WILL HELP YOU DECIDE WHAT KIND OF PLANTS TO BUY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SOME NEED SANDY SOIL COMMA OTHERS NEED CLAY)
+
+	;; OTHERS MAY NEED.
+
+		(and (other_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; SOME_NUMBER_OF THING MAY NEED SOIL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (THING_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (SOIL_27 ?x1))
+
+	;; A SOIL CAN BE SANDY.
+
+		(and (SOIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SANDY_27 ?x2))
+
+;; (DETERMINE HOW MUCH SUNLIGHT EVERY PART OF YOUR GARDEN GETS)
+
+	;; A DETERMINE[PERSON??] MAY GET.
+
+		(and (DETERMINE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A GARDEN MAY HAVE A PART.
+
+		(and (GARDEN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+;; (SOME PLANTS THRIVE IN SHADOWY PARTS OF YOUR GARDEN COMMA WHILE OTHERS ARE SUN WORSHIPERS)
+
+	;; SOME_NUMBER_OF PLANTS MAY THRIVE IN PARTS OF A GARDEN.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLANTS_27 ?x1) (MAY_27 ?x1) (THRIVE_27 ?x1) (in_27 ?x1 ?x2) (part_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (GARDEN_27 ?x3))
+
+	;; A GARDEN MAY HAVE PARTS.
+
+		(and (GARDEN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PARTS_27 ?x1))
+
+	;; PARTS CAN BE SHADOWY.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHADOWY_27 ?x2))
+
+	;; A PERSON MAY HAVE A GARDEN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GARDEN_27 ?x1))
+
+	;; OTHERS CAN BE SUN WORSHIPERS.
+
+		(and (other_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUN_27 ?x2) (WORSHIPERS_27 ?x2))
+
+;; (IF YOU NEED SHADE COMMA ENSURE THERE IS A SHADE TREE ESTABLISHED BEFORE SPENDING MONEY ON PLANTS THAT MAY STRUGGLE OR DIE BEFORE THE
+ LOCATION IS RIGHT)
+
+	;; A PERSON MAY NEED SHADE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (SHADE_27 ?x1))
+
+	;; A SHADE TREE MAY BE ESTABLISH -ED BEFORE SPENDING MONEY.
+
+		(and (SHADE_27 ?x1) (TREE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ESTABLISH_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BEFORE_27 ?x2) (SPENDING_27 ?x2) (MONEY_27 ?x2))
+
+	;; A LOCATION CAN BE RIGHT.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RIGHT_27 ?x2))
+
+;; (THIS MEANS THAT YOUR PLANTING STYLE SHOULD DRAW YOUR EYE TOWARDS THE CENTER OF ATTENTION)
+
+	;; A THING MAY MEAN A PROPOSITION.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (MEAN_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PLANTING STYLE MAY DRAW AN EYE.
+
+		(and (PLANTING_27 ?x1) (STYLE_27 ?x1) (MAY_27 ?x1) (DRAW_27 ?x1) (AN_27 ?x1) (EYE_27 ?x1))
+
+	;; A PERSON MAY HAVE A PLANTING STYLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLANTING_27 ?x1) (STYLE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EYE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EYE_27 ?x1))
+
+;; (ITS IS IDEAL TO HAVE SEVERAL FOCUS POINTS RATHER THAN JUST ONE -LRB- WHICH INCREASES INTEREST -RRB-)
+
+	;; A THING-REFERRED-TO MAY HAVE A THING.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+;; (CONSIDER BUYING A CANOPY TO PUT OVER EITHER PART OF THE GARDEN OR OVER THE WHOLE THING)
+
+	;; A GARDEN MAY HAVE A PART.
+
+		(and (GARDEN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))

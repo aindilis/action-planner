@@ -1,0 +1,224 @@
+;; (INSURANCE OR PRIVATE PAY  THIS IS A BIG DECISION FOR SEVERAL REASONS)
+
+	;; A THING CAN BE A DECISION.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DECISION_27 ?x2))
+
+	;; A DECISION CAN BE FOR SOME_NUMBER_OF REASONS.
+
+		(and (decision_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (REASONS_27 ?x2))
+
+	;; A DECISION CAN BE BIG.
+
+		(and (decision_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (INSURANCE COVERAGE IS NOT GUARENTEED COMMA YOU WILL USUALLY HAVE TO PAY SOME PORTION OF THE FEE COMMA AND PERSONAL INFORMATION ABOUT YOU AND YOUR ILLNESS WILL BE SENT TO THE INSURANCE COMPANY)
+
+	;; COVERAGE CAN BE GUARENTEED.
+
+		(and (coverage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GUARENTEED_27 ?x2))
+
+	;; AN INSURANCE[PERSON??] MAY HAVE A COVERAGE.
+
+		(and (INSURANCE_27 ?x1) (PERSON_27 ?x2))
+
+		(and (have_27 ?e1 ?x1) (A_27 ?x1) (COVERAGE_27 ?x1))
+
+	;; A FEE MAY HAVE A PORTION.
+
+		(and (FEE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PORTION_27 ?x1))
+
+	;; INFORMATION CAN BE ABOUT A PERSON.
+
+		(and (information_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; AN INFORMATION CAN BE PERSONAL.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+	;; AN ILLNESS MAY BE SEND -ED TO AN INSURANCE COMPANY.
+
+		(and (ILLNESS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (INSURANCE_27 ?x3) (COMPANY_27 ?x3))
+
+	;; A PERSON MAY HAVE AN ILLNESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ILLNESS_27 ?x1))
+
+;; (THIS INFORMATION MAY STAY ON YOUR MEDICAL RECORD FOR YEARS COMMA ESTABLISH A BASIS FOR PRE-EXISTING CONDITIONS BY FUTURE INSURANCE COMPANIES AND COMMA DEPENDING ON YOUR DIAGNOSIS COMMA PREVENT YOU FROM BEING
+ EMPLOYED BY LAW ENFORCEMENT AGENCIES OR THE MILITARY)
+
+	;; AN INFORMATION MAY STAY ON A RECORD.
+
+		(and (INFORMATION_27 ?x1) (MAY_27 ?x1) (STAY_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (RECORD_27 ?x1))
+
+	;; A RECORD CAN BE FOR YEARS.
+
+		(and (RECORD_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (year_27 ?x2))
+
+	;; A PERSON MAY HAVE A RECORD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RECORD_27 ?x1))
+
+	;; A RECORD CAN BE MEDICAL.
+
+		(and (RECORD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MEDICAL_27 ?x2))
+
+	;; A BASIS CAN BE FOR CONDITIONS.
+
+		(and (BASIS_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (condition_27 ?x2))
+
+	;; CONDITIONS CAN BE PRE-EXISTING.
+
+		(and (condition_27 ?x1) (be_27 ?e1 ?x1 ?x2) (pre-existing_27 ?x2))
+
+	;; A PERSON MAY HAVE A DIAGNOSIS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DIAGNOSIS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: objects printed as # in view of *PRINT-LEVEL* cannot be read back in
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (IF YOU PAY PRIVATELY COMMA TRY TO NEGOTIATE A FEE WITH THE COUNSELOR COMMA BUT COMMA FIRST DETERMINE HOW MUCH YOU WOULD BE WILLING TO PAY PER SESSION)
+
+	;; A PERSON MAY PAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+;; (IF YOU PAY PRIVATELY COMMA YOU RE NOT LIMITED TO THE THERAPISTS IN YOUR INSURANCE PLAN)
+
+	;; A PERSON MAY PAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+	;; THERAPISTS CAN BE IN AN INSURANCE PLAN.
+
+		(and (therapist_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (INSURANCE_27 ?x2) (PLAN_27 ?x2))
+
+	;; A PERSON MAY HAVE AN INSURANCE PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSURANCE_27 ?x1) (PLAN_27 ?x1))
+
+;; (IF YOU PAY PRIVATELY COMMA YOU RE NOT LIMITED TO THE THERAPISTS IN YOUR INSURANCE PLAN)
+
+	;; A PERSON MAY PAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+	;; THERAPISTS CAN BE IN AN INSURANCE PLAN.
+
+		(and (therapist_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (INSURANCE_27 ?x2) (PLAN_27 ?x2))
+
+	;; A PERSON MAY HAVE AN INSURANCE PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSURANCE_27 ?x1) (PLAN_27 ?x1))
+
+;; (IF YOU PAY PRIVATELY COMMA YOU RE NOT LIMITED TO THE THERAPISTS IN YOUR INSURANCE PLAN)
+
+	;; A PERSON MAY PAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+	;; THERAPISTS CAN BE IN AN INSURANCE PLAN.
+
+		(and (therapist_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (INSURANCE_27 ?x2) (PLAN_27 ?x2))
+
+	;; A PERSON MAY HAVE AN INSURANCE PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSURANCE_27 ?x1) (PLAN_27 ?x1))
+
+;; (IF YOU PAY PRIVATELY COMMA YOU RE NOT LIMITED TO THE THERAPISTS IN YOUR INSURANCE PLAN)
+
+	;; A PERSON MAY PAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+	;; THERAPISTS CAN BE IN AN INSURANCE PLAN.
+
+		(and (therapist_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (INSURANCE_27 ?x2) (PLAN_27 ?x2))
+
+	;; A PERSON MAY HAVE AN INSURANCE PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSURANCE_27 ?x1) (PLAN_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [7]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [12]>
+
+;; (TRY TO ARRANGE A FREE CONSULTATION)
+
+	;; A CONSULTATION CAN BE FREE.
+
+		(and (consultation_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+;; (THIS IS STRONGLY RECOMMENDED SINCE YOU LL BE ABLE TO SEE THE COUNSELOR S OFFICE AS WELL AS HAVE THE DIRECT EXPERIENCE OF MEETING WITH THAT PERSON AND HIS OR HER ASSISTANTS)
+
+	;; A THING MAY BE RECOMMEND -ED.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECOMMEND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A COUNSELOR MAY HAVE AN OFFICE.
+
+		(and (COUNSELOR_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1))
+
+	;; AN EXPERIENCE CAN BE DIRECT.
+
+		(and (EXPERIENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRECT_27 ?x2))
+
+;; (HOW YOU FEEL WHEN YOU LEAVE THE OFFICE WILL PROBABLY BE THE MOST IMPORTANT FACTOR IN DECIDING WHETHER OR NOT TO CONTINUE WITH THIS PARTICULAR PERSON)
+
+	;; A PERSON MAY LEAVE AN OFFICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LEAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1))
+
+	;; A FACTOR CAN BE IMPORTANT.
+
+		(and (FACTOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))

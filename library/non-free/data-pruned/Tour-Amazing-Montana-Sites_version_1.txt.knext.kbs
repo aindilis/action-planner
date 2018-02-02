@@ -1,0 +1,980 @@
+;; (KITTRAVEL BY CAR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE BEST WAY TO TRAVEL THE US IS BY CAR COMMA AND SOMETIMES THE MORE LUXURIOUS CARS ARE LESS EXPENSIVE THAN THE ECONOMY CARS)
+
+	;; A WAY CAN BE BY CAR.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1) (by_27 ?x1 ?x2) (car_27 ?x2))
+
+	;; A WAY CAN BE BEST.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; CARS CAN BE EXPENSIVE.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+	;; CARS CAN BE LUXURIOUS.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LUXURIOUS_27 ?x2))
+
+;; (IF YOU BOOK YOUR TICKETS ON THE INTERNET COMMA THE SITE MAY OFFER A DEAL FOR RENTAL CARS COMMA SUCH AS $ 25 DOLLARS A DAY COMMA LIKELY IN SEPTEMBER)
+
+	;; A SITE MAY OFFER A DEAL.
+
+		(and (SITE_27 ?x1) (MAY_27 ?x1) (OFFER_27 ?x1) (A_27 ?x1) (DEAL_27 ?x1))
+
+	;; A PERSON MAY BOOK TICKETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (BOOK_27 ?x1) (TICKETS_27 ?x1))
+
+	;; A PERSON MAY HAVE TICKETS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TICKETS_27 ?x1))
+
+	;; A DEAL CAN BE FOR CARS.
+
+		(and (DEAL_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (car_27 ?x2))
+
+	;; CARS CAN BE RENTAL.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RENTAL_27 ?x2))
+
+;; (THE MAJOR RENTAL CAR COMPANIES ARE AT THE INTERNATIONAL AIRPORTS COMMA SUCH AS GLACIER INTERNATIONAL)
+
+	;; CAR COMPANIES CAN BE AT AN INTERNATIONAL_AIRPORTS[PERSON??].
+
+		(and (car_27 ?x1) (company_27 ?x2) (be_27 ?e1 ?x2) (at_27 ?x2 ?x3) (INTERNATIONAL_5FAIRPORTS_27 ?x3) (PERSON_27 ?x1))
+
+	;; CAR COMPANIES CAN BE RENTAL.
+
+		(and (car_27 ?x1) (company_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RENTAL_27 ?x2))
+
+;; (IT MAY BE LESS EXPENSIVE TO BUY A USED CAR AND SELL IT WHEN YOU ARE DONE)
+
+	;; A CAR CAN BE USED.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (USED_27 ?x2))
+
+	;; A PERSON MAY BE DO -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (PEOPLE BUY/SELL CARS FOR AS LITTLE AS $ 500)
+
+	;; PEOPLE MAY BUY/SELL CARS.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (BUY_2FSELL_27 ?x1) (CARS_27 ?x1))
+
+;; (VISIT IN SUMMER)
+
+	;; VISIT CAN BE IN SUMMER.
+
+		(and (VISIT_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SUMMER_27 ?x2))
+
+;; (THE FAVORITE TIME OF YEAR TO VISIT MONTANA IS JULY AND AUGUST)
+
+	;; A TIME CAN BE FAVORITE.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FAVORITE_27 ?x2))
+
+;; (MANY PEOPLE TRAVEL MONTANA BY AMTRAK COMMA GET OFF THE TRAIN AT EAST GLACIER COMMA STAY AT THE HISTORIC HOTEL -LRB- RESERVE A ROOM IN ADVANCE -RRB- OR ESSEXS COMMA RIDE IN THE ANTIQUE SITE-SEEING TOUR BUSES TO
+ VIEW GLACIER PARK COMMA GET BACK ON THE TRAIN AND RIDE INTO WHITEFISH)
+
+	;; SOME_NUMBER_OF PEOPLE MAY TRAVEL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1))
+
+	;; A TRAIN CAN BE AT AN EAST_GLACIER[PERSON??].
+
+		(and (train_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (AN_27 ?x2) (EAST_5FGLACIER_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; A HOTEL CAN BE HISTORIC.
+
+		(and (HOTEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HISTORIC_27 ?x2))
+
+	;; A ROOM CAN BE IN ADVANCE.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ADVANCE_27 ?x2))
+
+	;; TOUR BUSES CAN BE ANTIQUE.
+
+		(and (TOUR_27 ?x1) (BUSES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ANTIQUE_27 ?x2))
+
+	;; TOUR BUSES CAN BE SITE-SEEING.
+
+		(and (TOUR_27 ?x1) (BUSES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SITE-SEEING_27 ?x2))
+
+;; (TRAVELERS DO N T HAVE TO RIDE THE TRAIN AND CAN TRAVEL GLACIER ON THEIR OWN IN THEIR RENTED CAR OR THE MEET UP WITH THE SITE-SEEING BUSES)
+
+	;; A TRAVELERS[PERSON??] MAY DO.
+
+		(and (traveler_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A CAR.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (car_27 ?x1))
+
+	;; A CAR CAN BE RENTED.
+
+		(and (car_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RENTED_27 ?x2))
+
+	;; BUSES CAN BE SITE-SEEING.
+
+		(and (bus_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SITE-SEEING_27 ?x2))
+
+;; (MANY PEOPLE ENJOY WHITEWATER RAFTING AND THE HELICOPTER TOURS)
+
+	;; SOME_NUMBER_OF PEOPLE MAY ENJOY WHITEWATER RAFTING.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1) (WHITEWATER_27 ?x1) (RAFTING_27 ?x1))
+
+;; (DO BUY HUCKLEBERRY AND CHERRY EVERYTHING)
+
+	;; A DO[PERSON??] MAY BUY A HUCKLEBERRY[PERSON??].
+
+		(and (DO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (BUY_27 ?x1) (A_27 ?x1) (HUCKLEBERRY_27 ?x1) (PERSON_27 ?x1))
+
+	;; AN EVERYTHING CAN BE CHERRY.
+
+		(and (EVERYTHING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHERRY_27 ?x2))
+
+;; (VISIT FLATHEAD LAKE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (A HIGHLY RECOMMENDED VISIT IS A DRIVE AROUND FLATHEAD LAKE)
+
+	;; A DRIVE CAN BE AROUND A LAKE.
+
+		(and (DRIVE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (LAKE_27 ?x2))
+
+;; (VISIT THE DAM IN POLSON)
+
+	;; A DAM CAN BE IN A POLSON[PERSON??].
+
+		(and (DAM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (POLSON_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+;; (HIKE IN THE MOUNTAINS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [18]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RIDE IN A BOAT TO THE SITTING DUCK RESTAURANT COMMA CHECK OUT THE HOMES ALONG THE LAKE COMMA ENJOY THE FOOD WHILE LOOKING OUT OVER THE LAKE AND MOUNTAINS COMMA CROSS THE STREET AND DRINK AT THE FLATHEAD
+ BREWERY)
+
+	;; A DUCK RESTAURANT CAN BE SITTING.
+
+		(and (DUCK_27 ?x1) (RESTAURANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SITTING_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [20]>
+
+;; (YOU MAY CATCH A GLIMPSE OF CELEBRITIES COMMA SUCH AS PHIL JACKSON COMMA ELLE MCPHERSON COMMA CORTNEY COX COMMA ROBERT DINERO COMMA TOM CELIC COMMA HOWIE LONG COMMA AND JACK HANNA AROUND FLATHEAD LAKE)
+
+	;; A PERSON MAY CATCH A GLIMPSE OF CELEBRITIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CATCH_27 ?x1) (A_27 ?x1) (GLIMPSE_27 ?x1) (of_27 ?x1 ?x2) (CELEBRITIES_27 ?x2))
+
+	;; A GLIMPSE CAN BE CONSTITUTED_OF_OR_FILLED_WITH CELEBRITIES.
+
+		(and (GLIMPSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (CELEBRITIES_27 ?x2))
+
+;; (PLAY GOLF IN MONTANA)
+
+	;; PLAY GOLF CAN BE IN A US-STATE.
+
+		(and (PLAY_27 ?x1) (GOLF_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (US-STATE_27 ?x2))
+
+;; (GOLF IS A VERY POPULAR SPORT AND THERE ARE MANY GOLF COURSES)
+
+	;; A GOLF[PERSON??] CAN BE A SPORT.
+
+		(and (GOLF_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (SPORT_27 ?x1))
+
+	;; A SPORT CAN BE POPULAR.
+
+		(and (SPORT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POPULAR_27 ?x2))
+
+;; (PRO-GOLFER JACK NICHOLSON DESIGNED EAGLE BEND IN BIGFORK AND OLD WORKS IN ANACONDA COMMA WHICH WILL BE MORE EXPENSIVE)
+
+	;; A PRO-GOLFER_JACK_NICHOLSON[PERSON??] MAY DESIGN AN EAGLE_BEND[PERSON??].
+
+		(and (pro-golfer_5Fjack_5Fnicholson_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (DESIGN_27 ?x1) (AN_27 ?x1) (EAGLE_5FBEND_27 ?x1) (PERSON_27 ?x1))
+
+;; (FOR A BEGINNER COMMA JUST USE THE DRIVING RANGE OR DRIVE AROUND TO LOOK AT THE COURSE AND HOMES)
+
+	;; A RANGE CAN BE DRIVING.
+
+		(and (range_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRIVING_27 ?x2))
+
+;; (NEARLY EVERY SMALL TOWN HAS A GOLF COURSE)
+
+	;; SOME_NUMBER_OF TOWN MAY HAVE A GOLF COURSE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TOWN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GOLF_27 ?x1) (COURSE_27 ?x1))
+
+	;; A TOWN CAN BE SMALL.
+
+		(and (TOWN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (MOST ARE VERY INEXPENSIVE AND FRIENDLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TRY SNOWSPORTS IN MONTANA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DURING WINTERTIME COMMA MOST TRAVEL SCHEDULES ARE FOR SKI TRIPS COMMA HUNTING COMMA SNOWMOBILING COMMA AND HOT SPRINGS)
+
+	;; TRAVEL SCHEDULES CAN BE FOR TRIPS.
+
+		(and (travel_27 ?x1) (schedule_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (TRIPS_27 ?x2))
+
+	;; TRIPS CAN BE SKI.
+
+		(and (TRIPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SKI_27 ?x2))
+
+	;; SPRINGS CAN BE HOT.
+
+		(and (spring_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+;; (SKI RESORTS IN NORTHWESTERN MONTANA ARE WHITEFISH MOUNTAIN COMMA WHICH OVERLOOKS THE ENTIRE FLATHEAD VALLEY OR LESS EXPENSIVE BLACKTAIL MOUNTAIN)
+
+	;; SKI RESORTS CAN BE IN A NORTHWESTERN_MONTANA[PERSON??].
+
+		(and (SKI_27 ?x1) (RESORTS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (NORTHWESTERN_5FMONTANA_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+;; (OUTSIDE OF BOZEMAN BRIDGER BOWL AND BIG SKI ARE VERY POPULAR)
+
+	;; 
+
+	;; ((:I (:A NIL (:P OF.P (:Q DET BOZEMAN_BRIDGER_BOWL_AND_BIG_SKI.NAME))) POPULAR.A) NIL)
+
+		(and (I_27 ?x4) (A_27 ?x1) (NIL_27 ?x1) (P_27 ?x2) (OF_2EP_27 ?x2) (Q_27 ?x3) (DET_27 ?x3) (BOZEMAN_5FBRIDGER_5FBOWL_5FAND_5FBIG_5FSKI_2ENAME_27 ?x3) (POPULAR_2EA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THERE ARE SEVERAL OTHERS THAT ARE LESS EXPENSIVE AND LESS DIFFICULT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CHOOSE TO GO EITHER SOUTH ALONG THE INTERSTATE AND BIG CITIES TOWARD YELLOWSTONE OR GO EAST ALONG THE HIGHLINE AND RURAL TOWNS TOWARD MOUNT RUSHMORE)
+
+	;; TOWNS CAN BE RURAL.
+
+		(and (town_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RURAL_27 ?x2))
+
+;; (THE DETAILS ARE BELOW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TRAVEL DOWN TO PARADISE HOTSPRINGS AND STAY THE NIGHT)
+
+	;; A TRAVEL[PERSON??] MAY HOTSPRING.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HOTSPRING_27 ?x1))
+
+;; (CHOOSE WHICH WATER TEMPERATURE YOU WOULD LIKE TO RELAX IN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE RESTAURANT IS EXCELLENT)
+
+	;; A RESTAURANT CAN BE EXCELLENT.
+
+		(and (RESTAURANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXCELLENT_27 ?x2))
+
+;; (USE YAHOO FOR DIRECTIONS)
+
+	;; A USE_YAHOO[PERSON??] CAN BE FOR DIRECTIONS.
+
+		(and (USE_5FYAHOO_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (for_27 ?x1) (DIRECTIONS_27 ?x1))
+
+;; (CHECK OUT DOWNTOWN MISSOULA AND TRAVEL TOWARDS BUTTE AND FAIRMONT HOT SPRINGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STAY AT FAIRMONT FOR THE ROMANTIC GIANT HOTSPRING POOLS)
+
+	;; A STAY[PERSON??] CAN BE AT A FAIRMONT[PERSON??].
+
+		(and (STAY_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (at_27 ?e1 ?x1) (A_27 ?x1) (FAIRMONT_27 ?x1) )
+
+	;; HOTSPRING POOLS CAN BE ROMANTIC.
+
+		(and (HOTSPRING_27 ?x1) (POOLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ROMANTIC_27 ?x2))
+
+	;; HOTSPRING POOLS CAN BE GIANT.
+
+		(and (HOTSPRING_27 ?x1) (POOLS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GIANT_27 ?x2))
+
+;; (TWO ARE INDOOR AND THE OTHER TWO ARE OUTSIDE)
+
+	;; SOME NUMBER_OR_PORTION CAN BE INDOOR.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INDOOR_27 ?x2))
+
+;; (WINTERTIME IS EXTRA SPECIAL IN THE OUTSIDE POOLS WITH THE STEAM RISING AND THE SNOW ON THE DECK)
+
+	;; A WINTERTIME[PERSON??] CAN BE A SPECIAL.
+
+		(and (WINTERTIME_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (A_27 ?x1) (SPECIAL_27 ?x1))
+
+	;; SPECIAL CAN BE IN POOLS.
+
+		(and (SPECIAL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (pool_27 ?x2))
+
+	;; A SPECIAL CAN BE EXTRA.
+
+		(and (SPECIAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; POOLS CAN BE WITH STEAM RISING.
+
+		(and (pool_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (STEAM_27 ?x2) (RISING_27 ?x2))
+
+	;; POOLS CAN BE OUTSIDE.
+
+		(and (pool_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTSIDE_27 ?x2))
+
+	;; SNOW CAN BE ON A DECK.
+
+		(and (SNOW_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (DECK_27 ?x2))
+
+;; (ALSO COMMA IF YOU LIKE COMMA TRY GOLFING OR DOWNHILL SKIING)
+
+	;; A PERSON MAY LIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LIKE_27 ?x1))
+
+;; (TRAVEL TO BOZEMAN AND CHECK OUT THE DOWNTOWN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STAY THE NIGHT AND THEN GO TO YELLOWSTONE PARK COMMA TO WYOMING S JACKSON HOLE COMMA AND TO THE HOT SPRINGS AT THERMOPOLIS TRAVEL TOWARD NORTH DAKOTA)
+
+	;; SPRINGS CAN BE AT A THERMOPOLIS_TRAVEL[PERSON??].
+
+		(and (spring_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (THERMOPOLIS_5FTRAVEL_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; SPRINGS CAN BE HOT.
+
+		(and (spring_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOT_27 ?x2))
+
+	;; A THERMOPOLIS_TRAVEL[PERSON??] CAN BE TOWARD A US-STATE.
+
+		(and (THERMOPOLIS_5FTRAVEL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (TOWARD_27 ?x1) (A_27 ?x1) (US-STATE_27 ?x1))
+
+;; (TRY AN ALTERNATE OPTION BY TAKING THE RURAL HIGHLINE ALONG HIGHWAY 2)
+
+	;; AN OPTION CAN BE ALTERNATE.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALTERNATE_27 ?x2))
+
+	;; A HIGHLINE CAN BE RURAL.
+
+		(and (HIGHLINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RURAL_27 ?x2))
+
+;; (TRY VISITING SOME MUSEUMS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALMOST EVERY SMALL TOWN HAS A LOCAL HISTORICAL MUSEUM)
+
+	;; SOME_NUMBER_OF TOWN MAY HAVE A MUSEUM.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TOWN_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MUSEUM_27 ?x1))
+
+	;; A TOWN CAN BE SMALL.
+
+		(and (TOWN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A MUSEUM CAN BE HISTORICAL.
+
+		(and (MUSEUM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HISTORICAL_27 ?x2))
+
+;; (TAKE THEM IN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HAVRE HAS AN UNDERGROUND CITY)
+
+	;; A HAVRE[PERSON??] MAY HAVE A CITY.
+
+		(and (HAVRE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CITY_27 ?x1))
+
+	;; A CITY CAN BE UNDERGROUND.
+
+		(and (CITY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNDERGROUND_27 ?x2))
+
+;; (LOOK FOR THE SIGNS MIDTOWN AND NORMAN S WESTERN CLOTHING STORE)
+
+	;; A MALE MAY HAVE A CLOTHING STORE.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOTHING_27 ?x1) (STORE_27 ?x1))
+
+;; (TWENTY MILES EAST FROM HAVRE ON MAIN STREET IN CHINOOK COMMA THE BABY ANIMAL MUSEUM HAS ABUNDANT LOCAL WILDLIFE COMMA INCLUDING BUFFALO COMMA SKUNK COMMA RACCOON COMMA BADGERS COMMA FOX COMMA COYOTES)
+
+	;; A BABY ANIMAL MUSEUM MAY HAVE WILDLIFE.
+
+		(and (BABY_27 ?x1) (ANIMAL_27 ?x1) (MUSEUM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WILDLIFE_27 ?x1))
+
+	;; A HAVRE[PERSON??] CAN BE ON A ROAD.
+
+		(and (HAVRE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (on_27 ?x1) (A_27 ?x1) (ROAD_27 ?x1))
+
+	;; A ROAD CAN BE IN A CHINOOK[PERSON??].
+
+		(and (ROAD_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CHINOOK_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; A WILDLIFE CAN BE ABUNDANT.
+
+		(and (WILDLIFE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABUNDANT_27 ?x2))
+
+;; (IT S DEFINITELY WORTH A STOP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ASK THE LOCALS IF YOU HAVE ANY DIFFICULTIES FINDING THE PLACE OR WITH ITS HOURS)
+
+	;; A PERSON MAY HAVE DIFFICULTIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DIFFICULTIES_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE HOURS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (HOURS_27 ?x1))
+
+;; (JUSTMILES EAST COMMA MALTA HAS A DINOSAUR MUSEUM)
+
+	;; A COUNTRY MAY HAVE A DINOSAUR MUSEUM.
+
+		(and (COUNTRY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DINOSAUR_27 ?x1) (MUSEUM_27 ?x1))
+
+;; (DINOSAURS ARE FOUND ALONG THE MISSOURI RIVER/FORT PECK LAKE)
+
+	;; DINOSAURS MAY BE FIND -ED.
+
+		(and (dinosaur_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIND_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IN MALTA COMMA TRY THE PIZZA PLACE ON FRONT STREET)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DINE LOCALLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FOR EACH TOWN FIND OUT WHERE THE LOCALS EAT BREAKFAST AND JOIN THEM)
+
+	;; LOCALS MAY EAT BREAKFAST.
+
+		(and (LOCALS_27 ?x1) (MAY_27 ?x1) (EAT_27 ?x1) (BREAKFAST_27 ?x1))
+
+;; (VISIT THE WORLD S LARGEST EARTH DAM)
+
+	;; THE WORLD MAY HAVE AN EARTH DAM.
+
+		(and (WORLD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EARTH_27 ?x1) (DAM_27 ?x1))
+
+	;; AN EARTH DAM CAN BE LARGEST.
+
+		(and (EARTH_27 ?x1) (DAM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGEST_27 ?x2))
+
+;; (AT GLASGOW GO UNDER THE UNDERPASS AND TAKE A LEFT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IN 20 MILES YOU WILL BE ON THE FORT PECK DAM PROBABLY WITHOUT REALIZING YOU ARE ON AN EARTH DAM)
+
+	;; A PERSON CAN BE ON A FORT_PECK_DAM[PERSON??].
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (FORT_5FPECK_5FDAM_27 ?x2) (PERSON_27 ?x3))
+
+	;; A PERSON CAN BE ON AN EARTH DAM.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (AN_27 ?x2) (EARTH_27 ?x2) (DAM_27 ?x2))
+
+;; (THE LAKE IS TO THE RIGHT AND TO THE LEFT ARE  THE POWERHOUSES COMMA THE FORT PECK INTERPRETIVE CENTER COMMA AND THE CAMPGROUND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (NOTICE THE LEVEL OF THE MASSIVE LAKE COMPARED TO THE LEVEL OF THE CAMPGROUND IN THE COTTONWOOD TREES BELOW)
+
+	;; A LAKE MAY HAVE A LEVEL.
+
+		(and (LAKE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LEVEL_27 ?x1))
+
+	;; A LAKE CAN BE MASSIVE.
+
+		(and (LAKE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MASSIVE_27 ?x2))
+
+	;; A CAMPGROUND MAY HAVE A LEVEL.
+
+		(and (CAMPGROUND_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LEVEL_27 ?x1))
+
+	;; A CAMPGROUND CAN BE IN TREES.
+
+		(and (CAMPGROUND_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (TREES_27 ?x2))
+
+	;; TREES CAN BE COTTONWOOD.
+
+		(and (tree_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COTTONWOOD_27 ?x2))
+
+;; (CONTINUE PAST THE LAKE TO A BRIDGE WHICH IS ALSO A SPILLWAY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE LAKE LEVELS IN RECENT YEARS HAVE BEEN DOWN SO THE WATER IS A MILE AWAY FROM THE SPILLWAY)
+
+	;; LAKE LEVELS CAN BE IN YEARS.
+
+		(and (LAKE_27 ?x1) (level_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (year_27 ?x2))
+
+	;; WATER CAN BE FROM A SPILLWAY.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (SPILLWAY_27 ?x2))
+
+;; (CAMP NEARBY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU VISIT THE FORT PECK INTERPRETIVE CENTER COMMA THE COLOSSAL HILL IS THE DAM)
+
+	;; A HILL CAN BE A DAM.
+
+		(and (HILL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (DAM_27 ?x2))
+
+	;; A PERSON MAY VISIT AN INTERPRETIVE CENTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (VISIT_27 ?x1) (AN_27 ?x1) (INTERPRETIVE_27 ?x1) (CENTER_27 ?x1))
+
+	;; A FORT_PECK[PERSON??] MAY HAVE AN INTERPRETIVE CENTER.
+
+		(and (FORT_5FPECK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INTERPRETIVE_27 ?x1) (CENTER_27 ?x1))
+
+	;; A HILL CAN BE COLOSSAL.
+
+		(and (HILL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLOSSAL_27 ?x2))
+
+;; (STAY AT THE LOVELY CAMP GROUND FULL OF COTTONWOOD TREES NEXT TO THE POWER HOUSES AND NEXT TO THE INTERPRETIVE CENTER OR STAY AT THE HISTORIC HOTEL ON THE HILL)
+
+	;; A CAMP CAN BE LOVELY.
+
+		(and (CAMP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOVELY_27 ?x2))
+
+	;; TREES CAN BE COTTONWOOD.
+
+		(and (tree_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COTTONWOOD_27 ?x2))
+
+	;; A POWER[PERSON??] MAY HAVE HOUSES.
+
+		(and (power_27 ?x1) (PERSON_27 ?x2))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (HOUSES_27 ?x1))
+
+	;; A CENTER CAN BE INTERPRETIVE.
+
+		(and (CENTER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERPRETIVE_27 ?x2))
+
+	;; A HOTEL CAN BE ON A HILL.
+
+		(and (HOTEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (HILL_27 ?x2))
+
+	;; A HOTEL CAN BE HISTORIC.
+
+		(and (HOTEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HISTORIC_27 ?x2))
+
+;; (FOR BOAT RIDES EITHER MEET THE LOCALS OR ASK AT THE MARINA COMMA WHICH IS UP THE HILL AND ON THE NORTH SIDE OF THE BIG LAKE)
+
+	;; RIDES MAY MEET LOCALS.
+
+		(and (RIDES_27 ?x1) (MAY_27 ?x1) (MEET_27 ?x1) (LOCALS_27 ?x1))
+
+	;; A LAKE MAY HAVE A NORTH SIDE.
+
+		(and (LAKE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NORTH_27 ?x1) (SIDE_27 ?x1))
+
+	;; A LAKE CAN BE BIG.
+
+		(and (LAKE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (THERE ARE MANY PLACES TO BARBECUE COMMA TOAST MARSHMALLOWS AROUND THE FIRE COMMA AND SWIM BOTH IN THE DREDGE CUTS AND THE BIG LAKE)
+
+	;; SOME_NUMBER_OF PLACES CAN BE TO A BARBECUE[PERSON??].
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PLACES_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (BARBECUE_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; TOAST MARSHMALLOWS CAN BE AROUND A FIRE.
+
+		(and (TOAST_27 ?x1) (MARSHMALLOWS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (fire_27 ?x2))
+
+	;; CUTS CAN BE DREDGE.
+
+		(and (cut_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DREDGE_27 ?x2))
+
+	;; A LAKE CAN BE BIG.
+
+		(and (LAKE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+;; (TAKE THE ROAD DOWN OFF OF THE DAM AND TRAVEL TOWARDS NASHUA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STOP AT BERGIES FOR ICECREAM AT NASHUA ON HIGHWAY)
+
+	;; A BERGIES[PERSON??] CAN BE FOR AN ICECREAM[PERSON??].
+
+		(and (bergy_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (PERSON_27 ?x2))
+
+		(and (be_27 ?e1) (for_27 ?e1 ?x1) (ICECREAM_27 ?x1) )
+
+;; (TRAVEL 35 MILES EAST FROM FORT PECK LAKE TO VISIT THE LARGEST COLLECTION OF JOHN DEER TRACTORS)
+
+	;; TRACTORS MAY UNDERGO A COLLECTION.
+
+		(and (TRACTORS_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (collection_27 ?x1))
+
+	;; A COLLECTION CAN BE LARGEST.
+
+		(and (collection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGEST_27 ?x2))
+
+	;; A MALE MAY HAVE TRACTORS.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TRACTORS_27 ?x1))
+
+;; (CALL FOR DIRECTIONS AND ENTRANCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE COLLECTION IS NORTHWEST OF TOWN IN A LARGE FARM QUONSET)
+
+	;; A COLLECTION CAN BE A NORTHWEST[PERSON??] OF TOWN.
+
+		(and (collection_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (NORTHWEST_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+		(and (of_27 ?x1) (TOWN_27 ?x1))
+
+	;; TOWN CAN BE IN A FARM QUONSET.
+
+		(and (TOWN_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (FARM_27 ?x2) (QUONSET_27 ?x2))
+
+	;; A FARM QUONSET CAN BE LARGE.
+
+		(and (FARM_27 ?x1) (QUONSET_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (FOR OTHER BIG FARM EQUIPMENT COMMA TRY FINDING INTERNATIONAL FARM TOURS OR CONTACT THE OWNERS)
+
+	;; A FARM EQUIPMENT CAN BE BIG.
+
+		(and (FARM_27 ?x1) (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; FARM TOURS CAN BE INTERNATIONAL.
+
+		(and (FARM_27 ?x1) (TOURS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERNATIONAL_27 ?x2))
+
+;; (SEE THE RODEO)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [20]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [21]>
+
+;; (ALSO COMMA THERE ARE MANY NATIVE AMERICAN POWWOWS THROUGHOUT THE SUMMER)
+
+	;; SOME_NUMBER_OF EXEMPLAR_OF A NATIVE_AMERICAN_POWWOWS[PERSON??] CAN BE THROUGHOUT A SUMMER.
+
+		(and     (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (THROUGHOUT_27 ?x1) (A_27 ?x1) (SUMMER_27 ?x1))
+
+;; (AT WOLF POINT GO UNDER THE UNDERPASS AND TURN LEFT TO HEAD TOWARDS GLENDIVE AND MAKOSHIKA STATE PARK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THERE ARE MANY SIGNS OR ASK THE LOCALS FOR DIRECTIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ALSO COMMA TOUR THE HISTORIC MANSION NEXT TO THE YELLOWSTONE)
+
+	;; A HISTORIC_MANSION[PERSON??] CAN BE NEXT TO A YELLOWSTONE[PERSON??].
+
+		(and (HISTORIC_5FMANSION_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (NEXT_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (YELLOWSTONE_27 ?x2) (PERSON_27 ?x1))

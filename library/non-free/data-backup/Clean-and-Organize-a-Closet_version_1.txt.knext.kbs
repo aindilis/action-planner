@@ -1,0 +1,78 @@
+;; (MAKE SEPARATE PILES OF THE FOLLOWING CLEAN CLOTHES TO BE FOLDED AND PUT ONTO SHELVES  T-SHIRTS SHORTS JEANS SWEATERS TANK TOPS HANG UP
+ THESE ITEMS  ANYTHING THAT WILL EASILY WRINKLE BLAZERS / JACKETS / VESTS LONG SLEEVED SHIRTS PUT THE FOLLOWING AWAY NEATLY IN YOUR
+ DRESSER  STOCKINGS BELTS SOCKS UNDERGARMENTS IF YOU HAVE A A SMALL CLOSET TRY SEPARATING IT INTO SECTIONS THIS WILL MAKE IT EASIER AND
+ MAKE IT SEEM LIKE ITS BIGGER)
+
+	;; CLOTHES MAY HAVE PILES.
+
+		(and (clothe_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PILES_27 ?x1))
+
+	;; PILES CAN BE SEPARATE.
+
+		(and (pile_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SEPARATE_27 ?x2))
+
+	;; CLOTHES CAN BE FOLLOWING.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (following_27 ?x2))
+
+	;; CLOTHES CAN BE CLEAN.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; A SHORTS_JEANS_SWEATERS_TANK[PERSON??] MAY TOP A HANG[PERSON??].
+
+		(and (SHORTS_5FJEANS_5FSWEATERS_5FTANK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (TOP_27 ?x1) (A_27 ?x1) (HANG_27 ?x1) (PERSON_27 ?x1))
+
+	;; SHIRTS CAN BE LONG.
+
+		(and (shirt_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LONG_27 ?x2))
+
+	;; SHIRTS CAN BE SLEEVED.
+
+		(and (shirt_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLEEVED_27 ?x2))
+
+	;; A PERSON MAY HAVE A DRESSER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DRESSER_27 ?x1))
+
+	;; A CLOSET MAY TRY.
+
+		(and (CLOSET_27 ?x1) (MAY_27 ?x1) (TRY_27 ?x1))
+
+	;; A CLOSET CAN BE SMALL.
+
+		(and (CLOSET_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE EASIER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY SEEM.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SEEM_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A BIGGER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIGGER_27 ?x1))
+
+;; (ORGANIZE SHOES ONTO THE SHELVES OR IN BINS)
+
+	;; SHOES CAN BE ORGANIZE.
+
+		(and (shoe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORGANIZE_27 ?x2))
+
+;; (PUT THEM AWAY NEATLY COMMA AND LABEL EACH SHELF/BIN COMMA -LRB- E.G. COMMA SANDALS COMMA BOOTS COMMA ETC. -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

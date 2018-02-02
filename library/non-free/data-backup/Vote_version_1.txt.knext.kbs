@@ -1,0 +1,92 @@
+;; (THIS WILL LET YOU KNOW EXACTLY WHO IS RUNNING FOR WHICH OFFICE COMMA HOW MANY SEATS ARE OPEN FOR THE OFFICE COMMA AND HOW MANY VOTES YOU ARE ENTITLED TO CAST FOR EACH OFFICE)
+
+	;; A PERSON MAY KNOW.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1))
+
+	;; SEATS CAN BE OPEN FOR AN OFFICE.
+
+		(and (seat_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPEN_27 ?x2) (for_27 ?e1 ?x3) (AN_27 ?x3) (OFFICE_27 ?x3))
+
+;; (IT WILL ALSO SPELL OUT ANY REFERENDA OR INITIATIVES APPEARING BEFORE THE VOTERS)
+
+	;; A THING-REFERRED-TO MAY SPELL_OUT A REFERENDA.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SPELL_5FOUT_27 ?x1) (A_27 ?x1) (REFERENDA_27 ?x1))
+
+	;; A REFERENDA MAY APPEAR BEFORE VOTERS.
+
+		(and (REFERENDA_27 ?x1) (MAY_27 ?x1) (APPEAR_27 ?x1) (BEFORE_27 ?x1) (VOTERS_27 ?x1))
+
+;; (EDUCATE YOURSELF ON THE CANDIDATES AND THE ISSUES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [6]>
+
+;; (LISTEN TO RADIO OR TV CANDIDATE DEBATES COMMA OR ATTEND A DEBATE OR A FORUM IN PERSON)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IN LOCAL ELECTIONS COMMA WHERE COVERAGE IS LIMITED COMMA IT CAN BE VERY EFFECTIVE TO PICK UP THE TELEPHONE AND SPEAK TO A CANDIDATE)
+
+	;; COVERAGE CAN BE LIMITED.
+
+		(and (coverage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIMITED_27 ?x2))
+
+;; (MARK YOUR SAMPLE BALLOT ACCORDING TO YOUR CHOICES)
+
+	;; A PERSON MAY HAVE A SAMPLE BALLOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SAMPLE_27 ?x1) (BALLOT_27 ?x1))
+
+	;; A PERSON MAY HAVE CHOICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CHOICES_27 ?x1))
+
+;; (THIS WILL HELP PREVENT CONFUSION ONCE YOU GET TO THE VOTING BOOTH AND WILL ALLOW YOU TO CAST YOUR VOTE IN THE WAY YOU INTEND)
+
+	;; A THING MAY HELP.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1))
+
+	;; A PERSON MAY GET TO A VOTING BOOTH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (VOTING_27 ?x2) (BOOTH_27 ?x2))
+
+	;; A PERSON MAY HAVE A VOTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VOTE_27 ?x1))
+
+	;; A PERSON MAY INTEND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (INTEND_27 ?x1))
+
+;; (GO TO YOUR POLLING PLACE AND FOLLOW INSTRUCTIONS)
+
+	;; A PERSON MAY HAVE A POLLING PLACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (POLLING_27 ?x1) (PLACE_27 ?x1))

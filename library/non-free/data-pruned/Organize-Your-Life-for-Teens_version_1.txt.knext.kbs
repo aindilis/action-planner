@@ -1,0 +1,117 @@
+;; (-LRB- IF YOU MAKE A REALLY DRASTIC CHANGE IN HOW MUCH YOU HELP AROUND THE HOUSE AND WITH YOUR ROOM YOUR PARENTS MAY PAY YOU)
+
+	;; A PERSON MAY HELP AROUND A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1) (AROUND_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+	;; A PERSON MAY MAKE A CHANGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (CHANGE_27 ?x1))
+
+	;; A CHANGE CAN BE DRASTIC.
+
+		(and (CHANGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRASTIC_27 ?x2))
+
+	;; PARENTS MAY PAY A PERSON.
+
+		(and (parent_27 ?x1) (PAY_27 ?x1) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE PARENTS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (parent_27 ?x1))
+
+;; (IF YOU HAVE A MESSY ROOM YOU CA N T GET AN ORGANIZED LIFE)
+
+	;; A PERSON MAY GET A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A ROOM CAN BE MESSY.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MESSY_27 ?x2))
+
+	;; A LIFE CAN BE ORGANIZED.
+
+		(and (LIFE_27 ?x1) (be_27 ?e1 ?x1 ?e2) (organize_27 ?e2 ?x1))
+
+;; (START IN ONE CORNER OF THE ROOM)
+
+	;; START CAN BE IN A CORNER.
+
+		(and (START_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CORNER_27 ?x2))
+
+;; (IF YOU HAVE N T USED SOMETHING IN A YEAR AND IT S NOT SENTIMENTAL TRY TO GIVE IT AWAY TO A CHARITY)
+
+	;; A PERSON MAY USE SOMETHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (SOMETHING_27 ?x1))
+
+	;; SOMETHING CAN BE IN A YEAR.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (year_27 ?x2))
+
+;; (IF YOU NEED MOTIVATION SET A TIMER FOR 15 MINUTES)
+
+	;; A PERSON MAY NEED MOTIVATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (MOTIVATION_27 ?x1))
+
+;; (AFTER THAT TAKE A LITTLE BREAK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (STICK TO YOUR SCHEDULE COMMA KEEP YOUR ROOM CLEAN COMMA DO YOUR HOMEWORK COMMA AND YOU WILL HAVE ORGANIZED YOUR LIFE)
+
+	;; A STICK[PERSON??] TO A SCHEDULE MAY DO A HOMEWORK.
+
+		(and (STICK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (to_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (HOMEWORK_27 ?x1))
+
+	;; A STICK[PERSON??] CAN BE TO A SCHEDULE.
+
+		(and (STICK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (to_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+	;; A PERSON MAY HAVE A SCHEDULE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SCHEDULE_27 ?x1))
+
+	;; A ROOM CAN BE CLEAN.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROOM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROOM_27 ?x1))
+
+	;; A PERSON MAY HAVE A HOMEWORK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOMEWORK_27 ?x1))
+
+	;; A PERSON MAY ORGANIZE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ORGANIZE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))

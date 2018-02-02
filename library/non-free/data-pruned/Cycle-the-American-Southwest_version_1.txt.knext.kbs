@@ -1,0 +1,469 @@
+;; (GENERALLY SPEAKING COMMA FROM EL PASO TX HEADING WESTWARDS TILL COLORADO RIVER COMMA THERE IS A DROP IN ELEVATION MAKING IT EASIER TO CYCLE)
+
+	;; A DROP CAN BE IN ELEVATION.
+
+		(and (DROP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ELEVATION_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE EASIER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASIER_27 ?x2))
+
+;; (THE DESERT IS A REAL FACTOR)
+
+	;; A DESERT CAN BE A FACTOR.
+
+		(and (DESERT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (FACTOR_27 ?x2))
+
+	;; A FACTOR CAN BE REAL.
+
+		(and (FACTOR_27 ?x1) (be_27 ?e1 ?x1) (real_27 ?x1))
+
+;; (IT S HOT COMMA DUSTY COMMA LONELY COMMA AND LACKS SERVICES AND WATER)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL HOT.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (HOT_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (BE AWARE THAT MOST NATIONAL PARKS AND NATIONAL FORESTS HAVE SPECIFIC RESTRICTIONS ON WHERE YOU CAN RIDE)
+
+	;; A PERSON MAY RIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RIDE_27 ?x1))
+
+;; (-LRB- -RRB- CHECK THEIR WEBSITES WHEN PLANNING YOUR ROUTE)
+
+	;; INDIVIDUAL -S MAY HAVE WEBSITES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WEBSITES_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROUTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROUTE_27 ?x1))
+
+;; (YOU ALSO NEED TO ENSURE THAT THERE IS SOME WAY TO TRANSPORT YOUR BIKE TO AND BACK ON YOUR JOURNEY COMMA UNLESS YOU ARE SUPPORTED COMMA THEN YOU JUST NEED TO BE DRIVEN BACK)
+
+	;; A PERSON MAY HAVE A BIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIKE_27 ?x1))
+
+	;; A PERSON MAY HAVE A JOURNEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (JOURNEY_27 ?x1))
+
+	;; A PERSON MAY BE SUPPORT -ED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SUPPORT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IF YOU DO NOT HAVE THAT LUXURY COMMA LOOK WHERE THE AMTRAK PICK-UP POINTS ARE -LRB- -RRB- COMMA OR CHECK OUT WHERE YOU CAN FLY IN AND OUT)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; PICK-UP POINTS MAY BE.
+
+		(and (PICK-UP_27 ?x1) (POINTS_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; AN AMTRAK[PERSON??] MAY HAVE PICK-UP POINTS.
+
+		(and (AMTRAK_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (PICK-UP_27 ?x1) (POINTS_27 ?x1))
+
+	;; A PERSON MAY FLY_IN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FLY_5FIN_27 ?x1))
+
+;; (IF YOU FLY COMMA NOTE THAT YOU NEED TO BOX UP YOUR BIKE)
+
+	;; A PERSON MAY FLY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FLY_27 ?x1))
+
+	;; A PERSON MAY HAVE A BIKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BIKE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (PICK A GOOD TIME TO GO)
+
+	;; A TIME CAN BE GOOD.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (A LARGE PORTION OF THE SOUTHWEST IS A DESERT)
+
+	;; A PORTION OF A SOUTHWEST CAN BE A DESERT.
+
+		(and (portion_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (SOUTHWEST_27 ?x2) (be_27 ?e1 ?x1 ?x3) (A_27 ?x3) (DESERT_27 ?x3))
+
+	;; A SOUTHWEST MAY HAVE A PORTION.
+
+		(and (SOUTHWEST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PORTION_27 ?x1))
+
+	;; A PORTION CAN BE LARGE.
+
+		(and (PORTION_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (SO IF YOU GO DURING SUMMER COMMA EXPECT TO DEAL WITH AN AVERAGE OF 100 F -LRB- OR 38 C -RRB-)
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; AN AVERAGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF F.
+
+		(and (AVERAGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (F_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [12]>
+
+;; (THE WINDOWS BETWEEN THESE TWO SEASONS MAY BE THE MOST PLEASANT)
+
+	;; WINDOWS CAN BE BETWEEN SOME_NUMBER_OF SEASONS.
+
+		(and (window_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BETWEEN_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SEASONS_27 ?x2))
+
+;; (SIGN JUST OUTSIDE BENSON COMMA AZ ON THE I-10 CHOOSE YOUR ROUTE)
+
+	;; SIGN MAY CHOOSE A ROUTE.
+
+		(and (SIGN_27 ?x1) (MAY_27 ?x1) (CHOOSE_27 ?x1) (A_27 ?x1) (ROUTE_27 ?x1))
+
+	;; A BENSON_COMMA_AZ[PERSON??] CAN BE ON AN I-10.
+
+		(and (BENSON_5FCOMMA_5FAZ_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (on_27 ?x1) (I-10_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROUTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROUTE_27 ?x1))
+
+;; (THIS IS NOT AS EASY AS IT SOUNDS)
+
+	;; A THING CAN BE EASY.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EASY_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY SOUND.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (SOUND_27 ?x1))
+
+;; (AS THERE ARE ONLY A FEW PROPER ROADS GOING ACROSS THIS REGION COMMA YOU MAY ACTUALLY NEED TO USE THE INTERSTATES FOR CERTAIN STRETCHES)
+
+	;; 
+
+	;; ((:I NIL GO.V (:P ACROSS.P (:Q THE REGION.N))))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (GO_2EV_27 ?x1) (P_27 ?x2) (ACROSS_2EP_27 ?x2) (Q_27 ?x3) (THE_27 ?x3) (REGION_2EN_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [13]>
+
+;; (STRETCHES OF THE INTERSTATE THAT YOU CAN TAKE INCLUDE THE I-10 AND THE I-8)
+
+	;; STRETCHES OF AN INTERSTATE MAY INCLUDE AN I-10.
+
+		(and (stretch_27 ?x1) (of_27 ?x1 ?x2) (INTERSTATE_27 ?x2) (MAY_27 ?x2) (INCLUDE_27 ?x2) (AN_27 ?x2) (I-10_27 ?x2))
+
+	;; AN INTERSTATE MAY HAVE STRETCHES.
+
+		(and (INTERSTATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STRETCHES_27 ?x1))
+
+	;; A PERSON MAY TAKE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1))
+
+;; (NOTE THAT IF YOU RE CYCLING FROM CALIFORNIA TO ARIZONA AND NEW MEXICO COMMA USING INTERSTATES IS UNAVOIDABLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (-LRB- 4 -RRB- SOME ITINERARIES THAT MIGHT INTEREST YOU INCLUDE  THE RED CANYON COMMA UTAH COMMA HAS A RESURFACED CYCLE TRACK ON THE HIGHWAY RUNNING THROUGH THE CANYON)
+
+	;; SOME_NUMBER_OF ITINERARIES MAY INCLUDE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITINERARIES_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1))
+
+	;; A RED_CANYON[PERSON??] MAY HAVE A CYCLE TRACK.
+
+		(and (RED_5FCANYON_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CYCLE_27 ?x1) (TRACK_27 ?x1))
+
+	;; A CYCLE TRACK CAN BE ON A HIGHWAY.
+
+		(and (CYCLE_27 ?x1) (TRACK_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (HIGHWAY_27 ?x2))
+
+	;; A CYCLE TRACK CAN BE RESURFACED.
+
+		(and (CYCLE_27 ?x1) (TRACK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RESURFACED_27 ?x2))
+
+	;; A HIGHWAY MAY RUN THROUGH A CANYON[PERSON??].
+
+		(and (HIGHWAY_27 ?x1) (MAY_27 ?x1) (RUN_27 ?x1) (THROUGH_27 ?x1) (A_27 ?x1) (CANYON_27 ?x1) (PERSON_27 ?x1))
+
+;; (-LRB- 5 -RRB- NEW MEXICO HAS A CYCLE RIDE CALLED THE ENCHANTED CIRCLE)
+
+	;; A COUNTRY MAY HAVE A CYCLE RIDE.
+
+		(and (COUNTRY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CYCLE_27 ?x1) (RIDE_27 ?x1))
+
+;; (THIS IS A LOOP OF ALMOSTMILES THAT STARTS AND ENDS IN TAOS)
+
+	;; A THING CAN BE A LOOP OF ALMOSTMILES.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LOOP_27 ?x2) (of_27 ?x2 ?x3) (ALMOSTMILES_27 ?x3))
+
+	;; A LOOP CAN BE CONSTITUTED_OF_OR_FILLED_WITH ALMOSTMILES.
+
+		(and (LOOP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ALMOSTMILES_27 ?x2))
+
+;; (-LRB- 6 -RRB- IF YOU RE STOPPING OFF FOR SOME CITY LIFE COMMA ALBUQUERQUE COMMA NM COMMA HAS MANY TRAILS AND WAS NAMED THE THIRD BEST PLACE TO BIKE IN THE US IN)
+
+	;; AN ALBUQUERQUE[PERSON??] MAY HAVE SOME_NUMBER_OF TRAILS.
+
+		(and (ALBUQUERQUE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (TRAILS_27 ?x1))
+
+	;; A PLACE CAN BE BEST.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEST_27 ?x2))
+
+	;; BIKE CAN BE IN A US[PERSON??].
+
+		(and (BIKE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (US_27 ?x3) (PERSON_27 ?x3))
+
+;; (-LRB- 7 -RRB- US ROUTEHAS GOOD BACK ROAD OPTIONS)
+
+	;; 
+
+	;; ((:I NIL GOOD.A))
+
+		(and (I_27 ?x1) (NIL_27 ?x1) (GOOD_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RIDE WEST FROM WILLIAMS COMMA AZ ALONG THE INTERSTATE FOR 20 MILES COMMA THEN HEAD ONTO THE REMAINING SECTION OF OLD ROUTE 66 BETWEEN SELIGMAN AND KINGMAN)
+
+	;; A RIDE[PERSON??] MAY HEAD ONTO A SECTION OF AN OLD_ROUTE[PERSON??].
+
+		(and (RIDE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HEAD_27 ?x1) (ONTO_27 ?x1) (A_27 ?x1) (SECTION_27 ?x1) (of_27 ?x1 ?x2) (OLD_5FROUTE_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; AN INTERSTATE CAN BE FOR SOME_NUMBER_OF MILES.
+
+		(and (INTERSTATE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (MILES_27 ?x2))
+
+	;; A SECTION CAN BE REMAINING.
+
+		(and (section_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REMAINING_27 ?x2))
+
+	;; AN OLD_ROUTE[PERSON??] CAN BE BETWEEN A SELIGMAN_AND_KINGMAN[PERSON??].
+
+		(and (OLD_5FROUTE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (BETWEEN_27 ?x1) (A_27 ?x1) (SELIGMAN_5FAND_5FKINGMAN_27 ?x1) (PERSON_27 ?x2))
+
+;; (TAKE OATMAN ROAD TO NEEDLES COMMA ANOTHER SMALL PART OF THE I-40 COMMA THEN BACK TO OLD ROUTE 66 THROUGH AMBOY TO BARSTOW)
+
+	;; AN I-40 MAY HAVE A PART.
+
+		(and (I-40_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+	;; A PART CAN BE SMALL.
+
+		(and (part_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (-LRB- 8 -RRB- TEXAS HAS THE DAVIS MOUNTAINS LOOP COMMA MILES WITH A GAIN OF 3COMMA000 FEET ELEVATION AS YOU TRAVEL)
+
+	;; MILES MAY ELEVATIO.
+
+		(and (mile_27 ?x1) (MAY_27 ?x1) (ELEVATIO_27 ?x1))
+
+	;; A US-STATE MAY HAVE A DAVIS_MOUNTAINS_LOOP[PERSON??].
+
+		(and (US-STATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DAVIS_5FMOUNTAINS_5FLOOP_27 ?x1) (PERSON_27 ?x1))
+
+	;; MILES CAN BE WITH A GAIN OF SOME_NUMBER_OF FEET.
+
+		(and (mile_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (GAIN_27 ?x2) (of_27 ?x2 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (FEET_27 ?x3))
+
+	;; A GAIN CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF FEET.
+
+		(and (GAIN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (FEET_27 ?x2))
+
+	;; A PERSON MAY TRAVEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [14]>
+
+;; (-LRB- 9 -RRB- ARIZONA HAS THE MOUNT LEMMON RIDE)
+
+	;; A US-STATE MAY HAVE A MOUNT_LEMMON[PERSON??].
+
+		(and (US-STATE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MOUNT_5FLEMMON_27 ?x1) (PERSON_27 ?x1))
+
+;; (IT COVERSMILES FROM THE SONORAN DESERT AND ASCENDS 6COMMA500 FEET TO MOUNT LEMMON)
+
+	;; A THING-REFERRED-TO MAY COVERSMILE FROM A DESERT.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (COVERSMILE_27 ?x1) (FROM_27 ?x1) (A_27 ?x1) (DESERT_27 ?x1))
+
+	;; A SONORAN[PERSON??] MAY HAVE A DESERT.
+
+		(and (SONORAN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESERT_27 ?x1))
+
+;; (YOU DEFINITELY NEED TO TAKE WARM CLOTHES ON THE TRIP)
+
+	;; CLOTHES CAN BE WARM.
+
+		(and (clothe_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WARM_27 ?x2))
+
+;; (-LRB- 10 -RRB- NEVADA HAS THE USROUTE)
+
+	;; SOME NUMBER_OR_PORTION MAY HAVE A USROUTE.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (USROUTE_27 ?x1))
+
+;; (IT GOES FOR 45 MILES WEST TO EAST FROM PONY EXPRESS STATION TO AUSTIN COMMA OR CONTINUE TO EUREKA FOR A TOTAL OF 58 MILES)
+
+	;; A PONY_EXPRESS_STATION[PERSON??] CAN BE TO A US-CITY.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (be_27 ?e1) (to_27 ?x1) (A_27 ?x1) (US-CITY_27 ?x1))
+
+	;; MILES MAY UNDERGO A TOTAL.
+
+		(and (mile_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (A_27 ?x1) (TOTAL_27 ?x1))
+
+;; *** - GET: 11 is not a symbol
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 5 [15]>
+
+;; (-LRB- 12 -RRB- PACK YOUR EQUIPMENT)
+
+	;; A PERSON MAY HAVE EQUIPMENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (EQUIPMENT_27 ?x1))
+
+;; (BOOK ACCOMMODATION IN ADVANCE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [15]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS IS ESPECIALLY IMPORTANT IF YOU ARE FREQUENTING HIGHLY TOURISTED PLACES OR THERE ARE N T MANY LODGINGS AVAILABLE WHERE YOU ARE GOING)
+
+	;; A THING CAN BE IMPORTANT.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY FREQUENT PLACES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FREQUENT_27 ?x1) (PLACES_27 ?x1))
+
+	;; PLACES CAN BE TOURISTED.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOURISTED_27 ?x2))
+
+	;; A PERSON MAY GO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+;; (IF YOU PLAN ON CAMPING COMMA BE SURE TO HAVE THE APPROPRIATE SUPPLIES AND TO UPDATE YOUR OUTDOOR KNOWLEDGE COMMA INCLUDING TREATMENT FOR SNAKE BITE AND STINGS)
+
+	;; SUPPLIES CAN BE APPROPRIATE.
+
+		(and (supply_27 ?x1) (be_27 ?e1 ?x1 ?x2) (APPROPRIATE_27 ?x2))
+
+	;; A PERSON MAY HAVE KNOWLEDGE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KNOWLEDGE_27 ?x1))
+
+	;; KNOWLEDGE CAN BE OUTDOOR.
+
+		(and (KNOWLEDGE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTDOOR_27 ?x2))
+
+	;; TREATMENT CAN BE FOR BITE.
+
+		(and (treatment_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (BITE_27 ?x2))
+
+	;; A BITE CAN BE SNAKE.
+
+		(and (BITE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SNAKE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [16]>

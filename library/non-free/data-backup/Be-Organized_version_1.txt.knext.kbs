@@ -1,0 +1,1388 @@
+;; (ORGANIZE YOUR SPACE)
+
+	;; A PERSON MAY HAVE A SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+;; (WHETHER IT S YOUR HOME COMMA BEDROOM COMMA KITCHEN COMMA OFFICE COMMA COMPUTER COMMA CLOSET COMMA DESK COMMA OR LOCKER COMMA YOU NEED TO SEE WHAT S IN THERE COMMA THROW AWAY ANYTHING YOU DO N T OFTEN USE -LRB- OR PUT IT EFFICIENTLY IN STORAGE -RRB- AND GIVE EVERYTHING ELSE A
+ CONVENIENT AND CLEARLY DESIGNATED SPACE)
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A SPACE CAN BE CONVENIENT.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONVENIENT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [5]>
+
+;; (THE PURPOSE OF ORGANIZATION IS TO BE ABLE TO FIND COMMA EXCHANGE COMMA AND EVALUATE ITEMS QUICKLY)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [5]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (BUT ORGANIZATION CAN ALSO HELP KEEP THEM TIDY BY PROVIDING A QUICK COMMA LOGICAL SYSTEM FOR ADDING AND REMOVING THINGS FROM EASY-TO-USE COMMA SOMEWHAT UNIFORM-APPEARING GROUPS COMMA AND BY PREVENTING UNNECESSARY PURCHASES ON ACCOUNT OF MISPLACED ITEMS)
+
+	;; ORGANIZATION MAY HELP.
+
+		(and (ORGANIZATION_27 ?x1) (MAY_27 ?x1) (HELP_27 ?x1))
+
+	;; PURCHASES CAN BE UNNECESSARY.
+
+		(and (purchase_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNNECESSARY_27 ?x2))
+
+	;; ITEMS CAN BE MISPLACED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MISPLACED_27 ?x2))
+
+;; (EXAMPLE  IF YOU HAVE A LOT OF BOOKS AND FILL A BOOKSHELF WITH THEM IN ORDER OF SIZE COMMA THEY LL LOOK NEAT COMMA BUT YOU LL HAVE TO SKIM OVER THEM ONE AT A TIME WHENEVER YOU DO N T REMEMBER WHERE ONE IS - MAYBE EVEN MOVE SOME IF YOU VE PUT ONE ROW OF SMALL PAPERBACKS IN FRONT
+ OF ANOTHER - AND REARRANGE MANY WHENEVER YOU NEED TO ADD A FEW MORE)
+
+	;; A PERSON MAY HAVE A LOT OF BOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOT_27 ?x1) (of_27 ?x1 ?x2) (BOOKS_27 ?x2))
+
+	;; A BOOKSHELF CAN BE WITH INDIVIDUAL -S.
+
+		(and (BOOKSHELF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (INDIVIDUAL_27 ?x2) (kbs2_kif_quote_2DS_27 ?x2))
+
+	;; SOME NUMBER_OR_PORTION CAN BE AT A TIME.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; AN INDIVIDUAL MAY BE.
+
+		(and (INDIVIDUAL_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; PAPERBACKS CAN BE SMALL.
+
+		(and (paperback_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (IF YOU GIVE EACH CATEGORY ITS OWN SHELF AREA COMMA AND LEAVE SOME EXTRA SPACE AT THE END OR BETWEEN BOOKENDED GROUPS COMMA YOU CAN FIND A BOOK QUICKLY BY GLANCING AT THE CATEGORY LAYOUT AND SKIMMING JUST THE FEW BOOKS IN THE RIGHT CATEGORY COMMA AND ADD OR REMOVE BOOKS HERE
+ AND THERE WITHOUT DISRUPTING THE OVERALL LAYOUT)
+
+	;; A PERSON MAY FIND A BOOK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (BOOK_27 ?x1))
+
+	;; A PERSON MAY GIVE SOME_NUMBER_OF CATEGORY A SHELF AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (CATEGORY_27 ?x1) (A_27 ?x1) (SHELF_27 ?x1) (AREA_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY HAVE A SHELF AREA.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SHELF_27 ?x1) (AREA_27 ?x1))
+
+	;; A SPACE CAN BE EXTRA.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; GROUPS CAN BE BOOKENDED.
+
+		(and (GROUPS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOOKENDED_27 ?x2))
+
+	;; BOOKS CAN BE IN A CATEGORY.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CATEGORY_27 ?x2))
+
+;; (COMPUTER SCIENTISTS -LRB- -RRB- ARE SMART PEOPLE WHO HELP STUPID MACHINES HANDLE BILLIONS AND BILLIONS OF THINGS FAST)
+
+	;; A COMPUTER_SCIENTISTS_-LRB-[PERSON??] CAN BE PEOPLE.
+
+		(and (COMPUTER_5FSCIENTISTS_5F-LRB-_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (people_27 ?x1))
+
+	;; PEOPLE CAN BE SMART.
+
+		(and (people_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMART_27 ?x2))
+
+	;; MACHINES CAN BE STUPID.
+
+		(and (machine_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STUPID_27 ?x2))
+
+	;; BILLIONS OF THINGS CAN BE FAST.
+
+		(and (billion_27 ?x1) (of_27 ?x1 ?x2) (thing_27 ?x2) (be_27 ?e1 ?x1 ?x3) (FAST_27 ?x3))
+
+	;; BILLIONS CAN BE CONSTITUTED_OF_OR_FILLED_WITH THINGS.
+
+		(and (billion_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (THINGS_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [6]>
+
+;; (DO N T TRY TO FOLLOW THE PROGRAMMING RULES PERFECTLY - JUST APPLY THEIR PRINCIPLES)
+
+	;; INDIVIDUAL -S MAY HAVE PRINCIPLES.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PRINCIPLES_27 ?x1))
+
+;; (BY ORGANIZING YOUR ITEMS HIERARCHICALLY COMMA YOU LL JUST HAVE TO MAKE A FEW DECISIONS AS YOU WORK YOUR WAY DOWN THE HIERARCHY INTO INCREASINGLY NARROWER CATEGORIES -LRB- E.G. COMMA RACK COMMA SHELF COMMA CRATE COMMA BAG -RRB- COMMA RATHER THAN BROWSING)
+
+	;; A PERSON MAY HAVE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+	;; A PERSON MAY WORK A WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+	;; A PERSON MAY HAVE A WAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (WAY_27 ?x1))
+
+	;; CATEGORIES CAN BE NARROWER.
+
+		(and (category_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NARROWER_27 ?x2))
+
+;; (FOR INSTANCE COMMA YOU COULD PUT ALL YOUR SPORTS STUFF ON A SHELF COMMA WITH A CRATE FOR EACH SPORT COMMA AND SMALL ITEMS LIKE GOLF TEES IN A BAG IN THE GOLF CRATE)
+
+	;; A CRATE CAN BE FOR SOME_NUMBER_OF SPORT.
+
+		(and (CRATE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SPORT_27 ?x2))
+
+	;; ITEMS CAN BE SMALL.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A BAG CAN BE IN A GOLF CRATE.
+
+		(and (BAG_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (GOLF_27 ?x2) (CRATE_27 ?x2))
+
+;; (A FEW BIG ODD THINGS LIKE SKIS WOULD GO ELSEWHERE)
+
+	;; THINGS MAY GO.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+	;; THINGS CAN BE BIG.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BIG_27 ?x2))
+
+	;; THINGS CAN BE ODD.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ODD_27 ?x2))
+
+;; (YOU COULD PUT CLEANING SUPPLIES ON ANOTHER COMMA SORTED BY THE KIND OF AREA THEY CLEAN)
+
+	;; A PERSON MAY PUT CLEANING SUPPLIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (CLEANING_27 ?x1) (SUPPLIES_27 ?x1))
+
+;; (DO N T OVERDO IT COMMA BECAUSE IT S MUCH FASTER TO LOOK AT SEVERAL ITEMS THAN TO OPEN AND CLOSE OR REMOVE AND REPLACE A CONTAINER)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL FASTER.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (FASTER_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (TWO OR THREE LEVELS IS PLENTY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 2 [6]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (ORGANIZE ELECTRICAL COMMA ELECTRONIC AND COMPUTER PARTS AND CORDS AND OTHER VERY-SMALL OR AWKWARDLY-SHAPED ITEMS THAT TEND TO SINK TO THE BOTTOM OF PILES OR TANGLE BY PUTTING THEM IN MORE ACCESSIBLE COMMA JAM-FREE CONTAINERS LIKE SLIPPERY PLASTIC ZIPPER BAGS)
+
+	;; ITEMS CAN BE AWKWARDLY-SHAPED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (awkwardly-shaped_27 ?x1))
+
+	;; CONTAINERS CAN BE ACCESSIBLE.
+
+		(and (container_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACCESSIBLE_27 ?x2))
+
+	;; ZIPPER BAGS CAN BE SLIPPERY.
+
+		(and (ZIPPER_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLIPPERY_27 ?x2))
+
+	;; ZIPPER BAGS CAN BE PLASTIC.
+
+		(and (ZIPPER_27 ?x1) (BAGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (LEAVE SOME EMPTY SPACE IN EACH OF YOUR STORAGE AREAS TO ADD THINGS WITHOUT DISRUPTING THE SCHEME)
+
+	;; SOME_NUMBER_OF SPACE CAN BE IN SOME_NUMBER_OF THING OF STORAGE AREAS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SPACE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (thing_27 ?x2) (of_27 ?x2 ?x3) (STORAGE_27 ?x3) (AREAS_27 ?x3))
+
+	;; A SPACE CAN BE EMPTY.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+	;; STORAGE AREAS MAY HAVE A THING.
+
+		(and (STORAGE_27 ?x1) (AREAS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE STORAGE AREAS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (STORAGE_27 ?x1) (AREAS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [7]>
+
+;; (SOME ITEMS NEED LAYOUT OR ORDERING RATHER THAN JUST GROUPING)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FREQUENTLY-USED UNIQUE ITEMS COMMA LIKE SPICES COMMA SHOULD BE KEPT HANDY AND EACH VIEWABLE AND ACCESSIBLE COMMA NOT TUCKED AWAY WITH SOMETHING THEY RE SOMEHOW RELATED TO)
+
+	;; ITEMS MAY BE KEEP -ED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; ITEMS CAN BE FREQUENTLY-USED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (frequently-used_27 ?x1))
+
+;; (PERISHABLE ITEMS COMMA LIKE FOOD COMMA SHOULD BE CONSUMED ON A FIRST-IN COMMA FIRST-OUT BASIS  YOU COULD LOAD STACKS FROM UNDERNEATH COMMA OR ROWS FROM THE BACK)
+
+	;; ITEMS CAN BE PERISHABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERISHABLE_27 ?x2))
+
+	;; A PERSON MAY LOAD STACKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LOAD_27 ?x1) (STACKS_27 ?x1))
+
+	;; STACKS CAN BE FROM AN UNDERNEATH[PERSON??].
+
+		(and (stack_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (AN_27 ?x2) (UNDERNEATH_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; ROWS CAN BE FROM A BACK.
+
+		(and (row_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FROM_27 ?x2) (A_27 ?x2) (BACK_27 ?x2))
+
+;; (INTERCHANGEABLE BUT NOT IDENTICAL ITEMS IN WHICH ONE ENJOYS VARIETY COMMA LIKE CLOTHES COMMA SHOULD ALSO BE QUEUED OR PERIODICALLY CHURNED SO NOTHING LINGERS AT THE BOTTOM OF A PILE)
+
+	;; ITEMS MAY BE QUEUE -ED.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (QUEUE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; ITEMS CAN BE INTERCHANGEABLE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERCHANGEABLE_27 ?x2))
+
+	;; AN INDIVIDUAL MAY ENJOY VARIETY.
+
+		(and (INDIVIDUAL_27 ?x1) (MAY_27 ?x1) (ENJOY_27 ?x1) (VARIETY_27 ?x1))
+
+	;; NOTHING MAY LINGER AT A BOTTOM OF A PILE.
+
+		(and (NOTHING_27 ?x1) (MAY_27 ?x1) (LINGER_27 ?x1) (AT_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (PILE_27 ?x2))
+
+;; (VERY LARGE COMMA MESSY OR DANGEROUS ITEMS MAY NEED SPECIAL PLACES)
+
+	;; ITEMS MAY NEED PLACES.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1) (PLACES_27 ?x1))
+
+	;; ITEMS CAN BE LARGE.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (CLEAN OUT YOUR BELONGINGS BEFORE YOU THINK ABOUT ORGANIZING -LRB- ORGANIZATIONAL TOOLS COMMA FURNITURE COMMA ETC. -RRB-)
+
+	;; BELONGINGS CAN BE BEFORE A PERSON.
+
+		(and (belonging_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEFORE_27 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY HAVE BELONGINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BELONGINGS_27 ?x1))
+
+	;; TOOLS CAN BE ORGANIZATIONAL.
+
+		(and (tool_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORGANIZATIONAL_27 ?x2))
+
+;; (DO N T DO IT THE OTHER WAY AROUND)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 3 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CAN ONLY REALLY ACCURATELY KNOW WHAT SPACE YOU HAVE WHEN YOU VE CLEANED UP)
+
+	;; A PERSON MAY HAVE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1))
+
+;; (IF YOU DO N T REALLY TAKE A HARD LOOK AT WHAT YOU RE STUFFING IN YOUR SPACES COMMA YOU LL WASTE TIME AND MONEY ORGANIZING STUFF YOU DO N T NEED ANYWAY)
+
+	;; A LOOK CAN BE HARD.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HARD_27 ?x2))
+
+	;; A PERSON MAY HAVE SPACES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SPACES_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (OBSERVE HOW YOU USE YOUR THINGS AND WORK OUT HOW TO USE YOUR SPACE EFFICIENTLY)
+
+	;; A PERSON MAY USE THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (THINGS_27 ?x1))
+
+	;; A PERSON MAY HAVE THINGS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THINGS_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+;; (IF IT S INCONVENIENT TO GET TO THINGS -LRB- OR TO PUT THEM AWAY -RRB- COMMA YOUR ORGANIZATION SYSTEM IS MORE LIKELY TO FAIL)
+
+	;; A PERSON MAY HAVE AN ORGANIZATION SYSTEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ORGANIZATION_27 ?x1) (SYSTEM_27 ?x1))
+
+;; (MAKE IT EASY TO GET TO AND PUT AWAY THE THINGS YOU NEED MOST OFTEN)
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (IN THAT VEIN COMMA PUT THINGS WHERE YOU USE THEM MOST)
+
+	;; A PERSON MAY USE INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (POTS GET STORED NEAR THE STOVE COMMA ENVELOPES AND STAMPS ARE STORED IN THE DESK COMMA STAIN REMOVER AND BLEACH GOES IN THE LAUNDRY ROOM OR LINEN CLOSET)
+
+	;; REMOVER AND BLEACH MAY GO IN A LAUNDRY ROOM.
+
+		(and (REMOVER_27 ?x1) (and_27 ?x2 ?x1 ?x3) (BLEACH_27 ?x3) (MAY_27 ?x3) (GO_27 ?x3) (in_27 ?x1 ?x4) (A_27 ?x4) (LAUNDRY_27 ?x4) (ROOM_27 ?x4))
+
+	;; POTS MAY GET.
+
+		(and (POTS_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A STAIN[PERSON??] MAY HAVE A REMOVER AND BLEACH.
+
+		(and (STAIN_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (REMOVER_27 ?x1) (and_27 ?x2 ?x1 ?x3) (BLEACH_27 ?x3))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [8]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [9]>
+
+;; (BE SURE TO DE-CLUTTER REGULARLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 5 [9]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [10]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [11]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [13]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [14]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [15]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort main loop
+Break 12 [16]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort main loop
+Break 13 [17]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort main loop
+Break 14 [18]>
+
+;; (ORGANIZED SPACES ARE SIMPLE TO USE)
+
+	;; AN ORGANIZED[PERSON??] MAY HAVE SPACES.
+
+		(and (ORGANIZED_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SPACES_27 ?x1))
+
+;; (THEY HAVE ENOUGH ROOM FOR THE ITEMS THERE)
+
+	;; INDIVIDUAL -S MAY HAVE ROOM.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ROOM_27 ?x1))
+
+	;; ROOM CAN BE FOR ITEMS.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ITEMS_27 ?x2))
+
+	;; A ROOM CAN BE ENOUGH.
+
+		(and (ROOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (IT MAKES SENSE)
+
+	;; A THING-REFERRED-TO MAY MAKE SENSE.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SENSE_27 ?x1))
+
+;; (EVERY ITEM IN YOUR HOME HAS A LOCATION)
+
+	;; SOME_NUMBER_OF ITEM MAY HAVE A LOCATION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCATION_27 ?x1))
+
+	;; SOME_NUMBER_OF ITEM CAN BE IN A HOME.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ITEM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+;; (ORGANIZED SPACES ALSO FEEL CALM COMMA OPEN COMMA AND WELCOMING)
+
+	;; SPACES MAY FEEL CALM.
+
+		(and (SPACES_27 ?x1) (MAY_27 ?x1) (FEEL_27 ?x1) (CALM_27 ?x1))
+
+	;; AN ORGANIZED[PERSON??] MAY HAVE SPACES.
+
+		(and (ORGANIZED_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (SPACES_27 ?x1))
+
+;; (USE TIMERS)
+
+	;; A USE[PERSON??] MAY TIMER.
+
+		(and (USE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (TIMER_27 ?x1))
+
+;; (SET A TIMER FOR HOW LONG YOU THINK A CLEANING ORGANIZING TASK SHOULD TAKE THEN WORK LIKE CRAZY TO GET IT DONE IN THE ALLOTTED TIME)
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY BE DO -ED IN A TIME.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DO_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?e1 ?x3) (time_27 ?x3))
+
+	;; A TIME CAN BE ALLOTTED.
+
+		(and (time_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ALLOTTED_27 ?x2))
+
+;; (HAVE A SPOT FOR ALL BILLS)
+
+	;; A SPOT CAN BE FOR SOME_NUMBER_OF BILLS.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (BILLS_27 ?x2))
+
+;; (OPEN ALL MAIL IMMEDIATELY AND DISPOSE OF THE OUTER ENVELOPE WITH THE JUNK MAIL)
+
+	;; AN ENVELOPE CAN BE WITH A JUNK MAIL.
+
+		(and (ENVELOPE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (JUNK_27 ?x2) (MAIL_27 ?x2))
+
+	;; AN ENVELOPE CAN BE OUTER.
+
+		(and (ENVELOPE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTER_27 ?x2))
+
+;; (KEEP ONLY THE BILL IN A PROMINENT LOCATION)
+
+	;; A LOCATION CAN BE PROMINENT.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROMINENT_27 ?x2))
+
+;; (PUT IT BACK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (RIGHT NOW)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (FOR MOST PEOPLE COMMA THAT S ON THE REFRIGERATOR COMMA ON THEIR DESK COMMA OR ON THEIR DESKTOP)
+
+	;; INDIVIDUAL -S MAY HAVE A DESK.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+	;; INDIVIDUAL -S MAY HAVE A DESKTOP.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESKTOP_27 ?x1))
+
+;; (WHEREVER YOU PUT IT COMMA MAKE IT PART OF YOUR ROUTINE TO REFER TO IT EVERY DAY)
+
+	;; A PERSON MAY PUT A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A ROUTINE MAY HAVE PART.
+
+		(and (ROUTINE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PART_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROUTINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROUTINE_27 ?x1))
+
+;; (FOR EXAMPLE COMMA YOU CAN PUT IT ON THE INSIDE OF THE BATHROOM CABINET WHERE YOU GET YOUR TOOTHPASTE)
+
+	;; A PERSON MAY PUT A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUT_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A BATHROOM CABINET MAY HAVE AN INSIDE.
+
+		(and (BATHROOM_27 ?x1) (CABINET_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (INSIDE_27 ?x1))
+
+	;; A PERSON MAY GET A TOOTHPASTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (TOOTHPASTE_27 ?x1))
+
+	;; A PERSON MAY HAVE A TOOTHPASTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TOOTHPASTE_27 ?x1))
+
+;; (EVERY MORNING COMMA WHILE YOU RE BRUSHING YOUR TEETH WITH ONE HAND COMMA TOUCH TODAY S DATE ON THE CALENDAR WITH THE OTHER COMMA AND LOOK TO SEE WHAT S MARKED FOR TODAY AND FOR THE UPCOMING WEEK)
+
+	;; SOME_NUMBER_OF MORNING MAY TOUCH A DATE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (MORNING_27 ?x1) (MAY_27 ?x1) (TOUCH_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+	;; A PERSON MAY HAVE TEETH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TEETH_27 ?x1))
+
+	;; TODAY MAY HAVE A DATE.
+
+		(and (today_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DATE_27 ?x1))
+
+	;; A WEEK CAN BE UPCOMING.
+
+		(and (week_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UPCOMING_27 ?x2))
+
+;; (KEEP YOUR CALENDAR CLOSE AT HAND WHEN SORTING PAPERS)
+
+	;; A PERSON MAY HAVE A CALENDAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALENDAR_27 ?x1))
+
+;; (OFTEN COMMA YOU CAN FILE OR EVEN TOSS THE ANNOUNCEMENT FOR AN EVENT IF IT IS RECORDED IN YOUR CALENDAR)
+
+	;; A PERSON MAY FILE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FILE_27 ?x1))
+
+	;; AN ANNOUNCEMENT CAN BE FOR AN EVENT.
+
+		(and (ANNOUNCEMENT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (event_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY BE RECORD -ED IN A CALENDAR.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECORD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (CALENDAR_27 ?x3))
+
+	;; A PERSON MAY HAVE A CALENDAR.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALENDAR_27 ?x1))
+
+;; (FOR EXAMPLE COMMA IF YOU TRAVEL A LOT OR ATTEND CLASSES AT VARIOUS TIMES OF DAY COMMA IT S MUCH EASIER TO CARRY A PLANNER WITH YOU TO CONSULT FREQUENTLY -- YOU CA N T DO THAT WITH A CALENDAR)
+
+	;; A PERSON MAY TRAVEL A LOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRAVEL_27 ?x1) (A_27 ?x1) (LOT_27 ?x1))
+
+	;; A PLANNER CAN BE WITH A PERSON.
+
+		(and (PLANNER_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; A PERSON MAY DO A THING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A THING CAN BE WITH A CALENDAR.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (CALENDAR_27 ?x2))
+
+;; (YOU CAN ALSO USUALLY FIT MORE INFORMATION IN A PLANNER)
+
+	;; A PERSON MAY FIT INFORMATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIT_27 ?x1) (INFORMATION_27 ?x1))
+
+;; (COMBINE SIMILAR ACTIVITIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MAKE ALL YOUR PHONE CALLS AT ONE TIME)
+
+	;; A PERSON MAY HAVE PHONE CALLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PHONE_27 ?x1) (CALLS_27 ?x1))
+
+;; (DO ALL YOUR ERRANDS AT THE SAME TIME)
+
+	;; A PERSON MAY HAVE ERRANDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ERRANDS_27 ?x1))
+
+;; (PAY ALL YOUR BILLS AT THE SAME TIME)
+
+	;; A PERSON MAY HAVE BILLS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (BILLS_27 ?x1))
+
+;; (YOUR DAILY OR IMMEDIATE LIST SHOULD NEVER BE MORE THAN 5 ITEMS LONG COMMA OR ELSE YOU RE TAKING ON TOO MUCH AND SETTING YOURSELF UP FOR FAILURE)
+
+	;; A PERSON MAY HAVE A DAILY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DAILY_27 ?x1))
+
+;; (MARK ONE OR TWO OF THOSE ITEMS AS THINGS YOU ABSOLUTELY MUST GET DONE THAT DAY COMMA AND PURSUE THOSE TASKS RELENTLESSLY UNTIL YOU GET THEM DONE)
+
+	;; A MALE OF ITEMS MAY BE DO -ED.
+
+		(and (MALE_27 ?x1) (of_27 ?x1 ?x2) (ITEMS_27 ?x2) (be_27 ?e1 ?x1 ?x3) (DO_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; ITEMS MAY HAVE A MALE.
+
+		(and (ITEMS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MALE_27 ?x1))
+
+	;; ITEMS CAN BE AS THINGS.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY GET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+	;; A PERSON MAY GET INDIVIDUAL -S.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1))
+
+;; (MAKE A TO DO LIST FOR THE WEEK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THIS LIST WOULD HAVE MORE GENERAL TASKS LIKE  BIRTHDAY GIFT TO JILL COMMA GET CAR SERVICED COMMA DENTIST APPOINTMENT)
+
+	;; A LIST MAY HAVE TASKS.
+
+		(and (LIST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (TASKS_27 ?x1))
+
+	;; TASKS CAN BE GENERAL.
+
+		(and (task_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GENERAL_27 ?x2))
+
+	;; BIRTHDAY GIFT CAN BE TO A FEMALE.
+
+		(and (BIRTHDAY_27 ?x1) (GIFT_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (FEMALE_27 ?x2))
+
+;; (DRAW FROM THIS LIST TO MAKE YOUR DAILY AND WEEKLY TO-DO LIST)
+
+	;; A DRAW[PERSON??] CAN BE FROM A LIST.
+
+		(and (DRAW_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (FROM_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+;; (MAKE A TO DO LIST FOR YOUR LIFE)
+
+	;; A PERSON MAY HAVE A LIFE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIFE_27 ?x1))
+
+;; (TAKING THE TIME TO ORGANIZE RECEIPTS FOR THINGS GOING BACK COMMA WHETHER TO THE STORE OR TO THE LIBRARY COMMA CAN REALLY HELP)
+
+	;; THINGS MAY GO.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GO_27 ?x1))
+
+;; (IT CREATES ORDER AND STRUCTURE COMMA AND WILL ALSO HELP AVOID NOT BEING ABLE TO RETURN THINGS TO STORES AND FINES)
+
+	;; A THING-REFERRED-TO MAY CREATE ORDER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (CREATE_27 ?x1) (ORDER_27 ?x1))
+
+;; (DELEGATE RESPONSIBILITIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (MAKE SURE THE PERSON YOU APPOINT TO DO THE TASK HAS ALL THE TOOLS NECESSARY TO DO THE TASK)
+
+	;; 
+
+	;; ((:I (:Q THE (:F PLUR TOOL.N)) NECESSARY.A NIL))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (F_27 ?x2) (PLUR_27 ?x2) (TOOL_2EN_27 ?x2) (NECESSARY_2EA_27 ?x3) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (REMEMBER THAT MOST THINGS ARE MUCH BETTER DONE THAN SET ASIDE FOR DOING PERFECTLY COMMA AND THAT DOING THEM CAN TEACH THE PERSON -LRB- MAYBE A CHILD -RRB- NOT ONLY HOW TO DO THEM BUT HOW TO ADDRESS RELATED PROBLEMS)
+
+	;; PROBLEMS CAN BE RELATED.
+
+		(and (problem_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RELATED_27 ?x2))
+
+;; (IT S HARD TO BE ORGANIZED IF YOU INSIST ON DOING EVERYTHING YOURSELF)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL (:P HARD.A NIL))) (:I (:Q DET PERSON*.N) INSIST.V (:P ON.P (:F KA NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (P_27 ?x3) (HARD_2EA_27 ?x3) (NIL_27 ?x3) (I_27 ?x5) (Q_27 ?x4) (DET_27 ?x4) (PERSON_2A_2EN_27 ?x4) (INSIST_2EV_27 ?x5) (P_27 ?x6) (ON_2EP_27 ?x6) (F_27 ?x7) (KA_27 ?x7) (NIL_27 ?x7))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (JUST KEEP IN MIND THAT SOME STUDIES HAVE SHOWN THAT MULTITASKING MAY DIMINISH ONE S ABILITY TO FOCUS ON ONE THING AT A TIME)
+
+	;; SOME_NUMBER_OF STUDIES MAY SHOW A PROPOSITION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (STUDIES_27 ?x1) (MAY_27 ?x1) (SHOW_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; MULTITASKING MAY DIMINISH AN ABILITY.
+
+		(and (MULTITASKING_27 ?x1) (MAY_27 ?x1) (DIMINISH_27 ?x1) (AN_27 ?x1) (ABILITY_27 ?x1))
+
+	;; SOME NUMBER_OR_PORTION MAY HAVE AN ABILITY.
+
+		(and (NUMBER_5FOR_5FPORTION_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ABILITY_27 ?x1))
+
+	;; A THING CAN BE AT A TIME.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (time_27 ?x2))
+
+;; (FOLLOW THROUGH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THERE S NO POINT IN MAKING A TO-DO LIST IF YOU DO N T DISCIPLINE YOURSELF TO COMPLETE THE TASKS YOU VE ASSIGNED YOURSELF)
+
+	;; A LIST CAN BE TO-DO.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TO-DO_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THERE ARE MANY WAYS TO STICK TO YOUR TO-DO LIST)
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A LIST CAN BE TO-DO.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TO-DO_27 ?x2))
+
+;; (STOP PROCRASTINATING COMMA REMOVE OR IGNORE DISTRACTIONS COMMA AND HOP TO IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 14 [18]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF SOMETHING KEEPS SLIPPING TO THE BOTTOM OF YOUR TO-DO LIST COMMA TAKE A GOOD LOOK AT IT)
+
+	;; SOMETHING MAY KEEP.
+
+		(and (SOMETHING_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1))
+
+	;; A LIST MAY HAVE A BOTTOM.
+
+		(and (LIST_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1))
+
+	;; A PERSON MAY HAVE A LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1))
+
+	;; A LIST CAN BE TO-DO.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TO-DO_27 ?x2))
+
+	;; A LOOK CAN BE GOOD.
+
+		(and (LOOK_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort main loop
+Break 15 [19]>
+
+;; (IF SO COMMA GET IT OVER WITH COMMA OR AT LEAST GET IT STARTED)
+
+	;; A THING-REFERRED-TO MAY START.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort main loop
+Break 16 [20]>
+
+;; (DO N T LET YOURSELF GET HUNG UP ON SOMETHING FOR TOO LONG)
+
+	;; A PERSON MAY GET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1))
+
+;; (IF YOU FIND YOURSELF BORED COMMA OR YOUR NORMAL ROUTINE INTERRUPTED COMMA YOU MIGHT DISTRACT AND SATISFY YOURSELF BY ATTACKING THE TO-DO BACKLOG)
+
+	;; A PERSON MAY DISTRACT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DISTRACT_27 ?x1))
+
+	;; A PERSON CAN BE BORED.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BORED_27 ?x2))
+
+	;; A ROUTINE CAN BE INTERRUPTED.
+
+		(and (ROUTINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTERRUPTED_27 ?x2))
+
+	;; A PERSON MAY HAVE A ROUTINE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROUTINE_27 ?x1))
+
+	;; A ROUTINE CAN BE NORMAL.
+
+		(and (ROUTINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+	;; A BACKLOG CAN BE TO-DO.
+
+		(and (BACKLOG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TO-DO_27 ?x2))
+
+;; (ZIPLOCK BAGS ARE YOUR FRIENDS)
+
+	;; BAGS CAN BE FRIENDS.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (friend_27 ?x2))
+
+	;; BAGS CAN BE ZIPLOCK.
+
+		(and (bag_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ZIPLOCK_27 ?x2))
+
+	;; A PERSON MAY HAVE FRIENDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FRIENDS_27 ?x1))
+
+;; (STORE AWAY ITEMS IN PLASTIC ZIP LOCK BAGS)
+
+	;; AWAY ITEMS MAY LOCK BAGS.
+
+		(and (AWAY_27 ?x1) (ITEMS_27 ?x1) (MAY_27 ?x1) (LOCK_27 ?x1) (BAGS_27 ?x1))
+
+	;; AWAY ITEMS CAN BE IN ZIP.
+
+		(and (AWAY_27 ?x1) (ITEMS_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (ZIP_27 ?x2))
+
+	;; A STORE[PERSON??] MAY HAVE AWAY ITEMS.
+
+		(and (STORE_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (AWAY_27 ?x1) (ITEMS_27 ?x1))
+
+	;; A ZIP CAN BE PLASTIC.
+
+		(and (ZIP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (THIS WAY COMMA THE ITEMS WILL BE COMPACT COMMA CLEAN COMMA AND DUST-FREE)
+
+	;; A WAY CAN BE COMPACT.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPACT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort main loop
+Break 17 [21]>
+
+;; (PLACE THE BAGS IN CLOSETS COMMA DESK DRAWERS COMMA CABINETS COMMA AND OTHER PLACES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 17 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort main loop
+Break 18 [22]>
+
+;; (TRY DRAWER ORGANIZERS FOR DRAWERS THAT ARE ENCLOSED)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 18 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU CAN PURCHASE A WIDE SELECTION OR MAKE YOUR OWN BY SLICING OFF THE TOPS OF EMPTY PLASTIC BOTTLES OF VARIOUS SIZES)
+
+	;; A PERSON MAY PURCHASE A SELECTION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PURCHASE_27 ?x1) (A_27 ?x1) (SELECTION_27 ?x1))
+
+	;; A SELECTION CAN BE WIDE.
+
+		(and (SELECTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WIDE_27 ?x2))
+
+	;; BOTTLES CAN BE CONSTITUTED_OF_OR_FILLED_WITH SIZES.
+
+		(and (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SIZES_27 ?x2))
+
+	;; BOTTLES CAN BE EMPTY.
+
+		(and (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMPTY_27 ?x2))
+
+	;; BOTTLES CAN BE PLASTIC.
+
+		(and (bottle_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+;; (MILK JUGS ARE HANDY BECAUSE THEY ARE FAIRLY SQUARE COMMA BUT ANY BOTTLE OR JAR WILL DO IF YOU CAN TRIM IT SO IT FITS IN THE DRAWER)
+
+	;; MILK JUGS CAN BE HANDY.
+
+		(and (MILK_27 ?x1) (JUGS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HANDY_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE SQUARE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SQUARE_27 ?x2))
+
+	;; A BOTTLE MAY DO.
+
+		(and (BOTTLE_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY TRIM A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRIM_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY FIT IN A DRAWER.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (FIT_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (DRAWER_27 ?x2))
+
+;; (MAKE DECISIONS TO BE MORE ORGANIZED COMMA MAKE MORE DECISIONS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 18 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (CLUTTER AND DISORGANIZATION IS OFTEN THE RESULT OF FAILING TO DECIDE WHAT TO DO ABOUT COMMA OR WITH COMMA SOMETHING)
+
+	;; 
+
+	;; ((:I (:F K CLUTTER.N) (:A (:Q THE RESULT.N) (:P OF.P (:F KA NIL)))) NIL)
+
+		(and (I_27 ?x3) (F_27 ?x1) (K_27 ?x1) (CLUTTER_2EN_27 ?x1) (Q_27 ?x2) (THE_27 ?x2) (RESULT_2EN_27 ?x2) (P_27 ?x3) (OF_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; Break 18 [22]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (START FLEXING YOUR DECISION MUSCLES WITH LITTLE THINGS COMMA AND YOU LL SOON FIND YOURSELF MORE CONFIDENT ABOUT TAKING ACTION ON THE STUFF AROUND YOUR HOME COMMA ON YOUR DESK AND IN YOUR OFFICE)
+
+	;; A START[PERSON??] MAY FLEX DECISION MUSCLES WITH THINGS.
+
+		(and (START_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (FLEX_27 ?x1) (DECISION_27 ?x1) (MUSCLES_27 ?x1) (WITH_27 ?x1) (THINGS_27 ?x1))
+
+	;; A PERSON MAY HAVE DECISION MUSCLES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (DECISION_27 ?x1) (MUSCLES_27 ?x1))
+
+	;; A PERSON CAN BE CONFIDENT.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONFIDENT_27 ?x2))
+
+	;; STUFF CAN BE AROUND A HOME.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AROUND_27 ?x2) (A_27 ?x2) (HOME_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOME_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESK_27 ?x1))
+
+	;; A PERSON MAY HAVE AN OFFICE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort debug loop
+ABORT          :R12     Abort debug loop
+ABORT          :R13     Abort debug loop
+ABORT          :R14     Abort debug loop
+ABORT          :R15     Abort debug loop
+ABORT          :R16     Abort debug loop
+ABORT          :R17     Abort debug loop
+ABORT          :R18     Abort debug loop
+ABORT          :R19     Abort main loop
+Break 19 [23]>

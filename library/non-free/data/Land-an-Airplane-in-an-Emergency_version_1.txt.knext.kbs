@@ -1,0 +1,1041 @@
+;; (HOWEVER COMMA ALMOST ALL AIRCRAFT HAVE DUAL CONTROLS AND YOU CAN SUCCESSFULLY LAND THE PLANE FROM EITHER SIDE)
+
+	;; SOME_NUMBER_OF AIRCRAFT MAY HAVE CONTROLS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AIRCRAFT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CONTROLS_27 ?x1))
+
+	;; CONTROLS CAN BE DUAL.
+
+		(and (control_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DUAL_27 ?x2))
+
+	;; A PERSON MAY LAND A PLANE FROM SOME_NUMBER_OF SIDE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LAND_27 ?x1) (A_27 ?x1) (PLANE_27 ?x1) (FROM_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (SIDE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [4]>
+
+;; (MANY AIRPLANES HAVE AN AUTOPILOT AND MOVING THE CONTROL YOKE OR STICK MAY DISENGAGE IT)
+
+	;; SOME_NUMBER_OF AIRPLANES MAY HAVE AN AUTOPILOT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (AIRPLANES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AUTOPILOT_27 ?x1))
+
+	;; A CONTROL MAY YOKE.
+
+		(and (CONTROL_27 ?x1) (MAY_27 ?x1) (YOKE_27 ?x1))
+
+;; (MAKE SURE THE UNCONSCIOUS PILOT IS NOT LEANING ON THE CONTROL YOKE -LRB- THE PLANE S EQUIVALENT OF A STEERING WHEEL -RRB-)
+
+	;; A PILOT MAY LEAN ON A CONTROL YOKE.
+
+		(and (PILOT_27 ?x1) (MAY_27 ?x1) (LEAN_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (CONTROL_27 ?x1) (YOKE_27 ?x1))
+
+	;; A PILOT CAN BE UNCONSCIOUS.
+
+		(and (PILOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNCONSCIOUS_27 ?x2))
+
+	;; A PLANE MAY HAVE AN EQUIVALENT.
+
+		(and (PLANE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EQUIVALENT_27 ?x1))
+
+;; (TAKE A BREATHER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL PROBABLY BE OVERWHELMED WITH THE SENSORY OVERLOAD AND THE SERIOUSNESS OF THE SITUATION)
+
+	;; AN OVERLOAD CAN BE SENSORY.
+
+		(and (OVERLOAD_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SENSORY_27 ?x2))
+
+	;; A SITUATION CAN BE MANIFEST SERIOUSNESS.
+
+		(and (SITUATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MANIFEST_27 ?x2) (SERIOUSNESS_27 ?x2))
+
+;; (LEVEL THE AIRCRAFT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [4]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF THE PLANE IS NOTICEABLY ASCENDING COMMA DESCENDING COMMA OR TURNING COMMA GENTLY BRING THE PLANE INTO A LEVEL FLIGHT ATTITUDE)
+
+	;; A PLANE MAY ASCEND.
+
+		(and (PLANE_27 ?x1) (MAY_27 ?x1) (ASCEND_27 ?x1))
+
+;; (ATTITUDE INDICATOR LOOK FOR THE ATTITUDE INDICATOR)
+
+	;; INDICATOR MAY LOOK FOR AN ATTITUDE INDICATOR.
+
+		(and (INDICATOR_27 ?x1) (MAY_27 ?x1) (LOOK_27 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (ATTITUDE_27 ?x2) (INDICATOR_27 ?x2))
+
+	;; AN INDICATOR CAN BE ATTITUDE.
+
+		(and (INDICATOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTITUDE_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [5]>
+
+;; (THE TOP IS BLUE -LRB- FOR THE SKY -RRB- AND THE BOTTOM IS BROWN)
+
+	;; A TOP CAN BE BLUE.
+
+		(and (TOP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLUE_27 ?x2))
+
+	;; A BOTTOM CAN BE BROWN.
+
+		(and (BOTTOM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BROWN_27 ?x2))
+
+;; (ON SOME COMPLEX AIRCRAFT COMMA THE ATTITUDE INDICATOR IS DISPLAYED ON A COMPUTER SCREEN IN FRONT OF THE PILOT)
+
+	;; AN ATTITUDE INDICATOR MAY BE DISPLAY -ED ON A COMPUTER SCREEN.
+
+		(and (ATTITUDE_27 ?x1) (INDICATOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DISPLAY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (COMPUTER_27 ?x2) (SCREEN_27 ?x2))
+
+	;; AN AIRCRAFT CAN BE COMPLEX.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMPLEX_27 ?x2))
+
+	;; A COMPUTER SCREEN CAN BE IN_FRONT_OF A PILOT.
+
+		(and (COMPUTER_27 ?x1) (SCREEN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IN_5FFRONT_5FOF_27 ?x2) (A_27 ?x2) (PILOT_27 ?x2))
+
+;; (FOR OLDER AIRCRAFT COMMA IT IS IN THE CENTER OF THE TOP ROW OF INSTRUMENTS)
+
+	;; A THING-REFERRED-TO CAN BE IN A CENTER OF A ROW OF INSTRUMENTS.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (CENTER_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (ROW_27 ?x3) (of_27 ?x2 ?x4) (instrument_27 ?x4))
+
+	;; AN AIRCRAFT CAN BE OLDER.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLDER_27 ?x2))
+
+	;; A ROW CAN BE TOP.
+
+		(and (ROW_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+;; (CORRECT THE PITCH -LRB- CLIMB OR DESCENT -RRB- AND BANK -LRB- TURNING -RRB- IF NECESSARY SO THAT THE MINIATURE WINGS ARE LEVEL WITH THE ARTIFICIAL HORIZON)
+
+	;; WINGS CAN BE A LEVEL.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; WINGS CAN BE MINIATURE.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; LEVEL CAN BE WITH A HORIZON.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HORIZON_27 ?x2))
+
+	;; A HORIZON CAN BE ARTIFICIAL.
+
+		(and (HORIZON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; (CORRECT THE PITCH -LRB- CLIMB OR DESCENT -RRB- AND BANK -LRB- TURNING -RRB- IF NECESSARY SO THAT THE MINIATURE WINGS ARE LEVEL WITH THE ARTIFICIAL HORIZON)
+
+	;; WINGS CAN BE A LEVEL.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; WINGS CAN BE MINIATURE.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; LEVEL CAN BE WITH A HORIZON.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HORIZON_27 ?x2))
+
+	;; A HORIZON CAN BE ARTIFICIAL.
+
+		(and (HORIZON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; (CORRECT THE PITCH -LRB- CLIMB OR DESCENT -RRB- AND BANK -LRB- TURNING -RRB- IF NECESSARY SO THAT THE MINIATURE WINGS ARE LEVEL WITH THE ARTIFICIAL HORIZON)
+
+	;; WINGS CAN BE A LEVEL.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; WINGS CAN BE MINIATURE.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; LEVEL CAN BE WITH A HORIZON.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HORIZON_27 ?x2))
+
+	;; A HORIZON CAN BE ARTIFICIAL.
+
+		(and (HORIZON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; (CORRECT THE PITCH -LRB- CLIMB OR DESCENT -RRB- AND BANK -LRB- TURNING -RRB- IF NECESSARY SO THAT THE MINIATURE WINGS ARE LEVEL WITH THE ARTIFICIAL HORIZON)
+
+	;; WINGS CAN BE A LEVEL.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; WINGS CAN BE MINIATURE.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; LEVEL CAN BE WITH A HORIZON.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HORIZON_27 ?x2))
+
+	;; A HORIZON CAN BE ARTIFICIAL.
+
+		(and (HORIZON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; (CORRECT THE PITCH -LRB- CLIMB OR DESCENT -RRB- AND BANK -LRB- TURNING -RRB- IF NECESSARY SO THAT THE MINIATURE WINGS ARE LEVEL WITH THE ARTIFICIAL HORIZON)
+
+	;; WINGS CAN BE A LEVEL.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; WINGS CAN BE MINIATURE.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; LEVEL CAN BE WITH A HORIZON.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HORIZON_27 ?x2))
+
+	;; A HORIZON CAN BE ARTIFICIAL.
+
+		(and (HORIZON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; (CORRECT THE PITCH -LRB- CLIMB OR DESCENT -RRB- AND BANK -LRB- TURNING -RRB- IF NECESSARY SO THAT THE MINIATURE WINGS ARE LEVEL WITH THE ARTIFICIAL HORIZON)
+
+	;; WINGS CAN BE A LEVEL.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVEL_27 ?x2))
+
+	;; WINGS CAN BE MINIATURE.
+
+		(and (wing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MINIATURE_27 ?x2))
+
+	;; LEVEL CAN BE WITH A HORIZON.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (HORIZON_27 ?x2))
+
+	;; A HORIZON CAN BE ARTIFICIAL.
+
+		(and (HORIZON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ARTIFICIAL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [6]>
+
+;; (ON PASSENGER AIRPLANES IT IS SITUATED IN THE CENTER OF THE GLARE-SHIELD PANEL COMMA IN A POSITION WHERE BOTH PILOTS CAN EASILY REACH IT)
+
+	;; A THING-REFERRED-TO MAY BE SITUATE -ED IN A CENTER OF A PANEL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SITUATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (in_27 ?x2 ?x3) (A_27 ?x3) (CENTER_27 ?x3) (of_27 ?x2 ?x4) (A_27 ?x4) (PANEL_27 ?x4))
+
+	;; A PANEL MAY HAVE A CENTER.
+
+		(and (PANEL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CENTER_27 ?x1))
+
+	;; A PANEL CAN BE GLARE-SHIELD.
+
+		(and (PANEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (GLARE-SHIELD_27 ?x2))
+
+	;; SOME_NUMBER_OF PILOTS MAY REACH A THING-REFERRED-TO.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PILOTS_27 ?x1) (MAY_27 ?x1) (REACH_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [7]>
+
+;; *** - GET: 172 is not a symbol
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 5 [8]>
+
+;; (AN AIRPORT FLIGHT CONTROLLER WILL HELP YOU FLY THE PLANE TO A SAFE LANDING)
+
+	;; A PERSON MAY FLY A PLANE TO A LANDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FLY_27 ?x1) (A_27 ?x1) (PLANE_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (LANDING_27 ?x2))
+
+	;; A LANDING CAN BE SAFE.
+
+		(and (landing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (LISTEN CAREFULLY AND ANSWER THEIR QUESTIONS TO THE BEST OF YOUR ABILITIES SO THEY CAN BETTER ASSIST YOU)
+
+	;; INDIVIDUAL -S MAY HAVE QUESTIONS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (QUESTIONS_27 ?x1))
+
+	;; A PERSON MAY HAVE ABILITIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ABILITIES_27 ?x1))
+
+	;; INDIVIDUAL -S MAY ASSIST A PERSON.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (ASSIST_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (IF YOU SEE A RED LIGHT ON THE PANEL ILLUMINATED COMMA TELL THE CONTROLLER)
+
+	;; A PERSON MAY SEE A LIGHT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (A_27 ?x1) (LIGHT_27 ?x1))
+
+	;; A LIGHT CAN BE ON A PANEL ILLUMINATED.
+
+		(and (LIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (PANEL_27 ?x2) (ILLUMINATED_27 ?x2))
+
+	;; A LIGHT CAN BE RED.
+
+		(and (LIGHT_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+;; (BELOW THE RED LIGHT COMMA THERE WILL A DESCRIPTION OF THE LIGHT COMMA I.E. GENERATOR COMMA LOW VOLTAGE)
+
+	;; A LIGHT CAN BE RED.
+
+		(and (LIGHT_27 ?x1) (be_27 ?e1 ?x1) (red_27 ?x1))
+
+;; (OBVIOUSLY THIS REQUIRES PROMPT ATTENTION)
+
+	;; A THING MAY REQUIRE ATTENTION.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (ATTENTION_27 ?x1))
+
+	;; ATTENTION CAN BE PROMPT.
+
+		(and (ATTENTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROMPT_27 ?x2))
+
+;; (ALTERNATIVELY COMMA YOU CAN TAKE THE PILOT S HEADSET AND PRESS THE PUSH-TO-TALK -LRB- PTT -RRB- BUTTON COMMA WHICH IS ON THE YOKE)
+
+	;; A PERSON MAY TAKE A HEADSET.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (HEADSET_27 ?x1))
+
+	;; A PILOT MAY HAVE A HEADSET.
+
+		(and (PILOT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEADSET_27 ?x1))
+
+;; (HOWEVER COMMA SO IS THE AUTOPILOT BUTTON COMMA AND IF YOU PRESS IT BY ACCIDENT COMMA YOU COULD MESS WITH THE AUTOPILOT SYSTEM)
+
+	;; A PERSON MAY MESS WITH A SYSTEM.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MESS_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (SYSTEM_27 ?x1))
+
+	;; A BUTTON CAN BE AUTOPILOT.
+
+		(and (BUTTON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AUTOPILOT_27 ?x2))
+
+	;; A PERSON MAY PRESS A THING-REFERRED-TO BY ACCIDENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PRESS_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1) (BY_27 ?x1) (ACCIDENT_27 ?x1))
+
+	;; A SYSTEM CAN BE AUTOPILOT.
+
+		(and (SYSTEM_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AUTOPILOT_27 ?x2))
+
+;; (STICK WITH THE HAND-HELD RADIO)
+
+	;; A RADIO CAN BE HAND-HELD.
+
+		(and (RADIO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HAND-HELD_27 ?x2))
+
+;; (-LRB- 1 -RRB- IF YOU KNOW HOW TO CHANGE THE FREQUENCY COMMA YOU CAN CALL FOR HELP ON 0.5 MHZ)
+
+	;; A PERSON MAY CALL FOR HELP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CALL_27 ?x1) (for_27 ?x1 ?x2) (HELP_27 ?x2))
+
+	;; HELP CAN BE ON SOME_NUMBER_OF MHZ.
+
+		(and (HELP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (MHZ_27 ?x2))
+
+;; (OTHERWISE COMMA CALL ON THE FREQUENCY YOU ARE CURRENTLY ON)
+
+	;; CALL CAN BE ON A FREQUENCY.
+
+		(and (CALL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (FREQUENCY_27 ?x2))
+
+;; (IF YOU CAN FIND THE TRANSPONDER ON THE RADIO STACK -LRB- IT HAS FOUR WINDOWS OF NUMBERS FROM-7 COMMA USUALLY LOCATED NEAR THE BOTTOM OF THE STACK -RRB- COMMA SET IT TO 7700)
+
+	;; A PERSON MAY FIND A TRANSPONDER[PERSON??].
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (A_27 ?x1) (TRANSPONDER_27 ?x1) (PERSON_27 ?x1))
+
+	;; SOME_NUMBER_OF WINDOWS OF NUMBERS CAN BE FROM-7.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WINDOWS_27 ?x1) (of_27 ?x1 ?x2) (number_27 ?x2) (be_27 ?e1 ?x1 ?x3) (FROM-7_27 ?x3))
+
+	;; SOME_NUMBER_OF WINDOWS CAN BE CONSTITUTED_OF_OR_FILLED_WITH NUMBERS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (WINDOWS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (NUMBERS_27 ?x2))
+
+	;; A STACK MAY HAVE A BOTTOM.
+
+		(and (STACK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BOTTOM_27 ?x1))
+
+;; (THIS IS AN EMERGENCY CODE THAT WILL QUICKLY ALERT AIR TRAFFIC CONTROLLERS THAT YOU HAVE AN EMERGENCY)
+
+	;; A THING CAN BE EMERGENCY CODE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EMERGENCY_27 ?x2) (CODE_27 ?x2))
+
+	;; A PERSON MAY HAVE AN EMERGENCY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EMERGENCY_27 ?x1))
+
+;; (IF POSSIBLE COMMA USE THE AIRPLANE S CALL SIGN WHEN YOU TALK WITH THE CONTROLLER)
+
+	;; AN AIRPLANE MAY HAVE A CALL.
+
+		(and (AIRPLANE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALL_27 ?x1))
+
+	;; A PERSON MAY TALK WITH A CONTROLLER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TALK_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (CONTROLLER_27 ?x1))
+
+;; (THE AIRPLANE S CALL SIGN IS LOCATED ON THE PANEL -LRB- UNFORTUNATELY COMMA THERE S NO STANDARD LOCATION COMMA BUT THE CALL SIGN SHOULD BE SOMEWHERE ON THE PANEL -RRB-)
+
+	;; A CALL SIGN MAY BE LOCATE -ED ON A PANEL.
+
+		(and (CALL_27 ?x1) (SIGN_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (ON_27 ?x2) (A_27 ?x2) (PANEL_27 ?x2))
+
+	;; AN AIRPLANE MAY HAVE A CALL SIGN.
+
+		(and (AIRPLANE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALL_27 ?x1) (SIGN_27 ?x1))
+
+	;; A LOCATION CAN BE STANDARD.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STANDARD_27 ?x2))
+
+	;; A CALL SIGN CAN BE ON A PANEL.
+
+		(and (CALL_27 ?x1) (SIGN_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (PANEL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [9]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [10]>
+
+;; (ANNOUNCING THE CALL WILL CLEARLY IDENTIFY THE AIRCRAFT AND WILL ALSO GIVE THE FLIGHT CONTROLLERS IMPORTANT INFORMATION ABOUT THE AIRPLANE SO THEY CAN BETTER HELP YOU LAND IT)
+
+	;; INFORMATION CAN BE ABOUT AN AIRPLANE.
+
+		(and (information_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ABOUT_27 ?x2) (AN_27 ?x2) (AIRPLANE_27 ?x2))
+
+	;; AN INFORMATION CAN BE IMPORTANT.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+	;; A PERSON MAY LAND A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LAND_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [11]>
+
+;; (IT IS INSTEAD CALLED BY ITS CALL-SIGN COMMA OR THE FLIGHT NUMBER)
+
+	;; A THING-REFERRED-TO MAY BE CALL -ED BY A CALL-SIGN.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CALL_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BY_27 ?x2) (A_27 ?x2) (CALL-SIGN_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY HAVE A CALL-SIGN.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CALL-SIGN_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [12]>
+
+;; (MAINTAIN A SAFE SPEED)
+
+	;; A SPEED CAN BE SAFE.
+
+		(and (speed_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (LOOK FOR THE AIRSPEED INDICATOR -LRB- USUALLY LABELED ASI COMMA AIRSPEED OR KNOTS -RRB- USUALLY LOCATED TOWARD THE UPPER LEFT OF THE INSTRUMENT PANEL COMMA AND KEEP AN EYE ON YOUR SPEED)
+
+	;; AN INDICATOR MAY BE LOCATE -ED TOWARD THE LEFT OF AN INSTRUMENT PANEL.
+
+		(and (INDICATOR_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (TOWARD_27 ?x2) (THE_27 ?x2) (LEFT_27 ?x2) (of_27 ?x2 ?x3) (INSTRUMENT_27 ?x3) (PANEL_27 ?x3))
+
+	;; AN INDICATOR CAN BE AIRSPEED.
+
+		(and (INDICATOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AIRSPEED_27 ?x2))
+
+	;; AN INSTRUMENT PANEL MAY HAVE THE LEFT.
+
+		(and (INSTRUMENT_27 ?x1) (PANEL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THE_27 ?x1) (LEFT_27 ?x1))
+
+	;; A PERSON MAY HAVE A SPEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SPEED_27 ?x1))
+
+;; (SPEEDS ARE EITHER IN MPH OR KNOTS -LRB- SIMILAR VALUES -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO NOT FLY A SMALL 2 SEATER LESS THAN 70 KNOTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (DO NOT FLY A LARGE -LRB- JUMBO -RRB- LESS THAN 180 KNOTS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 9 [12]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort main loop
+Break 10 [13]>
+
+;; (IF THE AIRSPEED STARTS INCREASING COMMA AND YOU HAVE N T TOUCHED THE THROTTLE COMMA YOU RE PROBABLY GOING DOWN COMMA SO PULL BACK GENTLY ON THE CONTROL YOKE)
+
+	;; AN AIRSPEED MAY START.
+
+		(and (AIRSPEED_27 ?x1) (MAY_27 ?x1) (START_27 ?x1))
+
+	;; A PERSON MAY TOUCH A THROTTLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TOUCH_27 ?x1) (A_27 ?x1) (THROTTLE_27 ?x1))
+
+;; (IF THE AIRSPEED IS DECREASING COMMA GENTLY PUSH THE NOSE DOWN TO INCREASE THE SPEED)
+
+	;; AN AIRSPEED MAY DECREASE.
+
+		(and (AIRSPEED_27 ?x1) (MAY_27 ?x1) (DECREASE_27 ?x1))
+
+;; (DO NOT LET THE AIRCRAFT FLY TOO SLOWLY COMMA ESPECIALLY NEAR THE GROUND)
+
+	;; AN AIRCRAFT MAY FLY.
+
+		(and (AIRCRAFT_27 ?x1) (MAY_27 ?x1) (FLY_27 ?x1))
+
+;; (IT MAY STALL -LRB- THE WING NO LONGER PRODUCES LIFT -RRB-)
+
+	;; A THING-REFERRED-TO MAY STALL.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (STALL_27 ?x1))
+
+	;; A WING MAY PRODUCE LIFT.
+
+		(and (WING_27 ?x1) (MAY_27 ?x1) (PRODUCE_27 ?x1) (LIFT_27 ?x1))
+
+;; (LAND THE PLANE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (THE CONTROLLER YOU ARE TALKING TO SHOULD BRIEF YOU ON THE LANDING PROCEDURES FOR THE AIRCRAFT AND DIRECT YOU TO A SAFE SPOT TO LAND)
+
+	;; A CONTROLLER MAY BRIEF A PERSON.
+
+		(and (CONTROLLER_27 ?x1) (MAY_27 ?x1) (BRIEF_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; PROCEDURES CAN BE FOR AN AIRCRAFT.
+
+		(and (procedure_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (AN_27 ?x2) (AIRCRAFT_27 ?x2))
+
+	;; PROCEDURES CAN BE LANDING.
+
+		(and (procedure_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LANDING_27 ?x2))
+
+	;; A SPOT CAN BE SAFE.
+
+		(and (SPOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (THEY WILL MOST LIKELY LINE YOU UP WITH THE RUNWAY AT AN AIRPORT COMMA BUT UNDER RARE CIRCUMSTANCES YOU MAY HAVE TO LAND IN A FIELD OR ROAD)
+
+	;; INDIVIDUAL -S MAY LINE_UP A PERSON WITH A RUNWAY.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (LINE_5FUP_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (RUNWAY_27 ?x1))
+
+	;; A RUNWAY CAN BE AT AN AIRPORT.
+
+		(and (RUNWAY_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (AN_27 ?x2) (AIRPORT_27 ?x2))
+
+	;; CIRCUMSTANCES CAN BE RARE.
+
+		(and (circumstance_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RARE_27 ?x2))
+
+;; (IF YOU MUST LAND AND CA N T GET TO AN AIRPORT COMMA AVOID PLACES WITH POWER LINES COMMA TREES COMMA OR OTHER OBSTACLES)
+
+	;; A PERSON MAY LAND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (LAND_27 ?x1))
+
+;; (-LRB- 2 -RRB- IF YOU FIND YOU ARE CONSTANTLY PUSHING OR PULLING ON THE YOKE TO KEEP THE AIRPLANE STEADY COMMA YOU HAVE TO USE TRIM TO RELIEVE THOSE PRESSURES)
+
+	;; A PERSON MAY FIND.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1))
+
+	;; A PERSON MAY PUSH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PUSH_27 ?x1))
+
+	;; AN AIRPLANE CAN BE STEADY.
+
+		(and (AIRPLANE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STEADY_27 ?x2))
+
+;; (OTHERWISE COMMA IT CAN GET VERY TIRING AND/OR DISTRACTING)
+
+	;; A THING-REFERRED-TO MAY GET TIRING.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (TIRING_27 ?x1))
+
+;; (THE TRIM WHEEL IS TYPICALLY A WHEEL APPROXIMATELY-6 INCHES IN DIAMETER THAT ROTATES IN THE SAME DIRECTION AS THE LANDING GEAR WHEELS)
+
+	;; A WHEEL CAN BE A WHEEL.
+
+		(and (WHEEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (WHEEL_27 ?x2))
+
+	;; A WHEEL CAN BE TRIM.
+
+		(and (WHEEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRIM_27 ?x2))
+
+	;; A WHEEL CAN BE IN DIAMETER.
+
+		(and (WHEEL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (DIAMETER_27 ?x2))
+
+	;; A DIRECTION CAN BE AS GEAR WHEELS.
+
+		(and (direction_27 ?x1) (be_27 ?e1 ?x1) (as_27 ?x1 ?x2) (GEAR_27 ?x2) (WHEELS_27 ?x2))
+
+	;; GEAR WHEELS CAN BE LANDING.
+
+		(and (GEAR_27 ?x1) (wheel_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LANDING_27 ?x2))
+
+;; (IT IS OFTEN LOCATED NEAR YOUR KNEES ON EITHER SIDE)
+
+	;; A THING-REFERRED-TO MAY BE LOCATE -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE KNEES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (KNEES_27 ?x1))
+
+;; (IT IS BLACK AND HAS SMALL BUMPS ON THE OUTSIDE EDGES)
+
+	;; A THING-REFERRED-TO CAN BE BLACK.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+	;; BUMPS CAN BE ON EDGES.
+
+		(and (bump_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (EDGES_27 ?x2))
+
+	;; BUMPS CAN BE SMALL.
+
+		(and (bump_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; EDGES CAN BE OUTSIDE.
+
+		(and (edge_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OUTSIDE_27 ?x2))
+
+;; (AS YOU HOLD PRESSURE AGAINST THE YOKE COMMA GENTLY TURN THE TRIM WHEEL)
+
+	;; A PERSON MAY HOLD PRESSURE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1) (PRESSURE_27 ?x1))
+
+	;; PRESSURE CAN BE AGAINST A YOKE.
+
+		(and (PRESSURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AGAINST_27 ?x2) (A_27 ?x2) (YOKE_27 ?x2))
+
+	;; A WHEEL CAN BE TRIM.
+
+		(and (WHEEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRIM_27 ?x2))
+
+;; (IF THE PRESSURE YOU ARE HOLDING GETS GREATER COMMA TURN THE WHEEL IN THE OTHER DIRECTION UNTIL YOU NO LONGER HAVE TO MAINTAIN THE ORIGINAL LEVEL OF PRESSURE)
+
+	;; PRESSURE MAY GET GREATER.
+
+		(and (PRESSURE_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (GREATER_27 ?x1))
+
+	;; A PERSON MAY HOLD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HOLD_27 ?x1))
+
+	;; A WHEEL CAN BE IN A DIRECTION.
+
+		(and (WHEEL_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (direction_27 ?x2))
+
+	;; A LEVEL CAN BE ORIGINAL.
+
+		(and (LEVEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ORIGINAL_27 ?x2))
+
+;; (NOTE  ON SOME SMALL AIRPLANES COMMA THE TRIM WHEEL MAY BE FOUND ON THE HEADLINER AND IN THE SHAPE OF A CRANK)
+
+	;; AIRPLANES CAN BE SMALL.
+
+		(and (airplane_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+	;; A WHEEL CAN BE TRIM.
+
+		(and (WHEEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TRIM_27 ?x2))
+
+;; (ALSO COMMA ON SOME LARGER AIRCRAFT THE TRIM IS IN THE FORM OF A SWITCH ON THE YOKE -LRB- CONTROL STICK -RRB-)
+
+	;; A TRIM CAN BE IN A FORM OF A SWITCH.
+
+		(and (TRIM_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (FORM_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (SWITCH_27 ?x3))
+
+	;; AN AIRCRAFT CAN BE LARGER.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+	;; A SWITCH CAN BE ON A YOKE.
+
+		(and (SWITCH_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (YOKE_27 ?x2))
+
+;; (IT IS USUALLY ON THE LEFT NEAR THE TOP)
+
+	;; A THING-REFERRED-TO CAN BE ON THE LEFT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (LEFT_27 ?x2))
+
+;; (IF THE AIRCRAFT IS PUSHING THE YOKE TOWARDS YOU COMMA THEN PUSH THE LEVER DOWN)
+
+	;; AN AIRCRAFT MAY PUSH A YOKE.
+
+		(and (AIRCRAFT_27 ?x1) (MAY_27 ?x1) (PUSH_27 ?x1) (A_27 ?x1) (YOKE_27 ?x1))
+
+;; (IF IT IS PULLING AWAY COMMA PUSH THE LEVER UP)
+
+	;; A THING-REFERRED-TO MAY PULL_AWAY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (PULL_5FAWAY_27 ?x1))
+
+;; (GET THE LANDING GEAR DOWN COMMA IF IT S RETRACTABLE)
+
+	;; 
+
+	;; ((:I (:Q DET THING-REFERRED-TO*.N) (:F NIL RETRACTABLE.A)))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (THING-REFERRED-TO_2A_2EN_27 ?x1) (F_27 ?x2) (NIL_27 ?x2) (RETRACTABLE_2EA_27 ?x2))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF THE GEAR IS FIXED COMMA IT S ALWAYS DOWN AND YOU DO N T NEED TO DO ANYTHING)
+
+	;; A GEAR MAY BE FIX -ED.
+
+		(and (GEAR_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FIX_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THE GEAR HANDLE -LRB- THE END OF THE HANDLE IS SHAPED LIKE A TIRE -RRB- IS USUALLY JUST TO THE RIGHT OF THE CENTER CONSOLE COMMA ABOVE WHERE THE KNEE OF THE CO-PILOT WOULD BE)
+
+	;; A GEAR HANDLE CAN BE TO THE RIGHT OF A CENTER CONSOLE.
+
+		(and (GEAR_27 ?x1) (HANDLE_27 ?x1) (be_27 ?e1 ?x1) (to_27 ?x1 ?x2) (RIGHT_27 ?x2) (of_27 ?x2 ?x3) (A_27 ?x3) (CENTER_27 ?x3) (CONSOLE_27 ?x3))
+
+	;; AN END OF A HANDLE MAY BE SHAPE -ED.
+
+		(and (end_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (HANDLE_27 ?x2) (be_27 ?e1 ?x1 ?x3) (SHAPE_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; A HANDLE MAY HAVE AN END.
+
+		(and (HANDLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (END_27 ?x1))
+
+	;; A CENTER CONSOLE MAY HAVE THE RIGHT.
+
+		(and (CENTER_27 ?x1) (CONSOLE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (THE_27 ?x1) (RIGHT_27 ?x1))
+
+	;; A KNEE OF A CO-PILOT MAY BE.
+
+		(and (KNEE_27 ?x1) (of_27 ?x1 ?x2) (A_27 ?x2) (CO-PILOT_27 ?x2) (MAY_27 ?x2) (be_27 ?e1 ?x1))
+
+	;; A CO-PILOT MAY HAVE A KNEE.
+
+		(and (CO-PILOT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (KNEE_27 ?x1))
+
+;; (IF YOU NEED TO LAND ON WATER COMMA THOUGH COMMA LEAVE THE LANDING GEAR UP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (YOU LL BE USING A VARIETY OF DRAG DEVICES -LRB- SLATS AND FLAPS COMMA NEXT TO THE THROTTLES -RRB- TO SLOW THE PLANE DOWN WITHOUT LOSING LIFT)
+
+	;; VARIETY CAN BE CONSTITUTED_OF_OR_FILLED_WITH DRAG DEVICES.
+
+		(and (VARIETY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (DRAG_27 ?x2) (DEVICES_27 ?x2))
+
+;; (JUST BEFORE YOU TOUCH DOWN COMMA YOU LL NEED TO RAISE THE NOSE TO FLARE AND LAND ON THE MAIN WHEELS FIRST)
+
+	;; A PERSON MAY TOUCH_DOWN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TOUCH_5FDOWN_27 ?x1))
+
+;; (A FLARE IS TYPICALLY-7 DEGREES IN A SMALL AIRCRAFT)
+
+	;; A FLARE CAN BE DEGREES.
+
+		(and (FLARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (degree_27 ?x2))
+
+	;; DEGREES CAN BE IN AN AIRCRAFT.
+
+		(and (degree_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (AN_27 ?x2) (AIRCRAFT_27 ?x2))
+
+	;; DEGREES CAN BE TYPICALLY-7.
+
+		(and (degree_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TYPICALLY-7_27 ?x2))
+
+	;; AN AIRCRAFT CAN BE SMALL.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALL_27 ?x2))
+
+;; (IN SOME LARGER AIRCRAFT COMMA A FLARE MAY MEAN UP TO 15 DEGREES OF NOSE UP)
+
+	;; A FLARE MAY MEAN_UP TO SOME_NUMBER_OF DEGREES OF NOSE.
+
+		(and (FLARE_27 ?x1) (MAY_27 ?x1) (MEAN_5FUP_27 ?x1) (to_27 ?x1 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (DEGREES_27 ?x2) (of_27 ?x1 ?x3) (NOSE_27 ?x3))
+
+	;; AN AIRCRAFT CAN BE LARGER.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LARGER_27 ?x2))
+
+	;; SOME_NUMBER_OF DEGREES CAN BE CONSTITUTED_OF_OR_FILLED_WITH NOSE.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (DEGREES_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (NOSE_27 ?x2))
+
+;; (IF FLYING A LARGE COMMERCIAL AIRCRAFT COMMA ACTIVATE YOUR REVERSE THRUST COMMA IF THE PLANE HAS IT)
+
+	;; AN AIRCRAFT CAN BE LARGE.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; AN AIRCRAFT CAN BE COMMERCIAL.
+
+		(and (AIRCRAFT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COMMERCIAL_27 ?x2))
+
+	;; A PERSON MAY HAVE A THRUST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THRUST_27 ?x1))
+
+	;; A THRUST CAN BE REVERSE.
+
+		(and (thrust_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REVERSE_27 ?x2))
+
+	;; A PLANE MAY HAVE A THING-REFERRED-TO.
+
+		(and (PLANE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+;; (ON BOEING AIRCRAFT COMMA THERE ARE BARS BEHIND THE THROTTLE QUADRANT)
+
+	;; A COMPANY MAY HAVE AN AIRCRAFT.
+
+		(and (COMPANY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AIRCRAFT_27 ?x1))
+
+	;; BARS CAN BE BEHIND A QUADRANT.
+
+		(and (bar_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BEHIND_27 ?x2) (A_27 ?x2) (QUADRANT_27 ?x2))
+
+	;; A QUADRANT CAN BE THROTTLE.
+
+		(and (QUADRANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (THROTTLE_27 ?x2))
+
+;; (PULL THE BARS BACK ALL THE WAY AND THE THRUST WILL BE DIRECTED FORWARD TO AID IN STOPPING THE AIRCRAFT)
+
+	;; A PULL[PERSON??] MAY BE DIRECT -ED.
+
+		(and (PULL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (be_27 ?e1 ?x1) (DIRECT_27 ?x1) (kbs2_kif_quote_2DED_27 ?x1))
+
+;; (IF ALL ELSE FAILS COMMA PULL THE THROTTLE BACK AS FAST AND FAR AS POSSIBLE)
+
+	;; SOME_NUMBER_OF ELSE MAY FAIL.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (ELSE_27 ?x1) (MAY_27 ?x1) (FAIL_27 ?x1))
+
+;; (THROTTLE QUADRANT REDUCE POWER TO IDLE BY PULLING THE THROTTLE ALL THE WAY TOWARDS YOU COMMA UNTIL YOU REACH THE SIGN LABLED IDLE)
+
+	;; A PERSON MAY REACH.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (REACH_27 ?x1))
+
+	;; A SIGN MAY LABLE IDLE.
+
+		(and (SIGN_27 ?x1) (MAY_27 ?x1) (LABLE_27 ?x1) (IDLE_27 ?x1))
+
+;; (IT IS A BLACK LEVER USUALLY LOCATED BETWEEN THE PILOT AND CO-PILOT)
+
+	;; A THING-REFERRED-TO CAN BE A LEVER.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (LEVER_27 ?x2))
+
+	;; A LEVER MAY BE LOCATE -ED BETWEEN A PILOT.
+
+		(and (LEVER_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (BETWEEN_27 ?x2) (A_27 ?x2) (PILOT_27 ?x2))
+
+	;; A LEVER CAN BE BLACK.
+
+		(and (LEVER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BLACK_27 ?x2))
+
+;; (GENTLY APPLY THE BRAKES BY PRESSING ON TOP OF THE RUDDER PEDALS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 10 [13]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (USE ENOUGH PRESSURE TO STOP THE PLANE WITHOUT SKIDDING)
+
+	;; PRESSURE CAN BE ENOUGH.
+
+		(and (PRESSURE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ENOUGH_27 ?x2))
+
+;; (THE RUDDER PEDALS THEMSELVES ARE USED TO STEER THE PLANE ON THE GROUND COMMA SO DO N T USE THEM UNLESS THE PLANE IS VEERING OFF THE RUNWAY)
+
+	;; A RUDDER MAY PEDAL.
+
+		(and (RUDDER_27 ?x1) (MAY_27 ?x1) (PEDAL_27 ?x1))
+
+	;; A PLANE MAY VEER_OFF A RUNWAY.
+
+		(and (PLANE_27 ?x1) (MAY_27 ?x1) (VEER_5FOFF_27 ?x1) (A_27 ?x1) (RUNWAY_27 ?x1))

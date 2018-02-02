@@ -1,0 +1,283 @@
+;;;======================================================
+;;;  ADD MY CODE DOCUMENTATION HERE
+;;;
+;;;     CLIPS Version 6.01 Example
+;;;
+;;;     To execute, merely load, reset and run.
+;;;======================================================
+
+;;;(defmodule MAIN 
+;;;  (export deftemplate status)
+;;;  (export defglobal initial-missionaries initial-cannibals))
+
+;;;*************
+;;;* TEMPLATES *
+;;;*************
+
+(deftemplate plant
+	(slot name
+		(type SYMBOL)
+		(default ?DERIVE))
+	(slot usage
+		(type SYMBOL)
+		(allowed-symbols backbone perennial annual vine bulb groundcover) 
+		(default perennial))
+	(multislot season 
+		(type SYMBOL)
+		(allowed-symbols fall spring summer winter)
+		(default summer)))
+		
+(deftemplate suggested-plants
+	(multislot name
+		(type SYMBOL)))
+		
+;;;******************
+;;;* INITIAL PLANTS *
+;;;******************
+
+(deffacts plant-available
+	(plant (name rose) (usage backbone) (season summer spring))
+	(plant (name tulip) (usage bulb) (season spring))
+	(plant (name ivy) (usage groundcover) (season winter summer spring fall))
+	(plant (name strawberry-tree) (usage backbone ) (season winter summer fall))
+	(plant (name holly) (usage backbone) (season winter spring fall summer))
+	(plant (name magnolia) (usage backbone) (season winter fall spring summer))
+	(plant (name scotch-pine) (usage backbone) (season winter fall))
+	(plant (name camellia) (usage backbone) (season winter spring fall))
+	(plant (name wintergreen-barberry) (usage backbone) (season winter spring summer fall))
+	(plant (name pachysandra) (usage groundcover) (season winter spring summer fall))
+	(plant (name vinca) (usage groundcover) (season winter spring summer fall))
+	(plant (name sweet-woodruff) (usage groundcover) (season spring summer fall))
+	(plant (name lamium) (usage groundcover) (season spring summer fall))
+	(plant (name foxglove) (usage perennial))
+	(plant (name russian-sage) (usage perennial))
+	(plant (name iris) (usage perennial))
+	(plant (name lavender) (usage perennial))
+	(plant (name loosestrife) (usage perennial))
+	(plant (name hostas) (usage perennial))
+	(plant (name coneflower) (usage perennial))
+	(plant (name coralbells) (usage perennial))
+	(plant (name mums) (usage perennial))
+	(plant (name bleeding-heart) (usage perennial))
+	(plant (name blue-oat-grass) (usage perennial))
+	(plant (name cosmos) (usage annual))
+	(plant (name marigolds) (usage annual))
+	(plant (name petunias) (usage annual))
+	(plant (name sunflowers) (usage annual))
+	(plant (name hollyhocks) (usage annual))
+	(plant (name calendulas) (usage annual))
+	(plant (name snapdragons) (usage annual))
+	(plant (name mexican-sunflowers) (usage annual))
+	(plant (name cleome) (usage annual))
+	(plant (name sweet-alyssum) (usage annual))
+	(plant (name clematis) (usage vine))
+	(plant (name climbing-rose) (usage vine))
+	(plant (name morning-glories) (usage vine))
+	(plant (name wisteria) (usage vine))
+	(plant (name climbing-hydrangea) (usage vine))
+	(plant (name honeysuckle) (usage vine))
+	(plant (name sweet-peas) (usage vine))
+	(plant (name kiwi) (usage vine))
+	(plant (name lily) (usage bulb))
+	(plant (name glads) (usage bulb))
+	(plant (name daffodil) (usage bulb))
+	(plant (name daylily) (usage bulb))
+	(plant (name crocus) (usage bulb))
+	(plant (name calla) (usage bulb))
+	(plant (name snowdrops) (usage bulb))
+	(plant (name hyacinths) (usage bulb))
+	)
+	
+;;;**************************
+;;;* INITIAL USUAGE GLOBALS *
+;;;**************************
+
+(deffacts usage-globals
+	(counter backbone 0)
+	(counter perennial 0)
+	(counter bulb 0)
+	(counter groundcover 0)
+	(counter annual 0)
+	(counter vine 0)
+	(counter total-plants 0))
+	
+	
+;;;*****************
+;;;* INITIAL STATE *
+;;;*****************
+		
+(defrule start
+  ?init <- (initial-fact)
+  =>
+  (printout t "Welcome to the landscape design system !" crlf
+            "This program has knowledge of the following plants : " crlf)
+  (retract ?init)
+  (assert (print-list list))
+  )
+
+;;; Show list of Plants available
+(defrule print-list
+  (print-list list)
+  (plant (name ?name))
+  =>
+  (printout t "     " ?name crlf)
+  )
+
+;;; This rule removes the fact that triggers the print-list
+;;; and asks the user if we're ready
+(defrule ready
+   ?print <- (print-list list)
+ =>
+   (retract ?print)
+   (printout t "Ready to design : (yes/no) ?" crlf)
+   (assert (ready =(read)))
+   )
+
+
+;;;************************
+;;;* USER DATA COLLECTION *
+;;;************************
+
+;;; If ready retract ready flag fact and get list of existing plants 
+(defrule start-to-id
+  ?ready <- (ready yes)
+  =>
+  (retract ?ready)
+  (printout t "In order to determine what new plants to add to an existing bed," crlf
+  			  "please enter all of the plants that are located there:" crlf)
+  (bind ?string (readline))	
+  (assert-string (str-cat "(existing-plants " ?string ")"))
+  (assert (num-plants (length$ (explode$ ?string))))
+  )
+  
+;;;check to see if they entered anything
+(defrule check-for-input
+	?existing-plants <- (existing-plants )
+	=>
+	(retract ?existing-plants)
+	(printout t "You must enter some plants" crlf crlf)
+	(assert (ready yes))
+	)
+	
+;;; Check to make sure they entered plants that we know about	
+(defrule valid-input
+	?existing-plants <- (existing-plants $?first ?aPlant $?end)
+	(not (plant (name ?aPlant)))
+	=>
+	(printout t ?aPlant " does not exist in my list of plants. Try again." crlf crlf)
+	(assert (ready yes))
+	(retract ?existing-plants)
+	)
+
+;;;FUTURE-> if they entered a plant we don't know about, prompt them for information on that
+;;;plant and add to our knowledge
+
+;;;**************************
+;;;* Compute Border Usage *
+;;;**************************
+	
+(defrule compute-usuage
+	(existing-plants $?first ?aPlant $?end)
+	(plant (name ?aPlant) (usage ?aUse))
+	(not (usage-fired ?aPlant))
+	?counter-rule <- (counter ?aUse ?counter)
+	?total-rule <- (counter total-plants ?tot-plants)
+	=>
+	(assert (usage-fired ?aPlant))
+	(retract ?counter-rule)
+	(retract ?total-rule)
+	(assert (counter total-plants (+ ?tot-plants 1)))
+	(assert (counter ?aUse (+ ?counter 1))))
+	
+
+;;;Flag to let us know to start analyzing the bed	
+(defrule done-computing-usuage
+	(num-plants ?num)
+	(counter total-plants ?num)
+	=>
+	(assert (compute-usage done)))
+	
+	
+	
+;;; Check to see if the bed needs more backbone plants
+(defrule compute-backbone
+	(counter backbone ?num-backbone)
+	(compute-usage done)
+	(counter total-plants ?tot-plants)
+	(test (> 0.3 (/ ?num-backbone ?tot-plants)))
+	=>
+	(assert (need backbone)))
+	
+;;; Check to see if the bed needs more perennials 
+(defrule compute-perennial
+	(compute-usage done)
+	(counter perennial ?num-perennial)
+	(counter total-plants ?tot-plants)
+	(test (> 0.4 (/ ?num-perennial ?tot-plants)))
+	=>
+	(assert (need perennial)))
+	
+;;; Check to see if the bed needs more annuals
+(defrule compute-annual
+	(compute-usage done)
+	(counter annual ?num-annual)
+	(counter total-plants ?tot-plants)
+	(test (> 0.1 (/ ?num-annual ?tot-plants)))
+	=>
+	(assert (need annual)))
+	
+	
+;;; Check to see if the bed needs more vines
+(defrule compute-vines
+	(compute-usage done)
+	(counter vine ?num-vines)
+	(counter total-plants ?tot-plants)
+	(test (> 0.1 (/ ?num-vines ?tot-plants)))
+	=>
+	(assert (need vine)))
+	
+;;; Check to see if the bed needs more bulbs plants
+(defrule compute-bulbs
+	(compute-usage done)
+	(counter bulbs ?num-bulbs)
+	(counter total-plants ?tot-plants)
+	(test (> 0.1 (/ ?num-bulbs ?tot-plants)))
+	=>
+	(assert (need bulbs)))
+	
+;;; Check to see if the bed needs any groundcovers
+(defrule compute-groundcovers
+	(compute-usage done)
+	(counter groundcover ?num-groundcovers)
+	(test (> 1 ?num-groundcovers))
+	=>
+	(assert (need groundcover)))
+	
+;;;*****************************
+;;;* PLANTS THAT HELP IN USAGE *
+;;;*****************************
+;;; Start generating a list of all possible plants that meet each requirement
+(defrule generate-list
+	(compute-usage done)
+	=>
+	(assert (suggested-plants)))
+
+;;;need to make sure the plant isn't already being used	
+(defrule check-usage
+	?rule <- (suggested-plants (name $?list-so-far))
+	?need <- (need ?used-for)
+	(plant (name ?plant-name) (usage ?used-for))
+	=>
+	(retract ?rule)
+	(retract ?need)
+	(assert (suggested-plants (name $?list-so-far ?plant-name))))
+	
+(defrule print-header-to-suggested
+	;(not (need ?))
+	(suggested-plants (name $?name))
+	=>
+	;(assert (show suggested-list))
+	(printout t crlf
+				"Here are the following suggested plants to try with your existing bed." crlf
+				$?name crlf))
+				

@@ -1,0 +1,474 @@
+;; (IF YOU ARE CLEANING A LOCKER AT WORK YOU SHOULD TRY TO DO THIS WHEN IT IS N T INTERFERING WITH YOUR WORK DUTIES)
+
+	;; A PERSON MAY CLEAN A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CLEAN_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+	;; A THING-REFERRED-TO MAY INTERFERE WITH WORK DUTIES.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (INTERFERE_27 ?x1) (WITH_27 ?x1) (WORK_27 ?x1) (DUTIES_27 ?x1))
+
+	;; A PERSON MAY HAVE WORK DUTIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WORK_27 ?x1) (DUTIES_27 ?x1))
+
+;; (STAY LATE OR ARRIVE EARLY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONSIDER STOPPING IN ON YOUR DAY OFF)
+
+	;; A PERSON MAY HAVE A DAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DAY_27 ?x1))
+
+;; (TAKE OUT EVERYTHING YOU HAVE IN YOUR LOCKER)
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (ORGANIZE THESE THINGS INTO THREE PILES  EVERYTHING YOU ARE KEEPING IN YOUR LOCKER A TRASH PILE A PILE FOR THINGS THAT YOU WANT TO TAKE
+ HOME OR HAVE TO TURN IN SOAK A CLOTH IN WARM COMMA SOAPY WATER COMMA AND CLEAN THE WALLS AND FLOOR OF YOUR LOCKER)
+
+	;; A TRASH MAY PILE A PILE A PROPOSITION.
+
+		(and (TRASH_27 ?x1) (MAY_27 ?x1) (PILE_27 ?x1) (A_27 ?x1) (PILE_27 ?x1) (A_27 ?x1) (PROPOSITION_27 ?x1))
+
+	;; A PERSON MAY KEEP IN A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KEEP_27 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (LOCKER_27 ?x2))
+
+	;; A LOCKER MAY HAVE WALLS.
+
+		(and (LOCKER_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WALLS_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (USE ANOTHER CLOTH TO DRY IT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [8]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF WORKING WITH A WET RAG IS INCONVENIENT YOU CAN BRING A FEW OF THE PRE-MOISTENED COMMA DISPOSABLE CLEANING CLOTHS)
+
+	;; A RAG CAN BE WET.
+
+		(and (RAG_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WET_27 ?x2))
+
+;; (STORE THEM IN A ZIPLOC BAG IF YOU DO N T WANT TO BRING THE CONTAINER)
+
+	;; A ZIPLOC[PERSON??] MAY HAVE A BAG.
+
+		(and (ZIPLOC_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAG_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (THE ZIPLOC BAG WILL PREVENT THEM FROM DRYING OUT)
+
+	;; A ZIPLOC[PERSON??] MAY HAVE A BAG.
+
+		(and (ZIPLOC_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BAG_27 ?x1))
+
+;; (-LRB- THIS STEP IS NOT NECCESSARY COMMA BUT VERY HELPFUL)
+
+	;; A STEP CAN BE NECCESSARY.
+
+		(and (STEP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECCESSARY_27 ?x2))
+
+;; (THROW THE TRASH PILE AWAY COMMA AND TAKE CARE OF THE THINGS YOU WANT TO TAKE HOME OR TURN IN)
+
+	;; THINGS MAY HAVE CARE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CARE_27 ?x1))
+
+;; (THEN SORT THE ITEMS YOU WANT TO KEEP IN YOUR LOCKER INTO GROUPS AGAIN)
+
+	;; A LOCKER CAN BE INTO GROUPS.
+
+		(and (LOCKER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTO_27 ?x2) (GROUPS_27 ?x2))
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (BOOKS COMMA CLOTHES COMMA HYGIENE PRODUCTS COMMA JEWELRY COMMA AND ANY OTHER GROUPS THAT YOU THINK ARE NECESSARY)
+
+	;; BOOKS CAN BE NECESSARY.
+
+		(and (book_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NECESSARY_27 ?x2))
+
+	;; A PERSON MAY THINK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (THINK_27 ?x1))
+
+;; (IF YOU DO N T NEED IT OR WO N T BE USING IT FOR SOME TIME YOU SHOULD TAKE IT HOME FOR SAFE KEEPING)
+
+	;; A PERSON MAY TAKE A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; KEEPING CAN BE SAFE.
+
+		(and (KEEPING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFE_27 ?x2))
+
+;; (USE EXTREME CAUTION BEFORE KEEPING ANYTHING VALUABLE IN YOUR LOCKER)
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (MOST SCHOOLS COMMA SPORTS CLUBS AND WORK PLACES CAN STILL GAIN ACCESS TO YOUR LOCKER FOR SECURITY REASONS)
+
+	;; SCHOOLS MAY GAIN ACCESS TO A LOCKER.
+
+		(and (SCHOOLS_27 ?x1) (MAY_27 ?x1) (GAIN_27 ?x1) (ACCESS_27 ?x1) (to_27 ?x1 ?x2) (A_27 ?x2) (LOCKER_27 ?x2))
+
+	;; A LOCKER CAN BE FOR SECURITY REASONS.
+
+		(and (LOCKER_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (SECURITY_27 ?x2) (REASONS_27 ?x2))
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (NOT EVERYONE IS HONEST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (LOCKERS ARE ALSO COMMONLY BROKEN INTO COMMA ESPECIALLY IF YOU ARE KNOWN TO KEEP VALUABLES STORED THERE)
+
+	;; VALUABLES MAY BE STORE -ED.
+
+		(and (valuable_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STORE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (GO THROUGH YOUR LOCKER EVERY FEW WEEKS AND PURGE OF ANY OLD WORK COMMA CLUTTER AND ITEMS TO TAKE HOME)
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+	;; WORK CAN BE OLD.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OLD_27 ?x2))
+
+;; (THIS WILL PREVENT A BUILD UP OF CLUTTER AND MAKE IT EASIER TO FIND THINGS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [22]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU CAN ALSO TAKE A FEW MINUTES EVERY WEEK TO TIDY UP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [23]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE YOURSELF A NOTE OF ANY ITEMS YOU NEED TO BRING FROM HOME)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IT S EASY TO REMEMBER CLEANING ITEMS AND PENS AS YOU RE LOOKING AT YOUR ITEMS BUT IT IS EASY TO FORGET WHEN YOU RE LEAVING THE HOUSE)
+
+	;; A PERSON MAY HAVE ITEMS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (ITEMS_27 ?x1))
+
+;; (HANG CLOTHING AND YOUR BACKPACK FROM HOOKS)
+
+	;; CLOTHING MAY HOOK.
+
+		(and (CLOTHING_27 ?x1) (MAY_27 ?x1) (HOOK_27 ?x1))
+
+	;; A HANG[PERSON??] MAY HAVE A CLOTHING.
+
+		(and (HANG_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (A_27 ?x1) (clothing_27 ?x1))
+
+	;; A PERSON MAY HAVE A BACKPACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BACKPACK_27 ?x1))
+
+;; (IF YOUR LOCKER DOES N T HAVE THEM COMMA ATTACH THEM YOURSELF)
+
+	;; A LOCKER MAY DO.
+
+		(and (LOCKER_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (YOU CAN FIND HEAVY DUTY HOOKS WITH THE EASY TO REMOVE ADHESIVE IN THE HOME SECTION OR NEAR THE PICTURE HOOKS AT MANY STORES)
+
+	;; A PERSON MAY FIND DUTY HOOKS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (FIND_27 ?x1) (DUTY_27 ?x1) (HOOKS_27 ?x1))
+
+	;; DUTY HOOKS CAN BE HEAVY.
+
+		(and (DUTY_27 ?x1) (HOOKS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+;; (GET THE ONES THAT CAN HOLD HEAVIER ITEMS)
+
+	;; ITEMS CAN BE HEAVIER.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVIER_27 ?x2))
+
+;; (PLACE YOUR BOOKS UPRIGHT ON THE BOTTOM SHELF COMMA BECAUSE THEY WILL BREAK THE TOP SHELF FROM BEING TOO HEAVY COMMA WITH THE SPINES
+ FACING YOU)
+
+	;; A SHELF CAN BE BOTTOM.
+
+		(and (SHELF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BOTTOM_27 ?x2))
+
+	;; A SHELF CAN BE TOP.
+
+		(and (SHELF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+	;; SPINES MAY FACE A PERSON.
+
+		(and (SPINES_27 ?x1) (MAY_27 ?x1) (FACE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+;; (ORDER THEM IN SIZE COMMA SCHEDULE COMMA ALPHABETICALLY COMMA OR BY PRIORITY)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [31]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PLACE YOUR NOTEBOOKS/BINDERS ON THE TOP SHELF OF YOUR RACK)
+
+	;; A PERSON MAY HAVE NOTEBOOKS/BINDERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NOTEBOOKS_2FBINDERS_27 ?x1))
+
+	;; A RACK MAY HAVE A SHELF.
+
+		(and (RACK_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (SHELF_27 ?x1))
+
+	;; A SHELF CAN BE TOP.
+
+		(and (SHELF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TOP_27 ?x2))
+
+	;; A PERSON MAY HAVE A RACK.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (RACK_27 ?x1))
+
+;; (IF YOU HAVE ANY LOOSE SHEETS OF PAPER THAT YOU NEED COMMA PLACE THEM IN A PLASTIC FOLDER COMMA AND PUT THIS ON THE SECOND SHELF)
+
+	;; A PERSON MAY HAVE SHEETS OF PAPER A PROPOSITION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (SHEETS_27 ?x1) (of_27 ?x1 ?x2) (PAPER_27 ?x2) (A_27 ?x2) (PROPOSITION_27 ?x2))
+
+	;; SHEETS CAN BE CONSTITUTED_OF_OR_FILLED_WITH PAPER.
+
+		(and (sheet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PAPER_27 ?x2))
+
+	;; SHEETS CAN BE LOOSE.
+
+		(and (sheet_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOOSE_27 ?x2))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+	;; A FOLDER CAN BE PLASTIC.
+
+		(and (folder_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PLASTIC_27 ?x2))
+
+	;; A THING CAN BE ON A SHELF.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (SHELF_27 ?x2))
+
+;; (THINK  HEAVY STUFF ON BOTTOM COMMA LIGHT ON TOP)
+
+	;; STUFF CAN BE ON BOTTOM.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (BOTTOM_27 ?x2))
+
+	;; STUFF CAN BE HEAVY.
+
+		(and (STUFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HEAVY_27 ?x2))
+
+	;; LIGHT CAN BE ON TOP.
+
+		(and (LIGHT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (TOP_27 ?x2))
+
+;; (AND IF YOU HAVE A GYM BAG OR PURSE COMMA PUT THAT ON THE TOP AS WELL)
+
+	;; A PERSON MAY HAVE A GYM BAG.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (GYM_27 ?x1) (BAG_27 ?x1))
+
+	;; A THING CAN BE ON A TOP.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (TOP_27 ?x2))
+
+;; (OR BETTER YET COMMA HANG IT FROM A HOOK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [36]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (COLLECT PENCILS AND OTHER STATIONERY INTO A PENCIL CASE)
+
+	;; PENCILS CAN BE INTO A PENCIL CASE.
+
+		(and (pencil_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INTO_27 ?x2) (A_27 ?x2) (PENCIL_27 ?x2) (CASE_27 ?x2))
+
+	;; PENCILS CAN BE COLLECT.
+
+		(and (pencil_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLLECT_27 ?x2))
+
+;; (CARRY THAT PENCIL CASE WITH YOU)
+
+	;; A PENCIL CASE CAN BE WITH A PERSON.
+
+		(and (PENCIL_27 ?x1) (CASE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+;; (PUT ANYTHING DIRTY COMMA SUCH AS SHOES OR SPORTS EQUIPMENT ON THE FLOOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [39]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (THE AREA IS EASY TO CLEAN AND KEEP FRESH AS OPPOSED OF STACKING DIRTY ITEMS ON TOP OF PAPERS AND CLEAN ITEMS)
+
+	;; ITEMS CAN BE DIRTY.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIRTY_27 ?x2))
+
+	;; ITEMS CAN BE CLEAN.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CLEAN_27 ?x2))
+
+;; (USE MAGNETIC LOCKER ORGANIZERS TO ORGANIZE SMALLER ITEMS IN YOUR LOCKER)
+
+	;; LOCKER ORGANIZERS CAN BE MAGNETIC.
+
+		(and (LOCKER_27 ?x1) (ORGANIZERS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAGNETIC_27 ?x2))
+
+	;; ITEMS CAN BE SMALLER.
+
+		(and (ITEMS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SMALLER_27 ?x2))
+
+	;; A PERSON MAY HAVE A LOCKER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LOCKER_27 ?x1))
+
+;; (DO N T ATTACH THESE TO THE DOOR AS THEY CAN FALL WHEN THE DOOR IS SLAMMED SHUT)
+
+	;; A DOOR CAN BE SHUT.
+
+		(and (DOOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHUT_27 ?x2))
+
+;; (INSTEAD COMMA STICK THESE TO THE BACK OR SIDE WALLS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [43]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [44]>

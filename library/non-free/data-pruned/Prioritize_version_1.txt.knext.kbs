@@ -1,0 +1,241 @@
+;; (TRY TO KEEP THE LIST TO A DOZEN TASKS COMMA IF POSSIBLE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [3]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MARK THE IMPORTANCE OF EACH TASK)
+
+	;; A TASK MAY UNDERGO IMPORTANCE.
+
+		(and (TASK_27 ?x1) (MAY_27 ?x1) (UNDERGO_27 ?x1) (IMPORTANCE_27 ?x1))
+
+;; (CONSIDER THE VALUE OF EACH COMPLETED TASK)
+
+	;; A TASK CAN BE COMPLETED.
+
+		(and (TASK_27 ?x1) (be_27 ?e1 ?x1 ?e2) (complete_27 ?e2 ?x1))
+
+;; (MARK EACH TASK WITH H FOR HIGH COMMA M FOR MEDIUM OR L FOR LOW)
+
+	;; SOME_NUMBER_OF TASK CAN BE WITH A H[PERSON??].
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TASK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (H_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; M CAN BE FOR MEDIUM.
+
+		(and (M_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (MEDIUM_27 ?x2))
+
+;; (MARK THE URGENCY OF EACH TASK)
+
+	;; 
+
+	;; (NIL)
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONSIDER AN UPCOMING DEADLINE)
+
+	;; A DEADLINE CAN BE UPCOMING.
+
+		(and (DEADLINE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UPCOMING_27 ?x2))
+
+;; (MARK EACH TASK WITH H FOR HIGH COMMA M FOR MEDIUM OR L FOR LOW)
+
+	;; SOME_NUMBER_OF TASK CAN BE WITH A H[PERSON??].
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TASK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (A_27 ?x2) (H_27 ?x2) (kbs2_kif_quote_5B_27 ?x2) (PERSON_27 ?x2))
+
+	;; M CAN BE FOR MEDIUM.
+
+		(and (M_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (MEDIUM_27 ?x2))
+
+;; (MARK THE EFFORT REQUIRED FOR EACH TASK)
+
+	;; A MALE MAY BE REQUIRE -ED FOR SOME_NUMBER_OF TASK.
+
+		(and (MALE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REQUIRE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?x2 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (TASK_27 ?x3))
+
+;; (CONSIDER THE TIME NEEDED TO COMPLETE EACH TASK)
+
+	;; 
+
+	;; ((:I (:Q THE TIME.N) (:F BE.PASV NEED.V) NIL))
+
+		(and (I_27 ?x3) (Q_27 ?x1) (THE_27 ?x1) (TIME_2EN_27 ?x1) (F_27 ?x2) (BE_2EPASV_27 ?x2) (NEED_2EV_27 ?x2) (NIL_27 ?x3))
+
+	;; ______________________________________________________________________
+
+	;; [10]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MARK EACH TASK WITH S FOR SHORT COMMA M FOR MEDIUM OR L FOR LONG)
+
+	;; SOME_NUMBER_OF TASK CAN BE WITH A S[PERSON??].
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (TASK_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (S_27 ?x2) (PERSON_27 ?x3))
+
+	;; M CAN BE FOR MEDIUM.
+
+		(and (M_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (MEDIUM_27 ?x2))
+
+;; (A TASK THAT REQUIRES HIGH CONCENTRATION SHOULD BE RATED WITH A MEDIUM EFFORT)
+
+	;; A TASK MAY BE RATE -ED WITH A MEDIUM EFFORT.
+
+		(and (TASK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (WITH_27 ?x2) (A_27 ?x2) (MEDIUM_27 ?x2) (EFFORT_27 ?x2))
+
+	;; CONCENTRATION CAN BE HIGH.
+
+		(and (concentration_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGH_27 ?x2))
+
+;; (COMPARE ALL TASKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (HIGHLIGHT THE MOST IMPORTANT AND URGENT TASKS THAT REQUIRE THE LEAST AMOUNT OF EFFORT)
+
+	;; TASKS CAN BE IMPORTANT.
+
+		(and (task_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IMPORTANT_27 ?x2))
+
+;; (MAKE A DECISION)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [15]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (GROUP THE TASKS WITH THE HIGHEST IMPORTANCE AND URGENCY AND LEAST AMOUNT OF EFFORT)
+
+	;; IMPORTANCE CAN BE HIGHEST.
+
+		(and (IMPORTANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HIGHEST_27 ?x2))
+
+;; (DECIDE WHICH ONES NEED TO BE DONE FIRST BASED UPON UPCOMING DEADLINES)
+
+	;; DEADLINES CAN BE UPCOMING.
+
+		(and (deadline_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UPCOMING_27 ?x2))
+
+;; (TASKS OF LOW IMPORTANCE AND URGENCY CAN BE DEFERRED)
+
+	;; TASKS OF IMPORTANCE MAY BE DEFER -ED.
+
+		(and (task_27 ?x1) (of_27 ?x1 ?x2) (IMPORTANCE_27 ?x2) (be_27 ?e1 ?x1 ?x3) (DEFER_27 ?x3) (kbs2_kif_quote_2DED_27 ?x3))
+
+	;; TASKS CAN BE CONSTITUTED_OF_OR_FILLED_WITH IMPORTANCE.
+
+		(and (task_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (IMPORTANCE_27 ?x2))
+
+	;; IMPORTANCE CAN BE LOW.
+
+		(and (IMPORTANCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2))
+
+;; (REARRANGE THE LIST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [19]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (RECONSIDER IF NOT ENOUGH TIME WAS ALLOWED TO COMPLETE A TASK OR IF A DUE DATE IS ABOUT TO ARRIVE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [20]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALTERNATE TASKS)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [21]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (ALTERNATE A HOMEWORK LIST WITH A HOUSEWORK LIST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [22]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU MAY NEED A BREAK FROM SORTING THROUGH YOUR FILES OR CLEANING THE CUPBOARD)
+
+	;; A PERSON MAY HAVE FILES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FILES_27 ?x1))
+
+;; (PENCIL PAPER)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [24]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

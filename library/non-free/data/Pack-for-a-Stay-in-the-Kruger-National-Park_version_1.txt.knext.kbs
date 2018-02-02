@@ -1,0 +1,167 @@
+;; (IF YOUR CAMP DOES NOT HAVE A SHOP OR RESTAURANT MAKE SURE YOU TAKE FOOD FOR YOUR STAY)
+
+	;; A PERSON MAY TAKE FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TAKE_27 ?x1) (FOOD_27 ?x1))
+
+	;; A CAMP MAY DO.
+
+		(and (CAMP_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE A CAMP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAMP_27 ?x1))
+
+	;; A SHOP MAY MAKE SURE.
+
+		(and (SHOP_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (SURE_27 ?x1))
+
+	;; FOOD CAN BE FOR A STAY.
+
+		(and (food_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (A_27 ?x2) (STAY_27 ?x2))
+
+	;; A PERSON MAY HAVE A STAY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STAY_27 ?x1))
+
+;; (BUY A MAP OF THE KRUGER PARK SO YOU CAN PLAN YOUR ROUTE CAREFULLY)
+
+	;; A MAP CAN BE SHOW A PARK.
+
+		(and (MAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (A_27 ?x2) (PARK_27 ?x2))
+
+	;; A PERSON MAY PLAN A ROUTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PLAN_27 ?x1) (A_27 ?x1) (ROUTE_27 ?x1))
+
+	;; A PERSON MAY HAVE A ROUTE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (ROUTE_27 ?x1))
+
+;; (MAKE SURE YOUR VEHICLE IS FULL OF FUEL BEFORE YOU DEPART)
+
+	;; A VEHICLE CAN BE FULL OF FUEL.
+
+		(and (VEHICLE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FULL_27 ?x2) (of_27 ?x2 ?x3) (FUEL_27 ?x3))
+
+	;; A PERSON MAY HAVE A VEHICLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (VEHICLE_27 ?x1))
+
+	;; A PERSON MAY DEPART.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DEPART_27 ?x1))
+
+;; (PACK THE FOLLOWING  CHARCOAL COMMA FIRELIGHTERS COMMA MATCHES COMMA CORKSCREW AND BOTTLE-OPENER & FOOD AND DRINK -LRB- INCLUDING ALCOHOL ! -RRB-)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (TAKE YOUR OWN WATER AS THE WATER AT THE CAMPS IS NOT DRINKABLE)
+
+	;; A PERSON MAY HAVE WATER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (WATER_27 ?x1))
+
+	;; WATER CAN BE DRINKABLE.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DRINKABLE_27 ?x2))
+
+	;; WATER CAN BE AT CAMPS.
+
+		(and (WATER_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (CAMPS_27 ?x2))
+
+;; (PACK YOUR DIGITAL CAMERA AND THE CHARGER)
+
+	;; A PERSON MAY HAVE A CAMERA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CAMERA_27 ?x1))
+
+	;; A CAMERA CAN BE DIGITAL.
+
+		(and (CAMERA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIGITAL_27 ?x2))
+
+;; (TAKE A FLEECEY WITH YOU FOR THE EVENINGS AS THEY CAN BE COLD DURING THE SOUTH AFRICAN WINTER MONTHS)
+
+	;; A FLEECEY CAN BE WITH A PERSON.
+
+		(and (FLEECEY_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (PERSON_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE COLD DURING WINTER MONTHS.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (COLD_27 ?x2) (DURING_27 ?x2) (WINTER_27 ?x2) (MONTHS_27 ?x2))
+
+;; (WEAR STRONG BOOTS IF YOU INTEND TO GO ON A WALKING SAFARI WITH A GUIDE)
+
+	;; BOOTS CAN BE STRONG.
+
+		(and (boot_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STRONG_27 ?x2))
+
+	;; SAFARI CAN BE WITH A GUIDE.
+
+		(and (SAFARI_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (GUIDE_27 ?x2))
+
+	;; SAFARI CAN BE WALKING.
+
+		(and (SAFARI_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WALKING_27 ?x2))
+
+;; (TAKE A HAT TO KEEP YOUR HEAD COOL AND FOR USE AT SUNSET WHEN THE SUN IS VERY LOW IN THE SKY)
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+	;; USE CAN BE AT SUNSET.
+
+		(and (USE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AT_27 ?x2) (SUNSET_27 ?x2))
+
+	;; THE SUN CAN BE LOW IN THE SKY.
+
+		(and (SUN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOW_27 ?x2) (in_27 ?e1 ?x3) (SKY_27 ?x3))
+
+;; (TAKE A GOOD MOSQUITO REPELLENT COMMA WE USE BUG GEROFF PRODUCTS WHICH WAS DEVELOPED FOR USE IN THE KRUGER PARK)
+
+	;; PERSON -S MAY USE PRODUCTS.
+
+		(and (PERSON_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1) (PRODUCTS_27 ?x1))
+
+	;; A MOSQUITO CAN BE REPELLENT.
+
+		(and (MOSQUITO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPELLENT_27 ?x2))
+
+	;; A MOSQUITO CAN BE GOOD.
+
+		(and (MOSQUITO_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+	;; A BUG_GEROFF[PERSON??] MAY HAVE PRODUCTS.
+
+		(and (BUG_5FGEROFF_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (product_27 ?x1))
+
+	;; USE CAN BE IN A PARK.
+
+		(and (USE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (PARK_27 ?x2))
+
+;; (TAKE PROPHYLACTICS TO GUARD YOU AGAINST MALARIA IF APPROPRIATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [13]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

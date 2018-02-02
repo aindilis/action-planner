@@ -1,0 +1,33 @@
+;; (WAIT FOR A SLIGHT PAUSE IN THE CONVERSATION)
+
+	;; A PAUSE CAN BE IN A CONVERSATION.
+
+		(and (pause_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (conversation_27 ?x2))
+
+	;; A PAUSE CAN BE SLIGHT.
+
+		(and (PAUSE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SLIGHT_27 ?x2))
+
+;; (LEAVE THE PILLOW ON THE BED OR FLOOR COMMA AND STAND UP AND STRETCH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE EVERYBODY IS WATCHING YOU OR AT LEAST PAYING ATTENTION TO YOU)
+
+	;; EVERYBODY MAY WATCH A PERSON.
+
+		(and (EVERYBODY_27 ?x1) (MAY_27 ?x1) (WATCH_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1))
+
+	;; AN EVERYBODY CAN BE SURE.
+
+		(and (EVERYBODY_27 ?x1) (be_27 ?e1 ?x1))

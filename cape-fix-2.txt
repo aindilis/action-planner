@@ -1,0 +1,274 @@
+15:54:43 <aindilis> anyone familiar with XS want to give me a quote as to
+      fixing CAPE (cape.sf.net) to work with the latest version of Perl as
+      detailed here: http://frdcsa.org/~andrewdo/writings/cape-fix.txt
+15:56:35 * GumbyPAN CPAN Upload: String-Validator-0.93 by BRAINBUZ
+      http://metacpan.org/release/BRAINBUZ/String-Validator-0.93
+15:56:51 *** mariuscc (~mariuscc@79.112.126.37) has quit: Ping timeout: 248
+      seconds
+15:59:14 * Khisanth sees a URL with swig in it
+15:59:24 <Khisanth> are you sure it's an XS question?
+16:00:11 * Khisanth is not fond of SWIG
+16:00:15 <aindilis> no, I'm not sure, I don't know how to do it but I'd like
+      to get cape working again for a project
+16:00:24 <Khisanth> but SWIG is decent if you want to generate bindings for
+      multiple languages
+16:00:59 <aindilis> well it binds CLIPS with Perl allowing me to develop a
+      good expert system in Perl
+16:01:29 <aindilis> here's my project:
+      http://frdcsa.org/~andrewdo/WebWiki/FreeLifePlanningCoachSoftware.html
+16:02:17 *** Visualiza
+      (~visualiza@cpc2-sgyl32-2-0-cust23.sgyl.cable.virginmedia.com) has
+      joined channel #perl
+16:02:29 <Khisanth> this looks like lisp :)
+16:03:19 <aindilis> well I have written a system that translates between Perl
+      data structures and this lispish syntax
+16:04:07 #perl> /whois Khisanth
+16:04:07 *** Khisanth is Unknown (~Khisanth@50.14.244.111)
+16:04:08 *** Khisanth is on channel(s): #perl6 #perl 
+16:04:08 *** Khisanth is/was on server calvino.freenode.net (Milan, IT)
+16:04:08 *** Khisanth is logged in as Khisanth
+16:04:09 *** Cyranix0r (~bofh@2001:49f0:a01d::1337:c0de) has quit: Ping
+      timeout: 260 seconds
+16:05:13 *** JordiGH (~jordi@octave/developer/JordiGH) has joined channel
+      #perl
+16:05:33 <JordiGH> I used to know how this stuff worked, but, does this looke
+      like a reasonable function call?
+16:05:34 <Khisanth> hmm that message mentioned 5.8 ... latest is 5.14 :)
+16:05:35 <JordiGH>       runx [0], qw(dicomverter -s -o ), "$dtidir", ".";
+16:06:06 <aindilis> Khisanth: yeah it's from 2003, I was hoping to hire
+      someone to fix it to work with modern Perl
+16:06:16 <tm604> JordiGH: the [0] doesn't look right - where's runx from?
+16:06:25 <DrForr> JordiGH: Looks like a mess, actually.
+16:06:26 <JordiGH> System::IPC::Simple
+16:06:50 <JordiGH> I'm trying to rewrite system("dicomverter -s -o $dtidir .")
+16:06:57 <thrig> JordiGH: why the "" around $dtidir?
+16:07:03 <mst> tm604: the [0] is allowed exit codes
+16:07:18 *** NoOova (b28d70ae@gateway/web/freenode/ip.178.141.112.174) has
+      quit: Quit: Page closed
+16:07:27 <JordiGH> thrig: Why not, but I suppose I can remove it. Sometimes I
+      have "$dtidir/stuff", so I guess I cargo-culted the quotes.
+16:07:56 <tm604> ah - not tried IPC::System::Simple before, according to the
+      cpan page that looks valid then unless it needs () around the args
+      perhaps?
+16:08:13 <JordiGH> Does any function need () around the args?
+16:08:32 <tm604> in general, only if there's ambiguity in how it could be
+      parsed.
+16:08:36 <anno> depends on where/how you call it
+16:08:41 <Aerdan> JordiGH: parens are useful primarily for disambiguation.
+16:08:42 <thrig> JordiGH: perldoc -q memory | less -p 'large string'
+16:08:59 <JordiGH> Man, I used to like Perl...
+16:09:05 <JordiGH> Now it just seems like a bunch of random rules.
+16:09:07 <JordiGH> :-(
+16:09:27 <JordiGH> thrig: Yeah, it's not a large string.
+16:09:53 <tm604> Are you getting an error with that line then, or just trying
+      to trace some code and not sure whether it's silently failing somehow?
+16:10:04 *** sauvin (~sauvin@about/linux/staff/sauvin) has joined channel
+      #perl
+16:10:04 <mauke> you need ( ) in function calls if the parser doesn't know
+      about the function
+16:10:24 <JordiGH> If the parser doesn't know about the function?
+16:10:31 <JordiGH> How can it not know about the function?
+16:10:45 <tm604> eval: some_function "like this"; sub some_function { print @_
+      }
+16:10:48 <perlbot> tm604: ERROR: syntax error at (eval 1702) line 1, near
+      "some_function "like this""
+16:11:02 *** ElDiabolo (~jo@p5494D86A.dip0.t-ipconnect.de) has quit: Remote
+      host closed the connection
+16:11:05 *** sw0rdfish (~Johnson@unaffiliated/robinux) has quit: Ping timeout:
+      245 seconds
+16:11:05 <mauke> JordiGH: because it hasn't seen "sub that_function" yet
+16:11:20 <mauke> JordiGH: e.g. because it comes later in that file, or because
+      it's loaded at runtime via 'require'
+16:11:36 <JordiGH> So it's valid to make arbitrary function calls before
+      declaring the function?
+16:11:41 <mauke> yes
+16:11:56 <JordiGH> So, wtf, it's a one-pass parse?
+16:12:09 *** yroeht (~yroeht@x.yroeht.eu) has quit: Ping timeout: 244 seconds
+16:12:15 <mauke> does that matter?
+16:12:20 *** cyborg-one (1000@31.31.111.163) has quit: Ping timeout: 252
+      seconds
+16:12:28 <mauke> disclaimer: I don't understand passes
+16:12:53 *** semeion (~semeion@gateway/tor-sasl/semeion) has quit: Ping
+      timeout: 276 seconds
+16:13:06 <JordiGH> idk, I'm finding Perl very frustrating. It seems like every
+      line I write requires a language lawyer.
+16:13:31 <JordiGH> Well, worse, every line I *read* requires language lawyers.
+16:13:43 <mauke> what language doesn't?
+16:14:13 <mst> JordiGH: you are, very rapidly, learning to code in such a way
+      that ten year veterans can look at your code and not twitch
+16:14:19 <JordiGH> I think it would be difficult to assert that Python has a
+      more complicated syntax. I'm sure the description of its grammar is far
+      smaller than Perl's.
+16:14:29 <mst> JordiGH: you said you wanted to make this code good, by our
+      standards
+16:14:38 <JordiGH> mst: I do, but it's frustrating.
+16:14:40 <mst> JordiGH: as well as by your own
+16:14:52 <mauke> JordiGH: yeah, but now you've restricted "language" to
+      "syntax"
+16:15:11 <mst> JordiGH: yeah, look. I've been writing perl commercially for 11
+      years and mauke still makes me feel like an idiot at least once a month
+16:15:12 <Khisanth> just go use lisp?
+16:15:25 <JordiGH> mauke: I find sigils and contexts also really difficult to
+      keep track of.
+16:15:32 <mauke> Khisanth: lisp syntax is too complicated
+16:15:49 <mauke> JordiGH: have you ever used a statically typed language?
+16:15:55 <JordiGH> mst: I know, I feel the same way about C++, and I don't
+      like that language very much either, even though I feel like I know it
+      very well.
+16:16:30 <mauke> (hah. C++ is pretty much the worst case for
+      language-lawyeriness/line required)
+16:16:35 <JordiGH> Hm, what's the year? I think I've been coding in C++ for 14
+      years now.
+16:16:39 * JordiGH feels old.
+16:16:58 <mauke> JordiGH: perl's contexts are like a very simple toy type
+      system
+16:17:01 <JordiGH> mauke: Yeah, C++ has some horrible warts.
+16:17:21 <JordiGH> mauke: I don't think I've used a statically typed system.
+16:17:28 *** Cipher-0 (~chatzilla@74.9.38.212) has joined channel #perl
+16:17:29 <mauke> C++ is statically typed
+16:17:59 <JordiGH> Is it? I kept hearing flames to the contrary because you
+      could do pointer tricks and cast types to each other, silently.
+16:18:18 <JordiGH> Or you can write a conversion ctor.
+16:18:27 <mauke> C++ doesn't just have scalar vs list, it has int, short int,
+      long int, ... float, double, all of that times pointers, all of that
+      times array[N], all of that times "function returning", etc
+16:18:40 <mauke> and that's just half of the C type system
+16:18:57 <mauke> JordiGH: still static
+16:19:26 <JordiGH> Oh, right, but C++'s RTTI makes it dynamic.
+16:19:32 *** sw0rdfish (~Johnson@unaffiliated/robinux) has joined channel
+      #perl
+16:19:32 <mauke> no
+16:19:35 <JordiGH> Or.. whatever is the opposite of static.
+16:19:39 <mauke> ... no
+16:19:43 <JordiGH> Yeah, you basically have void*
+16:19:44 <tm604> dynamic_cast<WhiteNoise *> ptr...
+16:19:58 <JordiGH> You could do pretty much everything with void* if you
+      really wanted to
+16:20:45 <JordiGH> Anyways, I get it, it's supposed to have fixed types at
+      compile time, what does that have to do with contexts and sigils?
+16:20:45 <Khisanth> mauke: but it is consistent :)
+16:21:01 *** din (~din@gateway/tor-sasl/din) has joined channel #perl
+16:21:05 <mauke> <mauke> JordiGH: perl's contexts are like a very simple toy
+      type system
+16:21:14 *** yroeht (~yroeht@x.yroeht.eu) has joined channel #perl
+16:21:24 <JordiGH> So, crappy enough to not be useful but crappy enough to be
+      annoying?
+16:21:26 <mauke> with just 2 built-in type contexts: scalar and list
+16:21:31 <mauke> ok, 2.5: void
+16:22:38 <mauke> er, if you have problems keeping track of 2 types, what are
+      you going to do with a more complex system?
+16:22:45 *** whynot (whynot@126-13-202-46.pool.ukrtel.net) has joined channel
+      #perl
+16:22:48 <mauke> or one that allows user-defined types!
+16:23:26 *** pangur (~calum@5aca8643.bb.sky.com) has joined channel #perl
+16:24:18 *** alephnull (~alok@122.167.168.52) has joined channel #perl
+16:24:24 <anno> user-undefined types
+16:24:26 *** Bladerunner (blade@unaffiliated/bladerunner) has quit: Excess
+      Flood
+16:24:46 *** DHowett (~dustin@ultraviolet.howett.net) has quit: Changing host
+16:24:46 *** DHowett (~dustin@velocitylimitless/awesome/ultraviolet/DHowett)
+      has joined channel #perl
+16:25:09 <JordiGH> It's that it looks like things change type.
+16:25:23 <JordiGH> I really think it's annoying that @foo but $foo[0]
+16:25:35 <mauke> oh, that's not a type thing
+16:25:41 <JordiGH> And when it becomes a ref to a hash to an array which holds
+      scalar refs...
+16:25:41 <JordiGH> ugh
+16:25:42 <mauke> at least not in the sense I used "type"
+16:25:43 *** din (~din@gateway/tor-sasl/din) has quit: Client Quit
+16:25:59 <mauke> JordiGH: that just makes it simpler
+16:26:02 <mauke> all references are scalars
+16:26:05 <pangur> If I do ... while(@names) {  my $i = shift @names;    my $j
+      = shift @names;    print "$i, $j\n";  } it works.
+16:26:14 *** din (~din@gateway/tor-sasl/din) has joined channel #perl
+16:26:33 *** Indian (~Indian@unaffiliated/londonmet050) has joined channel
+      #perl
+16:26:40 * GumbyPAN CPAN Upload: Filter-1.42 by RURBAN
+      http://metacpan.org/release/RURBAN/Filter-1.42
+16:26:40 * GumbyPAN CPAN Upload: Math-Combination_out-0.09 by KALEYCHEV
+      http://metacpan.org/release/KALEYCHEV/Math-Combination_out-0.09
+16:26:57 <pangur> If I do sort(@names) before I run the while loop, it lists
+      all the $i variables in a bunch before it lists all the $j variables.
+16:27:28 <pangur> Whereas, if I remove the sort(@names), it lists $i, $j turn
+      about.
+16:27:33 <pangur> Why is that?
+16:27:38 <mauke> pangur: what?
+16:27:45 *** carandraug (~carandrau@octave/developer/carandraug) has quit:
+      Quit: Ex-Chat
+16:27:54 <JordiGH> mauke: There's also different syntax for forming hashrefs
+      for arrayrefs and $$foo{"bar"} always confuses me... especially because
+      sigils don't nest beyond that.
+16:28:09 *** semeion (~semeion@gateway/tor-sasl/semeion) has joined channel
+      #perl
+16:28:12 <pangur> Why does sorting group all $i together rather than
+      interspersed with the $j ?
+16:28:17 <JordiGH> I wish I could just keep adding $ @ % as I unwrap whatever
+      is being stored.
+16:28:26 <mauke> JordiGH: "forming hashrefs for arrayrefs"??
+16:28:34 <mst> JordiGH: that's short for ${$foo}{"bar"}
+16:28:37 <hippie> pangur: it really depends on what your $i and $j values are?
+16:28:42 <mst> JordiGH: once you have the {} it does nest
+16:28:44 <DrForr> I'd say my ( $i, $j ) = splice @names, 0, 2; instead.
+16:28:47 <mauke> pangur: I have no idea what you're talking about
+16:29:02 <anno> pangur: what do you mean by $i-variables and $j-variables
+16:29:10 * pangur tries Dr Forr's prescription.
+16:29:34 <JordiGH> mauke: Different syntax for forming hashrefs and different
+      syntax for arrayrefs, as well as derefering refs, and really, it just
+      gets annoying and I feel like it's the interpreter's job to be keeping
+      track, not mine.
+16:29:53 *** Sound (~Sound@unaffiliated/sound) has quit: 
+16:30:00 <DrForr> I'd still be a little worried about iterating over the array
+      you're modifying.
+16:30:09 <mauke> JordiGH: wait, are you complaining about how arrays are
+      different from hashes?
+16:30:16 <mauke> DrForr: it's not iterating over an array
+16:30:46 <JordiGH> mauke: I'm complaining that I have no clue what I'm looking
+      at when I see stuff like %[${@{foo}[1]{1}}]
+16:30:49 <JordiGH> Or whatever.
+16:30:52 <mst> JordiGH: grab me next time we're both online - I'd like to run
+      you through some stuff.
+16:30:54 <JordiGH> It's difficult to keep track of.
+16:30:55 <mauke> JordiGH: that's a syntax error
+16:30:59 <mst> JordiGH: I think I have a way of making it clear
+16:31:01 <mauke> JordiGH: do you have a real example?
+16:31:08 <mst> JordiGH: would you mind being a guinea pig to see if it works?
+16:31:10 <DrForr> Yeah, while() is different, I know. Just commenting in
+      general.
+16:31:19 <hippie> "just hold these electrodes..."
+16:31:25 <JordiGH> mst: Sure, not now?
+16:31:34 <Khisanth> aindilis: I guess you are here because of the last part of
+      that message ... but XS and newXS are things that are normally generated
+16:31:35 <mst> JordiGH: no. now it's 10.30pm and I'm going for a drink. sorry.
+16:32:06 <JordiGH> k, enjoy.
+16:32:11 <thrig> mainly swigging trout
+16:32:58 <aindilis> Khisanth: would you have an idea how to fix it?
+16:33:18 *** alephnull (~alok@122.167.168.52) has quit: Ping timeout: 240
+      seconds
+16:36:07 <Khisanth> I have always hated SWIG :)
+16:36:15 <Khisanth> it's been so long I don't even remember why I hate it
+16:36:35 <thrig> must keep the bar tab low
+16:36:41 * GumbyPAN CPAN Upload: Compress-LZ4-0.02 by GRAY
+      http://metacpan.org/release/GRAY/Compress-LZ4-0.02
+16:36:41 * GumbyPAN CPAN Upload: Archive-Extract-0.60 by BINGOS
+      http://metacpan.org/release/BINGOS/Archive-Extract-0.60
+16:37:02 <aindilis> Khisanth: should I post to jobs.perl.org?  I was hoping it
+      to be a small fix
+16:37:17 <Khisanth> sure ...
+16:37:29 <pangur> DrForr: The data in @my names is in the form ('Calum
+      MacLeod', 59, 'Rupert Bear', 102).  Even when using your neater way of
+      doing things, it still lists all $i s before all the $j s.
+16:37:30 <Khisanth> but you should at least try a more recent version of swig
+16:37:32 <aindilis> k
+16:37:44 <Khisanth> the version mentioned there is at least 2 years out of
+      date with the latest
+16:37:50 <aindilis> ok
+16:38:24 *** sebuba (~sebuba@unaffiliated/sebuba) has joined channel #perl
+16:38:29 <pangur> It seems that the @names = sort(@names) is what causes the
+      problem.
+16:38:57 *** danmackay (dan@unaffiliated/danmackay) has quit: Quit: ZNC -
+      http://znc.in
+16:38:57 <pangur> When I do not sort, $i, $j behave the way I want.
+16:38:59 *** scampbell (~scampbell@c-98-224-240-62.hsd1.mi.comcast.net) has
+      quit: Quit: Ex-Chat
+16:39:07 <thrig> why are you sorting, then?
+#perl> 

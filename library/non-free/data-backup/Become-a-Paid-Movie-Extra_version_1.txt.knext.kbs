@@ -1,0 +1,247 @@
+;; (-LRB- OPTIONAL -RRB- TAKE ACTING LESSONS)
+
+	;; LESSONS CAN BE ACTING.
+
+		(and (lesson_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTING_27 ?x2))
+
+;; (WHILE ACTING LESSONS CAN BE EXPENSIVE COMMA THERE ARE PLENTY OF ONE DAY WORKSHOPS THAT MAY BE AVAILABLE IN YOUR AREA)
+
+	;; LESSONS CAN BE EXPENSIVE.
+
+		(and (lesson_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXPENSIVE_27 ?x2))
+
+	;; LESSONS CAN BE ACTING.
+
+		(and (lesson_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTING_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (STAGE ACTING AND FILM ACTING ARE DIFFERENT COMMA BUT IF YOU HAVE NO ACTING EXPERIENCE ANY BEGINNING ACTING CLASS OR WORKSHOP WILL DO)
+
+	;; ACTING AND FILM ACTING CAN BE DIFFERENT.
+
+		(and (ACTING_27 ?x1) (and_27 ?x2 ?x1 ?x3) (FILM_27 ?x3) (ACTING_27 ?x3) (be_27 ?e1 ?x1 ?x4) (DIFFERENT_27 ?x4))
+
+	;; A STAGE[PERSON??] MAY HAVE AN ACTING AND FILM ACTING.
+
+		(and  (PERSON_27 ?x1))
+
+		(and (have_27 ?e1 ?x1) (ACTING_27 ?x1) (and_27 ?x2 ?x1 ?x3) (FILM_27 ?x3) (ACTING_27 ?x3))
+
+	;; A BEGINNING ACTING CLASS MAY DO.
+
+		(and (BEGINNING_27 ?x1) (ACTING_27 ?x1) (CLASS_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EXPERIENCE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EXPERIENCE_27 ?x1))
+
+	;; AN EXPERIENCE CAN BE ACTING.
+
+		(and (EXPERIENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ACTING_27 ?x2))
+
+;; (GET A HEADSHOT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [6]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [7]>
+
+;; (A HEADSHOT IS A PICTURE THAT PRIMARILY SHOWS A CLOSEUP OF YOUR HEAD AND NECK)
+
+	;; A HEADSHOT CAN BE A PICTURE.
+
+		(and (HEADSHOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PICTURE_27 ?x2))
+
+	;; A HEAD MAY HAVE A CLOSEUP.
+
+		(and (HEAD_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CLOSEUP_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEAD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEAD_27 ?x1))
+
+;; (YOUR HEADSHOT SHOULD BE RECENT COMMA AND SHOW YOU IN YOUR MOST ATTRACTIVE NATURAL STATE)
+
+	;; A HEADSHOT CAN BE RECENT.
+
+		(and (HEADSHOT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (RECENT_27 ?x2))
+
+	;; A PERSON MAY HAVE A HEADSHOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEADSHOT_27 ?x1))
+
+	;; A PERSON MAY HAVE A STATE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (state_27 ?x1))
+
+	;; A STATE CAN BE ATTRACTIVE.
+
+		(and (state_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ATTRACTIVE_27 ?x2))
+
+	;; A STATE CAN BE NATURAL.
+
+		(and (state_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NATURAL_27 ?x2))
+
+;; (PROFESSIONAL HEADSHOTS CAN BE PRICEY COMMA BUT IF YOU KNOW A PHOTOGRAPHER COMMA OR HAVE A DIGITAL CAMERA AND PRINTER COMMA YOU SHOULD BE OK FOR EXTRA WORK)
+
+	;; HEADSHOTS CAN BE PRICEY.
+
+		(and (headshot_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRICEY_27 ?x2))
+
+	;; A PROFESSIONAL[PERSON??] MAY HAVE HEADSHOTS.
+
+		(and (PROFESSIONAL_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (HEADSHOTS_27 ?x1))
+
+	;; A PERSON MAY BE OK -ED FOR WORK.
+
+		(and (PERSON_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (for_27 ?x2 ?x3) (WORK_27 ?x3))
+
+	;; A PERSON MAY KNOW A PHOTOGRAPHER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (PHOTOGRAPHER_27 ?x1))
+
+	;; A CAMERA CAN BE DIGITAL.
+
+		(and (CAMERA_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIGITAL_27 ?x2))
+
+	;; WORK CAN BE EXTRA.
+
+		(and (WORK_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (LOOK FOR PAID EXTRA ROLES)
+
+	;; ROLES CAN BE PAID.
+
+		(and (role_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PAID_27 ?x2))
+
+	;; ROLES CAN BE EXTRA.
+
+		(and (role_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+;; (HERE S WHERE YOU HAVE TO DO SOME WORK)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [7]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (SOME FREE WAYS TO DO THIS ARE TO LOOK UP YOUR STATES FILM COMMISSION ON THE INTERNET)
+
+	;; WAYS CAN BE FREE.
+
+		(and (way_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+;; *** - GET: 'S is not a symbol
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 2 [8]>
+
+;; (FROM THERE YOU CAN SEE ALL OF THE MOVIES COMMA ETC. THAT ARE COMING TO YOUR AREA)
+
+	;; A PERSON MAY SEE SOME_NUMBER_OF THING OF MOVIES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SEE_27 ?x1) (SOME_5FNUMBER_5FOF_27 ?x1) (thing_27 ?x1) (of_27 ?x1 ?x2) (movy_27 ?x2))
+
+	;; MOVIES MAY HAVE A THING.
+
+		(and (movy_27 ?x1) (have_27 ?e1 ?x1 ?x2) (thing_27 ?x2))
+
+	;; A PERSON MAY HAVE AN AREA.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AREA_27 ?x1))
+
+;; (SUBMIT YOUR HEADSHOT AND RESUME ALONG WITH A COVER LETTER)
+
+	;; A PERSON MAY HAVE A HEADSHOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEADSHOT_27 ?x1))
+
+;; (A COVER LETTER EXPRESSES YOUR DESIRE TO BE A PART OF THE MOVIE PRODUCTION)
+
+	;; A COVER LETTER MAY EXPRESS A DESIRE.
+
+		(and (COVER_27 ?x1) (LETTER_27 ?x1) (MAY_27 ?x1) (EXPRESS_27 ?x1) (A_27 ?x1) (DESIRE_27 ?x1))
+
+	;; A PERSON MAY HAVE A DESIRE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESIRE_27 ?x1))
+
+	;; A MOVIE PRODUCTION MAY HAVE A PART.
+
+		(and (MOVIE_27 ?x1) (production_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (part_27 ?x1))
+
+;; (IT SHOULD BE SHORT EXPLAINING WHO YOU ARE AND INSTRUCTING THE CASTING DIRECTOR TO TAKE A LOOK AT YOUR HEADSHOT AND RESUME)
+
+	;; A THING-REFERRED-TO CAN BE SHORT.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHORT_27 ?x2))
+
+	;; A PERSON MAY BE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A DIRECTOR CAN BE CASTING.
+
+		(and (DIRECTOR_27 ?x1) (be_27 ?e1 ?x1 ?x2) (casting_27 ?x2))
+
+	;; A PERSON MAY HAVE A HEADSHOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEADSHOT_27 ?x1))
+
+;; (SOME MOVIE EXTRA SITES INSTRUCT YOU TO EMAIL YOUR MATERIALS COMMA SO KEEP FILES OF YOUR HEADSHOT COMMA RESUME COMMA AND COVERLETTER ON YOUR COMPUTER)
+
+	;; SITES CAN BE EXTRA.
+
+		(and (site_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A PERSON MAY HAVE MATERIALS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (MATERIALS_27 ?x1))
+
+	;; A HEADSHOT MAY HAVE FILES.
+
+		(and (HEADSHOT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (FILES_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEADSHOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEADSHOT_27 ?x1))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+;; (SOME ASK YOU TO JUST SHOW UP COMMA WHILE OTHERS ASK FOR YOU TO MAIL IN YOUR HEADSHOT AND RESUME)
+
+	;; OTHERS MAY ASK.
+
+		(and (other_27 ?x1) (MAY_27 ?x1) (ASK_27 ?x1))
+
+	;; A PERSON MAY HAVE A HEADSHOT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HEADSHOT_27 ?x1))

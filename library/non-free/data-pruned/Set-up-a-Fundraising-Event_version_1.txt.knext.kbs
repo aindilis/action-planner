@@ -1,0 +1,603 @@
+;; (CONSIDER OPENING A BANK ACCOUNT IF ONE IS NOT ALREADY AVAILABLE AND YOU PLAN TO RAISE QUITE A BIT OF MONEY)
+
+	;; AN INDIVIDUAL CAN BE AVAILABLE.
+
+		(and (INDIVIDUAL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AVAILABLE_27 ?x2))
+
+	;; A BIT CAN BE CONSTITUTED_OF_OR_FILLED_WITH MONEY.
+
+		(and (BIT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (MONEY_27 ?x2))
+
+;; (THIS IS ESPECIALLY HELPFUL FOR FUNDRAISING EVENTS THAT HELP A PERSON OR FAMILY)
+
+	;; 
+
+	;; ((:I (:Q THE THING-REFERRED-TO.N) HELPFUL.A (:P FOR.P (:F KA NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (THE_27 ?x1) (THING-REFERRED-TO_2EN_27 ?x1) (HELPFUL_2EA_27 ?x2) (P_27 ?x3) (FOR_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [4]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (PUT A NAME ON THE ACCOUNT THAT MAKES IT CLEAR WHAT THE ACCOUNT IS FOR)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FOR EXAMPLE IF YOU ARE RAISING FUNDS FOR A CHILD -LRB- LET S SAY SUSAN SMITH -RRB- WHO IS GETTING TREATMENTS FOR CANCER COMMA NAME THE ACCOUNT SOMETHING LIKE THE SUSAN SMITH DONATION FUND)
+
+	;; A PERSON MAY RAISE FUNDS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (RAISE_27 ?x1) (FUNDS_27 ?x1))
+
+	;; AN ENTITY MAY SAY A FEMALE.
+
+		(and (ENTITY_27 ?x1) (MAY_27 ?x1) (SAY_27 ?x1) (A_27 ?x1) (FEMALE_27 ?x1))
+
+	;; TREATMENTS CAN BE FOR CANCER.
+
+		(and (treatment_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CANCER_27 ?x2))
+
+;; (DECIDE WHAT THE EVENT IS GOING TO BE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IDEAS ARE LIMITED ONLY BY YOUR CREATIVITY)
+
+	;; IDEAS MAY BE LIMIT -ED.
+
+		(and (IDEAS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIMIT_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE A CREATIVITY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CREATIVITY_27 ?x1))
+
+;; (YOU COULD CHOOSE TO HOLD SOMETHING TRADITIONAL COMMA SUCH AS A SILENT AUCTION OR A DINNER COMMA OR YOU COULD TRY SOMETHING REALLY DIFFERENT COMMA SUCH AS A RACE COMMA A WATERFIGHT COMMA OR EVEN COLLECTING
+ DONATIONS WHILE WEARING SOMETHING SILLY FOR THE WHOLE DAY)
+
+	;; AN AUCTION CAN BE SILENT.
+
+		(and (AUCTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SILENT_27 ?x2))
+
+	;; A PERSON MAY TRY SOMETHING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TRY_27 ?x1) (SOMETHING_27 ?x1))
+
+	;; SOMETHING CAN BE DIFFERENT.
+
+		(and (something_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DIFFERENT_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [8]>
+
+;; (FIND OUT IF THE CAUSE YOU ARE CHAMPIONING -LRB- PERSON COMMA GROUP COMMA NON-PROFIT COMMA ETC. -RRB- HAS A LIST OF PEOPLE WHO WOULD BE OPEN TO BEING CONTACTED)
+
+	;; A CAUSE MAY HAVE A LIST OF PEOPLE.
+
+		(and (CAUSE_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (LIST_27 ?x1) (of_27 ?x1 ?x2) (PEOPLE_27 ?x2))
+
+	;; A PERSON MAY CHAMPION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHAMPION_27 ?x1))
+
+	;; A LIST CAN BE CONSTITUTED_OF_OR_FILLED_WITH PEOPLE.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (PEOPLE_27 ?x2))
+
+;; (EMAIL IS ESPECIALLY USEFUL FOR CONTACTING MANY PEOPLE AT THE SAME TIME COMMA PARTICULARLY FOR FINDING VOLUNTEERS)
+
+	;; 
+
+	;; ((:I (:Q DET EMAIL.NAME) USEFUL.A (:P FOR.P (:F KA NIL))))
+
+		(and (I_27 ?x2) (Q_27 ?x1) (DET_27 ?x1) (EMAIL_2ENAME_27 ?x1) (USEFUL_2EA_27 ?x2) (P_27 ?x3) (FOR_2EP_27 ?x3) (F_27 ?x4) (KA_27 ?x4) (NIL_27 ?x4))
+
+	;; ______________________________________________________________________
+
+	;; [11]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (USE THE CONTACT LIST TO FIND ANYBODY WHO HAS EXPERIENCE WITH THE TYPE OF FUNDRAISER YOU ARE PLANNING)
+
+	;; A PERSON MAY PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (PLAN_27 ?x1))
+
+	;; EXPERIENCE CAN BE WITH A TYPE OF FUNDRAISER.
+
+		(and (EXPERIENCE_27 ?x1) (be_27 ?e1 ?x1) (with_27 ?x1 ?x2) (A_27 ?x2) (TYPE_27 ?x2) (of_27 ?x2 ?x3) (FUNDRAISER_27 ?x3))
+
+;; (THEY DON T HAVE TO HAVE BEEN IN CHARGE COMMA BUT ANY EXPERIENCE WILL BE HELPFUL)
+
+	;; AN EXPERIENCE CAN BE HELPFUL.
+
+		(and (EXPERIENCE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [14]>
+
+;; (FIND A PLACE TO HOLD THE EVENT IF YOU DON T ALREADY HAVE ONE)
+
+	;; A PERSON MAY DON T.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DON_27 ?x1) (T_27 ?x1))
+
+;; (POSSIBLE PLACES FOR LARGE INDOOR EVENTS INCLUDE SCHOOLS OR HALLS OF FRATERNAL ORGANIZATIONS)
+
+	;; PLACES MAY INCLUDE SCHOOLS OF ORGANIZATIONS.
+
+		(and (PLACES_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (SCHOOLS_27 ?x1) (of_27 ?x1 ?x2) (ORGANIZATIONS_27 ?x2))
+
+	;; PLACES CAN BE FOR EVENTS.
+
+		(and (place_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (event_27 ?x2))
+
+	;; EVENTS CAN BE LARGE.
+
+		(and (event_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; EVENTS CAN BE INDOOR.
+
+		(and (event_27 ?x1) (be_27 ?e1 ?x1 ?x2) (INDOOR_27 ?x2))
+
+	;; SCHOOLS CAN BE CONSTITUTED_OF_OR_FILLED_WITH ORGANIZATIONS.
+
+		(and (school_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (ORGANIZATIONS_27 ?x2))
+
+	;; ORGANIZATIONS CAN BE FRATERNAL.
+
+		(and (organization_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FRATERNAL_27 ?x2))
+
+;; (FIND OUT WHERE OTHER SIMILAR EVENTS HAVE BEEN HELD AND ASK ABOUT THE AVAILABILITY OF THOSE PLACES)
+
+	;; EVENTS MAY BE HOLD -ED.
+
+		(and (event_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; PLACES MAY HAVE AN AVAILABILITY.
+
+		(and (PLACES_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (AVAILABILITY_27 ?x1))
+
+;; (DEPENDING ON WHAT YOUR EVENT IS BENEFITING COMMA YOU MIGHT GET THE SPACE DONATED)
+
+	;; A PERSON MAY GET A SPACE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (GET_27 ?x1) (A_27 ?x1) (SPACE_27 ?x1))
+
+	;; AN EVENT MAY BENEFIT.
+
+		(and (EVENT_27 ?x1) (MAY_27 ?x1) (BENEFIT_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EVENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+	;; A SPACE MAY BE DONATE -ED.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DONATE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (YOU CAN ALSO USE THE CONTACT LIST TO ASK PEOPLE FOR IDEAS ON A PLACE FOR YOUR EVENT)
+
+	;; IDEAS CAN BE ON A PLACE.
+
+		(and (IDEAS_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (PLACE_27 ?x2))
+
+	;; A PLACE CAN BE FOR AN EVENT.
+
+		(and (PLACE_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (event_27 ?x2))
+
+	;; A PERSON MAY HAVE AN EVENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+;; (TOUR THE FACILITIES TO DETERMINE IF THERE IS ADEQUATE SPACE AND TO FIND OUT WHAT SUPPLIES ARE AVAILABLE TO USE)
+
+	;; A SPACE CAN BE ADEQUATE.
+
+		(and (SPACE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADEQUATE_27 ?x2))
+
+;; (WHILE TOURING THE FACILITIES CONSIDER MAKE A MAP OF THE EVENT AHEAD OF TIME TO HELP AVOID ANY PEOPLE TRAFFIC PROBLEMS COMMA SUCH AS LINES BLOCKING PLACES NEEDING ACCESS)
+
+	;; A MAP CAN BE SHOW AN EVENT.
+
+		(and (MAP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SHOW_27 ?x2) (AN_27 ?x2) (EVENT_27 ?x2))
+
+	;; LINES MAY BLOCK PLACES.
+
+		(and (LINES_27 ?x1) (MAY_27 ?x1) (BLOCK_27 ?x1) (PLACES_27 ?x1))
+
+;; (DETERMINE A DATE AND TIME)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONSIDER THINGS SUCH AS WHEN OTHER FUNDRAISERS ARE BEING HELD)
+
+	;; FUNDRAISERS MAY BE HOLD -ED.
+
+		(and (fundraiser_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HOLD_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (CHOOSE AN END TIME THAT TAKES INTO CONSIDERATION TIME FOR CLEAN UP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (DECIDE WHAT TYPES OF PAYMENT YOU WILL ACCEPT)
+
+	;; A PERSON MAY ACCEPT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (ACCEPT_27 ?x1))
+
+;; (CASH AND CHECKS ARE FAIRLY EASY TO DEAL WITH)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CREDIT CARDS PROBABLY GET PEOPLE TO SPEND MORE COMMA BUT THEY ARE MORE COMPLICATED TO DEAL WITH)
+
+	;; A CREDIT[PERSON??] MAY HAVE CARDS.
+
+		(and (CREDIT_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (CARDS_27 ?x1))
+
+;; (ALSO COMMA CREDIT CARD COMPANIES TAKE A PERCENTAGE OF EACH SALE AS PAYMENT)
+
+	;; CREDIT CARD COMPANIES MAY TAKE A PERCENTAGE OF SOME_NUMBER_OF SALE.
+
+		(and (CREDIT_27 ?x1) (CARD_27 ?x1) (COMPANIES_27 ?x1) (MAY_27 ?x1) (take_27 ?e1 ?x1 ?x2) (A_27 ?x2) (percentage_27 ?x2) (of_27 ?x2 ?x3) (SOME_5FNUMBER_5FOF_27 ?x3) (SALE_27 ?x3))
+
+	;; A PERCENTAGE CAN BE CONSTITUTED_OF_OR_FILLED_WITH SOME_NUMBER_OF SALE.
+
+		(and (percentage_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CONSTITUTED_5FOF_5FOR_5FFILLED_5FWITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (SALE_27 ?x2))
+
+	;; SOME_NUMBER_OF SALE CAN BE AS PAYMENT.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (SALE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (AS_27 ?x2) (PAYMENT_27 ?x2))
+
+;; (CHECK WITH PROPER AUTHORITIES TO SEE IF YOU NEED TO COMPLETE ANY PAPERWORK)
+
+	;; AUTHORITIES CAN BE PROPER.
+
+		(and (authority_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PROPER_27 ?x2))
+
+;; (-LRB- FOR EXAMPLE COMMA A GAMING AUTHORITY IF YOU PLAN TO HOLD A RAFFLE OR A HEALTH AUTHORITY IF YOU ARE SELLING FOOD)
+
+	;; A GAMING MAY AUTHORIT.
+
+		(and (GAMING_27 ?x1) (MAY_27 ?x1) (AUTHORIT_27 ?x1))
+
+	;; A PERSON MAY SELL FOOD.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (SELL_27 ?x1) (FOOD_27 ?x1))
+
+;; (DETERMINE IF YOUR EVENT WILL BE FREE ADMISSION OR REQUIRE TICKETS)
+
+	;; AN EVENT CAN BE AN ADMISSION.
+
+		(and (EVENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADMISSION_27 ?x2))
+
+	;; A PERSON MAY HAVE AN EVENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+	;; AN ADMISSION CAN BE FREE.
+
+		(and (ADMISSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (FREE_27 ?x2))
+
+;; (IF THE EVENT REQUIRES PAID ADMISSION COMMA DETERMINE PRICES -LRB- SINGLE COMMA COUPLE COMMA FAMILY -RRB- AND HAVE TICKETS MADE UP)
+
+	;; AN EVENT MAY REQUIRE ADMISSION.
+
+		(and (EVENT_27 ?x1) (MAY_27 ?x1) (REQUIRE_27 ?x1) (ADMISSION_27 ?x1))
+
+	;; AN ADMISSION CAN BE PAID.
+
+		(and (ADMISSION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PAID_27 ?x2))
+
+	;; TICKETS MAY BE MAKE_UP -ED.
+
+		(and (ticket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MAKE_5FUP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (TICKETS ARE FAIRLY CHEAP COMMA SO OVERESTIMATE RATHER THAN UNDERESTIMATE THE NUMBER YOU NEED)
+
+	;; TICKETS CAN BE CHEAP.
+
+		(and (ticket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CHEAP_27 ?x2))
+
+	;; A PERSON MAY NEED.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (NEED_27 ?x1))
+
+;; (ALSO COMMA MAKE A LARGE INFORMATION SHEET FOR THE ENTRANCE TABLE THAT TELLS PEOPLE WHO TO MAKE CHECKS OUT TO)
+
+	;; AN INFORMATION SHEET CAN BE FOR AN ENTRANCE TABLE.
+
+		(and (INFORMATION_27 ?x1) (SHEET_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ENTRANCE_27 ?x2) (TABLE_27 ?x2))
+
+	;; AN INFORMATION SHEET CAN BE LARGE.
+
+		(and (INFORMATION_27 ?x1) (SHEET_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+;; (DEPENDING ON THE TYPE OF EVENT YOU MIGHT GET SOME FRIENDS AND FAMILY TO DONATE MONEY IN RETURN FOR BEING ALLOWED TO TAKE PART)
+
+	;; MONEY CAN BE IN RETURN.
+
+		(and (money_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (RETURN_27 ?x2))
+
+;; (GET THE WORD OUT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (FIND OUT IF A LOCAL ADVERTISING BUSINESS WOULD BE WILLING TO HELP)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (EITHER WAY COMMA A LOCAL NEWSPAPER CAN BE HELPFUL)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (CONTACT BOTH THE ADVERTISING DEPARTMENT FOR ADVERTISING AND THE EDITORIAL DEPARTMENT OR A COLUMNIST FOR NEWS COVERAGE OF YOUR EVENT)
+
+	;; AN ADVERTISING DEPARTMENT CAN BE FOR ADVERTISING.
+
+		(and (ADVERTISING_27 ?x1) (DEPARTMENT_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (ADVERTISING_27 ?x2))
+
+	;; A DEPARTMENT CAN BE EDITORIAL.
+
+		(and (DEPARTMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EDITORIAL_27 ?x2))
+
+	;; A COLUMNIST CAN BE FOR NEWS COVERAGE OF AN EVENT.
+
+		(and (columnist_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (NEWS_27 ?x2) (COVERAGE_27 ?x2) (of_27 ?x2 ?x3) (event_27 ?x3))
+
+	;; AN EVENT MAY HAVE NEWS COVERAGE.
+
+		(and (EVENT_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (NEWS_27 ?x1) (COVERAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EVENT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1))
+
+;; (CONTACT LOCAL RADIO AND TELEVISION STATIONS TO SEE IF THEY WILL GIVE YOUR EVENT NEWS COVERAGE OR OFFER PUBLIC SERVICE ANNOUNCEMENTS)
+
+	;; INDIVIDUAL -S MAY GIVE AN EVENT NEWS COVERAGE.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1) (NEWS_27 ?x1) (COVERAGE_27 ?x1))
+
+	;; A PERSON MAY HAVE AN EVENT NEWS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (EVENT_27 ?x1) (NEWS_27 ?x1))
+
+;; (AND USE YOUR CONTACT LIST TO HAVE PEOPLE SPREAD THE WORD VIA EMAIL OR ANY OTHER METHOD THEY CAN THINK OF)
+
+	;; A PERSON MAY HAVE A CONTACT LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONTACT_27 ?x1) (LIST_27 ?x1))
+
+	;; PEOPLE MAY SPREAD A WORD.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (SPREAD_27 ?x1) (A_27 ?x1) (WORD_27 ?x1))
+
+;; (MAKE UP FLYERS AND POST THEM AROUND THE AREA)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (IF YOU MAKE A FLYER ON YOUR COMPUTER AND KNOW HOW TO MAKE IT INTO A PDF OR A JPEG COMMA YOU CAN EMAIL THAT TO ANYONE ON YOUR CONTACT LIST WILLING TO PRINT AND POST FLYERS)
+
+	;; A PERSON MAY EMAIL A THING TO ANYONE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (EMAIL_27 ?x1) (A_27 ?x1) (thing_27 ?x1) (to_27 ?x1 ?x2) (ANYONE_27 ?x2))
+
+	;; A PERSON MAY MAKE A FLYER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (A_27 ?x1) (FLYER_27 ?x1))
+
+	;; A PERSON MAY HAVE A COMPUTER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (COMPUTER_27 ?x1))
+
+	;; A PERSON MAY HAVE A CONTACT LIST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONTACT_27 ?x1) (LIST_27 ?x1))
+
+;; (PRE-SELL TICKETS COMMA IF YOU ARE CHARGING ADMISSION)
+
+	;; TICKETS CAN BE PRE-SELL.
+
+		(and (ticket_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRE-SELL_27 ?x2))
+
+	;; A PERSON MAY CHARGE ADMISSION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CHARGE_27 ?x1) (ADMISSION_27 ?x1))
+
+;; (THIS GIVES PEOPLE WHO CAN T MAKE IT TO THE EVENT A CHANCE TO DONATE TO THE CAUSE)
+
+	;; A THING MAY GIVE PEOPLE A CHANCE.
+
+		(and (thing_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (PEOPLE_27 ?x1) (A_27 ?x1) (CHANCE_27 ?x1))
+
+;; (IT ALSO CAN GIVE YOU AN IDEA OF HOW POPULAR THE EVENT MIGHT BE)
+
+	;; A THING-REFERRED-TO MAY GIVE A PERSON AN IDEA.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (GIVE_27 ?x1) (A_27 ?x1) (PERSON_27 ?x1) (AN_27 ?x1) (IDEA_27 ?x1))
+
+	;; AN EVENT MAY BE.
+
+		(and (EVENT_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+;; (-LRB- THIS IS HELPFUL WHEN BUYING SUPPLIES)
+
+	;; A THING CAN BE HELPFUL.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HELPFUL_27 ?x2))
+
+;; (VOLUNTEERS CAN TRY TO GET PERMISSION TO SET UP TABLES AT LOCAL BUSINESSES TO SELL TICKETS AND ACCEPT DONATIONS)
+
+	;; TABLES CAN BE AT BUSINESSES.
+
+		(and (table_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (business_27 ?x2))
+
+;; (THIS IS GOOD ADVERTISING COMMA TOO)
+
+	;; A THING CAN BE ADVERTISING.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ADVERTISING_27 ?x2))
+
+	;; ADVERTISING CAN BE GOOD.
+
+		(and (advertising_27 ?x1) (be_27 ?e1 ?x1) (good_27 ?x1))
+
+;; (GET CASH FOR CHANGE AND A LOCK BOX TO HOLD CASH AND CHECKS AS PEOPLE PAY)
+
+	;; CASH CAN BE FOR CHANGE.
+
+		(and (cash_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (CHANGE_27 ?x2))
+
+	;; A BOX CAN BE LOCK.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LOCK_27 ?x2))
+
+	;; PEOPLE MAY PAY.
+
+		(and (PEOPLE_27 ?x1) (MAY_27 ?x1) (PAY_27 ?x1))
+
+;; (CONSIDER PUTTING A LARGE BUCKET AT YOUR ENTRANCE TABLE WITH A SIGN ON IT THAT GIVES PEOPLE AN OPPORTUNITY TO DONATE MORE)
+
+	;; A BUCKET CAN BE LARGE.
+
+		(and (BUCKET_27 ?x1) (be_27 ?e1 ?x1) (large_27 ?x1))
+
+	;; A PERSON MAY HAVE AN ENTRANCE TABLE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ENTRANCE_27 ?x1) (TABLE_27 ?x1))
+
+	;; A SIGN CAN BE ON A THING-REFERRED-TO.
+
+		(and (SIGN_27 ?x1) (be_27 ?e1 ?x1) (on_27 ?x1 ?x2) (A_27 ?x2) (THING-REFERRED-TO_27 ?x2))
+
+;; (IT WORKS SURPRISINGLY WELL)
+
+	;; A THING-REFERRED-TO MAY WORK.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (WORK_27 ?x1))
+
+;; (TRY AND MAKE IT AS FUN AS POSSIBLE)
+
+	;; FUN CAN BE POSSIBLE.
+
+		(and (FUN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (POSSIBLE_27 ?x2))
+
+;; (CLEAN UP AS MUCH AS POSSIBLE AFTER THE EVENT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))

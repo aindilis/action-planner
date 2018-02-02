@@ -1,0 +1,660 @@
+;; (THINK ABOUT WHO FILLS THOSE POSITIONS WHEN THE PRIMARY JOB-HOLDER IS ON VACATION)
+
+	;; A JOB-HOLDER CAN BE ON VACATION.
+
+		(and (JOB-HOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (VACATION_27 ?x2))
+
+	;; A JOB-HOLDER CAN BE PRIMARY.
+
+		(and (JOB-HOLDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIMARY_27 ?x2))
+
+;; (MAKE A LIST OF ALL THOSE INDIVIDUALS WITH ALL CONTACT INFORMATION INCLUDING BUSINESS PHONE COMMA HOME PHONE COMMA CELL PHONE COMMA PAGER COMMA BUSINESS EMAIL COMMA PERSONAL EMAIL COMMA AND ANY OTHER POSSIBLE
+ WAY OF CONTACTING THEM IN AN EMERGENCY SITUATION WHERE NORMAL COMMUNICATIONS MIGHT BE UNAVAILABLE)
+
+	;; INDIVIDUALS MAY HAVE A LIST.
+
+		(and (individual_27 ?x1) (HAVE_27 ?x1) (A_27 ?x2) (LIST_27 ?x2))
+
+	;; INDIVIDUALS CAN BE WITH SOME_NUMBER_OF CONTACT INFORMATION.
+
+		(and (individual_27 ?x1) (be_27 ?e1 ?x1 ?x2) (WITH_27 ?x2) (SOME_5FNUMBER_5FOF_27 ?x2) (CONTACT_27 ?x2) (INFORMATION_27 ?x2))
+
+	;; AN EMAIL CAN BE PERSONAL.
+
+		(and (EMAIL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONAL_27 ?x2))
+
+	;; COMMUNICATIONS CAN BE UNAVAILABLE.
+
+		(and (communication_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNAVAILABLE_27 ?x2))
+
+	;; COMMUNICATIONS CAN BE NORMAL.
+
+		(and (communication_27 ?x1) (be_27 ?e1 ?x1 ?x2) (NORMAL_27 ?x2))
+
+;; (IDENTIFY WHO CAN TELECOMMUTE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [5]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (SOME PEOPLE IN YOUR COMPANY MIGHT BE PERFECTLY CAPABLE OF CONDUCTING BUSINESS FROM A HOME OFFICE)
+
+	;; SOME_NUMBER_OF PEOPLE CAN BE IN A COMPANY.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (PEOPLE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (company_27 ?x2))
+
+	;; A PERSON MAY HAVE A COMPANY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (company_27 ?x1))
+
+;; (FIND OUT WHO CAN AND WHO CAN NOT)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; [7]>
+
+		(and (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (YOU MIGHT CONSIDER ASSURING THAT YOUR CRITICAL STAFF -LRB- IDENTIFIED IN STEP 1 -RRB- CAN ALL TELECOMMUTE IF NECESSARY)
+
+	;; A PERSON MAY CONSIDER.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONSIDER_27 ?x1))
+
+	;; A STAFF MAY TELECOMMUTE.
+
+		(and (STAFF_27 ?x1) (MAY_27 ?x1) (TELECOMMUTE_27 ?x1))
+
+	;; A PERSON MAY HAVE A STAFF.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (STAFF_27 ?x1))
+
+	;; A STAFF CAN BE CRITICAL.
+
+		(and (STAFF_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+;; (DOCUMENT EXTERNAL CONTACTS)
+
+	;; CONTACTS CAN BE EXTERNAL.
+
+		(and (contact_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTERNAL_27 ?x2))
+
+;; (IF YOU HAVE CRITICAL VENDORS OR CONTRACTORS COMMA BUILD A SPECIAL CONTACT LIST THAT INCLUDES A DESCRIPTION OF THE COMPANY -LRB- OR INDIVIDUAL -RRB- AND ANY OTHER ABSOLUTELY CRITICAL INFORMATION ABOUT THEM
+ INCLUDING KEY PERSONNEL CONTACT INFORMATION)
+
+	;; A PERSON MAY HAVE VENDORS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (VENDORS_27 ?x1))
+
+	;; VENDORS CAN BE CRITICAL.
+
+		(and (vendor_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+	;; A COMPANY MAY HAVE A DESCRIPTION.
+
+		(and (COMPANY_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (DESCRIPTION_27 ?x1))
+
+	;; AN INFORMATION CAN BE CRITICAL.
+
+		(and (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+	;; A CONTACT INFORMATION CAN BE KEY.
+
+		(and (CONTACT_27 ?x1) (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEY_27 ?x2))
+
+	;; A CONTACT INFORMATION CAN BE PERSONNEL.
+
+		(and (CONTACT_27 ?x1) (INFORMATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PERSONNEL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort main loop
+Break 1 [11]>
+
+;; (SOME BUSINESSES CAN NOT FUNCTION EVEN FOR A FEW HOURS WITHOUT A FAX MACHINE)
+
+	;; SOME_NUMBER_OF BUSINESSES MAY FUNCTION FOR HOURS.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (BUSINESSES_27 ?x1) (MAY_27 ?x1) (FUNCTION_27 ?x1) (for_27 ?x1 ?x2) (HOURS_27 ?x2))
+
+	;; A FAX[PERSON??] MAY HAVE A MACHINE.
+
+		(and (FAX_27 ?x1) (kbs2_kif_quote_5B_27 ?x1) (PERSON_27 ?x1))
+
+		(and (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (MACHINE_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [12]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [13]>
+
+;; (DON T FORGET SOFTWARE THAT WOULD OFTEN BE CONSIDERED CRITICAL EQUIPMENT ESPECIALLY IF IT IS SPECIALIZED SOFTWARE OR IF IT CAN NOT BE REPLACED)
+
+	;; A MALE MAY T.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (T_27 ?x1))
+
+	;; EQUIPMENT CAN BE CRITICAL.
+
+		(and (EQUIPMENT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+	;; A THING-REFERRED-TO CAN BE SOFTWARE.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOFTWARE_27 ?x2))
+
+	;; SOFTWARE CAN BE SPECIALIZED.
+
+		(and (SOFTWARE_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SPECIALIZED_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY BE REPLACE -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REPLACE_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (IDENTIFY CRITICAL DOCUMENTS)
+
+	;; DOCUMENTS CAN BE CRITICAL.
+
+		(and (document_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: a token consisting only of dots cannot be meaningfully read in
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [14]>
+
+;; (REMEMBER COMMA YOU MIGHT BE DEALING WITH A TOTAL FACILITY LOSS)
+
+	;; A PERSON MAY DEAL WITH A FACILITY LOSS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DEAL_27 ?x1) (WITH_27 ?x1) (A_27 ?x1) (FACILITY_27 ?x1) (LOSS_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [15]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [16]>
+
+;; (IDENTIFY CONTINGENCY EQUIPMENT OPTIONS)
+
+	;; A CONTINGENCY CAN BE IDENTIFY.
+
+		(and (CONTINGENCY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDENTIFY_27 ?x2))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [17]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [18]>
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: token "." not allowed here
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort main loop
+Break 9 [19]>
+
+;; (IDENTIFY YOUR CONTINGENCY LOCATION)
+
+	;; A PERSON MAY HAVE A CONTINGENCY LOCATION.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONTINGENCY_27 ?x1) (LOCATION_27 ?x1))
+
+;; (THIS IS THE PLACE YOU WILL CONDUCT BUSINESS WHILE YOUR PRIMARY OFFICES ARE UNAVAILABLE)
+
+	;; A THING CAN BE A PLACE.
+
+		(and (thing_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (PLACE_27 ?x2))
+
+	;; A PERSON MAY CONDUCT BUSINESS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (CONDUCT_27 ?x1) (BUSINESS_27 ?x1))
+
+	;; OFFICES CAN BE UNAVAILABLE.
+
+		(and (office_27 ?x1) (be_27 ?e1 ?x1 ?x2) (UNAVAILABLE_27 ?x2))
+
+	;; A PERSON MAY HAVE OFFICES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (OFFICES_27 ?x1))
+
+	;; OFFICES CAN BE PRIMARY.
+
+		(and (office_27 ?x1) (be_27 ?e1 ?x1 ?x2) (PRIMARY_27 ?x2))
+
+;; (IT COULD BE A HOTEL MANY OF THEM HAVE VERY WELL EQUIPPED BUSINESS FACILITIES YOU CAN USE)
+
+	;; A PERSON MAY USE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (USE_27 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE A HOTEL.
+
+		(and (thing-referred-to_27 ?x1) (be_27 ?e1 ?x1 ?x2) (A_27 ?x2) (HOTEL_27 ?x2))
+
+;; (IT MIGHT BE ONE OF YOUR CONTRACTORS OFFICES COMMA OR YOUR ATTORNEY S OFFICE)
+
+	;; AN ATTORNEY MAY BE OFFICE.
+
+		(and (ATTORNEY_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFFICE_27 ?x2))
+
+	;; A PERSON MAY HAVE AN ATTORNEY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (ATTORNEY_27 ?x1))
+
+;; (PERHAPS TELECOMMUTING FOR EVERYONE IS A VIABLE OPTION)
+
+	;; TELECOMMUTING CAN BE AN OPTION.
+
+		(and (telecommuting_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OPTION_27 ?x2))
+
+	;; TELECOMMUTING CAN BE FOR EVERYONE.
+
+		(and (telecommuting_27 ?x1) (be_27 ?e1 ?x1) (for_27 ?x1 ?x2) (EVERYONE_27 ?x2))
+
+	;; AN OPTION CAN BE VIABLE.
+
+		(and (OPTION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (VIABLE_27 ?x2))
+
+;; *** - CHAR-EQUAL: argument NIL is not a character
+The following restarts are available:
+USE-VALUE      :R1      Input a value to be used instead.
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 10 [20]>
+
+;; (IF YOU DO HAVE AN IDENTIFIED TEMPORARY LOCATION COMMA INCLUDE A MAP IN YOUR BCP)
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+	;; A LOCATION CAN BE IDENTIFIED.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IDENTIFIED_27 ?x2))
+
+	;; A LOCATION CAN BE TEMPORARY.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (TEMPORARY_27 ?x2))
+
+	;; A MAP CAN BE IN A BCP.
+
+		(and (MAP_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BCP_27 ?x2))
+
+	;; A PERSON MAY HAVE A BCP.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (BCP_27 ?x1))
+
+;; *** - READ from #<INPUT CONCATENATED-STREAM #<IO TERMINAL-STREAM>>: an object cannot start with #\)
+The following restarts are available:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort debug loop
+ABORT          :R9      Abort debug loop
+ABORT          :R10     Abort debug loop
+ABORT          :R11     Abort main loop
+Break 11 [21]>
+
+;; (IT SHOULD INCLUDE STEP-BY-STEP INSTRUCTIONS ON WHAT TO DO COMMA WHO SHOULD DO IT COMMA AND HOW)
+
+	;; A THING-REFERRED-TO MAY INCLUDE INSTRUCTIONS.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (INCLUDE_27 ?x1) (INSTRUCTIONS_27 ?x1))
+
+	;; INSTRUCTIONS CAN BE STEP-BY-STEP.
+
+		(and (instruction_27 ?x1) (be_27 ?e1 ?x1 ?x2) (STEP-BY-STEP_27 ?x2))
+
+;; (LIST EACH RESPONSIBILITY AND WRITE DOWN THE NAME OF THE PERSON ASSIGNED TO IT)
+
+	;; A PERSON MAY HAVE A NAME.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (NAME_27 ?x1))
+
+	;; A PERSON MAY BE ASSIGN -ED TO A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ASSIGN_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2) (to_27 ?e1 ?x3) (THING-REFERRED-TO_27 ?x3))
+
+;; (ALSO COMMA DO THE REVERSE  FOR EACH PERSON COMMA LIST THE RESPONSIBILITIES)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 11 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (A BCP IS A REFERENCE DOCUMENT IT SHOULD ALL BE KEPT TOGETHER IN SOMETHING LIKE A 3-RING BINDER)
+
+	;; A BCP CAN BE REFERENCE DOCUMENT.
+
+		(and (BCP_27 ?x1) (be_27 ?e1 ?x1 ?x2) (REFERENCE_27 ?x2) (DOCUMENT_27 ?x2))
+
+	;; A THING-REFERRED-TO MAY BE KEEP -ED.
+
+		(and (THING-REFERRED-TO_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEEP_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A BINDER CAN BE 3-RING.
+
+		(and (BINDER_27 ?x1) (be_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DNUMBER--ring_27 ?x2))
+
+;; (MAKE PLENTY OF COPIES AND GIVE ONE TO EACH OF YOUR KEY PERSONNEL)
+
+	;; PERSONNEL MAY HAVE A THING.
+
+		(and (PERSONNEL_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (thing_27 ?x1))
+
+	;; A PERSON MAY HAVE PERSONNEL.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (PERSONNEL_27 ?x1))
+
+	;; PERSONNEL CAN BE KEY.
+
+		(and (PERSONNEL_27 ?x1) (be_27 ?e1 ?x1 ?x2) (KEY_27 ?x2))
+
+;; (KEEP SEVERAL EXTRA COPIES AT AN OFF-SITE LOCATION COMMA AT HOME AND/OR IN A SAFETY-DEPOSIT BOX)
+
+	;; SOME_NUMBER_OF COPIES CAN BE AT A LOCATION.
+
+		(and (SOME_5FNUMBER_5FOF_27 ?x1) (COPIES_27 ?x1) (be_27 ?e1 ?x1) (at_27 ?x1 ?x2) (A_27 ?x2) (LOCATION_27 ?x2))
+
+	;; COPIES CAN BE EXTRA.
+
+		(and (copy_27 ?x1) (be_27 ?e1 ?x1 ?x2) (EXTRA_27 ?x2))
+
+	;; A LOCATION CAN BE OFF-SITE.
+
+		(and (LOCATION_27 ?x1) (be_27 ?e1 ?x1 ?x2) (OFF-SITE_27 ?x2))
+
+	;; HOME AND/OR CAN BE IN A BOX.
+
+		(and (HOME_27 ?x1) (AND_2FOR_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (BOX_27 ?x2))
+
+	;; A BOX CAN BE SAFETY-DEPOSIT.
+
+		(and (BOX_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SAFETY-DEPOSIT_27 ?x2))
+
+;; (COMMUNICATE)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 1 [14]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DRCB-_27 ?x1) (kbs2_kif_quote_3E_27 ?x1))
+
+;; (MAKE SURE EVERYONE IN YOUR COMPANY KNOWS THE BCP)
+
+	;; EVERYONE MAY KNOW A BCP.
+
+		(and (EVERYONE_27 ?x1) (MAY_27 ?x1) (KNOW_27 ?x1) (A_27 ?x1) (BCP_27 ?x1))
+
+	;; EVERYONE CAN BE IN A COMPANY.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (company_27 ?x2))
+
+	;; AN EVERYONE CAN BE SURE.
+
+		(and (EVERYONE_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A PERSON MAY HAVE A COMPANY.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (company_27 ?x1))
+
+;; (HOLD TRAINING CLASSES MANDATORY TRAINING CLASSES FOR EACH AND EVERY EMPLOYEE WHETHER THEY ARE ON THE CRITICAL LIST OR NOT)
+
+	;; TRAINING CLASSES CAN BE MANDATORY.
+
+		(and (training_27 ?x1) (class_27 ?x1) (be_27 ?e1 ?x1 ?x2) (MANDATORY_27 ?x2))
+
+	;; INDIVIDUAL -S CAN BE ON A LIST.
+
+		(and (INDIVIDUAL_27 ?x1) (kbs2_kif_quote_2DS_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (A_27 ?x2) (LIST_27 ?x2))
+
+	;; A LIST CAN BE CRITICAL.
+
+		(and (LIST_27 ?x1) (be_27 ?e1 ?x1 ?x2) (CRITICAL_27 ?x2))
+
+;; (DON T WAIT UNTIL DISASTER STRIKES TO FIGURE OUT WHAT YOU SHOULD DO DIFFERENTLY NEXT TIME)
+
+	;; A MALE MAY WAIT.
+
+		(and (MALE_27 ?x1) (MAY_27 ?x1) (WAIT_27 ?x1))
+
+	;; A PERSON MAY DO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (DO_27 ?x1))
+
+;; (RUN THE TEST)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 11 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (IF YOU MAKE ANY MAJOR CHANGES COMMA RUN IT AGAIN A FEW MONTHS LATER)
+
+	;; A PERSON MAY MAKE CHANGES.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (MAKE_27 ?x1) (CHANGES_27 ?x1))
+
+;; (EVEN AFTER YOU HAVE A SOLID PLAN COMMA YOU SHOULD TEST IT ANNUALLY)
+
+	;; A PERSON MAY TEST A THING-REFERRED-TO.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (TEST_27 ?x1) (A_27 ?x1) (THING-REFERRED-TO_27 ?x1))
+
+	;; A PERSON MAY HAVE A PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLAN_27 ?x1))
+
+	;; A PLAN CAN BE SOLID.
+
+		(and (PLAN_27 ?x1) (be_27 ?e1 ?x1 ?x2) (SOLID_27 ?x2))
+
+;; (PICK A DAY LET EVERYONE KNOW WHAT S GOING TO HAPPEN -LRB- INCLUDING YOUR CUSTOMERS COMMA CONTRACTORS AND VENDORS -RRB- THEN ON THAT MORNING COMMA ACT AS THOUGH YOUR OFFICE BUILDING HAS BEEN DESTROYED)
+
+	;; PICK MAY ACT.
+
+		(and (PICK_27 ?x1) (MAY_27 ?x1) (ACT_27 ?x1))
+
+	;; A DAY MAY LET.
+
+		(and (DAY_27 ?x1) (MAY_27 ?x1) (LET_27 ?x1))
+
+	;; A PERSON MAY HAVE CUSTOMERS.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (CUSTOMERS_27 ?x1))
+
+	;; AN OFFICE BUILDING MAY BE DESTROY -ED.
+
+		(and (OFFICE_27 ?x1) (BUILDING_27 ?x1) (be_27 ?e1 ?x1 ?x2) (DESTROY_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+	;; A PERSON MAY HAVE AN OFFICE BUILDING.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (AN_27 ?x1) (OFFICE_27 ?x1) (BUILDING_27 ?x1))
+
+;; (MAKE THE CALLS GO TO THE CONTINGENCY SITE)
+
+	;; CALLS MAY GO TO A CONTINGENCY SITE.
+
+		(and (call_27 ?x1) (go_27 ?e1 ?x1) (to_27 ?e1 ?x2) (A_27 ?x2) (CONTINGENCY_27 ?x2) (SITE_27 ?x2))
+
+;; (PLAN TO CHANGE THE PLAN)
+
+	;; 
+
+	;; NIL
+
+		( (NIL_27 ?x1))
+
+	;; ______________________________________________________________________
+
+	;; Break 11 [21]>
+
+		(and (Break_27 ?x1) (kbs2_kif_quote_2DLCB-_27 ?e1 ?x1 ?x2) (kbs2_kif_quote_2DRCB-_27 ?x2) (kbs2_kif_quote_3E_27 ?x2))
+
+;; (NO MATTER HOW GOOD YOUR PLAN IS COMMA AND NO MATTER HOW SMOOTHLY YOUR TEST RUNS COMMA IT IS LIKELY THERE WILL BE EVENTS OUTSIDE YOUR PLAN)
+
+	;; A PLAN MAY BE.
+
+		(and (PLAN_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1))
+
+	;; A THING-REFERRED-TO CAN BE LIKELY.
+
+		(and (THING-REFERRED-TO_27 ?x1) (be_27 ?e1 ?x1 ?x2) (LIKELY_27 ?x2))
+
+	;; A TEST MAY RUN.
+
+		(and (TEST_27 ?x1) (MAY_27 ?x1) (RUN_27 ?x1))
+
+	;; A PERSON MAY HAVE A TEST.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (TEST_27 ?x1))
+
+	;; A PERSON MAY HAVE A PLAN.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (PLAN_27 ?x1))
+
+;; (THE HOTEL YOU PLAN TO USE FOR YOUR CONTINGENCY SITE IS HOSTING A HUGE CONVENTION)
+
+	;; A HOTEL MAY HOST A CONVENTION.
+
+		(and (HOTEL_27 ?x1) (MAY_27 ?x1) (HOST_27 ?x1) (A_27 ?x1) (CONVENTION_27 ?x1))
+
+	;; A PERSON MAY HAVE A CONTINGENCY SITE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONTINGENCY_27 ?x1) (SITE_27 ?x1))
+
+	;; A CONVENTION CAN BE HUGE.
+
+		(and (convention_27 ?x1) (be_27 ?e1 ?x1 ?x2) (HUGE_27 ?x2))
+
+;; (YOU CAN T GET INTO THE BANK BECAUSE THE DISASTER HAPPENED ON A BANKING HOLIDAY)
+
+	;; A PERSON MAY T.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (T_27 ?x1))
+
+	;; A DISASTER MAY HAPPEN ON A BANKING HOLIDAY.
+
+		(and (DISASTER_27 ?x1) (MAY_27 ?x1) (HAPPEN_27 ?x1) (ON_27 ?x1) (A_27 ?x1) (BANKING_27 ?x1) (HOLIDAY_27 ?x1))
+
+;; (THE POWER IS OUT IN YOUR HOUSE)
+
+	;; POWER CAN BE IN A HOUSE.
+
+		(and (power_27 ?x1) (be_27 ?e1 ?x1) (in_27 ?x1 ?x2) (A_27 ?x2) (HOUSE_27 ?x2))
+
+	;; A PERSON MAY HAVE A HOUSE.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (HOUSE_27 ?x1))
+
+;; (THE COPY MACHINE AT THE BUSINESS SERVICES COMPANY IS BROKEN)
+
+	;; A COPY MACHINE MAY BE BREAK -ED.
+
+		(and (COPY_27 ?x1) (MACHINE_27 ?x1) (MAY_27 ?x1) (be_27 ?e1 ?x1 ?x2) (BREAK_27 ?x2) (kbs2_kif_quote_2DED_27 ?x2))
+
+;; (YOUR IT CONSULTANT IS ON VACATION)
+
+	;; A CONSULTANT CAN BE ON VACATION.
+
+		(and (CONSULTANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (ON_27 ?x2) (VACATION_27 ?x2))
+
+	;; A PERSON MAY HAVE A CONSULTANT.
+
+		(and (PERSON_27 ?x1) (MAY_27 ?x1) (HAVE_27 ?x1) (A_27 ?x1) (CONSULTANT_27 ?x1))
+
+	;; A CONSULTANT CAN BE IT.
+
+		(and (CONSULTANT_27 ?x1) (be_27 ?e1 ?x1 ?x2) (IT_27 ?x2))

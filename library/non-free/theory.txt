@@ -1,0 +1,29 @@
+Here are some considerations for evaluating lives objectively.
+
+First, you have the concept of reducible.  Suppose one life, call it
+L_1 is reducible to another life, call it L_2.  Take the simple case
+where L_1 := {alive(person)}, and L_2 := {not(alive(person))}.  Then
+we have Reducible(L_1,L_2) and not(Reducible(L_2,L_1)).  We should
+probably define a transition function which tells use which states can
+proceed from others.  The inherent assumption here is that one can die
+but not be resurrected.
+
+This reducible concept might be related to transposition tables in
+Chess and other games.  One thing that I want to make clear is that
+there could be equivalence classes of positions wrt certain
+properties.  So for instance, given all of the possible moves, it may
+not be possible to reduce one life to another, but it may be possible
+to reduce one life to one that is similar to another.
+
+We could also think in terms of measuring the effort involved in
+transitioning from one life to another.
+
+We also want to think in terms of sequences and histories, and
+measures on how good these are.
+
+We should also take into account subjective judgments and valuations
+of situations.
+
+Also want to consider mobility, changes in subjective valuations.
+
+Need to determine a precise definition of a life.
